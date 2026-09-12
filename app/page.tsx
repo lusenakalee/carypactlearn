@@ -1,69 +1,159 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import React, { useState } from "react";
+import { useTranslations } from "next-intl";
+import { useAppLocale } from "@/components/LocaleProvider";
+import Navbar from "@/components/Navbar";
+import AffiliateDisclaimerBanner from "@/components/AffiliateDisclaimerBanner";
+import HeroSection from "@/components/HeroSection";
+import LiveDashboardCard from "@/components/LiveDashboardCard";
+import ConversionCalculator from "@/components/ConversionCalculator";
+import BotChainArchitecture from "@/components/BotChainArchitecture";
+import TokenomicsVisualizer from "@/components/TokenomicsVisualizer";
+import VipSystemExplainer from "@/components/VipSystemExplainer";
+import GuidesSection from "@/components/GuidesSection";
+import LearnSection from "@/components/LearnSection";
+import EventsSchedule from "@/components/EventsSchedule";
+import RiskDisclosureSection from "@/components/RiskDisclosureSection";
+import AiAssistantModal from "@/components/AiAssistantModal";
+import PdfCheatSheetModal from "@/components/PdfCheatSheetModal";
+import VideoPlayerModal from "@/components/VideoPlayerModal";
+import NewsletterModal from "@/components/NewsletterModal";
+import Footer from "@/components/Footer";
+
+export default function HomePage() {
+  const { locale, setLocale } = useAppLocale();
+  const tLive = useTranslations("live");
+
+  const [aiModalOpen, setAiModalOpen] = useState(false);
+  const [aiInitialQuestion, setAiInitialQuestion] = useState("");
+  const [pdfModalOpen, setPdfModalOpen] = useState(false);
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const [videoGuideSlug, setVideoGuideSlug] = useState("getting-started");
+  const [newsletterModalOpen, setNewsletterModalOpen] = useState(false);
+
+  // Populated at runtime from the actual video source (YouTube IFrame API
+  // for YouTube videos, HTMLVideoElement.duration for local files) — never
+  // hardcoded, so the time shown always matches the real video.
+  const [videoDurations, setVideoDurations] = useState<Record<string, string>>({});
+
+  const handleDurationResolved = (guideId: string, duration: string) => {
+    setVideoDurations((prev) => (prev[guideId] === duration ? prev : { ...prev, [guideId]: duration }));
+  };
+
+  const handlePromptSelect = (promptQuery: string) => {
+    setAiInitialQuestion(promptQuery);
+    setAiModalOpen(true);
+  };
+
+  const handleOpenVideo = (slug?: string) => {
+    if (slug) setVideoGuideSlug(slug);
+    setVideoModalOpen(true);
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="min-h-screen bg-[#0A0C14] text-[#C4CBD8] flex flex-col selection:bg-[#7B4FFF] selection:text-white">
+      {/* Top Affiliate Disclaimer Banner */}
+      <AffiliateDisclaimerBanner />
+
+      {/* Navigation Bar */}
+      <Navbar
+        currentLang={locale}
+        onLanguageChange={setLocale}
+        onOpenSearch={() => {
+          setAiInitialQuestion("");
+          setAiModalOpen(true);
+        }}
+        onOpenNewsletter={() => setNewsletterModalOpen(true)}
+      />
+
+      {/* Main Content Area */}
+      <main className="flex-1">
+        {/* Hero Section */}
+        <HeroSection
+          onSelectPrompt={handlePromptSelect}
+          onOpenPdf={() => setPdfModalOpen(true)}
+          onOpenVideo={handleOpenVideo}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        {/* Two-Column Section: (1) Live CaryPact Dashboard, (2) CA ↔ USDT Calculator */}
+        <section id="live" className="py-8 sm:py-12 relative overflow-hidden bg-dot-grid-subtle">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center max-w-2xl mx-auto mb-8">
+              <span className="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#131728] border border-[#2A314D] text-[#22D3FF]">
+                {tLive("sectionBadge")}
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-2">
+                {tLive("sectionTitle")} <span className="text-brand-gradient">{tLive("sectionTitleHighlight")}</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+              {/* Column 1: Live CaryPact Dashboard */}
+              <LiveDashboardCard />
+
+              {/* Column 2: CA ↔ USDT Calculator & Staking Simulator */}
+              <ConversionCalculator />
+            </div>
+          </div>
+        </section>
+
+        {/* BOT Chain Architecture Section (5 Pillars) */}
+        <BotChainArchitecture />
+
+        {/* Tokenomics Visualizer (210M CA, 40k Emission, Halving, Burns) */}
+        <TokenomicsVisualizer />
+
+        {/* 10-Tier VIP System Explainer */}
+        <VipSystemExplainer />
+
+        {/* Step-by-Step Guides Section (7 Tutorials) */}
+        <GuidesSection
+          onOpenVideo={handleOpenVideo}
+          onOpenPdf={() => setPdfModalOpen(true)}
+          videoDurations={videoDurations}
+        />
+
+        {/* Learn Web3 & AI Computing Section */}
+        <LearnSection />
+
+        {/* Global Events, Consensus Summits & Social Channels */}
+        <EventsSchedule />
+
+        {/* Prominent Risk Disclosures & DYOR Checklist */}
+        <RiskDisclosureSection />
       </main>
+
+      {/* Footer */}
+      <Footer
+        onOpenPdf={() => setPdfModalOpen(true)}
+        onOpenNewsletter={() => setNewsletterModalOpen(true)}
+      />
+
+      {/* Interactive Modals */}
+      <AiAssistantModal
+        isOpen={aiModalOpen}
+        onClose={() => setAiModalOpen(false)}
+        initialQuestion={aiInitialQuestion}
+        currentLang={locale}
+      />
+
+      <PdfCheatSheetModal
+        isOpen={pdfModalOpen}
+        onClose={() => setPdfModalOpen(false)}
+      />
+
+      <VideoPlayerModal
+        isOpen={videoModalOpen}
+        onClose={() => setVideoModalOpen(false)}
+        guideSlug={videoGuideSlug}
+        onDurationResolved={handleDurationResolved}
+      />
+
+      <NewsletterModal
+        isOpen={newsletterModalOpen}
+        onClose={() => setNewsletterModalOpen(false)}
+      />
     </div>
   );
 }
