@@ -15,7 +15,6 @@ import {
   Flame, 
   Cpu, 
   Layers, 
-  Twitter, 
   ShieldCheck, 
   BadgeCheck,
   AlertTriangle,
