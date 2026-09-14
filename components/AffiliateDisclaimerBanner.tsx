@@ -11,22 +11,22 @@ export default function AffiliateDisclaimerBanner() {
   if (!visible) return null;
 
   return (
-    <div 
+    <div
       id="affiliate-disclosure-banner"
       className="w-full bg-[#0E1020]/95 border-b border-[#1E243B] text-[11px] sm:text-xs text-[#838E9E] py-2 px-4 relative z-40 transition-all"
     >
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-        <div className="flex items-center gap-2 flex-1">
-          <span className="flex-shrink-0 flex items-center gap-1 text-[#22D3FF] font-semibold bg-[#22D3FF]/10 px-2 py-0.5 rounded border border-[#22D3FF]/20">
+      <div className="max-w-7xl mx-auto  grid  grid-col-1 lg:grid-cols-3 w-full  justify-between gap-2">
+        <div className="flex items-center gap-2 mt-4 md:mt-0 ">
+          <span className=" flex items-center gap-1 text-[#22D3FF] font-semibold bg-[#22D3FF]/10 px-2 py-0.5 rounded border border-[#22D3FF]/20">
             <Info className="w-3.5 h-3.5" />
             <span>{tDisclaimer("badge")}</span>
           </span>
-          <p className="leading-snug text-[#C4CBD8]">
-            {tDisclaimer("text")}
-          </p>
+        </div>
+        <div className="mx-2">
+          <p className="leading-snug text-[#C4CBD8]">{tDisclaimer("text")}</p>
         </div>
 
-        <div className="flex items-center gap-3 self-end sm:self-auto flex-shrink-0">
+        <div className="flex  gap-3 items-center justify-end ">
           <a
             href="#risks"
             className="text-[#22D3FF] hover:text-[#7B4FFF] underline font-medium flex items-center gap-1 transition-colors"

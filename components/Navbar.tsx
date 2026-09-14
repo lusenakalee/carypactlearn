@@ -113,19 +113,18 @@ export default function Navbar({
           {/* Right Action Tools */}
           <div className="hidden sm:flex items-center gap-3">
             {/* Search Assistant Trigger */}
-            <button
+            {/* <button
               onClick={onOpenSearch}
               id="nav-search-btn"
               type="button"
               className="flex items-center gap-2 px-3 py-2 text-xs text-[#838E9E] bg-[#131728] hover:bg-[#1C1F2E] hover:text-white border border-[#1E243B] rounded-lg transition-colors cursor-pointer"
-              title={tNav("askAi")}
-            >
+              title={tNav("askAi")}>
               <Search className="w-3.5 h-3.5 text-[#22D3FF]" />
               <span className="hidden md:inline">{tNav("askAi")}</span>
               <kbd className="hidden md:inline-block px-1.5 py-0.5 text-[10px] bg-[#1E243B] text-[#C4CBD8] rounded border border-[#2A314D]">
                 ⌘K
               </kbd>
-            </button>
+            </button> */}
 
             {/* next-intl Functional Language Switcher */}
             <div className="relative">
@@ -187,13 +186,12 @@ export default function Navbar({
 
           {/* Mobile Menu Button */}
           <div className="flex sm:hidden items-center gap-2">
-            <button
+            {/* <button
               onClick={onOpenSearch}
               className="p-2 text-[#C4CBD8] hover:text-white bg-[#131728] rounded-lg border border-[#1E243B]"
-              aria-label="Search"
-            >
+              aria-label="Search" >
               <Search className="w-4 h-4 text-[#22D3FF]" />
-            </button>
+            </button> */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               id="mobile-menu-toggle-btn"

@@ -117,7 +117,7 @@ export default function HeroSection({
           </div>
 
           {/* Interactive AI Question / Search Bar */}
-          <div className="pt-2 max-w-2xl mx-auto">
+          {/* <div className="pt-2 max-w-2xl mx-auto">
             <form 
               onSubmit={handleSearchSubmit} 
               id="hero-ai-search-form"
@@ -144,7 +144,7 @@ export default function HeroSection({
               </button>
             </form>
 
-            {/* Quick Topic Chips */}
+           Quick Topic Chips 
             <div className="flex items-center justify-center gap-1.5 flex-wrap mt-3 text-xs">
               <span className="text-[11px] text-[#838E9E] font-medium mr-1">{tHero("searchHeading")}</span>
               {suggestedPrompts.map((p, idx) => (
@@ -157,7 +157,7 @@ export default function HeroSection({
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Quick Action Bar */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
