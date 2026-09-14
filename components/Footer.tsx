@@ -1,20 +1,17 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import CarryPactLogo from "@/components/CarryPactLogo";
-import { 
-  Cpu, 
-  ExternalLink, 
-  ShieldCheck, 
-  Heart, 
-  ArrowUp,
-  FileText,
-  Send,
-  MessageSquare,
-  Globe2
+import CaryPactLogo from "@/components/CaryPactLogo";
+import { AFFILIATE_CONFIG } from "@/config/constants";
+import {
+    ArrowUp,
+    ExternalLink,
+    FileText,
+    Globe2,
+    MessageSquare,
+    Send,
+    ShieldCheck
 } from "lucide-react";
-import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS } from "@/config/constants";
+import Link from "next/link";
 
 interface FooterProps {
   onOpenPdf: () => void;
@@ -34,7 +31,7 @@ export default function Footer({ onOpenPdf, onOpenNewsletter }: FooterProps) {
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/#home" id="footer-logo-link" className="group inline-flex items-center">
-              <CarryPactLogo
+              <CaryPactLogo
                 size="md"
                 showBadge={true}
                 badgeText="Learning Hub"

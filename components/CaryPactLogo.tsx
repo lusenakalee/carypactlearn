@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 
-interface CarryPactLogoProps {
+interface CaryPactLogoProps {
   size?: "sm" | "md" | "lg" | "xl";
   variant?: "full" | "mark-only";
   showBadge?: boolean;
@@ -13,7 +12,7 @@ interface CarryPactLogoProps {
   idPrefix?: string;
 }
 
-export function CarryPactMark({
+export function CaryPactMark({
   size = 36,
   className = "",
   id = "cp-mark",
@@ -158,7 +157,7 @@ export function CarryPactMark({
   );
 }
 
-export default function CarryPactLogo({
+export default function CaryPactLogo({
   size = "md",
   variant = "full",
   showBadge = false,
@@ -166,7 +165,7 @@ export default function CarryPactLogo({
   subtitle,
   className = "",
   idPrefix = "cp-nav",
-}: CarryPactLogoProps) {
+}: CaryPactLogoProps) {
   const markDimensions = {
     sm: 28,
     md: 38,
@@ -183,8 +182,8 @@ export default function CarryPactLogo({
 
   return (
     <div className={`flex items-center gap-3 ${className}`}>
-      {/* CarryPact Official Emblem */}
-      <Image src='/images/cpl-logo.svg' alt="CarryPact Logo" width="124" height="124" />
+      {/* CaryPact Official Emblem */}
+      <Image src='/images/cpl-logo.svg' alt="CaryPact Logo" width="124" height="124" />
 
       {/* Wordmark & Optional Badge/Subtitle */}
       {variant === "full" && (

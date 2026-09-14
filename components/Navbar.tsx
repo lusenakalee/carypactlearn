@@ -1,26 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
+import CaryPactLogo from "@/components/CaryPactLogo";
 import { useAppLocale } from "@/components/LocaleProvider";
-import { LANGUAGES } from "@/lib/i18n";
 import { AFFILIATE_CONFIG } from "@/config/constants";
-import CarryPactLogo from "@/components/CarryPactLogo";
-import { 
-  Cpu, 
-  Search, 
-  ExternalLink, 
-  Menu, 
-  X, 
-  Globe, 
-  Sparkles,
-  ShieldAlert,
-  BookOpen,
-  Activity,
-  Layers,
-  Check
+import { LANGUAGES } from "@/lib/i18n";
+import {
+    Activity,
+    BookOpen,
+    Check,
+    Cpu,
+    ExternalLink,
+    Globe,
+    Layers,
+    Menu,
+    ShieldAlert,
+    Sparkles,
+    X
 } from "lucide-react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useState } from "react";
 
 interface NavbarProps {
   currentLang?: string;
@@ -71,7 +70,7 @@ export default function Navbar({
               id="nav-logo-link"
               className="flex items-center group"
             >
-              <CarryPactLogo 
+              <CaryPactLogo 
                 size="md"
                 showBadge={true}
                 badgeText="Hub"

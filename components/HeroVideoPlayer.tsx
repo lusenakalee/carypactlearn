@@ -1,18 +1,16 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
-import { 
-  Play, 
-  Pause, 
-  Volume2, 
-  VolumeX, 
-  Maximize2, 
-  RotateCcw,
-  Sparkles,
-  Layers,
-  Cpu
+import CaryPactLogo from "@/components/CaryPactLogo";
+import {
+    Cpu,
+    Maximize2,
+    Pause,
+    Play,
+    RotateCcw,
+    Volume2,
+    VolumeX
 } from "lucide-react";
-import CarryPactLogo from "@/components/CarryPactLogo";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function HeroVideoPlayer() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -131,7 +129,7 @@ export default function HeroVideoPlayer() {
         <div className="flex items-center gap-2.5">
           <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
           <div className="flex items-center gap-1.5">
-            <CarryPactLogo size="sm" showBadge={false} />
+            <CaryPactLogo size="sm" showBadge={false} />
             <span className="hidden sm:inline-block text-[#5B6579]">•</span>
             <span className="hidden sm:inline-block text-[#C4CBD8] font-medium text-[11px]">
               Protocol Reveal Reel
@@ -234,7 +232,7 @@ export default function HeroVideoPlayer() {
 
             <div className="flex items-center gap-2">
               <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-[#7B4FFF]/30 text-[#22D3FF] border border-[#7B4FFF]/50 hidden sm:inline-block">
-                CarryPact Core
+                CaryPact Core
               </span>
               <button
                 onClick={toggleFullscreen}
