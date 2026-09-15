@@ -53,20 +53,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-[#0A0C14] text-[#C4CBD8] flex flex-col selection:bg-[#7B4FFF] selection:text-white">
-      {/* Top Affiliate Disclaimer Banner */}
-      <AffiliateDisclaimerBanner />
-
-      {/* Navigation Bar */}
-      <Navbar
-        currentLang={locale}
-        onLanguageChange={setLocale}
-        onOpenSearch={() => {
-          setAiInitialQuestion("");
-          setAiModalOpen(true);
-        }}
-        onOpenNewsletter={() => setNewsletterModalOpen(true)}
-      />
-
+  
       {/* Main Content Area */}
       <main className="flex-1">
         {/* Hero Section */}
@@ -107,28 +94,14 @@ export default function HomePage() {
         {/* 10-Tier VIP System Explainer */}
         <VipSystemExplainer />
 
-        {/* Step-by-Step Guides Section (7 Tutorials) */}
-        <GuidesSection
-          onOpenVideo={handleOpenVideo}
-          onOpenPdf={() => setPdfModalOpen(true)}
-          videoDurations={videoDurations}
-        />
 
-        {/* Learn Web3 & AI Computing Section */}
-        <LearnSection />
-
-        {/* Global Events, Consensus Summits & Social Channels */}
-        <EventsSchedule />
+      
 
         {/* Prominent Risk Disclosures & DYOR Checklist */}
         <RiskDisclosureSection />
       </main>
 
-      {/* Footer */}
-      <Footer
-        onOpenPdf={() => setPdfModalOpen(true)}
-        onOpenNewsletter={() => setNewsletterModalOpen(true)}
-      />
+    
 
       {/* Interactive Modals */}
       <AiAssistantModal

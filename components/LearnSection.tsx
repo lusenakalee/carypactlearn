@@ -1,23 +1,27 @@
 "use client";
 
-import React, { useState } from "react";
-import { 
-  Layers, 
-  Cpu, 
-  Coins, 
-  ShieldCheck, 
-  TrendingUp, 
-  BookOpen, 
-  Check, 
-  ArrowRight,
-  Sparkles,
-  ExternalLink
-} from "lucide-react";
-import { LEARN_MODULES } from "@/config/content";
 import { AFFILIATE_CONFIG } from "@/config/constants";
+import { LEARN_MODULES } from "@/config/content";
+import {
+  BookOpen,
+  Coins,
+  Cpu,
+  ExternalLink,
+  Layers,
+  ShieldCheck,
+  TrendingUp
+} from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export default function LearnSection() {
   const [activeModuleId, setActiveModuleId] = useState<string>("ai-computing");
+  const activeModuleRef = useRef(null);
+
+  useEffect(() => {
+    if (activeModuleRef.current) {
+      activeModuleRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [activeModuleId]);
 
   const activeModule = LEARN_MODULES.find((m) => m.id === activeModuleId) || LEARN_MODULES[0];
 
@@ -88,7 +92,7 @@ export default function LearnSection() {
         </div>
 
         {/* Active Module Reading Card */}
-        <div className="bg-[#0E1020] border border-[#1E243B] rounded-3xl p-6 sm:p-10 shadow-2xl space-y-8">
+        <div ref={activeModuleRef} className="bg-[#0E1020] border border-[#1E243B] rounded-3xl p-6 sm:p-10 shadow-2xl space-y-8">
           <div className="border-b border-[#1E243B] pb-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1C1F2E] text-[10px] font-bold uppercase tracking-wider text-[#A855F7] mb-2">
               <span>{activeModule.category}</span>

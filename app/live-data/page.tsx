@@ -98,16 +98,7 @@ export default function LiveDataPage() {
 
   return (
     <div className="min-h-screen bg-[#0A0C14] text-[#C4CBD8] flex flex-col selection:bg-[#7B4FFF] selection:text-white">
-      {/* Top Navigation */}
-      <Navbar
-        currentLang="en"
-        onLanguageChange={() => {}}
-        onOpenSearch={() => {
-          setAiInitialQuestion("Explain how 2.46784 BOT = 1 CA parity works");
-          setAiModalOpen(true);
-        }}
-        onOpenNewsletter={() => setNewsletterModalOpen(true)}
-      />
+     
 
       <main className="flex-1 py-8 sm:py-12 relative overflow-hidden bg-dot-grid-subtle">
         {/* Background Ambient Glows */}
@@ -389,11 +380,7 @@ export default function LiveDataPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <Footer
-        onOpenPdf={() => setPdfModalOpen(true)}
-        onOpenNewsletter={() => setNewsletterModalOpen(true)}
-      />
+    
 
       {/* Interactive Modals */}
       <AiAssistantModal

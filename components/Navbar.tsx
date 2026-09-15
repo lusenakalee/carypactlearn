@@ -15,6 +15,7 @@ import {
     Menu,
     ShieldAlert,
     Sparkles,
+    Calendars,
     X
 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -52,8 +53,9 @@ export default function Navbar({
   const navLinks = [
     { name: tNav("home"), href: "/#home", icon: Cpu, id: "home" },
     { name: tNav("liveData"), href: "/live-data", icon: Activity, badge: tNav("newBadge"), id: "live" },
-    { name: tNav("guides"), href: "/#guides", icon: BookOpen, id: "guides" },
-    { name: tNav("learn"), href: "/#learn", icon: Layers, id: "learn" },
+    { name: tNav("guides"), href: "/guides", icon: BookOpen, id: "guides" },
+    { name: tNav("learn"), href: "/learn", icon: Layers, id: "learn" },
+    { name: tNav("events"), href: "/events", icon: Calendars, id: "events" },
     { name: tNav("risks"), href: "/#risks", icon: ShieldAlert, highlight: true, id: "risks" },
   ];
 

@@ -1,25 +1,24 @@
 "use client";
 
-import React, { useState } from "react";
-import { 
-  BookOpen, 
-  CheckCircle2, 
-  Play, 
-  Download, 
-  AlertTriangle, 
-  HelpCircle, 
-  Sparkles, 
-  ArrowRight,
-  ExternalLink,
-  Wallet,
-  Cpu,
-  Coins,
-  Lock,
-  ArrowLeftRight,
-  ShieldCheck
-} from "lucide-react";
-import { GUIDES_DATA, GuideArticle } from "@/config/content";
 import { AFFILIATE_CONFIG } from "@/config/constants";
+import { GUIDES_DATA, GuideArticle } from "@/config/content";
+import {
+  AlertTriangle,
+  ArrowLeftRight,
+  ArrowRight,
+  BookOpen,
+  CheckCircle2,
+  Coins,
+  Cpu,
+  Download,
+  ExternalLink,
+  Lock,
+  Play,
+  ShieldCheck,
+  Sparkles,
+  Wallet
+} from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 interface GuidesSectionProps {
   onOpenVideo: (slug: string) => void;
@@ -35,6 +34,13 @@ interface GuidesSectionProps {
 export default function GuidesSection({ onOpenVideo, onOpenPdf, videoDurations = {} }: GuidesSectionProps) {
   const [selectedGuideId, setSelectedGuideId] = useState<string>("getting-started");
   const [completedSteps, setCompletedSteps] = useState<Record<string, boolean>>({});
+  const guideReaderRef = useRef(null);
+
+  useEffect(() => {
+    if (guideReaderRef.current) {
+      guideReaderRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [selectedGuideId]);
 
   const activeGuide: GuideArticle = GUIDES_DATA.find((g) => g.id === selectedGuideId) || GUIDES_DATA[0];
 
@@ -130,7 +136,7 @@ export default function GuidesSection({ onOpenVideo, onOpenPdf, videoDurations =
           </div>
 
           {/* Right Active Guide Reader */}
-          <div className="lg:col-span-8 bg-[#0A0C14] border border-[#1E243B] rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+          <div ref={guideReaderRef} className="lg:col-span-8 bg-[#0A0C14] border border-[#1E243B] rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
             {/* Guide Header Banner */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[#1E243B]">
               <div>
@@ -230,6 +236,21 @@ export default function GuidesSection({ onOpenVideo, onOpenPdf, videoDurations =
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Next Guide Button */}
+            <div className="pt-4">
+              <button
+                onClick={() => {
+                  const currentIndex = GUIDES_DATA.findIndex(g => g.id === selectedGuideId);
+                  const nextIndex = (currentIndex + 1) % GUIDES_DATA.length;
+                  setSelectedGuideId(GUIDES_DATA[nextIndex].id);
+                }}
+                className="w-full py-3 px-4 rounded-xl bg-[#131728] hover:bg-[#1C1F2E] text-[#C4CBD8] hover:text-white text-xs font-semibold border border-[#2A314D] flex items-center justify-center gap-2 transition-colors cursor-pointer"
+              >
+                <span>Next Guide</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
             </div>
 
             {/* Action Footer */}
