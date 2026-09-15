@@ -53,17 +53,20 @@ export const STAKING_TERMS = [
 ];
 
 export const VIP_TIERS = [
-  { tier: "V1", personalUSDT: 300, legUSDT: 3000, rewardPercent: "5%", daoShare: false, perk: "Direct referral hashrate reward bonus" },
-  { tier: "V2", personalUSDT: 300, legUSDT: 10000, rewardPercent: "8%", daoShare: false, perk: "Multi-level downline computing bonus" },
-  { tier: "V3", personalUSDT: 300, legUSDT: 30000, rewardPercent: "12%", daoShare: false, perk: "Ecosystem node revenue acceleration" },
-  { tier: "V4", personalUSDT: 300, legUSDT: 100000, rewardPercent: "15%", daoShare: false, perk: "Priority bridge liquidity pool fee discount" },
-  { tier: "V5", personalUSDT: 300, legUSDT: 300000, rewardPercent: "18%", daoShare: false, perk: "Dedicated regional studio manager subsidy" },
-  { tier: "V6", personalUSDT: 300, legUSDT: 1000000, rewardPercent: "21%", daoShare: false, perk: "Global conference VIP pass & governance badge" },
-  { tier: "V7", personalUSDT: 300, legUSDT: 3000000, rewardPercent: "24%", daoShare: true, perk: "Shares 3% DAO daily pool (1,200 CA/day)" },
-  { tier: "V8", personalUSDT: 300, legUSDT: 10000000, rewardPercent: "27%", daoShare: true, perk: "Weighted DAO dividend & node validator status" },
-  { tier: "V9", personalUSDT: 300, legUSDT: 30000000, rewardPercent: "30%", daoShare: true, perk: "Global operation council voting seat" },
-  { tier: "V10", personalUSDT: 300, legUSDT: 100000000, rewardPercent: "33%", daoShare: true, perk: "Master consensus partner & protocol foundation seat" },
+  { tier: "V1", personalUSDT: 500, legUSDT: 10000, dailyIncomeMin: 15, dailyIncomeMax: 30, monthlyIncomeMin: 450, monthlyIncomeMax: 900 },
+  { tier: "V2", personalUSDT: 1000, legUSDT: 30000, dailyIncomeMin: 40, dailyIncomeMax: 70, monthlyIncomeMin: 1200, monthlyIncomeMax: 2100 },
+  { tier: "V3", personalUSDT: 1500, legUSDT: 80000, dailyIncomeMin: 100, dailyIncomeMax: 150, monthlyIncomeMin: 3000, monthlyIncomeMax: 4500 },
+  { tier: "V4", personalUSDT: 2000, legUSDT: 200000, dailyIncomeMin: 200, dailyIncomeMax: 350, monthlyIncomeMin: 6000, monthlyIncomeMax: 10500 },
+  { tier: "V5", personalUSDT: 3000, legUSDT: 500000, dailyIncomeMin: 500, dailyIncomeMax: 700, monthlyIncomeMin: 15000, monthlyIncomeMax: 21000 },
+  { tier: "V6", personalUSDT: 4000, legUSDT: 1600000, dailyIncomeMin: 1000, dailyIncomeMax: 2000, monthlyIncomeMin: 30000, monthlyIncomeMax: 60000 },
+  { tier: "V7", personalUSDT: 5000, legUSDT: 5000000, dailyIncomeMin: 3000, dailyIncomeMax: 5000, monthlyIncomeMin: 90000, monthlyIncomeMax: 150000 },
+  { tier: "V8", personalUSDT: 10000, legUSDT: 10000000, dailyIncomeMin: 10000, dailyIncomeMax: 15000, monthlyIncomeMin: 300000, monthlyIncomeMax: 450000 },
+  { tier: "V9", personalUSDT: 15000, legUSDT: 20000000, dailyIncomeMin: 25000, dailyIncomeMax: 30000, monthlyIncomeMin: 750000, monthlyIncomeMax: 900000 },
+  { tier: "V10", personalUSDT: 20000, legUSDT: 40000000, dailyIncomeMin: 50000, dailyIncomeMax: 100000, monthlyIncomeMin: 1500000, monthlyIncomeMax: 2000000 },
 ];
+
+export const VIP_INCOME_DISCLAIMER =
+  "Income is flexible, not fixed. Returns depend on the Hashrate Mining Pool, Community Performance, Business Performance, Mining Efficiency, and market conditions.";
 
 export const BOT_CHAIN_INFRASTRUCTURE = [
   {

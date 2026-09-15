@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { 
   Cpu, 
   Search, 
@@ -20,8 +20,14 @@ import { BOT_CHAIN_INFRASTRUCTURE, ECOSYSTEM_METRICS, AFFILIATE_CONFIG } from "@
 
 export default function BotChainArchitecture() {
   const [activeTab, setActiveTab] = useState("mainnet");
+  const detailCardRef = useRef<HTMLDivElement | null>(null);
 
   const activeInfra = BOT_CHAIN_INFRASTRUCTURE.find((item) => item.id === activeTab) || BOT_CHAIN_INFRASTRUCTURE[0];
+
+  const handleTabSelect = (id: string) => {
+    setActiveTab(id);
+    detailCardRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const getIcon = (name: string) => {
     switch (name) {
@@ -63,7 +69,7 @@ export default function BotChainArchitecture() {
             return (
               <button
                 key={item.id}
-                onClick={() => setActiveTab(item.id)}
+                onClick={() => handleTabSelect(item.id)}
                 id={`bot-chain-tab-${item.id}`}
                 className={`p-3.5 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between ${
                   isSelected
@@ -91,7 +97,7 @@ export default function BotChainArchitecture() {
         </div>
 
         {/* Active Infrastructure Detail Card */}
-        <div className="bg-[#0E1020] border border-[#1E243B] rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+        <div ref={detailCardRef} className="bg-[#0E1020] border border-[#1E243B] rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Description Column */}
             <div className="lg:col-span-7 space-y-4">
