@@ -22,8 +22,7 @@ import {
   Copy,
   Check
 } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
 import LiveChart from "@/components/LiveChart";
 import LiveMultiConverter from "@/components/LiveMultiConverter";
 import LiveOrderBook from "@/components/LiveOrderBook";
@@ -33,6 +32,7 @@ import AiAssistantModal from "@/components/AiAssistantModal";
 import PdfCheatSheetModal from "@/components/PdfCheatSheetModal";
 import NewsletterModal from "@/components/NewsletterModal";
 import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS } from "@/config/constants";
+import LiveMetricsCards from "@/components/LiveMetricsCards";
 
 export default function LiveDataPage() {
   const [data, setData] = useState<any>(null);
@@ -187,88 +187,8 @@ export default function LiveDataPage() {
           </div>
 
           {/* Key Metrics 5-Card Matrix */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {/* Metric 1: Core Parity Rule */}
-            <div className="bg-[#0E1020] border border-[#1E243B] hover:border-[#22D3FF]/50 rounded-2xl p-4.5 space-y-1 transition-all">
-              <div className="flex items-center justify-between text-[11px] font-semibold text-[#838E9E]">
-                <span>On-Chain Parity</span>
-                <span className="text-[#22D3FF] font-bold">Fixed Parity</span>
-              </div>
-              <div className="text-lg sm:text-xl font-black text-white font-mono">
-                {ratio} BOT = 1 CA
-              </div>
-              <div className="text-[10px] text-[#838E9E]">
-                {(1 / ratio).toFixed(6)} CA = 1 BOT
-              </div>
-            </div>
-
-            {/* Metric 2: CA Price in USD */}
-            <div className="bg-[#0E1020] border border-[#1E243B] hover:border-[#22D3FF]/50 rounded-2xl p-4.5 space-y-1 transition-all">
-              <div className="flex items-center justify-between text-[11px] font-semibold text-[#838E9E]">
-                <span>CA Price (USDT)</span>
-                <span className="text-emerald-400 font-bold flex items-center gap-0.5">
-                  <TrendingUp className="w-3 h-3" />
-                  <span>+{bot24h}%</span>
-                </span>
-              </div>
-              <div className="text-lg sm:text-xl font-black text-[#22D3FF] font-mono">
-                ${caPrice.toFixed(4)}
-              </div>
-              <div className="text-[10px] text-[#838E9E]">
-                Implied from BOT × {ratio}
-              </div>
-            </div>
-
-            {/* Metric 3: BOT Chain CMC Price */}
-            <div className="bg-[#0E1020] border border-[#1E243B] hover:border-[#A855F7]/50 rounded-2xl p-4.5 space-y-1 transition-all">
-              <div className="flex items-center justify-between text-[11px] font-semibold text-[#838E9E]">
-                <span>BOT Price (CMC)</span>
-                <a 
-                  href="https://coinmarketcap.com/currencies/bot-chain/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-[#A855F7] hover:underline flex items-center gap-0.5 text-[10px]"
-                >
-                  <span>CMC</span>
-                  <ExternalLink className="w-2.5 h-2.5" />
-                </a>
-              </div>
-              <div className="text-lg sm:text-xl font-black text-[#A855F7] font-mono">
-                ${botPrice.toFixed(4)}
-              </div>
-              <div className="text-[10px] text-[#838E9E]">
-                24h Vol: ${(volume24h / 1000000).toFixed(2)}M
-              </div>
-            </div>
-
-            {/* Metric 4: Daily 40k CA Release */}
-            <div className="bg-[#0E1020] border border-[#1E243B] hover:border-amber-500/50 rounded-2xl p-4.5 space-y-1 transition-all">
-              <div className="flex items-center justify-between text-[11px] font-semibold text-[#838E9E]">
-                <span>Daily CA Emission</span>
-                <span className="text-amber-300 font-bold">22-Yr Schedule</span>
-              </div>
-              <div className="text-lg sm:text-xl font-black text-amber-300 font-mono">
-                40,000 CA
-              </div>
-              <div className="text-[10px] text-[#838E9E]">
-                ≈ ${(40000 * caPrice).toLocaleString(undefined, { maximumFractionDigits: 0 })} / day
-              </div>
-            </div>
-
-            {/* Metric 5: Max Cap & Supply */}
-            <div className="bg-[#0E1020] border border-[#1E243B] hover:border-emerald-500/50 rounded-2xl p-4.5 space-y-1 transition-all col-span-2 sm:col-span-1">
-              <div className="flex items-center justify-between text-[11px] font-semibold text-[#838E9E]">
-                <span>Total CA Supply</span>
-                <span className="text-emerald-400 font-bold">Hard Cap</span>
-              </div>
-              <div className="text-lg sm:text-xl font-black text-emerald-400 font-mono">
-                210,000,000
-              </div>
-              <div className="text-[10px] text-[#838E9E]">
-                -10% every 2 years halving
-              </div>
-            </div>
-          </div>
+          <LiveMetricsCards/>
+         
 
           {/* BDEX On-Chain Firecrawl Scraped Pool Metrics Card */}
           <DexPoolCard />
