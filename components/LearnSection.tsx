@@ -15,7 +15,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function LearnSection() {
   const [activeModuleId, setActiveModuleId] = useState<string>("ai-computing");
-  const activeModuleRef = useRef(null);
+  const activeModuleRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (activeModuleRef.current) {

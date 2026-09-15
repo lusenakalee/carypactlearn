@@ -34,7 +34,7 @@ interface GuidesSectionProps {
 export default function GuidesSection({ onOpenVideo, onOpenPdf, videoDurations = {} }: GuidesSectionProps) {
   const [selectedGuideId, setSelectedGuideId] = useState<string>("getting-started");
   const [completedSteps, setCompletedSteps] = useState<Record<string, boolean>>({});
-  const guideReaderRef = useRef(null);
+  const guideReaderRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (guideReaderRef.current) {
