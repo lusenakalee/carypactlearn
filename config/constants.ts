@@ -12,6 +12,18 @@ export const AFFILIATE_CONFIG = {
   DISCLOSURE_TEXT: "Independent educational resource. We may receive referral commissions if you register through links on this site. Crypto assets carry substantial financial risk.",
 };
 
+export const SUPPORT_CONFIG = {
+  TELEGRAM_URL: "https://t.me/CaryPactOfficial",
+  TELEGRAM_HANDLE: "@CaryPactOfficial",
+  // Placeholder WhatsApp phone number (update anytime to your official number)
+  WHATSAPP_PHONE: "+1234567890",
+  WHATSAPP_DISPLAY_PHONE: "+1 (234) 567-890",
+  WHATSAPP_DEFAULT_MESSAGE: "Hello! I have a question about the CarryPact protocol and Learning Hub.",
+  SUPPORT_HOURS: "24/7 Community Support",
+  AVG_RESPONSE_TIME: "Usually responds in a few minutes",
+};
+
+
 export const ECOSYSTEM_METRICS = {
   CA_BASE_PRICE: 2.7415,
   BOT_BASE_PRICE: 1.1109,

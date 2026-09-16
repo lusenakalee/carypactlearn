@@ -6,6 +6,7 @@ import LocaleProvider from '@/components/LocaleProvider';
 import { Analytics } from "@vercel/analytics/next"
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import FloatingSupportDock from "@/components/FloatingSupportDock";
 
 
 
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <SiteHeader/>  
         {children}
         <SiteFooter/>
+        <FloatingSupportDock/>
         </LocaleProvider>
         <Analytics/>
         </body>
