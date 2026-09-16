@@ -13,7 +13,7 @@
     "newBadge": "신규"
   },
   "common": {
-    "liveParity": "2.46784 BOT = 1 CA",
+    "liveParity": "1.279615 BOT = 1 CA",
     "inverseParity": "0.405213 CA = 1 BOT",
     "launchCaryPact": "CaryPact 앱 실행",
     "register": "CaryPact 등록하기",
@@ -42,7 +42,7 @@
     "ctaLiveMarket": "실시간 시세 및 패리티",
     "searchHeading": "궁금한 점을 질문하거나 추천 질문을 확인하세요:",
     "prompt1": "해시레이트 단위의 영구 구매 규칙이란 무엇인가요?",
-    "prompt2": "2.46784 BOT = 1 CA 동적 패리티는 어떻게 작동하나요?",
+    "prompt2": "1.279615 BOT = 1 CA 동적 패리티는 어떻게 작동하나요?",
     "prompt3": "BDEX 5% 슬리피지 및 토큰 소각 메커니즘 설명",
     "prompt4": "10단계 VIP 보상 티어는 어떻게 구성되나요?"
   },
@@ -72,7 +72,7 @@
   },
   "calculator": {
     "title": "CA ↔ USDT 전환 및 수익률 시뮬레이터",
-    "subtitle": "2.46784 BOT = 1 CA 프로토콜 표준 기반 실시간 환산",
+    "subtitle": "1.279615 BOT = 1 CA 프로토콜 표준 기반 실시간 환산",
     "tabSwap": "즉시 패리티 스왑",
     "tabStaking": "PoS 스테이킹 시뮬레이터",
     "youConvert": "전환 수량",

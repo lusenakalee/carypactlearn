@@ -13,7 +13,7 @@
     "newBadge": "新着"
   },
   "common": {
-    "liveParity": "2.46784 BOT = 1 CA",
+    "liveParity": "1.279615 BOT = 1 CA",
     "inverseParity": "0.405213 CA = 1 BOT",
     "launchCaryPact": "CaryPact アプリを開く",
     "register": "CaryPact に登録",
@@ -42,7 +42,7 @@
     "ctaLiveMarket": "リアルタイム市場とパリティ",
     "searchHeading": "質問を入力するか、人気の質問を選択してください：",
     "prompt1": "ハッシュレート単位の永続購入ルールとは何ですか？",
-    "prompt2": "2.46784 BOT = 1 CA の動的パリティはどのように機能しますか？",
+    "prompt2": "1.279615 BOT = 1 CA の動的パリティはどのように機能しますか？",
     "prompt3": "BDEX の 5% スリッページとトークンバーンについて説明してください",
     "prompt4": "10段階の VIP 報酬ティアとは何ですか？"
   },
@@ -72,7 +72,7 @@
   },
   "calculator": {
     "title": "CA ↔ USDT 換算＆利回りシミュレーター",
-    "subtitle": "公式プロトコル基準 2.46784 BOT = 1 CA に基づくリアルタイム計算",
+    "subtitle": "公式プロトコル基準 1.279615 BOT = 1 CA に基づくリアルタイム計算",
     "tabSwap": "即時パリティスワップ",
     "tabStaking": "PoS ステーキングシミュレーター",
     "youConvert": "換算数量",

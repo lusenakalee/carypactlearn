@@ -121,8 +121,8 @@ export async function GET(req: NextRequest) {
       : 1.01420;
 
     // Derived full asset dynamic parity combining baseline protocol anchor and pool liquidity weight
-    const protocolParityRatio = 2.46784;
-    const realTimeEffectiveRatio = 2.46784;
+    const protocolParityRatio = 1.279615;
+    const realTimeEffectiveRatio = 1.279615;
     const botToCaRatio = 0.405213;
 
     const responsePayload = {
@@ -156,7 +156,7 @@ export async function GET(req: NextRequest) {
         poolRatio: livePoolRatio,
         effectiveParityRatio: realTimeEffectiveRatio,
         botToCaRatio: botToCaRatio,
-        poolFormula: `2.46784 BOT = 1 CA | 0.405213 CA = 1 BOT`,
+        poolFormula: `1.279615 BOT = 1 CA | 0.405213 CA = 1 BOT`,
       },
       updatedAt: new Date().toISOString(),
     };

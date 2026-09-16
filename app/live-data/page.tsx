@@ -1,38 +1,28 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import { 
-  Activity, 
-  Coins, 
-  TrendingUp, 
-  TrendingDown, 
-  RefreshCw, 
-  ArrowLeft, 
-  ExternalLink, 
-  Sparkles, 
-  CheckCircle2, 
-  Flame, 
-  Cpu, 
-  Layers, 
-  ShieldCheck, 
-  BadgeCheck,
-  AlertTriangle,
-  Globe2,
+import {
+  Activity,
+  ArrowLeft,
+  Check,
+  CheckCircle2,
   Copy,
-  Check
+  ExternalLink,
+  RefreshCw,
+  ShieldCheck
 } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
+import AiAssistantModal from "@/components/AiAssistantModal";
+import DexPoolCard from "@/components/DexPoolCard";
 import LiveChart from "@/components/LiveChart";
+import LiveMetricsCards from "@/components/LiveMetricsCards";
 import LiveMultiConverter from "@/components/LiveMultiConverter";
 import LiveOrderBook from "@/components/LiveOrderBook";
-import TwitterLiveFeed from "@/components/TwitterLiveFeed";
-import DexPoolCard from "@/components/DexPoolCard";
-import AiAssistantModal from "@/components/AiAssistantModal";
-import PdfCheatSheetModal from "@/components/PdfCheatSheetModal";
 import NewsletterModal from "@/components/NewsletterModal";
-import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS } from "@/config/constants";
-import LiveMetricsCards from "@/components/LiveMetricsCards";
+import PdfCheatSheetModal from "@/components/PdfCheatSheetModal";
+import TwitterLiveFeed from "@/components/TwitterLiveFeed";
+import { AFFILIATE_CONFIG } from "@/config/constants";
 
 export default function LiveDataPage() {
   const [data, setData] = useState<any>(null);
@@ -84,8 +74,8 @@ export default function LiveDataPage() {
   }, []);
 
   const botPrice = data?.bot?.priceUSD || 1.1109;
-  const caPrice = data?.ca?.priceUSD || Number((botPrice * 2.46784).toFixed(4));
-  const ratio = data?.ratio?.caToBot || 2.46784;
+  const caPrice = data?.ca?.priceUSD || Number((botPrice * 1.279615).toFixed(4));
+  const ratio = data?.ratio?.caToBot || 1.279615;
   const bot24h = data?.bot?.price24hChange || 4.28;
   const volume24h = data?.bot?.volume24hUSD || 14250000;
   const isCmcLive = data?.isLiveFromCMC ?? true;
@@ -149,7 +139,7 @@ export default function LiveDataPage() {
                 CaryPact & BOT Chain <span className="text-brand-gradient">Live Market Feed</span>
               </h1>
               <p className="text-xs sm:text-sm text-[#C4CBD8] leading-relaxed">
-                Live cryptocurrency quotes, on-chain parity tracking (<strong>1 CA = 27.00522 BOT</strong>), BDEX order book depth, and official Twitter/X broadcasts from{" "}
+                Live cryptocurrency quotes, on-chain parity tracking (<strong>1 CA = 1.279615 BOT</strong>), BDEX order book depth, and official Twitter/X broadcasts from{" "}
                 <a 
                   href="https://x.com/CaryPact" 
                   target="_blank" 
@@ -245,7 +235,7 @@ export default function LiveDataPage() {
                 </div>
 
                 <p className="text-xs text-[#C4CBD8] leading-relaxed">
-                  Price tracking and volume metrics for BOT Chain are directly verified via CoinMarketCap Pro. CaryPact computing asset (CA) operates on the fixed algorithmic conversion standard of <strong>1 CA = 27.00522 BOT</strong>.
+                  Price tracking and volume metrics for BOT Chain are directly verified via CoinMarketCap Pro. CaryPact computing asset (CA) operates on the fixed algorithmic conversion standard of <strong>1 CA = 1.279615 BOT</strong>.
                 </p>
 
                 <div className="bg-[#131728] p-3 rounded-2xl border border-[#1E243B] space-y-2 text-xs">

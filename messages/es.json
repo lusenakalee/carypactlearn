@@ -13,7 +13,7 @@
     "newBadge": "NUEVO"
   },
   "common": {
-    "liveParity": "2.46784 BOT = 1 CA",
+    "liveParity": "1.279615 BOT = 1 CA",
     "inverseParity": "0.405213 CA = 1 BOT",
     "launchCaryPact": "Abrir App CaryPact",
     "register": "Registrarse en CaryPact",
@@ -42,7 +42,7 @@
     "ctaLiveMarket": "Mercado y Paridad en Vivo",
     "searchHeading": "Haz una pregunta o elige una opción popular:",
     "prompt1": "¿Cuál es la regla de permanencia de las Unidades de Hashrate?",
-    "prompt2": "¿Cómo funciona la paridad dinámica 2.46784 BOT = 1 CA?",
+    "prompt2": "¿Cómo funciona la paridad dinámica 1.279615 BOT = 1 CA?",
     "prompt3": "Explicar el 5% de slippage en BDEX y la quema de tokens",
     "prompt4": "¿Cuáles son los 10 niveles VIP de recompensas?"
   },
@@ -72,7 +72,7 @@
   },
   "calculator": {
     "title": "Calculadora de Conversión y Rendimiento CA ↔ USDT",
-    "subtitle": "Conversión en tiempo real basada en el estándar 2.46784 BOT = 1 CA",
+    "subtitle": "Conversión en tiempo real basada en el estándar 1.279615 BOT = 1 CA",
     "tabSwap": "Swap Instantáneo por Paridad",
     "tabStaking": "Simulador de Staking PoS",
     "youConvert": "Cantidad a Convertir",

@@ -1,20 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
-import { 
-  ArrowRightLeft, 
-  Coins, 
-  Cpu, 
-  Flame, 
-  Sparkles, 
-  HelpCircle, 
-  ExternalLink,
-  ShieldCheck,
-  CheckCircle2,
-  Copy,
-  Check
-} from "lucide-react";
 import { AFFILIATE_CONFIG } from "@/config/constants";
+import {
+    ArrowRightLeft,
+    Check,
+    Coins,
+    Copy,
+    ExternalLink,
+    Flame
+} from "lucide-react";
+import { useState } from "react";
 
 interface LiveMultiConverterProps {
   botPriceUSD?: number;
@@ -25,7 +20,7 @@ interface LiveMultiConverterProps {
 export default function LiveMultiConverter({
   botPriceUSD = 1.1109,
   caPriceUSD = 2.7415,
-  ratio = 2.46784
+  ratio = 1.279615
 }: LiveMultiConverterProps) {
   const [amount, setAmount] = useState<number>(100);
   const [sourceAsset, setSourceAsset] = useState<"CA" | "BOT" | "USDT">("CA");
@@ -34,10 +29,10 @@ export default function LiveMultiConverter({
   const [copied, setCopied] = useState<boolean>(false);
 
   // Conversion calculations
-  // 1 CA = 2.46784 BOT
+  // 1 CA = 1.279615 BOT
   // 1 BOT = 0.405213 CA
   // BOT in USD = botPriceUSD
-  // CA in USD = botPriceUSD * 2.46784
+  // CA in USD = botPriceUSD * 1.279615
   const computedCaPrice = caPriceUSD || (botPriceUSD * ratio);
 
   let convertedValue = 0;
@@ -47,7 +42,7 @@ export default function LiveMultiConverter({
   let nodeShare = 0;
 
   if (sourceAsset === "CA" && targetAsset === "BOT") {
-    // 1 CA -> 2.46784 BOT
+    // 1 CA -> 1.279615 BOT
     grossValue = amount * ratio;
     slippageFee = includeSlippage ? grossValue * 0.05 : 0;
     burnShare = grossValue * 0.018;
@@ -110,7 +105,7 @@ export default function LiveMultiConverter({
           </h3>
         </div>
 
-        {/* 1 CA = 27.00522 BOT Badge */}
+        {/* 1 CA = 1.279615 BOT Badge */}
         <div className="bg-[#131728] border border-[#2A314D] px-3.5 py-1.5 rounded-xl flex items-center gap-2 text-xs">
           <span className="text-[#838E9E]">On-Chain Parity:</span>
           <span className="text-white font-bold font-mono">1 CA = {ratio} BOT</span>

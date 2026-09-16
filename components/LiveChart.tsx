@@ -1,28 +1,22 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
-import { 
-  ResponsiveContainer, 
-  AreaChart, 
-  Area, 
-  XAxis, 
-  YAxis, 
-  Tooltip, 
-  CartesianGrid,
-  BarChart,
-  Bar
-} from "recharts";
-import { 
-  TrendingUp, 
-  TrendingDown, 
-  Maximize2, 
-  BarChart2, 
-  Activity, 
-  Calendar,
-  Layers,
-  ArrowUpRight,
-  Info
+import {
+    Activity,
+    BarChart2,
+    TrendingUp
 } from "lucide-react";
+import { useMemo, useState } from "react";
+import {
+    Area,
+    AreaChart,
+    Bar,
+    BarChart,
+    CartesianGrid,
+    ResponsiveContainer,
+    Tooltip,
+    XAxis,
+    YAxis
+} from "recharts";
 
 interface LiveChartProps {
   currentCaPrice?: number;
@@ -33,7 +27,7 @@ interface LiveChartProps {
 export default function LiveChart({ 
   currentCaPrice = 2.7415, 
   currentBotPrice = 1.1109,
-  ratio = 2.46784
+  ratio = 1.279615
 }: LiveChartProps) {
   const [selectedTimeframe, setSelectedTimeframe] = useState<"1H" | "24H" | "7D" | "30D" | "1Y">("24H");
   const [selectedAsset, setSelectedAsset] = useState<"CA" | "BOT" | "RATIO">("CA");
