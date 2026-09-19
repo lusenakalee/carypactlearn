@@ -16,8 +16,8 @@ export const SUPPORT_CONFIG = {
   TELEGRAM_URL: "https://t.me/CaryPactOfficial",
   TELEGRAM_HANDLE: "@CaryPactOfficial",
   // Placeholder WhatsApp phone number (update anytime to your official number)
-  WHATSAPP_PHONE: "+1234567890",
-  WHATSAPP_DISPLAY_PHONE: "+1 (234) 567-890",
+  WHATSAPP_PHONE: "+2540181605117",
+  WHATSAPP_DISPLAY_PHONE: "+2540181605117",
   WHATSAPP_DEFAULT_MESSAGE: "Hello! I have a question about the CarryPact protocol and Learning Hub.",
   SUPPORT_HOURS: "24/7 Community Support",
   AVG_RESPONSE_TIME: "Usually responds in a few minutes",
