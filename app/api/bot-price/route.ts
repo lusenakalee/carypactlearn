@@ -7,7 +7,7 @@ const CMC_QUOTES_URL =
 
 // Revalidate at most once every 3 hours (App Router route cache)
 const REVALIDATE_SECONDS = 60 * 60 * 3;
-export const revalidate = REVALIDATE_SECONDS;
+export const revalidate = 10800; // must be a literal, can't reference the const here
 
 export async function GET() {
   const apiKey = process.env.COINMARKETCAP_API;
