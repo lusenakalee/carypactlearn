@@ -45,23 +45,24 @@ export default function PdfCheatSheetModal({ isOpen, onClose }: PdfCheatSheetMod
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <button
-              onClick={handlePrint}
-              id="print-cheatsheet-btn"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#7B4FFF] hover:bg-[#6D3DF5] text-white text-xs font-bold transition-all shadow-md cursor-pointer"
-            >
-              <Printer className="w-3.5 h-3.5" />
-              <span>Print / Save as PDF</span>
-            </button>
-            <button
-              onClick={onClose}
-              className="p-2 rounded-xl text-[#838E9E] hover:text-white hover:bg-[#1C1F2E] transition-colors"
-              aria-label="Close modal"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          </div>
+         <div className="flex items-center gap-2">
+  <a
+    href="/carypact_model.pdf"
+    download="carypact_model.pdf"
+    id="print-cheatsheet-btn"
+    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#7B4FFF] hover:bg-[#6D3DF5] text-white text-xs font-bold transition-all shadow-md cursor-pointer"
+  >
+    <Printer className="w-3.5 h-3.5" />
+    <span>Download PDF</span>
+  </a>
+  <button
+    onClick={onClose}
+    className="p-2 rounded-xl text-[#838E9E] hover:text-white hover:bg-[#1C1F2E] transition-colors"
+    aria-label="Close modal"
+  >
+    <X className="w-5 h-5" />
+  </button>
+</div>
         </div>
 
         {/* Printable Document Body */}

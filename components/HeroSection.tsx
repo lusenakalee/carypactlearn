@@ -90,9 +90,9 @@ export default function HeroSection({
             <div className="bg-[#131728]/80 border border-[#1E243B] p-3 rounded-xl text-center backdrop-blur-sm">
               <div className="text-xs text-[#838E9E] font-medium flex items-center justify-center gap-1">
                 <TrendingUp className="w-3.5 h-3.5 text-[#A855F7]" />
-                <span>Seed Funding</span>
+                <span>Max BOT supply</span>
               </div>
-              <div className="text-lg font-bold text-white mt-0.5">$15M USD</div>
+              <div className="text-lg font-bold text-white mt-0.5">$150M USD</div>
               <div className="text-[10px] text-[#A855F7]">NIX / Alpha / Gemhead</div>
             </div>
 
