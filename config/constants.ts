@@ -57,11 +57,11 @@ export const EMISSION_SPLIT = [
 ];
 
 export const STAKING_TERMS = [
-  { id: "flex", name: "Flexible", durationDays: 0, multiplier: 1.0, dailyRateMin: 0.002, dailyRateMax: 0.004, avgDaily: 0.003, lockup: "Instant Withdrawal (T+1 settlement)" },
-  { id: "30d", name: "30 Days", durationDays: 30, multiplier: 1.3, dailyRateMin: 0.0026, dailyRateMax: 0.0052, avgDaily: 0.0039, lockup: "30-Day Term Lock" },
-  { id: "90d", name: "90 Days", durationDays: 90, multiplier: 1.6, dailyRateMin: 0.0032, dailyRateMax: 0.0064, avgDaily: 0.0048, lockup: "90-Day Term Lock" },
-  { id: "180d", name: "180 Days", durationDays: 180, multiplier: 2.0, dailyRateMin: 0.0040, dailyRateMax: 0.0080, avgDaily: 0.0060, lockup: "180-Day Term Lock" },
-  { id: "360d", name: "360 Days", durationDays: 360, multiplier: 2.5, dailyRateMin: 0.0050, dailyRateMax: 0.0100, avgDaily: 0.0075, lockup: "360-Day Term Lock" },
+  { id: "flex", name: "Flexible", durationDays: 0, multiplier: 1.0, dailyRateMin: 0.002, dailyRateMax: 0.002, avgDaily: 0.002, lockup: "Instant Withdrawal (T+1 settlement)" },
+  { id: "30d", name: "30 Days", durationDays: 30, multiplier: 1.0, dailyRateMin: 0.0026, dailyRateMax: 0.0026, avgDaily: 0.0026, lockup: "30-Day Term Lock" },
+  { id: "90d", name: "90 Days", durationDays: 90, multiplier: 1.0, dailyRateMin: 0.0032, dailyRateMax: 0.0032, avgDaily: 0.0032, lockup: "90-Day Term Lock" },
+  { id: "180d", name: "180 Days", durationDays: 180, multiplier: 1.0, dailyRateMin: 0.004, dailyRateMax: 0.004, avgDaily: 0.004, lockup: "180-Day Term Lock" },
+  { id: "360d", name: "360 Days", durationDays: 360, multiplier: 1.0, dailyRateMin: 0.005, dailyRateMax: 0.005, avgDaily: 0.005, lockup: "360-Day Term Lock" },
 ];
 
 export const VIP_TIERS = [

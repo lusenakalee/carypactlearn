@@ -285,7 +285,7 @@ export default function ConversionCalculator() {
                   >
                     <div className="text-xs font-bold">{term.name}</div>
                     <div className="text-[10px] font-extrabold text-[#22D3FF] mt-0.5">
-                      {term.multiplier > 1 ? `${term.multiplier}x` : "Flex"}
+                      {(term.avgDaily * 100).toFixed(2)}%/day
                     </div>
                   </button>
                 ))}
