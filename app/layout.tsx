@@ -35,6 +35,8 @@ export const metadata: Metadata = {
 
   keywords: [
     "CaryPact",
+    "carypact learn",
+    "carypact education",
     "CaryPact Learning Hub",
     "BOT Chain",
     "CA token",
