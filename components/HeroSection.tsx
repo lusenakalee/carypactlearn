@@ -32,7 +32,7 @@ export default function HeroSection({
 
   const suggestedPrompts = [
     { label: "Hashrate Permanence", query: tHero("prompt1") },
-    { label: "1.279615 BOT = 1 CA Parity", query: tHero("prompt2") },
+    { label: "1.337631 BOT = 1 CA Parity", query: tHero("prompt2") },
     { label: "5% Slippage & Burn", query: tHero("prompt3") },
     { label: "10-Tier VIP Rewards", query: tHero("prompt4") },
   ];
@@ -166,7 +166,7 @@ export default function HeroSection({
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0E1020] hover:bg-[#131728] text-white text-xs font-bold border border-[#22D3FF]/40 text-[#22D3FF] transition-all shadow-lg shadow-[#22D3FF]/10"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span>{tHero("ctaLiveMarket")} (1.279615 BOT = 1 CA)</span>
+              <span>{tHero("ctaLiveMarket")} (1.337631 BOT = 1 CA)</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
 

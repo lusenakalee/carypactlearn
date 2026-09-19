@@ -13,7 +13,7 @@
     "newBadge": "最新"
   },
   "common": {
-    "liveParity": "1.279615 BOT = 1 CA",
+    "liveParity": "1.337631 BOT = 1 CA",
     "inverseParity": "0.405213 CA = 1 BOT",
     "launchCaryPact": "进入 CaryPact 官方应用",
     "register": "注册 CaryPact",
@@ -42,7 +42,7 @@
     "ctaLiveMarket": "实时行情与兑换率",
     "searchHeading": "输入任何问题，或点击热门提问：",
     "prompt1": "算力单位的永久性购买规则是什么？",
-    "prompt2": "1.279615 BOT = 1 CA 的动态平价机制如何运行？",
+    "prompt2": "1.337631 BOT = 1 CA 的动态平价机制如何运行？",
     "prompt3": "解释 BDEX 5% 的滑点分配与通缩销毁机制",
     "prompt4": "10 级 VIP 超级节点权益有哪些？"
   },
@@ -72,7 +72,7 @@
   },
   "calculator": {
     "title": "CA ↔ USDT 兑换与收益模拟器",
-    "subtitle": "基于 1.279615 BOT = 1 CA 官方平价标准的实时换算",
+    "subtitle": "基于 1.337631 BOT = 1 CA 官方平价标准的实时换算",
     "tabSwap": "平价闪兑",
     "tabStaking": "PoS 质押收益模拟",
     "youConvert": "转换数量",

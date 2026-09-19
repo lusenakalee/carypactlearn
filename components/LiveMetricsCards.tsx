@@ -1,11 +1,11 @@
 "use client";
 
 import {
-    AlertTriangle,
-    ExternalLink,
-    RefreshCw,
-    TrendingDown,
-    TrendingUp
+  AlertTriangle,
+  ExternalLink,
+  RefreshCw,
+  TrendingDown,
+  TrendingUp
 } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 
@@ -104,8 +104,8 @@ export default function LiveMetricsCards() {
     : `Next refresh available at ${new Date(nextRefreshAt!).toLocaleTimeString()}`;
 
   const botPrice = botLive?.priceUSD ?? data?.bot?.priceUSD ?? 12.396794;
-  const caPrice = data?.ca?.priceUSD || Number((botPrice * 1.279615).toFixed(4));
-  const ratio = data?.ratio?.caToBot || 1.279615;
+  const caPrice = data?.ca?.priceUSD || Number((botPrice * 1.337631).toFixed(4));
+  const ratio = data?.ratio?.caToBot || 1.337631;
   const bot24h = botLive?.percentChange24h ?? data?.bot?.price24hChange ?? 4.28;
   const volume24h = botLive?.volume24hUSD ?? data?.bot?.volume24hUSD ?? 14250000;
   const isCmcLive = botLive?.isLiveFromCMC ?? data?.isLiveFromCMC ?? true;

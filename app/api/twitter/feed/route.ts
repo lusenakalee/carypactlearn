@@ -27,7 +27,7 @@ export async function GET(req: NextRequest) {
         verified: true,
         date: "14 hours ago",
         timestamp: new Date(Date.now() - 14 * 3600 * 1000).toISOString(),
-        content: "📊 Real-Time Metric Notice: The conversion parity 1 CA = 1.279615 BOT is fully tracked on-chain. BDEX liquidity depth has exceeded $18.4M with the 1.8% automated buyback burn systematically reducing circulating supply.",
+        content: "📊 Real-Time Metric Notice: The conversion parity 1 CA = 1.337631 BOT is fully tracked on-chain. BDEX liquidity depth has exceeded $18.4M with the 1.8% automated buyback burn systematically reducing circulating supply.",
         likes: 980,
         retweets: 312,
         replies: 89,

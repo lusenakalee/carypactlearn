@@ -20,7 +20,7 @@ interface LiveMultiConverterProps {
 export default function LiveMultiConverter({
   botPriceUSD = 1.1109,
   caPriceUSD = 2.7415,
-  ratio = 1.279615
+  ratio = 1.337631
 }: LiveMultiConverterProps) {
   const [amount, setAmount] = useState<number>(100);
   const [sourceAsset, setSourceAsset] = useState<"CA" | "BOT" | "USDT">("CA");
@@ -29,10 +29,10 @@ export default function LiveMultiConverter({
   const [copied, setCopied] = useState<boolean>(false);
 
   // Conversion calculations
-  // 1 CA = 1.279615 BOT
+  // 1 CA = 1.337631 BOT
   // 1 BOT = 0.405213 CA
   // BOT in USD = botPriceUSD
-  // CA in USD = botPriceUSD * 1.279615
+  // CA in USD = botPriceUSD * 1.337631
   const computedCaPrice = caPriceUSD || (botPriceUSD * ratio);
 
   let convertedValue = 0;
@@ -42,7 +42,7 @@ export default function LiveMultiConverter({
   let nodeShare = 0;
 
   if (sourceAsset === "CA" && targetAsset === "BOT") {
-    // 1 CA -> 1.279615 BOT
+    // 1 CA -> 1.337631 BOT
     grossValue = amount * ratio;
     slippageFee = includeSlippage ? grossValue * 0.05 : 0;
     burnShare = grossValue * 0.018;
@@ -105,7 +105,7 @@ export default function LiveMultiConverter({
           </h3>
         </div>
 
-        {/* 1 CA = 1.279615 BOT Badge */}
+        {/* 1 CA = 1.337631 BOT Badge */}
         <div className="bg-[#131728] border border-[#2A314D] px-3.5 py-1.5 rounded-xl flex items-center gap-2 text-xs">
           <span className="text-[#838E9E]">On-Chain Parity:</span>
           <span className="text-white font-bold font-mono">1 CA = {ratio} BOT</span>

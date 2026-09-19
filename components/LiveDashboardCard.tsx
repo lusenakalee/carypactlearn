@@ -32,7 +32,7 @@ export default function LiveDashboardCard() {
   // Static protocol prices; ratio sourced live from /api/dex/pool (effectiveParityRatio)
   const [caPrice, setCaPrice] = useState(2.7415);
   const [botPrice, setBotPrice] = useState(1.1109);
-  const [ratio, setRatio] = useState(1.279615);
+  const [ratio, setRatio] = useState(1.337631);
   const [priceChange24h, setPriceChange24h] = useState(4.28);
   const [lastTickDir, setLastTickDir] = useState<"up" | "down">("up");
   const [poolStats, setPoolStats] = useState<any>(null);

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const CMC_API_KEY = process.env.CMC_API_KEY || "3190cceb-2040-40e4-9fe1-e55c177ef557";
-const BASE_CA_TO_BOT_RATIO = 1.279615; // Correct standard: 1.279615 BOT = 1 CA
+const BASE_CA_TO_BOT_RATIO = 1.337631; // Correct standard: 1.337631 BOT = 1 CA
 const BASE_BOT_TO_CA_RATIO = 0.405213; // 0.405213 CA = 1 BOT
 
 export async function GET(req: NextRequest) {
@@ -83,7 +83,7 @@ export async function GET(req: NextRequest) {
         caToBot: effectiveCaToBotRatio,
         baseProtocolRatio: BASE_CA_TO_BOT_RATIO,
         poolSpotRatio: dexPoolRatio,
-        formula: `1.279615 BOT = 1 CA | 0.405213 CA = 1 BOT`,
+        formula: `1.337631 BOT = 1 CA | 0.405213 CA = 1 BOT`,
         botToCa: botToCaRatio,
       },
       dexPool: {
@@ -138,7 +138,7 @@ export async function GET(req: NextRequest) {
       {
         success: false,
         error: errMessage,
-        ratio: { caToBot: BASE_CA_TO_BOT_RATIO, botToCa: BASE_BOT_TO_CA_RATIO, formula: "1.279615 BOT = 1 CA | 0.405213 CA = 1 BOT" },
+        ratio: { caToBot: BASE_CA_TO_BOT_RATIO, botToCa: BASE_BOT_TO_CA_RATIO, formula: "1.337631 BOT = 1 CA | 0.405213 CA = 1 BOT" },
       },
       { status: 500 }
     );

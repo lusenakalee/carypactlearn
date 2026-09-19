@@ -1,14 +1,14 @@
 "use client";
 
 import {
-  Activity,
-  ArrowLeft,
-  Check,
-  CheckCircle2,
-  Copy,
-  ExternalLink,
-  RefreshCw,
-  ShieldCheck
+    Activity,
+    ArrowLeft,
+    Check,
+    CheckCircle2,
+    Copy,
+    ExternalLink,
+    RefreshCw,
+    ShieldCheck
 } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -74,8 +74,8 @@ export default function LiveDataPage() {
   }, []);
 
   const botPrice = data?.bot?.priceUSD || 1.1109;
-  const caPrice = data?.ca?.priceUSD || Number((botPrice * 1.279615).toFixed(4));
-  const ratio = data?.ratio?.caToBot || 1.279615;
+  const caPrice = data?.ca?.priceUSD || Number((botPrice * 1.337631).toFixed(4));
+  const ratio = data?.ratio?.caToBot || 1.337631;
   const bot24h = data?.bot?.price24hChange || 4.28;
   const volume24h = data?.bot?.volume24hUSD || 14250000;
   const isCmcLive = data?.isLiveFromCMC ?? true;
@@ -139,7 +139,7 @@ export default function LiveDataPage() {
                 CaryPact & BOT Chain <span className="text-brand-gradient">Live Market Feed</span>
               </h1>
               <p className="text-xs sm:text-sm text-[#C4CBD8] leading-relaxed">
-                Live cryptocurrency quotes, on-chain parity tracking (<strong>1 CA = 1.279615 BOT</strong>), BDEX order book depth, and official Twitter/X broadcasts from{" "}
+                Live cryptocurrency quotes, on-chain parity tracking (<strong>1 CA = 1.337631 BOT</strong>), BDEX order book depth, and official Twitter/X broadcasts from{" "}
                 <a 
                   href="https://x.com/CaryPact" 
                   target="_blank" 
@@ -235,7 +235,7 @@ export default function LiveDataPage() {
                 </div>
 
                 <p className="text-xs text-[#C4CBD8] leading-relaxed">
-                  Price tracking and volume metrics for BOT Chain are directly verified via CoinMarketCap Pro. CaryPact computing asset (CA) operates on the fixed algorithmic conversion standard of <strong>1 CA = 1.279615 BOT</strong>.
+                  Price tracking and volume metrics for BOT Chain are directly verified via CoinMarketCap Pro. CaryPact computing asset (CA) operates on the fixed algorithmic conversion standard of <strong>1 CA = 1.337631 BOT</strong>.
                 </p>
 
                 <div className="bg-[#131728] p-3 rounded-2xl border border-[#1E243B] space-y-2 text-xs">

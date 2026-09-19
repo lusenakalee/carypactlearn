@@ -13,7 +13,7 @@
     "newBadge": "MỚI"
   },
   "common": {
-    "liveParity": "1.279615 BOT = 1 CA",
+    "liveParity": "1.337631 BOT = 1 CA",
     "inverseParity": "0.405213 CA = 1 BOT",
     "launchCaryPact": "Mở App CaryPact",
     "register": "Đăng ký CaryPact",
@@ -42,7 +42,7 @@
     "ctaLiveMarket": "Thị Trường & Tỷ Giá Live",
     "searchHeading": "Đặt câu hỏi hoặc chọn câu hỏi phổ biến:",
     "prompt1": "Quy tắc vĩnh viễn của Đơn vị Hashrate là gì?",
-    "prompt2": "Tỷ giá ngang giá động 1.279615 BOT = 1 CA hoạt động ra sao?",
+    "prompt2": "Tỷ giá ngang giá động 1.337631 BOT = 1 CA hoạt động ra sao?",
     "prompt3": "Giải thích phí trượt giá 5% và cơ chế đốt token trên BDEX",
     "prompt4": "10 cấp bậc phần thưởng VIP Supernode là gì?"
   },
@@ -72,7 +72,7 @@
   },
   "calculator": {
     "title": "Máy Tính Chuyển Đổi CA ↔ USDT & Lợi Nhuận",
-    "subtitle": "Chuyển đổi theo chuẩn tỷ giá 1.279615 BOT = 1 CA của giao thức",
+    "subtitle": "Chuyển đổi theo chuẩn tỷ giá 1.337631 BOT = 1 CA của giao thức",
     "tabSwap": "Swap Ngang Giá Nhanh",
     "tabStaking": "Mô Phỏng Staking PoS",
     "youConvert": "Số Lượng Chuyển Đổi",
