@@ -23,6 +23,8 @@ import NewsletterModal from "@/components/NewsletterModal";
 import PdfCheatSheetModal from "@/components/PdfCheatSheetModal";
 import TwitterLiveFeed from "@/components/TwitterLiveFeed";
 import { AFFILIATE_CONFIG } from "@/config/constants";
+import ConversionCalculator from "@/components/ConversionCalculator";
+import { useTranslations } from "next-intl";
 
 export default function LiveDataPage() {
   const [data, setData] = useState<any>(null);
@@ -33,6 +35,8 @@ export default function LiveDataPage() {
   const [aiInitialQuestion, setAiInitialQuestion] = useState("");
   const [pdfModalOpen, setPdfModalOpen] = useState(false);
   const [newsletterModalOpen, setNewsletterModalOpen] = useState(false);
+    const tLive = useTranslations("live");
+  
 
   const fetchCmcData = async () => {
     try {
@@ -182,6 +186,29 @@ export default function LiveDataPage() {
 
           {/* BDEX On-Chain Firecrawl Scraped Pool Metrics Card */}
           <DexPoolCard />
+
+           {/* Two-Column Section: (1) Live CaryPact Dashboard, (2) CA ↔ USDT Calculator */}
+                  <section id="live" className="py-8 sm:py-12 relative overflow-hidden bg-dot-grid-subtle">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                      <div className="text-center max-w-2xl mx-auto mb-8">
+                        <span className="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#131728] border border-[#2A314D] text-[#22D3FF]">
+                          {tLive("sectionBadge")}
+                        </span>
+                        <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-2">
+                          {tLive("sectionTitle")} <span className="text-brand-gradient">{tLive("sectionTitleHighlight")}</span>
+                        </h2>
+                      </div>
+                
+          
+                      <div className="grid grid-cols-1  gap-6 items-stretch">
+                        {/* Column 1: Live CaryPact Dashboard */}
+                        {/* <LiveDashboardCard /> */}
+          
+                        {/* Column 2: CA ↔ USDT Calculator & Staking Simulator */}
+                        <ConversionCalculator />
+                      </div>
+                    </div>
+                  </section>
 
           {/* Main 2-Column Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
