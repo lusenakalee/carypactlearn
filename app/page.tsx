@@ -22,6 +22,7 @@ import NewsletterModal from "@/components/NewsletterModal";
 import Footer from "@/components/Footer";
 import BotChainLearnSection from "@/components/BotChainLearnSection";
 import CaryPactBenchmarkSection from "@/components/CaryPactBenchmarkSection";
+import EarningMethodsHighlight from "@/components/EarningMethodsHighlight";
 
 export default function HomePage() {
   const { locale, setLocale } = useAppLocale();
@@ -70,12 +71,13 @@ export default function HomePage() {
 
         {/* CaryPact Benchmark Protocol Overview (from app.carypact.com) */}
         <CaryPactBenchmarkSection />
+          {/* Four Main Ways of Earning: Jump Straight to the Point */}
+        <EarningMethodsHighlight />
 
        
 
 
-        {/* Tokenomics Visualizer (210M CA, 40k Emission, Halving, Burns) */}
-        <TokenomicsVisualizer />
+     
 
        
 

@@ -25,6 +25,7 @@ import TwitterLiveFeed from "@/components/TwitterLiveFeed";
 import { AFFILIATE_CONFIG } from "@/config/constants";
 import ConversionCalculator from "@/components/ConversionCalculator";
 import { useTranslations } from "next-intl";
+import TokenomicsVisualizer from "@/components/TokenomicsVisualizer";
 
 export default function LiveDataPage() {
   const [data, setData] = useState<any>(null);
@@ -280,6 +281,7 @@ export default function LiveDataPage() {
                   </div>
                 </div>
               </div>
+             
 
               {/* Protocol Rules Checklist */}
               <div className="bg-[#0E1020] border border-[#1E243B] rounded-3xl p-6 space-y-3 text-xs">
@@ -313,6 +315,11 @@ export default function LiveDataPage() {
                 </div>
               </div>
             </div>
+                {/* Tokenomics Visualizer (210M CA, 40k Emission, Halving, Burns) */}
+                <div className="lg:col-span-12">
+
+        <TokenomicsVisualizer />
+                </div>
           </div>
         </div>
       </main>

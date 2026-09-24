@@ -5,18 +5,19 @@ import { useAppLocale } from "@/components/LocaleProvider";
 import { AFFILIATE_CONFIG } from "@/config/constants";
 import { LANGUAGES } from "@/lib/i18n";
 import {
-    Activity,
-    BookOpen,
-    Check,
-    Cpu,
-    ExternalLink,
-    Globe,
-    Layers,
-    Menu,
-    ShieldAlert,
-    Sparkles,
-    Calendars,
-    X
+  Activity,
+  BookOpen,
+  Check,
+  Cpu,
+  ExternalLink,
+  Globe,
+  Layers,
+  Menu,
+  ShieldAlert,
+  Sparkles,
+  Calendars,
+  X,
+  Coins,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -38,7 +39,7 @@ export default function Navbar({
   const tNav = useTranslations("nav");
   const tCommon = useTranslations("common");
   const { locale: contextLocale, setLocale: setContextLocale } = useAppLocale();
-  
+
   const activeLocale = propLang || contextLocale;
   const handleLocaleChange = (code: string) => {
     setContextLocale(code);
@@ -52,14 +53,36 @@ export default function Navbar({
 
   const navLinks = [
     { name: tNav("home"), href: "/#home", icon: Cpu, id: "home" },
-    { name: tNav("liveData"), href: "/live-data", icon: Activity, badge: tNav("newBadge"), id: "live" },
+    {
+      name: tNav("liveData"),
+      href: "/live-data",
+      icon: Activity,
+      badge: tNav("newBadge"),
+      id: "live",
+    },
+    {
+      name: tNav("risks"),
+      href: "/#risks",
+      icon: ShieldAlert,
+      highlight: true,
+      id: "risks",
+    },
+    { name: tNav("earn"), href: "/earn", icon: Coins, id: "earn" },
+
     { name: tNav("guides"), href: "/guides", icon: BookOpen, id: "guides" },
     { name: tNav("learn"), href: "/learn", icon: Layers, id: "learn" },
     { name: tNav("events"), href: "/events", icon: Calendars, id: "events" },
-    { name: tNav("risks"), href: "/#risks", icon: ShieldAlert, highlight: true, id: "risks" },
+    {
+      name: tNav("risks"),
+      href: "/#risks",
+      icon: ShieldAlert,
+      highlight: true,
+      id: "risks",
+    },
   ];
 
-  const currentLangObj = LANGUAGES.find(l => l.code === activeLocale) || LANGUAGES[0];
+  const currentLangObj =
+    LANGUAGES.find((l) => l.code === activeLocale) || LANGUAGES[0];
 
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-[#0A0C14]/90 border-b border-[#1E243B] transition-colors duration-200">
@@ -67,12 +90,12 @@ export default function Navbar({
         <div className="flex items-center justify-between h-20">
           {/* Logo & Brand Identity */}
           <div className="flex items-center gap-3">
-            <Link 
-              href="/#home" 
+            <Link
+              href="/#home"
               id="nav-logo-link"
               className="flex items-center group"
             >
-              <CaryPactLogo 
+              <CaryPactLogo
                 size="md"
                 showBadge={true}
                 badgeText="Hub"
@@ -92,11 +115,11 @@ export default function Navbar({
                   href={link.href}
                   id={`nav-link-${link.id}`}
                   className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg transition-all flex items-center gap-1.5 ${
-                    link.highlight 
+                    link.highlight
                       ? "text-amber-300 hover:text-amber-200 hover:bg-amber-500/10 border border-amber-500/20"
                       : link.badge
-                      ? "text-[#22D3FF] hover:bg-[#1C1F2E] border border-[#22D3FF]/30 bg-[#22D3FF]/10"
-                      : "text-[#C4CBD8] hover:text-white hover:bg-[#1C1F2E]"
+                        ? "text-[#22D3FF] hover:bg-[#1C1F2E] border border-[#22D3FF]/30 bg-[#22D3FF]/10"
+                        : "text-[#C4CBD8] hover:text-white hover:bg-[#1C1F2E]"
                   }`}
                 >
                   <Icon className="w-3.5 h-3.5 opacity-75" />
@@ -138,14 +161,18 @@ export default function Navbar({
               >
                 <Globe className="w-3.5 h-3.5 text-[#22D3FF]" />
                 <span className="text-sm">{currentLangObj.flag}</span>
-                <span className="uppercase font-bold tracking-wider">{activeLocale}</span>
+                <span className="uppercase font-bold tracking-wider">
+                  {activeLocale}
+                </span>
               </button>
 
               {langDropdownOpen && (
                 <div className="absolute right-0 mt-2 w-56 bg-[#131728] border border-[#1E243B] rounded-xl shadow-2xl py-2 z-50 backdrop-blur-xl">
                   <div className="px-3.5 py-1.5 text-[10px] uppercase font-bold text-[#838E9E] tracking-wider border-b border-[#1E243B]/60 mb-1 flex items-center justify-between">
                     <span>{tNav("selectLang")}</span>
-                    <span className="text-[#22D3FF] font-mono text-[9px]">next-intl</span>
+                    <span className="text-[#22D3FF] font-mono text-[9px]">
+                      next-intl
+                    </span>
                   </div>
                   <div className="max-h-64 overflow-y-auto py-1">
                     {LANGUAGES.map((l) => (
@@ -156,14 +183,20 @@ export default function Navbar({
                           setLangDropdownOpen(false);
                         }}
                         className={`w-full text-left px-3.5 py-2 text-xs flex items-center justify-between hover:bg-[#1C1F2E] transition-colors ${
-                          activeLocale === l.code ? "text-[#22D3FF] font-bold bg-[#22D3FF]/10" : "text-[#C4CBD8]"
+                          activeLocale === l.code
+                            ? "text-[#22D3FF] font-bold bg-[#22D3FF]/10"
+                            : "text-[#C4CBD8]"
                         }`}
                       >
                         <span className="flex items-center gap-2.5">
-                          <span className="text-base leading-none">{l.flag}</span>
+                          <span className="text-base leading-none">
+                            {l.flag}
+                          </span>
                           <span className="font-medium">{l.nativeName}</span>
                         </span>
-                        {activeLocale === l.code && <Check className="w-3.5 h-3.5 text-[#22D3FF]" />}
+                        {activeLocale === l.code && (
+                          <Check className="w-3.5 h-3.5 text-[#22D3FF]" />
+                        )}
                       </button>
                     ))}
                   </div>
@@ -199,7 +232,11 @@ export default function Navbar({
               className="p-2 text-[#C4CBD8] hover:text-white bg-[#131728] rounded-lg border border-[#1E243B]"
               aria-label="Toggle mobile menu"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>
@@ -217,11 +254,11 @@ export default function Navbar({
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`px-3 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider flex items-center justify-between ${
-                    link.highlight 
+                    link.highlight
                       ? "text-amber-300 bg-amber-500/10 border border-amber-500/20"
                       : link.badge
-                      ? "text-[#22D3FF] bg-[#22D3FF]/10 border border-[#22D3FF]/30"
-                      : "text-[#C4CBD8] hover:bg-[#1C1F2E] hover:text-white"
+                        ? "text-[#22D3FF] bg-[#22D3FF]/10 border border-[#22D3FF]/30"
+                        : "text-[#C4CBD8] hover:bg-[#1C1F2E] hover:text-white"
                   }`}
                 >
                   <div className="flex items-center gap-2">
@@ -250,8 +287,8 @@ export default function Navbar({
                       setMobileMenuOpen(false);
                     }}
                     className={`px-2 py-1 text-xs rounded border transition-all ${
-                      activeLocale === l.code 
-                        ? "border-[#22D3FF] bg-[#22D3FF]/20 text-white font-bold" 
+                      activeLocale === l.code
+                        ? "border-[#22D3FF] bg-[#22D3FF]/20 text-white font-bold"
                         : "border-[#1E243B] text-[#838E9E] hover:text-white"
                     }`}
                   >

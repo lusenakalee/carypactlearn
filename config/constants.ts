@@ -1,10 +1,13 @@
 // CaryPact Learning Hub - Ecosystem Configuration & Ground Truth Data
-
 export const AFFILIATE_CONFIG = {
   INVITE_CODE: "1AjyRv",
   SUFFIX: "C82A37",
   APP_URL: "https://app.carypact.com/?inviteCode=1AjyRv&suffix=C82A37",
   OFFICIAL_APP: "https://app.carypact.com/",
+  PURCHASE_HASHRATE_URL: "https://app.carypact.com/purchaseHashrate?inviteCode=1AjyRv&suffix=C82A37",
+  POS_MINING_URL: "https://app.carypact.com/posMining?inviteCode=1AjyRv&suffix=C82A37",
+  MINING_SERVERS_URL: "https://app.carypact.com/mining-introduction?inviteCode=1AjyRv&suffix=C82A37",
+  BOT_HASHRATE_URL: "https://app.carypact.com/purchase-bot-hashrate?inviteCode=1AjyRv&suffix=C82A37",
   BOT_CHAIN_LEARN: "https://www.botchain.ai/en/learn",
   TELEGRAM_URL: "https://t.me/CaryPactOfficial",
   TWITTER_URL: "https://x.com/CaryPact_BOT",
