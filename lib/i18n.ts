@@ -6,10 +6,11 @@ import ko from '@/messages/ko.json';
 import vi from '@/messages/vi.json';
 import ru from '@/messages/ru.json';
 import fr from '@/messages/fr.json';
+import hi from '@/messages/hi.json';
 
-export type SupportedLocale = 'en' | 'zh' | 'es' | 'ja' | 'ko' | 'vi' | 'ru' | 'fr';
+export type SupportedLocale = 'en' | 'zh' | 'es' | 'ja' | 'ko' | 'vi' | 'ru' | 'fr' | 'hi';
 
-export const SUPPORTED_LOCALES: SupportedLocale[] = ['en', 'zh', 'es', 'ja', 'ko', 'vi', 'ru', 'fr'];
+export const SUPPORTED_LOCALES: SupportedLocale[] = ['en', 'zh', 'es', 'ja', 'ko', 'vi', 'ru', 'fr', 'hi'];
 export const DEFAULT_LOCALE: SupportedLocale = 'en';
 
 export interface LanguageInfo {
@@ -28,6 +29,7 @@ export const LANGUAGES: LanguageInfo[] = [
   { code: 'vi', label: 'Vietnamese', nativeName: 'Tiếng Việt', flag: '🇻🇳' },
   { code: 'ru', label: 'Russian', nativeName: 'Русский', flag: '🇷🇺' },
   { code: 'fr', label: 'French', nativeName: 'Français', flag: '🇫🇷' },
+  { code: 'hi', label: 'Hindi', nativeName: 'हिन्दी', flag: '🇮🇳' },
 ];
 
 export const allMessages: Record<SupportedLocale, typeof en> = {
@@ -39,6 +41,7 @@ export const allMessages: Record<SupportedLocale, typeof en> = {
   vi,
   ru,
   fr,
+  hi,
 };
 
 export function getMessages(locale: string) {

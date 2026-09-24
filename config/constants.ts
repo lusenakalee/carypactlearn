@@ -8,6 +8,7 @@ export const AFFILIATE_CONFIG = {
   POS_MINING_URL: "https://app.carypact.com/posMining?inviteCode=1AjyRv&suffix=C82A37",
   MINING_SERVERS_URL: "https://app.carypact.com/mining-introduction?inviteCode=1AjyRv&suffix=C82A37",
   BOT_HASHRATE_URL: "https://app.carypact.com/purchase-bot-hashrate?inviteCode=1AjyRv&suffix=C82A37",
+  BOT_PLEDGE_URL: "https://app.carypact.com/bot-pledge?inviteCode=1AjyRv&suffix=C82A37",
   BOT_CHAIN_LEARN: "https://www.botchain.ai/en/learn",
   TELEGRAM_URL: "https://t.me/CaryPactOfficial",
   TWITTER_URL: "https://x.com/CaryPact_BOT",

@@ -60,9 +60,7 @@ export default function Navbar({
       badge: tNav("newBadge"),
       id: "live",
     },
-    
     { name: tNav("earn"), href: "/earn", icon: Coins, id: "earn" },
-
     { name: tNav("guides"), href: "/guides", icon: BookOpen, id: "guides" },
     { name: tNav("learn"), href: "/learn", icon: Layers, id: "learn" },
     { name: tNav("events"), href: "/events", icon: Calendars, id: "events" },

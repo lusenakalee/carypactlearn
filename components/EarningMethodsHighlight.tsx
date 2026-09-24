@@ -91,6 +91,23 @@ export default function EarningMethodsHighlight() {
       keyRates: "Native Layer 1 block emissions. Zero DEX slippage required to acquire native gas tokens. Direct validator delegation.",
       lockNotice: "Base infrastructure mining backing the entire modular blockchain economy.",
     },
+    {
+      id: "bot-pledge",
+      number: "05",
+      title: "BOT Pledge / Bot Staking",
+      badge: "Flexible Exit • 24H Release • Auto-Compounding",
+      badgeColor: "text-[#38BDF8] bg-[#38BDF8]/10 border-[#38BDF8]/30",
+      icon: Layers,
+      iconColor: "text-[#38BDF8]",
+      accentBorder: "hover:border-[#38BDF8]/60",
+      ctaLabel: "Pledge BOT Tokens",
+      ctaUrl: AFFILIATE_CONFIG.BOT_PLEDGE_URL,
+      learnHash: "/earn#bot-pledge",
+      whatIsIt: "Stake BOT to Earn Rewards Flexible Entry and Exit, Free Control. Deposit native BOT tokens into the protocol pledge vault with complete self-determination.",
+      howItEarns: "Automatic compounding automatically uses the previous day’s principal + daily earnings as the new principal for compounding staking.",
+      keyRates: "Dynamic daily staking yields paid directly in native BOT. Zero DEX slippage. Instant on-chain auto-reinvestment every 24 hours.",
+      lockNotice: "Released principal can be withdrawn at any time. After withdrawal, it will be available for claim following a 24-hour unlocking period.",
+    },
   ];
 
   return (
@@ -164,7 +181,7 @@ export default function EarningMethodsHighlight() {
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#11162C] border border-[#232D50] text-xs font-semibold text-[#22D3FF] mb-4 shadow-sm"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Four Core Monetization Vectors</span>
+              <span>Five Core Monetization Vectors</span>
             </motion.div>
 
             <motion.h2
@@ -184,7 +201,7 @@ export default function EarningMethodsHighlight() {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed max-w-2xl mx-auto"
             >
-              Jump straight into the 4 official earning mechanisms. Whether you prefer liquid PoS staking, permanent computing power dividends, physical AI node servers, or native Layer 1 BOT mining.
+              Jump straight into the 5 official earning mechanisms. Whether you prefer liquid BOT Pledge with auto-compounding, protocol PoS staking, permanent computing power dividends, physical AI node servers, or native Layer 1 BOT mining.
             </motion.p>
           </div>
 
@@ -224,8 +241,8 @@ export default function EarningMethodsHighlight() {
           </motion.div>
         </div>
 
-        {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
+        {/* 5 Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
           {earningMethods.map((method, idx) => {
             const Icon = method.icon;
             return (

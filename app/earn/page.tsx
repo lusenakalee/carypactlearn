@@ -55,6 +55,12 @@ export default function EarnPage() {
   const [posCaAmount, setPosCaAmount] = useState<number>(500);
   const [posDays, setPosDays] = useState<number>(180);
 
+  // BOT Pledge (Bot Staking) Calculator State
+  const [botPledgeAmount, setBotPledgeAmount] = useState<number>(1000);
+  const [botPledgeAutoCompound, setBotPledgeAutoCompound] = useState<boolean>(true);
+  const [botPledgeSimulatedDays, setBotPledgeSimulatedDays] = useState<number>(90);
+  const [simulatedBotPrice, setSimulatedBotPrice] = useState<number>(ECOSYSTEM_METRICS.BOT_BASE_PRICE);
+
   // Auto-scroll to anchor if present in URL
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -100,6 +106,15 @@ export default function EarnPage() {
   const posTotalPeriodRewardCa = posDailyRewardCa * posDays;
   const posTotalMaturityCa = posCaAmount + posTotalPeriodRewardCa;
 
+  // BOT Pledge Calculations
+  // Base daily yield rate: 0.25% daily
+  const botPledgeDailyRate = 0.0025;
+  const botPledgeSimpleReward = botPledgeAmount * botPledgeDailyRate * botPledgeSimulatedDays;
+  const botPledgeCompoundedReward = botPledgeAmount * (Math.pow(1 + botPledgeDailyRate, botPledgeSimulatedDays) - 1);
+  const botPledgeSelectedReward = botPledgeAutoCompound ? botPledgeCompoundedReward : botPledgeSimpleReward;
+  const botPledgeTotalMaturity = botPledgeAmount + botPledgeSelectedReward;
+  const botPledgeCompoundingBonus = botPledgeCompoundedReward - botPledgeSimpleReward;
+
   const handleAskAi = (question: string) => {
     setAiInitialQuestion(question);
     setAiModalOpen(true);
@@ -112,7 +127,7 @@ export default function EarnPage() {
 
   return (
     <div className="min-h-screen bg-[#0A0C14] text-[#C4CBD8] flex flex-col font-sans selection:bg-[#22D3FF]/20 selection:text-[#22D3FF]">
-   
+    
 
       <main className="flex-grow">
         {/* Page Hero Header */}
@@ -141,10 +156,10 @@ export default function EarnPage() {
                   <span>CaryPact & BOT Chain Monetization Blueprint</span>
                 </div>
                 <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
-                  The Four Official Ways to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3FF] via-[#7B4FFF] to-[#A855F7]">Earn on CaryPact</span>
+                  The Five Official Ways to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3FF] via-[#7B4FFF] to-[#A855F7]">Earn on CaryPact</span>
                 </h1>
                 <p className="text-base sm:text-lg text-[#94A3B8] leading-relaxed">
-                  Direct, verifiable technical data and mathematical breakdown for all 4 earning mechanisms: permanent CA hashrate, long-term PoS mining, enterprise mining server presales, and Layer 1 BOT hashrate mining.
+                  Direct, verifiable technical data and mathematical breakdown for all 5 earning mechanisms: permanent CA hashrate, long-term PoS mining, enterprise mining server presales, Layer 1 BOT hashrate mining, and flexible BOT Pledge (Bot Staking) with auto-compounding.
                 </p>
               </div>
 
@@ -159,7 +174,7 @@ export default function EarnPage() {
                   <span>Cheat Sheet (PDF)</span>
                 </button>
                 {/* <button
-                  onClick={() => handleAskAi("Explain the mathematical difference between CA Hashrate and PoS Staking on CaryPact.")}
+                  onClick={() => handleAskAi("Explain how BOT Pledge (Bot Staking) works with flexible entry/exit, 24-hour unlocking, and automatic compounding on CaryPact.")}
                   id="earn-ask-ai-btn"
                   className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-[#22D3FF] hover:bg-[#1bb8df] text-[#070913] text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shadow-lg shadow-[#22D3FF]/20"
                 >
@@ -170,7 +185,7 @@ export default function EarnPage() {
             </div>
 
             {/* Quick Anchor Navigation */}
-            <div className="mt-10 pt-6 border-t border-[#1C2542] grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="mt-10 pt-6 border-t border-[#1C2542] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
               <a 
                 href="#ca-hashrate" 
                 className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group"
@@ -212,6 +227,17 @@ export default function EarnPage() {
                 <div className="text-left">
                   <div className="text-[11px] font-mono text-[#8EA2C6]">Method 4</div>
                   <div className="text-xs font-bold text-white group-hover:text-emerald-400 transition-colors">BOT Hashrate</div>
+                </div>
+              </a>
+
+              <a 
+                href="#bot-pledge" 
+                className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group col-span-2 sm:col-span-1"
+              >
+                <Layers className="w-4 h-4 text-[#38BDF8] group-hover:scale-110 transition-transform" />
+                <div className="text-left">
+                  <div className="text-[11px] font-mono text-[#8EA2C6]">Method 5</div>
+                  <div className="text-xs font-bold text-white group-hover:text-[#38BDF8] transition-colors">BOT Pledge</div>
                 </div>
               </a>
             </div>
@@ -704,6 +730,306 @@ export default function EarnPage() {
           </div>
         </section>
 
+        {/* METHOD 5: BOT PLEDGE (BOT STAKING) */}
+        <section id="bot-pledge" className="py-16 sm:py-20 bg-[#090C19] border-b border-[#1C233B] scroll-mt-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="font-mono text-sm font-bold px-2.5 py-1 rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] border border-[#38BDF8]/30">
+                METHOD 05
+              </span>
+              <span className="text-xs font-mono uppercase tracking-wider text-[#8EA2C6]">
+                Official Page: app.carypact.com/bot-pledge
+              </span>
+            </div>
+
+            <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-10">
+              <div>
+                <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight flex items-center gap-3">
+                  <span>BOT Pledge (Bot Staking)</span>
+                  <Layers className="w-7 h-7 text-[#38BDF8]" />
+                </h2>
+                <p className="text-base sm:text-lg text-[#38BDF8] font-semibold mt-1">
+                  Stake BOT to Earn Rewards Flexible Entry and Exit, Free Control
+                </p>
+                <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl leading-relaxed">
+                  Pledge native Layer 1 BOT tokens into the protocol staking pool with unrestricted liquidity control. Released principal can be withdrawn at any time with a 24-hour unlocking period, while daily earnings automatically compound to maximize yield.
+                </p>
+              </div>
+
+              {/* Verified CTA Button */}
+              <a
+                href={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                id="cta-bot-pledge-page"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#38BDF8] to-[#0284C7] hover:from-[#60A5FA] hover:to-[#0369A1] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#38BDF8]/20 cursor-pointer shrink-0"
+              >
+                <span>Pledge BOT Tokens (DApp)</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Basic Rules: 3 Cards Grid */}
+            <div className="mb-10">
+              <div className="text-xs font-mono uppercase tracking-wider font-bold text-[#8EA2C6] mb-4 flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-[#38BDF8]" />
+                <span>Basic Protocol Rules</span>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Rule 1 */}
+                <div className="rounded-2xl bg-[#10152B] border border-[#1E294A] p-6 space-y-3 relative overflow-hidden group hover:border-[#38BDF8]/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <span className="w-8 h-8 rounded-lg bg-[#38BDF8]/10 text-[#38BDF8] border border-[#38BDF8]/30 flex items-center justify-center font-mono font-bold text-sm">
+                      1
+                    </span>
+                    <span className="text-[11px] font-mono text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">
+                      Flexible Control
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#38BDF8] transition-colors">
+                    Stake BOT to Earn Rewards
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed">
+                    Stake native BOT tokens to generate protocol staking rewards directly on BOT Chain. Flexible entry and exit gives you free control over your deposited principal at all times.
+                  </p>
+                  <div className="pt-2 text-[11px] font-mono text-[#CBD5E1] border-t border-[#1B2440]">
+                    • Denominated in native BOT coins<br />
+                    • Zero DEX slippage or swap friction<br />
+                    • Flexible deposit amounts
+                  </div>
+                </div>
+
+                {/* Rule 2 */}
+                <div className="rounded-2xl bg-[#10152B] border border-[#1E294A] p-6 space-y-3 relative overflow-hidden group hover:border-amber-400/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <span className="w-8 h-8 rounded-lg bg-amber-400/10 text-amber-400 border border-amber-400/30 flex items-center justify-center font-mono font-bold text-sm">
+                      2
+                    </span>
+                    <span className="text-[11px] font-mono text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">
+                      24-Hour Cooldown
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">
+                    24-Hour Unlocking Period
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed">
+                    Released principal can be withdrawn at any time. After requesting a withdrawal, your principal will become available for claim following a 24-hour unlocking period.
+                  </p>
+                  <div className="pt-2 text-[11px] font-mono text-[#CBD5E1] border-t border-[#1B2440]">
+                    • Withdraw principal whenever you wish<br />
+                    • 24-hour network security cooldown<br />
+                    • Claim directly to your Web3 wallet
+                  </div>
+                </div>
+
+                {/* Rule 3 */}
+                <div className="rounded-2xl bg-[#10152B] border border-[#1E294A] p-6 space-y-3 relative overflow-hidden group hover:border-[#A855F7]/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <span className="w-8 h-8 rounded-lg bg-[#A855F7]/10 text-[#A855F7] border border-[#A855F7]/30 flex items-center justify-center font-mono font-bold text-sm">
+                      3
+                    </span>
+                    <span className="text-[11px] font-mono text-[#A855F7] bg-[#A855F7]/10 px-2 py-0.5 rounded border border-[#A855F7]/20">
+                      Auto-Compound
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#A855F7] transition-colors">
+                    Automatic Compounding Engine
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed">
+                    Automatic compounding automatically uses the previous day’s principal + daily earnings as the new principal for compounding staking, boosting yields exponentially without manual gas fees.
+                  </p>
+                  <div className="pt-2 text-[11px] font-mono text-[#CBD5E1] border-t border-[#1B2440]">
+                    • Daily base: Day N-1 Principal + Rewards<br />
+                    • Exponential geometric APY growth<br />
+                    • Zero transaction fees for reinvesting
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Interactive BOT Pledge Yield & Compounding Simulator */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-10">
+              {/* Simulator Card */}
+              <div className="lg:col-span-7 rounded-3xl bg-gradient-to-b from-[#11172E] to-[#0D1224] border border-[#212C4E] p-6 sm:p-8 space-y-6 shadow-2xl">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-base font-bold text-white">
+                    <Calculator className="w-5 h-5 text-[#38BDF8]" />
+                    <span>BOT Pledge Auto-Compounding Simulator</span>
+                  </div>
+                  <span className="text-xs font-mono text-emerald-400 bg-emerald-400/10 px-2.5 py-1 rounded-full border border-emerald-400/20">
+                    Est. ~0.25% / Day
+                  </span>
+                </div>
+
+                {/* Staked BOT Amount Slider */}
+                <div>
+                  <div className="flex justify-between text-xs font-mono mb-2">
+                    <span className="text-[#8EA2C6]">Staked BOT Amount:</span>
+                    <span className="text-white font-bold text-sm">
+                      {botPledgeAmount.toLocaleString()} BOT 
+                      <span className="text-[#8EA2C6] font-normal text-xs ml-1.5">
+                        (≈ ${(botPledgeAmount * simulatedBotPrice).toFixed(2)})
+                      </span>
+                    </span>
+                  </div>
+                  <input 
+                    type="range"
+                    min={50}
+                    max={20000}
+                    step={50}
+                    value={botPledgeAmount}
+                    onChange={(e) => setBotPledgeAmount(Number(e.target.value))}
+                    className="w-full h-2.5 bg-[#1C2542] rounded-lg appearance-none cursor-pointer accent-[#38BDF8]"
+                  />
+                  <div className="flex justify-between text-[10px] font-mono text-[#606E85] mt-1">
+                    <span>50 BOT</span>
+                    <span>5,000 BOT</span>
+                    <span>10,000 BOT</span>
+                    <span>20,000 BOT</span>
+                  </div>
+                </div>
+
+                {/* Duration Horizon Selector */}
+                <div>
+                  <div className="text-xs font-mono text-[#8EA2C6] mb-2 flex items-center justify-between">
+                    <span>Staking Duration Horizon:</span>
+                    <span className="text-white font-bold">{botPledgeSimulatedDays} Days</span>
+                  </div>
+                  <div className="grid grid-cols-5 gap-2">
+                    {[7, 30, 90, 180, 365].map((days) => (
+                      <button
+                        key={days}
+                        onClick={() => setBotPledgeSimulatedDays(days)}
+                        className={`py-2 text-xs font-bold rounded-xl border transition-all cursor-pointer ${
+                          botPledgeSimulatedDays === days
+                            ? 'bg-[#38BDF8] text-[#070913] border-[#38BDF8] shadow-md shadow-[#38BDF8]/20'
+                            : 'bg-[#141A30] text-[#94A3B8] border-[#222B48] hover:bg-[#1A223E]'
+                        }`}
+                      >
+                        {days}d
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Auto-Compounding Toggle */}
+                <div className="p-4 rounded-2xl bg-[#0B0F20] border border-[#1B2340] flex items-center justify-between">
+                  <div className="space-y-0.5">
+                    <div className="text-xs font-bold text-white flex items-center gap-1.5">
+                      <Sparkles className="w-3.5 h-3.5 text-[#38BDF8]" />
+                      <span>Automatic Compounding (Rule 3)</span>
+                    </div>
+                    <div className="text-[11px] text-[#8EA2C6]">
+                      Automatically uses previous day&apos;s principal + daily earnings as new principal
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setBotPledgeAutoCompound(!botPledgeAutoCompound)}
+                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors cursor-pointer ${
+                      botPledgeAutoCompound ? 'bg-[#38BDF8]' : 'bg-[#222B48]'
+                    }`}
+                  >
+                    <span
+                      className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                        botPledgeAutoCompound ? 'translate-x-6' : 'translate-x-1'
+                      }`}
+                    />
+                  </button>
+                </div>
+
+                {/* Calculation Results Output */}
+                <div className="p-5 rounded-2xl bg-[#0B0F20] border border-[#1D2644] grid grid-cols-2 gap-4">
+                  <div>
+                    <div className="text-[11px] text-[#8EA2C6] font-mono">Estimated Staking Yield</div>
+                    <div className="text-xl font-extrabold text-[#38BDF8] mt-1">
+                      +{botPledgeSelectedReward.toFixed(2)} BOT
+                    </div>
+                    <div className="text-xs text-emerald-400 font-mono mt-0.5">
+                      ≈ +${(botPledgeSelectedReward * simulatedBotPrice).toFixed(2)} USD
+                    </div>
+                    {botPledgeAutoCompound && botPledgeCompoundingBonus > 0.05 && (
+                      <div className="text-[10px] text-amber-400 font-mono mt-1">
+                        Compounding Boost: +{botPledgeCompoundingBonus.toFixed(2)} BOT
+                      </div>
+                    )}
+                  </div>
+                  <div>
+                    <div className="text-[11px] text-[#8EA2C6] font-mono">Total Value at Horizon</div>
+                    <div className="text-xl font-extrabold text-white mt-1">
+                      {botPledgeTotalMaturity.toFixed(2)} BOT
+                    </div>
+                    <div className="text-xs text-[#8EA2C6] font-mono mt-0.5">
+                      Principal + All Earnings
+                    </div>
+                    <div className="text-[10px] text-emerald-400 font-mono mt-1">
+                      Effective APY: {((Math.pow(1 + botPledgeDailyRate, 365) - 1) * 100).toFixed(1)}%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 24-Hour Unlocking Lifecycle Timeline */}
+              <div className="lg:col-span-5 space-y-4">
+                <div className="rounded-3xl bg-[#10152B] border border-[#20294A] p-6 space-y-4">
+                  <div className="flex items-center gap-2 text-sm font-bold text-white">
+                    <Clock className="w-4 h-4 text-amber-400" />
+                    <span>24-Hour Unlocking Lifecycle (Rule 2)</span>
+                  </div>
+                  <p className="text-xs text-[#94A3B8] leading-relaxed">
+                    Unlike permanent hashrate or locked duration terms, BOT Pledge guarantees principal return with a predictable 24-hour cooldown:
+                  </p>
+
+                  <div className="relative pl-6 space-y-4 border-l border-[#242F54] mt-2">
+                    <div className="relative">
+                      <div className="absolute -left-[31px] top-0.5 w-4 h-4 rounded-full bg-[#38BDF8] border-2 border-[#10152B]" />
+                      <div className="text-xs font-bold text-white">1. Active Staking State</div>
+                      <div className="text-[11px] text-[#8EA2C6]">Principal produces continuous daily auto-compounded BOT rewards.</div>
+                    </div>
+
+                    <div className="relative">
+                      <div className="absolute -left-[31px] top-0.5 w-4 h-4 rounded-full bg-amber-400 border-2 border-[#10152B]" />
+                      <div className="text-xs font-bold text-white">2. Withdrawal Initiated (Anytime)</div>
+                      <div className="text-[11px] text-[#8EA2C6]">You submit the withdrawal request in the DApp. Principal enters release state.</div>
+                    </div>
+
+                    <div className="relative">
+                      <div className="absolute -left-[31px] top-0.5 w-4 h-4 rounded-full bg-amber-400/60 border-2 border-[#10152B] animate-pulse" />
+                      <div className="text-xs font-bold text-white">3. 24-Hour Unlocking Window</div>
+                      <div className="text-[11px] text-[#8EA2C6]">Smart contract timer runs for exactly 24 hours to preserve consensus security.</div>
+                    </div>
+
+                    <div className="relative">
+                      <div className="absolute -left-[31px] top-0.5 w-4 h-4 rounded-full bg-emerald-400 border-2 border-[#10152B]" />
+                      <div className="text-xs font-bold text-emerald-400">4. Claim 100% Principal to Wallet</div>
+                      <div className="text-[11px] text-[#8EA2C6]">Funds become available for one-click claim directly back to your address.</div>
+                    </div>
+                  </div>
+
+                  <div className="p-3 rounded-xl bg-[#0C1022] border border-[#1A223D] text-[11px] text-[#CBD5E1]">
+                    <strong className="text-white">Summary:</strong> Flexible entry, daily auto-compounding earnings, and 100% principal return with a 24-hour claim window.
+                  </div>
+                </div>
+
+                {/* Quick Link to DApp */}
+                <div className="p-4 rounded-2xl bg-gradient-to-r from-[#11162C] to-[#151D3A] border border-[#222E54] flex items-center justify-between gap-3">
+                  <div className="text-xs text-[#CBD5E1]">
+                    Ready to pledge BOT? Start in under 2 minutes.
+                  </div>
+                  <a
+                    href={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#38BDF8] text-[#070913] text-xs font-bold shrink-0 hover:bg-[#60A5FA] transition-colors"
+                  >
+                    <span>Launch Portal</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* SIDE-BY-SIDE COMPARISON MATRIX */}
         <section className="py-16 sm:py-20 bg-[#070914] border-b border-[#1C233B]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -717,7 +1043,7 @@ export default function EarnPage() {
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse min-w-[700px]">
+              <table className="w-full text-left border-collapse min-w-[850px]">
                 <thead>
                   <tr className="border-b border-[#1E2540] text-xs font-mono uppercase text-[#8EA2C6] bg-[#0E1222]">
                     <th className="py-4 px-4">Feature</th>
@@ -725,6 +1051,7 @@ export default function EarnPage() {
                     <th className="py-4 px-4 text-[#A855F7]">2. PoS Staking</th>
                     <th className="py-4 px-4 text-amber-400">3. Mining Servers</th>
                     <th className="py-4 px-4 text-emerald-400">4. BOT Hashrate</th>
+                    <th className="py-4 px-4 text-[#38BDF8]">5. BOT Pledge</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#171D36] text-xs sm:text-sm">
@@ -734,6 +1061,7 @@ export default function EarnPage() {
                     <td className="py-4 px-4 text-[#A855F7] font-mono">CA Token</td>
                     <td className="py-4 px-4 text-amber-400 font-mono">CA + AI Fees + Shares</td>
                     <td className="py-4 px-4 text-emerald-400 font-mono">BOT Token (L1)</td>
+                    <td className="py-4 px-4 text-[#38BDF8] font-mono">BOT Token (L1)</td>
                   </tr>
                   <tr>
                     <td className="py-4 px-4 font-semibold text-white">Minimum Capital</td>
@@ -741,6 +1069,7 @@ export default function EarnPage() {
                     <td className="py-4 px-4 font-mono">10 CA (~$27)</td>
                     <td className="py-4 px-4 font-mono">Enterprise Node Tier</td>
                     <td className="py-4 px-4 font-mono">100 USDT Equivalent</td>
+                    <td className="py-4 px-4 font-mono">10 BOT (~$11)</td>
                   </tr>
                   <tr>
                     <td className="py-4 px-4 font-semibold text-white">Principal Status</td>
@@ -748,6 +1077,7 @@ export default function EarnPage() {
                     <td className="py-4 px-4 text-emerald-400 font-bold">100% Returned at Maturity</td>
                     <td className="py-4 px-4 text-amber-300">Physical Hardware Asset</td>
                     <td className="py-4 px-4 text-amber-300">Permanent Hashrate</td>
+                    <td className="py-4 px-4 text-emerald-400 font-bold">100% Returned (24h Unlock)</td>
                   </tr>
                   <tr>
                     <td className="py-4 px-4 font-semibold text-white">Lockup Durations</td>
@@ -755,6 +1085,7 @@ export default function EarnPage() {
                     <td className="py-4 px-4 font-mono">30d, 90d, 180d, 360d</td>
                     <td className="py-4 px-4 font-mono">Lifetime Node Right</td>
                     <td className="py-4 px-4 font-mono">Continuous Lifetime</td>
+                    <td className="py-4 px-4 font-mono text-[#38BDF8]">Flexible (Withdraw Anytime)</td>
                   </tr>
                   <tr>
                     <td className="py-4 px-4 font-semibold text-white">Payout Frequency</td>
@@ -762,6 +1093,7 @@ export default function EarnPage() {
                     <td className="py-4 px-4 font-mono">Daily + At Maturity</td>
                     <td className="py-4 px-4 font-mono">Block-by-Block / Task</td>
                     <td className="py-4 px-4 font-mono">Daily at 00:00 UTC</td>
+                    <td className="py-4 px-4 font-mono text-[#38BDF8]">Daily Auto-Compounded</td>
                   </tr>
                   <tr>
                     <td className="py-4 px-4 font-semibold text-white">Best Suited For</td>
@@ -769,6 +1101,7 @@ export default function EarnPage() {
                     <td className="py-4 px-4 text-[#94A3B8]">Token holders wanting principal return</td>
                     <td className="py-4 px-4 text-[#94A3B8]">Institutional DePIN node investors</td>
                     <td className="py-4 px-4 text-[#94A3B8]">Layer 1 believers & gas miners</td>
+                    <td className="py-4 px-4 text-[#94A3B8]">Flexible stakers seeking auto-compounding & 24h exit</td>
                   </tr>
                 </tbody>
               </table>
@@ -802,6 +1135,8 @@ export default function EarnPage() {
           </div>
         </section>
       </main>
+
+     
     </div>
   );
 }
