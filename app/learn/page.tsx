@@ -40,19 +40,7 @@ export default function LearnPage() {
 
   return (
     <div className="min-h-screen bg-[#0A0C14] text-[#C4CBD8] flex flex-col font-sans selection:bg-[#7B4FFF]/30 selection:text-white">
-      {/* Top Affiliate Disclaimer */}
-      <AffiliateDisclaimerBanner />
-
-      {/* Main Navbar */}
-      <Navbar 
-        currentLang={locale}
-        onLanguageChange={setLocale}
-        onOpenSearch={() => {
-          setAiInitialQuestion("");
-          setAiModalOpen(true);
-        }}
-        onOpenNewsletter={() => setNewsletterModalOpen(true)}
-      />
+     
 
       <main className="flex-grow">
         {/* Learn Page Hero Header */}
@@ -179,35 +167,6 @@ export default function LearnPage() {
         <LearnFaqSection />
       </main>
 
-      {/* Footer */}
-      <Footer
-        onOpenPdf={() => setPdfModalOpen(true)}
-        onOpenNewsletter={() => setNewsletterModalOpen(true)}
-      />
-
-      {/* Interactive Modals */}
-      <AiAssistantModal
-        isOpen={aiModalOpen}
-        onClose={() => setAiModalOpen(false)}
-        initialQuestion={aiInitialQuestion}
-        currentLang={locale}
-      />
-
-      <PdfCheatSheetModal
-        isOpen={pdfModalOpen}
-        onClose={() => setPdfModalOpen(false)}
-      />
-
-      <NewsletterModal
-        isOpen={newsletterModalOpen}
-        onClose={() => setNewsletterModalOpen(false)}
-      />
-
-      <VideoPlayerModal
-        isOpen={videoModalOpen}
-        onClose={() => setVideoModalOpen(false)}
-        guideSlug={videoGuideSlug}
-      />
     </div>
   );
 }
