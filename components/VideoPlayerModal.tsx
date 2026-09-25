@@ -1,17 +1,17 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import { AFFILIATE_CONFIG } from "@/config/constants";
+import { GUIDES_DATA } from "@/config/content";
 import {
-  X,
-  Play,
+  ExternalLink,
+  Maximize,
   Pause,
+  Play,
   Volume2,
   VolumeX,
-  Maximize,
-  ExternalLink,
+  X,
 } from "lucide-react";
-import { GUIDES_DATA } from "@/config/content";
-import { AFFILIATE_CONFIG } from "@/config/constants";
+import React, { useEffect, useRef, useState } from "react";
 
 interface VideoPlayerModalProps {
   isOpen: boolean;

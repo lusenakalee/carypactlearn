@@ -26,6 +26,26 @@ export interface GuideStep {
   videoTutorials?: VideoTutorialLink[];
 }
 
+export interface VideoChapter {
+  title: string;
+  startSeconds: number;
+}
+
+export type VideoSource =
+  | {
+      type: "youtube";
+      videoId: string;
+      startSeconds?: number;
+      poster?: string;
+      chapters?: VideoChapter[];
+    }
+  | {
+      type: "local";
+      src: string;
+      poster?: string;
+      chapters?: VideoChapter[];
+    };
+
 export interface GuideArticle {
   id: string;
   slug: string;
@@ -38,6 +58,7 @@ export interface GuideArticle {
   summary: string;
   videoDuration?: string;
   tutorialVideos?: VideoTutorialLink[];
+  video?: VideoSource;
   steps: GuideStep[];
   keyTakeaways: string[];
 }
