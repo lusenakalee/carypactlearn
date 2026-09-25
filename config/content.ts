@@ -1,81 +1,146 @@
 // Comprehensive Guides, Educational Topics, and Multilingual Dictionary
 
-// A guide's video can live on YouTube or be a locally-hosted file.
-// We deliberately do NOT hardcode a duration here: durations are read
-// straight off the real source at runtime (YouTube IFrame API for
-// youtube videos, the HTMLVideoElement's `duration` for local files)
-// so the displayed time is always accurate and never guessed.
-export type VideoSource =
-  | {
-      type: "youtube";
-      /** The 11-character YouTube video ID */
-      videoId: string;
-      /** Canonical watch URL, kept for reference / "watch on YouTube" links */
-      url: string;
-      /** Optional start offset in seconds, only set when a real timestamp is known */
-      startSeconds?: number;
-      /** Optional real chapter markers — omit entirely rather than inventing generic ones */
-      chapters?: { title: string; startSeconds: number }[];
-    }
-  | {
-      type: "local";
-      /** Path to the video file, e.g. /videos/getting-started.mp4 */
-      src: string;
-      poster?: string;
-      /** Optional real chapter markers — omit entirely rather than inventing generic ones */
-      chapters?: { title: string; startSeconds: number }[];
-    };
+export interface GuideTopic {
+  id: "getting-started" | "wallet-accounts" | "network-transactions" | "bridge-defi" | "project-tools";
+  title: string;
+  description: string;
+  badge?: string;
+  iconName: "Compass" | "Wallet" | "Zap" | "ArrowLeftRight" | "Wrench";
+  guideIds: string[];
+}
+
+export interface VideoTutorialLink {
+  number: number;
+  title: string;
+  url: string;
+  platform?: string;
+  badge?: string;
+}
+
+export interface GuideStep {
+  title: string;
+  description: string;
+  warning?: string;
+  proTip?: string;
+  videoTutorial?: VideoTutorialLink;
+  videoTutorials?: VideoTutorialLink[];
+}
 
 export interface GuideArticle {
   id: string;
   slug: string;
   title: string;
-  category: "Setup" | "Computing" | "Earnings" | "Exchange" | "Security";
+  topicId: "getting-started" | "wallet-accounts" | "network-transactions" | "bridge-defi" | "project-tools";
+  topicTitle: string;
+  category: string;
   readTime: string;
   difficulty: "Beginner" | "Intermediate" | "Advanced";
   summary: string;
-  video?: VideoSource;
-  steps: {
-    title: string;
-    description: string;
-    warning?: string;
-    proTip?: string;
-  }[];
+  videoDuration?: string;
+  tutorialVideos?: VideoTutorialLink[];
+  steps: GuideStep[];
   keyTakeaways: string[];
 }
+
+export const GUIDE_TOPICS: GuideTopic[] = [
+  {
+    id: "getting-started",
+    title: "Getting Started",
+    description: "Set up a wallet, add BOT Chain and complete your first transaction.",
+    iconName: "Compass",
+    badge: "Essential",
+    guideIds: ["getting-started", "create-wallet"]
+  },
+  {
+    id: "wallet-accounts",
+    title: "Wallet & Accounts",
+    description: "Manage wallets, accounts, assets, multi-network bridging and avoid wrong-network loss.",
+    iconName: "Wallet",
+    badge: "Networks",
+    guideIds: ["create-wallet", "cross-chain-networks-bridging"]
+  },
+  {
+    id: "network-transactions",
+    title: "Network & Transactions",
+    description: "Understand network parameters, gas fees and transaction status.",
+    iconName: "Zap",
+    badge: "Network",
+    guideIds: ["buy-computing-power", "network-parameters-gas"]
+  },
+  {
+    id: "bridge-defi",
+    title: "Bridge & DeFi",
+    description: "Use BOT Chain bridge, DEX and staking products safely.",
+    iconName: "ArrowLeftRight",
+    badge: "DeFi",
+    guideIds: ["cross-chain-networks-bridging", "stake-ca", "bot-pledge", "ca-to-usdt"]
+  },
+  {
+    id: "project-tools",
+    title: "Project Tools",
+    description: "Set up multisite accounts, permissions and project operations.",
+    iconName: "Wrench",
+    badge: "Operations",
+    guideIds: ["every-earning-method", "project-tools-operations"]
+  }
+];
 
 export const GUIDES_DATA: GuideArticle[] = [
   {
     id: "getting-started",
     slug: "getting-started",
-    title: "Complete Getting Started Guide to CaryPact",
-    category: "Setup",
+    title: "Getting Started on CaryPact",
+    topicId: "getting-started",
+    topicTitle: "Getting Started",
+    category: "Getting Started",
     readTime: "4 min read",
     difficulty: "Beginner",
-    video: {
-      type: "youtube",
-      videoId: "gpMhwqAeWLQ",
-      url: "https://www.youtube.com/watch?v=gpMhwqAeWLQ"
-    },
-    summary: "A step-by-step roadmap to understanding CaryPact decentralized supercomputing, creating your non-custodial wallet, and navigating the ecosystem safely.",
+    videoDuration: "3:45",
+    tutorialVideos: [
+      { number: 3, title: "How To Register On CaryPact", url: "https://vt.tiktok.com/ZSXacJHg2/", platform: "TikTok" },
+      { number: 8, title: "The Tokenomics of $CA and how to check on botscan", url: "https://vt.tiktok.com/ZSXa3td8n/", platform: "TikTok" }
+    ],
+    summary: "Complete step-by-step onboarding guide to CaryPact decentralized supercomputing on BOT Chain, connecting with invitation code, verifying the official portal, and understanding ecosystem tokenomics.",
     steps: [
       {
-        title: "1. Understand the Core Philosophy",
-        description: "CaryPact operates as a decentralized supercomputing protocol deployed on BOT Chain. Participants contribute USDT to obtain Hashrate Units, which tap into the daily release of CA tokens.",
-        proTip: "Never invest funds you cannot afford to lock up; computing power purchases are permanent."
+        title: "1. Understand the CaryPact Decentralized Supercomputing Model",
+        description: "CaryPact operates as an autonomous supercomputing protocol deployed on BOT Chain. Participants allocate USDT to obtain permanent Hashrate Units, which tap into the daily release pool of 16,800 CA tokens.",
+        proTip: "Never invest funds you cannot afford to lock up; computing power purchases are irreversible and permanent."
       },
       {
         title: "2. Prepare Web3 Wallet & USDT (BEP20 / TRC20)",
-        description: "You will need a Web3 wallet (such as BO Wallet, MetaMask, or Trust Wallet) configured with USDT to activate your account and pay network gas.",
-        warning: "Always double-check you are interacting with the official CaryPact domain (app.carypact.com)."
+        description: "You will need a Web3 wallet (such as BO Wallet, MetaMask, Trust Wallet, or TokenPocket) configured with USDT to activate your account and native BOT tokens to pay network gas.",
+        warning: "Always double-check you are interacting with the official CaryPact domain (app.carypact.com).",
+        videoTutorial: {
+          number: 1,
+          title: "How To Download Tokenpocket Web3 Wallet For CaryPact",
+          url: "https://vt.tiktok.com/ZSXacS6jC/",
+          platform: "TikTok"
+        }
       },
       {
-        title: "3. Connect via Invitation Code",
+        title: "3. Connect via Verified Invitation Code",
         description: "Registration requires a verified community invite. You can use the official learning hub invitation code (1AjyRv / C82A37) to access the network portal.",
+        videoTutorial: {
+          number: 3,
+          title: "How To Register On CaryPact",
+          url: "https://vt.tiktok.com/ZSXacJHg2/",
+          platform: "TikTok"
+        }
       },
       {
-        title: "4. Review Risk Disclosures",
-        description: "Verify understanding of token emission cycles, 5% selling slippage, and market volatility before allocating assets."
+        title: "4. Activate Account & Fund Gas with Native BOT Coins",
+        description: "Transfer a small quantity of BOT (e.g. 0.5 - 2 BOT) to your wallet address. Gas fees on BOT Chain are ultra-low, and 1.50% of all gas fees are burned permanently.",
+      },
+      {
+        title: "5. Review Daily Emission Schedules & Risk Disclosures",
+        description: "Verify your understanding of token emission cycles (40,000 CA daily release), 5% selling slippage on BDEX, and market volatility before allocating assets.",
+        videoTutorial: {
+          number: 8,
+          title: "The Tokenomics of $CA and how to check on botscan",
+          url: "https://vt.tiktok.com/ZSXa3td8n/",
+          platform: "TikTok"
+        }
       }
     ],
     keyTakeaways: [
@@ -87,65 +152,180 @@ export const GUIDES_DATA: GuideArticle[] = [
   {
     id: "create-wallet",
     slug: "create-wallet",
-    title: "How to Create & Secure Your BO Wallet",
-    category: "Setup",
+    title: "How to Create Wallet (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
+    topicId: "getting-started",
+    topicTitle: "Getting Started",
+    category: "Getting Started",
     readTime: "5 min read",
     difficulty: "Beginner",
-    video: {
-      type: "youtube",
-      videoId: "dIkahd0EZbk",
-      url: "https://youtu.be/dIkahd0EZbk"
-    },
-    summary: "Set up the non-custodial BO Wallet or standard EVM wallet with custom RPC for BOT Chain compatibility, staking, and reward tracking.",
+    videoDuration: "4:20",
+    tutorialVideos: [
+      { number: 1, title: "How To Download Tokenpocket Web3 Wallet For CaryPact", url: "https://vt.tiktok.com/ZSXacS6jC/", platform: "TikTok" },
+      { number: 2, title: "How To Install Botchain and add the $CA & $USDT Contracts", url: "https://vt.tiktok.com/ZSXacF78K/", platform: "TikTok" }
+    ],
+    summary: "Instructions on how to download and set up a Web3 wallet: TokenPocket, Trust Wallet, MetaMask, and BO Wallet with BOT Chain network configuration, seed phrase security, and custom token import.",
     steps: [
       {
-        title: "1. Download Official Client or Configure RPC",
-        description: "Install the BO Wallet app or add BOT Chain custom network to your MetaMask with Chain ID, RPC Endpoint, and BOT currency symbol.",
-        proTip: "Keep an extra copy of the RPC endpoints saved in your browser bookmarks."
+        title: "1. Choose & Download Your Web3 Wallet",
+        description: "Select your preferred non-custodial wallet: BO Wallet (native to BOT Chain ecosystem), TokenPocket (tokenpocket.pro), Trust Wallet (trustwallet.com), or MetaMask (metamask.io). Always download exclusively from official verified app stores or official domains.",
+        warning: "Beware of phishing clones in app stores. Never download wallet software from search engine advertisements or direct APK links in chats.",
+        videoTutorial: {
+          number: 1,
+          title: "How To Download Tokenpocket Web3 Wallet For CaryPact",
+          url: "https://vt.tiktok.com/ZSXacS6jC/",
+          platform: "TikTok"
+        }
       },
       {
-        title: "2. Write Down Your 12-Word Seed Phrase",
-        description: "Record the 12-word recovery phrase on physical paper or titanium cold storage. Never take screenshots or store them in cloud sync folders.",
-        warning: "Anyone with your recovery phrase can drain your assets. Support staff will NEVER ask for it."
+        title: "2. Create a New Wallet & Write Down 12-Word Seed Phrase",
+        description: "Select 'Create New Wallet' and set a strong alphanumeric password. The app will generate a 12 or 24-word recovery phrase. Write these words on physical paper in sequential order and store them in a fireproof/waterproof location.",
+        warning: "Never take screenshots, store recovery phrases in cloud storage (Google Drive, iCloud), or email them. Anyone with your 12 words can instantly drain your funds."
       },
       {
-        title: "3. Deposit Gas Assets & USDT",
-        description: "Transfer a small quantity of BOT for transaction gas fees and USDT for your planned computing power or staking participation."
+        title: "3. Configure BOT Chain Custom RPC Network",
+        description: "For MetaMask, Trust Wallet, or TokenPocket, navigate to Settings > Networks > Add Network (Custom RPC) and enter: Network Name: BOT Chain, RPC URL: https://rpc.botchain.ai, Chain ID: 1918, Currency Symbol: BOT, Block Explorer: https://scan.botchain.ai. (BO Wallet includes BOT Chain pre-configured).",
+        proTip: "Save the official RPC endpoint in your notes so you can switch if a secondary mirror is ever needed.",
+        videoTutorial: {
+          number: 2,
+          title: "How To Install Botchain and add the $CA & $USDT Contracts",
+          url: "https://vt.tiktok.com/ZSXacF78K/",
+          platform: "TikTok"
+        }
+      },
+      {
+        title: "4. Add CA and USDT Token Contracts",
+        description: "In your wallet, tap 'Import Tokens' or 'Custom Token', select BOT Chain, and paste the official contract addresses for CA Token and USDT. Your balances will now reflect automatically in your asset dashboard.",
+        videoTutorial: {
+          number: 2,
+          title: "How To Install Botchain and add the $CA & $USDT Contracts",
+          url: "https://vt.tiktok.com/ZSXacF78K/",
+          platform: "TikTok"
+        }
+      },
+      {
+        title: "5. Deposit Gas Assets & Verify Account Security",
+        description: "Transfer a small amount of BOT for transaction gas fees and USDT for computing power or staking. Test your wallet by sending a small transaction before committing larger allocations."
       }
     ],
     keyTakeaways: [
       "Non-custodial means only you hold the keys to your funds.",
-      "BOT is the native gas token of BOT Chain (1.50% of gas fees are permanently burned).",
-      "Compatible with Android, iOS, and browser extension environments."
+      "BOT Chain uses Chain ID 1918 with native gas token BOT (1.50% gas burn).",
+      "Compatible across BO Wallet, TokenPocket, Trust Wallet, and MetaMask."
+    ]
+  },
+  {
+    id: "cross-chain-networks-bridging",
+    slug: "cross-chain-networks-bridging",
+    title: "Understanding Networks, Bridging & Avoiding Wrong-Network Loss (BSC, Ethereum, Bitcoin & BOT Chain)",
+    topicId: "wallet-accounts",
+    topicTitle: "Wallet & Accounts",
+    category: "Networks & Bridging",
+    readTime: "7 min read",
+    difficulty: "Beginner",
+    videoDuration: "5:30",
+    summary: "Essential masterclass on understanding different blockchain networks (Binance Smart Chain/BSC, Ethereum, Bitcoin, and BOT Chain), why cross-chain bridging (https://bridge.botchain.ai/) is required, how they interact, and critical cautions to avoid permanent loss from sending to the wrong network.",
+    steps: [
+      {
+        title: "1. Understand Blockchain Separation: Why Networks Cannot Directly Talk",
+        description: "Blockchains are completely independent cryptographic ledgers. Bitcoin operates on its own UTXO blockchain, Ethereum operates on EVM Chain ID 1, Binance Smart Chain (BSC) operates on Chain ID 56, and BOT Chain operates as an autonomous Layer 1 on Chain ID 1918. Tokens created on one chain cannot simply be 'transferred' to an address on another chain without a bridge.",
+        warning: "CRITICAL: Never send tokens directly from Binance Smart Chain (BSC), Ethereum, or Bitcoin to a BOT Chain address via a standard wallet transfer. Because the networks are separate, transferring directly across different chains without a bridge will orphan your tokens and result in permanent, unrecoverable loss."
+      },
+      {
+        title: "2. Why We Have Bridging: The Official BOT Chain Bridge (https://bridge.botchain.ai/)",
+        description: "Because networks are isolated, cross-chain bridges exist to securely transfer value. When moving USDT between BSC (BEP20) or Ethereum (ERC20) and BOT Chain, the bridge smart contracts lock your original tokens on the source network and release or mint equivalent pegged tokens on BOT Chain (and vice versa when moving out).",
+        proTip: "Always use the official verified bridge portal: https://bridge.botchain.ai/ — bookmark this address and never use unverified third-party bridge aggregators."
+      },
+      {
+        title: "3. Major Networks Breakdown & How They Interact with BOT Chain",
+        description: "• Binance Smart Chain (BSC / BEP-20): The primary onboarding corridor for CaryPact. Most users hold USDT (BEP-20) due to low network fees and fast confirmations. You bridge BEP-20 USDT into BOT Chain to buy computing power or stake.\n• Ethereum (ERC-20): The highest liquidity smart contract network. ERC-20 USDT can be bridged to BOT Chain, but incurs higher Layer 1 Ethereum gas fees.\n• Bitcoin (BTC Network): The pioneer decentralized store of value. Bitcoin runs on a non-EVM UTXO ledger and interacts with EVM networks exclusively through cross-chain wrapped relays or centralized exchange on-ramps.\n• BOT Chain (Layer 1, Chain ID 1918): The high-speed Layer 1 for CaryPact AI supercomputing. Powered by native BOT gas with sub-second finality and sub-cent fees.",
+        proTip: "BSC (BEP-20) is recommended for most users due to rapid 3-second block finality and transaction fees under $0.15 compared to Ethereum."
+      },
+      {
+        title: "4. Severe Caution: How to Prevent Sending to the Wrong Network",
+        description: "1. Centralized Exchange Warning (Binance, OKX, Bybit, KuCoin): Centralized exchanges only accept deposits on specifically supported networks. If an exchange requires 'USDT-BEP20' or 'USDT-TRC20', DO NOT send directly from your BOT Chain wallet! First use https://bridge.botchain.ai/ to bridge your BOT Chain USDT back to BSC (BEP-20), and then deposit from your BSC wallet into the exchange.\n2. Always verify your wallet's active network header before submitting any transaction.\n3. Address Match Trap: In EVM wallets (MetaMask, TokenPocket), your public address (0x...) is often identical across Ethereum, BSC, and BOT Chain. Having the same address does NOT mean the funds are on the same network! You must bridge assets across chains to change their network.",
+        warning: "Sending BOT Chain tokens directly to a centralized exchange deposit address that does not support BOT Chain native deposits will cause your funds to be permanently lost or stuck in exchange custodial vaults."
+      },
+      {
+        title: "5. Step-by-Step Guide to Bridging Assets (https://bridge.botchain.ai/)",
+        description: "1. Open the official bridge portal at https://bridge.botchain.ai/ in your Web3 browser.\n2. Connect your wallet (BO Wallet, MetaMask, Trust Wallet, or TokenPocket).\n3. Select your Source Network (e.g. BSC / BNB Smart Chain) and Target Network (BOT Chain).\n4. Select the asset to bridge (e.g. USDT) and specify the amount.\n5. Click 'Approve Token' to permit the bridge smart contract to process the transfer.\n6. Confirm the cross-chain swap transaction. Decentralized relayers validate the lock-and-mint action within 1 to 3 minutes.\n7. Switch your wallet network to BOT Chain (Chain ID 1918) to view your bridged USDT balance.",
+        proTip: "Golden Rule: Always perform a small test transfer (e.g. 10 USDT) before bridging large amounts to verify network endpoints and destination wallet addresses.",
+        videoTutorial: {
+          number: 1,
+          title: "How To Download Tokenpocket Web3 Wallet For CaryPact",
+          url: "https://vt.tiktok.com/ZSXacS6jC/",
+          platform: "TikTok"
+        }
+      }
+    ],
+    keyTakeaways: [
+      "Different blockchains (Bitcoin, Ethereum, BSC, BOT Chain) cannot directly communicate without a cross-chain bridge.",
+      "The official portal to bridge assets safely between BSC/Ethereum and BOT Chain is https://bridge.botchain.ai/.",
+      "Never send BOT Chain tokens directly to centralized exchange deposit addresses without first bridging back to BSC (BEP-20).",
+      "Identical 0x... wallet addresses across EVM chains do not share balances; cross-chain bridging is required to transfer value.",
+      "Always execute a small test transaction first to ensure full peace of mind."
     ]
   },
   {
     id: "buy-computing-power",
     slug: "buy-computing-power",
     title: "How to Purchase Computing Power (Hashrate Units)",
-    category: "Computing",
+    topicId: "network-transactions",
+    topicTitle: "Network & Transactions",
+    category: "Network & Transactions",
     readTime: "6 min read",
     difficulty: "Intermediate",
-    video: {
-      type: "youtube",
-      videoId: "eziTYIKL300",
-      url: "https://www.youtube.com/watch?v=eziTYIKL300"
-    },
-    summary: "Deep dive into Hashrate Units: 1 USDT = 1 Unit, minimum 100 USDT, daily 16,800 CA distribution pool, and the critical permanence rule.",
+    videoDuration: "5:10",
+    tutorialVideos: [
+      { number: 4, title: "How To Buy Hashrate For $CA token Mining", url: "https://vt.tiktok.com/ZSXacsE6S/", platform: "TikTok" },
+      { number: 5, title: "How To Calculate Daily Rewards From Mining $CA Token", url: "https://vt.tiktok.com/ZSXacUSfs/", platform: "TikTok" }
+    ],
+    summary: "Deep dive into Hashrate Units: 1 USDT = 1 Unit, minimum 100 USDT, daily 16,800 CA distribution pool, transaction gas estimation, and the permanent allocation rule.",
     steps: [
       {
-        title: "1. Understand the 1:1 Hashrate Unit Model",
-        description: "When you contribute 100 USDT (or higher), the smart contract permanently allocates 100 Hashrate Units to your address. This grants a proportional share of the 16,800 CA daily mining pool.",
-        warning: "CRITICAL: Computing power purchases are PERMANENT. There is no principal withdrawal or exit mechanism for hashrate once activated."
+        title: "1. Understand the 1:1 Hashrate Unit Model & Permanence Rule",
+        description: "When you contribute 100 USDT (or higher), the smart contract permanently mints 100 Hashrate Units to your address. This grants a perpetual proportional share of the 16,800 CA daily mining pool.",
+        warning: "CRITICAL: Computing power purchases are PERMANENT. There is no principal withdrawal or exit mechanism for hashrate once activated. Only participate with capital you intend to commit long-term."
       },
       {
         title: "2. Connect Wallet to CaryPact DApp",
-        description: "Open the CaryPact portal, navigate to the 'Computing Power' section, and enter your desired USDT allocation (minimum 100 USDT).",
+        description: "Open the CaryPact portal, navigate to the 'Computing Power' section, and verify your wallet is connected to BOT Chain with sufficient USDT and a small BOT gas balance.",
+        videoTutorial: {
+          number: 3,
+          title: "How To Register On CaryPact",
+          url: "https://vt.tiktok.com/ZSXacJHg2/",
+          platform: "TikTok"
+        }
       },
       {
-        title: "3. Approve USDT Smart Contract & Confirm",
-        description: "Approve the token spending limit and confirm the transaction. Your Hashrate Units will begin calculating output on the next settlement cycle.",
-        proTip: "The compounding time factor (K ≈ 1.01/day) rewards sustained network participation."
+        title: "3. Enter USDT Amount (Minimum 100 USDT) & Approve Spend",
+        description: "Input your desired USDT allocation (multiples of 100 USDT). Click 'Approve USDT' and sign the transaction in your wallet. Wait for the approval confirmation on-chain.",
+        proTip: "The compounding time factor (K ≈ 1.01/day) mathematically rewards sustained early network participation.",
+        videoTutorial: {
+          number: 4,
+          title: "How To Buy Harshrate For $CA token Mining",
+          url: "https://vt.tiktok.com/ZSXacsE6S/",
+          platform: "TikTok"
+        }
+      },
+      {
+        title: "4. Confirm Purchase Transaction & Gas Parameters",
+        description: "Click 'Confirm Purchase' and authorize the contract transaction. The BOT Chain network processes the transaction within seconds at negligible gas costs.",
+        videoTutorial: {
+          number: 4,
+          title: "How To Buy Harshrate For $CA token Mining",
+          url: "https://vt.tiktok.com/ZSXacsE6S/",
+          platform: "TikTok"
+        }
+      },
+      {
+        title: "5. Monitor Daily T+1 Mining Reward Settlement",
+        description: "Your Hashrate Units are activated immediately and will begin calculating output on the next daily settlement cycle (00:00 UTC) from the 16,800 CA mining pool.",
+        videoTutorial: {
+          number: 5,
+          title: "How To Calculate Daily Rewards From Mining $CA Token",
+          url: "https://vt.tiktok.com/ZSXacUSfs/",
+          platform: "TikTok"
+        }
       }
     ],
     keyTakeaways: [
@@ -155,140 +335,340 @@ export const GUIDES_DATA: GuideArticle[] = [
     ]
   },
   {
-    id: "receive-ca",
-    slug: "receive-ca",
-    title: "Receiving, Claiming & Tracking Daily CA Rewards",
-    category: "Earnings",
+    id: "network-parameters-gas",
+    slug: "network-parameters-gas",
+    title: "BOT Chain Network Parameters, Gas Fees & Transaction Status",
+    topicId: "network-transactions",
+    topicTitle: "Network & Transactions",
+    category: "Network & Transactions",
     readTime: "4 min read",
     difficulty: "Beginner",
-    video: {
-      type: "youtube",
-      videoId: "qJ1trZFznrY",
-      url: "https://youtu.be/qJ1trZFznrY"
-    },
-    summary: "How daily CA mining yields, PoS staking distributions, and referral incentives are settled on-chain every 24 hours.",
+    tutorialVideos: [
+      { number: 8, title: "The Tokenomics of $CA and how to check on botscan", url: "https://vt.tiktok.com/ZSXa3td8n/", platform: "TikTok" }
+    ],
+    summary: "Understand network parameters, gas fees, RPC endpoints, Chain ID, 1.50% native gas burn mechanics, block explorer confirmations, and how to verify transaction status.",
     steps: [
       {
-        title: "1. Monitor T+1 Daily Settlement",
-        description: "The CaryPact smart contract aggregates global hashrate and distributes daily CA rewards automatically to your internal balance at 00:00 UTC.",
+        title: "1. Official BOT Chain Network Parameters",
+        description: "Network Name: BOT Chain | Chain ID: 1918 | Currency Symbol: BOT | Primary RPC: https://rpc.botchain.ai | Block Explorer: https://scan.botchain.ai.",
+        proTip: "BOT Chain features 3-second block times and sub-cent transaction costs.",
+        videoTutorial: {
+          number: 2,
+          title: "How To Install Botchain and add the $CA & $USDT Contracts",
+          url: "https://vt.tiktok.com/ZSXacF78K/",
+          platform: "TikTok"
+        }
       },
       {
-        title: "2. Review Output Breakdown",
-        description: "Inspect whether your incoming CA originates from Computing Power Mining (16,800 CA pool), PoS Staking (7,200 CA pool), or VIP Active Rewards (14,000 CA pool).",
+        title: "2. Understanding the 1.50% Native Gas Burn",
+        description: "Every single transaction executed on BOT Chain burns 1.50% of the gas fee automatically at the protocol level, creating structural deflation as network usage scales.",
       },
       {
-        title: "3. Claim to Non-Custodial Wallet",
-        description: "Click 'Harvest' / 'Claim' to transfer minted CA tokens into your self-custodial wallet address on BOT Chain.",
-        proTip: "Batch claiming weekly can optimize gas fee expenses."
+        title: "3. Checking Transaction Status & Verifying Hashes",
+        description: "If a transaction is pending or you need proof of transfer, copy your transaction hash (TxID) and paste it into the BOT Chain Block Explorer to view block height, gas used, and confirmation timestamp.",
+        videoTutorial: {
+          number: 8,
+          title: "The Tokenomics of $CA and how to check on botscan",
+          url: "https://vt.tiktok.com/ZSXa3td8n/",
+          platform: "TikTok"
+        }
       }
     ],
     keyTakeaways: [
-      "Daily settlements run on a strict 24-hour T+1 cycle.",
-      "Harvested CA is immediately usable for staking, trading, or liquidity pairing.",
-      "All distributions are provably verifiable on the BOT Explorer."
+      "Chain ID 1918 is the official identifier for BOT Chain Layer 1.",
+      "1.50% of all transaction fees are permanently burned from total BOT supply.",
+      "All transfers, swaps, and hashrate activations are publicly verifiable on scan.botchain.ai."
     ]
   },
   {
     id: "stake-ca",
     slug: "stake-ca",
-    title: "Staking CA: Flexible vs. Fixed Terms (30d–360d)",
-    category: "Earnings",
+    title: "How to Stake CA (Flexible vs. Fixed Term Multipliers)",
+    topicId: "bridge-defi",
+    topicTitle: "Bridge & DeFi",
+    category: "Bridge & DeFi",
     readTime: "7 min read",
     difficulty: "Intermediate",
-    video: {
-      type: "youtube",
-      videoId: "L8sKdWz6Qbs",
-      url: "https://www.youtube.com/watch?v=L8sKdWz6Qbs"
-    },
-    summary: "Learn how the 7,200 CA/day PoS staking pool works, multiplier tiers (1.3x to 2.5x), and why hypothetical compounding figures require realistic risk assessment.",
+    videoDuration: "6:00",
+    tutorialVideos: [
+      { number: 6, title: "How To Stake $CA", url: "https://vt.tiktok.com/ZSXa3dSgr/", platform: "TikTok" },
+      { number: 7, title: "How To Compound Your Daily Rewards From Staking $CA", url: "https://vt.tiktok.com/ZSXa3f1sM/", platform: "TikTok" }
+    ],
+    summary: "Learn how the 7,200 CA/day PoS staking pool works, flexible vs fixed terms (30d–360d), multiplier boosts (1.3x to 2.5x), fee buyback inflows, and compounding mechanics.",
     steps: [
       {
-        title: "1. Choose Your Staking Strategy",
-        description: "Select between Flexible (0.2%–0.4% daily, instant exit) or Fixed Lockup Terms (30d = 1.3x multiplier, 90d = 1.6x, 180d = 2.0x, 360d = 2.5x).",
-        proTip: "Fixed terms yield higher multipliers but lock token access until the term expiration date."
+        title: "1. Choose Your Staking Strategy: Flexible vs Fixed Terms",
+        description: "Select between Flexible Staking (0.2%–0.4% daily, instant unstaking anytime) or Fixed Lockup Terms (30 days = 1.3x multiplier, 90 days = 1.6x multiplier, 180 days = 2.0x multiplier, 360 days = 2.5x multiplier).",
+        proTip: "Fixed terms yield significantly higher shares of the daily 7,200 CA pool, but lock principal until term expiration."
       },
       {
-        title: "2. Understand the Reward Pool Inflow",
-        description: "Staking rewards are continuously replenished by: 7,200 CA/day from base emission, 1.8% from sell slippage fees, active pool surplus, and price stabilization reserves.",
+        title: "2. Understand the Continuous Reward Pool Inflows",
+        description: "Staking rewards are continuously replenished by: 7,200 CA/day base protocol emission + 1.8% from BDEX sell slippage buyback + active pool surplus.",
       },
       {
-        title: "3. Review Hypothetical vs Real Return Disclosures",
-        description: "Ecosystem presentations frequently demonstrate illustrative models (e.g. $10k compounding to $400k+ assuming sustained 0.3% price growth). These are purely hypothetical simulations and DO NOT represent guaranteed returns.",
-        warning: "Crypto asset prices fluctuate wildly. High APR estimates depend directly on CA market valuation and network liquidity."
+        title: "3. Allocate CA & Sign the Staking Contract",
+        description: "Navigate to the CaryPact Staking portal, enter the amount of CA tokens you wish to stake, select your duration tier, and confirm the transaction in your Web3 wallet.",
+        videoTutorial: {
+          number: 6,
+          title: "How To Stake $CA",
+          url: "https://vt.tiktok.com/ZSXa3dSgr/",
+          platform: "TikTok"
+        }
+      },
+      {
+        title: "4. Review Hypothetical vs Real Return Disclosures",
+        description: "Illustrative presentations often model compound figures (e.g. $10k compounding to $400k+ assuming sustained 0.3% price growth). These are purely hypothetical simulations and DO NOT represent guaranteed yields.",
+        warning: "Crypto asset prices fluctuate wildly. Staking yield value is directly coupled to CA market pricing.",
+        videoTutorial: {
+          number: 7,
+          title: "How To Compound Your Daily Rewards From Staking $CA",
+          url: "https://vt.tiktok.com/ZSXa3f1sM/",
+          platform: "TikTok"
+        }
       }
     ],
     keyTakeaways: [
-      "Flexible staking allows daily withdrawals; fixed terms lock assets for higher multipliers.",
-      "Funded by 18% base emission + 1.8% trade slippage buyback fee.",
+      "Flexible staking allows daily withdrawals; fixed terms lock assets for higher multipliers (up to 2.5x).",
+      "Funded by 18% base emission (7,200 CA/day) + 1.8% trade slippage buyback fee.",
       "Compound projections must always be evaluated alongside market volatility."
     ]
   },
   {
     id: "ca-to-usdt",
     slug: "ca-to-usdt",
-    title: "How to Swap CA to USDT on BDEX & SWAP",
-    category: "Exchange",
+    title: "How to Swap CA - USDT & Cross-Chain Bridging",
+    topicId: "bridge-defi",
+    topicTitle: "Bridge & DeFi",
+    category: "Bridge & DeFi",
     readTime: "5 min read",
     difficulty: "Intermediate",
-    video: {
-      type: "youtube",
-      videoId: "XmPXn2z4DJI",
-      url: "https://youtu.be/XmPXn2z4DJI"
-    },
-    summary: "Mastering the BDEX decentralized exchange, understanding the 5% slippage distribution (1.8% buyback burn + 3.2% node reward), and executing fast swaps.",
+    videoDuration: "4:40",
+    summary: "Complete walkthrough of using BDEX and CaryPact SWAP, navigating the 5% sell slippage (1.8% buyback burn + 3.2% node rewards), and bridging swapped USDT back to BNB Chain, TRON, or Ethereum.",
     steps: [
       {
         title: "1. Navigate to BDEX or CaryPact SWAP",
         description: "Connect your wallet to BDEX and select the CA / USDT trading pair. Ensure your wallet has sufficient BOT for the gas fee.",
       },
       {
-        title: "2. Account for the 5% Slippage Mechanism",
-        description: "Every sell order of CA automatically routes 1.8% to the buyback & burn engine (reducing circulating supply) and 3.2% to node operators and liquidity keepers.",
-        proTip: "Set your swap tolerance slippage to at least 5.5% to avoid failed transactions."
+        title: "2. Account for the 5% Sell Slippage Mechanism",
+        description: "Every sell order of CA automatically routes 1.8% to the buyback & burn engine (reducing circulating supply permanently) and 3.2% to node operators and liquidity keepers.",
+        proTip: "Set your swap tolerance slippage to at least 5.5% in the DEX settings to avoid failed transactions.",
+        videoTutorial: {
+          number: 8,
+          title: "The Tokenomics of $CA and how to check on botscan",
+          url: "https://vt.tiktok.com/ZSXa3td8n/",
+          platform: "TikTok"
+        }
       },
       {
         title: "3. Review Price Impact & Confirm Swap",
-        description: "Check the current execution price against the pool depth and confirm. USDT will appear in your wallet instantly upon block finality."
+        description: "Check the current execution price against the pool depth and confirm. USDT will appear in your wallet instantly upon block finality.",
+      },
+      {
+        title: "4. Access the Official Cross-Chain Bridge",
+        description: "To move your swapped USDT from BOT Chain to another network, open the BOT Chain Bridge, select BOT Chain as source and BNB Smart Chain (BEP20) or TRON (TRC20) as destination.",
+        warning: "Always verify recipient address on the destination chain. Never bridge directly to an exchange deposit address that requires MEMO tags unless verified."
+      },
+      {
+        title: "5. Confirm Bridge Transaction & Monitor Validator Relayers",
+        description: "Submit the bridge transaction. Cross-chain relayers validate the lock-and-mint action within 1 to 5 minutes.",
       }
     ],
     keyTakeaways: [
       "Selling CA incurs a mandatory 5% fee designed to sustain deflation and reward node operators.",
       "1.8% of every sell order permanently burns CA tokens.",
-      "Cross-chain bridge enables moving swapped USDT back to Ethereum or BNB Chain."
+      "Cross-chain bridge enables moving swapped USDT back to Ethereum, BSC, or TRON safely."
     ]
   },
   {
-    id: "withdraw",
-    slug: "withdraw",
-    title: "Withdrawing Assets & Bridging to External Chains",
-    category: "Security",
+    id: "bot-pledge",
+    slug: "bot-pledge",
+    title: "How to Stake BOT (BOT Pledge & Auto-Compounding)",
+    topicId: "bridge-defi",
+    topicTitle: "Bridge & DeFi",
+    category: "Bridge & DeFi",
     readTime: "5 min read",
-    difficulty: "Intermediate",
-    video: {
-      type: "youtube",
-      videoId: "WOwJiiuGCP4",
-      url: "https://www.youtube.com/watch?v=WOwJiiuGCP4"
-    },
-    summary: "Step-by-step procedure for bridging your USDT from BOT Chain to Ethereum, BNB Chain, or centralized exchanges safely.",
+    difficulty: "Beginner",
+    videoDuration: "4:15",
+    tutorialVideos: [
+      { number: 7, title: "How To Compound Your Daily Rewards From Staking $CA", url: "https://vt.tiktok.com/ZSXa3f1sM/", platform: "TikTok" }
+    ],
+    summary: "Complete guide to BOT Pledge (also called Bot Staking) at app.carypact.com/bot-pledge: stake BOT to earn rewards with flexible entry and exit, 24-hour principal unlocking rule, and automatic daily compounding.",
     steps: [
       {
-        title: "1. Access the Official BOT Chain Bridge",
-        description: "Select BOT Chain as the source network and choose your destination chain (e.g. BNB Smart Chain or TRON for low gas).",
+        title: "1. Stake BOT to Earn Rewards Flexible Entry and Exit, Free Control",
+        description: "BOT Pledge allows you to stake native BOT Layer 1 coins to earn daily protocol staking rewards with complete control over your capital. Unlike locked term staking or permanent computing power purchases, you can deposit and request withdrawal at any time.",
+        proTip: "Earnings are generated and settled directly in native BOT coins, so there are no DEX trading slippages or token conversion delays."
       },
       {
-        title: "2. Input Destination Address",
-        description: "Enter your personal wallet address on the target network. Never send bridge transactions directly to an unsupported smart contract or exchange deposit that requires memo tags unless verified.",
-        warning: "Sending tokens to the wrong network without bridge protocol support can result in permanent loss."
+        title: "2. Basic Rule 1: Stake BOT to Earn Rewards",
+        description: "Connect your Web3 wallet (BO Wallet, MetaMask, Trust Wallet, or TokenPocket) to the official CaryPact BOT Pledge portal (app.carypact.com/bot-pledge). Enter your desired BOT staking amount and confirm the on-chain pledge transaction to begin earning.",
       },
       {
-        title: "3. Monitor Validator Confirmations",
-        description: "Cross-chain bridge relayers validate the lock-and-mint transaction. Typical completion takes between 1 to 5 minutes.",
+        title: "3. Basic Rule 2: 24-Hour Unlocking Period for Released Principal",
+        description: "Released principal can be withdrawn at any time. When you initiate a withdrawal in the DApp, the contract initiates an unbonding countdown. After withdrawal, it will be available for claim following a 24-hour unlocking period.",
+        warning: "Once you submit a withdrawal request, your principal enters the 24-hour safety unbonding period before you can execute the final on-chain claim to your wallet."
+      },
+      {
+        title: "4. Basic Rule 3: Automatic Compounding Engine",
+        description: "Automatic compounding automatically uses the previous day’s principal + daily earnings as the new principal for compounding staking. This continuous geometric reinvestment maximizes long-term yield without requiring daily manual transactions or additional gas fees.",
+        proTip: "Compounding continuously over 90, 180, or 365 days significantly amplifies cumulative APY compared to flat non-compounded staking.",
+        videoTutorial: {
+          number: 7,
+          title: "How To Compound Your Daily Rewards From Staking $CA",
+          url: "https://vt.tiktok.com/ZSXa3f1sM/",
+          platform: "TikTok"
+        }
+      },
+      {
+        title: "5. Monitor Daily Payouts & Claim Released Funds",
+        description: "Review your active staked BOT, daily compounding returns, and claimable balances anytime directly within the BOT Pledge interface.",
       }
     ],
     keyTakeaways: [
-      "Cross-Chain Bridge provides non-custodial liquidity transfers.",
-      "Double-check recipient address and chain network ID before confirming.",
-      "Keep a fraction of native gas tokens on both source and destination chains."
+      "Rule 1: Stake BOT to Earn Rewards — flexible entry and exit with free control.",
+      "Rule 2: Released principal can be withdrawn anytime, available for claim after a 24-hour unlocking period.",
+      "Rule 3: Automatic compounding automatically re-stakes (previous day's principal + daily earnings) as new principal.",
+      "Zero swap fees: rewards and principal are denominated directly in native BOT Layer 1 coins."
+    ]
+  },
+  {
+    id: "every-earning-method",
+    slug: "every-earning-method",
+    title: "How-To for Every Earning Method in CaryPact",
+    topicId: "project-tools",
+    topicTitle: "Project Tools",
+    category: "Project Tools",
+    readTime: "9 min read",
+    difficulty: "Intermediate",
+    tutorialVideos: [
+      { number: 4, title: "How To Buy Hashrate For $CA token Mining", url: "https://vt.tiktok.com/ZSXacsE6S/", platform: "TikTok" },
+      { number: 6, title: "How To Stake $CA", url: "https://vt.tiktok.com/ZSXa3dSgr/", platform: "TikTok" },
+      { number: 9, title: "The $BOT Mining Server Benefits", url: "https://vt.tiktok.com/ZSXaT1Wvy/", platform: "TikTok" }
+    ],
+    summary: "Comprehensive guide to all earning methods in the CaryPact ecosystem: Computing Power Mining, PoS CA Staking, BOT Pledge (Bot Staking), VIP Dynamic Active Rewards, Global Community Pool, Node Dividend Pools, LP Farming, Referral Rebates, and Deflationary Burn Arbitrage.",
+    steps: [
+      {
+        title: "Method 1: Computing Power Mining (16,800 CA / Day)",
+        description: "Allocate USDT (min 100 USDT = 100 Hashrate Units) to earn proportional daily CA rewards from the primary 16,800 CA daily pool (42% of total emissions). Rewards scale with your hashrate share and duration coefficient K.",
+        proTip: "Permanent hashrate participation builds steady base cash flow independent of staking lockups.",
+        videoTutorials: [
+          {
+            number: 4,
+            title: "How To Buy Harshrate For $CA token Mining",
+            url: "https://vt.tiktok.com/ZSXacsE6S/",
+            platform: "TikTok"
+          },
+          {
+            number: 5,
+            title: "How To Calculate Daily Rewards From Mining $CA Token",
+            url: "https://vt.tiktok.com/ZSXacUSfs/",
+            platform: "TikTok"
+          }
+        ]
+      },
+      {
+        title: "Method 2: PoS Token Staking (7,200 CA / Day + Multipliers)",
+        description: "Stake mined or purchased CA tokens in flexible (0.2%-0.4%/day) or fixed terms (30d = 1.3x, 90d = 1.6x, 180d = 2.0x, 360d = 2.5x). Funded by 18% base emission plus 1.8% of all BDEX sell slippage.",
+        videoTutorials: [
+          {
+            number: 6,
+            title: "How To Stake $CA",
+            url: "https://vt.tiktok.com/ZSXa3dSgr/",
+            platform: "TikTok"
+          },
+          {
+            number: 7,
+            title: "How To Compound Your Daily Rewards From Staking $CA",
+            url: "https://vt.tiktok.com/ZSXa3f1sM/",
+            platform: "TikTok"
+          }
+        ]
+      },
+      {
+        title: "Method 3: BOT Pledge / Bot Staking (Flexible Entry/Exit + Auto-Compounding)",
+        description: "Stake BOT to earn rewards with flexible entry and exit and free control (app.carypact.com/bot-pledge). Released principal can be withdrawn at any time and becomes available for claim after a 24-hour unlocking period. Features automatic compounding that uses previous day’s principal + daily earnings as the new principal.",
+        proTip: "Ideal for holders seeking liquid Layer 1 coin staking without fixed-term commitments and with zero DEX swap friction.",
+        videoTutorial: {
+          number: 7,
+          title: "How To Compound Your Daily Rewards From Staking $CA",
+          url: "https://vt.tiktok.com/ZSXa3f1sM/",
+          platform: "TikTok"
+        }
+      },
+      {
+        title: "Method 4: VIP Dynamic Active Rewards (14,000 CA / Day)",
+        description: "Earn active rewards across V1 through V5 tiers by building community computing power and direct referrals. 35% of daily release (14,000 CA) is allocated to dynamic active contributors.",
+      },
+      {
+        title: "Method 5: Global Community Pool (2,000 CA / Day)",
+        description: "Top community leaders and qualifying nodes share in the 5% daily global emission reserve (2,000 CA/day), distributed as perpetual passive ecosystem dividends.",
+      },
+      {
+        title: "Method 6: Node Dividend Pools (3.2% BDEX Sell Slippage)",
+        description: "Node operators and qualified holders receive proportional distributions from the 3.2% fee levied on every CA sell order on decentralized exchanges. Physical server operators also share in commercial task execution fees.",
+        videoTutorial: {
+          number: 9,
+          title: "The $BOT Mining Server Benefits",
+          url: "https://vt.tiktok.com/ZSXaT1Wvy/",
+          platform: "TikTok"
+        }
+      },
+      {
+        title: "Method 7: BDEX Liquidity Provider (LP) Farming",
+        description: "Provide CA/USDT liquidity pairs on BDEX to earn a share of 0.3% protocol trading fees plus bonus LP yield farming allocations.",
+      },
+      {
+        title: "Method 8: Ecosystem Referral Rebates & Node Expansion",
+        description: "Share your verified invitation link to earn direct computing power rebate percentages and acceleration credits as your invited members activate hashrate.",
+      },
+      {
+        title: "Method 9: Deflationary Burn Arbitrage",
+        description: "Participate in supply reduction value capture: 1.8% of every sell order and 1.50% of all BOT gas fees are permanently removed from circulation.",
+        videoTutorial: {
+          number: 8,
+          title: "The Tokenomics of $CA and how to check on botscan",
+          url: "https://vt.tiktok.com/ZSXa3td8n/",
+          platform: "TikTok"
+        }
+      }
+    ],
+    keyTakeaways: [
+      "Total daily release is capped at 40,000 CA tokens across all mining, staking, and community pools.",
+      "BOT Pledge provides native BOT yield with flexible 24-hour principal unlock and automatic compounding.",
+      "Combining Computing Power (base production) with Staking Multipliers (yield optimization) maximizes ecosystem utility.",
+      "Node operators earn steady fee flow from global exchange volume via the 3.2% dividend pool."
+    ]
+  },
+  {
+    id: "project-tools-operations",
+    slug: "project-tools-operations",
+    title: "Multisite Accounts, Permissions & Project Operations",
+    topicId: "project-tools",
+    topicTitle: "Project Tools",
+    category: "Project Tools",
+    readTime: "5 min read",
+    difficulty: "Advanced",
+    summary: "Set up multisite accounts, permissions and project operations — managing multiple addresses, affiliate team links, smart contract interaction approvals, and validator operations.",
+    steps: [
+      {
+        title: "1. Multisite Address Management & Portfolio Segregation",
+        description: "Operate separate addresses for community leadership, validator rewards, and personal staking portfolios to ensure clean accounting and enhanced security isolation.",
+      },
+      {
+        title: "2. Permission Management & Smart Contract Allowances",
+        description: "Use permission management tools on the BOT Chain explorer to inspect contract allowances, set exact spend caps instead of infinite approvals, and revoke legacy authorizations.",
+        warning: "Never share private keys across team members. Use multi-signature wallets for shared community treasuries."
+      },
+      {
+        title: "3. Invitation Code & Community Expansion Tools",
+        description: "Access the CaryPact ambassador portal to generate and manage team referral links, track team hashrate thresholds, and monitor VIP tier progression.",
+      }
+    ],
+    keyTakeaways: [
+      "Organize team operations with separate addresses for community pools and staking.",
+      "Audit contract permissions regularly to maintain tight security posture.",
+      "Leverage the ambassador dashboard to track real-time team hashrate activation."
     ]
   }
 ];
@@ -426,26 +806,6 @@ export const I18N_TRANSLATIONS: Record<string, Record<string, string>> = {
     readGuideBtn: "Read Interactive Guide",
     downloadPdfBtn: "Download PDF Guide",
     videoTutorial: "Watch Video Explainer",
-  },
-  hi: {
-    heroBadge: "स्वतंत्र शैक्षिक और विश्लेषण केंद्र",
-    heroHeadline1: "CaryPact लर्निंग हब",
-    heroSubheadline: "भाग लेने से पहले CaryPact, BOT Chain, CA, कंप्यूटिंग पावर और इकोसिस्टम के काम करने के तरीके को समझें।",
-    searchPlaceholder: "CaryPact, BOT Chain, Staking, Hashrate के बारे में कुछ भी पूछें...",
-    navHome: "होम",
-    navLive: "लाइव डेटा",
-    navGuides: "गाइड और ट्यूटोरियल",
-    navLearn: "Web3 सीखें",
-    navDisclosures: "जोखिम और प्रकटीकरण",
-    ctaLaunchApp: "CaryPact ऐप लॉन्च करें",
-    ctaRegister: "CaryPact पर पंजीकरण करें",
-    liveDashboardTitle: "CaryPact लाइव नेटवर्क",
-    calculatorTitle: "CA ↔ USDT कन्वर्ज़न और यील्ड सिम्युलेटर",
-    affiliateNote: "एफ़िलिएट प्रकटीकरण: यदि आप हमारे आमंत्रण लिंक का उपयोग करके पंजीकरण करते हैं, तो यह स्वतंत्र लर्निंग हब कमीशन कमा सकता है। DYOR और जिम्मेदारी से निवेश करें।",
-    permanentHashrateWarning: "सूचना: 1 USDT = 1 Hashrate Unit। कंप्यूटिंग पावर की खरीद स्थायी है और इसमें मूलधन निकालने का कोई तंत्र नहीं है।",
-    readGuideBtn: "इंटरैक्टिव गाइड पढ़ें",
-    downloadPdfBtn: "PDF गाइड डाउनलोड करें",
-    videoTutorial: "वीडियो व्याख्या देखें",
   },
   zh: {
     heroBadge: "独立教育与实时数据中心",
