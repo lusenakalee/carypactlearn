@@ -22,8 +22,18 @@ type BotPriceResponse = {
   error?: string;
 };
 
+type CaPriceResponse = {
+  symbol: "CA";
+  price: number | null; // WBOT per 1 CA
+  currency: "WBOT";
+  source: "bdex-api";
+  updatedAt: string | null;
+  status: "ok" | "stale" | "unavailable";
+};
+
 const CACHE_MS = 3 * 60 * 60 * 1000; // 3h, matches the API route's revalidate window
 const CACHE_KEY = "bot-price-cache-v1";
+const CA_POLL_MS = 60 * 1000;
 
 type CachedBotPrice = { data: BotPriceResponse; fetchedAt: number };
 
@@ -52,6 +62,7 @@ export default function LiveMetricsCards() {
   const [botLoading, setBotLoading] = useState(true);
   const [botError, setBotError] = useState<string | null>(null);
   const [lastFetchedAt, setLastFetchedAt] = useState<number | null>(null);
+  const [ca, setCa] = useState<CaPriceResponse | null>(null);
 
   const fetchBotPrice = useCallback(async (force = false) => {
     const cached = readCache();
@@ -96,6 +107,37 @@ export default function LiveMetricsCards() {
     return () => clearInterval(interval);
   }, [fetchBotPrice]);
 
+  useEffect(() => {
+    let alive = true;
+    const load = async () => {
+      try {
+        const res = await fetch("/api/price/ca", { cache: "no-store" });
+        const json: CaPriceResponse = await res.json();
+        if (alive) setCa(json);
+      } catch {
+        if (alive)
+          setCa((prev) =>
+            prev?.price
+              ? { ...prev, status: "stale" }
+              : {
+                  symbol: "CA",
+                  price: null,
+                  currency: "WBOT",
+                  source: "bdex-api",
+                  updatedAt: null,
+                  status: "unavailable",
+                }
+          );
+      }
+    };
+    load();
+    const id = setInterval(load, CA_POLL_MS);
+    return () => {
+      alive = false;
+      clearInterval(id);
+    };
+  }, []);
+
   const canRefresh =
     lastFetchedAt === null || Date.now() - lastFetchedAt >= CACHE_MS;
   const nextRefreshAt = lastFetchedAt !== null ? lastFetchedAt + CACHE_MS : null;
@@ -104,8 +146,22 @@ export default function LiveMetricsCards() {
     : `Next refresh available at ${new Date(nextRefreshAt!).toLocaleTimeString()}`;
 
   const botPrice = botLive?.priceUSD ?? data?.bot?.priceUSD ?? 12.396794;
-  const caPrice = data?.ca?.priceUSD || Number((botPrice * 1.337631).toFixed(4));
-  const ratio = data?.ratio?.caToBot || 1.337631;
+  const caRate =
+    ca &&
+    ca.status !== "unavailable" &&
+    ca.price !== null &&
+    Number.isFinite(ca.price) &&
+    ca.price > 0
+      ? ca.price
+      : null;
+  const liveBotUsd =
+    botLive?.priceUSD != null &&
+    Number.isFinite(botLive.priceUSD) &&
+    botLive.priceUSD > 0
+      ? botLive.priceUSD
+      : null;
+  const caPrice =
+    caRate !== null && liveBotUsd !== null ? caRate * liveBotUsd : null;
   const bot24h = botLive?.percentChange24h ?? data?.bot?.price24hChange ?? 4.28;
   const volume24h = botLive?.volume24hUSD ?? data?.bot?.volume24hUSD ?? 14250000;
   const isCmcLive = botLive?.isLiveFromCMC ?? data?.isLiveFromCMC ?? true;
@@ -117,14 +173,28 @@ export default function LiveMetricsCards() {
         {/* Metric 1: Core Parity Rule */}
         <div className="bg-[#0E1020] border border-[#1E243B] hover:border-[#22D3FF]/50 rounded-2xl p-4.5 space-y-1 transition-all">
           <div className="flex items-center justify-between text-[11px] font-semibold text-[#838E9E]">
-            <span>On-Chain Parity</span>
-            <span className="text-[#22D3FF] font-bold">Fixed Parity</span>
+            <span>CA / BOT Rate</span>
+            <span
+              className={`font-bold ${
+                ca?.status === "ok" ? "text-[#22D3FF]" : "text-amber-400"
+              }`}
+            >
+              {!ca
+                ? "Loading…"
+                : ca.status === "ok"
+                ? "Pool rate"
+                : ca.status === "stale"
+                ? "Stale"
+                : "Unavailable"}
+            </span>
           </div>
           <div className="text-lg sm:text-xl font-black text-white font-mono">
-            {ratio} BOT = 1 CA
+            {caRate !== null ? `${caRate.toFixed(6)} BOT = 1 CA` : "—"}
           </div>
           <div className="text-[10px] text-[#838E9E]">
-            {(1 / ratio).toFixed(6)} CA = 1 BOT
+            {caRate !== null
+              ? `${(1 / caRate).toFixed(6)} CA = 1 BOT`
+              : "CA pool rate unavailable"}
           </div>
         </div>
 
@@ -132,16 +202,31 @@ export default function LiveMetricsCards() {
         <div className="bg-[#0E1020] border border-[#1E243B] hover:border-[#22D3FF]/50 rounded-2xl p-4.5 space-y-1 transition-all">
           <div className="flex items-center justify-between text-[11px] font-semibold text-[#838E9E]">
             <span>CA Price (USDT)</span>
-            <span className="text-emerald-400 font-bold flex items-center gap-0.5">
-              <TrendingUp className="w-3 h-3" />
-              <span>+{bot24h}%</span>
+            <span
+              className={`font-bold ${
+                ca?.status === "ok" ? "text-emerald-400" : "text-amber-400"
+              }`}
+            >
+              {!ca
+                ? "Loading…"
+                : ca.status === "ok"
+                ? "Pool rate"
+                : ca.status === "stale"
+                ? "Stale"
+                : "Unavailable"}
             </span>
           </div>
           <div className="text-lg sm:text-xl font-black text-[#22D3FF] font-mono">
-            ${caPrice.toFixed(4)}
+            {caPrice !== null ? `$${caPrice.toFixed(4)}` : "—"}
           </div>
           <div className="text-[10px] text-[#838E9E]">
-            Implied from BOT × {ratio}
+            {caRate !== null
+              ? `${caRate.toFixed(6)} WBOT/CA × BOT (CMC)${
+                  ca?.status === "stale" && ca.updatedAt
+                    ? ` · as of ${new Date(ca.updatedAt).toLocaleTimeString()}`
+                    : ""
+                }`
+              : "CA pool rate unavailable"}
           </div>
         </div>
 
@@ -221,11 +306,11 @@ export default function LiveMetricsCards() {
             40,000 CA
           </div>
           <div className="text-[10px] text-[#838E9E]">
-            ≈ $
-            {(40000 * caPrice).toLocaleString(undefined, {
-              maximumFractionDigits: 0,
-            })}{" "}
-            / day
+            {caPrice !== null
+              ? `≈ $${(40000 * caPrice).toLocaleString(undefined, {
+                  maximumFractionDigits: 0,
+                })} / day`
+              : "≈ — / day"}
           </div>
         </div>
 

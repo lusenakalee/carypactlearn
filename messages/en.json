@@ -87,7 +87,12 @@
     "term180": "180 Days (0.4%/day)",
     "term360": "360 Days (0.5%/day)",
     "projectedYield": "Projected CA Harvested",
-    "simulationDisclaimer": "Simulated estimates for illustrative calculation only. Crypto market conditions fluctuate."
+    "simulationDisclaimer": "Simulated estimates for illustrative calculation only. Crypto market conditions fluctuate.",
+    "subtitleLive": "Estimates use the live BDEX pool rate and the CoinMarketCap BOT price",
+    "poolRate": "{rate} BOT = 1 CA",
+    "priceStale": "stale",
+    "priceUnavailable": "Live price unavailable. Estimates are disabled until a valid price loads.",
+    "spotNotice": "Spot-rate estimate. Real swaps in a thin pool can see significant price impact."
   },
   "dex": {
     "title": "BDEX On-Chain Liquidity Pool",

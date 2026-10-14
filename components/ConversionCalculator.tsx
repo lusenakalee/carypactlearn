@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { STAKING_TERMS, ECOSYSTEM_METRICS, AFFILIATE_CONFIG } from "@/config/constants";
 import type { MarketDataPayload } from "@/lib/market-data-types";
+import { useCaPrice } from "@/hooks/useCaPrice";
 
 export default function ConversionCalculator() {
   const tCalc = useTranslations("calculator");
@@ -20,8 +21,9 @@ export default function ConversionCalculator() {
 
   const [calcMode, setCalcMode] = useState<"instant_swap" | "staking_yield">("instant_swap");
 
-  // Live market data (BOT/CA + BOT/USDT pools, PoS Mining) from /api/market-data.
-  // Falls back to the static config below while loading or if the fetch fails.
+  // Live PoS Mining term rates from /api/market-data. Prices and the CA/BOT rate
+  // no longer come from here; see useCaPrice (BDEX pool rate x CMC BOT price).
+  // Staking terms fall back to the static config while loading or if the fetch fails.
   const [marketData, setMarketData] = useState<MarketDataPayload | null>(null);
 
   useEffect(() => {
@@ -36,7 +38,7 @@ export default function ConversionCalculator() {
         if (!cancelled) setMarketData(data);
       })
       .catch((err) => {
-        console.error("Failed to load live market data, using static fallback", err);
+        console.error("Failed to load live PoS term data, using static terms", err);
       });
 
     return () => {
@@ -47,8 +49,8 @@ export default function ConversionCalculator() {
   // Instant Swap state
   const [swapDirection, setSwapDirection] = useState<"ca_to_usdt" | "usdt_to_ca">("ca_to_usdt");
   const [swapAmount, setSwapAmount] = useState<number>(100);
-  const caPrice = marketData?.swap.caPriceUsdt ?? ECOSYSTEM_METRICS.CA_BASE_PRICE;
-  const swapPriceIsLive = marketData?.swap.priceSource === "live";
+  // null until a valid live price exists: never a hardcoded fallback
+  const { botPerCa, caUsd: caPrice, status: priceStatus, updatedAt: priceUpdatedAt } = useCaPrice();
 
   // Staking & Hashrate Simulation state
   const [simulationPrincipal, setSimulationPrincipal] = useState<number>(1000);
@@ -66,18 +68,19 @@ export default function ConversionCalculator() {
   // Calculate swap metrics
   const slippageTotalPercent = ECOSYSTEM_METRICS.SLIPPAGE_FEE_PERCENT; // 5%
 
-  let estimatedReceived = 0;
-  let feeAmountUsd = 0;
+  let estimatedReceived: number | null = null;
+  let feeAmountUsd: number | null = null;
 
-  if (swapDirection === "ca_to_usdt") {
-    const grossUsdt = swapAmount * caPrice;
-    const feeUsdt = grossUsdt * (slippageTotalPercent / 100);
-    estimatedReceived = grossUsdt - feeUsdt;
-    feeAmountUsd = feeUsdt;
-  } else {
-    const grossCa = swapAmount / caPrice;
-    estimatedReceived = grossCa;
-    feeAmountUsd = 0;
+  if (caPrice !== null) {
+    if (swapDirection === "ca_to_usdt") {
+      const grossUsdt = swapAmount * caPrice;
+      const feeUsdt = grossUsdt * (slippageTotalPercent / 100);
+      estimatedReceived = grossUsdt - feeUsdt;
+      feeAmountUsd = feeUsdt;
+    } else {
+      estimatedReceived = swapAmount / caPrice;
+      feeAmountUsd = 0;
+    }
   }
 
   // Calculate Staking Simulation
@@ -85,12 +88,20 @@ export default function ConversionCalculator() {
   const effectiveDailyRate = selectedTerm.avgDaily * selectedTerm.multiplier;
   const days = selectedTerm.durationDays || 30;
   
-  const startingCA = simulationPrincipal / caPrice;
-  const estimatedTotalCA = startingCA * Math.pow(1 + effectiveDailyRate, days);
-  const earnedCA = estimatedTotalCA - startingCA;
-  
-  const projectedFuturePrice = caPrice * Math.pow(1 + assumedDailyGrowth / 100, days);
-  const projectedFutureUsdtValue = estimatedTotalCA * projectedFuturePrice;
+  const startingCA = caPrice !== null ? simulationPrincipal / caPrice : null;
+  const estimatedTotalCA =
+    startingCA !== null ? startingCA * Math.pow(1 + effectiveDailyRate, days) : null;
+  const earnedCA =
+    estimatedTotalCA !== null && startingCA !== null ? estimatedTotalCA - startingCA : null;
+
+  const projectedFuturePrice =
+    caPrice !== null ? caPrice * Math.pow(1 + assumedDailyGrowth / 100, days) : null;
+  const projectedFutureUsdtValue =
+    estimatedTotalCA !== null && projectedFuturePrice !== null
+      ? estimatedTotalCA * projectedFuturePrice
+      : null;
+
+  const priceIsLive = priceStatus === "ok";
 
   return (
     <div 
@@ -109,7 +120,7 @@ export default function ConversionCalculator() {
             </div>
             <div>
               <h2 className="text-base font-bold text-white tracking-wide">{tCalc("title")}</h2>
-              <p className="text-[11px] text-[#838E9E]">{tCalc("subtitle")}</p>
+              <p className="text-[11px] text-[#838E9E]">{tCalc("subtitleLive")}</p>
             </div>
           </div>
 
@@ -138,6 +149,13 @@ export default function ConversionCalculator() {
           </div>
         </div>
 
+        {priceStatus === "unavailable" && (
+          <div className="mt-3 flex items-start gap-2 p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px] text-amber-200">
+            <AlertTriangle className="w-4 h-4 flex-shrink-0 text-amber-400 mt-0.5" />
+            <p className="leading-snug">{tCalc("priceUnavailable")}</p>
+          </div>
+        )}
+
         {calcMode === "instant_swap" ? (
           /* INSTANT SWAP CONVERTER */
           <div className="pt-4 space-y-4">
@@ -147,11 +165,17 @@ export default function ConversionCalculator() {
                 <span>{tCalc("youConvert")}</span>
                 <div className="flex items-center gap-2">
                   <span
-                    className={`text-[11px] font-medium ${swapPriceIsLive ? "text-[#22D3FF]" : "text-amber-400"}`}
-                    title={swapPriceIsLive ? undefined : "Live pool data unavailable — showing cached/fallback price"}
+                    className={`text-[11px] font-medium ${priceIsLive ? "text-[#22D3FF]" : "text-amber-400"}`}
                   >
-                    {tCommon("liveParity")}
-                    {!swapPriceIsLive && " · cached"}
+                    {botPerCa !== null
+                      ? tCalc("poolRate", { rate: botPerCa.toFixed(6) })
+                      : "—"}
+                    {priceStatus === "stale" &&
+                      ` · ${tCalc("priceStale")}${
+                        priceUpdatedAt
+                          ? ` (${new Date(priceUpdatedAt).toLocaleTimeString()})`
+                          : ""
+                      }`}
                   </span>
                   <a href="/live-data" className="text-[10px] text-[#A855F7] hover:underline flex items-center gap-0.5">
                     <span>{tCommon("cmcLive")}</span>
@@ -207,16 +231,19 @@ export default function ConversionCalculator() {
               </div>
               <div className="flex items-center justify-between gap-3">
                 <div className="text-2xl font-bold text-emerald-400">
-                  {swapDirection === "ca_to_usdt" 
+                  {estimatedReceived === null
+                    ? "—"
+                    : swapDirection === "ca_to_usdt"
                     ? `$${estimatedReceived.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} USDT`
-                    : `${estimatedReceived.toFixed(4)} CA`
-                  }
+                    : `${estimatedReceived.toFixed(4)} CA`}
                 </div>
                 <div className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#0E1020] border border-[#1E243B] text-xs font-bold text-white">
                   <span>{swapDirection === "ca_to_usdt" ? "USDT" : "CA Token"}</span>
                 </div>
               </div>
             </div>
+
+            <p className="text-[10px] text-[#838E9E] leading-snug">{tCalc("spotNotice")}</p>
 
             {/* 5% Slippage Transparency Breakdown */}
             {swapDirection === "ca_to_usdt" && (
@@ -226,7 +253,9 @@ export default function ConversionCalculator() {
                     <Info className="w-3.5 h-3.5 text-[#22D3FF]" />
                     <span>{tCalc("slippageNotice")}</span>
                   </span>
-                  <span className="font-semibold text-white">-${feeAmountUsd.toFixed(2)} USDT</span>
+                  <span className="font-semibold text-white">
+                    {feeAmountUsd === null ? "—" : `-$${feeAmountUsd.toFixed(2)} USDT`}
+                  </span>
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-[11px] pt-1">
                   <div className="bg-[#0E1020] p-1.5 rounded border border-[#1E243B] text-[#C4CBD8]">
@@ -262,7 +291,9 @@ export default function ConversionCalculator() {
                 </div>
                 <div className="text-right text-xs flex-shrink-0">
                   <span className="text-[#838E9E]">Equiv: </span>
-                  <strong className="text-[#22D3FF]">{(simulationPrincipal / caPrice).toFixed(1)} CA</strong>
+                  <strong className="text-[#22D3FF]">
+                    {startingCA === null ? "—" : `${startingCA.toFixed(1)} CA`}
+                  </strong>
                 </div>
               </div>
             </div>
@@ -297,17 +328,23 @@ export default function ConversionCalculator() {
               <div className="bg-[#0E1020] p-2.5 rounded-lg border border-[#1E243B]">
                 <div className="text-[10px] text-[#838E9E] uppercase font-bold">{tCalc("projectedYield")}</div>
                 <div className="text-base font-bold text-[#22D3FF] mt-0.5">
-                  {estimatedTotalCA.toFixed(1)} CA
+                  {estimatedTotalCA === null ? "—" : `${estimatedTotalCA.toFixed(1)} CA`}
                 </div>
-                <div className="text-[10px] text-emerald-400">+{earnedCA.toFixed(1)} CA yield</div>
+                <div className="text-[10px] text-emerald-400">
+                  {earnedCA === null ? "—" : `+${earnedCA.toFixed(1)} CA yield`}
+                </div>
               </div>
 
               <div className="bg-[#0E1020] p-2.5 rounded-lg border border-[#1E243B]">
                 <div className="text-[10px] text-[#838E9E] uppercase font-bold">Projected USD Value</div>
                 <div className="text-base font-bold text-amber-300 mt-0.5">
-                  ${projectedFutureUsdtValue.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                  {projectedFutureUsdtValue === null
+                    ? "—"
+                    : `$${projectedFutureUsdtValue.toLocaleString(undefined, { maximumFractionDigits: 0 })}`}
                 </div>
-                <div className="text-[10px] text-[#838E9E]">At ${(projectedFuturePrice).toFixed(1)}/CA model</div>
+                <div className="text-[10px] text-[#838E9E]">
+                  {projectedFuturePrice === null ? "—" : `At $${projectedFuturePrice.toFixed(1)}/CA model`}
+                </div>
               </div>
             </div>
 

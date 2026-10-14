@@ -1,7 +1,9 @@
 "use client";
 
-import { AFFILIATE_CONFIG } from "@/config/constants";
+import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS } from "@/config/constants";
+import { useCaPrice } from "@/hooks/useCaPrice";
 import {
+    AlertTriangle,
     ArrowRightLeft,
     Check,
     Coins,
@@ -11,82 +13,77 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-interface LiveMultiConverterProps {
-  botPriceUSD?: number;
-  caPriceUSD?: number;
-  ratio?: number;
-}
+type Asset = "CA" | "BOT" | "USDT";
 
-export default function LiveMultiConverter({
-  botPriceUSD = 1.1109,
-  caPriceUSD = 2.7415,
-  ratio = 1.337631
-}: LiveMultiConverterProps) {
+// Fee split as stated on the site. Not verified against protocol docs here.
+const BURN_PERCENT = 1.8;
+const NODE_PERCENT = 3.2;
+const SLIPPAGE = ECOSYSTEM_METRICS.SLIPPAGE_FEE_PERCENT / 100;
+
+export default function LiveMultiConverter() {
+  // Live: botPerCa = BDEX pool rate (BOT per 1 CA), botUsd = CMC, caUsd = botPerCa * botUsd.
+  // Each is null until valid. There are no hardcoded fallbacks.
+  const { botPerCa, botUsd, caUsd, status, updatedAt } = useCaPrice();
+
   const [amount, setAmount] = useState<number>(100);
-  const [sourceAsset, setSourceAsset] = useState<"CA" | "BOT" | "USDT">("CA");
-  const [targetAsset, setTargetAsset] = useState<"BOT" | "CA" | "USDT">("BOT");
+  const [sourceAsset, setSourceAsset] = useState<Asset>("CA");
+  const [targetAsset, setTargetAsset] = useState<Asset>("BOT");
   const [includeSlippage, setIncludeSlippage] = useState<boolean>(true);
   const [copied, setCopied] = useState<boolean>(false);
 
-  // Conversion calculations
-  // 1 CA = 1.337631 BOT
-  // 1 BOT = 0.405213 CA
-  // BOT in USD = botPriceUSD
-  // CA in USD = botPriceUSD * 1.337631
-  const computedCaPrice = caPriceUSD || (botPriceUSD * ratio);
+  // USD per 1 unit. USDT is assumed to be $1 (peg), and the pool's WBOT is treated as BOT.
+  const usdPer: Record<Asset, number | null> = { USDT: 1, BOT: botUsd, CA: caUsd };
 
-  let convertedValue = 0;
-  let grossValue = 0;
-  let slippageFee = 0;
-  let burnShare = 0;
-  let nodeShare = 0;
+  // Target units per 1 source unit, or null if the needed live data is missing.
+  const unitRate = (src: Asset, tgt: Asset): number | null => {
+    if (src === tgt) return 1;
+    if (src === "CA" && tgt === "BOT") return botPerCa;
+    if (src === "BOT" && tgt === "CA") return botPerCa !== null ? 1 / botPerCa : null;
+    const s = usdPer[src];
+    const t = usdPer[tgt];
+    return s !== null && t !== null && t > 0 ? s / t : null;
+  };
 
-  if (sourceAsset === "CA" && targetAsset === "BOT") {
-    // 1 CA -> 1.337631 BOT
-    grossValue = amount * ratio;
-    slippageFee = includeSlippage ? grossValue * 0.05 : 0;
-    burnShare = grossValue * 0.018;
-    nodeShare = grossValue * 0.032;
-    convertedValue = grossValue - slippageFee;
-  } else if (sourceAsset === "BOT" && targetAsset === "CA") {
-    // 1 BOT -> 0.405213 CA
-    grossValue = amount / ratio;
-    convertedValue = grossValue;
-  } else if (sourceAsset === "CA" && targetAsset === "USDT") {
-    // 1 CA -> computedCaPrice USDT
-    grossValue = amount * computedCaPrice;
-    slippageFee = includeSlippage ? grossValue * 0.05 : 0;
-    burnShare = grossValue * 0.018;
-    nodeShare = grossValue * 0.032;
-    convertedValue = grossValue - slippageFee;
-  } else if (sourceAsset === "USDT" && targetAsset === "CA") {
-    // 1 USDT -> (1 / computedCaPrice) CA
-    grossValue = amount / computedCaPrice;
-    convertedValue = grossValue;
-  } else if (sourceAsset === "BOT" && targetAsset === "USDT") {
-    grossValue = amount * botPriceUSD;
-    slippageFee = includeSlippage ? grossValue * 0.05 : 0;
-    convertedValue = grossValue - slippageFee;
-  } else if (sourceAsset === "USDT" && targetAsset === "BOT") {
-    grossValue = amount / botPriceUSD;
-    convertedValue = grossValue;
-  } else {
-    grossValue = amount;
-    convertedValue = amount;
-  }
+  const rate = unitRate(sourceAsset, targetAsset);
+  const grossValue = rate !== null ? amount * rate : null;
+
+  // Same fee semantics as before: sells of CA (any target) and BOT -> USDT carry the fee;
+  // the burn/node split is only shown for CA sells.
+  const feeApplies =
+    includeSlippage &&
+    (sourceAsset === "CA"
+      ? targetAsset !== "CA"
+      : sourceAsset === "BOT" && targetAsset === "USDT");
+  const splitApplies = sourceAsset === "CA" && targetAsset !== "CA";
+
+  const slippageFee = grossValue !== null && feeApplies ? grossValue * SLIPPAGE : 0;
+  const convertedValue = grossValue !== null ? grossValue - slippageFee : null;
+  const burnShare =
+    grossValue !== null && splitApplies ? grossValue * (BURN_PERCENT / 100) : null;
+  const nodeShare =
+    grossValue !== null && splitApplies ? grossValue * (NODE_PERCENT / 100) : null;
 
   // Hashrate units equivalent (1 USDT = 1 Hashrate Unit)
-  const hashrateUnits = sourceAsset === "USDT" ? amount : sourceAsset === "CA" ? amount * computedCaPrice : amount * botPriceUSD;
+  const sourceUsdPer = usdPer[sourceAsset];
+  const sourceUsd = sourceUsdPer !== null ? amount * sourceUsdPer : null;
+
+  const priceLabel =
+    status === "loading"
+      ? "Loading"
+      : status === "unavailable"
+      ? "Unavailable"
+      : status === "stale"
+      ? "Stale"
+      : "Live";
 
   const handleSwapAssets = () => {
-    const prevSource = sourceAsset;
-    const prevTarget = targetAsset;
-    setSourceAsset(prevTarget as any);
-    setTargetAsset(prevSource as any);
+    setSourceAsset(targetAsset);
+    setTargetAsset(sourceAsset);
   };
 
   const copyResult = () => {
-    navigator.clipboard.writeText(convertedValue.toFixed(4));
+    if (convertedValue === null) return;
+    void navigator.clipboard?.writeText(convertedValue.toFixed(4)).catch(() => {});
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -101,16 +98,37 @@ export default function LiveMultiConverter({
             <span>Multi-Currency On-Chain Converter</span>
           </div>
           <h3 className="text-lg sm:text-xl font-black text-white tracking-tight">
-            Live Rate & Parity Calculator
+            Live Rate & Pool Rate Calculator
           </h3>
         </div>
 
-        {/* 1 CA = 1.337631 BOT Badge */}
+        {/* Live pool rate badge */}
         <div className="bg-[#131728] border border-[#2A314D] px-3.5 py-1.5 rounded-xl flex items-center gap-2 text-xs">
-          <span className="text-[#838E9E]">On-Chain Parity:</span>
-          <span className="text-white font-bold font-mono">1 CA = {ratio} BOT</span>
+          <span className="text-[#838E9E]">Pool Rate:</span>
+          <span className="text-white font-bold font-mono">
+            {botPerCa !== null ? `1 CA = ${botPerCa.toFixed(6)} BOT` : "—"}
+          </span>
+          <span
+            className={`text-[10px] font-semibold ${
+              status === "ok" ? "text-emerald-400" : "text-amber-400"
+            }`}
+          >
+            {priceLabel}
+            {status === "stale" && updatedAt
+              ? ` (${new Date(updatedAt).toLocaleTimeString()})`
+              : ""}
+          </span>
         </div>
       </div>
+
+      {status === "unavailable" && (
+        <div className="flex items-start gap-2 p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px] text-amber-200">
+          <AlertTriangle className="w-4 h-4 flex-shrink-0 text-amber-400 mt-0.5" />
+          <p className="leading-snug">
+            Live price unavailable. Conversions that need it are disabled until a valid price loads.
+          </p>
+        </div>
+      )}
 
       {/* Inputs */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -118,7 +136,7 @@ export default function LiveMultiConverter({
         <div className="bg-[#131728] border border-[#1E243B] rounded-2xl p-4 space-y-2">
           <div className="flex items-center justify-between text-xs font-semibold text-[#838E9E]">
             <span>You Convert (Source)</span>
-            <span>Est. Value: ${((sourceAsset === "CA" ? amount * computedCaPrice : sourceAsset === "BOT" ? amount * botPriceUSD : amount) || 0).toFixed(2)}</span>
+            <span>Est. Value: {sourceUsd !== null ? `$${sourceUsd.toFixed(2)}` : "—"}</span>
           </div>
 
           <div className="flex items-center gap-3">
@@ -126,14 +144,14 @@ export default function LiveMultiConverter({
               type="number"
               min="0"
               value={amount || ""}
-              onChange={(e) => setAmount(Number(e.target.value) || 0)}
+              onChange={(e) => setAmount(Math.max(0, Number(e.target.value) || 0))}
               className="w-full bg-transparent text-xl sm:text-2xl font-black text-white focus:outline-none font-mono"
               placeholder="0.00"
             />
 
             <select
               value={sourceAsset}
-              onChange={(e) => setSourceAsset(e.target.value as any)}
+              onChange={(e) => setSourceAsset(e.target.value as Asset)}
               className="bg-[#0E1020] border border-[#1E243B] text-white font-bold text-xs rounded-xl px-3 py-2 focus:outline-none cursor-pointer"
             >
               <option value="CA">CA (CaryPact)</option>
@@ -163,7 +181,8 @@ export default function LiveMultiConverter({
             <span>You Receive (Target)</span>
             <button
               onClick={copyResult}
-              className="text-[#22D3FF] hover:underline flex items-center gap-1 text-[11px]"
+              disabled={convertedValue === null}
+              className="text-[#22D3FF] hover:underline flex items-center gap-1 text-[11px] disabled:opacity-40 disabled:no-underline"
             >
               {copied ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
               <span>{copied ? "Copied" : "Copy Value"}</span>
@@ -172,12 +191,14 @@ export default function LiveMultiConverter({
 
           <div className="flex items-center gap-3">
             <div className="w-full text-xl sm:text-2xl font-black text-emerald-400 font-mono overflow-x-auto no-scrollbar">
-              {convertedValue.toLocaleString(undefined, { maximumFractionDigits: 4 })}
+              {convertedValue === null
+                ? "—"
+                : convertedValue.toLocaleString(undefined, { maximumFractionDigits: 4 })}
             </div>
 
             <select
               value={targetAsset}
-              onChange={(e) => setTargetAsset(e.target.value as any)}
+              onChange={(e) => setTargetAsset(e.target.value as Asset)}
               className="bg-[#0E1020] border border-[#1E243B] text-white font-bold text-xs rounded-xl px-3 py-2 focus:outline-none cursor-pointer"
             >
               <option value="BOT">BOT (BOT Chain)</option>
@@ -187,7 +208,12 @@ export default function LiveMultiConverter({
           </div>
 
           <div className="text-[11px] text-[#838E9E] pt-2 flex items-center justify-between">
-            <span>Rate: 1 {sourceAsset} ≈ {(grossValue / (amount || 1)).toFixed(4)} {targetAsset}</span>
+            <span>
+              Rate:{" "}
+              {rate !== null
+                ? `1 ${sourceAsset} ≈ ${rate.toFixed(4)} ${targetAsset}`
+                : "—"}
+            </span>
             <button
               type="button"
               onClick={handleSwapAssets}
@@ -200,12 +226,17 @@ export default function LiveMultiConverter({
         </div>
       </div>
 
-      {/* 5% Slippage & Hashrate Rule Breakdown */}
+      <p className="text-[10px] text-[#838E9E] leading-snug">
+        Spot-rate estimates from the live BDEX pool rate and the CoinMarketCap BOT price. USDT is
+        assumed to be $1 and WBOT = BOT. Real swaps in a thin pool can see significant price impact.
+      </p>
+
+      {/* Slippage & Hashrate Rule Breakdown */}
       <div className="bg-[#0A0C14] border border-[#1E243B] rounded-2xl p-4 sm:p-5 space-y-3 text-xs">
         <div className="flex items-center justify-between">
           <span className="text-white font-bold flex items-center gap-1.5">
             <Flame className="w-4 h-4 text-amber-400" />
-            <span>BDEX 5% Slippage Deductions (When Selling)</span>
+            <span>BDEX {(SLIPPAGE * 100).toFixed(0)}% Slippage Deductions (When Selling)</span>
           </span>
           <label className="flex items-center gap-2 cursor-pointer">
             <input
@@ -214,28 +245,30 @@ export default function LiveMultiConverter({
               onChange={(e) => setIncludeSlippage(e.target.checked)}
               className="rounded bg-[#131728] border-[#1E243B] text-[#7B4FFF] focus:ring-0 cursor-pointer"
             />
-            <span className="text-[11px] text-[#838E9E]">Apply 5% Slippage</span>
+            <span className="text-[11px] text-[#838E9E]">
+              Apply {(SLIPPAGE * 100).toFixed(0)}% Slippage
+            </span>
           </label>
         </div>
 
         {includeSlippage && (sourceAsset === "CA" || sourceAsset === "BOT") && (
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
             <div className="bg-[#131728] p-2.5 rounded-xl border border-[#1E243B]">
-              <div className="text-[10px] text-[#838E9E]">1.8% Auto Buyback & Burn</div>
+              <div className="text-[10px] text-[#838E9E]">{BURN_PERCENT}% Auto Buyback & Burn</div>
               <div className="text-white font-bold font-mono mt-0.5">
-                -{burnShare.toFixed(4)} {targetAsset}
+                {burnShare !== null ? `-${burnShare.toFixed(4)} ${targetAsset}` : "—"}
               </div>
             </div>
             <div className="bg-[#131728] p-2.5 rounded-xl border border-[#1E243B]">
-              <div className="text-[10px] text-[#838E9E]">3.2% Node Validator Pool</div>
+              <div className="text-[10px] text-[#838E9E]">{NODE_PERCENT}% Node Validator Pool</div>
               <div className="text-white font-bold font-mono mt-0.5">
-                -{nodeShare.toFixed(4)} {targetAsset}
+                {nodeShare !== null ? `-${nodeShare.toFixed(4)} ${targetAsset}` : "—"}
               </div>
             </div>
             <div className="bg-[#131728] p-2.5 rounded-xl border border-[#1E243B]">
               <div className="text-[10px] text-[#838E9E]">Equivalent Hashrate Units</div>
               <div className="text-[#22D3FF] font-bold font-mono mt-0.5">
-                {hashrateUnits.toFixed(0)} Units (1 USDT = 1 Unit)
+                {sourceUsd !== null ? `${sourceUsd.toFixed(0)} Units (1 USDT = 1 Unit)` : "—"}
               </div>
             </div>
           </div>

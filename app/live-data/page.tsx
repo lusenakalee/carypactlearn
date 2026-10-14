@@ -202,8 +202,6 @@ export default function LiveDataPage() {
                 
           
                       <div className="grid grid-cols-1  gap-6 items-stretch">
-                        {/* Column 1: Live CaryPact Dashboard */}
-                        {/* <LiveDashboardCard /> */}
           
                         {/* Column 2: CA ↔ USDT Calculator & Staking Simulator */}
                         <ConversionCalculator />
