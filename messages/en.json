@@ -45,7 +45,22 @@
     "prompt1": "What is the permanence rule for Hashrate Units?",
     "prompt2": "How does 1.337631 BOT = 1 CA dynamic parity work?",
     "prompt3": "Explain 5% BDEX slippage and token burn mechanics",
-    "prompt4": "What are the 10 VIP reward tiers?"
+    "prompt4": "What are the 10 VIP reward tiers?",
+    "communityLabel": "Global Community",
+    "countries": "{count} Countries",
+    "botSupplyLabel": "Max BOT supply",
+    "maxCaSupplyLabel": "Max CA Supply",
+    "emissionYears": "{years}-Year Emissions",
+    "officeNetworkLabel": "Office Network",
+    "officeBreakdown": "{studios, number} Studios + {hubs, number} Hubs",
+    "parityInline": "{rate} BOT = 1 CA",
+    "priceNA": "Unavailable",
+    "priceVia": "via {source}",
+    "priceUpdated": "Updated {time}",
+    "chip1": "Hashrate Permanence",
+    "chip2": "Dynamic BOT / CA Parity",
+    "chip3": "5% Slippage & Burn",
+    "chip4": "10-Tier VIP Rewards"
   },
   "live": {
     "sectionBadge": "Real-Time Financial & Computing Feeds",
@@ -231,5 +246,194 @@
     "subscribe": "Subscribe to Briefing",
     "subscribed": "Successfully Subscribed!",
     "privacy": "We respect your privacy. No spam, unsubscribe anytime."
+  },
+  "botChainLearn": {
+    "badge": "Official BOT Chain Architecture & Documentation",
+    "titlePrefix": "What Is",
+    "titleHighlight": "BOT Chain?",
+    "subtitle": "BOT Chain is an <b>AI-native, EVM-compatible Layer 1 blockchain</b> built for high-frequency applications, decentralized compute and verifiable on-chain settlement.",
+    "bannerKicker": "Next-Gen Web3 Infrastructure",
+    "bannerTitle": "An AI-Native Layer 1 Blockchain",
+    "bannerDesc": "Developers can build with familiar EVM tooling while connecting AI agents, compute resources and digital assets to a shared blockchain network.",
+    "ctaLearn": "Explore BOT Chain Learn",
+    "ctaPortal": "Official Portal",
+    "gridTitle": "Infrastructure Designed for Intelligent On-Chain Applications",
+    "gridDesc": "Built from the ground up for verifiable autonomous agents, low-latency micro-settlements, and physical decentralized computing networks.",
+    "footerSpec": "BOT Chain Spec",
+    "footerActive": "Active Standard",
+    "card1Title": "EVM-Compatible Execution",
+    "card1Desc": "Build and deploy Solidity smart contracts with familiar Ethereum development tools and workflows.",
+    "card1Tag": "EVM & Solidity",
+    "card2Title": "Fast, Predictable Settlement",
+    "card2Desc": "Support frequent on-chain interactions with a network designed for low-latency execution and efficient transaction processing.",
+    "card2Tag": "High-Frequency",
+    "card3Title": "Dual-Driven Network",
+    "card3Desc": "Combine staking-based network security with DePIN participation to connect on-chain activity with physical compute infrastructure.",
+    "card3Tag": "Staking + DePIN",
+    "card4Title": "Infrastructure for AI Agents",
+    "card4Desc": "Give AI-agent applications a verifiable foundation for contract execution, payments, coordination and auditable on-chain outcomes.",
+    "card4Tag": "AI Coordination"
+  },
+  "carypactBenchmark": {
+    "footerValue": "Core Protocol Value",
+    "bridgeLabel": "BOT Chain Ecosystem Architecture:",
+    "bridgeText": "CaryPact is one of the premier benchmark protocols running in the BOT Chain ecosystem.",
+    "bridgeLayer": "Layer 1: BOT Chain",
+    "bridgeProtocol": "Benchmark Protocol: CaryPact",
+    "badge": "The First Benchmark Protocol on BOT Chain",
+    "titlePrefix": "What is",
+    "titleHighlight": "CaryPact?",
+    "tagline": "The first benchmark protocol running on BOT Chain",
+    "description": "CaryPact integrates the value of BOT Chain, allowing global users to participate in the construction and earnings of BOT Chain through the protocol, achieving value growth.",
+    "ctaLaunch": "Launch CaryPact DApp (app.carypact.com)",
+    "ctaCalc": "Live CA / BOT Calculator & Simulator",
+    "philosophy": "Protocol Philosophy",
+    "whyTitle": "Why Choose CaryPact?",
+    "whyDesc": "Built on non-speculative compute mechanics, mathematical fair distribution, and sustainable long-term value alignment.",
+    "pillar1Badge": "Sustainable Network",
+    "pillar1Title": "Real & Sustainable Computing Infrastructure",
+    "pillar1Desc": "CaryPact does not pursue short-term explosive incentives, but builds a real and sustainable computing power infrastructure network.",
+    "pillar2Badge": "20-Year Horizon",
+    "pillar2Title": "Serving Next 20 Years of AI Compute",
+    "pillar2Desc": "CaryPact's design goal is to serve the AI and decentralized computing needs for the next twenty years.",
+    "pillar3Badge": "Equal Protocol Rules",
+    "pillar3Title": "Fair Competition Without Platform Monopoly",
+    "pillar3Desc": "Computing power is no longer controlled by a single platform; the protocol is the rule, and all participants compete fairly within the same system.",
+    "pillar4Badge": "Real Cash Flow",
+    "pillar4Title": "Continuous Real Computing Power Output",
+    "pillar4Desc": "Users no longer rely on market speculation, but continuously obtain cash flow from real computing power output."
+  },
+  "earningMethods": {
+    "badge": "Five Core Monetization Vectors",
+    "title": "How to Earn on <hl>CaryPact & BOT Chain</hl>",
+    "subtitle": "Jump straight into the 5 official earning mechanisms. Whether you prefer liquid BOT Pledge with auto-compounding, protocol PoS staking, permanent computing power dividends, physical AI node servers, or native Layer 1 BOT mining.",
+    "floatingTag": "Earning Potential",
+    "alt": {
+      "coinsLeft": "Decentralized earning potential coins",
+      "coinsRight": "BOT Chain DEX mining coins",
+      "coinsFloat": "Earning potential coins",
+      "coinsBanner": "Earning potential coins stack"
+    },
+    "labels": {
+      "whatItIs": "What It Is",
+      "howYouEarn": "How You Earn:",
+      "ratesSpecs": "Rates & Specs:",
+      "capitalTerms": "Capital Terms:",
+      "deepDive": "Deep-Dive Details"
+    },
+    "banner": {
+      "kicker": "Comprehensive Yield Intelligence",
+      "title": "Looking for In-Depth Mathematical Formulas, Lockup Schedules & ROI Calculators?",
+      "desc": "Visit our dedicated <strong>/earn</strong> directory for a complete breakdown of hashrate compounding factors, PoS duration weight multipliers (30d–360d), node presale tiers, and interactive calculators.",
+      "cta": "Explore Dedicated Earning Hub (/earn)"
+    },
+    "methods": {
+      "caHashrate": {
+        "title": "CA Hashrate / Computing Power",
+        "badge": "Primary Earning • {dailyCA, number} CA / Day",
+        "cta": "Buy CA Hashrate",
+        "whatIsIt": "1 USDT = 1 Computing Power Unit. Tokenized computing power backed by decentralized physical GPU/CPU clusters.",
+        "howItEarns": "The protocol allocates {percent, number}% ({dailyCA, number} CA/day) of total emissions to active hashrate holders. Daily earnings are credited every 24h at 00:00 UTC.",
+        "keyRates": "Min. {minUsdt, number} USDT ({minUsdt, number} Units). Daily dynamic yield compounded by time factor (K ≈ 1.01). Yields paid in CA tokens.",
+        "lockNotice": "Permanent compute activation (no principal return; ongoing daily mining dividends)."
+      },
+      "posMining": {
+        "title": "Protocol PoS Mining / CA Staking",
+        "badge": "{percent, number}% Pool • {dailyCA, number} CA / Day",
+        "cta": "Start PoS Mining",
+        "whatIsIt": "Proof-of-Stake mining powered by depositing your accumulated or purchased CA tokens into protocol PoS contracts.",
+        "howItEarns": "Shares the dedicated {dailyCA, number} CA daily PoS emission pool. Long-term commitments receive higher multiplier weights.",
+        "keyRates": "30-day (1.0x), 90-day (1.5x), 180-day (2.0x), 360-day (3.0x multiplier). Daily automatic compounding interest.",
+        "lockNotice": "Time-locked principal. 100% of your staked CA principal is unlocked and returned upon contract maturity."
+      },
+      "miningServers": {
+        "title": "Mining Server / Machine Presale",
+        "badge": "Enterprise DePIN • Node Priority",
+        "cta": "View Mining Servers",
+        "whatIsIt": "Direct reservation of physical high-performance AI GPU/CPU compute servers hosted in institutional tier-3/4 data centers.",
+        "howItEarns": "Physical machine owners receive direct block generation validation rights, commercial AI execution task fees, and lifetime node revenue shares.",
+        "keyRates": "Enterprise hash allocation with certified NFT verification. Priority routing for commercial AI model training & inference workloads.",
+        "lockNotice": "Physical hardware custody managed by verified hosting facilities with verifiable hash audit telemetry."
+      },
+      "botHashrate": {
+        "title": "BOT Hashrate Mining",
+        "badge": "Layer 1 Native • Gas & Consensus",
+        "cta": "Mine BOT Hashrate",
+        "whatIsIt": "Direct hashrate mining producing BOT, the native gas and governance Layer 1 cryptocurrency of BOT Chain.",
+        "howItEarns": "Mines the base-layer token directly, earning revenue from on-chain transaction fees, contract executions, and gas fee burns across the network.",
+        "keyRates": "Native Layer 1 block emissions. Zero DEX slippage required to acquire native gas tokens. Direct validator delegation.",
+        "lockNotice": "Base infrastructure mining backing the entire modular blockchain economy."
+      },
+      "botPledge": {
+        "title": "BOT Pledge / Bot Staking",
+        "badge": "Flexible Exit • 24H Release • Auto-Compounding",
+        "cta": "Pledge BOT Tokens",
+        "whatIsIt": "Stake BOT to earn rewards with flexible entry and exit. Deposit native BOT tokens into the protocol pledge vault with complete self-determination.",
+        "howItEarns": "Automatic compounding uses the previous day’s principal + daily earnings as the new principal for compounding staking.",
+        "keyRates": "Dynamic daily staking yields paid directly in native BOT. Zero DEX slippage. Instant on-chain auto-reinvestment every 24 hours.",
+        "lockNotice": "Released principal can be withdrawn at any time. After withdrawal, it will be available for claim following a 24-hour unlocking period."
+      }
+    }
+  },
+  "riskDisclosure": {
+    "badge": "Essential Risk & Disclosure Notice",
+    "title": "Transparency & <hl>Risk Disclosures</hl>",
+    "subtitle": "We believe in honest, thorough education. Read and understand these critical structural parameters before committing digital assets.",
+    "affiliate": {
+      "title": "Affiliate Monetization Statement",
+      "subtitle": "Clear statement of site independence and compensation",
+      "body": "The <strong>CaryPact Learning Hub</strong> is an independent educational and analytics resource. We are not the official company entity. If you choose to register on CaryPact through the links and invitation codes provided on this site, we may receive a referral commission. This compensation does not influence our objective presentation of mathematical rules, permanent hashrate locks, slippage mechanics, or risks."
+    },
+    "items": {
+      "permanence": {
+        "category": "Capital Structure",
+        "severity": "High Importance",
+        "title": "Permanence of Hashrate Units (No Principal Exit)",
+        "description": "When purchasing computing power at the rate of 1 USDT = 1 Hashrate Unit (minimum {minUsdt, number} USDT), the capital allocated is locked permanently into protocol computing reserves. There is no principal refund, exit, or redemption mechanism. Your return is solely derived from ongoing daily CA mining distributions."
+      },
+      "volatility": {
+        "category": "Market Risk",
+        "severity": "Market Volatility",
+        "title": "Market Volatility & Price Fluctuation",
+        "description": "The exchange value of CA, BOT, and related cryptographic tokens can fluctuate significantly based on open market conditions, liquidity depth on BDEX, and broader digital asset sentiment. Token prices may rise or fall substantially."
+      },
+      "projections": {
+        "category": "Staking & Emissions",
+        "severity": "Model Assumptions",
+        "title": "Illustrative vs. Guaranteed Yield Projections",
+        "description": "Projections depicted in ecosystem marketing presentations (e.g. compounding 360-day staking models) assume specific mathematical parameters such as sustained daily price appreciation and steady network activity. These are hypothetical simulations and must not be construed as guaranteed investment yields."
+      },
+      "referral": {
+        "category": "Consensus Model",
+        "severity": "Referral Dynamics",
+        "title": "Multi-Tier Referral (VIP) Incentive Structure",
+        "description": "The 10-tier VIP reward system (V1–V10) is funded by the {dailyPool, number} CA/day Active Reward Pool and relies on personal investment ({personalUsdt, number} USDT) combined with team downline ‘leg’ performance. Rewards depend on active team participation and network expansion."
+      },
+      "slippage": {
+        "category": "Protocol Mechanics",
+        "severity": "Technical Rules",
+        "title": "Smart Contract Execution & {slippage, number}% Slippage",
+        "description": "All token sales on BDEX carry a mandatory {slippage, number}% slippage distribution ({buyback, number}% buyback & burn, {node, number}% node operator distribution). While smart contracts are deployed on BOT Chain, blockchain interactions carry inherent technical and execution risks."
+      },
+      "custody": {
+        "category": "Security",
+        "severity": "Personal Custody",
+        "title": "Self-Custody & Key Management Responsibility",
+        "description": "CaryPact and BO Wallet are decentralized and non-custodial. You are solely responsible for safeguarding your 12-word seed phrase and private keys. Protocol administrators and learning hub staff can never recover lost credentials or reverse transactions."
+      }
+    },
+    "checklist": {
+      "title": "Pre-Participation “Do Your Own Research” Checklist",
+      "check1": "I understand that Hashrate Units cannot be refunded or sold back.",
+      "check2": "I have securely written down my 12-word recovery phrase on physical paper.",
+      "check3": "I acknowledge that all BDEX token sales incur a {slippage, number}% slippage fee.",
+      "check4": "I am only contributing funds I am comfortable managing through market volatility.",
+      "check5": "I have confirmed I am interacting exclusively with official domain urls.",
+      "check6": "I recognize that downline VIP rewards require active recruitment volume."
+    },
+    "cta": {
+      "ready": "Ready to access the CaryPact DApp?",
+      "button": "Continue to CaryPact with Informed Consent"
+    }
   }
 }

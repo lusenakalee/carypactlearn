@@ -45,7 +45,22 @@
     "prompt1": "算力单位的永久性购买规则是什么？",
     "prompt2": "1.337631 BOT = 1 CA 的动态平价机制如何运行？",
     "prompt3": "解释 BDEX 5% 的滑点分配与通缩销毁机制",
-    "prompt4": "10 级 VIP 超级节点权益有哪些？"
+    "prompt4": "10 级 VIP 超级节点权益有哪些？",
+    "communityLabel": "全球社区",
+    "countries": "{count} 个国家",
+    "botSupplyLabel": "BOT 最大供应量",
+    "maxCaSupplyLabel": "CA 最大供应量",
+    "emissionYears": "{years} 年释放周期",
+    "officeNetworkLabel": "办公网络",
+    "officeBreakdown": "{studios, number} 个工作室 + {hubs, number} 个枢纽",
+    "parityInline": "{rate} BOT = 1 CA",
+    "priceNA": "暂不可用",
+    "priceVia": "来源：{source}",
+    "priceUpdated": "更新于 {time}",
+    "chip1": "算力永久性",
+    "chip2": "BOT / CA 动态平价",
+    "chip3": "5% 滑点与销毁",
+    "chip4": "10 级 VIP 奖励"
   },
   "live": {
     "sectionBadge": "实时金融与算力网络数据",
@@ -81,13 +96,18 @@
     "slippageNotice": "包含 BDEX 5% 滑点分配机制（1.8% 销毁 / 3.2% 节点分红）",
     "stakingDeposit": "质押 CA 数量",
     "stakingTerm": "质押锁定期限",
-    "termFlexible": "活期（0.2% - 0.4%/天）",
-    "term30": "30 天（1.3倍倍率）",
-    "term90": "90 天（1.6倍倍率）",
-    "term180": "180 天（2.0倍倍率）",
-    "term360": "360 天（2.5倍倍率）",
+    "termFlexible": "活期（0.2%/天）",
+    "term30": "30 天（0.26%/天）",
+    "term90": "90 天（0.32%/天）",
+    "term180": "180 天（0.4%/天）",
+    "term360": "360 天（0.5%/天）",
     "projectedYield": "预计产出 CA 收益",
-    "simulationDisclaimer": "此计算仅供模型演示，非确定性收益保证。加密资产市场波动剧烈。"
+    "simulationDisclaimer": "此计算仅供模型演示，非确定性收益保证。加密资产市场波动剧烈。",
+    "subtitleLive": "估算使用 BDEX 池实时汇率和 CoinMarketCap 的 BOT 价格",
+    "poolRate": "{rate} BOT = 1 CA",
+    "priceStale": "已过期",
+    "priceUnavailable": "实时价格不可用。在加载到有效价格之前，估算功能已禁用。",
+    "spotNotice": "按现货汇率估算。在流动性较浅的池中，实际兑换可能出现显著的价格冲击。"
   },
   "dex": {
     "title": "BDEX 链上流动性池",
@@ -226,5 +246,194 @@
     "subscribe": "立即订阅",
     "subscribed": "订阅成功！",
     "privacy": "我们重视您的隐私，绝不发送垃圾邮件，可随时退订。"
+  },
+  "botChainLearn": {
+    "badge": "BOT Chain 官方架构与文档",
+    "titlePrefix": "",
+    "titleHighlight": "什么是 BOT Chain？",
+    "subtitle": "BOT Chain 是一条<b>AI 原生、兼容 EVM 的 Layer 1 区块链</b>，面向高频应用、去中心化算力和可验证的链上结算而构建。",
+    "bannerKicker": "新一代 Web3 基础设施",
+    "bannerTitle": "AI 原生 Layer 1 区块链",
+    "bannerDesc": "开发者可以使用熟悉的 EVM 工具进行开发，同时将 AI 智能体、算力资源和数字资产接入同一个区块链网络。",
+    "ctaLearn": "探索 BOT Chain Learn",
+    "ctaPortal": "官方门户",
+    "gridTitle": "为智能链上应用设计的基础设施",
+    "gridDesc": "从底层为可验证的自主智能体、低延迟微结算和物理去中心化算力网络而构建。",
+    "footerSpec": "BOT Chain 规范",
+    "footerActive": "现行标准",
+    "card1Title": "兼容 EVM 的执行环境",
+    "card1Desc": "使用熟悉的以太坊开发工具和流程构建并部署 Solidity 智能合约。",
+    "card1Tag": "EVM 与 Solidity",
+    "card2Title": "快速且可预期的结算",
+    "card2Desc": "网络面向低延迟执行和高效交易处理而设计，支持频繁的链上交互。",
+    "card2Tag": "高频",
+    "card3Title": "双轮驱动网络",
+    "card3Desc": "将基于质押的网络安全与 DePIN 参与相结合，把链上活动与物理算力基础设施连接起来。",
+    "card3Tag": "质押 + DePIN",
+    "card4Title": "面向 AI 智能体的基础设施",
+    "card4Desc": "为 AI 智能体应用提供可验证的基础，支持合约执行、支付、协调和可审计的链上结果。",
+    "card4Tag": "AI 协同"
+  },
+  "carypactBenchmark": {
+    "footerValue": "协议核心价值",
+    "bridgeLabel": "BOT Chain 生态架构：",
+    "bridgeText": "CaryPact 是运行在 BOT Chain 生态中的头部标杆协议之一。",
+    "bridgeLayer": "Layer 1：BOT Chain",
+    "bridgeProtocol": "标杆协议：CaryPact",
+    "badge": "BOT Chain 上的首个标杆协议",
+    "titlePrefix": "",
+    "titleHighlight": "什么是 CaryPact？",
+    "tagline": "运行在 BOT Chain 上的首个标杆协议",
+    "description": "CaryPact 融合了 BOT Chain 的价值，让全球用户通过协议参与 BOT Chain 的建设与收益，实现价值增长。",
+    "ctaLaunch": "启动 CaryPact DApp (app.carypact.com)",
+    "ctaCalc": "实时 CA / BOT 计算器与模拟器",
+    "philosophy": "协议理念",
+    "whyTitle": "为什么选择 CaryPact？",
+    "whyDesc": "基于非投机的算力机制、数学上公平的分配以及可持续的长期价值对齐而构建。",
+    "pillar1Badge": "可持续网络",
+    "pillar1Title": "真实且可持续的算力基础设施",
+    "pillar1Desc": "CaryPact 不追求短期爆发式激励，而是构建真实且可持续的算力基础设施网络。",
+    "pillar2Badge": "20 年愿景",
+    "pillar2Title": "服务未来 20 年的 AI 算力",
+    "pillar2Desc": "CaryPact 的设计目标是满足未来二十年 AI 与去中心化计算的需求。",
+    "pillar3Badge": "平等的协议规则",
+    "pillar3Title": "无平台垄断的公平竞争",
+    "pillar3Desc": "算力不再由单一平台掌控；协议即规则，所有参与者在同一体系内公平竞争。",
+    "pillar4Badge": "真实现金流",
+    "pillar4Title": "持续的真实算力产出",
+    "pillar4Desc": "用户不再依赖市场投机，而是从真实算力产出中持续获得现金流。"
+  },
+  "earningMethods": {
+    "badge": "五大核心变现途径",
+    "title": "如何在 <hl>CaryPact 与 BOT Chain</hl> 上赚取收益",
+    "subtitle": "直接了解 5 种官方收益机制：无论您偏好可自动复利的灵活 BOT 质押、协议 PoS 质押、永久算力分红、实体 AI 节点服务器，还是原生 Layer 1 BOT 挖矿。",
+    "floatingTag": "收益潜力",
+    "alt": {
+      "coinsLeft": "去中心化收益潜力代币",
+      "coinsRight": "BOT Chain DEX 挖矿代币",
+      "coinsFloat": "收益潜力代币",
+      "coinsBanner": "收益潜力代币堆"
+    },
+    "labels": {
+      "whatItIs": "是什么",
+      "howYouEarn": "收益方式：",
+      "ratesSpecs": "费率与规格：",
+      "capitalTerms": "资金条款：",
+      "deepDive": "查看详细说明"
+    },
+    "banner": {
+      "kicker": "全面的收益解析",
+      "title": "想了解详细的数学公式、锁仓周期与 ROI 计算器？",
+      "desc": "请访问专属的 <strong>/earn</strong> 目录，查看算力复利因子、PoS 周期权重倍数（30 天–360 天）、节点预售等级以及交互式计算器的完整说明。",
+      "cta": "进入专属收益中心 (/earn)"
+    },
+    "methods": {
+      "caHashrate": {
+        "title": "CA 算力 / 计算能力",
+        "badge": "主要收益 • {dailyCA, number} CA / 天",
+        "cta": "购买 CA 算力",
+        "whatIsIt": "1 USDT = 1 个算力单位。由去中心化实体 GPU/CPU 集群支撑的代币化算力。",
+        "howItEarns": "协议将总释放量的 {percent, number}%（{dailyCA, number} CA/天）分配给活跃算力持有者。每日收益于每 24 小时（UTC 00:00）结算。",
+        "keyRates": "最低 {minUsdt, number} USDT（{minUsdt, number} 个单位）。每日动态收益按时间因子（K ≈ 1.01）复利，以 CA 代币支付。",
+        "lockNotice": "算力永久激活（不退还本金；持续获得每日挖矿分红）。"
+      },
+      "posMining": {
+        "title": "协议 PoS 挖矿 / CA 质押",
+        "badge": "{percent, number}% 奖池 • {dailyCA, number} CA / 天",
+        "cta": "开始 PoS 挖矿",
+        "whatIsIt": "将您累计或购买的 CA 代币存入协议 PoS 合约，参与权益证明挖矿。",
+        "howItEarns": "共享每日 {dailyCA, number} CA 的专属 PoS 释放池。长期质押可获得更高的倍数权重。",
+        "keyRates": "30 天（1.0 倍）、90 天（1.5 倍）、180 天（2.0 倍）、360 天（3.0 倍）。每日自动复利。",
+        "lockNotice": "本金定期锁定。合约到期后，您质押的 CA 本金 100% 解锁并返还。"
+      },
+      "miningServers": {
+        "title": "矿机服务器 / 机器预售",
+        "badge": "企业级 DePIN • 节点优先",
+        "cta": "查看矿机服务器",
+        "whatIsIt": "直接预订托管于机构级 Tier-3/4 数据中心的高性能实体 AI GPU/CPU 算力服务器。",
+        "howItEarns": "实体机器持有者可直接获得区块生成验证权、商业 AI 执行任务费用以及终身节点收益分成。",
+        "keyRates": "带有认证 NFT 验证的企业级算力分配。商业 AI 模型训练与推理任务享有优先调度。",
+        "lockNotice": "实体硬件由经过验证的托管机构保管，并提供可验证的算力审计遥测数据。"
+      },
+      "botHashrate": {
+        "title": "BOT 算力挖矿",
+        "badge": "Layer 1 原生 • Gas 与共识",
+        "cta": "挖取 BOT 算力",
+        "whatIsIt": "直接通过算力挖矿产出 BOT——BOT Chain 的原生 Gas 与治理 Layer 1 加密货币。",
+        "howItEarns": "直接挖取底层代币，从全网的链上交易手续费、合约执行以及 Gas 费销毁中获得收益。",
+        "keyRates": "原生 Layer 1 区块释放。获取原生 Gas 代币无需 DEX 滑点。支持直接委托验证节点。",
+        "lockNotice": "支撑整个模块化区块链经济的底层基础设施挖矿。"
+      },
+      "botPledge": {
+        "title": "BOT 质押 / Bot Staking",
+        "badge": "灵活退出 • 24 小时释放 • 自动复利",
+        "cta": "质押 BOT 代币",
+        "whatIsIt": "质押 BOT 赚取奖励，灵活进出，自主掌控。将原生 BOT 代币存入协议质押金库，完全自主决定。",
+        "howItEarns": "自动复利会将前一天的本金加每日收益作为新的本金继续复利质押。",
+        "keyRates": "动态每日质押收益直接以原生 BOT 发放。无 DEX 滑点。每 24 小时链上即时自动再投资。",
+        "lockNotice": "已释放的本金可随时提取。提取后，需经过 24 小时解锁期方可领取。"
+      }
+    }
+  },
+  "riskDisclosure": {
+    "badge": "重要风险与披露声明",
+    "title": "透明度与<hl>风险披露</hl>",
+    "subtitle": "我们倡导诚实、全面的教育。在投入数字资产之前，请阅读并理解这些关键的结构性参数。",
+    "affiliate": {
+      "title": "联盟推广声明",
+      "subtitle": "关于本站独立性与收益来源的明确说明",
+      "body": "<strong>CaryPact 学习中心</strong>是一个独立的教育与分析资源，并非官方公司实体。如果您通过本站提供的链接和邀请码注册 CaryPact，我们可能会获得推荐佣金。该报酬不会影响我们对数学规则、永久算力锁定、滑点机制或风险的客观呈现。"
+    },
+    "items": {
+      "permanence": {
+        "category": "资本结构",
+        "severity": "高度重要",
+        "title": "算力单位的永久性（无本金退出）",
+        "description": "按 1 USDT = 1 个算力单位（最低 {minUsdt, number} USDT）购买算力时，所投入的资金将永久锁定于协议算力储备中，不设本金退还、退出或赎回机制。您的回报仅来自持续的每日 CA 挖矿分配。"
+      },
+      "volatility": {
+        "category": "市场风险",
+        "severity": "市场波动",
+        "title": "市场波动与价格涨跌",
+        "description": "CA、BOT 及相关加密代币的兑换价值可能因公开市场状况、BDEX 流动性深度及整体数字资产情绪而大幅波动，代币价格可能显著上涨或下跌。"
+      },
+      "projections": {
+        "category": "质押与释放",
+        "severity": "模型假设",
+        "title": "示意性收益预测不等于保证收益",
+        "description": "生态宣传材料中展示的预测（例如 360 天复利质押模型）基于特定数学参数，如持续的每日价格上涨和稳定的网络活跃度。这些均为假设性模拟，不得视为保证的投资收益。"
+      },
+      "referral": {
+        "category": "共识模型",
+        "severity": "推荐机制",
+        "title": "多层级推荐（VIP）激励结构",
+        "description": "10 级 VIP 奖励体系（V1–V10）由每日 {dailyPool, number} CA 的活跃奖励池提供资金，并依赖个人投入（{personalUsdt, number} USDT）与团队下线“大区”业绩。奖励取决于团队的活跃参与和网络扩张。"
+      },
+      "slippage": {
+        "category": "协议机制",
+        "severity": "技术规则",
+        "title": "智能合约执行与 {slippage, number}% 滑点",
+        "description": "在 BDEX 上的所有代币卖出都会强制扣除 {slippage, number}% 滑点分配（{buyback, number}% 回购销毁，{node, number}% 分配给节点运营者）。尽管智能合约部署于 BOT Chain，区块链交互仍存在固有的技术与执行风险。"
+      },
+      "custody": {
+        "category": "安全",
+        "severity": "个人托管",
+        "title": "自我托管与密钥管理责任",
+        "description": "CaryPact 与 BO Wallet 均为去中心化、非托管产品。您需自行负责保管 12 位助记词和私钥。协议管理员与学习中心工作人员无法找回丢失的凭证，也无法撤销交易。"
+      }
+    },
+    "checklist": {
+      "title": "参与前“自行研究”自查清单",
+      "check1": "我明白算力单位无法退款或回售。",
+      "check2": "我已将 12 位助记词安全地手写在纸上。",
+      "check3": "我确认所有 BDEX 代币卖出都会产生 {slippage, number}% 的滑点费用。",
+      "check4": "我投入的资金均在我能够承受市场波动的范围之内。",
+      "check5": "我已确认自己只访问官方域名链接。",
+      "check6": "我了解下线 VIP 奖励需要有效的团队拓展量。"
+    },
+    "cta": {
+      "ready": "准备好进入 CaryPact DApp 了吗？",
+      "button": "在充分知情同意后继续前往 CaryPact"
+    }
   }
 }

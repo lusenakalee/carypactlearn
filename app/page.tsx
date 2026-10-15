@@ -74,13 +74,6 @@ export default function HomePage() {
           {/* Four Main Ways of Earning: Jump Straight to the Point */}
         <EarningMethodsHighlight />
 
-       
-
-
-     
-
-       
-
       
 
         {/* Prominent Risk Disclosures & DYOR Checklist */}

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
 import { 
   ShieldCheck, 
@@ -29,6 +30,7 @@ interface FeatureCardProps {
 }
 
 function WhyChooseCard({ number, badge, title, description, icon: Icon, delay }: FeatureCardProps) {
+  const t = useTranslations("carypactBenchmark");
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -71,7 +73,7 @@ function WhyChooseCard({ number, badge, title, description, icon: Icon, delay }:
       <div className="mt-6 pt-4 border-t border-[#1C243E] flex items-center justify-between text-xs text-[#64748B]">
         <span className="flex items-center gap-1">
           <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-          <span>Core Protocol Value</span>
+          <span>{t("footerValue")}</span>
         </span>
         <span className="font-mono text-[11px] text-[#A5B4FC]">app.carypact.com</span>
       </div>
@@ -80,36 +82,37 @@ function WhyChooseCard({ number, badge, title, description, icon: Icon, delay }:
 }
 
 export default function CaryPactBenchmarkSection() {
+  const t = useTranslations("carypactBenchmark");
   const pillars = [
     {
       number: "01",
-      badge: "Sustainable Network",
-      title: "Real & Sustainable Computing Infrastructure",
-      description: "CaryPact does not pursue short-term explosive incentives, but builds a real and sustainable computing power infrastructure network.",
+      badge: t("pillar1Badge"),
+      title: t("pillar1Title"),
+      description: t("pillar1Desc"),
       icon: ShieldCheck,
       delay: 0.1,
     },
     {
       number: "02",
-      badge: "20-Year Horizon",
-      title: "Serving Next 20 Years of AI Compute",
-      description: "CaryPact's design goal is to serve the AI and decentralized computing needs for the next twenty years.",
+      badge: t("pillar2Badge"),
+      title: t("pillar2Title"),
+      description: t("pillar2Desc"),
       icon: Compass,
       delay: 0.2,
     },
     {
       number: "03",
-      badge: "Equal Protocol Rules",
-      title: "Fair Competition Without Platform Monopoly",
-      description: "Computing power is no longer controlled by a single platform; the protocol is the rule, and all participants compete fairly within the same system.",
+      badge: t("pillar3Badge"),
+      title: t("pillar3Title"),
+      description: t("pillar3Desc"),
       icon: Scale,
       delay: 0.3,
     },
     {
       number: "04",
-      badge: "Real Cash Flow",
-      title: "Continuous Real Computing Power Output",
-      description: "Users no longer rely on market speculation, but continuously obtain cash flow from real computing power output.",
+      badge: t("pillar4Badge"),
+      title: t("pillar4Title"),
+      description: t("pillar4Desc"),
       icon: Coins,
       delay: 0.4,
     },
@@ -136,17 +139,17 @@ export default function CaryPactBenchmarkSection() {
               <Layers className="w-4 h-4" />
             </div>
             <div>
-              <span className="text-white font-semibold">BOT Chain Ecosystem Architecture:</span>{" "}
-              <span>CaryPact is one of the premier benchmark protocols running in the BOT Chain ecosystem.</span>
+              <span className="text-white font-semibold">{t("bridgeLabel")}</span>{" "}
+              <span>{t("bridgeText")}</span>
             </div>
           </div>
           <div className="flex items-center gap-2 shrink-0">
             <span className="px-2.5 py-1 rounded-full bg-[#181D33] border border-[#2B355A] font-mono text-[11px] text-[#A5B4FC]">
-              Layer 1: BOT Chain
+              {t("bridgeLayer")}
             </span>
             <span className="text-[#525E7A]">➔</span>
             <span className="px-2.5 py-1 rounded-full bg-[#7B4FFF]/20 border border-[#7B4FFF]/40 font-mono text-[11px] text-[#22D3FF] font-semibold">
-              Benchmark Protocol: CaryPact
+              {t("bridgeProtocol")}
             </span>
           </div>
         </motion.div>
@@ -162,7 +165,7 @@ export default function CaryPactBenchmarkSection() {
           >
             <CaryPactLogo size="sm" showBadge={false} />
             <span className="text-[#556282]">•</span>
-            <span>The First Benchmark Protocol on BOT Chain</span>
+            <span>{t("badge")}</span>
           </motion.div>
 
           <motion.h2
@@ -172,7 +175,7 @@ export default function CaryPactBenchmarkSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4"
           >
-            What is <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7B4FFF] via-[#A855F7] to-[#22D3FF]">CaryPact?</span>
+            {t("titlePrefix")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7B4FFF] via-[#A855F7] to-[#22D3FF]">{t("titleHighlight")}</span>
           </motion.h2>
 
           <motion.p
@@ -182,7 +185,7 @@ export default function CaryPactBenchmarkSection() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="text-lg sm:text-2xl font-bold text-[#22D3FF] mb-4"
           >
-            The first benchmark protocol running on BOT Chain
+            {t("tagline")}
           </motion.p>
 
           <motion.p
@@ -192,7 +195,7 @@ export default function CaryPactBenchmarkSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed"
           >
-            CaryPact integrates the value of BOT Chain, allowing global users to participate in the construction and earnings of BOT Chain through the protocol, achieving value growth.
+            {t("description")}
           </motion.p>
         </div>
 
@@ -212,14 +215,14 @@ export default function CaryPactBenchmarkSection() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#7B4FFF] to-[#6335E5] hover:from-[#6D3DF5] hover:to-[#5527D6] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#7B4FFF]/25 cursor-pointer"
           >
             <Zap className="w-4 h-4 text-[#22D3FF]" />
-            <span>Launch CaryPact DApp (app.carypact.com)</span>
+            <span>{t("ctaLaunch")}</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
           <a
             href="#live"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#13182C] hover:bg-[#1C233E] text-[#CBD5E1] hover:text-white font-semibold text-xs border border-[#263152] transition-colors cursor-pointer"
           >
-            <span>Live CA / BOT Calculator & Simulator</span>
+            <span>{t("ctaCalc")}</span>
             <ArrowRight className="w-3.5 h-3.5 text-[#22D3FF]" />
           </a>
         </motion.div>
@@ -228,13 +231,13 @@ export default function CaryPactBenchmarkSection() {
         <div className="text-center max-w-2xl mx-auto mb-10">
           <div className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-[#22D3FF] mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Protocol Philosophy</span>
+            <span>{t("philosophy")}</span>
           </div>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-            Why Choose CaryPact?
+            {t("whyTitle")}
           </h3>
           <p className="text-xs sm:text-sm text-[#8EA2C6] mt-2">
-            Built on non-speculative compute mechanics, mathematical fair distribution, and sustainable long-term value alignment.
+            {t("whyDesc")}
           </p>
         </div>
 

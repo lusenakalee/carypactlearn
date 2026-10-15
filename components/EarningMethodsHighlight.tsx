@@ -4,111 +4,92 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
-import { 
-  Zap, 
-  Coins, 
-  Server, 
-  Cpu, 
-  ExternalLink, 
-  ArrowRight, 
-  Sparkles, 
-  ShieldCheck, 
-  TrendingUp, 
-  Clock, 
+import { useTranslations } from "next-intl";
+import {
+  Zap,
+  Coins,
+  Server,
+  Cpu,
+  ExternalLink,
+  ArrowRight,
+  Sparkles,
+  TrendingUp,
   Lock,
   Layers,
-  ChevronRight
 } from "lucide-react";
-import { AFFILIATE_CONFIG } from "@/config/constants";
+import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS, EMISSION_SPLIT } from "@/config/constants";
+
+// Numbers come from constants so they stay in sync with the rest of the site;
+// all user-facing copy lives in messages/*.json under "earningMethods".
+const MINING_POOL = EMISSION_SPLIT[0]; // Computing Power Mining
+const POS_POOL = EMISSION_SPLIT[2]; // PoS Staking Output
 
 export default function EarningMethodsHighlight() {
+  const t = useTranslations("earningMethods");
+
+  // Structural config only (ids, colors, icons, URLs, ICU values). No display text here.
   const earningMethods = [
     {
       id: "ca-hashrate",
+      key: "caHashrate",
       number: "01",
-      title: "CA Hashrate / Computing Power",
-      badge: "Primary Earning • 16,800 CA / Day",
       badgeColor: "text-[#22D3FF] bg-[#22D3FF]/10 border-[#22D3FF]/30",
       icon: Zap,
       iconColor: "text-[#22D3FF]",
       accentBorder: "hover:border-[#22D3FF]/60",
-      ctaLabel: "Buy CA Hashrate",
       ctaUrl: AFFILIATE_CONFIG.PURCHASE_HASHRATE_URL,
       learnHash: "/earn#ca-hashrate",
-      whatIsIt: "1 USDT = 1 Computing Power Unit. Tokenized computing power backed by decentralized physical GPU/CPU clusters.",
-      howItEarns: "The protocol allocates 42% (16,800 CA/day) of total emissions to active hashrate holders. Daily earnings are credited every 24h at 00:00 UTC.",
-      keyRates: "Min. 100 USDT (100 Units). Daily dynamic yield compounded by time factor (K ≈ 1.01). Yields paid in CA tokens.",
-      lockNotice: "Permanent compute activation (no principal return; ongoing daily mining dividends).",
+      values: { percent: MINING_POOL.percent, dailyCA: MINING_POOL.dailyCA, minUsdt: ECOSYSTEM_METRICS.MINIMUM_HASHRATE_USDT },
     },
     {
       id: "pos-mining",
+      key: "posMining",
       number: "02",
-      title: "Protocol PoS Mining / CA Staking",
-      badge: "18% Pool • 7,200 CA / Day",
       badgeColor: "text-[#A855F7] bg-[#A855F7]/10 border-[#A855F7]/30",
       icon: Coins,
       iconColor: "text-[#A855F7]",
       accentBorder: "hover:border-[#A855F7]/60",
-      ctaLabel: "Start PoS Mining",
       ctaUrl: AFFILIATE_CONFIG.POS_MINING_URL,
       learnHash: "/earn#pos-mining",
-      whatIsIt: "Proof-of-Stake mining powered by depositing your accumulated or purchased CA tokens into protocol PoS contracts.",
-      howItEarns: "Shares the dedicated 7,200 CA daily PoS emission pool. Long-term commitments receive higher multiplier weights.",
-      keyRates: "30-day (1.0x), 90-day (1.5x), 180-day (2.0x), 360-day (3.0x multiplier). Daily automatic compounding interest.",
-      lockNotice: "Time-locked principal. 100% of your staked CA principal is unlocked and returned upon contract maturity.",
+      values: { percent: POS_POOL.percent, dailyCA: POS_POOL.dailyCA, minUsdt: ECOSYSTEM_METRICS.MINIMUM_HASHRATE_USDT },
     },
     {
       id: "mining-servers",
+      key: "miningServers",
       number: "03",
-      title: "Mining Server / Machine Presale",
-      badge: "Enterprise DePIN • Node Priority",
       badgeColor: "text-amber-400 bg-amber-400/10 border-amber-400/30",
       icon: Server,
       iconColor: "text-amber-400",
       accentBorder: "hover:border-amber-400/60",
-      ctaLabel: "View Mining Servers",
       ctaUrl: AFFILIATE_CONFIG.MINING_SERVERS_URL,
       learnHash: "/earn#mining-servers",
-      whatIsIt: "Direct reservation of physical high-performance AI GPU/CPU compute servers hosted in institutional tier-3/4 data centers.",
-      howItEarns: "Physical machine owners receive direct block generation validation rights, commercial AI execution task fees, and lifetime node revenue shares.",
-      keyRates: "Enterprise hash allocation with certified NFT verification. Priority routing for commercial AI model training & inference workloads.",
-      lockNotice: "Physical hardware custody managed by verified hosting facilities with verifiable hash audit telemetry.",
+      values: {},
     },
     {
       id: "bot-hashrate",
+      key: "botHashrate",
       number: "04",
-      title: "BOT Hashrate Mining",
-      badge: "Layer 1 Native • Gas & Consensus",
       badgeColor: "text-emerald-400 bg-emerald-400/10 border-emerald-400/30",
       icon: Cpu,
       iconColor: "text-emerald-400",
       accentBorder: "hover:border-emerald-400/60",
-      ctaLabel: "Mine BOT Hashrate",
       ctaUrl: AFFILIATE_CONFIG.BOT_HASHRATE_URL,
       learnHash: "/earn#bot-hashrate",
-      whatIsIt: "Direct hashrate mining producing BOT, the native gas and governance Layer 1 cryptocurrency of BOT Chain.",
-      howItEarns: "Mines the base-layer token directly, earning revenue from on-chain transaction fees, contract executions, and gas fee burns across the network.",
-      keyRates: "Native Layer 1 block emissions. Zero DEX slippage required to acquire native gas tokens. Direct validator delegation.",
-      lockNotice: "Base infrastructure mining backing the entire modular blockchain economy.",
+      values: {},
     },
     {
       id: "bot-pledge",
+      key: "botPledge",
       number: "05",
-      title: "BOT Pledge / Bot Staking",
-      badge: "Flexible Exit • 24H Release • Auto-Compounding",
       badgeColor: "text-[#38BDF8] bg-[#38BDF8]/10 border-[#38BDF8]/30",
       icon: Layers,
       iconColor: "text-[#38BDF8]",
       accentBorder: "hover:border-[#38BDF8]/60",
-      ctaLabel: "Pledge BOT Tokens",
       ctaUrl: AFFILIATE_CONFIG.BOT_PLEDGE_URL,
       learnHash: "/earn#bot-pledge",
-      whatIsIt: "Stake BOT to Earn Rewards Flexible Entry and Exit, Free Control. Deposit native BOT tokens into the protocol pledge vault with complete self-determination.",
-      howItEarns: "Automatic compounding automatically uses the previous day’s principal + daily earnings as the new principal for compounding staking.",
-      keyRates: "Dynamic daily staking yields paid directly in native BOT. Zero DEX slippage. Instant on-chain auto-reinvestment every 24 hours.",
-      lockNotice: "Released principal can be withdrawn at any time. After withdrawal, it will be available for claim following a 24-hour unlocking period.",
+      values: {},
     },
-  ];
+  ] as const;
 
   return (
     <section id="earning-methods" className="py-16 sm:py-24 relative overflow-hidden bg-[#070914] border-t border-[#1C233B]">
@@ -133,7 +114,7 @@ export default function EarningMethodsHighlight() {
           <div className="absolute inset-0 bg-[#22D3FF]/30 blur-2xl rounded-full" />
           <Image
             src="https://www.botchain.ai/icons/icon_dex.png"
-            alt="Decentralized earning potential coins"
+            alt={t("alt.coinsLeft")}
             fill
             sizes="(max-width: 640px) 80px, 112px"
             className="object-contain"
@@ -159,7 +140,7 @@ export default function EarningMethodsHighlight() {
           <div className="absolute inset-0 bg-[#A855F7]/30 blur-2xl rounded-full" />
           <Image
             src="https://www.botchain.ai/icons/icon_dex.png"
-            alt="BOT Chain DEX mining coins"
+            alt={t("alt.coinsRight")}
             fill
             sizes="(max-width: 640px) 80px, 112px"
             className="object-contain"
@@ -181,7 +162,7 @@ export default function EarningMethodsHighlight() {
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#11162C] border border-[#232D50] text-xs font-semibold text-[#22D3FF] mb-4 shadow-sm"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Five Core Monetization Vectors</span>
+              <span>{t("badge")}</span>
             </motion.div>
 
             <motion.h2
@@ -191,7 +172,11 @@ export default function EarningMethodsHighlight() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4"
             >
-              How to Earn on <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3FF] via-[#7B4FFF] to-[#A855F7]">CaryPact & BOT Chain</span>
+              {t.rich("title", {
+                hl: (chunks) => (
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3FF] via-[#7B4FFF] to-[#A855F7]">{chunks}</span>
+                ),
+              })}
             </motion.h2>
 
             <motion.p
@@ -201,7 +186,7 @@ export default function EarningMethodsHighlight() {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed max-w-2xl mx-auto"
             >
-              Jump straight into the 5 official earning mechanisms. Whether you prefer liquid BOT Pledge with auto-compounding, protocol PoS staking, permanent computing power dividends, physical AI node servers, or native Layer 1 BOT mining.
+              {t("subtitle")}
             </motion.p>
           </div>
 
@@ -226,7 +211,7 @@ export default function EarningMethodsHighlight() {
               <div className="relative w-28 h-28 drop-shadow-[0_12px_28px_rgba(34,211,255,0.4)]">
                 <Image
                   src="https://www.botchain.ai/icons/icon_dex.png"
-                  alt="Earning potential coins"
+                  alt={t("alt.coinsFloat")}
                   fill
                   sizes="112px"
                   className="object-contain"
@@ -235,7 +220,7 @@ export default function EarningMethodsHighlight() {
               </div>
               <div className="mt-1 px-2.5 py-1 rounded-full bg-[#0D1224]/90 border border-[#232F52] text-[10px] font-mono text-[#22D3FF] shadow-lg backdrop-blur-md whitespace-nowrap text-center flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>Earning Potential</span>
+                <span>{t("floatingTag")}</span>
               </div>
             </div>
           </motion.div>
@@ -245,6 +230,7 @@ export default function EarningMethodsHighlight() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
           {earningMethods.map((method, idx) => {
             const Icon = method.icon;
+            const m = (field: string) => t(`methods.${method.key}.${field}`, method.values);
             return (
               <motion.div
                 key={method.id}
@@ -262,7 +248,7 @@ export default function EarningMethodsHighlight() {
                         {method.number}
                       </span>
                       <span className={`text-[11px] font-mono font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full border ${method.badgeColor}`}>
-                        {method.badge}
+                        {m("badge")}
                       </span>
                     </div>
                     <div className="w-11 h-11 rounded-xl bg-[#161D33] border border-[#253052] flex items-center justify-center group-hover:scale-105 transition-transform">
@@ -272,16 +258,16 @@ export default function EarningMethodsHighlight() {
 
                   {/* Title */}
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-[#22D3FF] transition-colors">
-                    {method.title}
+                    {m("title")}
                   </h3>
 
                   {/* What is it */}
                   <div className="mb-4 bg-[#0D1122] rounded-xl p-3.5 border border-[#1A223C]">
                     <div className="text-[11px] uppercase tracking-wider font-mono font-semibold text-[#8EA2C6] mb-1">
-                      What It Is
+                      {t("labels.whatItIs")}
                     </div>
                     <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed">
-                      {method.whatIsIt}
+                      {m("whatIsIt")}
                     </p>
                   </div>
 
@@ -290,19 +276,19 @@ export default function EarningMethodsHighlight() {
                     <div className="flex items-start gap-2.5 text-xs sm:text-sm text-[#94A3B8]">
                       <TrendingUp className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                       <div>
-                        <span className="text-white font-medium">How You Earn:</span> {method.howItEarns}
+                        <span className="text-white font-medium">{t("labels.howYouEarn")}</span> {m("howItEarns")}
                       </div>
                     </div>
                     <div className="flex items-start gap-2.5 text-xs sm:text-sm text-[#94A3B8]">
                       <Coins className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                       <div>
-                        <span className="text-white font-medium">Rates & Specs:</span> {method.keyRates}
+                        <span className="text-white font-medium">{t("labels.ratesSpecs")}</span> {m("keyRates")}
                       </div>
                     </div>
                     <div className="flex items-start gap-2.5 text-xs sm:text-sm text-[#8EA2C6]">
                       <Lock className="w-4 h-4 text-[#A855F7] shrink-0 mt-0.5" />
                       <div>
-                        <span className="text-white font-medium">Capital Terms:</span> {method.lockNotice}
+                        <span className="text-white font-medium">{t("labels.capitalTerms")}</span> {m("lockNotice")}
                       </div>
                     </div>
                   </div>
@@ -317,7 +303,7 @@ export default function EarningMethodsHighlight() {
                     id={`home-cta-${method.id}`}
                     className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[#22D3FF] to-[#0EA5E9] hover:from-[#38BDF8] hover:to-[#0284C7] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-[#22D3FF]/20 cursor-pointer"
                   >
-                    <span>{method.ctaLabel}</span>
+                    <span>{m("cta")}</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
 
@@ -325,7 +311,7 @@ export default function EarningMethodsHighlight() {
                     href={method.learnHash}
                     className="inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl bg-[#141A2E] hover:bg-[#1B233D] text-[#CBD5E1] hover:text-white text-xs font-semibold border border-[#232F4E] transition-colors cursor-pointer"
                   >
-                    <span>Deep-Dive Details</span>
+                    <span>{t("labels.deepDive")}</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#22D3FF]" />
                   </Link>
                 </div>
@@ -348,7 +334,7 @@ export default function EarningMethodsHighlight() {
               <div className="absolute inset-0 bg-[#7B4FFF]/25 blur-xl rounded-full" />
               <Image
                 src="https://www.botchain.ai/icons/icon_dex.png"
-                alt="Earning potential coins stack"
+                alt={t("alt.coinsBanner")}
                 fill
                 sizes="(max-width: 640px) 64px, 96px"
                 className="object-contain drop-shadow-[0_8px_20px_rgba(123,79,255,0.4)]"
@@ -359,13 +345,15 @@ export default function EarningMethodsHighlight() {
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 text-xs font-mono font-semibold uppercase text-[#A855F7]">
                 <Sparkles className="w-3.5 h-3.5 text-[#22D3FF]" />
-                <span>Comprehensive Yield Intelligence</span>
+                <span>{t("banner.kicker")}</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-                Looking for In-Depth Mathematical Formulas, Lockup Schedules & ROI Calculators?
+                {t("banner.title")}
               </h3>
               <p className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed">
-                Visit our dedicated <strong className="text-white">/earn</strong> directory for a complete breakdown of hashrate compounding factors, PoS duration weight multipliers (30d–360d), node presale tiers, and interactive calculators.
+                {t.rich("banner.desc", {
+                  strong: (chunks) => <strong className="text-white">{chunks}</strong>,
+                })}
               </p>
             </div>
           </div>
@@ -376,7 +364,7 @@ export default function EarningMethodsHighlight() {
               id="goto-earn-page-banner-btn"
               className="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-gradient-to-r from-[#7B4FFF] to-[#6335E5] hover:from-[#6D3DF5] hover:to-[#5527D6] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#7B4FFF]/25 cursor-pointer w-full sm:w-auto"
             >
-              <span>Explore Dedicated Earning Hub (/earn)</span>
+              <span>{t("banner.cta")}</span>
               <ArrowRight className="w-4 h-4 text-[#22D3FF]" />
             </Link>
           </div>

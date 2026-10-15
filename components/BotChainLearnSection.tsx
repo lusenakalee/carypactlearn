@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import { useTranslations } from "next-intl";
+import { AFFILIATE_CONFIG } from "@/config/constants";
 import { motion } from "motion/react";
 import { 
   Cpu, 
@@ -26,6 +28,7 @@ interface RevealCardProps {
 }
 
 function RevealCard({ number, title, description, tag, icon: Icon, delay }: RevealCardProps) {
+  const t = useTranslations("botChainLearn");
   return (
     <motion.div
       initial={{ opacity: 0, y: 35 }}
@@ -64,9 +67,9 @@ function RevealCard({ number, title, description, tag, icon: Icon, delay }: Reve
 
       {/* Decorative footer indicator */}
       <div className="mt-6 pt-4 border-t border-[#192138] flex items-center justify-between text-xs text-[#5D6F93] font-mono">
-        <span>BOT Chain Spec</span>
+        <span>{t("footerSpec")}</span>
         <span className="text-[#22D3FF] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 font-sans font-semibold">
-          <span>Active Standard</span>
+          <span>{t("footerActive")}</span>
           <ArrowRight className="w-3.5 h-3.5" />
         </span>
       </div>
@@ -75,36 +78,37 @@ function RevealCard({ number, title, description, tag, icon: Icon, delay }: Reve
 }
 
 export default function BotChainLearnSection() {
+  const t = useTranslations("botChainLearn");
   const cards = [
     {
       number: "01",
-      title: "EVM-Compatible Execution",
-      description: "Build and deploy Solidity smart contracts with familiar Ethereum development tools and workflows.",
-      tag: "EVM & Solidity",
+      title: t("card1Title"),
+      description: t("card1Desc"),
+      tag: t("card1Tag"),
       icon: Code2,
       delay: 0.1,
     },
     {
       number: "02",
-      title: "Fast, Predictable Settlement",
-      description: "Support frequent on-chain interactions with a network designed for low-latency execution and efficient transaction processing.",
-      tag: "High-Frequency",
+      title: t("card2Title"),
+      description: t("card2Desc"),
+      tag: t("card2Tag"),
       icon: Zap,
       delay: 0.2,
     },
     {
       number: "03",
-      title: "Dual-Driven Network",
-      description: "Combine staking-based network security with DePIN participation to connect on-chain activity with physical compute infrastructure.",
-      tag: "Staking + DePIN",
+      title: t("card3Title"),
+      description: t("card3Desc"),
+      tag: t("card3Tag"),
       icon: Layers,
       delay: 0.3,
     },
     {
       number: "04",
-      title: "Infrastructure for AI Agents",
-      description: "Give AI-agent applications a verifiable foundation for contract execution, payments, coordination and auditable on-chain outcomes.",
-      tag: "AI Coordination",
+      title: t("card4Title"),
+      description: t("card4Desc"),
+      tag: t("card4Tag"),
       icon: Bot,
       delay: 0.4,
     },
@@ -127,7 +131,7 @@ export default function BotChainLearnSection() {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#11162A] border border-[#232D4E] text-xs font-semibold text-[#22D3FF] mb-4 shadow-sm"
           >
             <Cpu className="w-3.5 h-3.5" />
-            <span>Official BOT Chain Architecture & Documentation</span>
+            <span>{t("badge")}</span>
           </motion.div>
 
           <motion.h2
@@ -137,7 +141,7 @@ export default function BotChainLearnSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-5"
           >
-            What Is <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3FF] via-[#7B4FFF] to-[#A855F7]">BOT Chain?</span>
+            {t("titlePrefix")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3FF] via-[#7B4FFF] to-[#A855F7]">{t("titleHighlight")}</span>
           </motion.h2>
 
           <motion.p
@@ -147,7 +151,9 @@ export default function BotChainLearnSection() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="text-base sm:text-xl text-[#CBD5E1] font-medium leading-relaxed"
           >
-            BOT Chain is an <span className="text-white font-semibold">AI-native, EVM-compatible Layer 1 blockchain</span> built for high-frequency applications, decentralized compute and verifiable on-chain settlement.
+            {t.rich("subtitle", {
+              b: (chunks) => <span className="text-white font-semibold">{chunks}</span>,
+            })}
           </motion.p>
         </div>
 
@@ -165,25 +171,25 @@ export default function BotChainLearnSection() {
             <div className="space-y-3 max-w-3xl">
               <div className="flex items-center gap-2 text-xs font-mono font-semibold uppercase text-[#A855F7]">
                 <Sparkles className="w-4 h-4 text-[#22D3FF]" />
-                <span>Next-Gen Web3 Infrastructure</span>
+                <span>{t("bannerKicker")}</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-                An AI-Native Layer 1 Blockchain
+                {t("bannerTitle")}
               </h3>
               <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed">
-                Developers can build with familiar EVM tooling while connecting AI agents, compute resources and digital assets to a shared blockchain network.
+                {t("bannerDesc")}
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 w-full lg:w-auto">
               <a
-                href="https://www.botchain.ai/en/learn/"
+                href={AFFILIATE_CONFIG.BOT_CHAIN_LEARN}
                 target="_blank"
                 rel="noopener noreferrer"
                 id="botchain-learn-official-btn"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#22D3FF] hover:bg-[#1bb8df] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-[#22D3FF]/20 cursor-pointer"
               >
-                <span>Explore BOT Chain Learn</span>
+                <span>{t("ctaLearn")}</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
               <a
@@ -193,7 +199,7 @@ export default function BotChainLearnSection() {
                 id="botchain-portal-btn"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#171D33] hover:bg-[#1E2642] text-white font-medium text-xs border border-[#283556] transition-colors cursor-pointer"
               >
-                <span>Official Portal</span>
+                <span>{t("ctaPortal")}</span>
                 <ExternalLink className="w-3.5 h-3.5 text-[#8EA2C6]" />
               </a>
             </div>
@@ -203,10 +209,10 @@ export default function BotChainLearnSection() {
         {/* Reveal Cards Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
           <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
-            Infrastructure Designed for Intelligent On-Chain Applications
+            {t("gridTitle")}
           </h3>
           <p className="text-xs sm:text-sm text-[#8EA2C6] mt-2">
-            Built from the ground up for verifiable autonomous agents, low-latency micro-settlements, and physical decentralized computing networks.
+            {t("gridDesc")}
           </p>
         </div>
 

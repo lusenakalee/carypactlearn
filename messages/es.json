@@ -45,7 +45,22 @@
     "prompt1": "¿Cuál es la regla de permanencia de las Unidades de Hashrate?",
     "prompt2": "¿Cómo funciona la paridad dinámica 1.337631 BOT = 1 CA?",
     "prompt3": "Explicar el 5% de slippage en BDEX y la quema de tokens",
-    "prompt4": "¿Cuáles son los 10 niveles VIP de recompensas?"
+    "prompt4": "¿Cuáles son los 10 niveles VIP de recompensas?",
+    "communityLabel": "Comunidad global",
+    "countries": "{count} países",
+    "botSupplyLabel": "Suministro máx. de BOT",
+    "maxCaSupplyLabel": "Suministro máx. de CA",
+    "emissionYears": "Emisión a {years} años",
+    "officeNetworkLabel": "Red de oficinas",
+    "officeBreakdown": "{studios, number} estudios + {hubs, number} centros",
+    "parityInline": "{rate} BOT = 1 CA",
+    "priceNA": "No disponible",
+    "priceVia": "vía {source}",
+    "priceUpdated": "Actualizado {time}",
+    "chip1": "Permanencia del hashrate",
+    "chip2": "Paridad dinámica BOT / CA",
+    "chip3": "Slippage del 5% y quema",
+    "chip4": "Recompensas VIP de 10 niveles"
   },
   "live": {
     "sectionBadge": "Métricas Financieras y de Cómputo en Tiempo Real",
@@ -81,13 +96,18 @@
     "slippageNotice": "Incluye distribución del 5% de slippage en BDEX (1.8% quema / 3.2% nodos)",
     "stakingDeposit": "Cantidad de CA en Staking",
     "stakingTerm": "Duración del Bloqueo",
-    "termFlexible": "Flexible (0.2% - 0.4%/día)",
-    "term30": "30 Días (Multiplicador 1.3x)",
-    "term90": "90 Días (Multiplicador 1.6x)",
-    "term180": "180 Días (Multiplicador 2.0x)",
-    "term360": "360 Días (Multiplicador 2.5x)",
+    "termFlexible": "Flexible (0.2%/día)",
+    "term30": "30 Días (0.26%/día)",
+    "term90": "90 Días (0.32%/día)",
+    "term180": "180 Días (0.4%/día)",
+    "term360": "360 Días (0.5%/día)",
     "projectedYield": "Rendimiento Proyectado en CA",
-    "simulationDisclaimer": "Estimaciones ilustrativas basadas en simulación. Los precios de mercado fluctúan."
+    "simulationDisclaimer": "Estimaciones ilustrativas basadas en simulación. Los precios de mercado fluctúan.",
+    "subtitleLive": "Las estimaciones usan la tasa en vivo del pool BDEX y el precio de BOT de CoinMarketCap",
+    "poolRate": "{rate} BOT = 1 CA",
+    "priceStale": "desactualizado",
+    "priceUnavailable": "Precio en vivo no disponible. Las estimaciones están desactivadas hasta que cargue un precio válido.",
+    "spotNotice": "Estimación a tasa spot. Los swaps reales en un pool con poca liquidez pueden sufrir un impacto de precio significativo."
   },
   "dex": {
     "title": "Pool de Liquidez On-Chain BDEX",
@@ -226,5 +246,194 @@
     "subscribe": "Suscribirse",
     "subscribed": "¡Suscripción Exitosa!",
     "privacy": "Respetamos tu privacidad. Puedes cancelar en cualquier momento."
+  },
+  "botChainLearn": {
+    "badge": "Arquitectura y documentación oficiales de BOT Chain",
+    "titlePrefix": "¿Qué es",
+    "titleHighlight": "BOT Chain?",
+    "subtitle": "BOT Chain es una <b>blockchain Layer 1 nativa de IA y compatible con EVM</b> creada para aplicaciones de alta frecuencia, cómputo descentralizado y liquidación on-chain verificable.",
+    "bannerKicker": "Infraestructura Web3 de nueva generación",
+    "bannerTitle": "Una blockchain Layer 1 nativa de IA",
+    "bannerDesc": "Los desarrolladores pueden construir con herramientas EVM conocidas mientras conectan agentes de IA, recursos de cómputo y activos digitales a una red blockchain compartida.",
+    "ctaLearn": "Explorar BOT Chain Learn",
+    "ctaPortal": "Portal oficial",
+    "gridTitle": "Infraestructura diseñada para aplicaciones on-chain inteligentes",
+    "gridDesc": "Creada desde cero para agentes autónomos verificables, microliquidaciones de baja latencia y redes físicas de cómputo descentralizado.",
+    "footerSpec": "Especificación de BOT Chain",
+    "footerActive": "Estándar activo",
+    "card1Title": "Ejecución compatible con EVM",
+    "card1Desc": "Crea y despliega contratos inteligentes en Solidity con las herramientas y flujos de trabajo habituales de Ethereum.",
+    "card1Tag": "EVM y Solidity",
+    "card2Title": "Liquidación rápida y predecible",
+    "card2Desc": "Admite interacciones on-chain frecuentes con una red diseñada para ejecución de baja latencia y procesamiento eficiente de transacciones.",
+    "card2Tag": "Alta frecuencia",
+    "card3Title": "Red de doble impulso",
+    "card3Desc": "Combina la seguridad de red basada en staking con la participación DePIN para conectar la actividad on-chain con infraestructura de cómputo física.",
+    "card3Tag": "Staking + DePIN",
+    "card4Title": "Infraestructura para agentes de IA",
+    "card4Desc": "Ofrece a las aplicaciones de agentes de IA una base verificable para la ejecución de contratos, pagos, coordinación y resultados on-chain auditables.",
+    "card4Tag": "Coordinación de IA"
+  },
+  "carypactBenchmark": {
+    "footerValue": "Valor central del protocolo",
+    "bridgeLabel": "Arquitectura del ecosistema BOT Chain:",
+    "bridgeText": "CaryPact es uno de los principales protocolos de referencia que operan en el ecosistema BOT Chain.",
+    "bridgeLayer": "Layer 1: BOT Chain",
+    "bridgeProtocol": "Protocolo de referencia: CaryPact",
+    "badge": "El primer protocolo de referencia en BOT Chain",
+    "titlePrefix": "¿Qué es",
+    "titleHighlight": "CaryPact?",
+    "tagline": "El primer protocolo de referencia que opera en BOT Chain",
+    "description": "CaryPact integra el valor de BOT Chain y permite a usuarios de todo el mundo participar en la construcción y las ganancias de BOT Chain a través del protocolo, logrando crecimiento de valor.",
+    "ctaLaunch": "Abrir la DApp de CaryPact (app.carypact.com)",
+    "ctaCalc": "Calculadora y simulador CA / BOT en vivo",
+    "philosophy": "Filosofía del protocolo",
+    "whyTitle": "¿Por qué elegir CaryPact?",
+    "whyDesc": "Basado en una mecánica de cómputo no especulativa, una distribución matemáticamente justa y una alineación sostenible del valor a largo plazo.",
+    "pillar1Badge": "Red sostenible",
+    "pillar1Title": "Infraestructura de cómputo real y sostenible",
+    "pillar1Desc": "CaryPact no persigue incentivos explosivos a corto plazo, sino que construye una red de infraestructura de poder de cómputo real y sostenible.",
+    "pillar2Badge": "Horizonte de 20 años",
+    "pillar2Title": "Al servicio del cómputo de IA de los próximos 20 años",
+    "pillar2Desc": "El objetivo de diseño de CaryPact es atender las necesidades de IA y de cómputo descentralizado durante los próximos veinte años.",
+    "pillar3Badge": "Reglas iguales para todos",
+    "pillar3Title": "Competencia justa sin monopolio de plataforma",
+    "pillar3Desc": "El poder de cómputo ya no está controlado por una sola plataforma; el protocolo es la regla y todos los participantes compiten de forma justa dentro del mismo sistema.",
+    "pillar4Badge": "Flujo de caja real",
+    "pillar4Title": "Producción continua de poder de cómputo real",
+    "pillar4Desc": "Los usuarios ya no dependen de la especulación del mercado, sino que obtienen de forma continua flujo de caja a partir de una producción real de poder de cómputo."
+  },
+  "earningMethods": {
+    "badge": "Cinco vías principales de monetización",
+    "title": "Cómo ganar en <hl>CaryPact y BOT Chain</hl>",
+    "subtitle": "Ve directo a los 5 mecanismos oficiales de ganancias. Ya prefieras el Pledge de BOT líquido con auto-capitalización, el staking PoS del protocolo, dividendos permanentes de poder de cómputo, servidores físicos de nodos de IA o la minería nativa de BOT en Layer 1.",
+    "floatingTag": "Potencial de ganancias",
+    "alt": {
+      "coinsLeft": "Monedas de potencial de ganancias descentralizado",
+      "coinsRight": "Monedas de minería del DEX de BOT Chain",
+      "coinsFloat": "Monedas de potencial de ganancias",
+      "coinsBanner": "Pila de monedas de potencial de ganancias"
+    },
+    "labels": {
+      "whatItIs": "Qué es",
+      "howYouEarn": "Cómo ganas:",
+      "ratesSpecs": "Tasas y especificaciones:",
+      "capitalTerms": "Condiciones del capital:",
+      "deepDive": "Ver detalles"
+    },
+    "banner": {
+      "kicker": "Inteligencia integral de rendimiento",
+      "title": "¿Buscas fórmulas matemáticas detalladas, calendarios de bloqueo y calculadoras de ROI?",
+      "desc": "Visita nuestro directorio dedicado <strong>/earn</strong> para ver el desglose completo de los factores de capitalización del hashrate, los multiplicadores de peso por duración del PoS (30 d–360 d), los niveles de preventa de nodos y las calculadoras interactivas.",
+      "cta": "Explorar el centro de ganancias (/earn)"
+    },
+    "methods": {
+      "caHashrate": {
+        "title": "Hashrate CA / Poder de cómputo",
+        "badge": "Ganancia principal • {dailyCA, number} CA / día",
+        "cta": "Comprar hashrate CA",
+        "whatIsIt": "1 USDT = 1 unidad de poder de cómputo. Poder de cómputo tokenizado respaldado por clústeres físicos de GPU/CPU descentralizados.",
+        "howItEarns": "El protocolo asigna el {percent, number}% ({dailyCA, number} CA/día) de las emisiones totales a los titulares de hashrate activo. Las ganancias diarias se acreditan cada 24 h a las 00:00 UTC.",
+        "keyRates": "Mín. {minUsdt, number} USDT ({minUsdt, number} unidades). Rendimiento diario dinámico capitalizado por un factor de tiempo (K ≈ 1,01). Se paga en tokens CA.",
+        "lockNotice": "Activación permanente del cómputo (sin devolución del capital; dividendos de minería diarios continuos)."
+      },
+      "posMining": {
+        "title": "Minería PoS del protocolo / Staking de CA",
+        "badge": "Fondo del {percent, number}% • {dailyCA, number} CA / día",
+        "cta": "Iniciar minería PoS",
+        "whatIsIt": "Minería de Prueba de Participación mediante el depósito de tus tokens CA acumulados o comprados en los contratos PoS del protocolo.",
+        "howItEarns": "Comparte el fondo de emisión PoS dedicado de {dailyCA, number} CA diarios. Los compromisos a largo plazo reciben mayores multiplicadores.",
+        "keyRates": "30 días (1,0x), 90 días (1,5x), 180 días (2,0x), 360 días (3,0x). Interés compuesto automático diario.",
+        "lockNotice": "Capital bloqueado por plazo. El 100% de tu capital CA en staking se desbloquea y se devuelve al vencimiento del contrato."
+      },
+      "miningServers": {
+        "title": "Servidor de minería / Preventa de máquinas",
+        "badge": "DePIN empresarial • Prioridad de nodo",
+        "cta": "Ver servidores de minería",
+        "whatIsIt": "Reserva directa de servidores físicos de cómputo GPU/CPU de IA de alto rendimiento alojados en centros de datos institucionales Tier 3/4.",
+        "howItEarns": "Los propietarios de máquinas físicas reciben derechos directos de validación de bloques, comisiones por tareas comerciales de ejecución de IA y participación vitalicia en los ingresos del nodo.",
+        "keyRates": "Asignación de hash empresarial con verificación NFT certificada. Enrutamiento prioritario para entrenamiento e inferencia de modelos de IA comerciales.",
+        "lockNotice": "Custodia del hardware físico gestionada por instalaciones verificadas, con telemetría de auditoría de hash verificable."
+      },
+      "botHashrate": {
+        "title": "Minería de hashrate BOT",
+        "badge": "Nativo de Layer 1 • Gas y consenso",
+        "cta": "Minar hashrate BOT",
+        "whatIsIt": "Minería directa de hashrate que produce BOT, la criptomoneda nativa de gas y gobernanza de la Layer 1 de BOT Chain.",
+        "howItEarns": "Mina directamente el token de la capa base y obtiene ingresos de las comisiones de transacción en cadena, las ejecuciones de contratos y la quema de comisiones de gas en toda la red.",
+        "keyRates": "Emisiones de bloques nativas de Layer 1. No se requiere slippage de DEX para obtener tokens de gas nativos. Delegación directa a validadores.",
+        "lockNotice": "Minería de infraestructura base que respalda toda la economía blockchain modular."
+      },
+      "botPledge": {
+        "title": "Pledge de BOT / Staking de BOT",
+        "badge": "Salida flexible • Liberación en 24 h • Auto-capitalización",
+        "cta": "Pignorar tokens BOT",
+        "whatIsIt": "Haz staking de BOT para ganar recompensas con entrada y salida flexibles. Deposita tokens BOT nativos en la bóveda de pledge del protocolo con total autodeterminación.",
+        "howItEarns": "La capitalización automática usa el capital del día anterior más las ganancias diarias como nuevo capital para el staking compuesto.",
+        "keyRates": "Rendimientos diarios dinámicos de staking pagados directamente en BOT nativo. Sin slippage de DEX. Reinversión automática instantánea en cadena cada 24 horas.",
+        "lockNotice": "El capital liberado puede retirarse en cualquier momento. Tras el retiro, estará disponible para reclamar después de un período de desbloqueo de 24 horas."
+      }
+    }
+  },
+  "riskDisclosure": {
+    "badge": "Aviso esencial de riesgos y divulgación",
+    "title": "Transparencia y <hl>divulgación de riesgos</hl>",
+    "subtitle": "Creemos en una educación honesta y completa. Lee y comprende estos parámetros estructurales críticos antes de comprometer activos digitales.",
+    "affiliate": {
+      "title": "Declaración de monetización por afiliación",
+      "subtitle": "Declaración clara de la independencia del sitio y de su compensación",
+      "body": "El <strong>CaryPact Learning Hub</strong> es un recurso educativo y analítico independiente. No somos la entidad oficial de la empresa. Si decides registrarte en CaryPact mediante los enlaces y códigos de invitación de este sitio, podemos recibir una comisión por referido. Esta compensación no influye en nuestra presentación objetiva de las reglas matemáticas, los bloqueos permanentes de hashrate, la mecánica de slippage ni los riesgos."
+    },
+    "items": {
+      "permanence": {
+        "category": "Estructura de capital",
+        "severity": "Alta importancia",
+        "title": "Permanencia de las unidades de hashrate (sin salida del capital)",
+        "description": "Al comprar poder de cómputo a razón de 1 USDT = 1 unidad de hashrate (mínimo {minUsdt, number} USDT), el capital se bloquea de forma permanente en las reservas de cómputo del protocolo. No existe reembolso, salida ni mecanismo de rescate del capital. Tu rendimiento proviene únicamente de las distribuciones diarias continuas de minería de CA."
+      },
+      "volatility": {
+        "category": "Riesgo de mercado",
+        "severity": "Volatilidad de mercado",
+        "title": "Volatilidad del mercado y fluctuación de precios",
+        "description": "El valor de cambio de CA, BOT y los tokens criptográficos relacionados puede fluctuar de forma significativa según las condiciones del mercado abierto, la profundidad de liquidez en BDEX y el sentimiento general sobre los activos digitales. Los precios pueden subir o bajar sustancialmente."
+      },
+      "projections": {
+        "category": "Staking y emisiones",
+        "severity": "Supuestos del modelo",
+        "title": "Proyecciones ilustrativas frente a rendimientos garantizados",
+        "description": "Las proyecciones de las presentaciones de marketing del ecosistema (p. ej., modelos de staking compuesto a 360 días) asumen parámetros matemáticos específicos, como una apreciación diaria sostenida del precio y una actividad de red estable. Son simulaciones hipotéticas y no deben interpretarse como rendimientos de inversión garantizados."
+      },
+      "referral": {
+        "category": "Modelo de consenso",
+        "severity": "Dinámica de referidos",
+        "title": "Estructura de incentivos de referidos multinivel (VIP)",
+        "description": "El sistema de recompensas VIP de 10 niveles (V1–V10) se financia con el Fondo de Recompensas Activas de {dailyPool, number} CA/día y depende de la inversión personal ({personalUsdt, number} USDT) combinada con el rendimiento de las «ramas» del equipo descendente. Las recompensas dependen de la participación activa del equipo y de la expansión de la red."
+      },
+      "slippage": {
+        "category": "Mecánica del protocolo",
+        "severity": "Reglas técnicas",
+        "title": "Ejecución de contratos inteligentes y slippage del {slippage, number}%",
+        "description": "Todas las ventas de tokens en BDEX conllevan una distribución obligatoria de slippage del {slippage, number}% ({buyback, number}% de recompra y quema, {node, number}% para operadores de nodos). Aunque los contratos inteligentes están desplegados en BOT Chain, las interacciones en blockchain implican riesgos técnicos y de ejecución inherentes."
+      },
+      "custody": {
+        "category": "Seguridad",
+        "severity": "Custodia personal",
+        "title": "Responsabilidad de autocustodia y gestión de claves",
+        "description": "CaryPact y BO Wallet son descentralizados y no custodiales. Eres el único responsable de proteger tu frase semilla de 12 palabras y tus claves privadas. Los administradores del protocolo y el personal del learning hub nunca pueden recuperar credenciales perdidas ni revertir transacciones."
+      }
+    },
+    "checklist": {
+      "title": "Lista de verificación previa «Haz tu propia investigación»",
+      "check1": "Entiendo que las unidades de hashrate no se pueden reembolsar ni revender.",
+      "check2": "He anotado de forma segura mi frase de recuperación de 12 palabras en papel.",
+      "check3": "Reconozco que todas las ventas de tokens en BDEX conllevan una comisión de slippage del {slippage, number}%.",
+      "check4": "Solo aporto fondos que me siento cómodo gestionando ante la volatilidad del mercado.",
+      "check5": "He confirmado que interactúo exclusivamente con URL de dominios oficiales.",
+      "check6": "Reconozco que las recompensas VIP de la red descendente requieren un volumen de reclutamiento activo."
+    },
+    "cta": {
+      "ready": "¿Listo para acceder a la DApp de CaryPact?",
+      "button": "Continuar a CaryPact con consentimiento informado"
+    }
   }
 }

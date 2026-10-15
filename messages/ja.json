@@ -45,7 +45,22 @@
     "prompt1": "ハッシュレート単位の永続購入ルールとは何ですか？",
     "prompt2": "1.337631 BOT = 1 CA の動的パリティはどのように機能しますか？",
     "prompt3": "BDEX の 5% スリッページとトークンバーンについて説明してください",
-    "prompt4": "10段階の VIP 報酬ティアとは何ですか？"
+    "prompt4": "10段階の VIP 報酬ティアとは何ですか？",
+    "communityLabel": "グローバルコミュニティ",
+    "countries": "{count}か国",
+    "botSupplyLabel": "BOT 最大供給量",
+    "maxCaSupplyLabel": "CA 最大供給量",
+    "emissionYears": "{years}年間の放出",
+    "officeNetworkLabel": "オフィスネットワーク",
+    "officeBreakdown": "スタジオ{studios, number}拠点＋ハブ{hubs, number}拠点",
+    "parityInline": "{rate} BOT = 1 CA",
+    "priceNA": "取得不可",
+    "priceVia": "提供元: {source}",
+    "priceUpdated": "更新: {time}",
+    "chip1": "ハッシュレートの永続性",
+    "chip2": "BOT / CA 動的パリティ",
+    "chip3": "5% スリッページとバーン",
+    "chip4": "10段階 VIP 報酬"
   },
   "live": {
     "sectionBadge": "リアルタイム金融・計算データ",
@@ -81,13 +96,18 @@
     "slippageNotice": "BDEX 5% スリッページ分配（1.8% バーン / 3.2% ノード配分）を含みます",
     "stakingDeposit": "ステーキング CA 数量",
     "stakingTerm": "ロックアップ期間",
-    "termFlexible": "フレキシブル（0.2% - 0.4%/日）",
-    "term30": "30日間（1.3倍倍率）",
-    "term90": "90日間（1.6倍倍率）",
-    "term180": "180日間（2.0倍倍率）",
-    "term360": "360日間（2.5倍倍率）",
+    "termFlexible": "フレキシブル（0.2%/日）",
+    "term30": "30日間（0.26%/日）",
+    "term90": "90日間（0.32%/日）",
+    "term180": "180日間（0.4%/日）",
+    "term360": "360日間（0.5%/日）",
     "projectedYield": "予想収穫 CA 数量",
-    "simulationDisclaimer": "シミュレーション計算は参考値です。暗号資産市場は常に変動します。"
+    "simulationDisclaimer": "シミュレーション計算は参考値です。暗号資産市場は常に変動します。",
+    "subtitleLive": "見積もりは BDEX プールのリアルタイムレートと CoinMarketCap の BOT 価格を使用します",
+    "poolRate": "{rate} BOT = 1 CA",
+    "priceStale": "古いデータ",
+    "priceUnavailable": "リアルタイム価格を取得できません。有効な価格が読み込まれるまで見積もりは無効です。",
+    "spotNotice": "スポットレートによる見積もりです。流動性の薄いプールでの実際のスワップでは、大きな価格インパクトが発生する可能性があります。"
   },
   "dex": {
     "title": "BDEX オンチェーン流動性プール",
@@ -226,5 +246,194 @@
     "subscribe": "購読する",
     "subscribed": "購読完了！",
     "privacy": "プライバシーを尊重します。いつでも配信解除可能です。"
+  },
+  "botChainLearn": {
+    "badge": "BOT Chain 公式アーキテクチャ＆ドキュメント",
+    "titlePrefix": "",
+    "titleHighlight": "BOT Chainとは？",
+    "subtitle": "BOT Chain は、高頻度アプリケーション、分散型コンピュート、検証可能なオンチェーン決済のために構築された、<b>AIネイティブでEVM互換のLayer 1ブロックチェーン</b>です。",
+    "bannerKicker": "次世代 Web3 インフラ",
+    "bannerTitle": "AIネイティブな Layer 1 ブロックチェーン",
+    "bannerDesc": "開発者は使い慣れた EVM ツールで開発しながら、AI エージェント、コンピュートリソース、デジタル資産を共有ブロックチェーンネットワークに接続できます。",
+    "ctaLearn": "BOT Chain Learn を見る",
+    "ctaPortal": "公式ポータル",
+    "gridTitle": "インテリジェントなオンチェーンアプリのために設計されたインフラ",
+    "gridDesc": "検証可能な自律エージェント、低遅延のマイクロ決済、物理的な分散型コンピューティングネットワークのためにゼロから構築されています。",
+    "footerSpec": "BOT Chain 仕様",
+    "footerActive": "有効な標準",
+    "card1Title": "EVM互換の実行環境",
+    "card1Desc": "使い慣れた Ethereum の開発ツールとワークフローで、Solidity スマートコントラクトを構築・デプロイできます。",
+    "card1Tag": "EVM & Solidity",
+    "card2Title": "高速で予測可能な決済",
+    "card2Desc": "低遅延の実行と効率的なトランザクション処理を目指したネットワークで、頻繁なオンチェーン操作をサポートします。",
+    "card2Tag": "高頻度",
+    "card3Title": "デュアルドリブンネットワーク",
+    "card3Desc": "ステーキングによるネットワークセキュリティと DePIN 参加を組み合わせ、オンチェーン活動を物理的なコンピュートインフラに結び付けます。",
+    "card3Tag": "ステーキング + DePIN",
+    "card4Title": "AIエージェント向けインフラ",
+    "card4Desc": "AI エージェントアプリに、コントラクト実行、支払い、連携、監査可能なオンチェーン結果のための検証可能な基盤を提供します。",
+    "card4Tag": "AI連携"
+  },
+  "carypactBenchmark": {
+    "footerValue": "プロトコルのコアバリュー",
+    "bridgeLabel": "BOT Chain エコシステム構成:",
+    "bridgeText": "CaryPact は、BOT Chain エコシステム上で稼働する代表的なベンチマークプロトコルの一つです。",
+    "bridgeLayer": "Layer 1: BOT Chain",
+    "bridgeProtocol": "ベンチマークプロトコル: CaryPact",
+    "badge": "BOT Chain 初のベンチマークプロトコル",
+    "titlePrefix": "",
+    "titleHighlight": "CaryPactとは？",
+    "tagline": "BOT Chain 上で稼働する初のベンチマークプロトコル",
+    "description": "CaryPact は BOT Chain の価値を取り込み、世界中のユーザーがプロトコルを通じて BOT Chain の構築と収益に参加し、価値の成長を実現できるようにします。",
+    "ctaLaunch": "CaryPact DApp を開く (app.carypact.com)",
+    "ctaCalc": "リアルタイム CA / BOT 計算機＆シミュレーター",
+    "philosophy": "プロトコルの理念",
+    "whyTitle": "なぜ CaryPact を選ぶのか？",
+    "whyDesc": "非投機的な計算メカニズム、数学的に公平な分配、持続可能な長期的価値の整合性に基づいて構築されています。",
+    "pillar1Badge": "持続可能なネットワーク",
+    "pillar1Title": "実在し持続可能な計算インフラ",
+    "pillar1Desc": "CaryPact は短期的な爆発的インセンティブを追わず、実在し持続可能な計算力インフラネットワークを構築します。",
+    "pillar2Badge": "20年の展望",
+    "pillar2Title": "今後20年のAIコンピュートを支える",
+    "pillar2Desc": "CaryPact の設計目標は、今後20年間の AI と分散型コンピューティングのニーズに応えることです。",
+    "pillar3Badge": "平等なプロトコルルール",
+    "pillar3Title": "プラットフォーム独占のない公平な競争",
+    "pillar3Desc": "計算力はもはや単一のプラットフォームに支配されません。プロトコルがルールであり、すべての参加者が同じシステム内で公平に競います。",
+    "pillar4Badge": "実際のキャッシュフロー",
+    "pillar4Title": "実際の計算力による継続的なアウトプット",
+    "pillar4Desc": "ユーザーは市場の投機に頼らず、実際の計算力のアウトプットから継続的にキャッシュフローを得ます。"
+  },
+  "earningMethods": {
+    "badge": "5つの主要な収益モデル",
+    "title": "<hl>CaryPact と BOT Chain</hl> で収益を得る方法",
+    "subtitle": "5つの公式収益メカニズムをすぐにご確認ください。自動複利の流動的な BOT ペレッジ、プロトコル PoS ステーキング、永続的な計算力配当、物理 AI ノードサーバー、ネイティブ Layer 1 BOT マイニングのいずれもご用意しています。",
+    "floatingTag": "収益ポテンシャル",
+    "alt": {
+      "coinsLeft": "分散型収益ポテンシャルのコイン",
+      "coinsRight": "BOT Chain DEX マイニングコイン",
+      "coinsFloat": "収益ポテンシャルのコイン",
+      "coinsBanner": "収益ポテンシャルのコインの山"
+    },
+    "labels": {
+      "whatItIs": "概要",
+      "howYouEarn": "収益の仕組み：",
+      "ratesSpecs": "レートと仕様：",
+      "capitalTerms": "資本条件：",
+      "deepDive": "詳細を見る"
+    },
+    "banner": {
+      "kicker": "包括的な利回りインテリジェンス",
+      "title": "詳細な数式、ロックアップスケジュール、ROI 計算ツールをお探しですか？",
+      "desc": "ハッシュレートの複利係数、PoS の期間別ウェイト倍率（30日〜360日）、ノードプレセールの各ティア、インタラクティブ計算ツールの詳細は、専用の <strong>/earn</strong> ディレクトリをご覧ください。",
+      "cta": "専用収益ハブを見る (/earn)"
+    },
+    "methods": {
+      "caHashrate": {
+        "title": "CA ハッシュレート / 計算力",
+        "badge": "主な収益 • 1日 {dailyCA, number} CA",
+        "cta": "CA ハッシュレートを購入",
+        "whatIsIt": "1 USDT = 1 計算力ユニット。分散型の物理 GPU/CPU クラスターに裏付けられたトークン化計算力です。",
+        "howItEarns": "プロトコルは総排出量の {percent, number}%（1日 {dailyCA, number} CA）をアクティブなハッシュレート保有者に割り当てます。日次収益は 24 時間ごと、UTC 00:00 に付与されます。",
+        "keyRates": "最低 {minUsdt, number} USDT（{minUsdt, number} ユニット）。時間係数（K ≈ 1.01）で複利計算される日次ダイナミック利回り。利回りは CA トークンで支払われます。",
+        "lockNotice": "計算力は恒久的に有効化されます（元本の返還なし。日次のマイニング配当を継続的に受け取り）。"
+      },
+      "posMining": {
+        "title": "プロトコル PoS マイニング / CA ステーキング",
+        "badge": "{percent, number}% プール • 1日 {dailyCA, number} CA",
+        "cta": "PoS マイニングを開始",
+        "whatIsIt": "保有または購入した CA トークンをプロトコルの PoS コントラクトに預け入れて行うプルーフ・オブ・ステークマイニングです。",
+        "howItEarns": "1日 {dailyCA, number} CA の専用 PoS 排出プールを分配します。長期のコミットメントほど高い倍率ウェイトが適用されます。",
+        "keyRates": "30日（1.0倍）、90日（1.5倍）、180日（2.0倍）、360日（3.0倍）。日次の自動複利。",
+        "lockNotice": "元本は期間ロックされます。ステークした CA 元本の 100% が契約満了時にアンロックされ返還されます。"
+      },
+      "miningServers": {
+        "title": "マイニングサーバー / マシンのプレセール",
+        "badge": "エンタープライズ DePIN • ノード優先",
+        "cta": "マイニングサーバーを見る",
+        "whatIsIt": "機関向け Tier 3/4 データセンターでホストされる高性能な物理 AI GPU/CPU 計算サーバーを直接予約できます。",
+        "howItEarns": "物理マシンのオーナーは、ブロック生成の検証権、商用 AI 実行タスク手数料、生涯にわたるノード収益シェアを直接受け取ります。",
+        "keyRates": "認定 NFT 検証付きのエンタープライズ向けハッシュ割り当て。商用 AI モデルの学習・推論ワークロードを優先的にルーティングします。",
+        "lockNotice": "物理ハードウェアは検証済みのホスティング施設が管理し、検証可能なハッシュ監査テレメトリを提供します。"
+      },
+      "botHashrate": {
+        "title": "BOT ハッシュレートマイニング",
+        "badge": "Layer 1 ネイティブ • ガスとコンセンサス",
+        "cta": "BOT ハッシュレートをマイニング",
+        "whatIsIt": "BOT Chain のネイティブなガス兼ガバナンス用 Layer 1 暗号資産である BOT を、ハッシュレートマイニングで直接生成します。",
+        "howItEarns": "ベースレイヤーのトークンを直接マイニングし、ネットワーク全体のオンチェーン取引手数料、コントラクト実行、ガス手数料のバーンから収益を得ます。",
+        "keyRates": "ネイティブ Layer 1 のブロック排出。ネイティブガストークンの取得に DEX スリッページは不要。バリデーターへの直接委任。",
+        "lockNotice": "モジュラー型ブロックチェーン経済全体を支える基盤インフラのマイニングです。"
+      },
+      "botPledge": {
+        "title": "BOT ペレッジ / BOT ステーキング",
+        "badge": "柔軟な出金 • 24時間でリリース • 自動複利",
+        "cta": "BOT トークンをペレッジ",
+        "whatIsIt": "BOT をステークして報酬を獲得。出入りは柔軟で、完全に自己管理できます。ネイティブ BOT トークンをプロトコルのペレッジ保管庫に預け入れます。",
+        "howItEarns": "自動複利では、前日の元本と日次収益を新たな元本として複利ステーキングに充当します。",
+        "keyRates": "日次のダイナミックなステーキング利回りはネイティブ BOT で直接支払われます。DEX スリッページなし。24時間ごとにオンチェーンで即時自動再投資。",
+        "lockNotice": "リリース済みの元本はいつでも引き出せます。引き出し後、24時間のアンロック期間を経て請求可能になります。"
+      }
+    }
+  },
+  "riskDisclosure": {
+    "badge": "重要なリスクと開示に関するお知らせ",
+    "title": "透明性と<hl>リスク開示</hl>",
+    "subtitle": "私たちは誠実で徹底した教育を重視しています。デジタル資産を投じる前に、これらの重要な構造的パラメータをお読みになりご理解ください。",
+    "affiliate": {
+      "title": "アフィリエイト収益化に関する声明",
+      "subtitle": "本サイトの独立性と報酬に関する明確な声明",
+      "body": "<strong>CaryPact Learning Hub</strong> は独立した教育・分析リソースであり、公式の企業主体ではありません。本サイトで提供するリンクや招待コードから CaryPact に登録された場合、紹介報酬を受け取ることがあります。この報酬は、数理ルール、恒久的なハッシュレートロック、スリッページの仕組み、リスクに関する客観的な説明には影響しません。"
+    },
+    "items": {
+      "permanence": {
+        "category": "資本構造",
+        "severity": "重要度：高",
+        "title": "ハッシュレートユニットの恒久性（元本の出口なし）",
+        "description": "1 USDT = 1 ハッシュレートユニット（最低 {minUsdt, number} USDT）のレートで計算力を購入すると、投入した資本はプロトコルの計算リザーブに恒久的にロックされます。元本の返金、出金、償還の仕組みはありません。リターンは継続的な日次 CA マイニング配分のみから得られます。"
+      },
+      "volatility": {
+        "category": "市場リスク",
+        "severity": "市場の変動性",
+        "title": "市場の変動性と価格の変動",
+        "description": "CA、BOT および関連する暗号トークンの交換価値は、公開市場の状況、BDEX の流動性の深さ、デジタル資産全体のセンチメントによって大きく変動する可能性があります。トークン価格は大幅に上昇または下落することがあります。"
+      },
+      "projections": {
+        "category": "ステーキングと排出",
+        "severity": "モデルの前提",
+        "title": "例示的な利回り予測と保証された利回りの違い",
+        "description": "エコシステムのマーケティング資料に示される予測（例：360日の複利ステーキングモデル）は、継続的な日次の価格上昇や安定したネットワーク活動といった特定の数理パラメータを前提としています。これらは仮定に基づくシミュレーションであり、保証された投資利回りと解釈してはなりません。"
+      },
+      "referral": {
+        "category": "コンセンサスモデル",
+        "severity": "紹介の力学",
+        "title": "多段階紹介（VIP）インセンティブ構造",
+        "description": "10段階の VIP 報酬制度（V1〜V10）は、1日 {dailyPool, number} CA のアクティブ報酬プールを原資とし、個人の投資額（{personalUsdt, number} USDT）とチームのダウンライン「レッグ」の実績に基づきます。報酬はチームの積極的な参加とネットワークの拡大に左右されます。"
+      },
+      "slippage": {
+        "category": "プロトコルの仕組み",
+        "severity": "技術ルール",
+        "title": "スマートコントラクトの実行と {slippage, number}% スリッページ",
+        "description": "BDEX でのすべてのトークン売却には、{slippage, number}% のスリッページ分配が必須で課されます（{buyback, number}% は買い戻しとバーン、{node, number}% はノードオペレーターへの分配）。スマートコントラクトは BOT Chain 上にデプロイされていますが、ブロックチェーン上の操作には技術的・実行上のリスクが本質的に伴います。"
+      },
+      "custody": {
+        "category": "セキュリティ",
+        "severity": "個人による管理",
+        "title": "自己管理と鍵管理の責任",
+        "description": "CaryPact と BO Wallet は分散型かつノンカストディアルです。12 語のシードフレーズと秘密鍵の保護は、すべてご自身の責任です。プロトコル管理者や学習ハブのスタッフは、紛失した認証情報を復元することも、取引を取り消すこともできません。"
+      }
+    },
+    "checklist": {
+      "title": "参加前の「ご自身で調査（DYOR）」チェックリスト",
+      "check1": "ハッシュレートユニットは返金や売り戻しができないことを理解しています。",
+      "check2": "12 語のリカバリーフレーズを紙に安全に書き留めました。",
+      "check3": "BDEX でのすべてのトークン売却に {slippage, number}% のスリッページ手数料がかかることを認識しています。",
+      "check4": "市場の変動を受け止められる範囲の資金のみを投入しています。",
+      "check5": "公式ドメインの URL のみを利用していることを確認しました。",
+      "check6": "ダウンラインの VIP 報酬には積極的な勧誘実績が必要であることを理解しています。"
+    },
+    "cta": {
+      "ready": "CaryPact DApp にアクセスする準備はできましたか？",
+      "button": "同意のうえ CaryPact へ進む"
+    }
   }
 }

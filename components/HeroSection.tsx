@@ -1,7 +1,8 @@
 "use client";
 
 import HeroVideoPlayer from "@/components/HeroVideoPlayer";
-import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS } from "@/config/constants";
+import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS, HERO_STATS } from "@/config/constants";
+import { useTokenPrices, type TokenPrice } from "@/hooks/useTokenPrices";
 import {
     ArrowRight,
     Coins,
@@ -12,7 +13,7 @@ import {
     Users,
     Zap
 } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 interface HeroSectionProps {
@@ -29,13 +30,71 @@ export default function HeroSection({
   const [searchInput, setSearchInput] = useState("");
   const tHero = useTranslations("hero");
   const tCommon = useTranslations("common");
+  const tLive = useTranslations("live");
+  const tCalc = useTranslations("calculator");
+  const locale = useLocale();
+  const { ca, bot, loading } = useTokenPrices();
 
   const suggestedPrompts = [
-    { label: "Hashrate Permanence", query: tHero("prompt1") },
-    { label: "1.337631 BOT = 1 CA Parity", query: tHero("prompt2") },
-    { label: "5% Slippage & Burn", query: tHero("prompt3") },
-    { label: "10-Tier VIP Rewards", query: tHero("prompt4") },
+    { label: tHero("chip1"), query: tHero("prompt1") },
+    { label: tHero("chip2"), query: tHero("prompt2") },
+    { label: tHero("chip3"), query: tHero("prompt3") },
+    { label: tHero("chip4"), query: tHero("prompt4") },
   ];
+
+  const caSupplyCompact = new Intl.NumberFormat(locale, {
+    notation: "compact",
+    maximumFractionDigits: 1,
+  }).format(ECOSYSTEM_METRICS.TOTAL_CA_SUPPLY);
+
+  // CA per BOT ratio derived from the two market quotes; shown only when both are live.
+  const parity =
+    ca?.status === "live" && bot?.status === "live" && ca.price && bot.price
+      ? ca.price / bot.price
+      : null;
+  const formatRate = (v: number) =>
+    new Intl.NumberFormat(locale, { minimumFractionDigits: 2, maximumFractionDigits: 6 }).format(v);
+
+  const formatPrice = (p: TokenPrice & { price: number }) =>
+    new Intl.NumberFormat(locale, {
+      style: "currency",
+      currency: p.currency,
+      minimumFractionDigits: 2,
+      maximumFractionDigits: p.price < 1 ? 6 : 4,
+    }).format(p.price);
+
+  const renderPrice = (label: string, p: TokenPrice | null) => {
+    const hasPrice = p !== null && p.price !== null;
+    const updated =
+      p?.updatedAt
+        ? tHero("priceUpdated", {
+            time: new Intl.DateTimeFormat(locale, { dateStyle: "short", timeStyle: "short" }).format(
+              new Date(p.updatedAt)
+            ),
+          })
+        : undefined;
+    return (
+      <div
+        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#131728]/80 border border-[#1E243B] text-xs backdrop-blur-sm"
+        title={updated}
+      >
+        <span className="text-[#838E9E] font-medium">{label}</span>
+        <span className="font-bold text-white tabular-nums">
+          {loading && !p
+            ? tCommon("loading")
+            : hasPrice
+              ? formatPrice(p as TokenPrice & { price: number })
+              : tHero("priceNA")}
+        </span>
+        {p?.status === "stale" && (
+          <span className="text-[10px] uppercase text-amber-400">{tCalc("priceStale")}</span>
+        )}
+        {hasPrice && p.source && (
+          <span className="text-[10px] text-[#838E9E]">{tHero("priceVia", { source: p.source })}</span>
+        )}
+      </div>
+    );
+  };
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -81,38 +140,44 @@ export default function HeroSection({
             <div className="bg-[#131728]/80 border border-[#1E243B] p-3 rounded-xl text-center backdrop-blur-sm">
               <div className="text-xs text-[#838E9E] font-medium flex items-center justify-center gap-1">
                 <Users className="w-3.5 h-3.5 text-[#22D3FF]" />
-                <span>Global Community</span>
+                <span>{tHero("communityLabel")}</span>
               </div>
               <div className="text-lg font-bold text-white mt-0.5">{ECOSYSTEM_METRICS.GLOBAL_USERS}</div>
-              <div className="text-[10px] text-[#22D3FF]">{ECOSYSTEM_METRICS.COUNTRIES_ACTIVE} Countries</div>
+              <div className="text-[10px] text-[#22D3FF]">{tHero("countries", { count: ECOSYSTEM_METRICS.COUNTRIES_ACTIVE })}</div>
             </div>
 
             <div className="bg-[#131728]/80 border border-[#1E243B] p-3 rounded-xl text-center backdrop-blur-sm">
               <div className="text-xs text-[#838E9E] font-medium flex items-center justify-center gap-1">
                 <TrendingUp className="w-3.5 h-3.5 text-[#A855F7]" />
-                <span>Max BOT supply</span>
+                <span>{tHero("botSupplyLabel")}</span>
               </div>
-              <div className="text-lg font-bold text-white mt-0.5">$150M USD</div>
-              <div className="text-[10px] text-[#A855F7]">NIX / Alpha / Gemhead</div>
+              <div className="text-lg font-bold text-white mt-0.5">{HERO_STATS.BOT_HEADLINE_VALUE}</div>
+              <div className="text-[10px] text-[#A855F7]">{HERO_STATS.BOT_HEADLINE_PARTNERS}</div>
             </div>
 
             <div className="bg-[#131728]/80 border border-[#1E243B] p-3 rounded-xl text-center backdrop-blur-sm">
               <div className="text-xs text-[#838E9E] font-medium flex items-center justify-center gap-1">
                 <Coins className="w-3.5 h-3.5 text-[#7B4FFF]" />
-                <span>Max CA Supply</span>
+                <span>{tHero("maxCaSupplyLabel")}</span>
               </div>
-              <div className="text-lg font-bold text-white mt-0.5">210 Million</div>
-              <div className="text-[10px] text-[#7B4FFF]">22-Year Emissions</div>
+              <div className="text-lg font-bold text-white mt-0.5">{caSupplyCompact}</div>
+              <div className="text-[10px] text-[#7B4FFF]">{tHero("emissionYears", { years: ECOSYSTEM_METRICS.TOTAL_EMISSION_YEARS })}</div>
             </div>
 
             <div className="bg-[#131728]/80 border border-[#1E243B] p-3 rounded-xl text-center backdrop-blur-sm">
               <div className="text-xs text-[#838E9E] font-medium flex items-center justify-center gap-1">
                 <Globe2 className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Office Network</span>
+                <span>{tHero("officeNetworkLabel")}</span>
               </div>
               <div className="text-lg font-bold text-white mt-0.5">{ECOSYSTEM_METRICS.OFFICE_NETWORK}</div>
-              <div className="text-[10px] text-emerald-400">1,300 Studios + 200 Hubs</div>
+              <div className="text-[10px] text-emerald-400">{tHero("officeBreakdown", { studios: HERO_STATS.OFFICE_STUDIOS, hubs: HERO_STATS.OFFICE_HUBS })}</div>
             </div>
+          </div>
+
+          {/* Live Market Prices (server-cached routes; stale/unavailable states shown explicitly) */}
+          <div className="flex flex-wrap items-center justify-center gap-3 pb-2" aria-live="polite">
+            {renderPrice(tLive("caPrice"), ca)}
+            {renderPrice(tLive("botPrice"), bot)}
           </div>
 
           {/* Interactive AI Question / Search Bar */}
@@ -166,7 +231,10 @@ export default function HeroSection({
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0E1020] hover:bg-[#131728] text-white text-xs font-bold border border-[#22D3FF]/40 text-[#22D3FF] transition-all shadow-lg shadow-[#22D3FF]/10"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span>{tHero("ctaLiveMarket")} (1.337631 BOT = 1 CA)</span>
+              <span>
+                {tHero("ctaLiveMarket")}
+                {parity !== null && ` (${tHero("parityInline", { rate: formatRate(parity) })})`}
+              </span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
 

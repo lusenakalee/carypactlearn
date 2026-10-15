@@ -22,13 +22,15 @@ export const SUPPORT_CONFIG = {
   // Placeholder WhatsApp phone number (update anytime to your official number)
   WHATSAPP_PHONE: "+2540181605117",
   WHATSAPP_DISPLAY_PHONE: "+2540181605117",
-  WHATSAPP_DEFAULT_MESSAGE: "Hello! I have a question about the CarryPact protocol and Learning Hub.",
+  WHATSAPP_DEFAULT_MESSAGE: "Hello! I have a question about the CaryPact protocol and Learning Hub.",
   SUPPORT_HOURS: "24/7 Community Support",
   AVG_RESPONSE_TIME: "Usually responds in a few minutes",
 };
 
 
 export const ECOSYSTEM_METRICS = {
+  // @deprecated Static snapshots. NEVER render as live data; use useTokenPrices() instead.
+  // These four are mutually inconsistent (1/0.405213 = 2.468, not 1.337631) -- remove once no importers remain.
   CA_BASE_PRICE: 2.7415,
   BOT_BASE_PRICE: 1.1109,
   CA_TO_BOT_RATIO: 1.337631,
@@ -51,6 +53,21 @@ export const ECOSYSTEM_METRICS = {
   OFFICE_NETWORK: "1,500+", // 1,300 studios + 200 operation centers
   EXCHANGES: ["OKX", "Bybit", "KuCoin", "MEXC", "Bitget"],
 };
+
+// Same-origin cached routes; the server owns CMC/BDEX access and caching.
+export const PRICE_ENDPOINTS = {
+  CA: "/api/price/ca",
+  BOT: "/api/bot-price",
+} as const;
+export const PRICE_REFRESH_MS = 5 * 60 * 1000;
+
+// Hero stat tiles (numbers/proper nouns only; all labels live in messages/*.json)
+export const HERO_STATS = {
+  BOT_HEADLINE_VALUE: "$150M USD", // TODO: verify meaning -- tile label says "Max BOT supply" but value is USD
+  BOT_HEADLINE_PARTNERS: "NIX / Alpha / Gemhead",
+  OFFICE_STUDIOS: 1300,
+  OFFICE_HUBS: 200,
+} as const;
 
 export const EMISSION_SPLIT = [
   { name: "Computing Power Mining", percent: 42, dailyCA: 16800, color: "#22D3FF", description: "Distributed proportionally to active hashrate unit holders (K ≈ 1.01 compounding factor)." },
