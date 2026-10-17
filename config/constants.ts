@@ -70,11 +70,11 @@ export const HERO_STATS = {
 } as const;
 
 export const EMISSION_SPLIT = [
-  { name: "Computing Power Mining", percent: 42, dailyCA: 16800, color: "#22D3FF", description: "Distributed proportionally to active hashrate unit holders (K ≈ 1.01 compounding factor)." },
-  { name: "Active Reward Pool", percent: 35, dailyCA: 14000, color: "#A855F7", description: "Funds VIP tier incentives and referral downline performance matching." },
-  { name: "PoS Staking Output", percent: 18, dailyCA: 7200, color: "#7B4FFF", description: "Daily staking rewards distributed to locked & flexible CA stakers." },
-  { name: "DAO Governance", percent: 3, dailyCA: 1200, color: "#F59E0B", description: "Shared among V7–V10 consensus contributors and ecosystem governance." },
-  { name: "Foundation & Tech", percent: 2, dailyCA: 800, color: "#10B981", description: "Continuous core protocol security audits, infrastructure, and dev grants." },
+  { id: "mining", name: "Computing Power Mining", percent: 42, dailyCA: 16800, color: "#22D3FF", description: "Distributed proportionally to active hashrate unit holders (K ≈ 1.01 compounding factor)." },
+  { id: "active", name: "Active Reward Pool", percent: 35, dailyCA: 14000, color: "#A855F7", description: "Funds VIP tier incentives and referral downline performance matching." },
+  { id: "pos", name: "PoS Staking Output", percent: 18, dailyCA: 7200, color: "#7B4FFF", description: "Daily staking rewards distributed to locked & flexible CA stakers." },
+  { id: "dao", name: "DAO Governance", percent: 3, dailyCA: 1200, color: "#F59E0B", description: "Shared among V7–V10 consensus contributors and ecosystem governance." },
+  { id: "foundation", name: "Foundation & Tech", percent: 2, dailyCA: 800, color: "#10B981", description: "Continuous core protocol security audits, infrastructure, and dev grants." },
 ];
 
 export const STAKING_TERMS = [
