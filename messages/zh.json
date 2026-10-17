@@ -435,5 +435,36 @@
       "ready": "准备好进入 CaryPact DApp 了吗？",
       "button": "在充分知情同意后继续前往 CaryPact"
     }
-  }
+  },
+  "Footer": {
+  "badge": "学习中心",
+  "brandDescription": "CaryPact、BOT Chain、CA 代币及去中心化超级计算协议的领先独立教育资源与实时分析门户。",
+  "telegram": "Telegram",
+  "twitter": "Twitter / X",
+  "explorer": "BOT Chain 浏览器",
+  "navTitle": "站点导航",
+  "navHome": "首页与学习中心",
+  "navLive": "实时行情与 CMC 门户",
+  "liveBadge": "实时",
+  "navBotChain": "BOT Chain 五大支柱",
+  "navTokenomics": "{supply} CA 代币经济学",
+  "navVip": "{count} 级 VIP 体系",
+  "navRisks": "风险披露",
+  "guidesTitle": "指南与设置",
+  "guideStart": "快速入门",
+  "guideWallet": "创建 BO 钱包",
+  "guideBuy": "购买算力",
+  "guideStaking": "质押倍数（30天–360天）",
+  "guideSlippage": "BDEX {percent} 滑点兑换",
+  "toolsTitle": "工具与官方",
+  "cheatSheet": "下载速查表",
+  "newsletter": "订阅简报",
+  "launchApp": "打开 CaryPact 应用",
+  "botDocs": "BOT Chain 文档",
+  "disclosureTitle": "独立学习中心与联盟披露",
+  "disclosureBody": "本网站是独立的教育项目，并非由 CaryPact 或 BOT Chain 基金会直接运营。所有注册链接均包含已验证的社区邀请码 <code>{inviteCode}（后缀：{suffix}）</code>。用户通过本站链接参与时，我们可能获得推荐佣金。内容仅用于教育目的，不构成任何财务建议。",
+  "copyright": "© {year} CaryPact Learning Hub. 独立教育资源。",
+  "backToTop": "返回顶部"
+}
+  
 }

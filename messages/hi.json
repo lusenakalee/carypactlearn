@@ -435,5 +435,36 @@
       "ready": "CaryPact DApp तक पहुँचने के लिए तैयार हैं?",
       "button": "सूचित सहमति के साथ CaryPact पर जारी रखें"
     }
-  }
+  
+  },
+    "Footer": {
+  "badge": "लर्निंग हब",
+  "brandDescription": "CaryPact, BOT Chain, CA टोकन और विकेंद्रीकृत सुपरकंप्यूटिंग प्रोटोकॉल के लिए अग्रणी स्वतंत्र शैक्षिक संसाधन और लाइव विश्लेषण पोर्टल।",
+  "telegram": "टेलीग्राम",
+  "twitter": "Twitter / X",
+  "explorer": "BOT Chain एक्सप्लोरर",
+  "navTitle": "हब नेविगेशन",
+  "navHome": "होम और लर्निंग हब",
+  "navLive": "लाइव मार्केट और CMC पोर्टल",
+  "liveBadge": "लाइव",
+  "navBotChain": "BOT Chain के 5 स्तंभ",
+  "navTokenomics": "{supply} CA टोकनोमिक्स",
+  "navVip": "{count}-स्तरीय VIP प्रणाली",
+  "navRisks": "जोखिम प्रकटीकरण",
+  "guidesTitle": "गाइड और सेटअप",
+  "guideStart": "शुरुआत करें",
+  "guideWallet": "BO वॉलेट बनाएं",
+  "guideBuy": "कंप्यूटिंग पावर खरीदें",
+  "guideStaking": "स्टेकिंग मल्टीप्लायर (30 दिन–360 दिन)",
+  "guideSlippage": "BDEX {percent} स्लिपेज स्वैप",
+  "toolsTitle": "टूल और आधिकारिक",
+  "cheatSheet": "चीट शीट डाउनलोड करें",
+  "newsletter": "न्यूज़लेटर से जुड़ें",
+  "launchApp": "CaryPact ऐप खोलें",
+  "botDocs": "BOT Chain दस्तावेज़",
+  "disclosureTitle": "स्वतंत्र लर्निंग हब और एफिलिएट प्रकटीकरण",
+  "disclosureBody": "यह वेबसाइट एक स्वतंत्र शैक्षिक पहल है और इसे CaryPact या BOT Chain फाउंडेशन द्वारा सीधे संचालित नहीं किया जाता। सभी पंजीकरण लिंक में सत्यापित कम्युनिटी इनवाइट कोड <code>{inviteCode} (प्रत्यय: {suffix})</code> शामिल है। इस साइट के लिंक के माध्यम से भाग लेने पर हमें रेफरल कमीशन मिल सकता है। सामग्री पूरी तरह शैक्षिक उद्देश्य के लिए है और कभी भी वित्तीय सलाह नहीं है।",
+  "copyright": "© {year} CaryPact Learning Hub. स्वतंत्र शैक्षिक संसाधन।",
+  "backToTop": "ऊपर जाएं"
+}
 }

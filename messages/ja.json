@@ -435,5 +435,35 @@
       "ready": "CaryPact DApp にアクセスする準備はできましたか？",
       "button": "同意のうえ CaryPact へ進む"
     }
-  }
+  },
+  "Footer": {
+  "badge": "ラーニングハブ",
+  "brandDescription": "CaryPact、BOT Chain、CAトークン、分散型スーパーコンピューティングプロトコルに関する、独立した教育リソース兼ライブ分析ポータルです。",
+  "telegram": "Telegram",
+  "twitter": "Twitter / X",
+  "explorer": "BOT Chain エクスプローラー",
+  "navTitle": "ハブナビゲーション",
+  "navHome": "ホームとラーニングハブ",
+  "navLive": "ライブ市場とCMCポータル",
+  "liveBadge": "LIVE",
+  "navBotChain": "BOT Chainの5つの柱",
+  "navTokenomics": "{supply} CAトークノミクス",
+  "navVip": "{count}段階VIPシステム",
+  "navRisks": "リスク開示",
+  "guidesTitle": "ガイドとセットアップ",
+  "guideStart": "はじめに",
+  "guideWallet": "BOウォレットの作成",
+  "guideBuy": "計算能力の購入",
+  "guideStaking": "ステーキング倍率（30日〜360日）",
+  "guideSlippage": "BDEX スリッページ{percent}のスワップ",
+  "toolsTitle": "ツールと公式",
+  "cheatSheet": "チートシートをダウンロード",
+  "newsletter": "ニュースレターに登録",
+  "launchApp": "CaryPactアプリを起動",
+  "botDocs": "BOT Chainドキュメント",
+  "disclosureTitle": "独立したラーニングハブとアフィリエイト開示",
+  "disclosureBody": "本サイトは独立した教育活動であり、CaryPactおよびBOT Chain財団が直接運営するものではありません。すべての登録リンクには、確認済みのコミュニティ招待コード<code>{inviteCode}（サフィックス: {suffix}）</code>が含まれています。本サイトのリンクからご参加いただくと、紹介報酬を受け取る場合があります。コンテンツは教育目的のみであり、金融アドバイスではありません。",
+  "copyright": "© {year} CaryPact Learning Hub. 独立した教育リソース。",
+  "backToTop": "ページトップへ"
+}
 }

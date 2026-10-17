@@ -435,5 +435,35 @@
       "ready": "¿Listo para acceder a la DApp de CaryPact?",
       "button": "Continuar a CaryPact con consentimiento informado"
     }
-  }
+  },
+  "Footer": {
+  "badge": "Centro de aprendizaje",
+  "brandDescription": "El principal recurso educativo independiente y portal analítico en vivo sobre CaryPact, BOT Chain, el token CA y los protocolos de supercomputación descentralizada.",
+  "telegram": "Telegram",
+  "twitter": "Twitter / X",
+  "explorer": "Explorador de BOT Chain",
+  "navTitle": "Navegación",
+  "navHome": "Inicio y centro de aprendizaje",
+  "navLive": "Mercado en vivo y portal CMC",
+  "liveBadge": "EN VIVO",
+  "navBotChain": "Los 5 pilares de BOT Chain",
+  "navTokenomics": "Tokenomics de {supply} CA",
+  "navVip": "Sistema VIP de {count} niveles",
+  "navRisks": "Aviso de riesgos",
+  "guidesTitle": "Guías y configuración",
+  "guideStart": "Primeros pasos",
+  "guideWallet": "Crear billetera BO",
+  "guideBuy": "Comprar potencia de cómputo",
+  "guideStaking": "Multiplicadores de staking (30d–360d)",
+  "guideSlippage": "Swaps en BDEX con {percent} de deslizamiento",
+  "toolsTitle": "Herramientas y oficial",
+  "cheatSheet": "Descargar hoja de referencia",
+  "newsletter": "Suscribirse al boletín",
+  "launchApp": "Abrir la app de CaryPact",
+  "botDocs": "Documentación de BOT Chain",
+  "disclosureTitle": "Centro de aprendizaje independiente y divulgación de afiliados",
+  "disclosureBody": "Este sitio es una iniciativa educativa independiente y no está operado directamente por CaryPact ni por la fundación BOT Chain. Todos los enlaces de registro contienen el código de invitación comunitario verificado <code>{inviteCode} (Sufijo: {suffix})</code>. Podemos recibir comisiones por referido cuando los usuarios participan a través de los enlaces de este sitio. El contenido es estrictamente educativo y nunca constituye asesoramiento financiero.",
+  "copyright": "© {year} CaryPact Learning Hub. Recurso educativo independiente.",
+  "backToTop": "Volver arriba"
+}
 }

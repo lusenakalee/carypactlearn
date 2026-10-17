@@ -435,5 +435,35 @@
       "ready": "CaryPact DApp에 접속할 준비가 되셨나요?",
       "button": "동의 후 CaryPact으로 계속하기"
     }
-  }
+  },
+  "Footer": {
+  "badge": "러닝 허브",
+  "brandDescription": "CaryPact, BOT Chain, CA 토큰, 분산형 슈퍼컴퓨팅 프로토콜을 위한 독립 교육 리소스이자 실시간 분석 포털입니다.",
+  "telegram": "텔레그램",
+  "twitter": "Twitter / X",
+  "explorer": "BOT Chain 익스플로러",
+  "navTitle": "허브 내비게이션",
+  "navHome": "홈 및 러닝 허브",
+  "navLive": "실시간 시장 및 CMC 포털",
+  "liveBadge": "LIVE",
+  "navBotChain": "BOT Chain 5대 핵심 축",
+  "navTokenomics": "{supply} CA 토큰이코노믹스",
+  "navVip": "{count}단계 VIP 시스템",
+  "navRisks": "위험 고지",
+  "guidesTitle": "가이드 및 설정",
+  "guideStart": "시작하기",
+  "guideWallet": "BO 지갑 만들기",
+  "guideBuy": "컴퓨팅 파워 구매",
+  "guideStaking": "스테이킹 배수 (30일–360일)",
+  "guideSlippage": "BDEX 슬리피지 {percent} 스왑",
+  "toolsTitle": "도구 및 공식",
+  "cheatSheet": "치트시트 다운로드",
+  "newsletter": "뉴스레터 구독",
+  "launchApp": "CaryPact 앱 실행",
+  "botDocs": "BOT Chain 문서",
+  "disclosureTitle": "독립 러닝 허브 및 제휴 고지",
+  "disclosureBody": "이 웹사이트는 독립적인 교육 활동이며 CaryPact 또는 BOT Chain 재단이 직접 운영하지 않습니다. 모든 가입 링크에는 검증된 커뮤니티 초대 코드 <code>{inviteCode} (접미사: {suffix})</code>가 포함되어 있습니다. 이 사이트의 링크를 통해 참여하시면 추천 수수료를 받을 수 있습니다. 콘텐츠는 교육 목적일 뿐이며 금융 자문이 아닙니다.",
+  "copyright": "© {year} CaryPact Learning Hub. 독립 교육 리소스.",
+  "backToTop": "맨 위로"
+}
 }

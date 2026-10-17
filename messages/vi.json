@@ -435,5 +435,35 @@
       "ready": "Sẵn sàng truy cập DApp CaryPact?",
       "button": "Tiếp tục đến CaryPact với sự đồng ý có hiểu biết"
     }
-  }
+  },
+  "Footer": {
+  "badge": "Trung tâm học tập",
+  "brandDescription": "Nguồn giáo dục độc lập hàng đầu và cổng phân tích trực tiếp về CaryPact, BOT Chain, token CA và các giao thức siêu máy tính phi tập trung.",
+  "telegram": "Telegram",
+  "twitter": "Twitter / X",
+  "explorer": "Trình khám phá BOT Chain",
+  "navTitle": "Điều hướng",
+  "navHome": "Trang chủ & Trung tâm học tập",
+  "navLive": "Thị trường trực tiếp & cổng CMC",
+  "liveBadge": "TRỰC TIẾP",
+  "navBotChain": "5 trụ cột của BOT Chain",
+  "navTokenomics": "Tokenomics {supply} CA",
+  "navVip": "Hệ thống VIP {count} cấp",
+  "navRisks": "Công bố rủi ro",
+  "guidesTitle": "Hướng dẫn & Thiết lập",
+  "guideStart": "Bắt đầu",
+  "guideWallet": "Tạo ví BO",
+  "guideBuy": "Mua sức mạnh tính toán",
+  "guideStaking": "Hệ số staking (30–360 ngày)",
+  "guideSlippage": "Hoán đổi BDEX trượt giá {percent}",
+  "toolsTitle": "Công cụ & Chính thức",
+  "cheatSheet": "Tải bảng tóm tắt",
+  "newsletter": "Đăng ký bản tin",
+  "launchApp": "Mở ứng dụng CaryPact",
+  "botDocs": "Tài liệu BOT Chain",
+  "disclosureTitle": "Trung tâm học tập độc lập & Công bố liên kết",
+  "disclosureBody": "Trang web này là một sáng kiến giáo dục độc lập và không do CaryPact hay quỹ BOT Chain trực tiếp vận hành. Mọi liên kết đăng ký đều chứa mã mời cộng đồng đã xác minh <code>{inviteCode} (Hậu tố: {suffix})</code>. Chúng tôi có thể nhận hoa hồng giới thiệu khi người dùng tham gia qua các liên kết trên trang này. Nội dung chỉ nhằm mục đích giáo dục và không phải lời khuyên tài chính.",
+  "copyright": "© {year} CaryPact Learning Hub. Nguồn giáo dục độc lập.",
+  "backToTop": "Lên đầu trang"
+}
 }

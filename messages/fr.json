@@ -435,5 +435,35 @@
       "ready": "Prêt à accéder à la DApp CaryPact ?",
       "button": "Continuer vers CaryPact en connaissance de cause"
     }
-  }
+  },
+  "Footer": {
+  "badge": "Centre d'apprentissage",
+  "brandDescription": "La première ressource éducative indépendante et le portail d'analyse en direct dédiés à CaryPact, BOT Chain, au token CA et aux protocoles de supercalcul décentralisé.",
+  "telegram": "Telegram",
+  "twitter": "Twitter / X",
+  "explorer": "Explorateur BOT Chain",
+  "navTitle": "Navigation",
+  "navHome": "Accueil et centre d'apprentissage",
+  "navLive": "Marché en direct et portail CMC",
+  "liveBadge": "EN DIRECT",
+  "navBotChain": "Les 5 piliers de BOT Chain",
+  "navTokenomics": "Tokenomics de {supply} CA",
+  "navVip": "Système VIP à {count} niveaux",
+  "navRisks": "Avertissement sur les risques",
+  "guidesTitle": "Guides et configuration",
+  "guideStart": "Pour commencer",
+  "guideWallet": "Créer un portefeuille BO",
+  "guideBuy": "Acheter de la puissance de calcul",
+  "guideStaking": "Multiplicateurs de staking (30 j–360 j)",
+  "guideSlippage": "Swaps BDEX avec {percent} de slippage",
+  "toolsTitle": "Outils et officiel",
+  "cheatSheet": "Télécharger l'aide-mémoire",
+  "newsletter": "S'abonner à la newsletter",
+  "launchApp": "Ouvrir l'application CaryPact",
+  "botDocs": "Documentation BOT Chain",
+  "disclosureTitle": "Centre d'apprentissage indépendant et divulgation d'affiliation",
+  "disclosureBody": "Ce site est une initiative éducative indépendante et n'est pas exploité directement par CaryPact ni par la fondation BOT Chain. Tous les liens d'inscription contiennent le code d'invitation communautaire vérifié <code>{inviteCode} (Suffixe : {suffix})</code>. Nous pouvons percevoir des commissions de parrainage lorsque des utilisateurs participent via les liens de ce site. Le contenu est strictement éducatif et ne constitue jamais un conseil financier.",
+  "copyright": "© {year} CaryPact Learning Hub. Ressource éducative indépendante.",
+  "backToTop": "Haut de page"
+}
 }
