@@ -78,12 +78,7 @@ export default function LiveDataPage() {
     };
   }, []);
 
-  const botPrice = data?.bot?.priceUSD || 1.1109;
-  const caPrice = data?.ca?.priceUSD || Number((botPrice * 1.337631).toFixed(4));
-  const ratio = data?.ratio?.caToBot || 1.337631;
-  const bot24h = data?.bot?.price24hChange || 4.28;
-  const volume24h = data?.bot?.volume24hUSD || 14250000;
-  const isCmcLive = data?.isLiveFromCMC ?? true;
+  const isCmcLive = data?.isLiveFromCMC === true;
 
   const copyInvite = () => {
     navigator.clipboard.writeText(AFFILIATE_CONFIG.INVITE_CODE);
@@ -214,21 +209,13 @@ export default function LiveDataPage() {
             {/* Left Col (8 cols): Charts, Multi-Converter & Order Book */}
             <div className="lg:col-span-8 space-y-8">
               {/* Interactive Candlestick / Area Chart */}
-              <LiveChart
-                currentCaPrice={caPrice}
-                currentBotPrice={botPrice}
-                ratio={ratio}
-              />
+              <LiveChart />
 
               {/* Multi-Currency Live Converter */}
-              <LiveMultiConverter
-                botPriceUSD={botPrice}
-                caPriceUSD={caPrice}
-                ratio={ratio}
-              />
+              <LiveMultiConverter />
 
               {/* BDEX Live Order Book & Depth */}
-              <LiveOrderBook basePrice={caPrice} />
+             <LiveOrderBook />
             </div>
 
             {/* Right Col (4 cols): Live Twitter Stream & Verification Modules */}
