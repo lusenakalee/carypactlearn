@@ -802,7 +802,477 @@
   "install": "¿Aún no tienes billetera? Instala primero MetaMask, Trust Wallet o TokenPocket desde tu tienda de apps.",
   "tryAnother": "Probar otra billetera",
   "close": "Cerrar"
-}
+},
+
+
+  "LearnFaq": {
+    "badge": "Inteligencia integral del protocolo y preguntas frecuentes",
+    "title": "Preguntas <hl>frecuentes</hl>",
+    "description": "Respuestas técnicas, económicas, de hardware y operativas en profundidad sobre los mecanismos de inflación de tokens, la fabricación de equipos físicos de minería, las oficinas regionales globales en Singapur, Hong Kong, Dubái y Tailandia, y los algoritmos de rendimiento dinámico V1–V10.",
+    "searchPlaceholder": "Buscar por palabras clave, por ejemplo, 'inflación', 'Singapur', 'dirección Z', 'V4', 'equipo de minería', 'frase semilla'...",
+    "clear": "Borrar",
+    "showing": "Mostrando {shown} de {total} respuestas verificadas",
+    "expandAll": "Expandir todo",
+    "collapseAll": "Contraer todo",
+    "emptyTitle": "No se encontraron respuestas coincidentes",
+    "emptyHint": "Prueba otros términos de búsqueda o selecciona «{all}» para consultar todas las respuestas.",
+    "resetFilters": "Restablecer filtros",
+    "copyLink": "Copiar enlace directo a estas preguntas frecuentes",
+    "keyTopics": "Temas clave:",
+    "verifiedDocs": "Documentación verificada del protocolo",
+    "discuss": "Debatir en la comunidad",
+    "supportTitle": "¿Tienes alguna pregunta que no aparece aquí?",
+    "supportText": "Contacta directamente con nuestros responsables de comunidad global, disponibles las 24 horas, en Singapur, Tailandia, Hong Kong y Dubái, o consulta en tiempo real al copiloto de IA de CaryPact.",
+    "supportCta": "Unirse al soporte de la comunidad",
+    "categories": {
+      "all": {
+        "tab": "Todas las preguntas",
+        "badge": "Todas las preguntas"
+      },
+      "tokenomics": {
+        "tab": "Tokenómica e inflación",
+        "badge": "Tokenómica e inflación"
+      },
+      "ecosystem": {
+        "tab": "Ecosistema de BOT Chain",
+        "badge": "BOT Chain y ecosistema"
+      },
+      "mining": {
+        "tab": "DePIN y equipos de minería",
+        "badge": "Minería y hardware DePIN"
+      },
+      "vip": {
+        "tab": "VIP y rendimiento dinámico",
+        "badge": "Recompensas VIP y capitalización"
+      },
+      "security": {
+        "tab": "Seguridad y billeteras",
+        "badge": "Seguridad y billeteras"
+      },
+      "global": {
+        "tab": "Centros globales y aspectos legales",
+        "badge": "Operaciones globales y aspectos legales"
+      }
+    },
+    "items": {
+      "inflation-elimination": {
+        "question": "¿Cómo se elimina la inflación acumulada en los activos POS en staking?",
+        "keywords": [
+          "Eliminación de la inflación del staking",
+          "Tokenómica de CA",
+          "Entradas en las billeteras B y M",
+          "Quema en la dirección Z",
+          "Reserva de tesorería de BOT"
+        ],
+        "geoTags": [
+          "Protocolo descentralizado global"
+        ],
+        "summary": "Mediante una estricta mecánica de cuatro entradas y una salida por billetera, recompras y quemas diarias del 10 % financiadas desde la dirección Z, asignación del 90 % a la tesorería y la capacidad de absorción macroeconómica del modelo «estanque frente a océano» de la cadena pública BOT.",
+        "answer": [
+          "1. Arquitectura de flujos entre billeteras (B y M): La solución principal reside en el diseño estratégico de los flujos de fondos de CA. Las direcciones clave que deben supervisarse en la cadena son la billetera B (fondo de recompensas de staking) y la billetera M (fondo de staking). Ambas mantienen cuatro entradas continuas frente a una sola salida. Como las entradas superan matemáticamente a las salidas, el protocolo pretende mantener reservas suficientes incluso durante periodos de retiros masivos del staking y distribución diaria de rendimientos POS.",
+          "2. Mecanismo de recompra y quema de la dirección Z: El 10 % de todo el capital que entra en la dirección Z se utiliza inmediatamente para recomprar tokens CA en mercados descentralizados abiertos y quemarlos permanentemente. El 90 % restante se deposita en la tesorería del protocolo BOT. Este mecanismo deflacionario está diseñado para reducir gradualmente la oferta circulante y favorecer la apreciación del precio a medida que crece la participación en POS.",
+          "3. Absorción macroeconómica mediante el modelo «estanque frente a océano»: El ecosistema CA funciona como un estanque especializado en aplicaciones, mientras que la cadena pública BOT representa un océano abierto y mucho más amplio. A medida que miles de dApps se desplieguen en BOT Chain, una mayor profundidad de capital y la quema de comisiones de gas podrán ayudar a absorber o canalizar los desequilibrios de liquidez localizados."
+        ]
+      },
+      "candlestick-stability": {
+        "question": "¿Por qué CA y WBOT registran un elevado volumen diario de negociación, pero mantienen precios estables sin subidas y caídas extremas?",
+        "keywords": [
+          "Estabilidad de las velas japonesas",
+          "Recompra algorítmica de tesorería",
+          "Crecimiento sostenible",
+          "Hoja de ruta de cotización en exchanges centralizados"
+        ],
+        "geoTags": [
+          "Liquidez global"
+        ],
+        "summary": "La estabilidad de precios se presenta como un objetivo de diseño a largo plazo, respaldado por intervenciones algorítmicas de tesorería, demanda constante en los mercados secundarios y utilidad real en la cadena, en lugar de manipulación especulativa.",
+        "answer": [
+          "1. Diseño orientado a la longevidad: El protocolo está estructurado para favorecer una expansión constante y orgánica, en lugar de provocar subidas especulativas artificiales que puedan perjudicar a los participantes a largo plazo.",
+          "2. Valor del gas del token BOT: BOT Chain se encuentra en una fase inicial de expansión. A medida que se lancen nuevas dApps, la actividad de las transacciones generará más comisiones de gas, de las cuales se quema permanentemente el 1.50 %. Las cotizaciones previstas en 10–20 exchanges centralizados (CEX) buscan ampliar la liquidez institucional.",
+          "3. Salvaguardas de la tesorería de CA: La tokenómica de CA dirige capital hacia tesorerías específicas del protocolo. Si los precios del mercado caen excesivamente, las reservas de tesorería pueden activar recompras algorítmicas de CA. Además, una mayor demanda en los mercados secundarios puede contribuir a la apreciación orgánica del precio."
+        ]
+      },
+      "wbot-holders-price-growth": {
+        "question": "Con más de 900,000 billeteras que poseen WBOT, ¿por qué el precio ha subido gradualmente de $9.5 a $9.9 en lugar de dispararse a más de $20 de la noche a la mañana?",
+        "keywords": [
+          "Más de 900,000 billeteras",
+          "Evolución del precio de WBOT",
+          "Más de 100 proyectos en incubación",
+          "Equipos físicos de minería DePIN"
+        ],
+        "geoTags": [
+          "Consenso global"
+        ],
+        "summary": "BOT ha registrado una apreciación gradual desde 9.50 hasta aproximadamente 9.90 o más. La materialización del valor podría avanzar con el despliegue de más de 100 dApps incubadas, la puesta en marcha de equipos físicos de minería y nuevas cotizaciones en exchanges centralizados.",
+        "answer": [
+          "1. Crecimiento sistemático en una fase inicial: BOT ha aumentado de forma constante desde 9.50 hasta aproximadamente 9.90 o más. Como BOT Chain sigue en una fase introductoria y CaryPact es su protocolo insignia pionero, el descubrimiento del precio refleja la adopción de sus fundamentos, en lugar de burbujas especulativas.",
+          "2. Próximos catalizadores: La fundación mantiene conversaciones con más de 100 proyectos independientes que se preparan para incubar y desplegar sus soluciones en BOT Chain. Al mismo tiempo, los equipos físicos de minería con IA se encuentran en producción comercial, lo que permitirá a los operadores crear granjas de minería de alta capacidad.",
+          "3. Expansión en exchanges: Las cotizaciones en exchanges centralizados previstas para el tercer y cuarto trimestre ampliarían los libros de órdenes para inversores minoristas e institucionales de todo el mundo, favoreciendo una nueva etapa de valoración sostenible de la red."
+        ]
+      },
+      "why-invest-differentiation": {
+        "question": "¿Por qué considerar la participación en CaryPact y BOT Chain frente a otros proyectos Web3?",
+        "keywords": [
+          "Diversificación de cartera",
+          "Investigación propia y diligencia debida (DYOR)",
+          "Arquitectura de IA DePIN",
+          "Capa 1 autónoma"
+        ],
+        "geoTags": [
+          "Comunidad Web3 global"
+        ],
+        "summary": "Promovemos la diversificación prudente y la investigación propia (DYOR). BOT Chain combina una capa 1 autónoma, tokenómica deflacionaria, supercomputación descentralizada y una hoja de ruta transparente.",
+        "answer": [
+          "1. Diversificación prudente y DYOR: Siempre recomendamos investigar por cuenta propia y no invertir dinero cuya pérdida no se pueda asumir. BOT Chain se presenta como un activo potencial para diversificar carteras de criptomonedas, sujeto a una evaluación independiente.",
+          "2. Infraestructura real de capa 1: A diferencia de los tokens de aplicaciones que dependen de redes congestionadas, BOT Chain es una cadena EVM de capa 1 independiente, con tiempos de bloque de 3 segundos, comisiones de gas muy bajas y una quema permanente del 1.50 % de las comisiones de gas nativas.",
+          "3. Diálogo abierto: Invitamos a comparar y debatir las arquitecturas técnicas, las estructuras de flujo de fondos y los modelos económicos deflacionarios para que desarrolladores y participantes puedan tomar decisiones bien fundamentadas."
+        ]
+      },
+      "bot-price-project-owners": {
+        "question": "¿El precio de aproximadamente $9.90 por BOT es demasiado elevado para que los propietarios de proyectos y desarrolladores construyan en BOT Chain?",
+        "keywords": [
+          "Subvenciones para desarrolladores",
+          "Fondo de apoyo de $50 millones",
+          "Reembolso del 30 % de las comisiones de gas",
+          "Incorporación de proyectos",
+          "Tráfico para desarrolladores"
+        ],
+        "geoTags": [
+          "Sede en Singapur",
+          "Red global de desarrolladores"
+        ],
+        "summary": "La fundación BOT Chain ofrece a los desarrolladores que se incorporan tráfico de usuarios, un fondo de subvenciones de $50 millones de USD y un reembolso continuo del 30 % de las comisiones de gas.",
+        "answer": [
+          "1. Sólidas subvenciones para desarrolladores: Una valoración elevada del token refleja la seguridad de la red y el compromiso de los validadores. Para reducir las barreras de entrada, la fundación BOT Chain proporciona tráfico directo a los nuevos equipos y acceso a una comunidad activa de más de 200,000 usuarios.",
+          "2. Fondo de apoyo de $50 millones: Un fondo específico para el ecosistema, dotado con $50 millones de USD, concede subvenciones para infraestructura y liquidez a equipos cualificados que despliegan sus proyectos en BOT Chain.",
+          "3. Fuente de ingresos mediante un reembolso del 30 % del gas: Los propietarios de proyectos reciben un reembolso continuo del 30 % de todas las comisiones de gas generadas por sus contratos inteligentes, creando una posible fuente de ingresos recurrentes antes de establecer un fondo de liquidez."
+        ]
+      },
+      "bot-ecosystem-roadmap": {
+        "question": "¿Cómo se prevé que evolucione el ecosistema de la cadena pública BOT durante los próximos 1–3 años?",
+        "keywords": [
+          "Hoja de ruta de 10,000 dApps",
+          "Protocolo de un solo clic",
+          "Despliegue rápido en 30 minutos",
+          "Cotizaciones en 10–20 CEX"
+        ],
+        "geoTags": [
+          "Red global de nodos",
+          "Asia-Pacífico",
+          "Oriente Medio"
+        ],
+        "summary": "Más de 900,000 direcciones en aproximadamente dos meses; objetivo de alcanzar 2,000 proyectos este año y más de 10,000 en tres años mediante el «Protocolo de un solo clic» de 30 minutos, respaldado por el fondo de $50 millones y las cotizaciones previstas en 10–20 CEX.",
+        "answer": [
+          "1. Crecimiento acelerado de direcciones: BOT Chain acumuló más de 900,000 direcciones de billeteras en aproximadamente dos meses desde el lanzamiento de su red principal.",
+          "2. Más de 200 proyectos en preparación: Se están manteniendo conversaciones con más de 200 proyectos. El objetivo es alcanzar 2,000 proyectos antes de finalizar el año y superar los 10,000 en tres años. El «Protocolo de un solo clic» permite a los desarrolladores desplegar una dApp completa en 30 minutos, acelerando este proceso.",
+          "3. Sinergia pionera de CaryPact: El rápido crecimiento de CaryPact como protocolo insignia demuestra la capacidad de procesamiento de la red y atrae a desarrolladores externos de EVM interesados en migrar o adaptar sus bases de código.",
+          "4. Liquidez y cotizaciones en CEX: La expansión incluye cotizaciones en 10–20 exchanges centralizados de primer nivel para aumentar la liquidez del mercado secundario y la visibilidad global de la marca."
+        ]
+      },
+      "bohr-to-bot-rebrand": {
+        "question": "BOT Chain se llamaba anteriormente BOHR. ¿Cuál fue el motivo del cambio estratégico de nombre?",
+        "keywords": [
+          "Cambio de nombre de BOHR a BOT",
+          "Legado de Niels Bohr",
+          "Sistema operativo de IA",
+          "Ejecución de agentes inteligentes"
+        ],
+        "geoTags": [
+          "Cambio de marca global"
+        ],
+        "summary": "El proyecto pasó de una etapa inspirada en la exploración de la física teórica a una red de ejecución inteligente y un sistema operativo en cadena para agentes de IA y cargas de trabajo DePIN.",
+        "answer": [
+          "1. Etapa teórica (BOHR): El nombre original BOHR rendía homenaje al físico Niels Bohr y representaba la exploración científica fundamental, la validación criptográfica y el estudio de los mecanismos de consenso durante las primeras pruebas de la arquitectura de la red.",
+          "2. Evolución narrativa hacia BOT: A medida que la cadena pública pasó de la validación técnica a un ecosistema comercial con múltiples participantes, se eligió el nombre BOT para comunicar mejor la ejecución inteligente, la coordinación automatizada de agentes y la infraestructura modular de IA.",
+          "3. Sistema operativo inteligente: BOT representa la misión de la red de convertirse en un sistema operativo digital descentralizado que impulse agentes autónomos Web3, aprendizaje automático distribuido y programación transfronteriza de recursos informáticos."
+        ]
+      },
+      "verify-150m-bot-supply": {
+        "question": "¿Cómo pueden los participantes verificar que la oferta total fija de BOT es de 150 millones de tokens?",
+        "keywords": [
+          "Oferta de 150 millones de BOT",
+          "Verificación de la dirección WBOT",
+          "Explorador de bloques (scan.botchain.ai)",
+          "Prueba criptográfica"
+        ],
+        "geoTags": [
+          "Transparencia en cadena"
+        ],
+        "summary": "La oferta puede comprobarse en la cadena mediante la dirección del contrato génesis de WBOT en scan.botchain.ai y contrastarse con los documentos oficiales y las páginas de seguimiento de los exchanges.",
+        "answer": [
+          "1. Registro inmutable en la cadena: La asignación génesis de 150 millones de BOT puede auditarse públicamente en el explorador de bloques de BOT Chain (https://scan.botchain.ai), consultando la dirección del contrato WBOT.",
+          "2. Verificación cruzada con exchanges: A medida que se concreten nuevas cotizaciones en exchanges centralizados, las métricas de oferta total y oferta circulante se podrán contrastar en plataformas como CoinMarketCap y CoinGecko."
+        ]
+      },
+      "mining-machine-pricing": {
+        "question": "Las presentaciones indicaban un precio de $3,960 para la máquina de minería con IA, pero en las reuniones comunitarias se mencionó $3,600. ¿Cuál es el precio oficial?",
+        "keywords": [
+          "Precio de la máquina de minería con IA",
+          "Preventa de equipos DePIN",
+          "Anuncio oficial de precios",
+          "Lotes de hardware"
+        ],
+        "geoTags": [
+          "Entrega global de hardware"
+        ],
+        "summary": "Las cifras iniciales eran estimaciones preliminares. Los precios oficiales, las especificaciones de cada lote y los calendarios de entrega se anunciarán a través de los canales oficiales antes de los envíos comerciales.",
+        "answer": [
+          "1. Aviso sobre la fase preliminar: Las cifras de $3,600–$3,960 USD mencionadas en seminarios iniciales eran estimaciones internas de ingeniería sujetas a cambios en los precios de los componentes de la cadena de suministro.",
+          "2. Anuncios oficiales: Los precios comerciales definitivos, las cantidades por lote y los detalles de logística internacional se comunicarán exclusivamente a través de los canales oficiales verificados: t.me/tunicacasupport y x.com/CaryPact_BOT."
+        ]
+      },
+      "mining-machine-manufacturer": {
+        "question": "¿Qué socio de fabricación produce las máquinas físicas de minería con IA de BOT y por qué se mantiene confidencial su identidad?",
+        "keywords": [
+          "Fabricante de hardware",
+          "Acuerdo de confidencialidad con fabricante de primer nivel",
+          "Cadena de suministro DePIN",
+          "Acuerdo de confidencialidad"
+        ],
+        "geoTags": [
+          "Consorcio global de fabricación"
+        ],
+        "summary": "La producción de hardware se ha contratado con un socio fabricante de primer nivel bajo estrictos acuerdos mutuos de confidencialidad (NDA), con el objetivo de proteger las cadenas de suministro de chips especializados hasta el lanzamiento oficial.",
+        "answer": [
+          "1. Estrictos acuerdos comerciales de confidencialidad: El consorcio de fabricación está sujeto a obligaciones de confidencialidad para proteger la asignación de chips especializados, evitar infracciones de propiedad intelectual y resguardar las cadenas de suministro de componentes.",
+          "2. Divulgación oficial: Los socios de fabricación y las certificaciones de los centros de alojamiento se anunciarán formalmente junto con los envíos comerciales de los equipos."
+        ]
+      },
+      "tier-1-mining-operators": {
+        "question": "¿Qué operadores institucionales de minería están desplegando actualmente infraestructura de minería BOT?",
+        "keywords": [
+          "Consorcios institucionales de minería",
+          "Alojamiento industrial",
+          "Infraestructura de validación"
+        ],
+        "geoTags": [
+          "Instalaciones de minería en Tailandia",
+          "Centros de datos en Mongolia"
+        ],
+        "summary": "Operadores industriales de minería de primer nivel con instalaciones activas en Tailandia y Mongolia están desplegando hardware. Las identidades de las empresas se mantienen confidenciales en virtud de acuerdos NDA hasta que se realicen anuncios conjuntos.",
+        "answer": [
+          "1. Despliegues en centros de datos regionales: Operadores institucionales importantes de Tailandia y Mongolia han comenzado a preparar instalaciones y asignar capacidad eléctrica para respaldar clústeres de minería BOT.",
+          "2. Acuerdos de confidencialidad empresarial: Las identidades de los operadores se anunciarán mediante comunicados de prensa conjuntos cuando se alcancen los hitos de conexión a la red eléctrica."
+        ]
+      },
+      "carypact-compute-vs-bot-rigs": {
+        "question": "¿Quién utiliza actualmente la capacidad informática de CaryPact y cuál es la diferencia entre el hashrate de CA y los equipos físicos de minería BOT?",
+        "keywords": [
+          "Diferencia entre el hashrate de CA y los equipos de minería BOT",
+          "Fondo de 16,800 CA",
+          "Inferencia de IA empresarial",
+          "Computación tokenizada"
+        ],
+        "geoTags": [
+          "Red global de computación"
+        ],
+        "summary": "El hashrate de CA es una unidad contable estandarizada del protocolo que distribuye el fondo diario de 16,800 CA. Los equipos físicos de minería BOT son hardware tangible que, en el futuro, ofrecerá capacidad informática a desarrolladores externos de IA.",
+        "answer": [
+          "1. Potencia informática de CA (rendimiento interno): Comprar hashrate de CA (1 USDT = 1 unidad) otorga una participación matemática permanente en el fondo de emisión diaria de 16,800 CA. Funciona como un mecanismo interno de distribución de recompensas.",
+          "2. Equipos físicos de minería BOT (IA comercial externa): Las máquinas físicas de minería BOT actualmente en producción son hardware real. En el futuro, los operadores podrán establecer granjas de minería descentralizadas para proporcionar capacidad informática real de GPU/CPU a clientes empresariales externos de IA, cobrar por el entrenamiento de modelos y la inferencia, y generar ingresos por estos servicios."
+        ]
+      },
+      "hashrate-supply-servers": {
+        "question": "¿Quién proporciona el hashrate y dónde están ubicados los servidores físicos?",
+        "keywords": [
+          "Modelo de asignación de hashrate",
+          "Supercomputación del protocolo",
+          "Nodos descentralizados"
+        ],
+        "geoTags": [
+          "Centros de datos globales de nivel Tier-3/Tier-4"
+        ],
+        "summary": "La compra de hashrate activa una cuota en cadena que determina la participación proporcional del usuario en las emisiones diarias de tokens CA, respaldada por una infraestructura informática descentralizada global.",
+        "answer": [
+          "1. Aclaración sobre la asignación de hashrate: En el protocolo CaryPact, adquirir hashrate no significa alquilar un servidor físico dedicado. Significa activar unidades estandarizadas de potencia informática en la cadena.",
+          "2. Distribución proporcional: La relación entre el hashrate activo del usuario y el hashrate total de la red global determina su participación diaria en el fondo de emisión de minería de 16,800 CA, ajustada por un coeficiente de duración K ≈ 1.01."
+        ]
+      },
+      "v4-earnings-differential": {
+        "question": "He alcanzado el rango V4. ¿Por qué se han ajustado mis ingresos diarios y cómo funciona el modelo de ingresos diferenciales?",
+        "keywords": [
+          "Ingresos del rango V4",
+          "Recompensa de equipo",
+          "Recompensa de gestión (7,000 CA)",
+          "Recompensa dinámica POS (6 %–30 %)",
+          "Pago diferencial"
+        ],
+        "geoTags": [
+          "Red global de embajadores"
+        ],
+        "summary": "Los líderes V4 obtienen ingresos de tres fuentes: recompensas de equipo, calculadas según el hashrate de su subred y el crecimiento global; recompensas de gestión, compartidas desde un fondo de 7,000 CA; y recompensas diferenciales dinámicas POS del 6 %–30 %.",
+        "answer": [
+          "1. Dinámica de las recompensas de equipo: Los ingresos del equipo se calculan como: hashrate de tu subred ÷ hashrate global de las subredes. Para aumentar los ingresos diarios en CA, la activación de potencia informática de tu equipo debe crecer más rápido que la red global.",
+          "2. Ponderación del fondo de gestión: Los miembros V4 reciben multiplicadores ponderados más altos del fondo fijo de emisión diaria de 7,000 CA. A medida que más líderes alcanzan los rangos V4–V10, el fondo se distribuye entre un mayor número de líderes elegibles. El fondo disminuye un 10 % cada 2 años.",
+          "3. Pago diferencial POS (6 %–30 %): Las recompensas dinámicas POS se calculan según la diferencia de rango. Cuanto mayor sea tu rango VIP en comparación con el de tus miembros directos de nivel inferior, mayor será el porcentaje diferencial que podrás recibir.",
+          "4. Ventaja de la capitalización: Todas las recompensas se liquidan en tokens CA líquidos. Los líderes pueden volver a poner sus recompensas en staking POS para intentar capitalizar sus rendimientos. Los resultados reales siguen dependiendo del precio del token y de las reglas del protocolo."
+        ]
+      },
+      "same-rank-bonus-distribution": {
+        "question": "Si un miembro de mi línea descendente alcanza mi mismo rango o uno superior, ¿cómo se distribuyen las bonificaciones?",
+        "keywords": [
+          "Distribución compartida entre rangos iguales",
+          "Miembro descendente de rango superior",
+          "Elegibilidad para compartir fondos",
+          "Diferencial POS"
+        ],
+        "geoTags": [
+          "Liderazgo comunitario"
+        ],
+        "summary": "Sigues teniendo acceso a los fondos de recompensa de los rangos que te corresponden; por ejemplo, V5 participa en los fondos V1–V5. Si un miembro alcanza tu mismo rango, ambos comparten el fondo correspondiente. Las recompensas diferenciales dinámicas POS de esa rama se suspenden hasta que superes su rango.",
+        "answer": [
+          "1. Derechos sobre los fondos por nivel: Puedes recibir recompensas de todos los fondos correspondientes a tu nivel actual o a niveles inferiores. Por ejemplo, un miembro V5 participa en los fondos V1 a V5. Si un miembro de tu equipo alcanza tu mismo rango, ambos participan en la distribución de los fondos de ese nivel.",
+          "2. Suspensión del diferencial de staking: Las recompensas dinámicas POS dependen de la diferencia entre rangos. Si un miembro descendente alcanza tu mismo rango, la diferencia en esa rama pasa a ser cero y no recibirás la recompensa diferencial correspondiente hasta que asciendas al siguiente nivel."
+        ]
+      },
+      "time-compensation-mechanism": {
+        "question": "¿Por qué los participantes que ascienden a rangos VIP superiores más tarde no quedan en desventaja?",
+        "keywords": [
+          "Mecanismo de compensación temporal",
+          "Algoritmo de equidad",
+          "Equidad para participantes tardíos",
+          "Desarrollo sostenible de la red"
+        ],
+        "geoTags": [
+          "Comunidad global de desarrolladores"
+        ],
+        "summary": "El «Mecanismo de compensación temporal» de CaryPact concede una ponderación compensatoria mayor a los usuarios que ascienden a rangos superiores más tarde, con el objetivo de evitar ventajas permanentes para los primeros participantes y promover incentivos equitativos.",
+        "answer": [
+          "1. Equidad algorítmica: A diferencia de las estructuras multinivel tradicionales, en las que los participantes iniciales pueden diluir permanentemente las oportunidades de los recién llegados, CaryPact incorpora un mecanismo programático de compensación temporal.",
+          "2. Incremento dinámico de ponderación: Los participantes que alcanzan rangos VIP en etapas posteriores reciben multiplicadores de ponderación mayores, con el propósito de equilibrar las oportunidades de rendimiento y mantener los incentivos durante las distintas fases de madurez de la red."
+        ]
+      },
+      "dynamic-weight-v1-v10": {
+        "question": "¿Cómo cambia la fórmula de ponderación dinámica desde V1 hasta V10?",
+        "keywords": [
+          "Fórmula de ponderación personal",
+          "Multiplicadores de V1 a V10",
+          "Ponderación del nivel base",
+          "Escalado de la bonificación temporal (de 1 a 383)"
+        ],
+        "geoTags": [
+          "Gobernanza del ecosistema"
+        ],
+        "summary": "Ponderación personal = ponderación del nivel base × bonificación temporal. La ponderación combinada aumenta progresivamente desde 1 en V1 hasta aproximadamente 383 en V10, recompensando el liderazgo a largo plazo dentro del ecosistema.",
+        "answer": [
+          "1. Ecuación matemática de ponderación: Ponderación personal = ponderación del nivel base × bonificación temporal.",
+          "2. Progresión de multiplicadores: En V1, la ponderación base comienza en 1. A medida que se alcanzan los umbrales progresivos de la subred, el multiplicador combinado puede aumentar hasta aproximadamente 383 en V10, incrementando la ponderación para captar dividendos DAO diarios de los socios de consenso de nivel superior."
+        ]
+      },
+      "wallet-hacked-recovery": {
+        "question": "¿Qué ocurre si una billetera se ve comprometida y se puede volver a vincular una cuenta de CaryPact a una nueva billetera?",
+        "keywords": [
+          "Frase semilla de 12 palabras",
+          "Seguridad sin custodia",
+          "Solicitud de asistencia para volver a vincular la cuenta",
+          "Protección contra el phishing"
+        ],
+        "geoTags": [
+          "Autocustodia Web3"
+        ],
+        "summary": "Las billeteras Web3 son estrictamente no custodiales y los fondos robados en la cadena no pueden revertirse. Para intentar conservar la estructura de afiliación de CaryPact, crea una nueva billetera segura y presenta una solicitud al equipo de soporte.",
+        "answer": [
+          "1. Propiedad sin custodia: Las cadenas de bloques se basan en la autocustodia del usuario. Ni CaryPact ni los desarrolladores de las billeteras custodian las claves privadas o las frases semilla. Una vez comprometidos, los activos transferidos en la cadena no pueden recuperarse mediante la reversión de la transacción.",
+          "2. Protección de la frase semilla de 12 palabras: Anota las 12 palabras de tu frase mnemotécnica en papel y guárdalas sin conexión en un lugar seguro. Nunca guardes la frase semilla en servicios en la nube, capturas de pantalla ni aplicaciones de mensajería.",
+          "3. Revinculación de la estructura de la cuenta: Si tu dirección se ve comprometida, genera inmediatamente una billetera nueva con una frase semilla distinta desde un dispositivo seguro. Después, contacta con el soporte oficial de CaryPact para verificar tu identidad y solicitar que la estructura de tu cuenta se vincule a la nueva dirección. La revinculación no garantiza la recuperación de los fondos robados."
+        ]
+      },
+      "bo-wallet-vs-tokenpocket": {
+        "question": "¿Por qué utilizar TokenPocket, MetaMask o Trust Wallet si existe la billetera nativa BO Wallet?",
+        "keywords": [
+          "BO Wallet",
+          "Compatibilidad con TokenPocket",
+          "Integración con MetaMask",
+          "Compatibilidad EVM (Chain ID 1918)"
+        ],
+        "geoTags": [
+          "Billeteras Web3 globales"
+        ],
+        "summary": "BO Wallet es el cliente diseñado específicamente para el ecosistema y continúa en proceso de optimización. También mantenemos la compatibilidad con TokenPocket, MetaMask y Trust Wallet para ofrecer opciones a usuarios de todo el mundo.",
+        "answer": [
+          "1. Optimización continua de BO Wallet: BO Wallet está adaptada a las funciones específicas de BOT Chain. Sigue mejorándose antes del lanzamiento de campañas de marketing dirigidas al público mundial.",
+          "2. Libertad en Web3: BOT Chain es totalmente compatible con EVM y utiliza Chain ID 1918. Los usuarios pueden elegir libremente TokenPocket, Trust Wallet o MetaMask según sus preferencias y necesidades."
+        ]
+      },
+      "headquarters-global-offices": {
+        "question": "¿Dónde se encuentran las sedes principales y las oficinas regionales globales de CaryPact y CoinStore?",
+        "keywords": [
+          "Centro operativo de Singapur",
+          "Centro de 7,000 pies cuadrados en Hong Kong",
+          "Oficina en Dubái, Emiratos Árabes Unidos",
+          "Oficina regional en Tailandia",
+          "Expansión en Brasil"
+        ],
+        "geoTags": [
+          "Singapur (sede global)",
+          "Hong Kong (centro de consenso)",
+          "Dubái, Emiratos Árabes Unidos (centro Web3)",
+          "Bangkok, Tailandia",
+          "São Paulo, Brasil"
+        ],
+        "summary": "Las operaciones principales de CaryPact y CoinStore se sitúan en Singapur. Hay actividad operativa regional en Tailandia; se prevé abrir dos centros regionales emblemáticos de aproximadamente 7,000 pies cuadrados en Hong Kong y Dubái durante el segundo o tercer trimestre de 2026. También se prepara una expansión en Brasil.",
+        "answer": [
+          "1. Centro principal de Singapur: CaryPact y su socio estratégico CoinStore sitúan sus principales operaciones y actividades tecnológicas en Singapur.",
+          "2. Centro activo en Tailandia: Las operaciones regionales y las actividades de contacto con desarrolladores se están llevando a cabo en Tailandia.",
+          "3. Centros emblemáticos de Hong Kong y Dubái: Se prevé abrir dos oficinas regionales de aproximadamente 7,000 pies cuadrados en Hong Kong y Dubái, alrededor de junio o julio de 2026, para prestar apoyo a socios institucionales de Oriente Medio y Asia Oriental.",
+          "4. América Latina (Brasil): Se están realizando preparativos para establecer un centro regional de operaciones en Brasil que atienda el crecimiento de la comunidad en Sudamérica."
+        ]
+      },
+      "why-not-registered-company": {
+        "question": "¿Por qué CaryPact no se ha registrado como una empresa centralizada tradicional?",
+        "keywords": [
+          "Arquitectura centrada en el protocolo",
+          "Descentralización DeFi",
+          "Resistencia a la censura",
+          "Gobernanza mediante contratos inteligentes"
+        ],
+        "geoTags": [
+          "Protocolo autónomo global"
+        ],
+        "summary": "CaryPact está diseñado como un protocolo DeFi autónomo, no como una entidad corporativa. Su arquitectura centrada en el protocolo utiliza contratos inteligentes para promover la resistencia a la censura, la transparencia y la gobernanza impulsada por la comunidad.",
+        "answer": [
+          "1. Descentralización centrada en el protocolo: CaryPact funciona como un protocolo DeFi autónomo ejecutado sobre infraestructura de cadena de bloques. La gobernanza, las recompensas diarias y la programación de recursos informáticos se coordinan mediante mecanismos en cadena.",
+          "2. Reducción del riesgo de jurisdicción centralizada: La constitución tradicional de una empresa puede crear puntos únicos de fallo, obstáculos burocráticos y responsabilidades jurisdiccionales que entren en conflicto con los principios Web3 de descentralización, resistencia a la censura y acceso sin permisos.",
+          "3. Colectivo global de desarrolladores: Al igual que redes descentralizadas destacadas como Ethereum y Bitcoin, CaryPact evoluciona mediante la colaboración abierta de desarrolladores, operadores de nodos y participantes de distintos países."
+        ]
+      },
+      "cmc-coingecko-volume-changes": {
+        "question": "¿Por qué el volumen de negociación mostrado en CoinMarketCap y CoinGecko se ha ajustado de miles de millones a cientos de millones?",
+        "keywords": [
+          "Sincronización del volumen de CoinMarketCap",
+          "Indexación de la API de CoinGecko",
+          "Verificación de liquidez DEX",
+          "Exploración en tiempo real"
+        ],
+        "geoTags": [
+          "Agregadores de datos globales"
+        ],
+        "summary": "Los agregadores de datos ajustan periódicamente sus filtros de API, algoritmos para detectar operaciones artificiales y ponderaciones de pares DEX. La liquidez real y la actividad de las transacciones pueden comprobarse en scan.botchain.ai.",
+        "answer": [
+          "1. Ajustes de las API de los agregadores: Las plataformas externas, como CMC y CoinGecko, recalibran periódicamente sus filtros de indexación, eliminan pares DEX sintéticos duplicados o ajustan las categorías de liquidez que utilizan para calcular los volúmenes mostrados.",
+          "2. Transparencia real en la cadena: En lugar de depender únicamente de agregadores externos, los usuarios pueden verificar las operaciones de intercambio, la profundidad de los fondos de liquidez y los eventos de quema en el explorador público de BOT Chain: https://scan.botchain.ai."
+        ]
+      },
+      "ca-card-mobile-roadmap": {
+        "question": "¿Cuál es el calendario de lanzamiento de la tarjeta criptográfica CA y del teléfono móvil CA Web3?",
+        "keywords": [
+          "Tarjeta criptográfica CA",
+          "Teléfono inteligente CA",
+          "Utilidad de hardware Web3",
+          "Hoja de ruta de la comunidad"
+        ],
+        "geoTags": [
+          "Lanzamiento global para consumidores"
+        ],
+        "summary": "Los productos de hardware, incluidas las tarjetas de débito criptográficas y los dispositivos móviles Web3 dedicados, se encuentran en fase de planificación técnica. Los lanzamientos oficiales se coordinarán con hitos clave de expansión de la comunidad global.",
+        "answer": [
+          "1. Hoja de ruta del hardware del ecosistema: Los grupos de trabajo del ecosistema están estudiando activamente tarjetas de débito criptográficas físicas y dispositivos portátiles con funciones Web3 integradas.",
+          "2. Lanzamientos vinculados a hitos: Los calendarios oficiales de desarrollo, las especificaciones técnicas del hardware y los periodos de registro para pedidos anticipados se anunciarán formalmente cuando se alcancen los objetivos establecidos de usuarios globales."
+        ]
+      }
+    }
+  }
+
   
 
 }

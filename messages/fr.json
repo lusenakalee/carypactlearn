@@ -802,6 +802,502 @@
   "install": "Pas encore de portefeuille ? Installez d'abord MetaMask, Trust Wallet ou TokenPocket depuis votre boutique d'applications.",
   "tryAnother": "Essayer un autre portefeuille",
   "close": "Fermer"
-}
+},
+
+
+  "LearnFaq": {
+    "badge": "Centre d’aide",
+    "title": "Foire aux questions",
+    "description": "Découvrez des réponses vérifiées sur la tokenomics de BOT, le minage, l’écosystème, la sécurité et bien plus encore.",
+    "searchPlaceholder": "Rechercher une question, un mot-clé ou un sujet...",
+    "clear": "Effacer",
+    "showing": "Affichage de <strong>{shown}</strong> réponses vérifiées sur {total}",
+    "expandAll": "Tout développer",
+    "collapseAll": "Tout réduire",
+    "emptyTitle": "Aucun résultat trouvé",
+    "emptyHint": "Essayez un autre mot-clé ou réinitialisez les filtres.",
+    "resetFilters": "Réinitialiser les filtres",
+    "copyLink": "Copier le lien",
+    "keyTopics": "Sujets clés",
+    "verifiedDocs": "Documentation vérifiée",
+    "discuss": "Discuter avec la communauté",
+    "supportTitle": "Vous avez encore des questions ?",
+    "supportText": "Rejoignez notre communauté pour obtenir de l’aide et échanger avec d’autres membres de l’écosystème BOT.",
+    "supportCta": "Contacter l’assistance",
+    "categories": {
+      "all": "Toutes les questions",
+      "tokenomics": "Tokenomics",
+      "ecosystem": "Écosystème",
+      "mining": "Minage",
+      "vip": "VIP et récompenses",
+      "security": "Sécurité",
+      "global": "Présence mondiale"
+    },
+    "items": [
+      {
+        "id": "inflation-elimination",
+        "question": "Comment BOT élimine-t-il l’inflation ?",
+        "keywords": [
+          "inflation",
+          "offre",
+          "tokenomics",
+          "burn",
+          "destruction de jetons"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Le mécanisme économique de BOT vise à contrôler l’offre et à favoriser la rareté grâce à des mécanismes de destruction de jetons.",
+        "answer": [
+          "BOT utilise un modèle économique conçu pour contrôler l’offre de jetons et soutenir leur rareté à long terme.",
+          "Le mécanisme de destruction de jetons peut réduire l’offre en circulation selon les règles applicables à l’écosystème.",
+          "La réduction de l’offre ne garantit pas une hausse du prix. La valeur du marché dépend également de la demande, de la liquidité et des conditions générales du marché."
+        ]
+      },
+      {
+        "id": "candlestick-stability",
+        "question": "Pourquoi le graphique des prix de BOT semble-t-il stable ou présente-t-il peu de mouvements ?",
+        "keywords": [
+          "graphique",
+          "chandeliers",
+          "prix",
+          "volatilité",
+          "liquidité",
+          "volume"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "L’apparence d’un graphique dépend notamment du volume des transactions, de la liquidité, de la période sélectionnée et de la source des données.",
+        "answer": [
+          "Un graphique qui semble stable ou qui présente peu de mouvements peut être lié à un faible volume de transactions, à une liquidité limitée ou à la période d’affichage sélectionnée.",
+          "Les plateformes d’échange et les fournisseurs de données peuvent également afficher des prix, des volumes et des intervalles différents.",
+          "Comparez plusieurs sources de données fiables et vérifiez l’heure de la dernière transaction avant de tirer des conclusions sur l’activité du marché."
+        ]
+      },
+      {
+        "id": "wbot-holders-price-growth",
+        "question": "Pourquoi le nombre de détenteurs de wBOT augmente-t-il sans que le prix progresse au même rythme ?",
+        "keywords": [
+          "wBOT",
+          "détenteurs",
+          "prix",
+          "offre",
+          "demande",
+          "liquidité"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Le nombre de détenteurs et le prix du marché sont deux indicateurs différents.",
+        "answer": [
+          "Le nombre de détenteurs peut augmenter lorsque davantage de portefeuilles reçoivent ou conservent des jetons. Cela ne signifie pas nécessairement que la demande d’achat augmente.",
+          "Le prix dépend de l’équilibre entre les ordres d’achat et de vente, de la liquidité disponible, du volume des transactions et du sentiment du marché.",
+          "Un portefeuille peut également détenir plusieurs jetons, et les données relatives aux détenteurs ne permettent pas à elles seules de mesurer l’activité économique réelle."
+        ]
+      },
+      {
+        "id": "why-invest-differentiation",
+        "question": "Qu’est-ce qui différencie BOT des autres projets de cryptomonnaies ?",
+        "keywords": [
+          "BOT",
+          "différenciation",
+          "écosystème",
+          "utilité",
+          "investissement"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Le projet met en avant son écosystème, ses mécanismes de jetons et ses initiatives liées au calcul et au minage.",
+        "answer": [
+          "BOT se présente comme un projet qui combine une économie de jetons, des initiatives de minage et des services au sein de son écosystème.",
+          "Pour évaluer ce qui le différencie réellement, examinez les produits disponibles, l’activité vérifiable sur la blockchain, la documentation technique, la transparence de l’équipe et l’utilisation réelle du jeton.",
+          "Les promesses de rendement ou les projections de prix ne constituent pas une preuve de performance future. Effectuez vos propres recherches avant toute décision financière."
+        ]
+      },
+      {
+        "id": "bot-price-project-owners",
+        "question": "Les propriétaires du projet BOT peuvent-ils contrôler le prix du jeton ?",
+        "keywords": [
+          "prix",
+          "équipe",
+          "propriétaires",
+          "marché",
+          "transparence"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Le prix du marché dépend de l’activité de négociation et de la liquidité. Les affirmations concernant le contrôle du prix doivent être vérifiées.",
+        "answer": [
+          "Le prix d’un jeton négocié sur le marché résulte généralement de l’offre et de la demande sur les plateformes d’échange.",
+          "Les détenteurs importants de jetons peuvent influencer le marché lorsqu’ils effectuent des transactions importantes, mais cela ne signifie pas qu’ils contrôlent systématiquement le prix.",
+          "Vérifiez les données de marché, la répartition des jetons et les informations publiques sur les portefeuilles avant d’évaluer toute affirmation concernant le contrôle des prix."
+        ]
+      },
+      {
+        "id": "bot-ecosystem-roadmap",
+        "question": "Quelle est la feuille de route de l’écosystème BOT ?",
+        "keywords": [
+          "feuille de route",
+          "écosystème",
+          "développement",
+          "produits",
+          "jalons"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Consultez les communications officielles du projet pour connaître les étapes prévues et leur état d’avancement.",
+        "answer": [
+          "La feuille de route d’un projet peut comprendre le développement de produits, l’expansion de l’écosystème, des intégrations et de nouvelles fonctionnalités.",
+          "Les dates et les objectifs peuvent changer au cours du développement. Distinguez les fonctionnalités déjà disponibles des annonces et des projets futurs.",
+          "Consultez les canaux officiels de BOT et vérifiez les mises à jour pour obtenir les informations les plus récentes."
+        ]
+      },
+      {
+        "id": "bohr-to-bot-rebrand",
+        "question": "Pourquoi BOHR a-t-il été renommé BOT ?",
+        "keywords": [
+          "BOHR",
+          "BOT",
+          "changement de nom",
+          "migration",
+          "marque"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Consultez les annonces officielles pour confirmer les raisons du changement de nom et les éventuelles étapes de migration.",
+        "answer": [
+          "Un changement de nom de jeton peut refléter une nouvelle identité de marque, une évolution du projet ou une modification de l’organisation de l’écosystème.",
+          "Pour connaître les raisons précises du passage de BOHR à BOT et savoir si une migration de jetons est nécessaire, consultez les annonces officielles du projet.",
+          "Ne transférez pas vos jetons vers une nouvelle adresse et ne signez aucune transaction sans avoir vérifié les instructions auprès de sources officielles."
+        ]
+      },
+      {
+        "id": "verify-150m-bot-supply",
+        "question": "Comment vérifier l’offre annoncée de 150M de BOT ?",
+        "keywords": [
+          "150M",
+          "offre totale",
+          "offre en circulation",
+          "explorateur",
+          "blockchain"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Vérifiez les informations relatives à l’offre directement sur l’explorateur de blockchain et dans la documentation officielle.",
+        "answer": [
+          "Une annonce concernant une offre de 150M de BOT doit être comparée aux données disponibles sur la blockchain et aux informations publiées par le projet.",
+          "Vérifiez l’adresse officielle du contrat, l’offre totale, l’offre en circulation et les éventuels mécanismes de destruction ou de création de jetons.",
+          "Vous pouvez consulter l’explorateur de blockchain à l’adresse https://scan.botchain.ai, puis comparer les informations avec les annonces officielles. Assurez-vous d’utiliser le bon réseau et le bon contrat."
+        ]
+      },
+      {
+        "id": "mining-machine-pricing",
+        "question": "Combien coûte une machine de minage BOT ?",
+        "keywords": [
+          "machine de minage",
+          "prix",
+          "équipement",
+          "achat",
+          "coût"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Les prix des machines dépendent du modèle, des caractéristiques, de la disponibilité et des conditions de vente.",
+        "answer": [
+          "Le prix d’une machine de minage peut varier selon sa puissance de calcul, sa configuration, sa consommation électrique, les frais d’expédition et les conditions de garantie.",
+          "Des prix indicatifs tels que $3,960 ou $3,600 ne doivent pas être considérés comme des offres actuelles sans confirmation du vendeur.",
+          "Avant d’effectuer un paiement, demandez un devis à jour, vérifiez les caractéristiques de la machine, les conditions de livraison et l’identité du fournisseur."
+        ]
+      },
+      {
+        "id": "mining-machine-manufacturer",
+        "question": "Qui fabrique les machines de minage BOT ?",
+        "keywords": [
+          "fabricant",
+          "machines",
+          "minage",
+          "fournisseur",
+          "matériel"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Vérifiez l’identité du fabricant et les spécifications du matériel auprès des sources officielles.",
+        "answer": [
+          "Pour identifier le fabricant des machines de minage BOT, consultez la documentation officielle du projet et les informations fournies par le vendeur.",
+          "Demandez le nom légal du fabricant, les références du modèle, les spécifications techniques, les conditions de garantie et les modalités de service après-vente.",
+          "Ne supposez pas qu’un équipement est fabriqué ou certifié par le projet BOT simplement parce qu’il est commercialisé sous un nom associé à son écosystème."
+        ]
+      },
+      {
+        "id": "tier-1-mining-operators",
+        "question": "Qui sont les opérateurs de minage de niveau 1 ?",
+        "keywords": [
+          "niveau 1",
+          "opérateurs",
+          "minage",
+          "rangs",
+          "récompenses"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Les conditions d’accès aux niveaux et aux récompenses doivent être vérifiées dans les règles officielles du programme.",
+        "answer": [
+          "Les programmes de minage peuvent classer les participants selon des critères tels que la puissance de calcul, la quantité d’équipement, le niveau de participation ou d’autres conditions.",
+          "Les critères précis permettant d’obtenir le statut d’opérateur de niveau 1 doivent être confirmés dans la documentation officielle de BOT.",
+          "Vérifiez les exigences, les frais éventuels, les règles de calcul des récompenses et les conditions de retrait avant de participer."
+        ]
+      },
+      {
+        "id": "carypact-compute-vs-bot-rigs",
+        "question": "Quelle est la différence entre le calcul CaryPact et les machines de minage BOT ?",
+        "keywords": [
+          "CaryPact",
+          "calcul",
+          "machines de minage",
+          "matériel",
+          "infrastructure"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Le calcul informatique et le minage de cryptomonnaies peuvent répondre à des besoins différents. Comparez les fonctions et les coûts réels.",
+        "answer": [
+          "Le calcul informatique peut désigner des ressources utilisées pour exécuter des charges de travail, tandis que les machines de minage sont généralement conçues pour effectuer des opérations spécifiques liées à un réseau ou à un protocole.",
+          "Pour comparer CaryPact aux machines de minage BOT, examinez les tâches prises en charge, les caractéristiques matérielles, la consommation électrique, les coûts d’exploitation et les modalités de rémunération.",
+          "Les performances et les revenus annoncés doivent être confirmés à partir de données vérifiables. Aucun revenu n’est garanti simplement parce qu’un équipement est associé à un projet."
+        ]
+      },
+      {
+        "id": "hashrate-supply-servers",
+        "question": "Comment le hashrate et l’offre des serveurs sont-ils liés ?",
+        "keywords": [
+          "hashrate",
+          "serveurs",
+          "offre",
+          "minage",
+          "puissance de calcul"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Le hashrate mesure la puissance de calcul dédiée à certaines opérations. Il ne détermine pas à lui seul la valeur d’un jeton.",
+        "answer": [
+          "Le hashrate représente la quantité de calcul effectuée par unité de temps dans un système de minage utilisant cette mesure.",
+          "La capacité des serveurs, le nombre de machines en fonctionnement et leur efficacité peuvent influencer le hashrate disponible.",
+          "L’offre de jetons, le hashrate et le prix sont des mesures différentes. Leur relation dépend des règles du réseau, de la demande et des conditions économiques."
+        ]
+      },
+      {
+        "id": "v4-earnings-differential",
+        "question": "Pourquoi les revenus de la V4 diffèrent-ils de ceux des versions précédentes ?",
+        "keywords": [
+          "V4",
+          "revenus",
+          "récompenses",
+          "mise à jour",
+          "minage"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Les différences de revenus peuvent résulter de changements dans les règles de récompense, la participation ou les conditions du réseau.",
+        "answer": [
+          "Les revenus affichés dans une nouvelle version peuvent différer en raison de modifications des paramètres, des règles de calcul, des niveaux de participation ou des conditions du réseau.",
+          "Comparez les règles officielles de la V4 avec celles des versions précédentes et vérifiez les périodes utilisées pour calculer les montants.",
+          "Les revenus passés ou estimés ne garantissent pas les revenus futurs. Consultez les conditions en vigueur avant de prendre une décision."
+        ]
+      },
+      {
+        "id": "same-rank-bonus-distribution",
+        "question": "Comment les bonus sont-ils répartis entre les participants de même rang ?",
+        "keywords": [
+          "bonus",
+          "même rang",
+          "répartition",
+          "récompenses",
+          "classement"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "La répartition des bonus dépend des règles du programme et des critères définis pour chaque rang.",
+        "answer": [
+          "Les programmes de récompenses peuvent répartir les bonus selon le rang, le niveau de participation, les performances ou d’autres critères définis.",
+          "Si plusieurs participants ont le même rang, la méthode de répartition doit être précisée dans les règles officielles du programme.",
+          "Vérifiez la formule applicable, la période de calcul, les conditions d’éligibilité et les éventuelles limites avant de supposer que les bonus sont répartis à parts égales."
+        ]
+      },
+      {
+        "id": "time-compensation-mechanism",
+        "question": "Comment fonctionne le mécanisme de compensation lié au temps ?",
+        "keywords": [
+          "temps",
+          "compensation",
+          "récompenses",
+          "durée",
+          "mécanisme"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Les modalités de compensation doivent être confirmées dans les règles officielles du programme concerné.",
+        "answer": [
+          "Un mécanisme de compensation lié au temps peut utiliser la durée de participation, une période d’activité ou d’autres paramètres pour calculer les montants attribués.",
+          "La formule exacte, les conditions d’éligibilité et les éventuelles limites dépendent des règles du programme BOT applicable.",
+          "Consultez la documentation officielle pour comprendre comment le temps est mesuré, quand la compensation est calculée et quelles conditions doivent être remplies."
+        ]
+      },
+      {
+        "id": "dynamic-weight-v1-v10",
+        "question": "Comment fonctionne le poids dynamique entre V1 et V10 ?",
+        "keywords": [
+          "poids dynamique",
+          "V1",
+          "V10",
+          "niveaux",
+          "récompenses"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Les différences de poids entre les niveaux doivent être vérifiées à partir de la formule officielle.",
+        "answer": [
+          "Un système de poids dynamique peut attribuer des coefficients différents selon le niveau ou la version d’un participant.",
+          "Pour comprendre le fonctionnement entre V1 et V10, vérifiez les coefficients applicables à chaque niveau, les conditions de progression et les éventuelles limites.",
+          "Ne déduisez pas un montant de récompense à partir du seul numéro de niveau. Le résultat dépend également de la formule de calcul et des règles en vigueur."
+        ]
+      },
+      {
+        "id": "wallet-hacked-recovery",
+        "question": "Que dois-je faire si mon portefeuille est piraté ?",
+        "keywords": [
+          "portefeuille",
+          "piratage",
+          "sécurité",
+          "récupération",
+          "phrase de récupération"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Protégez immédiatement vos actifs restants et ne partagez jamais votre phrase de récupération ou votre clé privée.",
+        "answer": [
+          "Si vous pensez que votre portefeuille a été compromis, cessez d’utiliser l’appareil suspect et vérifiez la sécurité de vos comptes et de vos appareils.",
+          "Si votre phrase de récupération ou votre clé privée a été exposée, créez un nouveau portefeuille sécurisé sur un appareil fiable et transférez-y les actifs restants, si cela peut être fait sans risque.",
+          "Ne partagez jamais votre phrase de récupération, votre clé privée ou vos codes d’authentification avec une personne prétendant vous aider.",
+          "Les transactions sur la blockchain sont généralement irréversibles. Conservez les identifiants des transactions et contactez les canaux d’assistance officiels pour signaler l’incident."
+        ]
+      },
+      {
+        "id": "bo-wallet-vs-tokenpocket",
+        "question": "Quelle est la différence entre le portefeuille BO et TokenPocket ?",
+        "keywords": [
+          "portefeuille BO",
+          "TokenPocket",
+          "portefeuille crypto",
+          "sécurité",
+          "blockchain"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Comparez les réseaux pris en charge, les fonctions, les dispositifs de sécurité et les adresses officielles des applications.",
+        "answer": [
+          "Un portefeuille peut différer d’un autre par les réseaux pris en charge, les fonctionnalités, les options de gestion des actifs et l’expérience utilisateur.",
+          "Avant de choisir entre le portefeuille BO et TokenPocket, vérifiez la compatibilité avec le réseau BOT, l’adresse officielle de l’application et les fonctionnalités de sécurité disponibles.",
+          "Téléchargez les applications uniquement depuis des sources fiables. Ne communiquez jamais votre phrase de récupération à un service d’assistance ou à un tiers."
+        ]
+      },
+      {
+        "id": "headquarters-global-offices",
+        "question": "Où se trouve le siège de BOT et où sont situés ses bureaux internationaux ?",
+        "keywords": [
+          "siège",
+          "bureaux",
+          "adresse",
+          "présence mondiale",
+          "équipe"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Vérifiez les adresses et les coordonnées des bureaux à partir de sources officielles et vérifiables.",
+        "answer": [
+          "Pour connaître l’emplacement du siège et des bureaux internationaux de BOT, consultez les coordonnées publiées sur les canaux officiels du projet.",
+          "Vérifiez les adresses, les noms légaux des entités concernées et les coordonnées de contact avant de vous fier à une annonce concernant un bureau.",
+          "La présence d’une adresse ou d’un bureau annoncé ne prouve pas, à elle seule, le statut réglementaire ou la solidité financière d’un projet."
+        ]
+      },
+      {
+        "id": "why-not-registered-company",
+        "question": "Pourquoi BOT n’est-il pas enregistré comme une société ?",
+        "keywords": [
+          "enregistrement",
+          "société",
+          "réglementation",
+          "entité légale",
+          "conformité"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Le statut juridique et les obligations réglementaires doivent être confirmés auprès des registres et des autorités compétentes.",
+        "answer": [
+          "Le statut juridique d’un projet dépend de sa structure, de ses entités opérationnelles et des juridictions dans lesquelles il exerce ses activités.",
+          "Pour savoir si BOT ou une entité associée est enregistrée comme société, consultez les registres officiels pertinents et la documentation juridique publiée par le projet.",
+          "Ne considérez pas l’absence d’informations facilement accessibles comme une preuve définitive d’enregistrement ou de non-enregistrement. Vérifiez les informations auprès des autorités compétentes."
+        ]
+      },
+      {
+        "id": "cmc-coingecko-volume-changes",
+        "question": "Pourquoi le volume ou le prix de BOT diffère-t-il entre CoinMarketCap et CoinGecko ?",
+        "keywords": [
+          "CoinMarketCap",
+          "CoinGecko",
+          "volume",
+          "prix",
+          "données de marché"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Les plateformes de données peuvent utiliser des sources, des méthodes de calcul et des délais de mise à jour différents.",
+        "answer": [
+          "CoinMarketCap et CoinGecko peuvent afficher des prix ou des volumes différents parce qu’ils agrègent les données de plusieurs plateformes d’échange selon leurs propres méthodes.",
+          "Les différences peuvent également provenir des paires de négociation prises en compte, des conversions de devises, des délais de mise à jour ou du filtrage des données.",
+          "Pour comparer les chiffres, vérifiez l’adresse du contrat, la paire de négociation, la plateforme d’échange, l’heure de mise à jour et la définition du volume affiché."
+        ]
+      },
+      {
+        "id": "ca-card-mobile-roadmap",
+        "question": "Quand la carte CA et les fonctionnalités mobiles seront-elles disponibles ?",
+        "keywords": [
+          "carte CA",
+          "mobile",
+          "feuille de route",
+          "application",
+          "paiements"
+        ],
+        "geoTags": [
+          "global"
+        ],
+        "summary": "Les dates de lancement et la disponibilité des fonctionnalités doivent être confirmées par les annonces officielles.",
+        "answer": [
+          "La disponibilité d’une carte CA ou de nouvelles fonctionnalités mobiles dépend de l’avancement du développement, des intégrations nécessaires et des éventuelles exigences réglementaires.",
+          "Les calendriers de lancement annoncés, notamment pour le T2 ou le T3 2026, doivent être considérés comme des échéances prévues tant que la disponibilité effective n’a pas été confirmée.",
+          "Consultez les canaux officiels de BOT pour connaître les dernières annonces, les régions prises en charge, les conditions d’éligibilité et les instructions d’utilisation."
+        ]
+      }
+    ]
+  }
 
 }

@@ -810,5 +810,473 @@
     "tryAnother": "Try another wallet",
     "close": "Close"
   }
+  ,
+  "LearnFaq": {
+    "badge": "Comprehensive Protocol Intelligence & Master FAQ",
+    "title": "Frequently Asked <hl>Questions</hl>",
+    "description": "In-depth technical, economic, hardware, and operational clarity directly addressing token inflation mechanisms, physical mining machine production, global regional offices (Singapore, Hong Kong, Dubai, Thailand), and the V1–V10 dynamic yield algorithms.",
+    "searchPlaceholder": "Search by keywords, e.g. 'inflation', 'Singapore', 'Z Address', 'V4', 'mining machine', 'seed phrase'...",
+    "clear": "Clear",
+    "showing": "Showing <strong>{shown}</strong> of {total} verified answers",
+    "expandAll": "Expand All",
+    "collapseAll": "Collapse All",
+    "emptyTitle": "No matching answers found",
+    "emptyHint": "Try adjusting your search terms or select “{all}” to browse all answers.",
+    "resetFilters": "Reset Filters",
+    "copyLink": "Copy direct link to this FAQ",
+    "keyTopics": "Key Topic Anchors:",
+    "verifiedDocs": "Verified Protocol Documentation",
+    "discuss": "Discuss in Community",
+    "supportTitle": "Have a question not listed here?",
+    "supportText": "Connect directly with our 24/7 global community managers in Singapore, Thailand, Hong Kong, and Dubai, or query the CaryPact AI Copilot in real time.",
+    "supportCta": "Join Community Support",
+    "categories": {
+      "all": {
+        "tab": "All Questions",
+        "badge": "All Questions"
+      },
+      "tokenomics": {
+        "tab": "Tokenomics & Inflation",
+        "badge": "Tokenomics & Inflation"
+      },
+      "ecosystem": {
+        "tab": "BOT Chain Ecosystem",
+        "badge": "BOT Chain & Ecosystem"
+      },
+      "mining": {
+        "tab": "DePIN & Mining Rigs",
+        "badge": "Mining & DePIN Hardware"
+      },
+      "vip": {
+        "tab": "VIP & Dynamic Yield",
+        "badge": "VIP Rewards & Compounding"
+      },
+      "security": {
+        "tab": "Security & Wallets",
+        "badge": "Security & Wallets"
+      },
+      "global": {
+        "tab": "Global Hubs & Legal",
+        "badge": "Global Operations & Legal"
+      }
+    },
+    "items": {
+      "inflation-elimination": {
+        "question": "How is asset inflation accumulated in staked POS assets eliminated?",
+        "keywords": [
+          "Staking Inflation Elimination",
+          "CA Tokenomics",
+          "B Wallet & M Wallet Inflow",
+          "Z Address Burn",
+          "BOT Treasury Reserve"
+        ],
+        "geoTags": [
+          "Global Decentralized Protocol"
+        ],
+        "summary": "Through strict 4-inflow/1-outflow wallet mechanics, 10% daily buyback & burn from Z Address, 90% treasury allocation, and the 'Pond vs. Sea' macro absorption capacity of the BOT public chain.",
+        "answer": [
+          "1. Wallet Flow Architecture (B & M Wallets): The core solution lies in our strategic CA flow-of-funds engineering. The key on-chain addresses to monitor are the 'B' Wallet (Staking Rewards Pool) and 'M' Wallet (Staking Pool). Both wallets maintain 4 continuous inflows against only 1 outflow of CA tokens. Because inflows mathematically exceed outflows, the protocol guarantees adequate reserves even during massive unstaking periods and daily POS yield releases.",
+          "2. Z-Address Buyback & Burn Engine: 10% of all incoming capital to the Z Address is immediately deployed to buy back CA tokens on open decentralized markets and burn them permanently. The remaining 90% is deposited into the protocol BOT treasury. This structural deflation steadily reduces total circulating supply, naturally supporting healthy price appreciation as POS participation scales.",
+          "3. Macro 'Pond vs. Sea' Absorption: The CA ecosystem acts as a specialized application pond, whereas the BOT Public Chain is the vast open sea. As thousands of upcoming dApps deploy on BOT Chain, capital depth and gas fee burns easily dissolve or channel out localized liquidity imbalances."
+        ]
+      },
+      "candlestick-stability": {
+        "question": "Why do CA and WBOT show high daily trading volume yet steady prices without extreme pump-and-dump spikes?",
+        "keywords": [
+          "Candlestick Stability",
+          "Algorithmic Treasury Buyback",
+          "Sustainable Growth",
+          "CEX Listing Roadmap"
+        ],
+        "geoTags": [
+          "Global Liquidity"
+        ],
+        "summary": "The price stability is intentionally engineered for institutional longevity via algorithmic treasury interventions, consistent secondary market demand, and real on-chain utility over speculative manipulation.",
+        "answer": [
+          "1. Longevity Engineering: The protocol is deliberately structured for steady, organic expansion rather than artificial speculative spikes that harm long-term participants.",
+          "2. BOT Token Gas Value: BOT Chain is in its foundational expansion phase. As new ecosystem dApps launch, transaction volume generates growing gas fees (1.50% burned permanently). Planned listings across 10–20 premier centralized exchanges (CEXs) will further expand institutional liquidity.",
+          "3. CA Treasury Safeguards: CA tokenomics channels capital into dedicated protocol treasuries. If market prices dip excessively, treasury reserves kick in algorithmically to buy back CA tokens. Furthermore, increasing demand from secondary markets continuously stimulates organic price appreciation."
+        ]
+      },
+      "wbot-holders-price-growth": {
+        "question": "With WBOT wallet holders exceeding 900,000, why has the price grown steadily from $9.5 to $9.9 rather than surging to $20+ overnight?",
+        "keywords": [
+          "900,000+ Wallets",
+          "WBOT Price Scaling",
+          "Incubating 100+ Projects",
+          "Physical DePIN Rigs"
+        ],
+        "geoTags": [
+          "Global Consensus"
+        ],
+        "summary": "BOT has experienced steady, healthy appreciation from $9.50 to ~$9.90+. Value realization will compound as 100+ incubated dApps deploy, physical mining rigs go live, and centralized exchange listings roll out.",
+        "answer": [
+          "1. Systematic Early-Stage Growth: BOT has appreciated consistently from $9.50 to ~$9.90+. Because BOT Chain is in its introductory phase with CaryPact as its pioneer flagship protocol, price discovery reflects verified foundational adoption rather than speculative bubbles.",
+          "2. Upcoming Catalysts: The foundation is actively in discussions with over 100+ independent projects preparing to incubate and deploy on BOT Chain. Concurrently, physical AI mining rigs are currently in commercial production, allowing operators to build high-capacity mining farms.",
+          "3. Exchange Expansion: Broad centralized exchange (CEX) listings scheduled for Q3/Q4 will unlock global retail and institutional order books, fueling the next wave of sustainable network valuation."
+        ]
+      },
+      "why-invest-differentiation": {
+        "question": "Why should someone consider participating in CaryPact and BOT Chain over other Web3 projects?",
+        "keywords": [
+          "Portfolio Diversification",
+          "Due Diligence (DYOR)",
+          "DePIN AI Architecture",
+          "Autonomous Layer 1"
+        ],
+        "geoTags": [
+          "Global Web3 Community"
+        ],
+        "summary": "We advocate disciplined diversification and due diligence (DYOR). BOT Chain pairs an autonomous Layer 1 with deflationary tokenomics, decentralized supercomputing, and a transparent roadmap.",
+        "answer": [
+          "1. Prudent Diversification & DYOR: We always advocate doing your own due diligence and never investing capital you cannot afford to risk. BOT Chain is built as a premier diversification asset for crypto portfolios.",
+          "2. True Layer 1 Infrastructure: Unlike application-only tokens on congested networks, BOT Chain is an independent EVM Layer 1 with 3-second block times, negligible gas fees, and a permanent 1.50% native gas burn.",
+          "3. Open Dialogue: We welcome technical comparisons of architectural philosophies, flow-of-funds structures, and deflationary economics to help builders and participants make well-informed decisions."
+        ]
+      },
+      "bot-price-project-owners": {
+        "question": "Is the ~$9.90 / BOT price too high for project owners and developers to build on BOT Chain?",
+        "keywords": [
+          "Developer Grant",
+          "$50M Support Fund",
+          "30% Gas Rebate",
+          "Project Onboarding",
+          "Builder Traffic"
+        ],
+        "geoTags": [
+          "Singapore HQ",
+          "Global Developer Network"
+        ],
+        "summary": "No. The BOT Chain Foundation subsidizes incoming developers with user traffic, a $50 Million USD builder grant, and an ongoing 30% gas fee rebate revenue stream.",
+        "answer": [
+          "1. Robust Developer Subsidies: High token valuation reflects strong network security and validator commitment. To lower friction for builders, the BOT Chain Foundation provides incoming project teams with direct traffic and an active community of 200,000+ users.",
+          "2. $50M Support Grant: A dedicated $50 Million USD Ecosystem Fund awards infrastructure and liquidity grants to qualified teams deploying on BOT Chain.",
+          "3. 30% Gas Rebate Revenue Stream: Project owners receive an ongoing 30% rebate on all gas fees generated by their smart contracts, creating an immediate, recurring monetization layer prior to liquidity pool establishment."
+        ]
+      },
+      "bot-ecosystem-roadmap": {
+        "question": "How is the BOT public chain ecosystem projected to develop over the next 1–3 years?",
+        "keywords": [
+          "10,000 DApps Roadmap",
+          "1-Click Protocol",
+          "Rapid Deployment (30 Mins)",
+          "10-20 CEX Listings"
+        ],
+        "geoTags": [
+          "Global Node Network",
+          "Asia-Pacific",
+          "Middle East"
+        ],
+        "summary": "Over 900,000 addresses in 2 months; scaling to 2,000 projects this year and 10,000+ in 3 years via the 30-minute '1-Click Protocol', backed by the $50M fund and 10–20 CEX listings.",
+        "answer": [
+          "1. Explosive Address Growth: BOT Chain accumulated over 900,000 wallet addresses within approximately two months of mainnet launch.",
+          "2. 200+ Projects in Pipeline: Discussions are underway with more than 200 projects. The target is 2,000 projects by year-end and 10,000+ within 3 years, accelerated by our '1-Click Protocol' that allows developers to launch a complete dApp within 30 minutes.",
+          "3. CaryPact Pioneer Synergy: CaryPact’s viral growth as the benchmark protocol demonstrates proof-of-throughput, attracting external EVM developers to bridge or port codebases.",
+          "4. Liquidity & CEX Listings: Expansion includes listings on 10–20 top-tier centralized exchanges, multiplying secondary liquidity and global brand visibility."
+        ]
+      },
+      "bohr-to-bot-rebrand": {
+        "question": "BOT Chain was previously named BOHR. What was the rationale behind the strategic rebrand?",
+        "keywords": [
+          "BOHR to BOT Rebrand",
+          "Niels Bohr Heritage",
+          "AI Operating System",
+          "Intelligent Agent Execution"
+        ],
+        "geoTags": [
+          "Global Rebrand"
+        ],
+        "summary": "Transitioned from theoretical physics exploration (inspired by Niels Bohr) to an intelligent execution network and on-chain operating system for AI agents and DePIN workloads.",
+        "answer": [
+          "1. Theoretical Phase (BOHR): The original moniker BOHR honored physicist Niels Bohr, embodying foundational scientific exploration, cryptographic validation, and consensus physics during early network architecture testing.",
+          "2. Narrative Evolution to BOT: As the public chain evolved from technical validation to a multi-party commercial ecosystem, 'BOT' was selected to communicate intelligent execution, automated agent coordination, and modular AI infrastructure.",
+          "3. Intelligent Operating System: BOT precisely conveys the network's mission as the decentralized digital operating system powering autonomous Web3 agents, distributed machine learning, and cross-border computing resource scheduling."
+        ]
+      },
+      "verify-150m-bot-supply": {
+        "question": "How can participants verify the total fixed supply of 150 Million BOT tokens?",
+        "keywords": [
+          "150M BOT Supply",
+          "WBOT Address Verification",
+          "Block Explorer (scan.botchain.ai)",
+          "Cryptographic Proof"
+        ],
+        "geoTags": [
+          "On-Chain Transparency"
+        ],
+        "summary": "Verify transparently on-chain via the WBOT genesis contract address on scan.botchain.ai, and cross-reference with official whitepapers and exchange tracking pages.",
+        "answer": [
+          "1. Immutable On-Chain Ledger: The 150 Million BOT genesis allocation is publicly auditable on the BOT Chain Block Explorer (https://scan.botchain.ai) under the WBOT contract address.",
+          "2. Institutional Exchange Reconciliation: As upcoming centralized exchange listings finalize, total and circulating supply metrics are verified and displayed transparently on CoinMarketCap and CoinGecko."
+        ]
+      },
+      "mining-machine-pricing": {
+        "question": "Presentations listed the AI mining machine price as $3,960, but community calls mentioned $3,600. What is the official cost?",
+        "keywords": [
+          "AI Mining Machine Price",
+          "DePIN Rig Presale",
+          "Official Price Notice",
+          "Hardware Batches"
+        ],
+        "geoTags": [
+          "Global Hardware Delivery"
+        ],
+        "summary": "Early figures were preliminary estimates; all official hardware pricing, batch specs, and delivery schedules will be formally announced through official community channels prior to commercial shipment.",
+        "answer": [
+          "1. Preliminary Phase Notice: Figures shared in preliminary seminars ($3,600 – $3,960 USD) represented internal engineering estimates subject to supply chain component pricing.",
+          "2. Official Announcements: Binding commercial pricing, batch quantities, and international logistics details will be released exclusively through official verified channels (t.me/tunicacasupport and x.com/CaryPact_BOT)."
+        ]
+      },
+      "mining-machine-manufacturer": {
+        "question": "Which manufacturing partner is producing the physical BOT AI mining machines, and why is the name protected?",
+        "keywords": [
+          "Hardware Manufacturer",
+          "Tier-1 Fab NDA",
+          "DePIN Supply Chain",
+          "Confidentiality Agreement"
+        ],
+        "geoTags": [
+          "Global Manufacturing Consortium"
+        ],
+        "summary": "Hardware production is contracted with a tier-1 manufacturing partner under strict mutual non-disclosure agreements (NDAs) to protect proprietary chip supply lines until official rollout.",
+        "answer": [
+          "1. Strict Commercial NDAs: The manufacturing consortium operates under strict non-disclosure covenants to secure specialized chip allocation, prevent intellectual property infringement, and shield component supply chains.",
+          "2. Official Disclosure: The fabrication partners and colocation certifications will be formally unveiled alongside commercial rig shipments."
+        ]
+      },
+      "tier-1-mining-operators": {
+        "question": "Which institutional mining operators are currently deploying BOT mining infrastructure?",
+        "keywords": [
+          "Institutional Mining Consortia",
+          "Industrial Colocation",
+          "Validation Infrastructure"
+        ],
+        "geoTags": [
+          "Thailand Mining Facilities",
+          "Mongolia Data Centers"
+        ],
+        "summary": "Top-tier industrial mining operators with active facilities in Thailand and Mongolia are deploying hardware, with specific enterprise identities protected under NDA until joint announcement.",
+        "answer": [
+          "1. Regional Data Center Deployments: Major institutional operators in Thailand and Mongolia have initiated facility preparation and power allocations to support BOT mining clusters.",
+          "2. Enterprise NDAs: Joint public press releases will announce enterprise operator identities as grid connectivity milestones are reached."
+        ]
+      },
+      "carypact-compute-vs-bot-rigs": {
+        "question": "Who is currently using CaryPact computing power, and what is the difference between CA hashrate and physical BOT mining rigs?",
+        "keywords": [
+          "CA Hashrate vs BOT Mining Rigs",
+          "16,800 CA Pool",
+          "Enterprise AI Inference",
+          "Tokenized Compute"
+        ],
+        "geoTags": [
+          "Global Compute Grid"
+        ],
+        "summary": "CA hashrate is a standardized protocol accounting unit that distributes the 16,800 CA daily pool. Physical BOT mining rigs are tangible hardware machines that will sell real compute to external AI developers.",
+        "answer": [
+          "1. CA Computing Power (Internal Yield): Purchasing CA hashrate (1 USDT = 1 Unit) entitles the holder to a permanent mathematical share of the 16,800 CA daily emission pool. It serves as an internal reward distribution mechanism.",
+          "2. Physical BOT Mining Rigs (External Commercial AI): Physical BOT mining machines currently in production represent physical hardware. In the future, operators can establish decentralized mining farms to deliver real GPU/CPU computing capacity to external enterprise AI clients for model training and inference fees."
+        ]
+      },
+      "hashrate-supply-servers": {
+        "question": "Who provides the hashrate, and where are the physical servers located?",
+        "keywords": [
+          "Hashrate Allocation Model",
+          "Protocol Supercomputing",
+          "Decentralized Nodes"
+        ],
+        "geoTags": [
+          "Global Tier-3/4 Data Centers"
+        ],
+        "summary": "Purchasing hashrate activates an on-chain quota that determines your proportional share of daily CA token emissions, backed by global decentralized compute infrastructure.",
+        "answer": [
+          "1. Clarifying Hashrate Allocation: In the CaryPact protocol, acquiring hashrate does not mean renting a single dedicated server box. You are activating standardized computing power units on-chain.",
+          "2. Proportional Distribution: Your active hashrate relative to total global network hashrate determines your exact daily share of the 16,800 CA mining emission pool, compounded by duration coefficient K ≈ 1.01."
+        ]
+      },
+      "v4-earnings-differential": {
+        "question": "I reached V4 rank. Why did my daily earnings adjust, and how does the differential income model work?",
+        "keywords": [
+          "V4 Rank Income",
+          "Team Reward",
+          "Management Reward (7,000 CA)",
+          "POS Dynamic Reward (6%-30%)",
+          "Differential Payout"
+        ],
+        "geoTags": [
+          "Global Ambassador Network"
+        ],
+        "summary": "V4 leaders earn from 3 streams: Team Rewards (proportional to sub-network hashrate vs. global growth), Management Rewards (shared 7,000 CA pool), and POS Dynamic Differential (6%–30%).",
+        "answer": [
+          "1. Team Reward Dynamics: Team income is calculated as: Your Sub-network Hashrate ÷ Global Sub-network Hashrate. To increase daily CA earnings, your team's computing power activation must outpace the growth rate of the global network.",
+          "2. Management Pool Weighting: V4 members receive higher weighted multipliers from the fixed 7,000 CA daily emission pool. As more leaders climb into V4–V10 ranks, the pool is distributed among more qualifying leaders (pool decreases 10% every 2 years).",
+          "3. POS Differential Payout (6% to 30%): POS dynamic rewards pay out based on rank differential. The higher your VIP rank relative to your direct downlines, the higher the differential percentage you capture.",
+          "4. Compounding Advantage: All rewards are settled in liquid CA tokens. Leaders can stake rewards into POS to compound wealth while CA value steadily appreciates."
+        ]
+      },
+      "same-rank-bonus-distribution": {
+        "question": "If a downline member reaches the same or higher rank than me, how is bonus distribution handled?",
+        "keywords": [
+          "Equal Rank Sharing",
+          "Higher Rank Downline",
+          "Pool Sharing Eligibility",
+          "POS Override"
+        ],
+        "geoTags": [
+          "Community Leadership"
+        ],
+        "summary": "You continue earning from your eligible rank tiers (e.g. V5 earns from V1–V5 pools). If a team member equals your rank, they share the tier pool; POS dynamic differential pauses until you surpass their rank.",
+        "answer": [
+          "1. Tier Pool Rights: You earn from all pools up to your current achievement level (e.g., a V5 earns from V1 through V5 pools). A team member reaching your rank simply shares in those pools alongside you.",
+          "2. Differential Staking Break: For POS staking dynamic rewards, compensation relies on rank differential. If a downline matches your rank, the differential margin becomes zero for that specific branch until you advance to the next rank tier."
+        ]
+      },
+      "time-compensation-mechanism": {
+        "question": "Why are participants who upgrade to higher VIP ranks later not at a disadvantage?",
+        "keywords": [
+          "Time Compensation Mechanism",
+          "Fairness Algorithm",
+          "Late Joiner Equity",
+          "Sustainable Network Building"
+        ],
+        "geoTags": [
+          "Global Builder Community"
+        ],
+        "summary": "CaryPact's 'Time Compensation Mechanism' awards late-upgrading users higher weight compensation, mathematically preventing first-mover entrenchment and ensuring fair incentives.",
+        "answer": [
+          "1. Algorithmic Equity: Unlike legacy multi-level structures where early entrants permanently dilute late arrivals, CaryPact incorporates a programmatic Time Compensation Mechanism.",
+          "2. Dynamic Weight Boost: Builders who achieve VIP ranks in later phases receive enhanced weight multipliers, equalizing yield opportunities and sustaining viral motivation across all phases of network maturity."
+        ]
+      },
+      "dynamic-weight-v1-v10": {
+        "question": "How does the dynamic weight formula change from V1 through V10?",
+        "keywords": [
+          "Personal Weight Formula",
+          "V1 to V10 Multipliers",
+          "Base Level Weight",
+          "Time Bonus Scaling (1 to 383)"
+        ],
+        "geoTags": [
+          "Ecosystem Governance"
+        ],
+        "summary": "Personal Weight = Base Level Weight × Time Bonus. The combined weight scales smoothly from 1 at V1 up to approximately ~383 at V10, rewarding long-term ecosystem leadership.",
+        "answer": [
+          "1. Mathematical Weight Equation: Personal Weight = Base Level Weight × Time Bonus.",
+          "2. Multiplier Progression: At V1, the baseline weight begins at 1. Through progressive sub-network thresholds, the combined multiplier scales up to ~383 at V10, maximizing daily DAO dividend capture for top consensus partners."
+        ]
+      },
+      "wallet-hacked-recovery": {
+        "question": "What happens if a wallet is compromised, and can a CaryPact account structure be reconnected to a new wallet?",
+        "keywords": [
+          "12-Word Seed Phrase",
+          "Non-Custodial Security",
+          "Account Relinking Ticket",
+          "Anti-Phishing"
+        ],
+        "geoTags": [
+          "Self-Custody Web3"
+        ],
+        "summary": "Web3 wallets are strictly non-custodial; stolen on-chain funds cannot be reversed. To preserve your CaryPact affiliate position, generate a secure new wallet and submit a backend support ticket.",
+        "answer": [
+          "1. Non-Custodial Ownership: Blockchains enforce absolute user self-custody. Neither CaryPact nor wallet developers have custody of private keys or seed phrases. Once compromised, on-chain assets cannot be recalled.",
+          "2. 12-Word Seed Phrase Safeguard: Always write down your 12-word mnemonic phrase offline on physical paper. Never store seed phrases in cloud drives, screenshots, or chat apps.",
+          "3. Account Structure Relinking: If your address is compromised, immediately generate a fresh wallet with a new seed phrase on a clean device. Then, contact CaryPact official backend support to verify identity and re-point your account tree to the new address."
+        ]
+      },
+      "bo-wallet-vs-tokenpocket": {
+        "question": "Why use TokenPocket, MetaMask, or Trust Wallet when there is a native BO Wallet?",
+        "keywords": [
+          "BO Wallet",
+          "TokenPocket Support",
+          "MetaMask Integration",
+          "EVM Compatibility (Chain ID 1918)"
+        ],
+        "geoTags": [
+          "Global Web3 Wallets"
+        ],
+        "summary": "BO Wallet is the purpose-built ecosystem client currently being enhanced. We maintain complete compatibility with TokenPocket, MetaMask, and Trust Wallet to ensure global user choice.",
+        "answer": [
+          "1. Ongoing BO Wallet Optimization: BO Wallet is tailored specifically for BOT Chain features. It is undergoing continuous optimization before global consumer marketing campaigns commence.",
+          "2. Open Web3 Freedom: BOT Chain is fully EVM-compatible (Chain ID 1918). Users enjoy unrestricted flexibility to use trusted wallets like TokenPocket, Trust Wallet, or MetaMask according to their personal workflow."
+        ]
+      },
+      "headquarters-global-offices": {
+        "question": "Where are the primary headquarters and global regional offices of CaryPact and CoinStore located?",
+        "keywords": [
+          "Singapore Operations Base",
+          "Hong Kong 7,000 sq ft Hub",
+          "Dubai UAE Office",
+          "Thailand Regional Office",
+          "Brazil Expansion"
+        ],
+        "geoTags": [
+          "Singapore (Global HQ)",
+          "Hong Kong (Consensus Hub)",
+          "Dubai, UAE (Web3 Center)",
+          "Bangkok, Thailand",
+          "São Paulo, Brazil"
+        ],
+        "summary": "Main operations for CaryPact and CoinStore are anchored in Singapore. Active regional operations in Thailand; two flagship 7,000 sq ft regional hubs opening in Hong Kong and Dubai (Q2/Q3 2026); Brazil expansion planned.",
+        "answer": [
+          "1. Singapore Central Hub: Both CaryPact and strategic partner CoinStore operate central operational and technological headquarters in Singapore.",
+          "2. Active Thailand Center: Regional operations and developer outreach are actively functioning in Thailand.",
+          "3. Hong Kong & Dubai Flagship Hubs: Expanding with two expansive ~7,000 square foot regional offices in Hong Kong and Dubai, opening around June/July 2026 to support Middle Eastern and East Asian institutional partners.",
+          "4. Latin America (Brazil): Preparations are underway to establish a Latin American regional operations center in Brazil to accommodate fast-growing South American community adoption."
+        ]
+      },
+      "why-not-registered-company": {
+        "question": "Why has CaryPact not registered as a traditional centralized corporate company?",
+        "keywords": [
+          "Protocol-First Architecture",
+          "DeFi Decentralization",
+          "Censorship Resistance",
+          "Smart Contract Governance"
+        ],
+        "geoTags": [
+          "Global Autonomous Protocol"
+        ],
+        "summary": "CaryPact is architected as an autonomous DeFi protocol—not a corporate entity. Protocol-first smart contracts guarantee censorship resistance, transparency, and community-driven governance.",
+        "answer": [
+          "1. Protocol-First Decentralization: CaryPact operates as an autonomous DeFi protocol executed entirely on blockchain infrastructure. Governance, daily rewards, and compute scheduling are coordinated transparently on-chain.",
+          "2. Avoiding Centralized Jurisdiction Risk: Traditional corporate incorporation creates single points of failure, bureaucratic bottlenecks, and jurisdictional liabilities that conflict with the core Web3 tenets of decentralization, censorship resistance, and permissionless access.",
+          "3. Global Developer Collective: Aligning with premier decentralized networks (like Ethereum and Bitcoin), CaryPact evolves through open collaboration among an international network of developers, node operators, and participants."
+        ]
+      },
+      "cmc-coingecko-volume-changes": {
+        "question": "Why did trading volume displayed on CoinMarketCap/CoinGecko adjust from billions to hundreds of millions?",
+        "keywords": [
+          "CoinMarketCap Volume Sync",
+          "CoinGecko API Indexing",
+          "DEX Liquidity Verification",
+          "Real-Time Scan"
+        ],
+        "geoTags": [
+          "Global Data Aggregators"
+        ],
+        "summary": "Aggregators frequently calibrate API filters, wash-trading algorithms, and DEX pair weightings. Authentic on-chain liquidity and transaction throughput remain verifiable 24/7 on scan.botchain.ai.",
+        "answer": [
+          "1. Aggregator API Calibrations: Third-party aggregators (CMC, CoinGecko) periodically recalibrate internal indexing filters, deduplicate synthetic DEX pairs, or adjust reported liquidity tiers.",
+          "2. True On-Chain Transparency: Rather than relying solely on third-party aggregators, all actual swap transactions, pool depths, and burn events are verifiable on the public BOT Chain explorer (https://scan.botchain.ai)."
+        ]
+      },
+      "ca-card-mobile-roadmap": {
+        "question": "What is the release timeline for the CA Crypto Card and CA Web3 Mobile Phone?",
+        "keywords": [
+          "CA Crypto Card",
+          "CA Smartphone",
+          "Web3 Hardware Utility",
+          "Community Roadmap"
+        ],
+        "geoTags": [
+          "Global Consumer Rollout"
+        ],
+        "summary": "Hardware utilities including crypto debit cards and dedicated Web3 mobile hardware are in technical planning, with formal rollouts timed to key global community expansion milestones.",
+        "answer": [
+          "1. Hardware Ecosystem Roadmap: Physical crypto debit cards and integrated Web3 handheld hardware are actively being conceptualized by ecosystem working groups.",
+          "2. Milestone-Driven Releases: Official development roadmaps, technical hardware specs, and pre-order registration windows will be formally announced as global user benchmarks are achieved."
+        ]
+      }
+    }
+  }
 
 }
