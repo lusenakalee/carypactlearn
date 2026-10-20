@@ -3,6 +3,7 @@
 import HeroVideoPlayer from "@/components/HeroVideoPlayer";
 import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS, HERO_STATS } from "@/config/constants";
 import { useTokenPrices, type TokenPrice } from "@/hooks/useTokenPrices";
+import { track } from "@/lib/analytics";
 import {
     ArrowRight,
     Coins,
@@ -94,6 +95,14 @@ export default function HeroSection({
         )}
       </div>
     );
+  };
+
+  const handleRegisterClick = () => {
+    track("register_click", {
+      location: "hero",
+      lang: locale,
+      destination: AFFILIATE_CONFIG.APP_URL,
+    });
   };
 
   const handleSearchSubmit = (e: React.FormEvent) => {
@@ -262,6 +271,7 @@ export default function HeroSection({
               href={AFFILIATE_CONFIG.APP_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleRegisterClick}
               id="hero-register-cta-btn"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#7B4FFF] hover:bg-[#6D3DF5] text-white text-xs font-bold uppercase tracking-wider transition-all shadow-lg shadow-[#7B4FFF]/25"
             >

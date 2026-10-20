@@ -8,6 +8,8 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import FloatingSupportDock from "@/components/FloatingSupportDock";
 import WebsiteJsonLd from "@/components/WebsiteJsonLd";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -92,6 +94,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <FloatingSupportDock />
         </LocaleProvider>
         <Analytics />
+                <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       </body>
     </html>
   );

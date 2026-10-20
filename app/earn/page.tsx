@@ -25,6 +25,7 @@ import {
 import { useLocale, useTranslations } from "next-intl";
 import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS } from "@/config/constants";
 import WalletLaunchButton from "@/components/wallet/WalletLaunchButton";
+import { track } from "@/lib/analytics";
 
 /** **bold** markup -> <strong> */
 const rich = (s: string, cls = "text-white") =>
@@ -37,6 +38,27 @@ const rich = (s: string, cls = "text-white") =>
       <React.Fragment key={i}>{part}</React.Fragment>
     )
   );
+
+/**
+ * Fires a GA4 event when anything inside is clicked. Uses the capture phase and
+ * `display: contents`, so it works with any child (including WalletLaunchButton)
+ * without changing layout or needing the child to accept an onClick prop.
+ */
+function TrackClick({
+  event,
+  params,
+  children,
+}: {
+  event: string;
+  params: Record<string, string | number | boolean>;
+  children: React.ReactNode;
+}) {
+  return (
+    <span className="contents" onClickCapture={() => track(event, params)}>
+      {children}
+    </span>
+  );
+}
 
 export default function EarnPage() {
   const locale = useLocale();
@@ -53,6 +75,15 @@ export default function EarnPage() {
   };
 
   const numLocale = locale === "zh" ? "zh-CN" : locale;
+
+  /** props for <TrackClick> on outbound "launch app" buttons */
+  const cta = (name: string, placement: string, destination: string) => ({
+    event: "cta_click",
+    params: { cta: name, location: `earn_${placement}`, lang: locale, destination },
+  });
+  const trackNav = (target: string) => track("nav_click", { target, location: "earn_anchor_nav", lang: locale });
+  const trackCalc = (calculator: string, option: string, value: string | number) =>
+    track("calculator_option", { calculator, option, value, lang: locale });
 
   const [aiModalOpen, setAiModalOpen] = useState(false);
   const [aiInitialQuestion, setAiInitialQuestion] = useState("");
@@ -170,7 +201,10 @@ export default function EarnPage() {
               {/* Quick Actions */}
               <div className="flex flex-wrap items-center gap-3 w-full lg:w-auto shrink-0">
                 <button
-                  onClick={() => setPdfModalOpen(true)}
+                  onClick={() => {
+                    track("cta_click", { cta: "cheat_sheet_pdf", location: "earn_hero", lang: locale });
+                    setPdfModalOpen(true);
+                  }}
                   id="earn-download-pdf-btn"
                   className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-[#141A2E] hover:bg-[#1C243E] text-[#22D3FF] text-xs font-bold uppercase tracking-wider border border-[#232F4E] transition-all cursor-pointer shadow-md"
                 >
@@ -182,7 +216,7 @@ export default function EarnPage() {
 
             {/* Quick Anchor Navigation */}
             <div className="mt-10 pt-6 border-t border-[#1C2542] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-              <a href="#ca-hashrate" className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group">
+              <a href="#ca-hashrate" onClick={() => trackNav("ca_hashrate")} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group">
                 <Zap className="w-4 h-4 text-[#22D3FF] group-hover:scale-110 transition-transform" />
                 <div className="text-left">
                   <div className="text-[11px] font-mono text-[#8EA2C6]">{t("nav.method", { n: 1 })}</div>
@@ -190,7 +224,7 @@ export default function EarnPage() {
                 </div>
               </a>
 
-              <a href="#pos-mining" className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group">
+              <a href="#pos-mining" onClick={() => trackNav("pos_mining")} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group">
                 <Coins className="w-4 h-4 text-[#A855F7] group-hover:scale-110 transition-transform" />
                 <div className="text-left">
                   <div className="text-[11px] font-mono text-[#8EA2C6]">{t("nav.method", { n: 2 })}</div>
@@ -198,7 +232,7 @@ export default function EarnPage() {
                 </div>
               </a>
 
-              <a href="#mining-servers" className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group">
+              <a href="#mining-servers" onClick={() => trackNav("mining_servers")} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group">
                 <Server className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
                 <div className="text-left">
                   <div className="text-[11px] font-mono text-[#8EA2C6]">{t("nav.method", { n: 3 })}</div>
@@ -206,7 +240,7 @@ export default function EarnPage() {
                 </div>
               </a>
 
-              <a href="#bot-hashrate" className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group">
+              <a href="#bot-hashrate" onClick={() => trackNav("bot_hashrate")} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group">
                 <Cpu className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" />
                 <div className="text-left">
                   <div className="text-[11px] font-mono text-[#8EA2C6]">{t("nav.method", { n: 4 })}</div>
@@ -214,7 +248,7 @@ export default function EarnPage() {
                 </div>
               </a>
 
-              <a href="#bot-pledge" className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group col-span-2 sm:col-span-1">
+              <a href="#bot-pledge" onClick={() => trackNav("bot_pledge")} className="flex items-center gap-2.5 p-3 rounded-xl bg-[#101428] hover:bg-[#161C36] border border-[#1E2746] transition-all group col-span-2 sm:col-span-1">
                 <Layers className="w-4 h-4 text-[#38BDF8] group-hover:scale-110 transition-transform" />
                 <div className="text-left">
                   <div className="text-[11px] font-mono text-[#8EA2C6]">{t("nav.method", { n: 5 })}</div>
@@ -246,14 +280,16 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl">{t("ca.desc")}</p>
               </div>
 
-              <WalletLaunchButton
-                url={AFFILIATE_CONFIG.PURCHASE_HASHRATE_URL}
-                id="cta-buy-ca-hashrate-page"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#22D3FF] to-[#0EA5E9] hover:from-[#38BDF8] hover:to-[#0284C7] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#22D3FF]/25 cursor-pointer shrink-0"
-              >
-                <span>{t("ca.cta")}</span>
-                <ExternalLink className="w-4 h-4" />
-              </WalletLaunchButton>
+              <TrackClick {...cta("ca_hashrate", "section_header", AFFILIATE_CONFIG.PURCHASE_HASHRATE_URL)}>
+                <WalletLaunchButton
+                  url={AFFILIATE_CONFIG.PURCHASE_HASHRATE_URL}
+                  id="cta-buy-ca-hashrate-page"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#22D3FF] to-[#0EA5E9] hover:from-[#38BDF8] hover:to-[#0284C7] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#22D3FF]/25 cursor-pointer shrink-0"
+                >
+                  <span>{t("ca.cta")}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </WalletLaunchButton>
+              </TrackClick>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -404,14 +440,16 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl">{t("pos.desc")}</p>
               </div>
 
-              <WalletLaunchButton
-                url={AFFILIATE_CONFIG.POS_MINING_URL}
-                id="cta-pos-mining-page"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#A855F7] to-[#7B4FFF] hover:from-[#B568F8] hover:to-[#6C3FEF] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#A855F7]/25 cursor-pointer shrink-0"
-              >
-                <span>{t("pos.cta")}</span>
-                <ExternalLink className="w-4 h-4" />
-              </WalletLaunchButton>
+              <TrackClick {...cta("pos_mining", "section_header", AFFILIATE_CONFIG.POS_MINING_URL)}>
+                <WalletLaunchButton
+                  url={AFFILIATE_CONFIG.POS_MINING_URL}
+                  id="cta-pos-mining-page"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#A855F7] to-[#7B4FFF] hover:from-[#B568F8] hover:to-[#6C3FEF] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#A855F7]/25 cursor-pointer shrink-0"
+                >
+                  <span>{t("pos.cta")}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </WalletLaunchButton>
+              </TrackClick>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
@@ -481,7 +519,10 @@ export default function EarnPage() {
                     {[30, 90, 180, 360].map((d) => (
                       <button
                         key={d}
-                        onClick={() => setPosDays(d)}
+                        onClick={() => {
+                          setPosDays(d);
+                          trackCalc("pos", "duration_days", d);
+                        }}
                         className={`py-2 text-xs font-bold rounded-lg border transition-colors cursor-pointer ${posDays === d ? "bg-[#7B4FFF] text-white border-[#A855F7]" : "bg-[#151A31] text-[#94A3B8] border-[#202744] hover:bg-[#1A213D]"}`}
                       >
                         {t("pos.durationBtn", { days: d, m: getMultiplier(d) })}
@@ -528,14 +569,16 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl">{t("servers.desc")}</p>
               </div>
 
-              <WalletLaunchButton
-                url={AFFILIATE_CONFIG.MINING_SERVERS_URL}
-                id="cta-mining-servers-page"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-amber-400/20 cursor-pointer shrink-0"
-              >
-                <span>{t("servers.cta")}</span>
-                <ExternalLink className="w-4 h-4" />
-              </WalletLaunchButton>
+              <TrackClick {...cta("mining_servers", "section_header", AFFILIATE_CONFIG.MINING_SERVERS_URL)}>
+                <WalletLaunchButton
+                  url={AFFILIATE_CONFIG.MINING_SERVERS_URL}
+                  id="cta-mining-servers-page"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-amber-400/20 cursor-pointer shrink-0"
+                >
+                  <span>{t("servers.cta")}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </WalletLaunchButton>
+              </TrackClick>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
@@ -611,14 +654,16 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl">{t("botHash.desc")}</p>
               </div>
 
-              <WalletLaunchButton
-                url={AFFILIATE_CONFIG.BOT_HASHRATE_URL}
-                id="cta-bot-hashrate-page"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-emerald-400/20 cursor-pointer shrink-0"
-              >
-                <span>{t("botHash.cta")}</span>
-                <ExternalLink className="w-4 h-4" />
-              </WalletLaunchButton>
+              <TrackClick {...cta("bot_hashrate", "section_header", AFFILIATE_CONFIG.BOT_HASHRATE_URL)}>
+                <WalletLaunchButton
+                  url={AFFILIATE_CONFIG.BOT_HASHRATE_URL}
+                  id="cta-bot-hashrate-page"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-emerald-400/20 cursor-pointer shrink-0"
+                >
+                  <span>{t("botHash.cta")}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </WalletLaunchButton>
+              </TrackClick>
             </div>
 
             <div className="rounded-3xl bg-[#101428] border border-[#1F2746] p-6 sm:p-8 mb-10">
@@ -685,14 +730,16 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl leading-relaxed">{t("pledge.desc")}</p>
               </div>
 
-              <WalletLaunchButton
-                url={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
-                id="cta-bot-pledge-page"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#38BDF8] to-[#0284C7] hover:from-[#60A5FA] hover:to-[#0369A1] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#38BDF8]/20 cursor-pointer shrink-0"
-              >
-                <span>{t("pledge.cta")}</span>
-                <ExternalLink className="w-4 h-4" />
-              </WalletLaunchButton>
+              <TrackClick {...cta("bot_pledge", "section_header", AFFILIATE_CONFIG.BOT_PLEDGE_URL)}>
+                <WalletLaunchButton
+                  url={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
+                  id="cta-bot-pledge-page"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#38BDF8] to-[#0284C7] hover:from-[#60A5FA] hover:to-[#0369A1] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#38BDF8]/20 cursor-pointer shrink-0"
+                >
+                  <span>{t("pledge.cta")}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </WalletLaunchButton>
+              </TrackClick>
             </div>
 
             {/* Basic Rules */}
@@ -810,7 +857,10 @@ export default function EarnPage() {
                     {[7, 30, 90, 180, 365].map((days) => (
                       <button
                         key={days}
-                        onClick={() => setBotPledgeSimulatedDays(days)}
+                        onClick={() => {
+                          setBotPledgeSimulatedDays(days);
+                          trackCalc("bot_pledge", "duration_days", days);
+                        }}
                         className={`py-2 text-xs font-bold rounded-xl border transition-all cursor-pointer ${
                           botPledgeSimulatedDays === days
                             ? "bg-[#38BDF8] text-[#070913] border-[#38BDF8] shadow-md shadow-[#38BDF8]/20"
@@ -832,7 +882,10 @@ export default function EarnPage() {
                     <div className="text-[11px] text-[#8EA2C6]">{t("pledge.toggleDesc")}</div>
                   </div>
                   <button
-                    onClick={() => setBotPledgeAutoCompound(!botPledgeAutoCompound)}
+                    onClick={() => {
+                      setBotPledgeAutoCompound(!botPledgeAutoCompound);
+                      trackCalc("bot_pledge", "auto_compound", !botPledgeAutoCompound ? "on" : "off");
+                    }}
                     aria-pressed={botPledgeAutoCompound}
                     aria-label={t("pledge.toggleTitle")}
                     className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors cursor-pointer ${
@@ -912,13 +965,15 @@ export default function EarnPage() {
 
                 <div className="p-4 rounded-2xl bg-gradient-to-r from-[#11162C] to-[#151D3A] border border-[#222E54] flex items-center justify-between gap-3">
                   <div className="text-xs text-[#CBD5E1]">{t("pledge.readyText")}</div>
-                  <WalletLaunchButton
-                    url={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#38BDF8] text-[#070913] text-xs font-bold shrink-0 hover:bg-[#60A5FA] transition-colors"
-                  >
-                    <span>{t("pledge.launchPortal")}</span>
-                    <ExternalLink className="w-3 h-3" />
-                  </WalletLaunchButton>
+                  <TrackClick {...cta("bot_pledge", "ready_card", AFFILIATE_CONFIG.BOT_PLEDGE_URL)}>
+                    <WalletLaunchButton
+                      url={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
+                      className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#38BDF8] text-[#070913] text-xs font-bold shrink-0 hover:bg-[#60A5FA] transition-colors"
+                    >
+                      <span>{t("pledge.launchPortal")}</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </WalletLaunchButton>
+                  </TrackClick>
                 </div>
               </div>
             </div>
