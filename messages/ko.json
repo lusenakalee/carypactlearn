@@ -748,6 +748,27 @@
       "r3Title": "탈중앙화 토큰 변동성:",
       "r3Desc": "암호화폐 자산 가격은 시장 수요, 컴퓨팅 도입, 거시경제 요인에 따라 변동합니다. 잃어도 감당할 수 없는 자금은 절대 투입하지 마세요."
     }
-  }
+  },
+  "wallet": {
+  "title": "지갑에서 열기",
+  "subtitle": "CaryPact 앱은 DApp입니다. 지갑의 내장 브라우저 안에서 실행해야 합니다.",
+  "chooseWallet": "지갑 선택",
+  "lastUsed": "마지막 사용",
+  "openIn": "{wallet}에서 열기",
+  "launching": "{wallet} 여는 중…",
+  "launchingHint": "지갑 앱이 열리면 그곳에서 계속 진행하세요.",
+  "fallbackTitle": "{wallet}이(가) 열리지 않나요?",
+  "fallbackDesc": "지갑이 설치되어 있지 않거나 기기가 링크를 차단했을 수 있습니다. 일반 링크를 열거나 아래 수동 방법을 따르세요.",
+  "openNormal": "일반 링크 열기",
+  "copyLink": "링크 복사",
+  "copied": "복사됨",
+  "stepsTitle": "수동으로 열기",
+  "step1": "아래 링크를 복사하세요.",
+  "step2": "지갑 앱을 열고 DApp 브라우저(보통 '브라우저' 또는 '탐색'이라고 표시됨)로 이동하세요.",
+  "step3": "주소창에 링크를 붙여넣고 여세요.",
+  "install": "아직 지갑이 없나요? 먼저 앱 스토어에서 MetaMask, Trust Wallet 또는 TokenPocket을 설치하세요.",
+  "tryAnother": "다른 지갑 시도",
+  "close": "닫기"
+}
 
 }

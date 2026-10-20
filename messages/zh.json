@@ -748,7 +748,28 @@
       "r3Title": "去中心化代币波动：",
       "r3Desc": "加密资产价格会随市场需求、算力采用情况和宏观经济因素而波动。切勿投入您无法承受损失的资金。"
     }
-  }
+  },
+  "wallet": {
+  "title": "在钱包中打开",
+  "subtitle": "CaryPact 应用是一个 DApp，必须在钱包的内置浏览器中运行。",
+  "chooseWallet": "选择你的钱包",
+  "lastUsed": "上次使用",
+  "openIn": "在 {wallet} 中打开",
+  "launching": "正在打开 {wallet}…",
+  "launchingHint": "如果钱包应用已打开，请在其中继续。",
+  "fallbackTitle": "{wallet} 没有打开？",
+  "fallbackDesc": "可能未安装该钱包，或设备拦截了链接。请打开普通链接，或按下方步骤手动操作。",
+  "openNormal": "打开普通链接",
+  "copyLink": "复制链接",
+  "copied": "已复制",
+  "stepsTitle": "手动打开",
+  "step1": "复制下方链接。",
+  "step2": "打开钱包应用，进入其 DApp 浏览器（通常名为“浏览器”或“发现”）。",
+  "step3": "将链接粘贴到地址栏并打开。",
+  "install": "还没有钱包？请先从应用商店安装 MetaMask、Trust Wallet 或 TokenPocket。",
+  "tryAnother": "尝试其他钱包",
+  "close": "关闭"
+}
 
   
 }

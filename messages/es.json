@@ -781,6 +781,28 @@
       "r3Title": "Volatilidad de los tokens descentralizados:",
       "r3Desc": "Los precios de las criptomonedas fluctúan según la demanda del mercado, la adopción del cómputo y los factores macroeconómicos. Nunca inviertas capital que no puedas permitirte arriesgar."
     }
-  }
+  },
+  "wallet": {
+  "title": "Abrir en tu billetera",
+  "subtitle": "La app de CaryPact es una DApp. Debe ejecutarse dentro del navegador integrado de una billetera.",
+  "chooseWallet": "Elige tu billetera",
+  "lastUsed": "Último uso",
+  "openIn": "Abrir en {wallet}",
+  "launching": "Abriendo {wallet}…",
+  "launchingHint": "Si se abre la app de tu billetera, continúa allí.",
+  "fallbackTitle": "¿No se abrió {wallet}?",
+  "fallbackDesc": "Puede que la billetera no esté instalada o que tu dispositivo haya bloqueado el enlace. Abre el enlace normal o sigue los pasos manuales de abajo.",
+  "openNormal": "Abrir enlace normal",
+  "copyLink": "Copiar enlace",
+  "copied": "Copiado",
+  "stepsTitle": "Ábrelo manualmente",
+  "step1": "Copia el enlace de abajo.",
+  "step2": "Abre la app de tu billetera y ve a su navegador DApp (normalmente llamado Navegador o Descubrir).",
+  "step3": "Pega el enlace en la barra de direcciones y ábrelo.",
+  "install": "¿Aún no tienes billetera? Instala primero MetaMask, Trust Wallet o TokenPocket desde tu tienda de apps.",
+  "tryAnother": "Probar otra billetera",
+  "close": "Cerrar"
+}
+  
 
 }

@@ -781,6 +781,27 @@
       "r3Title": "Volatilité des tokens décentralisés :",
       "r3Desc": "Les prix des cryptomonnaies fluctuent selon la demande du marché, l’adoption du calcul et les facteurs macroéconomiques. N’engagez jamais un capital que vous ne pouvez pas vous permettre de risquer."
     }
-  }
+  },
+  "wallet": {
+  "title": "Ouvrir dans votre portefeuille",
+  "subtitle": "L'application CaryPact est une DApp. Elle doit s'exécuter dans le navigateur intégré d'un portefeuille.",
+  "chooseWallet": "Choisissez votre portefeuille",
+  "lastUsed": "Dernier utilisé",
+  "openIn": "Ouvrir dans {wallet}",
+  "launching": "Ouverture de {wallet}…",
+  "launchingHint": "Si l'application de votre portefeuille s'ouvre, continuez-y.",
+  "fallbackTitle": "{wallet} ne s'est pas ouvert ?",
+  "fallbackDesc": "Le portefeuille n'est peut-être pas installé, ou votre appareil a bloqué le lien. Ouvrez le lien normal ou suivez les étapes manuelles ci-dessous.",
+  "openNormal": "Ouvrir le lien normal",
+  "copyLink": "Copier le lien",
+  "copied": "Copié",
+  "stepsTitle": "Ouvrir manuellement",
+  "step1": "Copiez le lien ci-dessous.",
+  "step2": "Ouvrez l'application de votre portefeuille et accédez à son navigateur DApp (souvent nommé Navigateur ou Découvrir).",
+  "step3": "Collez le lien dans la barre d'adresse et ouvrez-le.",
+  "install": "Pas encore de portefeuille ? Installez d'abord MetaMask, Trust Wallet ou TokenPocket depuis votre boutique d'applications.",
+  "tryAnother": "Essayer un autre portefeuille",
+  "close": "Fermer"
+}
 
 }

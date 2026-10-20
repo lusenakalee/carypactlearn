@@ -748,6 +748,27 @@
       "r3Title": "Biến động của token phi tập trung:",
       "r3Desc": "Giá tài sản tiền mã hóa biến động theo nhu cầu thị trường, mức độ ứng dụng tính toán và các yếu tố kinh tế vĩ mô. Đừng bao giờ đầu tư số vốn mà bạn không thể chấp nhận rủi ro mất."
     }
-  }
+  },
+  "wallet": {
+  "title": "Mở trong ví của bạn",
+  "subtitle": "Ứng dụng CaryPact là một DApp. Cần chạy trong trình duyệt tích hợp của ví.",
+  "chooseWallet": "Chọn ví của bạn",
+  "lastUsed": "Dùng gần nhất",
+  "openIn": "Mở trong {wallet}",
+  "launching": "Đang mở {wallet}…",
+  "launchingHint": "Nếu ứng dụng ví đã mở, hãy tiếp tục tại đó.",
+  "fallbackTitle": "{wallet} không mở được?",
+  "fallbackDesc": "Có thể ví chưa được cài đặt hoặc thiết bị đã chặn liên kết. Hãy mở liên kết thông thường hoặc làm theo các bước thủ công bên dưới.",
+  "openNormal": "Mở liên kết thông thường",
+  "copyLink": "Sao chép liên kết",
+  "copied": "Đã sao chép",
+  "stepsTitle": "Mở thủ công",
+  "step1": "Sao chép liên kết bên dưới.",
+  "step2": "Mở ứng dụng ví và vào trình duyệt DApp của ví (thường tên là Browser hoặc Discover).",
+  "step3": "Dán liên kết vào thanh địa chỉ và mở.",
+  "install": "Chưa có ví? Hãy cài MetaMask, Trust Wallet hoặc TokenPocket từ cửa hàng ứng dụng trước.",
+  "tryAnother": "Thử ví khác",
+  "close": "Đóng"
+}
 
 }
