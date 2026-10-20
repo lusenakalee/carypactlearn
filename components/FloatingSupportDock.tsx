@@ -234,31 +234,7 @@ export default function FloatingSupportDock() {
         </div>
 
         {/* WhatsApp Icon Button */}
-        <div className="relative">
-          <a
-            href={waUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            id="floating-dock-whatsapp-btn"
-            onMouseEnter={() => setActiveTooltip("whatsapp")}
-            onMouseLeave={() => setActiveTooltip(null)}
-            className="relative flex items-center justify-center w-11 h-11 rounded-full bg-[#0E1326] hover:bg-[#25D366] border border-[#1E2640] hover:border-[#25D366] text-[#25D366] hover:text-black transition-all duration-200 shadow-md group/wa cursor-pointer"
-            aria-label="Open WhatsApp Support"
-          >
-            <svg className="w-5 h-5 fill-current transition-transform group-hover/wa:scale-110" viewBox="0 0 24 24">
-              <path d="M12.004 2c-5.518 0-9.996 4.477-9.996 9.996a9.96 9.96 0 0 0 1.528 5.344L2.06 21.94a.75.75 0 0 0 .937.938l4.733-1.434a9.96 9.96 0 0 0 4.274.952c5.518 0 9.996-4.477 9.996-9.996S17.522 2 12.004 2zm5.545 13.784c-.23.648-1.157 1.242-1.742 1.344-.45.078-1.041.134-3.08-.71a10.978 10.978 0 0 1-4.787-4.225c-.244-.337-1.156-1.54-1.156-2.936 0-1.397.733-2.083.992-2.368.26-.285.568-.356.758-.356.19 0 .378.002.544.01.176.009.412-.067.644.49.24.577.818 1.996.89 2.141.071.144.119.314.024.503-.095.19-.142.308-.284.474-.142.166-.3.37-.428.497-.142.142-.29.297-.124.582.166.285.738 1.218 1.583 1.97 1.088.97 2.005 1.272 2.29 1.414.285.142.45.119.617-.071.166-.19.71-.83.901-1.115.19-.285.38-.238.64-.142.26.095 1.657.781 1.942.923.284.143.474.214.544.333.071.119.071.69-.159 1.338z"/>
-            </svg>
-            {/* Online Green Ping */}
-            <span className="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-[#0B0E1D]" />
-          </a>
-
-          {/* Desktop Hover Tooltip */}
-          {activeTooltip === "whatsapp" && (
-            <div className="hidden sm:block absolute bottom-full mb-2 right-1/2 translate-x-1/2 px-2.5 py-1 rounded-md bg-[#0F1424] border border-[#232B45] text-[11px] font-medium text-white shadow-lg whitespace-nowrap pointer-events-none animate-in fade-in zoom-in-95 duration-150">
-              WhatsApp Support
-            </div>
-          )}
-        </div>
+        
 
         {/* Divider */}
         <div className="w-px h-5 bg-[#1F2740]" />

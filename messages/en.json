@@ -787,5 +787,28 @@
     "r3Title": "Decentralized Token Volatility:",
     "r3Desc": "Cryptocurrency asset prices fluctuate based on market demand, compute adoption, and macroeconomic factors. Never allocate capital you cannot afford to risk."
   }
-}
+},
+
+  "wallet": {
+    "title": "Open in your wallet",
+    "subtitle": "The CaryPact app is a DApp. It must run inside a wallet's built-in browser.",
+    "chooseWallet": "Choose your wallet",
+    "lastUsed": "Last used",
+    "openIn": "Open in {wallet}",
+    "launching": "Opening {wallet}…",
+    "launchingHint": "If your wallet app opens, continue there.",
+    "fallbackTitle": "{wallet} didn't open?",
+    "fallbackDesc": "The wallet may not be installed, or your device blocked the link. Open the normal link, or follow the manual steps below.",
+    "openNormal": "Open normal link",
+    "copyLink": "Copy link",
+    "copied": "Copied",
+    "stepsTitle": "Open it manually",
+    "step1": "Copy the link below.",
+    "step2": "Open your wallet app and go to its DApp browser (usually called Browser or Discover).",
+    "step3": "Paste the link into the address bar and open it.",
+    "install": "Don't have a wallet yet? Install MetaMask, Trust Wallet or TokenPocket from your app store first.",
+    "tryAnother": "Try another wallet",
+    "close": "Close"
+  }
+
 }

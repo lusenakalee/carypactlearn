@@ -160,7 +160,7 @@ export const FAQ_DATA: FaqItem[] = [
     summary: "Early figures were preliminary estimates; all official hardware pricing, batch specs, and delivery schedules will be formally announced through official community channels prior to commercial shipment.",
     answerParagraphs: [
       "1. Preliminary Phase Notice: Figures shared in preliminary seminars ($3,600 – $3,960 USD) represented internal engineering estimates subject to supply chain component pricing.",
-      "2. Official Announcements: Binding commercial pricing, batch quantities, and international logistics details will be released exclusively through official verified channels (t.me/CaryPactOfficial and x.com/CaryPact_BOT)."
+      "2. Official Announcements: Binding commercial pricing, batch quantities, and international logistics details will be released exclusively through official verified channels (t.me/tunicacasupport and x.com/CaryPact_BOT)."
     ]
   },
   {

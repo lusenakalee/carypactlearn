@@ -24,6 +24,7 @@ import {
 
 import { useLocale, useTranslations } from "next-intl";
 import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS } from "@/config/constants";
+import WalletLaunchButton from "@/components/wallet/WalletLaunchButton";
 
 /** **bold** markup -> <strong> */
 const rich = (s: string, cls = "text-white") =>
@@ -245,16 +246,14 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl">{t("ca.desc")}</p>
               </div>
 
-              <a
-                href={AFFILIATE_CONFIG.PURCHASE_HASHRATE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WalletLaunchButton
+                url={AFFILIATE_CONFIG.PURCHASE_HASHRATE_URL}
                 id="cta-buy-ca-hashrate-page"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#22D3FF] to-[#0EA5E9] hover:from-[#38BDF8] hover:to-[#0284C7] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#22D3FF]/25 cursor-pointer shrink-0"
               >
                 <span>{t("ca.cta")}</span>
                 <ExternalLink className="w-4 h-4" />
-              </a>
+              </WalletLaunchButton>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -405,16 +404,14 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl">{t("pos.desc")}</p>
               </div>
 
-              <a
-                href={AFFILIATE_CONFIG.POS_MINING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WalletLaunchButton
+                url={AFFILIATE_CONFIG.POS_MINING_URL}
                 id="cta-pos-mining-page"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#A855F7] to-[#7B4FFF] hover:from-[#B568F8] hover:to-[#6C3FEF] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#A855F7]/25 cursor-pointer shrink-0"
               >
                 <span>{t("pos.cta")}</span>
                 <ExternalLink className="w-4 h-4" />
-              </a>
+              </WalletLaunchButton>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
@@ -531,16 +528,14 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl">{t("servers.desc")}</p>
               </div>
 
-              <a
-                href={AFFILIATE_CONFIG.MINING_SERVERS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WalletLaunchButton
+                url={AFFILIATE_CONFIG.MINING_SERVERS_URL}
                 id="cta-mining-servers-page"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-amber-400/20 cursor-pointer shrink-0"
               >
                 <span>{t("servers.cta")}</span>
                 <ExternalLink className="w-4 h-4" />
-              </a>
+              </WalletLaunchButton>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
@@ -616,16 +611,14 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl">{t("botHash.desc")}</p>
               </div>
 
-              <a
-                href={AFFILIATE_CONFIG.BOT_HASHRATE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WalletLaunchButton
+                url={AFFILIATE_CONFIG.BOT_HASHRATE_URL}
                 id="cta-bot-hashrate-page"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-emerald-400/20 cursor-pointer shrink-0"
               >
                 <span>{t("botHash.cta")}</span>
                 <ExternalLink className="w-4 h-4" />
-              </a>
+              </WalletLaunchButton>
             </div>
 
             <div className="rounded-3xl bg-[#101428] border border-[#1F2746] p-6 sm:p-8 mb-10">
@@ -692,16 +685,14 @@ export default function EarnPage() {
                 <p className="text-sm sm:text-base text-[#94A3B8] mt-2 max-w-3xl leading-relaxed">{t("pledge.desc")}</p>
               </div>
 
-              <a
-                href={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WalletLaunchButton
+                url={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
                 id="cta-bot-pledge-page"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#38BDF8] to-[#0284C7] hover:from-[#60A5FA] hover:to-[#0369A1] text-[#070913] font-bold text-xs uppercase tracking-wider transition-all shadow-xl shadow-[#38BDF8]/20 cursor-pointer shrink-0"
               >
                 <span>{t("pledge.cta")}</span>
                 <ExternalLink className="w-4 h-4" />
-              </a>
+              </WalletLaunchButton>
             </div>
 
             {/* Basic Rules */}
@@ -921,15 +912,13 @@ export default function EarnPage() {
 
                 <div className="p-4 rounded-2xl bg-gradient-to-r from-[#11162C] to-[#151D3A] border border-[#222E54] flex items-center justify-between gap-3">
                   <div className="text-xs text-[#CBD5E1]">{t("pledge.readyText")}</div>
-                  <a
-                    href={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WalletLaunchButton
+                    url={AFFILIATE_CONFIG.BOT_PLEDGE_URL}
                     className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#38BDF8] text-[#070913] text-xs font-bold shrink-0 hover:bg-[#60A5FA] transition-colors"
                   >
                     <span>{t("pledge.launchPortal")}</span>
                     <ExternalLink className="w-3 h-3" />
-                  </a>
+                  </WalletLaunchButton>
                 </div>
               </div>
             </div>

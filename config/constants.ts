@@ -10,11 +10,70 @@ export const AFFILIATE_CONFIG = {
   BOT_HASHRATE_URL: "https://app.carypact.com/purchase-bot-hashrate?inviteCode=1AjyRv&suffix=C82A37",
   BOT_PLEDGE_URL: "https://app.carypact.com/bot-pledge?inviteCode=1AjyRv&suffix=C82A37",
   BOT_CHAIN_LEARN: "https://www.botchain.ai/en/learn",
-  TELEGRAM_URL: "https://t.me/CaryPactOfficial",
+  TELEGRAM_URL: "https://t.me/tunicacasupport",
   TWITTER_URL: "https://x.com/CaryPact_BOT",
   DISCORD_URL: "https://discord.gg/carypact",
   DISCLOSURE_TEXT: "Independent educational resource. We may receive referral commissions if you register through links on this site. Crypto assets carry substantial financial risk.",
 };
+
+// ---------------------------------------------------------------------------
+// Wallet DApp-browser launching
+// app.carypact.com is a DApp: on mobile it must be opened inside a wallet's
+// built-in browser. Deep-link formats:
+//   MetaMask    https://link.metamask.io/dapp/<url without scheme>
+//   Trust       https://link.trustwallet.com/open_url?coin_id=<SLIP-44>&url=<encoded url>
+//   TokenPocket tpdapp://open?params={"url": "<url>"}
+// Only hosts listed in DAPP_ALLOWED_HOSTS may be passed to a deep link.
+// ---------------------------------------------------------------------------
+export type WalletId = "metamask" | "trust" | "tokenpocket";
+
+export const DAPP_ALLOWED_HOSTS: readonly string[] = ["app.carypact.com"];
+
+// SLIP-44 coin id Trust Wallet uses to pick the network when opening the DApp (60 = EVM/Ethereum).
+export const WALLET_TRUST_COIN_ID = 60;
+
+// If the page is still visible this long after firing a deep link, assume the wallet did not open.
+export const WALLET_LAUNCH_TIMEOUT_MS = 2200;
+
+export const WALLET_ORDER: readonly WalletId[] = ["metamask", "trust", "tokenpocket"];
+
+export const WALLET_OPTIONS: Record<
+  WalletId,
+  { name: string; brandColor: string; buildLink: (dappUrl: string) => string }
+> = {
+  metamask: {
+    name: "MetaMask",
+    brandColor: "#F6851B",
+    buildLink: (dappUrl) => `https://link.metamask.io/dapp/${dappUrl.replace(/^https?:\/\//, "")}`,
+  },
+  trust: {
+    name: "Trust Wallet",
+    brandColor: "#3375BB",
+    buildLink: (dappUrl) =>
+      `https://link.trustwallet.com/open_url?coin_id=${WALLET_TRUST_COIN_ID}&url=${encodeURIComponent(dappUrl)}`,
+  },
+  tokenpocket: {
+    name: "TokenPocket",
+    brandColor: "#2980FE",
+    buildLink: (dappUrl) => `tpdapp://open?params=${encodeURIComponent(JSON.stringify({ url: dappUrl }))}`,
+  },
+};
+
+/** True only for https URLs on an allow-listed DApp host. */
+export function isAllowedDappUrl(dappUrl: string): boolean {
+  try {
+    const u = new URL(dappUrl);
+    return u.protocol === "https:" && DAPP_ALLOWED_HOSTS.includes(u.hostname);
+  } catch {
+    return false;
+  }
+}
+
+/** Build the wallet deep link for a DApp URL; throws if the URL is not allow-listed. */
+export function getWalletDeepLink(wallet: WalletId, dappUrl: string): string {
+  if (!isAllowedDappUrl(dappUrl)) throw new Error("DApp URL is not allow-listed");
+  return WALLET_OPTIONS[wallet].buildLink(dappUrl);
+}
 
 export const SUPPORT_CONFIG = {
   TELEGRAM_URL: "https://t.me/tunicacasupport",
