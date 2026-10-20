@@ -769,6 +769,38 @@
   "install": "Chưa có ví? Hãy cài MetaMask, Trust Wallet hoặc TokenPocket từ cửa hàng ứng dụng trước.",
   "tryAnother": "Thử ví khác",
   "close": "Đóng"
-}
-
+},
+"livePage": {
+    "backToHub": "Quay lại Trung tâm Học tập",
+    "breadcrumb": "Cổng On-Chain & CMC Trực tiếp",
+    "cmcFeed": "Nguồn CMC",
+    "liveConnected": "Đã kết nối trực tiếp",
+    "synced": "Đã đồng bộ",
+    "justNow": "Vừa xong",
+    "refresh": "Làm mới dữ liệu trực tiếp",
+    "heroBadge": "CoinMarketCap & Sổ cái BOT Chain thời gian thực",
+    "heroTitle": "CaryPact & BOT Chain",
+    "heroTitleHighlight": "Nguồn thị trường trực tiếp",
+    "heroDesc": "Báo giá tiền mã hóa trực tiếp, theo dõi tỷ giá on-chain (<strong>1 CA = 1.337631 BOT</strong>), độ sâu sổ lệnh BDEX và các thông báo Twitter/X chính thức từ <xLink>@CaryPact</xLink>.",
+    "inviteCode": "Mã mời",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "launchDApp": "Mở DApp",
+    "cmcListing": "Niêm yết trên CoinMarketCap",
+    "cmcPair": "bot-chain / Tiền tệ BOT",
+    "viewCmc": "Xem CMC",
+    "cmcDesc": "Theo dõi giá và chỉ số khối lượng của BOT Chain được xác minh trực tiếp qua CoinMarketCap Pro. Tài sản điện toán CaryPact (CA) vận hành theo chuẩn quy đổi thuật toán cố định <strong>1 CA = 1.337631 BOT</strong>.",
+    "contractStandard": "Chuẩn hợp đồng:",
+    "decimals": "Số chữ số thập phân:",
+    "burnMechanism": "Cơ chế đốt:",
+    "burnValue": "1.8% khi bán trên BDEX",
+    "directivesTitle": "Nguyên tắc cốt lõi của giao thức",
+    "rule1Title": "1 USDT = 1 Đơn vị Hashrate:",
+    "rule1Body": "Sức mạnh tính toán bị khóa vĩnh viễn, không hoàn lại vốn gốc.",
+    "rule2Title": "Hệ số staking:",
+    "rule2Body": "30 ngày (1.3x), 90 ngày (1.6x), 180 ngày (2.0x), 360 ngày (2.5x).",
+    "rule3Title": "Hệ thống VIP 10 cấp:",
+    "rule3Body": "Yêu cầu kích hoạt cá nhân 300 USDT cùng hiệu suất nhánh tuyến dưới.",
+    "printCheatSheet": "In bảng tóm tắt giao thức đầy đủ"
+  }
 }

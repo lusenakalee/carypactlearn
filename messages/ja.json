@@ -769,6 +769,41 @@
   "install": "まだウォレットをお持ちでない場合は、先にアプリストアから MetaMask、Trust Wallet、または TokenPocket をインストールしてください。",
   "tryAnother": "別のウォレットを試す",
   "close": "閉じる"
-}
+},
+
+  "livePage": {
+    "backToHub": "学習ハブに戻る",
+    "breadcrumb": "ライブオンチェーン & CMC ポータル",
+    "cmcFeed": "CMC フィード",
+    "liveConnected": "ライブ接続中",
+    "synced": "同期済み",
+    "justNow": "たった今",
+    "refresh": "ライブデータを更新",
+    "heroBadge": "リアルタイム CoinMarketCap & BOT Chain 台帳",
+    "heroTitle": "CaryPact & BOT Chain",
+    "heroTitleHighlight": "ライブ市場フィード",
+    "heroDesc": "ライブの暗号資産相場、オンチェーンのパリティ追跡（<strong>1 CA = 1.337631 BOT</strong>）、BDEX オーダーブックの深さ、そして <xLink>@CaryPact</xLink> からの公式 Twitter/X 発信。",
+    "inviteCode": "招待コード",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "launchDApp": "DApp を起動",
+    "cmcListing": "CoinMarketCap 掲載情報",
+    "cmcPair": "bot-chain / BOT 通貨",
+    "viewCmc": "CMC を見る",
+    "cmcDesc": "BOT Chain の価格追跡と出来高指標は CoinMarketCap Pro で直接確認されています。CaryPact の計算資源アセット（CA）は、<strong>1 CA = 1.337631 BOT</strong> という固定のアルゴリズム換算基準で運用されます。",
+    "contractStandard": "コントラクト規格：",
+    "decimals": "小数桁数：",
+    "burnMechanism": "バーン機構：",
+    "burnValue": "BDEX 売却時に 1.8%",
+    "directivesTitle": "プロトコルの中核ルール",
+    "rule1Title": "1 USDT = 1 ハッシュレートユニット：",
+    "rule1Body": "計算能力は永久にロックされ、元本は返金されません。",
+    "rule2Title": "ステーキング倍率：",
+    "rule2Body": "30日（1.3x）、90日（1.6x）、180日（2.0x）、360日（2.5x）。",
+    "rule3Title": "10 段階 VIP システム：",
+    "rule3Body": "個人 300 USDT のアクティベーションと、ダウンライン系列の実績が必要です。",
+    "printCheatSheet": "プロトコル早見表（完全版）を印刷"
+  }
+
 
 }

@@ -770,6 +770,39 @@
   "install": "अभी तक वॉलेट नहीं है? पहले अपने ऐप स्टोर से MetaMask, Trust Wallet या TokenPocket इंस्टॉल करें।",
   "tryAnother": "दूसरा वॉलेट आज़माएँ",
   "close": "बंद करें"
-}
+},
+"livePage": {
+    "backToHub": "लर्निंग हब पर वापस जाएँ",
+    "breadcrumb": "लाइव ऑन-चेन और CMC पोर्टल",
+    "cmcFeed": "CMC फ़ीड",
+    "liveConnected": "लाइव कनेक्टेड",
+    "synced": "सिंक हो गया",
+    "justNow": "अभी-अभी",
+    "refresh": "लाइव डेटा रीफ़्रेश करें",
+    "heroBadge": "रियल-टाइम CoinMarketCap और BOT Chain लेजर",
+    "heroTitle": "CaryPact और BOT Chain",
+    "heroTitleHighlight": "लाइव मार्केट फ़ीड",
+    "heroDesc": "लाइव क्रिप्टोकरेंसी कोट्स, ऑन-चेन पैरिटी ट्रैकिंग (<strong>1 CA = 1.337631 BOT</strong>), BDEX ऑर्डर बुक की गहराई, और <xLink>@CaryPact</xLink> के आधिकारिक Twitter/X प्रसारण।",
+    "inviteCode": "इनवाइट कोड",
+    "copy": "कॉपी करें",
+    "copied": "कॉपी हो गया",
+    "launchDApp": "DApp लॉन्च करें",
+    "cmcListing": "CoinMarketCap लिस्टिंग",
+    "cmcPair": "bot-chain / BOT करेंसी",
+    "viewCmc": "CMC देखें",
+    "cmcDesc": "BOT Chain की कीमत और वॉल्यूम मेट्रिक्स की पुष्टि सीधे CoinMarketCap Pro से होती है। CaryPact कंप्यूटिंग एसेट (CA) <strong>1 CA = 1.337631 BOT</strong> के निश्चित एल्गोरिदमिक रूपांतरण मानक पर काम करता है।",
+    "contractStandard": "कॉन्ट्रैक्ट मानक:",
+    "decimals": "दशमलव:",
+    "burnMechanism": "बर्न तंत्र:",
+    "burnValue": "BDEX बिक्री पर 1.8%",
+    "directivesTitle": "प्रोटोकॉल के मुख्य नियम",
+    "rule1Title": "1 USDT = 1 हैशरेट यूनिट:",
+    "rule1Body": "कंप्यूटिंग पावर स्थायी रूप से लॉक रहती है और मूलधन वापस नहीं मिलता।",
+    "rule2Title": "स्टेकिंग मल्टीप्लायर:",
+    "rule2Body": "30 दिन (1.3x), 90 दिन (1.6x), 180 दिन (2.0x), 360 दिन (2.5x)।",
+    "rule3Title": "10-स्तरीय VIP सिस्टम:",
+    "rule3Body": "300 USDT की व्यक्तिगत एक्टिवेशन और डाउनलाइन लेग का प्रदर्शन आवश्यक है।",
+    "printCheatSheet": "पूरा प्रोटोकॉल चीट शीट प्रिंट करें"
+  }
 
 }

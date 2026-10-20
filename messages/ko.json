@@ -769,6 +769,39 @@
   "install": "아직 지갑이 없나요? 먼저 앱 스토어에서 MetaMask, Trust Wallet 또는 TokenPocket을 설치하세요.",
   "tryAnother": "다른 지갑 시도",
   "close": "닫기"
-}
+},
+"livePage": {
+    "backToHub": "학습 허브로 돌아가기",
+    "breadcrumb": "실시간 온체인 & CMC 포털",
+    "cmcFeed": "CMC 피드",
+    "liveConnected": "실시간 연결됨",
+    "synced": "동기화됨",
+    "justNow": "방금",
+    "refresh": "실시간 데이터 새로고침",
+    "heroBadge": "실시간 CoinMarketCap 및 BOT Chain 원장",
+    "heroTitle": "CaryPact & BOT Chain",
+    "heroTitleHighlight": "실시간 시장 피드",
+    "heroDesc": "실시간 암호화폐 시세, 온체인 패리티 추적(<strong>1 CA = 1.337631 BOT</strong>), BDEX 호가창 깊이, 그리고 <xLink>@CaryPact</xLink>의 공식 Twitter/X 공지를 제공합니다.",
+    "inviteCode": "초대 코드",
+    "copy": "복사",
+    "copied": "복사됨",
+    "launchDApp": "DApp 실행",
+    "cmcListing": "CoinMarketCap 상장 정보",
+    "cmcPair": "bot-chain / BOT 통화",
+    "viewCmc": "CMC 보기",
+    "cmcDesc": "BOT Chain의 가격 추적 및 거래량 지표는 CoinMarketCap Pro를 통해 직접 검증됩니다. CaryPact 컴퓨팅 자산(CA)은 <strong>1 CA = 1.337631 BOT</strong>의 고정 알고리즘 환산 기준으로 운영됩니다.",
+    "contractStandard": "컨트랙트 표준:",
+    "decimals": "소수점 자릿수:",
+    "burnMechanism": "소각 메커니즘:",
+    "burnValue": "BDEX 매도 시 1.8%",
+    "directivesTitle": "프로토콜 핵심 규칙",
+    "rule1Title": "1 USDT = 1 해시레이트 유닛:",
+    "rule1Body": "컴퓨팅 파워는 영구 잠금되며 원금은 환불되지 않습니다.",
+    "rule2Title": "스테이킹 배수:",
+    "rule2Body": "30일(1.3x), 90일(1.6x), 180일(2.0x), 360일(2.5x).",
+    "rule3Title": "10단계 VIP 시스템:",
+    "rule3Body": "개인 300 USDT 활성화와 하위 라인 실적이 필요합니다.",
+    "printCheatSheet": "프로토콜 전체 요약표 인쇄"
+  }
 
 }

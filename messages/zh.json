@@ -769,7 +769,40 @@
   "install": "还没有钱包？请先从应用商店安装 MetaMask、Trust Wallet 或 TokenPocket。",
   "tryAnother": "尝试其他钱包",
   "close": "关闭"
-}
+},
+"livePage": {
+    "backToHub": "返回学习中心",
+    "breadcrumb": "链上与 CMC 实时门户",
+    "cmcFeed": "CMC 行情",
+    "liveConnected": "实时已连接",
+    "synced": "已同步",
+    "justNow": "刚刚",
+    "refresh": "刷新实时数据",
+    "heroBadge": "实时 CoinMarketCap 与 BOT Chain 账本",
+    "heroTitle": "CaryPact 与 BOT Chain",
+    "heroTitleHighlight": "实时行情",
+    "heroDesc": "实时加密货币报价、链上平价追踪（<strong>1 CA = 1.337631 BOT</strong>）、BDEX 订单簿深度，以及来自 <xLink>@CaryPact</xLink> 的官方 Twitter/X 播报。",
+    "inviteCode": "邀请码",
+    "copy": "复制",
+    "copied": "已复制",
+    "launchDApp": "启动 DApp",
+    "cmcListing": "CoinMarketCap 上市信息",
+    "cmcPair": "bot-chain / BOT 代币",
+    "viewCmc": "查看 CMC",
+    "cmcDesc": "BOT Chain 的价格追踪与成交量指标通过 CoinMarketCap Pro 直接验证。CaryPact 算力资产（CA）采用固定的算法兑换标准：<strong>1 CA = 1.337631 BOT</strong>。",
+    "contractStandard": "合约标准：",
+    "decimals": "小数位数：",
+    "burnMechanism": "销毁机制：",
+    "burnValue": "BDEX 卖出时 1.8%",
+    "directivesTitle": "协议核心规则",
+    "rule1Title": "1 USDT = 1 算力单位：",
+    "rule1Body": "算力永久锁定，不退还本金。",
+    "rule2Title": "质押倍数：",
+    "rule2Body": "30 天（1.3x）、90 天（1.6x）、180 天（2.0x）、360 天（2.5x）。",
+    "rule3Title": "10 级 VIP 体系：",
+    "rule3Body": "需个人激活 300 USDT，并满足下线分支业绩要求。",
+    "printCheatSheet": "打印完整协议速查表"
+  }
 
   
 }
