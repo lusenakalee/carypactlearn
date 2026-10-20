@@ -437,55 +437,70 @@
     }
   },
   "Tokenomics": {
-  "badge": "Architecture économique",
-  "title": "Tokenomics du CA : <accent>offre fixe de {supply}</accent>",
-  "subtitle": "Une courbe désinflationniste définie mathématiquement sur {years} ans, associant émissions algorithmiques quotidiennes et triple mécanisme de destruction.",
-  "capLabel": "Offre maximale (plafond fixe)",
-  "caAmount": "{amount} CA",
-  "capBody": "<cyan>{liquidity} CA</cyan> pour la liquidité SWAP initiale + <purple>{emitted} CA</purple> émis sur {years} ans.",
-  "emissionLabel": "Émission quotidienne initiale",
-  "emissionValue": "{amount} CA / jour",
-  "emissionBody": "Réduite de <amber>{rate} tous les {cycle} ans</amber> sur l'ensemble du cycle de distribution de {years} ans.",
-  "burnLabel": "Triple destruction déflationniste",
-  "burnValue": "Destruction multiniveau",
-  "burnBody": "{buyback} brûlés sur les ventes BDEX + {txFee} de frais de transaction rachetés + {gas} du gas BOT détruits.",
-  "allocTitle": "Répartition de l'émission quotidienne de {amount} CA",
-  "allocHint": "Cliquez sur un segment pour examiner la mécanique de distribution on-chain",
-  "settlement": "Règlement quotidien T+1 (00:00 UTC)",
-  "perDay": "{amount} CA/jour",
-  "poolBadge": "{percent} du pool ({amount} CA/jour)",
-  "segmentTitle": "{name} : {percent} ({amount} CA/jour)",
-  "split": {
-    "mining": { "name": "Minage par puissance de calcul", "description": "Distribué proportionnellement aux détenteurs d'unités de hashrate actives (facteur de capitalisation K ≈ 1,01)." },
-    "active": { "name": "Pool de récompenses actives", "description": "Finance les incitations des niveaux VIP et la mise en correspondance des performances du réseau de parrainage." },
-    "staking": { "name": "Production du staking PoS", "description": "Récompenses de staking quotidiennes distribuées aux stakers de CA bloqués et flexibles." },
-    "dao": { "name": "Gouvernance DAO", "description": "Partagé entre les contributeurs au consensus V7–V10 et la gouvernance de l'écosystème." },
-    "foundation": { "name": "Fondation et technologie", "description": "Audits de sécurité du protocole, infrastructure et subventions aux développeurs, en continu." }
+    "badge": "Architecture économique",
+    "title": "Tokenomics du CA : <accent>offre fixe de {supply}</accent>",
+    "subtitle": "Une courbe désinflationniste définie mathématiquement sur {years} ans, associant émissions algorithmiques quotidiennes et triple mécanisme de destruction.",
+    "capLabel": "Offre maximale (plafond fixe)",
+    "caAmount": "{amount} CA",
+    "capBody": "<cyan>{liquidity} CA</cyan> pour la liquidité SWAP initiale + <purple>{emitted} CA</purple> émis sur {years} ans.",
+    "emissionLabel": "Émission quotidienne initiale",
+    "emissionValue": "{amount} CA / jour",
+    "emissionBody": "Réduite de <amber>{rate} tous les {cycle} ans</amber> sur l'ensemble du cycle de distribution de {years} ans.",
+    "burnLabel": "Triple destruction déflationniste",
+    "burnValue": "Destruction multiniveau",
+    "burnBody": "{buyback} brûlés sur les ventes BDEX + {txFee} de frais de transaction rachetés + {gas} du gas BOT détruits.",
+    "allocTitle": "Répartition de l'émission quotidienne de {amount} CA",
+    "allocHint": "Cliquez sur un segment pour examiner la mécanique de distribution on-chain",
+    "settlement": "Règlement quotidien T+1 (00:00 UTC)",
+    "perDay": "{amount} CA/jour",
+    "poolBadge": "{percent} du pool ({amount} CA/jour)",
+    "segmentTitle": "{name} : {percent} ({amount} CA/jour)",
+    "split": {
+      "mining": {
+        "name": "Minage par puissance de calcul",
+        "description": "Distribué proportionnellement aux détenteurs d'unités de hashrate actives (facteur de capitalisation K ≈ 1,01)."
+      },
+      "active": {
+        "name": "Pool de récompenses actives",
+        "description": "Finance les incitations des niveaux VIP et la mise en correspondance des performances du réseau de parrainage."
+      },
+      "staking": {
+        "name": "Production du staking PoS",
+        "description": "Récompenses de staking quotidiennes distribuées aux stakers de CA bloqués et flexibles."
+      },
+      "dao": {
+        "name": "Gouvernance DAO",
+        "description": "Partagé entre les contributeurs au consensus V7–V10 et la gouvernance de l'écosystème."
+      },
+      "foundation": {
+        "name": "Fondation et technologie",
+        "description": "Audits de sécurité du protocole, infrastructure et subventions aux développeurs, en continu."
+      }
+    },
+    "curveTitle": "Réduction biennale de {rate} de l'émission sur {years} ans",
+    "curveSubtitle": "Calendrier de désinflation algorithmique programmé",
+    "thCycle": "Cycle d'émission",
+    "thDaily": "Émission quotidienne de CA",
+    "thAnnual": "Production annualisée",
+    "thFactor": "Facteur de courbe",
+    "yearsRange": "Années {start}–{end}",
+    "factorWithDelta": "{percent} ({delta})",
+    "finalDaily": "Décroissante",
+    "finalAnnual": "Émissions restantes",
+    "finalFactor": "Dernier halving",
+    "sinksTitle": "Mécanismes déflationnistes automatisés",
+    "sinksIntro": "CaryPact applique des prélèvements par smart contract qui réduisent durablement l'offre en circulation :",
+    "sink1Title": "{percent} brûlés sur les ventes BDEX",
+    "sink1Tag": "Destruction on-chain",
+    "sink1Body": "Chaque CA vendu sur BDEX envoie {percent} vers une adresse de destruction irrécupérable.",
+    "sink2Title": "Rachat de {percent} des frais de transaction",
+    "sink2Tag": "Puits de liquidité",
+    "sink2Body": "{percent} des frais de transaction sont convertis via l'AMM en CA détruits.",
+    "sink3Title": "Destruction de {percent} du gas BOT",
+    "sink3Tag": "Destruction de base L1",
+    "sink3Body": "{percent} de tous les frais de gas de BOT Chain sont détruits définitivement par les validateurs."
   },
-  "curveTitle": "Réduction biennale de {rate} de l'émission sur {years} ans",
-  "curveSubtitle": "Calendrier de désinflation algorithmique programmé",
-  "thCycle": "Cycle d'émission",
-  "thDaily": "Émission quotidienne de CA",
-  "thAnnual": "Production annualisée",
-  "thFactor": "Facteur de courbe",
-  "yearsRange": "Années {start}–{end}",
-  "factorWithDelta": "{percent} ({delta})",
-  "finalDaily": "Décroissante",
-  "finalAnnual": "Émissions restantes",
-  "finalFactor": "Dernier halving",
-  "sinksTitle": "Mécanismes déflationnistes automatisés",
-  "sinksIntro": "CaryPact applique des prélèvements par smart contract qui réduisent durablement l'offre en circulation :",
-  "sink1Title": "{percent} brûlés sur les ventes BDEX",
-  "sink1Tag": "Destruction on-chain",
-  "sink1Body": "Chaque CA vendu sur BDEX envoie {percent} vers une adresse de destruction irrécupérable.",
-  "sink2Title": "Rachat de {percent} des frais de transaction",
-  "sink2Tag": "Puits de liquidité",
-  "sink2Body": "{percent} des frais de transaction sont convertis via l'AMM en CA détruits.",
-  "sink3Title": "Destruction de {percent} du gas BOT",
-  "sink3Tag": "Destruction de base L1",
-  "sink3Body": "{percent} de tous les frais de gas de BOT Chain sont détruits définitivement par les validateurs."
-},
-"livePage": {
+  "livePage": {
     "backToHub": "Retour au Learning Hub",
     "breadcrumb": "Portail en direct On-Chain et CMC",
     "cmcFeed": "Flux CMC",
@@ -519,36 +534,35 @@
     "printCheatSheet": "Imprimer l'aide-mémoire complet du protocole"
   },
   "Footer": {
-  "badge": "Centre d'apprentissage",
-  "brandDescription": "La première ressource éducative indépendante et le portail d'analyse en direct dédiés à CaryPact, BOT Chain, au token CA et aux protocoles de supercalcul décentralisé.",
-  "telegram": "Telegram",
-  "twitter": "Twitter / X",
-  "explorer": "Explorateur BOT Chain",
-  "navTitle": "Navigation",
-  "navHome": "Accueil et centre d'apprentissage",
-  "navLive": "Marché en direct et portail CMC",
-  "liveBadge": "EN DIRECT",
-  "navBotChain": "Les 5 piliers de BOT Chain",
-  "navTokenomics": "Tokenomics de {supply} CA",
-  "navVip": "Système VIP à {count} niveaux",
-  "navRisks": "Avertissement sur les risques",
-  "guidesTitle": "Guides et configuration",
-  "guideStart": "Pour commencer",
-  "guideWallet": "Créer un portefeuille BO",
-  "guideBuy": "Acheter de la puissance de calcul",
-  "guideStaking": "Multiplicateurs de staking (30 j–360 j)",
-  "guideSlippage": "Swaps BDEX avec {percent} de slippage",
-  "toolsTitle": "Outils et officiel",
-  "cheatSheet": "Télécharger l'aide-mémoire",
-  "newsletter": "S'abonner à la newsletter",
-  "launchApp": "Ouvrir l'application CaryPact",
-  "botDocs": "Documentation BOT Chain",
-  "disclosureTitle": "Centre d'apprentissage indépendant et divulgation d'affiliation",
-  "disclosureBody": "Ce site est une initiative éducative indépendante et n'est pas exploité directement par CaryPact ni par la fondation BOT Chain. Tous les liens d'inscription contiennent le code d'invitation communautaire vérifié <code>{inviteCode} (Suffixe : {suffix})</code>. Nous pouvons percevoir des commissions de parrainage lorsque des utilisateurs participent via les liens de ce site. Le contenu est strictement éducatif et ne constitue jamais un conseil financier.",
-  "copyright": "© {year} CaryPact Learning Hub. Ressource éducative indépendante.",
-  "backToTop": "Haut de page"
-},
-
+    "badge": "Centre d'apprentissage",
+    "brandDescription": "La première ressource éducative indépendante et le portail d'analyse en direct dédiés à CaryPact, BOT Chain, au token CA et aux protocoles de supercalcul décentralisé.",
+    "telegram": "Telegram",
+    "twitter": "Twitter / X",
+    "explorer": "Explorateur BOT Chain",
+    "navTitle": "Navigation",
+    "navHome": "Accueil et centre d'apprentissage",
+    "navLive": "Marché en direct et portail CMC",
+    "liveBadge": "EN DIRECT",
+    "navBotChain": "Les 5 piliers de BOT Chain",
+    "navTokenomics": "Tokenomics de {supply} CA",
+    "navVip": "Système VIP à {count} niveaux",
+    "navRisks": "Avertissement sur les risques",
+    "guidesTitle": "Guides et configuration",
+    "guideStart": "Pour commencer",
+    "guideWallet": "Créer un portefeuille BO",
+    "guideBuy": "Acheter de la puissance de calcul",
+    "guideStaking": "Multiplicateurs de staking (30 j–360 j)",
+    "guideSlippage": "Swaps BDEX avec {percent} de slippage",
+    "toolsTitle": "Outils et officiel",
+    "cheatSheet": "Télécharger l'aide-mémoire",
+    "newsletter": "S'abonner à la newsletter",
+    "launchApp": "Ouvrir l'application CaryPact",
+    "botDocs": "Documentation BOT Chain",
+    "disclosureTitle": "Centre d'apprentissage indépendant et divulgation d'affiliation",
+    "disclosureBody": "Ce site est une initiative éducative indépendante et n'est pas exploité directement par CaryPact ni par la fondation BOT Chain. Tous les liens d'inscription contiennent le code d'invitation communautaire vérifié <code>{inviteCode} (Suffixe : {suffix})</code>. Nous pouvons percevoir des commissions de parrainage lorsque des utilisateurs participent via les liens de ce site. Le contenu est strictement éducatif et ne constitue jamais un conseil financier.",
+    "copyright": "© {year} CaryPact Learning Hub. Ressource éducative indépendante.",
+    "backToTop": "Haut de page"
+  },
   "earn": {
     "common": {
       "methodBadge": "MÉTHODE {n}",
@@ -783,28 +797,26 @@
     }
   },
   "wallet": {
-  "title": "Ouvrir dans votre portefeuille",
-  "subtitle": "L'application CaryPact est une DApp. Elle doit s'exécuter dans le navigateur intégré d'un portefeuille.",
-  "chooseWallet": "Choisissez votre portefeuille",
-  "lastUsed": "Dernier utilisé",
-  "openIn": "Ouvrir dans {wallet}",
-  "launching": "Ouverture de {wallet}…",
-  "launchingHint": "Si l'application de votre portefeuille s'ouvre, continuez-y.",
-  "fallbackTitle": "{wallet} ne s'est pas ouvert ?",
-  "fallbackDesc": "Le portefeuille n'est peut-être pas installé, ou votre appareil a bloqué le lien. Ouvrez le lien normal ou suivez les étapes manuelles ci-dessous.",
-  "openNormal": "Ouvrir le lien normal",
-  "copyLink": "Copier le lien",
-  "copied": "Copié",
-  "stepsTitle": "Ouvrir manuellement",
-  "step1": "Copiez le lien ci-dessous.",
-  "step2": "Ouvrez l'application de votre portefeuille et accédez à son navigateur DApp (souvent nommé Navigateur ou Découvrir).",
-  "step3": "Collez le lien dans la barre d'adresse et ouvrez-le.",
-  "install": "Pas encore de portefeuille ? Installez d'abord MetaMask, Trust Wallet ou TokenPocket depuis votre boutique d'applications.",
-  "tryAnother": "Essayer un autre portefeuille",
-  "close": "Fermer"
-},
-
-
+    "title": "Ouvrir dans votre portefeuille",
+    "subtitle": "L'application CaryPact est une DApp. Elle doit s'exécuter dans le navigateur intégré d'un portefeuille.",
+    "chooseWallet": "Choisissez votre portefeuille",
+    "lastUsed": "Dernier utilisé",
+    "openIn": "Ouvrir dans {wallet}",
+    "launching": "Ouverture de {wallet}…",
+    "launchingHint": "Si l'application de votre portefeuille s'ouvre, continuez-y.",
+    "fallbackTitle": "{wallet} ne s'est pas ouvert ?",
+    "fallbackDesc": "Le portefeuille n'est peut-être pas installé, ou votre appareil a bloqué le lien. Ouvrez le lien normal ou suivez les étapes manuelles ci-dessous.",
+    "openNormal": "Ouvrir le lien normal",
+    "copyLink": "Copier le lien",
+    "copied": "Copié",
+    "stepsTitle": "Ouvrir manuellement",
+    "step1": "Copiez le lien ci-dessous.",
+    "step2": "Ouvrez l'application de votre portefeuille et accédez à son navigateur DApp (souvent nommé Navigateur ou Découvrir).",
+    "step3": "Collez le lien dans la barre d'adresse et ouvrez-le.",
+    "install": "Pas encore de portefeuille ? Installez d'abord MetaMask, Trust Wallet ou TokenPocket depuis votre boutique d'applications.",
+    "tryAnother": "Essayer un autre portefeuille",
+    "close": "Fermer"
+  },
   "LearnFaq": {
     "badge": "Centre d’aide",
     "title": "Foire aux questions",
@@ -825,17 +837,37 @@
     "supportText": "Rejoignez notre communauté pour obtenir de l’aide et échanger avec d’autres membres de l’écosystème BOT.",
     "supportCta": "Contacter l’assistance",
     "categories": {
-      "all": "Toutes les questions",
-      "tokenomics": "Tokenomics",
-      "ecosystem": "Écosystème",
-      "mining": "Minage",
-      "vip": "VIP et récompenses",
-      "security": "Sécurité",
-      "global": "Présence mondiale"
+      "all": {
+        "tab": "Toutes les questions",
+        "badge": "Toutes les questions"
+      },
+      "tokenomics": {
+        "tab": "Tokenomics",
+        "badge": "Tokenomics"
+      },
+      "ecosystem": {
+        "tab": "Écosystème",
+        "badge": "Écosystème"
+      },
+      "mining": {
+        "tab": "Minage",
+        "badge": "Minage"
+      },
+      "vip": {
+        "tab": "VIP et récompenses",
+        "badge": "VIP et récompenses"
+      },
+      "security": {
+        "tab": "Sécurité",
+        "badge": "Sécurité"
+      },
+      "global": {
+        "tab": "Présence mondiale",
+        "badge": "Présence mondiale"
+      }
     },
-    "items": [
-      {
-        "id": "inflation-elimination",
+    "items": {
+      "inflation-elimination": {
         "question": "Comment BOT élimine-t-il l’inflation ?",
         "keywords": [
           "inflation",
@@ -854,8 +886,7 @@
           "La réduction de l’offre ne garantit pas une hausse du prix. La valeur du marché dépend également de la demande, de la liquidité et des conditions générales du marché."
         ]
       },
-      {
-        "id": "candlestick-stability",
+      "candlestick-stability": {
         "question": "Pourquoi le graphique des prix de BOT semble-t-il stable ou présente-t-il peu de mouvements ?",
         "keywords": [
           "graphique",
@@ -875,8 +906,7 @@
           "Comparez plusieurs sources de données fiables et vérifiez l’heure de la dernière transaction avant de tirer des conclusions sur l’activité du marché."
         ]
       },
-      {
-        "id": "wbot-holders-price-growth",
+      "wbot-holders-price-growth": {
         "question": "Pourquoi le nombre de détenteurs de wBOT augmente-t-il sans que le prix progresse au même rythme ?",
         "keywords": [
           "wBOT",
@@ -896,8 +926,7 @@
           "Un portefeuille peut également détenir plusieurs jetons, et les données relatives aux détenteurs ne permettent pas à elles seules de mesurer l’activité économique réelle."
         ]
       },
-      {
-        "id": "why-invest-differentiation",
+      "why-invest-differentiation": {
         "question": "Qu’est-ce qui différencie BOT des autres projets de cryptomonnaies ?",
         "keywords": [
           "BOT",
@@ -916,8 +945,7 @@
           "Les promesses de rendement ou les projections de prix ne constituent pas une preuve de performance future. Effectuez vos propres recherches avant toute décision financière."
         ]
       },
-      {
-        "id": "bot-price-project-owners",
+      "bot-price-project-owners": {
         "question": "Les propriétaires du projet BOT peuvent-ils contrôler le prix du jeton ?",
         "keywords": [
           "prix",
@@ -936,8 +964,7 @@
           "Vérifiez les données de marché, la répartition des jetons et les informations publiques sur les portefeuilles avant d’évaluer toute affirmation concernant le contrôle des prix."
         ]
       },
-      {
-        "id": "bot-ecosystem-roadmap",
+      "bot-ecosystem-roadmap": {
         "question": "Quelle est la feuille de route de l’écosystème BOT ?",
         "keywords": [
           "feuille de route",
@@ -956,8 +983,7 @@
           "Consultez les canaux officiels de BOT et vérifiez les mises à jour pour obtenir les informations les plus récentes."
         ]
       },
-      {
-        "id": "bohr-to-bot-rebrand",
+      "bohr-to-bot-rebrand": {
         "question": "Pourquoi BOHR a-t-il été renommé BOT ?",
         "keywords": [
           "BOHR",
@@ -976,8 +1002,7 @@
           "Ne transférez pas vos jetons vers une nouvelle adresse et ne signez aucune transaction sans avoir vérifié les instructions auprès de sources officielles."
         ]
       },
-      {
-        "id": "verify-150m-bot-supply",
+      "verify-150m-bot-supply": {
         "question": "Comment vérifier l’offre annoncée de 150M de BOT ?",
         "keywords": [
           "150M",
@@ -996,8 +1021,7 @@
           "Vous pouvez consulter l’explorateur de blockchain à l’adresse https://scan.botchain.ai, puis comparer les informations avec les annonces officielles. Assurez-vous d’utiliser le bon réseau et le bon contrat."
         ]
       },
-      {
-        "id": "mining-machine-pricing",
+      "mining-machine-pricing": {
         "question": "Combien coûte une machine de minage BOT ?",
         "keywords": [
           "machine de minage",
@@ -1016,8 +1040,7 @@
           "Avant d’effectuer un paiement, demandez un devis à jour, vérifiez les caractéristiques de la machine, les conditions de livraison et l’identité du fournisseur."
         ]
       },
-      {
-        "id": "mining-machine-manufacturer",
+      "mining-machine-manufacturer": {
         "question": "Qui fabrique les machines de minage BOT ?",
         "keywords": [
           "fabricant",
@@ -1036,8 +1059,7 @@
           "Ne supposez pas qu’un équipement est fabriqué ou certifié par le projet BOT simplement parce qu’il est commercialisé sous un nom associé à son écosystème."
         ]
       },
-      {
-        "id": "tier-1-mining-operators",
+      "tier-1-mining-operators": {
         "question": "Qui sont les opérateurs de minage de niveau 1 ?",
         "keywords": [
           "niveau 1",
@@ -1056,8 +1078,7 @@
           "Vérifiez les exigences, les frais éventuels, les règles de calcul des récompenses et les conditions de retrait avant de participer."
         ]
       },
-      {
-        "id": "carypact-compute-vs-bot-rigs",
+      "carypact-compute-vs-bot-rigs": {
         "question": "Quelle est la différence entre le calcul CaryPact et les machines de minage BOT ?",
         "keywords": [
           "CaryPact",
@@ -1076,8 +1097,7 @@
           "Les performances et les revenus annoncés doivent être confirmés à partir de données vérifiables. Aucun revenu n’est garanti simplement parce qu’un équipement est associé à un projet."
         ]
       },
-      {
-        "id": "hashrate-supply-servers",
+      "hashrate-supply-servers": {
         "question": "Comment le hashrate et l’offre des serveurs sont-ils liés ?",
         "keywords": [
           "hashrate",
@@ -1096,8 +1116,7 @@
           "L’offre de jetons, le hashrate et le prix sont des mesures différentes. Leur relation dépend des règles du réseau, de la demande et des conditions économiques."
         ]
       },
-      {
-        "id": "v4-earnings-differential",
+      "v4-earnings-differential": {
         "question": "Pourquoi les revenus de la V4 diffèrent-ils de ceux des versions précédentes ?",
         "keywords": [
           "V4",
@@ -1116,8 +1135,7 @@
           "Les revenus passés ou estimés ne garantissent pas les revenus futurs. Consultez les conditions en vigueur avant de prendre une décision."
         ]
       },
-      {
-        "id": "same-rank-bonus-distribution",
+      "same-rank-bonus-distribution": {
         "question": "Comment les bonus sont-ils répartis entre les participants de même rang ?",
         "keywords": [
           "bonus",
@@ -1136,8 +1154,7 @@
           "Vérifiez la formule applicable, la période de calcul, les conditions d’éligibilité et les éventuelles limites avant de supposer que les bonus sont répartis à parts égales."
         ]
       },
-      {
-        "id": "time-compensation-mechanism",
+      "time-compensation-mechanism": {
         "question": "Comment fonctionne le mécanisme de compensation lié au temps ?",
         "keywords": [
           "temps",
@@ -1156,8 +1173,7 @@
           "Consultez la documentation officielle pour comprendre comment le temps est mesuré, quand la compensation est calculée et quelles conditions doivent être remplies."
         ]
       },
-      {
-        "id": "dynamic-weight-v1-v10",
+      "dynamic-weight-v1-v10": {
         "question": "Comment fonctionne le poids dynamique entre V1 et V10 ?",
         "keywords": [
           "poids dynamique",
@@ -1176,8 +1192,7 @@
           "Ne déduisez pas un montant de récompense à partir du seul numéro de niveau. Le résultat dépend également de la formule de calcul et des règles en vigueur."
         ]
       },
-      {
-        "id": "wallet-hacked-recovery",
+      "wallet-hacked-recovery": {
         "question": "Que dois-je faire si mon portefeuille est piraté ?",
         "keywords": [
           "portefeuille",
@@ -1197,8 +1212,7 @@
           "Les transactions sur la blockchain sont généralement irréversibles. Conservez les identifiants des transactions et contactez les canaux d’assistance officiels pour signaler l’incident."
         ]
       },
-      {
-        "id": "bo-wallet-vs-tokenpocket",
+      "bo-wallet-vs-tokenpocket": {
         "question": "Quelle est la différence entre le portefeuille BO et TokenPocket ?",
         "keywords": [
           "portefeuille BO",
@@ -1217,8 +1231,7 @@
           "Téléchargez les applications uniquement depuis des sources fiables. Ne communiquez jamais votre phrase de récupération à un service d’assistance ou à un tiers."
         ]
       },
-      {
-        "id": "headquarters-global-offices",
+      "headquarters-global-offices": {
         "question": "Où se trouve le siège de BOT et où sont situés ses bureaux internationaux ?",
         "keywords": [
           "siège",
@@ -1237,8 +1250,7 @@
           "La présence d’une adresse ou d’un bureau annoncé ne prouve pas, à elle seule, le statut réglementaire ou la solidité financière d’un projet."
         ]
       },
-      {
-        "id": "why-not-registered-company",
+      "why-not-registered-company": {
         "question": "Pourquoi BOT n’est-il pas enregistré comme une société ?",
         "keywords": [
           "enregistrement",
@@ -1257,8 +1269,7 @@
           "Ne considérez pas l’absence d’informations facilement accessibles comme une preuve définitive d’enregistrement ou de non-enregistrement. Vérifiez les informations auprès des autorités compétentes."
         ]
       },
-      {
-        "id": "cmc-coingecko-volume-changes",
+      "cmc-coingecko-volume-changes": {
         "question": "Pourquoi le volume ou le prix de BOT diffère-t-il entre CoinMarketCap et CoinGecko ?",
         "keywords": [
           "CoinMarketCap",
@@ -1277,8 +1288,7 @@
           "Pour comparer les chiffres, vérifiez l’adresse du contrat, la paire de négociation, la plateforme d’échange, l’heure de mise à jour et la définition du volume affiché."
         ]
       },
-      {
-        "id": "ca-card-mobile-roadmap",
+      "ca-card-mobile-roadmap": {
         "question": "Quand la carte CA et les fonctionnalités mobiles seront-elles disponibles ?",
         "keywords": [
           "carte CA",
@@ -1297,7 +1307,6 @@
           "Consultez les canaux officiels de BOT pour connaître les dernières annonces, les régions prises en charge, les conditions d’éligibilité et les instructions d’utilisation."
         ]
       }
-    ]
+    }
   }
-
 }

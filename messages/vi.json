@@ -437,85 +437,99 @@
     }
   },
   "Tokenomics": {
-  "badge": "Kiến trúc kinh tế",
-  "title": "Tokenomics CA: <accent>nguồn cung cố định {supply}</accent>",
-  "subtitle": "Đường cong giảm phát được xác định bằng toán học trong {years} năm, kết hợp phát hành thuật toán hằng ngày với cơ chế đốt ba lớp.",
-  "capLabel": "Nguồn cung tối đa (giới hạn cứng)",
-  "caAmount": "{amount} CA",
-  "capBody": "<cyan>{liquidity} CA</cyan> cho thanh khoản SWAP ban đầu + <purple>{emitted} CA</purple> được phát hành trong {years} năm.",
-  "emissionLabel": "Phát hành hằng ngày ban đầu",
-  "emissionValue": "{amount} CA / ngày",
-  "emissionBody": "Giảm <amber>{rate} mỗi {cycle} năm</amber> trong toàn bộ chu kỳ phân phối {years} năm.",
-  "burnLabel": "Đốt giảm phát ba lớp",
-  "burnValue": "Đốt đa tầng",
-  "burnBody": "Đốt {buyback} khi bán trên BDEX + mua lại {txFee} phí giao dịch + hủy {gas} phí gas BOT.",
-  "allocTitle": "Phân bổ phát hành {amount} CA mỗi ngày",
-  "allocHint": "Nhấp vào bất kỳ phân đoạn nào để xem cơ chế phân phối on-chain",
-  "settlement": "Thanh toán hằng ngày T+1 (00:00 UTC)",
-  "perDay": "{amount} CA/ngày",
-  "poolBadge": "{percent} quỹ ({amount} CA/ngày)",
-  "segmentTitle": "{name}: {percent} ({amount} CA/ngày)",
-  "split": {
-    "mining": { "name": "Đào bằng sức mạnh tính toán", "description": "Phân phối theo tỷ lệ cho người nắm giữ đơn vị hashrate đang hoạt động (hệ số lãi kép K ≈ 1,01)." },
-    "active": { "name": "Quỹ thưởng hoạt động", "description": "Tài trợ ưu đãi cấp VIP và đối chiếu hiệu suất tuyến dưới giới thiệu." },
-    "staking": { "name": "Đầu ra staking PoS", "description": "Phần thưởng staking hằng ngày cho người staking CA có khóa và linh hoạt." },
-    "dao": { "name": "Quản trị DAO", "description": "Chia cho những người đóng góp đồng thuận V7–V10 và quản trị hệ sinh thái." },
-    "foundation": { "name": "Quỹ & công nghệ", "description": "Liên tục chi cho kiểm toán bảo mật giao thức, hạ tầng và tài trợ nhà phát triển." }
+    "badge": "Kiến trúc kinh tế",
+    "title": "Tokenomics CA: <accent>nguồn cung cố định {supply}</accent>",
+    "subtitle": "Đường cong giảm phát được xác định bằng toán học trong {years} năm, kết hợp phát hành thuật toán hằng ngày với cơ chế đốt ba lớp.",
+    "capLabel": "Nguồn cung tối đa (giới hạn cứng)",
+    "caAmount": "{amount} CA",
+    "capBody": "<cyan>{liquidity} CA</cyan> cho thanh khoản SWAP ban đầu + <purple>{emitted} CA</purple> được phát hành trong {years} năm.",
+    "emissionLabel": "Phát hành hằng ngày ban đầu",
+    "emissionValue": "{amount} CA / ngày",
+    "emissionBody": "Giảm <amber>{rate} mỗi {cycle} năm</amber> trong toàn bộ chu kỳ phân phối {years} năm.",
+    "burnLabel": "Đốt giảm phát ba lớp",
+    "burnValue": "Đốt đa tầng",
+    "burnBody": "Đốt {buyback} khi bán trên BDEX + mua lại {txFee} phí giao dịch + hủy {gas} phí gas BOT.",
+    "allocTitle": "Phân bổ phát hành {amount} CA mỗi ngày",
+    "allocHint": "Nhấp vào bất kỳ phân đoạn nào để xem cơ chế phân phối on-chain",
+    "settlement": "Thanh toán hằng ngày T+1 (00:00 UTC)",
+    "perDay": "{amount} CA/ngày",
+    "poolBadge": "{percent} quỹ ({amount} CA/ngày)",
+    "segmentTitle": "{name}: {percent} ({amount} CA/ngày)",
+    "split": {
+      "mining": {
+        "name": "Đào bằng sức mạnh tính toán",
+        "description": "Phân phối theo tỷ lệ cho người nắm giữ đơn vị hashrate đang hoạt động (hệ số lãi kép K ≈ 1,01)."
+      },
+      "active": {
+        "name": "Quỹ thưởng hoạt động",
+        "description": "Tài trợ ưu đãi cấp VIP và đối chiếu hiệu suất tuyến dưới giới thiệu."
+      },
+      "staking": {
+        "name": "Đầu ra staking PoS",
+        "description": "Phần thưởng staking hằng ngày cho người staking CA có khóa và linh hoạt."
+      },
+      "dao": {
+        "name": "Quản trị DAO",
+        "description": "Chia cho những người đóng góp đồng thuận V7–V10 và quản trị hệ sinh thái."
+      },
+      "foundation": {
+        "name": "Quỹ & công nghệ",
+        "description": "Liên tục chi cho kiểm toán bảo mật giao thức, hạ tầng và tài trợ nhà phát triển."
+      }
+    },
+    "curveTitle": "Giảm phát hành {rate} mỗi hai năm trong {years} năm",
+    "curveSubtitle": "Lịch trình giảm phát thuật toán được lập trình sẵn",
+    "thCycle": "Chu kỳ phát hành",
+    "thDaily": "CA phát hành mỗi ngày",
+    "thAnnual": "Sản lượng quy năm",
+    "thFactor": "Hệ số đường cong",
+    "yearsRange": "Năm {start}–{end}",
+    "factorWithDelta": "{percent} ({delta})",
+    "finalDaily": "Giảm dần",
+    "finalAnnual": "Phần phát hành còn lại",
+    "finalFactor": "Lần giảm một nửa cuối",
+    "sinksTitle": "Cơ chế giảm phát tự động",
+    "sinksIntro": "CaryPact áp dụng các khoản phí trong hợp đồng thông minh nhằm giảm vĩnh viễn nguồn cung lưu hành theo thời gian:",
+    "sink1Title": "Đốt {percent} khi bán trên BDEX",
+    "sink1Tag": "Đốt on-chain",
+    "sink1Body": "Mỗi CA bán trên BDEX chuyển {percent} đến một địa chỉ đốt không thể thu hồi.",
+    "sink2Title": "Mua lại {percent} phí giao dịch",
+    "sink2Tag": "Hút thanh khoản",
+    "sink2Body": "{percent} phí giao dịch được quy đổi qua AMM thành CA rồi đốt.",
+    "sink3Title": "Hủy {percent} phí gas BOT",
+    "sink3Tag": "Đốt nền tảng L1",
+    "sink3Body": "{percent} tổng phí gas của BOT Chain bị các validator hủy vĩnh viễn."
   },
-  "curveTitle": "Giảm phát hành {rate} mỗi hai năm trong {years} năm",
-  "curveSubtitle": "Lịch trình giảm phát thuật toán được lập trình sẵn",
-  "thCycle": "Chu kỳ phát hành",
-  "thDaily": "CA phát hành mỗi ngày",
-  "thAnnual": "Sản lượng quy năm",
-  "thFactor": "Hệ số đường cong",
-  "yearsRange": "Năm {start}–{end}",
-  "factorWithDelta": "{percent} ({delta})",
-  "finalDaily": "Giảm dần",
-  "finalAnnual": "Phần phát hành còn lại",
-  "finalFactor": "Lần giảm một nửa cuối",
-  "sinksTitle": "Cơ chế giảm phát tự động",
-  "sinksIntro": "CaryPact áp dụng các khoản phí trong hợp đồng thông minh nhằm giảm vĩnh viễn nguồn cung lưu hành theo thời gian:",
-  "sink1Title": "Đốt {percent} khi bán trên BDEX",
-  "sink1Tag": "Đốt on-chain",
-  "sink1Body": "Mỗi CA bán trên BDEX chuyển {percent} đến một địa chỉ đốt không thể thu hồi.",
-  "sink2Title": "Mua lại {percent} phí giao dịch",
-  "sink2Tag": "Hút thanh khoản",
-  "sink2Body": "{percent} phí giao dịch được quy đổi qua AMM thành CA rồi đốt.",
-  "sink3Title": "Hủy {percent} phí gas BOT",
-  "sink3Tag": "Đốt nền tảng L1",
-  "sink3Body": "{percent} tổng phí gas của BOT Chain bị các validator hủy vĩnh viễn."
-},
   "Footer": {
-  "badge": "Trung tâm học tập",
-  "brandDescription": "Nguồn giáo dục độc lập hàng đầu và cổng phân tích trực tiếp về CaryPact, BOT Chain, token CA và các giao thức siêu máy tính phi tập trung.",
-  "telegram": "Telegram",
-  "twitter": "Twitter / X",
-  "explorer": "Trình khám phá BOT Chain",
-  "navTitle": "Điều hướng",
-  "navHome": "Trang chủ & Trung tâm học tập",
-  "navLive": "Thị trường trực tiếp & cổng CMC",
-  "liveBadge": "TRỰC TIẾP",
-  "navBotChain": "5 trụ cột của BOT Chain",
-  "navTokenomics": "Tokenomics {supply} CA",
-  "navVip": "Hệ thống VIP {count} cấp",
-  "navRisks": "Công bố rủi ro",
-  "guidesTitle": "Hướng dẫn & Thiết lập",
-  "guideStart": "Bắt đầu",
-  "guideWallet": "Tạo ví BO",
-  "guideBuy": "Mua sức mạnh tính toán",
-  "guideStaking": "Hệ số staking (30–360 ngày)",
-  "guideSlippage": "Hoán đổi BDEX trượt giá {percent}",
-  "toolsTitle": "Công cụ & Chính thức",
-  "cheatSheet": "Tải bảng tóm tắt",
-  "newsletter": "Đăng ký bản tin",
-  "launchApp": "Mở ứng dụng CaryPact",
-  "botDocs": "Tài liệu BOT Chain",
-  "disclosureTitle": "Trung tâm học tập độc lập & Công bố liên kết",
-  "disclosureBody": "Trang web này là một sáng kiến giáo dục độc lập và không do CaryPact hay quỹ BOT Chain trực tiếp vận hành. Mọi liên kết đăng ký đều chứa mã mời cộng đồng đã xác minh <code>{inviteCode} (Hậu tố: {suffix})</code>. Chúng tôi có thể nhận hoa hồng giới thiệu khi người dùng tham gia qua các liên kết trên trang này. Nội dung chỉ nhằm mục đích giáo dục và không phải lời khuyên tài chính.",
-  "copyright": "© {year} CaryPact Learning Hub. Nguồn giáo dục độc lập.",
-  "backToTop": "Lên đầu trang"
-},
-
+    "badge": "Trung tâm học tập",
+    "brandDescription": "Nguồn giáo dục độc lập hàng đầu và cổng phân tích trực tiếp về CaryPact, BOT Chain, token CA và các giao thức siêu máy tính phi tập trung.",
+    "telegram": "Telegram",
+    "twitter": "Twitter / X",
+    "explorer": "Trình khám phá BOT Chain",
+    "navTitle": "Điều hướng",
+    "navHome": "Trang chủ & Trung tâm học tập",
+    "navLive": "Thị trường trực tiếp & cổng CMC",
+    "liveBadge": "TRỰC TIẾP",
+    "navBotChain": "5 trụ cột của BOT Chain",
+    "navTokenomics": "Tokenomics {supply} CA",
+    "navVip": "Hệ thống VIP {count} cấp",
+    "navRisks": "Công bố rủi ro",
+    "guidesTitle": "Hướng dẫn & Thiết lập",
+    "guideStart": "Bắt đầu",
+    "guideWallet": "Tạo ví BO",
+    "guideBuy": "Mua sức mạnh tính toán",
+    "guideStaking": "Hệ số staking (30–360 ngày)",
+    "guideSlippage": "Hoán đổi BDEX trượt giá {percent}",
+    "toolsTitle": "Công cụ & Chính thức",
+    "cheatSheet": "Tải bảng tóm tắt",
+    "newsletter": "Đăng ký bản tin",
+    "launchApp": "Mở ứng dụng CaryPact",
+    "botDocs": "Tài liệu BOT Chain",
+    "disclosureTitle": "Trung tâm học tập độc lập & Công bố liên kết",
+    "disclosureBody": "Trang web này là một sáng kiến giáo dục độc lập và không do CaryPact hay quỹ BOT Chain trực tiếp vận hành. Mọi liên kết đăng ký đều chứa mã mời cộng đồng đã xác minh <code>{inviteCode} (Hậu tố: {suffix})</code>. Chúng tôi có thể nhận hoa hồng giới thiệu khi người dùng tham gia qua các liên kết trên trang này. Nội dung chỉ nhằm mục đích giáo dục và không phải lời khuyên tài chính.",
+    "copyright": "© {year} CaryPact Learning Hub. Nguồn giáo dục độc lập.",
+    "backToTop": "Lên đầu trang"
+  },
   "earn": {
     "common": {
       "methodBadge": "CÁCH {n}",
@@ -750,27 +764,27 @@
     }
   },
   "wallet": {
-  "title": "Mở trong ví của bạn",
-  "subtitle": "Ứng dụng CaryPact là một DApp. Cần chạy trong trình duyệt tích hợp của ví.",
-  "chooseWallet": "Chọn ví của bạn",
-  "lastUsed": "Dùng gần nhất",
-  "openIn": "Mở trong {wallet}",
-  "launching": "Đang mở {wallet}…",
-  "launchingHint": "Nếu ứng dụng ví đã mở, hãy tiếp tục tại đó.",
-  "fallbackTitle": "{wallet} không mở được?",
-  "fallbackDesc": "Có thể ví chưa được cài đặt hoặc thiết bị đã chặn liên kết. Hãy mở liên kết thông thường hoặc làm theo các bước thủ công bên dưới.",
-  "openNormal": "Mở liên kết thông thường",
-  "copyLink": "Sao chép liên kết",
-  "copied": "Đã sao chép",
-  "stepsTitle": "Mở thủ công",
-  "step1": "Sao chép liên kết bên dưới.",
-  "step2": "Mở ứng dụng ví và vào trình duyệt DApp của ví (thường tên là Browser hoặc Discover).",
-  "step3": "Dán liên kết vào thanh địa chỉ và mở.",
-  "install": "Chưa có ví? Hãy cài MetaMask, Trust Wallet hoặc TokenPocket từ cửa hàng ứng dụng trước.",
-  "tryAnother": "Thử ví khác",
-  "close": "Đóng"
-},
-"livePage": {
+    "title": "Mở trong ví của bạn",
+    "subtitle": "Ứng dụng CaryPact là một DApp. Cần chạy trong trình duyệt tích hợp của ví.",
+    "chooseWallet": "Chọn ví của bạn",
+    "lastUsed": "Dùng gần nhất",
+    "openIn": "Mở trong {wallet}",
+    "launching": "Đang mở {wallet}…",
+    "launchingHint": "Nếu ứng dụng ví đã mở, hãy tiếp tục tại đó.",
+    "fallbackTitle": "{wallet} không mở được?",
+    "fallbackDesc": "Có thể ví chưa được cài đặt hoặc thiết bị đã chặn liên kết. Hãy mở liên kết thông thường hoặc làm theo các bước thủ công bên dưới.",
+    "openNormal": "Mở liên kết thông thường",
+    "copyLink": "Sao chép liên kết",
+    "copied": "Đã sao chép",
+    "stepsTitle": "Mở thủ công",
+    "step1": "Sao chép liên kết bên dưới.",
+    "step2": "Mở ứng dụng ví và vào trình duyệt DApp của ví (thường tên là Browser hoặc Discover).",
+    "step3": "Dán liên kết vào thanh địa chỉ và mở.",
+    "install": "Chưa có ví? Hãy cài MetaMask, Trust Wallet hoặc TokenPocket từ cửa hàng ứng dụng trước.",
+    "tryAnother": "Thử ví khác",
+    "close": "Đóng"
+  },
+  "livePage": {
     "backToHub": "Quay lại Trung tâm Học tập",
     "breadcrumb": "Cổng On-Chain & CMC Trực tiếp",
     "cmcFeed": "Nguồn CMC",
@@ -803,8 +817,6 @@
     "rule3Body": "Yêu cầu kích hoạt cá nhân 300 USDT cùng hiệu suất nhánh tuyến dưới.",
     "printCheatSheet": "In bảng tóm tắt giao thức đầy đủ"
   },
-  
-
   "LearnFaq": {
     "badge": "Trung tâm kiến thức",
     "title": "Câu hỏi thường gặp",
@@ -825,269 +837,433 @@
     "supportText": "Nếu không tìm thấy câu trả lời, bạn có thể liên hệ cộng đồng hoặc đội ngũ hỗ trợ để được giải đáp.",
     "supportCta": "Liên hệ hỗ trợ",
     "categories": {
-      "all": "Tất cả câu hỏi",
-      "tokenomics": "Tokenomics",
-      "ecosystem": "Hệ sinh thái",
-      "mining": "Khai thác",
-      "vip": "VIP và phần thưởng",
-      "security": "Bảo mật",
-      "global": "Phát triển toàn cầu"
+      "all": {
+        "tab": "Tất cả câu hỏi",
+        "badge": "Tất cả câu hỏi"
+      },
+      "tokenomics": {
+        "tab": "Tokenomics",
+        "badge": "Tokenomics"
+      },
+      "ecosystem": {
+        "tab": "Hệ sinh thái",
+        "badge": "Hệ sinh thái"
+      },
+      "mining": {
+        "tab": "Khai thác",
+        "badge": "Khai thác"
+      },
+      "vip": {
+        "tab": "VIP và phần thưởng",
+        "badge": "VIP và phần thưởng"
+      },
+      "security": {
+        "tab": "Bảo mật",
+        "badge": "Bảo mật"
+      },
+      "global": {
+        "tab": "Phát triển toàn cầu",
+        "badge": "Phát triển toàn cầu"
+      }
     },
-    "items": [
-      {
-        "id": "inflation-elimination",
+    "items": {
+      "inflation-elimination": {
         "question": "BOT dự định loại bỏ lạm phát như thế nào?",
-        "keywords": ["lạm phát", "tokenomics", "nguồn cung", "BOT"],
-        "geoTags": ["global"],
+        "keywords": [
+          "lạm phát",
+          "tokenomics",
+          "nguồn cung",
+          "BOT"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Tìm hiểu cách tokenomics hướng đến việc kiểm soát nguồn cung token.",
         "answer": [
           "Tokenomics của BOT có thể bao gồm các cơ chế quản lý nguồn cung token nhằm hỗ trợ tính bền vững lâu dài của hệ sinh thái.",
           "Kết quả thực tế phụ thuộc vào việc triển khai các cơ chế này, hoạt động của mạng lưới và điều kiện thị trường. Hãy tham khảo tài liệu chính thức để biết thêm chi tiết."
         ]
       },
-      {
-        "id": "candlestick-stability",
+      "candlestick-stability": {
         "question": "BOT duy trì sự ổn định giá như thế nào?",
-        "keywords": ["giá", "ổn định", "thị trường", "thanh khoản"],
-        "geoTags": ["global"],
+        "keywords": [
+          "giá",
+          "ổn định",
+          "thị trường",
+          "thanh khoản"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Các yếu tố ảnh hưởng đến giá BOT và sự ổn định của thị trường.",
         "answer": [
           "Giá token chịu ảnh hưởng bởi cung và cầu, thanh khoản, hoạt động giao dịch và điều kiện chung của thị trường.",
           "Không có cơ chế nào có thể bảo đảm giá luôn ổn định. Hãy nghiên cứu dữ liệu thị trường và các nguồn chính thức trước khi đưa ra quyết định đầu tư."
         ]
       },
-      {
-        "id": "wbot-holders-price-growth",
+      "wbot-holders-price-growth": {
         "question": "Người nắm giữ wBOT có thể hưởng lợi như thế nào khi giá tăng?",
-        "keywords": ["wBOT", "người nắm giữ", "tăng giá", "phần thưởng"],
-        "geoTags": ["global"],
+        "keywords": [
+          "wBOT",
+          "người nắm giữ",
+          "tăng giá",
+          "phần thưởng"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Tìm hiểu mối liên hệ giữa giá token và giá trị tài sản của người nắm giữ.",
         "answer": [
           "Giá trị tài sản của người nắm giữ wBOT có thể thay đổi theo giá thị trường của token tương ứng.",
           "Lợi ích thực tế phụ thuộc vào điều kiện chuyển đổi, thanh khoản, phí và tình hình thị trường. Giá tăng không được bảo đảm."
         ]
       },
-      {
-        "id": "why-invest-differentiation",
+      "why-invest-differentiation": {
         "question": "Điều gì khiến BOT khác biệt so với các dự án tiền mã hóa khác?",
-        "keywords": ["đầu tư", "khác biệt", "dự án", "BOT"],
-        "geoTags": ["global"],
+        "keywords": [
+          "đầu tư",
+          "khác biệt",
+          "dự án",
+          "BOT"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Tìm hiểu các đặc điểm chính của dự án và hệ sinh thái.",
         "answer": [
           "BOT được định vị là một dự án kết hợp tokenomics, tài nguyên điện toán và sự phát triển của hệ sinh thái.",
           "Hãy so sánh dự án với các lựa chọn khác dựa trên tài liệu có thể kiểm chứng, mức độ sử dụng thực tế, tính minh bạch, thanh khoản và rủi ro. Mô tả của dự án không bảo đảm thành công."
         ]
       },
-      {
-        "id": "bot-price-project-owners",
+      "bot-price-project-owners": {
         "question": "Chủ sở hữu dự án ảnh hưởng đến giá BOT như thế nào?",
-        "keywords": ["giá BOT", "chủ dự án", "nhu cầu", "hệ sinh thái"],
-        "geoTags": ["global"],
+        "keywords": [
+          "giá BOT",
+          "chủ dự án",
+          "nhu cầu",
+          "hệ sinh thái"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Hoạt động của các bên tham gia hệ sinh thái có thể ảnh hưởng đến nhu cầu thị trường.",
         "answer": [
           "Hoạt động của các dự án sử dụng hệ sinh thái BOT có thể ảnh hưởng đến nhu cầu đối với token.",
           "Mức độ ảnh hưởng thực tế phụ thuộc vào việc sử dụng thực tế, khối lượng hoạt động, thanh khoản và điều kiện thị trường. Tác động này không tự động xảy ra và cũng không được bảo đảm."
         ]
       },
-      {
-        "id": "bot-ecosystem-roadmap",
+      "bot-ecosystem-roadmap": {
         "question": "Lộ trình phát triển hệ sinh thái BOT là gì?",
-        "keywords": ["lộ trình", "hệ sinh thái", "phát triển", "cập nhật"],
-        "geoTags": ["global"],
+        "keywords": [
+          "lộ trình",
+          "hệ sinh thái",
+          "phát triển",
+          "cập nhật"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Tìm hiểu nơi xem thông tin về kế hoạch phát triển dự án.",
         "answer": [
           "Lộ trình phát triển mô tả các giai đoạn dự kiến trong quá trình phát triển hệ sinh thái BOT.",
           "Tiến độ và tính năng có thể thay đổi. Hãy kiểm tra các thông báo và tài liệu chính thức mới nhất để biết trạng thái của từng giai đoạn."
         ]
       },
-      {
-        "id": "bohr-to-bot-rebrand",
+      "bohr-to-bot-rebrand": {
         "question": "Tại sao BOHR được đổi tên thành BOT?",
-        "keywords": ["BOHR", "BOT", "đổi thương hiệu", "di chuyển token"],
-        "geoTags": ["global"],
+        "keywords": [
+          "BOHR",
+          "BOT",
+          "đổi thương hiệu",
+          "di chuyển token"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Thông tin về việc đổi tên và những thay đổi liên quan.",
         "answer": [
           "Việc thay đổi tên hoặc mã giao dịch có thể phản ánh sự thay đổi về thương hiệu, chiến lược hoặc cấu trúc của dự án.",
           "Trước khi hoán đổi hoặc di chuyển token, hãy kiểm tra hướng dẫn chính thức, các mạng được hỗ trợ, địa chỉ hợp đồng và thời hạn áp dụng. Không gửi token đến địa chỉ chưa được xác minh."
         ]
       },
-      {
-        "id": "verify-150m-bot-supply",
+      "verify-150m-bot-supply": {
         "question": "Làm thế nào để xác minh tổng nguồn cung 150 triệu BOT?",
-        "keywords": ["150M", "nguồn cung token", "blockchain", "xác minh"],
-        "geoTags": ["global"],
+        "keywords": [
+          "150M",
+          "nguồn cung token",
+          "blockchain",
+          "xác minh"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Xác minh nguồn cung token thông qua dữ liệu blockchain chính thức.",
         "answer": [
           "Để xác minh tuyên bố về nguồn cung 150 triệu BOT, hãy kiểm tra địa chỉ hợp đồng chính thức và dữ liệu blockchain liên quan.",
           "Đối chiếu tổng nguồn cung, nguồn cung lưu hành, token đã đốt và số dư bị khóa. Các chỉ số này có thể khác nhau. Bạn có thể kiểm tra giao dịch tại https://scan.botchain.ai."
         ]
       },
-      {
-        "id": "mining-machine-pricing",
+      "mining-machine-pricing": {
         "question": "Thiết bị khai thác có giá bao nhiêu?",
-        "keywords": ["khai thác", "thiết bị", "giá", "máy khai thác"],
-        "geoTags": ["mining"],
+        "keywords": [
+          "khai thác",
+          "thiết bị",
+          "giá",
+          "máy khai thác"
+        ],
+        "geoTags": [
+          "mining"
+        ],
         "summary": "Giá thiết bị phụ thuộc vào mẫu máy và điều kiện mua hàng.",
         "answer": [
           "Chi phí thiết bị khai thác phụ thuộc vào mẫu máy, hiệu suất, tình trạng sẵn có, phí vận chuyển và điều kiện của người bán.",
           "Trước khi mua, hãy yêu cầu báo giá mới nhất và xác nhận bảo hành, chi phí điện, bảo trì và lợi nhuận dự kiến. Thu nhập từ khai thác không được bảo đảm."
         ]
       },
-      {
-        "id": "mining-machine-manufacturer",
+      "mining-machine-manufacturer": {
         "question": "Ai sản xuất thiết bị khai thác?",
-        "keywords": ["nhà sản xuất", "thiết bị khai thác", "phần cứng"],
-        "geoTags": ["mining"],
+        "keywords": [
+          "nhà sản xuất",
+          "thiết bị khai thác",
+          "phần cứng"
+        ],
+        "geoTags": [
+          "mining"
+        ],
         "summary": "Kiểm tra thông tin về nhà sản xuất và nhà cung cấp thiết bị.",
         "answer": [
           "Trước khi mua, hãy xác minh tên pháp lý của nhà sản xuất, thông số kỹ thuật của thiết bị và tài liệu chính thức.",
           "Kiểm tra chế độ bảo hành, dịch vụ hỗ trợ và uy tín của nhà cung cấp thay vì chỉ dựa vào quảng cáo của dự án."
         ]
       },
-      {
-        "id": "tier-1-mining-operators",
+      "tier-1-mining-operators": {
         "question": "Các đơn vị vận hành khai thác Tier 1 là ai?",
-        "keywords": ["đơn vị vận hành", "Tier 1", "khai thác", "năng lực điện toán"],
-        "geoTags": ["mining"],
+        "keywords": [
+          "đơn vị vận hành",
+          "Tier 1",
+          "khai thác",
+          "năng lực điện toán"
+        ],
+        "geoTags": [
+          "mining"
+        ],
         "summary": "Tìm hiểu vai trò của các đơn vị vận hành lớn trong hạ tầng khai thác.",
         "answer": [
           "Các đơn vị vận hành khai thác cung cấp thiết bị, cơ sở hạ tầng và năng lực điện toán để thực hiện những tác vụ tương ứng của mạng lưới hoặc nền tảng.",
           "Tiêu chí để đạt cấp Tier 1, yêu cầu tham gia và các quyền lợi liên quan cần được xác minh trong quy định chính thức của chương trình."
         ]
       },
-      {
-        "id": "carypact-compute-vs-bot-rigs",
+      "carypact-compute-vs-bot-rigs": {
         "question": "Tài nguyên điện toán của CaryPact khác gì so với các máy khai thác BOT?",
-        "keywords": ["CaryPact", "điện toán", "máy khai thác", "hạ tầng"],
-        "geoTags": ["mining", "ecosystem"],
+        "keywords": [
+          "CaryPact",
+          "điện toán",
+          "máy khai thác",
+          "hạ tầng"
+        ],
+        "geoTags": [
+          "mining",
+          "ecosystem"
+        ],
         "summary": "So sánh giải pháp điện toán với thiết bị khai thác chuyên dụng.",
         "answer": [
           "Hạ tầng điện toán và thiết bị khai thác chuyên dụng có thể khác nhau về mục đích sử dụng, kiến trúc, hiệu suất và cơ chế nhận thưởng.",
           "Để so sánh chính xác, hãy xem thông số kỹ thuật, trường hợp sử dụng đã được xác minh, chi phí và điều kiện tham gia. Thông tin bổ sung có thể được đăng trên các kênh chính thức của CaryPact, bao gồm https://x.com/CaryPact_BOT."
         ]
       },
-      {
-        "id": "hashrate-supply-servers",
+      "hashrate-supply-servers": {
         "question": "Hashrate, nguồn cung token và máy chủ có liên quan như thế nào?",
-        "keywords": ["hashrate", "nguồn cung", "máy chủ", "khai thác"],
-        "geoTags": ["mining"],
+        "keywords": [
+          "hashrate",
+          "nguồn cung",
+          "máy chủ",
+          "khai thác"
+        ],
+        "geoTags": [
+          "mining"
+        ],
         "summary": "Phân biệt năng lực tính toán với các chỉ số nguồn cung token.",
         "answer": [
           "Hashrate phản ánh năng lực tính toán được sử dụng trong hoạt động khai thác tương ứng. Nguồn cung token phản ánh số lượng token đã phát hành hoặc đang lưu hành theo chỉ số được sử dụng.",
           "Máy chủ cung cấp hạ tầng, nhưng mối quan hệ giữa năng lực tính toán và việc phát hành token phụ thuộc vào giao thức cụ thể. Hãy kiểm tra tài liệu kỹ thuật chính thức."
         ]
       },
-      {
-        "id": "v4-earnings-differential",
+      "v4-earnings-differential": {
         "question": "Tại sao thu nhập trong phiên bản V4 có thể khác nhau?",
-        "keywords": ["V4", "thu nhập", "phần thưởng", "chênh lệch"],
-        "geoTags": ["mining", "vip"],
+        "keywords": [
+          "V4",
+          "thu nhập",
+          "phần thưởng",
+          "chênh lệch"
+        ],
+        "geoTags": [
+          "mining",
+          "vip"
+        ],
         "summary": "Phần thưởng có thể khác nhau tùy theo điều kiện tham gia.",
         "answer": [
           "Sự khác biệt về thu nhập có thể liên quan đến cấp độ tham gia, năng lực tính toán, thời gian hoạt động, quy tắc phân phối và các thông số của chương trình.",
           "Hãy kiểm tra điều khoản của phiên bản V4 và lịch sử ghi nhận phần thưởng. Không nên xem các phép tính hiển thị là cam kết về khoản thanh toán trong tương lai."
         ]
       },
-      {
-        "id": "same-rank-bonus-distribution",
+      "same-rank-bonus-distribution": {
         "question": "Tiền thưởng được phân phối như thế nào giữa những người cùng cấp bậc?",
-        "keywords": ["cấp bậc", "tiền thưởng", "phân phối", "phần thưởng"],
-        "geoTags": ["vip"],
+        "keywords": [
+          "cấp bậc",
+          "tiền thưởng",
+          "phân phối",
+          "phần thưởng"
+        ],
+        "geoTags": [
+          "vip"
+        ],
         "summary": "Việc phân phối tiền thưởng phụ thuộc vào quy định của chương trình.",
         "answer": [
           "Việc phân phối tiền thưởng giữa những người cùng cấp bậc được xác định theo quy định của chương trình và có thể phụ thuộc vào các tiêu chí bổ sung.",
           "Hãy kiểm tra điều khoản chính thức, yêu cầu đối với người tham gia và công thức tính thưởng để hiểu cách xác định phần thưởng của từng người."
         ]
       },
-      {
-        "id": "time-compensation-mechanism",
+      "time-compensation-mechanism": {
         "question": "Cơ chế bù đắp theo thời gian hoạt động như thế nào?",
-        "keywords": ["bù đắp", "thời gian", "ghi nhận", "phần thưởng"],
-        "geoTags": ["vip", "mining"],
+        "keywords": [
+          "bù đắp",
+          "thời gian",
+          "ghi nhận",
+          "phần thưởng"
+        ],
+        "geoTags": [
+          "vip",
+          "mining"
+        ],
         "summary": "Điều kiện và cách tính khoản bù đắp cần được xác minh theo quy định chương trình.",
         "answer": [
           "Cơ chế bù đắp theo thời gian có thể phụ thuộc vào thời gian tham gia, trạng thái người dùng và quy tắc ghi nhận phần thưởng.",
           "Hãy xác minh thời điểm bắt đầu tính, cách xử lý thời gian gián đoạn và các giới hạn áp dụng. Không nên mặc định rằng khoản bù đắp tồn tại nếu chưa có xác nhận chính thức."
         ]
       },
-      {
-        "id": "dynamic-weight-v1-v10",
+      "dynamic-weight-v1-v10": {
         "question": "Cơ chế trọng số động từ V1 đến V10 hoạt động như thế nào?",
-        "keywords": ["trọng số động", "V1", "V10", "cấp độ"],
-        "geoTags": ["vip", "mining"],
+        "keywords": [
+          "trọng số động",
+          "V1",
+          "V10",
+          "cấp độ"
+        ],
+        "geoTags": [
+          "vip",
+          "mining"
+        ],
         "summary": "Trọng số động có thể được sử dụng để tính tỷ lệ phân bổ hoặc phần thưởng.",
         "answer": [
           "Nếu hệ thống sử dụng các cấp V1–V10, mỗi cấp có thể tương ứng với một hệ số hoặc quy tắc tham gia nhất định.",
           "Các giá trị chính xác và ảnh hưởng của trọng số động cần được đối chiếu với tài liệu hiện hành. Không nên suy ra mức thanh toán chỉ từ tên cấp độ."
         ]
       },
-      {
-        "id": "wallet-hacked-recovery",
+      "wallet-hacked-recovery": {
         "question": "Tôi nên làm gì nếu ví tiền mã hóa bị tấn công?",
-        "keywords": ["ví", "bị tấn công", "bảo mật", "khôi phục"],
-        "geoTags": ["security"],
+        "keywords": [
+          "ví",
+          "bị tấn công",
+          "bảo mật",
+          "khôi phục"
+        ],
+        "geoTags": [
+          "security"
+        ],
         "summary": "Hãy hành động nhanh chóng và tuyệt đối không chia sẻ thông tin bí mật của ví.",
         "answer": [
           "Nếu nghi ngờ ví bị xâm nhập, hãy ngừng tương tác với các trang web và ứng dụng đáng ngờ. Nếu ví vẫn truy cập được và thiết bị của bạn an toàn, hãy cân nhắc chuyển tài sản còn lại sang một ví mới với cụm từ khôi phục mới.",
           "Không chia sẻ seed phrase, khóa riêng tư hoặc mã xác minh với bất kỳ ai. Thu hồi các quyền truy cập đáng ngờ, kiểm tra lịch sử giao dịch và liên hệ bộ phận hỗ trợ chính thức. Không có gì bảo đảm rằng tài sản đã bị chuyển đi sẽ được khôi phục."
         ]
       },
-      {
-        "id": "bo-wallet-vs-tokenpocket",
+      "bo-wallet-vs-tokenpocket": {
         "question": "BO Wallet khác gì so với TokenPocket?",
-        "keywords": ["BO Wallet", "TokenPocket", "ví", "mạng blockchain"],
-        "geoTags": ["security", "ecosystem"],
+        "keywords": [
+          "BO Wallet",
+          "TokenPocket",
+          "ví",
+          "mạng blockchain"
+        ],
+        "geoTags": [
+          "security",
+          "ecosystem"
+        ],
         "summary": "So sánh các mạng được hỗ trợ, tính năng và biện pháp bảo mật.",
         "answer": [
           "Các ví tiền mã hóa có thể khác nhau về blockchain được hỗ trợ, giao diện, tích hợp và chức năng quản lý tài sản.",
           "Trước khi sử dụng, hãy xác minh nguồn tải ứng dụng chính thức, khả năng hỗ trợ mạng cần dùng và tính tương thích của địa chỉ. Không nhập seed phrase vào các trang web không xác định hoặc cài ứng dụng từ nguồn chưa được xác minh."
         ]
       },
-      {
-        "id": "headquarters-global-offices",
+      "headquarters-global-offices": {
         "question": "Trụ sở chính và các văn phòng quốc tế của BOT nằm ở đâu?",
-        "keywords": ["trụ sở chính", "văn phòng", "quốc tế", "liên hệ"],
-        "geoTags": ["global"],
+        "keywords": [
+          "trụ sở chính",
+          "văn phòng",
+          "quốc tế",
+          "liên hệ"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Xác minh thông tin về văn phòng và tổ chức qua các nguồn chính thức.",
         "answer": [
           "Địa chỉ hiện tại của trụ sở chính và các văn phòng quốc tế cần được xác nhận thông qua các kênh chính thức của dự án.",
           "Nếu muốn đến văn phòng hoặc liên hệ với đại diện, hãy xác minh trước địa chỉ, thông tin liên hệ và thông tin pháp lý. Không chỉ dựa vào các bài đăng trên mạng xã hội."
         ]
       },
-      {
-        "id": "why-not-registered-company",
+      "why-not-registered-company": {
         "question": "Tại sao dự án chưa được đăng ký thành công ty?",
-        "keywords": ["đăng ký", "công ty", "tư cách pháp lý", "tuân thủ"],
-        "geoTags": ["global", "security"],
+        "keywords": [
+          "đăng ký",
+          "công ty",
+          "tư cách pháp lý",
+          "tuân thủ"
+        ],
+        "geoTags": [
+          "global",
+          "security"
+        ],
         "summary": "Tư cách pháp lý của dự án cần được xác minh bằng tài liệu chính thức.",
         "answer": [
           "Cấu trúc pháp lý của một dự án tiền mã hóa có thể khác nhau tùy theo khu vực pháp lý và mô hình hoạt động.",
           "Để xác định tổ chức nào chịu trách nhiệm cho hoạt động của dự án, hãy kiểm tra tài liệu pháp lý chính thức, thông tin đăng ký và các yêu cầu pháp luật có liên quan. Không nên kết luận về tình trạng đăng ký nếu chưa có bằng chứng xác thực."
         ]
       },
-      {
-        "id": "cmc-coingecko-volume-changes",
+      "cmc-coingecko-volume-changes": {
         "question": "Tại sao khối lượng giao dịch trên CoinMarketCap và CoinGecko thay đổi?",
-        "keywords": ["CoinMarketCap", "CoinGecko", "khối lượng giao dịch", "dữ liệu thị trường"],
-        "geoTags": ["global"],
+        "keywords": [
+          "CoinMarketCap",
+          "CoinGecko",
+          "khối lượng giao dịch",
+          "dữ liệu thị trường"
+        ],
+        "geoTags": [
+          "global"
+        ],
         "summary": "Sự khác biệt trong dữ liệu thị trường có thể đến từ nguồn dữ liệu và phương pháp tính toán.",
         "answer": [
           "CoinMarketCap và CoinGecko có thể sử dụng các nguồn dữ liệu, phương pháp đánh giá thanh khoản, quy tắc đưa sàn giao dịch vào danh sách và chu kỳ cập nhật khác nhau.",
           "Do đó, khối lượng giao dịch và các chỉ số khác có thể không giống nhau. Khi so sánh, hãy kiểm tra cặp giao dịch, khoảng thời gian, các sàn được tính và phương pháp của từng nền tảng."
         ]
       },
-      {
-        "id": "ca-card-mobile-roadmap",
+      "ca-card-mobile-roadmap": {
         "question": "Kế hoạch phát triển CA Card và ứng dụng di động là gì?",
-        "keywords": ["CA Card", "ứng dụng di động", "lộ trình", "cập nhật"],
-        "geoTags": ["ecosystem", "global"],
+        "keywords": [
+          "CA Card",
+          "ứng dụng di động",
+          "lộ trình",
+          "cập nhật"
+        ],
+        "geoTags": [
+          "ecosystem",
+          "global"
+        ],
         "summary": "Theo dõi thông báo chính thức về việc phát hành thẻ và các tính năng di động.",
         "answer": [
           "Kế hoạch phát triển CA Card và ứng dụng di động có thể bao gồm các giai đoạn phát triển, thử nghiệm, ra mắt và mở rộng khả năng tiếp cận tính năng.",
           "Thời gian phát hành và khả năng sử dụng phụ thuộc vào thông báo chính thức, mức độ sẵn sàng về kỹ thuật và các yêu cầu tại từng khu vực. Hãy kiểm tra cập nhật mới nhất của dự án trước khi dựa vào một ngày ra mắt cụ thể."
         ]
       }
-    ]
+    }
   }
-
 }

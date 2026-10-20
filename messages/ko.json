@@ -436,86 +436,100 @@
       "button": "동의 후 CaryPact으로 계속하기"
     }
   },
-"Tokenomics": {
-  "badge": "경제 설계",
-  "title": "CA 토큰이코노믹스: <accent>{supply} 고정 공급량</accent>",
-  "subtitle": "{years}년에 걸쳐 수학적으로 정의된 디스인플레이션 곡선으로, 일일 알고리즘 발행과 삼중 소각 장치를 결합합니다.",
-  "capLabel": "최대 공급량 (하드캡)",
-  "caAmount": "{amount} CA",
-  "capBody": "초기 SWAP 유동성용 <cyan>{liquidity} CA</cyan> + {years}년간 발행되는 <purple>{emitted} CA</purple>.",
-  "emissionLabel": "초기 일일 발행량",
-  "emissionValue": "{amount} CA / 일",
-  "emissionBody": "{years}년 전체 분배 주기 동안 <amber>{cycle}년마다 {rate}</amber> 감소합니다.",
-  "burnLabel": "삼중 디플레이션 소각",
-  "burnValue": "다층 소각",
-  "burnBody": "BDEX 매도 시 {buyback} 소각 + 거래 수수료 {txFee} 바이백 + BOT 가스 {gas} 소멸.",
-  "allocTitle": "일일 {amount} CA 발행 배분",
-  "allocHint": "구간을 클릭하면 온체인 분배 방식을 확인할 수 있습니다",
-  "settlement": "T+1 일일 정산 (00:00 UTC)",
-  "perDay": "{amount} CA/일",
-  "poolBadge": "풀의 {percent} ({amount} CA/일)",
-  "segmentTitle": "{name}: {percent} ({amount} CA/일)",
-  "split": {
-    "mining": { "name": "컴퓨팅 파워 마이닝", "description": "활성 해시레이트 유닛 보유자에게 비례하여 분배됩니다 (K ≈ 1.01 복리 계수)." },
-    "active": { "name": "액티브 리워드 풀", "description": "VIP 등급 인센티브와 추천 하위 라인 실적 매칭에 사용됩니다." },
-    "staking": { "name": "PoS 스테이킹 보상", "description": "락업 및 유연형 CA 스테이커에게 분배되는 일일 스테이킹 보상입니다." },
-    "dao": { "name": "DAO 거버넌스", "description": "V7–V10 합의 기여자와 생태계 거버넌스가 나눠 갖습니다." },
-    "foundation": { "name": "재단 및 기술", "description": "프로토콜 보안 감사, 인프라, 개발자 보조금에 지속적으로 사용됩니다." }
+  "Tokenomics": {
+    "badge": "경제 설계",
+    "title": "CA 토큰이코노믹스: <accent>{supply} 고정 공급량</accent>",
+    "subtitle": "{years}년에 걸쳐 수학적으로 정의된 디스인플레이션 곡선으로, 일일 알고리즘 발행과 삼중 소각 장치를 결합합니다.",
+    "capLabel": "최대 공급량 (하드캡)",
+    "caAmount": "{amount} CA",
+    "capBody": "초기 SWAP 유동성용 <cyan>{liquidity} CA</cyan> + {years}년간 발행되는 <purple>{emitted} CA</purple>.",
+    "emissionLabel": "초기 일일 발행량",
+    "emissionValue": "{amount} CA / 일",
+    "emissionBody": "{years}년 전체 분배 주기 동안 <amber>{cycle}년마다 {rate}</amber> 감소합니다.",
+    "burnLabel": "삼중 디플레이션 소각",
+    "burnValue": "다층 소각",
+    "burnBody": "BDEX 매도 시 {buyback} 소각 + 거래 수수료 {txFee} 바이백 + BOT 가스 {gas} 소멸.",
+    "allocTitle": "일일 {amount} CA 발행 배분",
+    "allocHint": "구간을 클릭하면 온체인 분배 방식을 확인할 수 있습니다",
+    "settlement": "T+1 일일 정산 (00:00 UTC)",
+    "perDay": "{amount} CA/일",
+    "poolBadge": "풀의 {percent} ({amount} CA/일)",
+    "segmentTitle": "{name}: {percent} ({amount} CA/일)",
+    "split": {
+      "mining": {
+        "name": "컴퓨팅 파워 마이닝",
+        "description": "활성 해시레이트 유닛 보유자에게 비례하여 분배됩니다 (K ≈ 1.01 복리 계수)."
+      },
+      "active": {
+        "name": "액티브 리워드 풀",
+        "description": "VIP 등급 인센티브와 추천 하위 라인 실적 매칭에 사용됩니다."
+      },
+      "staking": {
+        "name": "PoS 스테이킹 보상",
+        "description": "락업 및 유연형 CA 스테이커에게 분배되는 일일 스테이킹 보상입니다."
+      },
+      "dao": {
+        "name": "DAO 거버넌스",
+        "description": "V7–V10 합의 기여자와 생태계 거버넌스가 나눠 갖습니다."
+      },
+      "foundation": {
+        "name": "재단 및 기술",
+        "description": "프로토콜 보안 감사, 인프라, 개발자 보조금에 지속적으로 사용됩니다."
+      }
+    },
+    "curveTitle": "{years}년간 2년마다 {rate} 발행량 감축",
+    "curveSubtitle": "프로그래밍된 알고리즘 디스인플레이션 일정",
+    "thCycle": "발행 주기",
+    "thDaily": "일일 CA 배출량",
+    "thAnnual": "연환산 발행량",
+    "thFactor": "곡선 계수",
+    "yearsRange": "{start}–{end}년차",
+    "factorWithDelta": "{percent} ({delta})",
+    "finalDaily": "점감",
+    "finalAnnual": "잔여 발행량",
+    "finalFactor": "최종 반감",
+    "sinksTitle": "자동 디플레이션 장치",
+    "sinksIntro": "CaryPact는 스마트 컨트랙트 수수료 싱크를 통해 유통 공급량을 영구적으로 줄입니다.",
+    "sink1Title": "BDEX 매도 시 {percent} 소각",
+    "sink1Tag": "온체인 소각",
+    "sink1Body": "BDEX에서 매도된 CA의 {percent}가 회수 불가능한 소각 주소로 전송됩니다.",
+    "sink2Title": "거래 수수료 {percent} 바이백",
+    "sink2Tag": "유동성 싱크",
+    "sink2Body": "거래 수수료의 {percent}가 AMM을 통해 CA로 교환된 뒤 소각됩니다.",
+    "sink3Title": "BOT 가스 {percent} 소멸",
+    "sink3Tag": "L1 기본 소각",
+    "sink3Body": "BOT Chain 가스 수수료의 {percent}가 검증자에 의해 영구적으로 소멸됩니다."
   },
-  "curveTitle": "{years}년간 2년마다 {rate} 발행량 감축",
-  "curveSubtitle": "프로그래밍된 알고리즘 디스인플레이션 일정",
-  "thCycle": "발행 주기",
-  "thDaily": "일일 CA 배출량",
-  "thAnnual": "연환산 발행량",
-  "thFactor": "곡선 계수",
-  "yearsRange": "{start}–{end}년차",
-  "factorWithDelta": "{percent} ({delta})",
-  "finalDaily": "점감",
-  "finalAnnual": "잔여 발행량",
-  "finalFactor": "최종 반감",
-  "sinksTitle": "자동 디플레이션 장치",
-  "sinksIntro": "CaryPact는 스마트 컨트랙트 수수료 싱크를 통해 유통 공급량을 영구적으로 줄입니다.",
-  "sink1Title": "BDEX 매도 시 {percent} 소각",
-  "sink1Tag": "온체인 소각",
-  "sink1Body": "BDEX에서 매도된 CA의 {percent}가 회수 불가능한 소각 주소로 전송됩니다.",
-  "sink2Title": "거래 수수료 {percent} 바이백",
-  "sink2Tag": "유동성 싱크",
-  "sink2Body": "거래 수수료의 {percent}가 AMM을 통해 CA로 교환된 뒤 소각됩니다.",
-  "sink3Title": "BOT 가스 {percent} 소멸",
-  "sink3Tag": "L1 기본 소각",
-  "sink3Body": "BOT Chain 가스 수수료의 {percent}가 검증자에 의해 영구적으로 소멸됩니다."
-},
   "Footer": {
-  "badge": "러닝 허브",
-  "brandDescription": "CaryPact, BOT Chain, CA 토큰, 분산형 슈퍼컴퓨팅 프로토콜을 위한 독립 교육 리소스이자 실시간 분석 포털입니다.",
-  "telegram": "텔레그램",
-  "twitter": "Twitter / X",
-  "explorer": "BOT Chain 익스플로러",
-  "navTitle": "허브 내비게이션",
-  "navHome": "홈 및 러닝 허브",
-  "navLive": "실시간 시장 및 CMC 포털",
-  "liveBadge": "LIVE",
-  "navBotChain": "BOT Chain 5대 핵심 축",
-  "navTokenomics": "{supply} CA 토큰이코노믹스",
-  "navVip": "{count}단계 VIP 시스템",
-  "navRisks": "위험 고지",
-  "guidesTitle": "가이드 및 설정",
-  "guideStart": "시작하기",
-  "guideWallet": "BO 지갑 만들기",
-  "guideBuy": "컴퓨팅 파워 구매",
-  "guideStaking": "스테이킹 배수 (30일–360일)",
-  "guideSlippage": "BDEX 슬리피지 {percent} 스왑",
-  "toolsTitle": "도구 및 공식",
-  "cheatSheet": "치트시트 다운로드",
-  "newsletter": "뉴스레터 구독",
-  "launchApp": "CaryPact 앱 실행",
-  "botDocs": "BOT Chain 문서",
-  "disclosureTitle": "독립 러닝 허브 및 제휴 고지",
-  "disclosureBody": "이 웹사이트는 독립적인 교육 활동이며 CaryPact 또는 BOT Chain 재단이 직접 운영하지 않습니다. 모든 가입 링크에는 검증된 커뮤니티 초대 코드 <code>{inviteCode} (접미사: {suffix})</code>가 포함되어 있습니다. 이 사이트의 링크를 통해 참여하시면 추천 수수료를 받을 수 있습니다. 콘텐츠는 교육 목적일 뿐이며 금융 자문이 아닙니다.",
-  "copyright": "© {year} CaryPact Learning Hub. 독립 교육 리소스.",
-  "backToTop": "맨 위로"
-},
-
+    "badge": "러닝 허브",
+    "brandDescription": "CaryPact, BOT Chain, CA 토큰, 분산형 슈퍼컴퓨팅 프로토콜을 위한 독립 교육 리소스이자 실시간 분석 포털입니다.",
+    "telegram": "텔레그램",
+    "twitter": "Twitter / X",
+    "explorer": "BOT Chain 익스플로러",
+    "navTitle": "허브 내비게이션",
+    "navHome": "홈 및 러닝 허브",
+    "navLive": "실시간 시장 및 CMC 포털",
+    "liveBadge": "LIVE",
+    "navBotChain": "BOT Chain 5대 핵심 축",
+    "navTokenomics": "{supply} CA 토큰이코노믹스",
+    "navVip": "{count}단계 VIP 시스템",
+    "navRisks": "위험 고지",
+    "guidesTitle": "가이드 및 설정",
+    "guideStart": "시작하기",
+    "guideWallet": "BO 지갑 만들기",
+    "guideBuy": "컴퓨팅 파워 구매",
+    "guideStaking": "스테이킹 배수 (30일–360일)",
+    "guideSlippage": "BDEX 슬리피지 {percent} 스왑",
+    "toolsTitle": "도구 및 공식",
+    "cheatSheet": "치트시트 다운로드",
+    "newsletter": "뉴스레터 구독",
+    "launchApp": "CaryPact 앱 실행",
+    "botDocs": "BOT Chain 문서",
+    "disclosureTitle": "독립 러닝 허브 및 제휴 고지",
+    "disclosureBody": "이 웹사이트는 독립적인 교육 활동이며 CaryPact 또는 BOT Chain 재단이 직접 운영하지 않습니다. 모든 가입 링크에는 검증된 커뮤니티 초대 코드 <code>{inviteCode} (접미사: {suffix})</code>가 포함되어 있습니다. 이 사이트의 링크를 통해 참여하시면 추천 수수료를 받을 수 있습니다. 콘텐츠는 교육 목적일 뿐이며 금융 자문이 아닙니다.",
+    "copyright": "© {year} CaryPact Learning Hub. 독립 교육 리소스.",
+    "backToTop": "맨 위로"
+  },
   "earn": {
     "common": {
       "methodBadge": "방법 {n}",
@@ -750,27 +764,27 @@
     }
   },
   "wallet": {
-  "title": "지갑에서 열기",
-  "subtitle": "CaryPact 앱은 DApp입니다. 지갑의 내장 브라우저 안에서 실행해야 합니다.",
-  "chooseWallet": "지갑 선택",
-  "lastUsed": "마지막 사용",
-  "openIn": "{wallet}에서 열기",
-  "launching": "{wallet} 여는 중…",
-  "launchingHint": "지갑 앱이 열리면 그곳에서 계속 진행하세요.",
-  "fallbackTitle": "{wallet}이(가) 열리지 않나요?",
-  "fallbackDesc": "지갑이 설치되어 있지 않거나 기기가 링크를 차단했을 수 있습니다. 일반 링크를 열거나 아래 수동 방법을 따르세요.",
-  "openNormal": "일반 링크 열기",
-  "copyLink": "링크 복사",
-  "copied": "복사됨",
-  "stepsTitle": "수동으로 열기",
-  "step1": "아래 링크를 복사하세요.",
-  "step2": "지갑 앱을 열고 DApp 브라우저(보통 '브라우저' 또는 '탐색'이라고 표시됨)로 이동하세요.",
-  "step3": "주소창에 링크를 붙여넣고 여세요.",
-  "install": "아직 지갑이 없나요? 먼저 앱 스토어에서 MetaMask, Trust Wallet 또는 TokenPocket을 설치하세요.",
-  "tryAnother": "다른 지갑 시도",
-  "close": "닫기"
-},
-"livePage": {
+    "title": "지갑에서 열기",
+    "subtitle": "CaryPact 앱은 DApp입니다. 지갑의 내장 브라우저 안에서 실행해야 합니다.",
+    "chooseWallet": "지갑 선택",
+    "lastUsed": "마지막 사용",
+    "openIn": "{wallet}에서 열기",
+    "launching": "{wallet} 여는 중…",
+    "launchingHint": "지갑 앱이 열리면 그곳에서 계속 진행하세요.",
+    "fallbackTitle": "{wallet}이(가) 열리지 않나요?",
+    "fallbackDesc": "지갑이 설치되어 있지 않거나 기기가 링크를 차단했을 수 있습니다. 일반 링크를 열거나 아래 수동 방법을 따르세요.",
+    "openNormal": "일반 링크 열기",
+    "copyLink": "링크 복사",
+    "copied": "복사됨",
+    "stepsTitle": "수동으로 열기",
+    "step1": "아래 링크를 복사하세요.",
+    "step2": "지갑 앱을 열고 DApp 브라우저(보통 '브라우저' 또는 '탐색'이라고 표시됨)로 이동하세요.",
+    "step3": "주소창에 링크를 붙여넣고 여세요.",
+    "install": "아직 지갑이 없나요? 먼저 앱 스토어에서 MetaMask, Trust Wallet 또는 TokenPocket을 설치하세요.",
+    "tryAnother": "다른 지갑 시도",
+    "close": "닫기"
+  },
+  "livePage": {
     "backToHub": "학습 허브로 돌아가기",
     "breadcrumb": "실시간 온체인 & CMC 포털",
     "cmcFeed": "CMC 피드",
@@ -803,8 +817,6 @@
     "rule3Body": "개인 300 USDT 활성화와 하위 라인 실적이 필요합니다.",
     "printCheatSheet": "프로토콜 전체 요약표 인쇄"
   },
-  
-
   "LearnFaq": {
     "badge": "도움말 센터",
     "title": "자주 묻는 질문",
@@ -825,17 +837,37 @@
     "supportText": "커뮤니티에 참여하여 도움을 받고 BOT 생태계의 다른 구성원들과 소통하세요.",
     "supportCta": "고객 지원 문의",
     "categories": {
-      "all": "모든 질문",
-      "tokenomics": "토크노믹스",
-      "ecosystem": "생태계",
-      "mining": "채굴",
-      "vip": "VIP 및 보상",
-      "security": "보안",
-      "global": "글로벌 진출"
+      "all": {
+        "tab": "모든 질문",
+        "badge": "모든 질문"
+      },
+      "tokenomics": {
+        "tab": "토크노믹스",
+        "badge": "토크노믹스"
+      },
+      "ecosystem": {
+        "tab": "생태계",
+        "badge": "생태계"
+      },
+      "mining": {
+        "tab": "채굴",
+        "badge": "채굴"
+      },
+      "vip": {
+        "tab": "VIP 및 보상",
+        "badge": "VIP 및 보상"
+      },
+      "security": {
+        "tab": "보안",
+        "badge": "보안"
+      },
+      "global": {
+        "tab": "글로벌 진출",
+        "badge": "글로벌 진출"
+      }
     },
-    "items": [
-      {
-        "id": "inflation-elimination",
+    "items": {
+      "inflation-elimination": {
         "question": "BOT은 어떻게 인플레이션을 억제하나요?",
         "keywords": [
           "인플레이션",
@@ -854,8 +886,7 @@
           "공급량 감소가 가격 상승을 보장하지는 않습니다. 시장 가격은 수요, 유동성 및 전반적인 시장 상황에도 영향을 받습니다."
         ]
       },
-      {
-        "id": "candlestick-stability",
+      "candlestick-stability": {
         "question": "BOT 가격 차트가 안정적으로 보이거나 변동이 적은 이유는 무엇인가요?",
         "keywords": [
           "차트",
@@ -875,8 +906,7 @@
           "시장 활동에 대한 결론을 내리기 전에 여러 신뢰할 수 있는 데이터 출처를 비교하고 마지막 거래 시간을 확인하세요."
         ]
       },
-      {
-        "id": "wbot-holders-price-growth",
+      "wbot-holders-price-growth": {
         "question": "wBOT 보유자 수는 증가하는데 가격은 같은 속도로 오르지 않는 이유는 무엇인가요?",
         "keywords": [
           "wBOT",
@@ -896,8 +926,7 @@
           "한 사람이 여러 지갑을 보유할 수도 있습니다. 따라서 보유자 수만으로 실제 경제 활동을 정확하게 판단할 수는 없습니다."
         ]
       },
-      {
-        "id": "why-invest-differentiation",
+      "why-invest-differentiation": {
         "question": "BOT은 다른 암호화폐 프로젝트와 무엇이 다른가요?",
         "keywords": [
           "BOT",
@@ -916,8 +945,7 @@
           "수익 약속이나 미래 가격 전망은 향후 성과를 보장하지 않습니다. 재정적 결정을 내리기 전에 직접 충분히 조사하세요."
         ]
       },
-      {
-        "id": "bot-price-project-owners",
+      "bot-price-project-owners": {
         "question": "BOT 프로젝트 운영자는 토큰 가격을 통제할 수 있나요?",
         "keywords": [
           "가격",
@@ -936,8 +964,7 @@
           "가격 통제에 관한 주장을 평가하기 전에 시장 데이터, 토큰 분배 현황 및 지갑과 관련된 공개 정보를 확인하세요."
         ]
       },
-      {
-        "id": "bot-ecosystem-roadmap",
+      "bot-ecosystem-roadmap": {
         "question": "BOT 생태계의 로드맵은 어떻게 되나요?",
         "keywords": [
           "로드맵",
@@ -956,8 +983,7 @@
           "최신 정보를 확인하려면 BOT의 공식 채널과 업데이트를 살펴보세요."
         ]
       },
-      {
-        "id": "bohr-to-bot-rebrand",
+      "bohr-to-bot-rebrand": {
         "question": "BOHR의 이름이 BOT으로 변경된 이유는 무엇인가요?",
         "keywords": [
           "BOHR",
@@ -976,8 +1002,7 @@
           "공식 출처에서 절차를 확인하기 전에는 토큰을 새로운 주소로 전송하거나 거래에 서명하지 마세요."
         ]
       },
-      {
-        "id": "verify-150m-bot-supply",
+      "verify-150m-bot-supply": {
         "question": "발표된 150M BOT 공급량을 어떻게 확인할 수 있나요?",
         "keywords": [
           "150M",
@@ -996,8 +1021,7 @@
           "https://scan.botchain.ai 에서 블록체인 익스플로러를 확인하고 공식 발표와 비교할 수 있습니다. 올바른 네트워크와 컨트랙트를 조회하고 있는지 반드시 확인하세요."
         ]
       },
-      {
-        "id": "mining-machine-pricing",
+      "mining-machine-pricing": {
         "question": "BOT 채굴 장비의 가격은 얼마인가요?",
         "keywords": [
           "채굴 장비",
@@ -1016,8 +1040,7 @@
           "결제하기 전에 최신 견적을 요청하고 장비 사양, 배송 조건, 보증 내용 및 판매자의 신원을 확인하세요."
         ]
       },
-      {
-        "id": "mining-machine-manufacturer",
+      "mining-machine-manufacturer": {
         "question": "BOT 채굴 장비는 누가 제조하나요?",
         "keywords": [
           "제조업체",
@@ -1036,8 +1059,7 @@
           "BOT 생태계와 관련된 이름으로 판매된다는 이유만으로 해당 장비가 BOT 프로젝트에서 제조되거나 인증되었다고 가정하지 마세요."
         ]
       },
-      {
-        "id": "tier-1-mining-operators",
+      "tier-1-mining-operators": {
         "question": "Tier 1 채굴 운영자는 누구인가요?",
         "keywords": [
           "Tier 1",
@@ -1056,8 +1078,7 @@
           "참여하기 전에 요구 사항, 추가 비용 여부, 보상 계산 규칙 및 출금 조건을 확인하세요."
         ]
       },
-      {
-        "id": "carypact-compute-vs-bot-rigs",
+      "carypact-compute-vs-bot-rigs": {
         "question": "CaryPact 컴퓨팅과 BOT 채굴 장비는 어떤 차이가 있나요?",
         "keywords": [
           "CaryPact",
@@ -1076,8 +1097,7 @@
           "성능 및 수익에 관한 주장은 검증 가능한 데이터로 확인해야 합니다. 특정 프로젝트와 관련된 장비라는 이유만으로 수익이 보장되지는 않습니다."
         ]
       },
-      {
-        "id": "hashrate-supply-servers",
+      "hashrate-supply-servers": {
         "question": "해시레이트와 서버 공급량은 어떤 관계가 있나요?",
         "keywords": [
           "해시레이트",
@@ -1096,8 +1116,7 @@
           "토큰 공급량, 해시레이트 및 가격은 서로 다른 지표입니다. 이들 사이의 관계는 네트워크 규칙, 수요 및 경제 상황에 따라 달라집니다."
         ]
       },
-      {
-        "id": "v4-earnings-differential",
+      "v4-earnings-differential": {
         "question": "V4의 수익이 이전 버전과 다른 이유는 무엇인가요?",
         "keywords": [
           "V4",
@@ -1116,8 +1135,7 @@
           "과거 수익이나 예상 수익은 미래의 수익을 보장하지 않습니다. 결정을 내리기 전에 현재 적용되는 조건을 확인하세요."
         ]
       },
-      {
-        "id": "same-rank-bonus-distribution",
+      "same-rank-bonus-distribution": {
         "question": "같은 등급의 참가자들에게 보너스는 어떻게 분배되나요?",
         "keywords": [
           "보너스",
@@ -1136,8 +1154,7 @@
           "보너스가 균등하게 분배된다고 가정하기 전에 적용되는 계산식, 계산 기간, 자격 요건 및 제한 사항을 확인하세요."
         ]
       },
-      {
-        "id": "time-compensation-mechanism",
+      "time-compensation-mechanism": {
         "question": "시간 기반 보상 메커니즘은 어떻게 작동하나요?",
         "keywords": [
           "시간",
@@ -1156,8 +1173,7 @@
           "시간 측정 방식, 보상 계산 시점 및 충족해야 하는 조건을 이해하려면 공식 문서를 확인하세요."
         ]
       },
-      {
-        "id": "dynamic-weight-v1-v10",
+      "dynamic-weight-v1-v10": {
         "question": "V1부터 V10까지 동적 가중치는 어떻게 작동하나요?",
         "keywords": [
           "동적 가중치",
@@ -1176,8 +1192,7 @@
           "레벨 번호만으로 보상 금액을 추정하지 마세요. 실제 결과는 계산식과 적용되는 규칙에도 영향을 받습니다."
         ]
       },
-      {
-        "id": "wallet-hacked-recovery",
+      "wallet-hacked-recovery": {
         "question": "암호화폐 지갑이 해킹되면 어떻게 해야 하나요?",
         "keywords": [
           "지갑",
@@ -1197,8 +1212,7 @@
           "블록체인 거래는 일반적으로 되돌릴 수 없습니다. 거래 ID 등의 정보를 보관하고 사고를 신고하기 위해 공식 지원 채널에 문의하세요."
         ]
       },
-      {
-        "id": "bo-wallet-vs-tokenpocket",
+      "bo-wallet-vs-tokenpocket": {
         "question": "BO 지갑과 TokenPocket은 어떤 차이가 있나요?",
         "keywords": [
           "BO 지갑",
@@ -1217,8 +1231,7 @@
           "앱은 신뢰할 수 있는 출처에서만 다운로드하세요. 복구 문구를 지원 담당자나 제3자에게 제공하지 마세요."
         ]
       },
-      {
-        "id": "headquarters-global-offices",
+      "headquarters-global-offices": {
         "question": "BOT 본사는 어디에 있으며 해외 사무소는 어디에 있나요?",
         "keywords": [
           "본사",
@@ -1237,8 +1250,7 @@
           "주소나 사무소가 공개되어 있다는 사실만으로 프로젝트의 규제상 지위나 재무 건전성이 입증되는 것은 아닙니다."
         ]
       },
-      {
-        "id": "why-not-registered-company",
+      "why-not-registered-company": {
         "question": "BOT은 왜 회사로 등록되어 있지 않나요?",
         "keywords": [
           "등록",
@@ -1257,8 +1269,7 @@
           "관련 정보를 쉽게 찾을 수 없다는 이유만으로 등록 또는 미등록 여부를 단정하지 마세요. 관할 당국을 통해 확인하세요."
         ]
       },
-      {
-        "id": "cmc-coingecko-volume-changes",
+      "cmc-coingecko-volume-changes": {
         "question": "CoinMarketCap과 CoinGecko에서 BOT 가격이나 거래량이 서로 다른 이유는 무엇인가요?",
         "keywords": [
           "CoinMarketCap",
@@ -1277,8 +1288,7 @@
           "수치를 비교할 때는 컨트랙트 주소, 거래 페어, 거래소, 마지막 업데이트 시간 및 표시된 거래량의 정의를 확인하세요."
         ]
       },
-      {
-        "id": "ca-card-mobile-roadmap",
+      "ca-card-mobile-roadmap": {
         "question": "CA 카드와 모바일 기능은 언제 이용할 수 있나요?",
         "keywords": [
           "CA 카드",
@@ -1297,8 +1307,6 @@
           "최신 발표, 지원 지역, 이용 자격 및 사용 방법은 BOT의 공식 채널에서 확인하세요."
         ]
       }
-    ]
+    }
   }
-
-
 }

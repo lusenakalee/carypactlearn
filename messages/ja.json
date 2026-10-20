@@ -437,85 +437,99 @@
     }
   },
   "Tokenomics": {
-  "badge": "経済設計",
-  "title": "CAトークノミクス：<accent>固定供給量 {supply}</accent>",
-  "subtitle": "{years}年にわたる数学的に定義されたディスインフレ曲線。日次のアルゴリズム発行と三重のバーンを組み合わせています。",
-  "capLabel": "最大供給量（ハードキャップ）",
-  "caAmount": "{amount} CA",
-  "capBody": "初期SWAP流動性に<cyan>{liquidity} CA</cyan> + {years}年間で発行される<purple>{emitted} CA</purple>。",
-  "emissionLabel": "初期日次発行量",
-  "emissionValue": "{amount} CA / 日",
-  "emissionBody": "{years}年間の配布サイクル全体で、<amber>{cycle}年ごとに{rate}</amber>減少します。",
-  "burnLabel": "三重デフレバーン",
-  "burnValue": "多層バーン",
-  "burnBody": "BDEX売却時{buyback}バーン + 取引手数料{txFee}の買い戻し + BOTガス{gas}の破棄。",
-  "allocTitle": "日次{amount} CA発行の配分",
-  "allocHint": "セグメントをクリックすると、オンチェーンの配分メカニズムを確認できます",
-  "settlement": "T+1 日次決済（00:00 UTC）",
-  "perDay": "{amount} CA/日",
-  "poolBadge": "プールの{percent}（{amount} CA/日）",
-  "segmentTitle": "{name}：{percent}（{amount} CA/日）",
-  "split": {
-    "mining": { "name": "計算能力マイニング", "description": "稼働中のハッシュレートユニット保有者に比例配分されます（K ≈ 1.01 の複利係数）。" },
-    "active": { "name": "アクティブ報酬プール", "description": "VIPティアのインセンティブと紹介ダウンラインの実績マッチングに充当されます。" },
-    "staking": { "name": "PoSステーキング報酬", "description": "ロック型および柔軟型のCAステーカーに日次で分配されるステーキング報酬。" },
-    "dao": { "name": "DAOガバナンス", "description": "V7〜V10のコンセンサス貢献者とエコシステムのガバナンスで分配されます。" },
-    "foundation": { "name": "財団・技術開発", "description": "プロトコルのセキュリティ監査、インフラ、開発者助成金に継続的に充当されます。" }
+    "badge": "経済設計",
+    "title": "CAトークノミクス：<accent>固定供給量 {supply}</accent>",
+    "subtitle": "{years}年にわたる数学的に定義されたディスインフレ曲線。日次のアルゴリズム発行と三重のバーンを組み合わせています。",
+    "capLabel": "最大供給量（ハードキャップ）",
+    "caAmount": "{amount} CA",
+    "capBody": "初期SWAP流動性に<cyan>{liquidity} CA</cyan> + {years}年間で発行される<purple>{emitted} CA</purple>。",
+    "emissionLabel": "初期日次発行量",
+    "emissionValue": "{amount} CA / 日",
+    "emissionBody": "{years}年間の配布サイクル全体で、<amber>{cycle}年ごとに{rate}</amber>減少します。",
+    "burnLabel": "三重デフレバーン",
+    "burnValue": "多層バーン",
+    "burnBody": "BDEX売却時{buyback}バーン + 取引手数料{txFee}の買い戻し + BOTガス{gas}の破棄。",
+    "allocTitle": "日次{amount} CA発行の配分",
+    "allocHint": "セグメントをクリックすると、オンチェーンの配分メカニズムを確認できます",
+    "settlement": "T+1 日次決済（00:00 UTC）",
+    "perDay": "{amount} CA/日",
+    "poolBadge": "プールの{percent}（{amount} CA/日）",
+    "segmentTitle": "{name}：{percent}（{amount} CA/日）",
+    "split": {
+      "mining": {
+        "name": "計算能力マイニング",
+        "description": "稼働中のハッシュレートユニット保有者に比例配分されます（K ≈ 1.01 の複利係数）。"
+      },
+      "active": {
+        "name": "アクティブ報酬プール",
+        "description": "VIPティアのインセンティブと紹介ダウンラインの実績マッチングに充当されます。"
+      },
+      "staking": {
+        "name": "PoSステーキング報酬",
+        "description": "ロック型および柔軟型のCAステーカーに日次で分配されるステーキング報酬。"
+      },
+      "dao": {
+        "name": "DAOガバナンス",
+        "description": "V7〜V10のコンセンサス貢献者とエコシステムのガバナンスで分配されます。"
+      },
+      "foundation": {
+        "name": "財団・技術開発",
+        "description": "プロトコルのセキュリティ監査、インフラ、開発者助成金に継続的に充当されます。"
+      }
+    },
+    "curveTitle": "{years}年間・2年ごと{rate}の発行量削減",
+    "curveSubtitle": "プログラムされたアルゴリズム型ディスインフレのスケジュール",
+    "thCycle": "発行サイクル",
+    "thDaily": "日次CA放出量",
+    "thAnnual": "年換算の発行量",
+    "thFactor": "曲線係数",
+    "yearsRange": "{start}〜{end}年目",
+    "factorWithDelta": "{percent}（{delta}）",
+    "finalDaily": "逓減",
+    "finalAnnual": "残りの発行量",
+    "finalFactor": "最終半減",
+    "sinksTitle": "自動デフレ機構",
+    "sinksIntro": "CaryPactはスマートコントラクトの手数料シンクにより、流通供給量を恒久的に減らします。",
+    "sink1Title": "BDEX売却時の{percent}バーン",
+    "sink1Tag": "オンチェーンバーン",
+    "sink1Body": "BDEXで売却されたCAの{percent}が、回収不能なバーンアドレスに送られます。",
+    "sink2Title": "取引手数料{percent}の買い戻し",
+    "sink2Tag": "流動性シンク",
+    "sink2Body": "取引手数料の{percent}がAMMでCAに交換され、バーンされます。",
+    "sink3Title": "BOTガス{percent}の破棄",
+    "sink3Tag": "L1基盤バーン",
+    "sink3Body": "BOT Chainのガス手数料の{percent}が、バリデーターによって恒久的に破棄されます。"
   },
-  "curveTitle": "{years}年間・2年ごと{rate}の発行量削減",
-  "curveSubtitle": "プログラムされたアルゴリズム型ディスインフレのスケジュール",
-  "thCycle": "発行サイクル",
-  "thDaily": "日次CA放出量",
-  "thAnnual": "年換算の発行量",
-  "thFactor": "曲線係数",
-  "yearsRange": "{start}〜{end}年目",
-  "factorWithDelta": "{percent}（{delta}）",
-  "finalDaily": "逓減",
-  "finalAnnual": "残りの発行量",
-  "finalFactor": "最終半減",
-  "sinksTitle": "自動デフレ機構",
-  "sinksIntro": "CaryPactはスマートコントラクトの手数料シンクにより、流通供給量を恒久的に減らします。",
-  "sink1Title": "BDEX売却時の{percent}バーン",
-  "sink1Tag": "オンチェーンバーン",
-  "sink1Body": "BDEXで売却されたCAの{percent}が、回収不能なバーンアドレスに送られます。",
-  "sink2Title": "取引手数料{percent}の買い戻し",
-  "sink2Tag": "流動性シンク",
-  "sink2Body": "取引手数料の{percent}がAMMでCAに交換され、バーンされます。",
-  "sink3Title": "BOTガス{percent}の破棄",
-  "sink3Tag": "L1基盤バーン",
-  "sink3Body": "BOT Chainのガス手数料の{percent}が、バリデーターによって恒久的に破棄されます。"
-},
   "Footer": {
-  "badge": "ラーニングハブ",
-  "brandDescription": "CaryPact、BOT Chain、CAトークン、分散型スーパーコンピューティングプロトコルに関する、独立した教育リソース兼ライブ分析ポータルです。",
-  "telegram": "Telegram",
-  "twitter": "Twitter / X",
-  "explorer": "BOT Chain エクスプローラー",
-  "navTitle": "ハブナビゲーション",
-  "navHome": "ホームとラーニングハブ",
-  "navLive": "ライブ市場とCMCポータル",
-  "liveBadge": "LIVE",
-  "navBotChain": "BOT Chainの5つの柱",
-  "navTokenomics": "{supply} CAトークノミクス",
-  "navVip": "{count}段階VIPシステム",
-  "navRisks": "リスク開示",
-  "guidesTitle": "ガイドとセットアップ",
-  "guideStart": "はじめに",
-  "guideWallet": "BOウォレットの作成",
-  "guideBuy": "計算能力の購入",
-  "guideStaking": "ステーキング倍率（30日〜360日）",
-  "guideSlippage": "BDEX スリッページ{percent}のスワップ",
-  "toolsTitle": "ツールと公式",
-  "cheatSheet": "チートシートをダウンロード",
-  "newsletter": "ニュースレターに登録",
-  "launchApp": "CaryPactアプリを起動",
-  "botDocs": "BOT Chainドキュメント",
-  "disclosureTitle": "独立したラーニングハブとアフィリエイト開示",
-  "disclosureBody": "本サイトは独立した教育活動であり、CaryPactおよびBOT Chain財団が直接運営するものではありません。すべての登録リンクには、確認済みのコミュニティ招待コード<code>{inviteCode}（サフィックス: {suffix}）</code>が含まれています。本サイトのリンクからご参加いただくと、紹介報酬を受け取る場合があります。コンテンツは教育目的のみであり、金融アドバイスではありません。",
-  "copyright": "© {year} CaryPact Learning Hub. 独立した教育リソース。",
-  "backToTop": "ページトップへ"
-},
-
+    "badge": "ラーニングハブ",
+    "brandDescription": "CaryPact、BOT Chain、CAトークン、分散型スーパーコンピューティングプロトコルに関する、独立した教育リソース兼ライブ分析ポータルです。",
+    "telegram": "Telegram",
+    "twitter": "Twitter / X",
+    "explorer": "BOT Chain エクスプローラー",
+    "navTitle": "ハブナビゲーション",
+    "navHome": "ホームとラーニングハブ",
+    "navLive": "ライブ市場とCMCポータル",
+    "liveBadge": "LIVE",
+    "navBotChain": "BOT Chainの5つの柱",
+    "navTokenomics": "{supply} CAトークノミクス",
+    "navVip": "{count}段階VIPシステム",
+    "navRisks": "リスク開示",
+    "guidesTitle": "ガイドとセットアップ",
+    "guideStart": "はじめに",
+    "guideWallet": "BOウォレットの作成",
+    "guideBuy": "計算能力の購入",
+    "guideStaking": "ステーキング倍率（30日〜360日）",
+    "guideSlippage": "BDEX スリッページ{percent}のスワップ",
+    "toolsTitle": "ツールと公式",
+    "cheatSheet": "チートシートをダウンロード",
+    "newsletter": "ニュースレターに登録",
+    "launchApp": "CaryPactアプリを起動",
+    "botDocs": "BOT Chainドキュメント",
+    "disclosureTitle": "独立したラーニングハブとアフィリエイト開示",
+    "disclosureBody": "本サイトは独立した教育活動であり、CaryPactおよびBOT Chain財団が直接運営するものではありません。すべての登録リンクには、確認済みのコミュニティ招待コード<code>{inviteCode}（サフィックス: {suffix}）</code>が含まれています。本サイトのリンクからご参加いただくと、紹介報酬を受け取る場合があります。コンテンツは教育目的のみであり、金融アドバイスではありません。",
+    "copyright": "© {year} CaryPact Learning Hub. 独立した教育リソース。",
+    "backToTop": "ページトップへ"
+  },
   "earn": {
     "common": {
       "methodBadge": "方法 {n}",
@@ -750,27 +764,26 @@
     }
   },
   "wallet": {
-  "title": "ウォレットで開く",
-  "subtitle": "CaryPact アプリは DApp です。ウォレットの内蔵ブラウザ内で実行する必要があります。",
-  "chooseWallet": "ウォレットを選択",
-  "lastUsed": "前回使用",
-  "openIn": "{wallet} で開く",
-  "launching": "{wallet} を開いています…",
-  "launchingHint": "ウォレットアプリが開いたら、そちらで続けてください。",
-  "fallbackTitle": "{wallet} が開きませんか？",
-  "fallbackDesc": "ウォレットがインストールされていないか、端末がリンクをブロックした可能性があります。通常のリンクを開くか、以下の手動手順をお試しください。",
-  "openNormal": "通常のリンクを開く",
-  "copyLink": "リンクをコピー",
-  "copied": "コピーしました",
-  "stepsTitle": "手動で開く",
-  "step1": "下のリンクをコピーします。",
-  "step2": "ウォレットアプリを開き、DApp ブラウザ（通常は「ブラウザ」または「Discover」）に移動します。",
-  "step3": "アドレスバーにリンクを貼り付けて開きます。",
-  "install": "まだウォレットをお持ちでない場合は、先にアプリストアから MetaMask、Trust Wallet、または TokenPocket をインストールしてください。",
-  "tryAnother": "別のウォレットを試す",
-  "close": "閉じる"
-},
-
+    "title": "ウォレットで開く",
+    "subtitle": "CaryPact アプリは DApp です。ウォレットの内蔵ブラウザ内で実行する必要があります。",
+    "chooseWallet": "ウォレットを選択",
+    "lastUsed": "前回使用",
+    "openIn": "{wallet} で開く",
+    "launching": "{wallet} を開いています…",
+    "launchingHint": "ウォレットアプリが開いたら、そちらで続けてください。",
+    "fallbackTitle": "{wallet} が開きませんか？",
+    "fallbackDesc": "ウォレットがインストールされていないか、端末がリンクをブロックした可能性があります。通常のリンクを開くか、以下の手動手順をお試しください。",
+    "openNormal": "通常のリンクを開く",
+    "copyLink": "リンクをコピー",
+    "copied": "コピーしました",
+    "stepsTitle": "手動で開く",
+    "step1": "下のリンクをコピーします。",
+    "step2": "ウォレットアプリを開き、DApp ブラウザ（通常は「ブラウザ」または「Discover」）に移動します。",
+    "step3": "アドレスバーにリンクを貼り付けて開きます。",
+    "install": "まだウォレットをお持ちでない場合は、先にアプリストアから MetaMask、Trust Wallet、または TokenPocket をインストールしてください。",
+    "tryAnother": "別のウォレットを試す",
+    "close": "閉じる"
+  },
   "livePage": {
     "backToHub": "学習ハブに戻る",
     "breadcrumb": "ライブオンチェーン & CMC ポータル",
@@ -804,9 +817,6 @@
     "rule3Body": "個人 300 USDT のアクティベーションと、ダウンライン系列の実績が必要です。",
     "printCheatSheet": "プロトコル早見表（完全版）を印刷"
   },
-  
-
-  
   "LearnFaq": {
     "badge": "ヘルプセンター",
     "title": "よくある質問",
@@ -827,17 +837,37 @@
     "supportText": "コミュニティに参加して、サポートを受けたり、BOTエコシステムのメンバーと交流したりしましょう。",
     "supportCta": "サポートに問い合わせる",
     "categories": {
-      "all": "すべての質問",
-      "tokenomics": "トークノミクス",
-      "ecosystem": "エコシステム",
-      "mining": "マイニング",
-      "vip": "VIPと報酬",
-      "security": "セキュリティ",
-      "global": "グローバル展開"
+      "all": {
+        "tab": "すべての質問",
+        "badge": "すべての質問"
+      },
+      "tokenomics": {
+        "tab": "トークノミクス",
+        "badge": "トークノミクス"
+      },
+      "ecosystem": {
+        "tab": "エコシステム",
+        "badge": "エコシステム"
+      },
+      "mining": {
+        "tab": "マイニング",
+        "badge": "マイニング"
+      },
+      "vip": {
+        "tab": "VIPと報酬",
+        "badge": "VIPと報酬"
+      },
+      "security": {
+        "tab": "セキュリティ",
+        "badge": "セキュリティ"
+      },
+      "global": {
+        "tab": "グローバル展開",
+        "badge": "グローバル展開"
+      }
     },
-    "items": [
-      {
-        "id": "inflation-elimination",
+    "items": {
+      "inflation-elimination": {
         "question": "BOTはどのようにインフレを抑制しますか？",
         "keywords": [
           "インフレ",
@@ -856,8 +886,7 @@
           "供給量の減少が価格上昇を保証するわけではありません。市場価格は需要、流動性、市場全体の状況にも左右されます。"
         ]
       },
-      {
-        "id": "candlestick-stability",
+      "candlestick-stability": {
         "question": "BOTの価格チャートが安定して見えたり、値動きが少なかったりするのはなぜですか？",
         "keywords": [
           "チャート",
@@ -877,8 +906,7 @@
           "市場の動きを判断する前に、複数の信頼できるデータソースを比較し、最後の取引時刻を確認してください。"
         ]
       },
-      {
-        "id": "wbot-holders-price-growth",
+      "wbot-holders-price-growth": {
         "question": "wBOTの保有者数が増えているのに、価格が同じペースで上昇しないのはなぜですか？",
         "keywords": [
           "wBOT",
@@ -898,8 +926,7 @@
           "1人が複数のウォレットを保有している場合もあります。そのため、保有者数だけでは実際の経済活動を正確に判断できません。"
         ]
       },
-      {
-        "id": "why-invest-differentiation",
+      "why-invest-differentiation": {
         "question": "BOTは他の暗号資産プロジェクトと何が違いますか？",
         "keywords": [
           "BOT",
@@ -918,8 +945,7 @@
           "利益の約束や将来価格の予測は、将来の実績を保証するものではありません。金融上の判断を行う前に、ご自身で十分に調査してください。"
         ]
       },
-      {
-        "id": "bot-price-project-owners",
+      "bot-price-project-owners": {
         "question": "BOTプロジェクトの運営者はトークン価格を操作できますか？",
         "keywords": [
           "価格",
@@ -938,8 +964,7 @@
           "価格の操作に関する主張を評価する際は、市場データ、トークンの分配状況、ウォレットに関する公開情報を確認してください。"
         ]
       },
-      {
-        "id": "bot-ecosystem-roadmap",
+      "bot-ecosystem-roadmap": {
         "question": "BOTエコシステムのロードマップはどのようになっていますか？",
         "keywords": [
           "ロードマップ",
@@ -958,8 +983,7 @@
           "最新情報については、BOTの公式チャンネルや更新情報を確認してください。"
         ]
       },
-      {
-        "id": "bohr-to-bot-rebrand",
+      "bohr-to-bot-rebrand": {
         "question": "なぜBOHRからBOTへ名称が変更されたのですか？",
         "keywords": [
           "BOHR",
@@ -978,8 +1002,7 @@
           "公式情報で手順を確認する前に、トークンを新しいアドレスへ送金したり、取引に署名したりしないでください。"
         ]
       },
-      {
-        "id": "verify-150m-bot-supply",
+      "verify-150m-bot-supply": {
         "question": "発表されている150M BOTの供給量を確認するにはどうすればよいですか？",
         "keywords": [
           "150M",
@@ -998,8 +1021,7 @@
           "https://scan.botchain.ai でブロックチェーンエクスプローラーを確認し、公式発表と比較できます。正しいネットワークとコントラクトを参照していることを必ず確認してください。"
         ]
       },
-      {
-        "id": "mining-machine-pricing",
+      "mining-machine-pricing": {
         "question": "BOTマイニングマシンはいくらですか？",
         "keywords": [
           "マイニングマシン",
@@ -1018,8 +1040,7 @@
           "支払いの前に、最新の見積もりを依頼し、機器の仕様、配送条件、保証内容、販売者の身元を確認してください。"
         ]
       },
-      {
-        "id": "mining-machine-manufacturer",
+      "mining-machine-manufacturer": {
         "question": "BOTのマイニングマシンは誰が製造していますか？",
         "keywords": [
           "メーカー",
@@ -1038,8 +1059,7 @@
           "BOTのエコシステムに関連する名称で販売されているという理由だけで、その機器がBOTプロジェクトによって製造または認証されていると判断しないでください。"
         ]
       },
-      {
-        "id": "tier-1-mining-operators",
+      "tier-1-mining-operators": {
         "question": "Tier 1のマイニングオペレーターとは誰ですか？",
         "keywords": [
           "Tier 1",
@@ -1058,8 +1078,7 @@
           "参加する前に、必要条件、追加費用の有無、報酬の計算ルール、出金条件を確認してください。"
         ]
       },
-      {
-        "id": "carypact-compute-vs-bot-rigs",
+      "carypact-compute-vs-bot-rigs": {
         "question": "CaryPactのコンピューティングとBOTのマイニングマシンにはどのような違いがありますか？",
         "keywords": [
           "CaryPact",
@@ -1078,8 +1097,7 @@
           "性能や収益に関する主張は、検証可能なデータで確認する必要があります。プロジェクトに関連する機器だからといって、収益が保証されるわけではありません。"
         ]
       },
-      {
-        "id": "hashrate-supply-servers",
+      "hashrate-supply-servers": {
         "question": "ハッシュレートとサーバー供給量にはどのような関係がありますか？",
         "keywords": [
           "ハッシュレート",
@@ -1098,8 +1116,7 @@
           "トークン供給量、ハッシュレート、価格はそれぞれ異なる指標です。それらの関係は、ネットワークのルール、需要、経済状況によって異なります。"
         ]
       },
-      {
-        "id": "v4-earnings-differential",
+      "v4-earnings-differential": {
         "question": "V4の収益が以前のバージョンと異なるのはなぜですか？",
         "keywords": [
           "V4",
@@ -1118,8 +1135,7 @@
           "過去の収益や推定収益は、将来の収益を保証するものではありません。判断する前に、現在適用されている条件を確認してください。"
         ]
       },
-      {
-        "id": "same-rank-bonus-distribution",
+      "same-rank-bonus-distribution": {
         "question": "同じランクの参加者間でボーナスはどのように分配されますか？",
         "keywords": [
           "ボーナス",
@@ -1138,8 +1154,7 @@
           "ボーナスが均等に分配されると判断する前に、適用される計算式、計算期間、参加資格、制限事項を確認してください。"
         ]
       },
-      {
-        "id": "time-compensation-mechanism",
+      "time-compensation-mechanism": {
         "question": "時間に基づく補償の仕組みはどのように機能しますか？",
         "keywords": [
           "時間",
@@ -1158,8 +1173,7 @@
           "時間の測定方法、補償の計算時期、満たすべき条件については、公式文書を確認してください。"
         ]
       },
-      {
-        "id": "dynamic-weight-v1-v10",
+      "dynamic-weight-v1-v10": {
         "question": "V1からV10までの動的ウェイトはどのように機能しますか？",
         "keywords": [
           "動的ウェイト",
@@ -1178,8 +1192,7 @@
           "レベル番号だけで報酬額を推測しないでください。実際の結果は、計算式や適用されるルールにも左右されます。"
         ]
       },
-      {
-        "id": "wallet-hacked-recovery",
+      "wallet-hacked-recovery": {
         "question": "ウォレットがハッキングされた場合、どうすればよいですか？",
         "keywords": [
           "ウォレット",
@@ -1199,8 +1212,7 @@
           "ブロックチェーン上の取引は通常、取り消せません。取引IDなどの情報を保存し、インシデントを報告するために公式サポート窓口へ連絡してください。"
         ]
       },
-      {
-        "id": "bo-wallet-vs-tokenpocket",
+      "bo-wallet-vs-tokenpocket": {
         "question": "BOウォレットとTokenPocketにはどのような違いがありますか？",
         "keywords": [
           "BOウォレット",
@@ -1219,8 +1231,7 @@
           "アプリは信頼できる配布元からのみダウンロードしてください。リカバリーフレーズをサポート担当者や第三者に渡さないでください。"
         ]
       },
-      {
-        "id": "headquarters-global-offices",
+      "headquarters-global-offices": {
         "question": "BOTの本社はどこにあり、海外オフィスはどこにありますか？",
         "keywords": [
           "本社",
@@ -1239,8 +1250,7 @@
           "住所やオフィスの存在が公表されていることだけでは、プロジェクトの規制上の地位や財務的な健全性を証明することにはなりません。"
         ]
       },
-      {
-        "id": "why-not-registered-company",
+      "why-not-registered-company": {
         "question": "BOTはなぜ会社として登録されていないのですか？",
         "keywords": [
           "登録",
@@ -1259,8 +1269,7 @@
           "情報が簡単に見つからないことを、登録済みまたは未登録であることの決定的な証拠とみなさないでください。関係当局に確認してください。"
         ]
       },
-      {
-        "id": "cmc-coingecko-volume-changes",
+      "cmc-coingecko-volume-changes": {
         "question": "CoinMarketCapとCoinGeckoでBOTの価格や取引量が異なるのはなぜですか？",
         "keywords": [
           "CoinMarketCap",
@@ -1279,8 +1288,7 @@
           "数値を比較する際は、コントラクトアドレス、取引ペア、取引所、最終更新時刻、表示されている取引量の定義を確認してください。"
         ]
       },
-      {
-        "id": "ca-card-mobile-roadmap",
+      "ca-card-mobile-roadmap": {
         "question": "CAカードとモバイル機能はいつ利用できるようになりますか？",
         "keywords": [
           "CAカード",
@@ -1299,10 +1307,6 @@
           "最新の発表、対応地域、利用資格、使用方法については、BOTの公式チャンネルを確認してください。"
         ]
       }
-    ]
+    }
   }
-
-
-
-
 }
