@@ -375,6 +375,45 @@
       }
     }
   },
+  
+  
+  "livePage": {
+    "backToHub": "Return to Learning Hub",
+    "breadcrumb": "Live On-Chain & CMC Portal",
+    "cmcFeed": "CMC Feed",
+    "liveConnected": "Live Connected",
+    "synced": "Synced",
+    "justNow": "Just now",
+    "refresh": "Refresh Live Data",
+    "heroBadge": "Real-Time CoinMarketCap & BOT Chain Ledger",
+    "heroTitle": "CaryPact & BOT Chain",
+    "heroTitleHighlight": "Live Market Feed",
+    "heroDesc": "Live cryptocurrency quotes, on-chain parity tracking (<strong>1 CA = 1.337631 BOT</strong>), BDEX order book depth, and official Twitter/X broadcasts from <xLink>@CaryPact</xLink>.",
+    "inviteCode": "Invite Code",
+    "copy": "Copy",
+    "copied": "Copied",
+    "launchDApp": "Launch DApp",
+    "cmcListing": "CoinMarketCap Listing",
+    "cmcPair": "bot-chain / BOT Currency",
+    "viewCmc": "View CMC",
+    "cmcDesc": "Price tracking and volume metrics for BOT Chain are directly verified via CoinMarketCap Pro. CaryPact computing asset (CA) operates on the fixed algorithmic conversion standard of <strong>1 CA = 1.337631 BOT</strong>.",
+    "contractStandard": "Contract Standard:",
+    "decimals": "Decimals:",
+    "burnMechanism": "Burn Mechanism:",
+    "burnValue": "1.8% on BDEX Sells",
+    "directivesTitle": "Protocol Core Directives",
+    "rule1Title": "1 USDT = 1 Hashrate Unit:",
+    "rule1Body": "Computing power is permanently locked with no principal refund.",
+    "rule2Title": "Staking Multipliers:",
+    "rule2Body": "30d (1.3x), 90d (1.6x), 180d (2.0x), 360d (2.5x).",
+    "rule3Title": "10-Tier VIP System:",
+    "rule3Body": "Requires 300 USDT personal activation + downline leg performance.",
+    "printCheatSheet": "Print Complete Protocol Cheat Sheet"
+  },
+
+
+
+
   "Tokenomics": {
   "badge": "Economic Architecture",
   "title": "CA Tokenomics: <accent>{supply} Fixed Supply</accent>",

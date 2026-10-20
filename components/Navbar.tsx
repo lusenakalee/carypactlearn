@@ -63,7 +63,7 @@ export default function Navbar({
     { name: tNav("earn"), href: "/earn", icon: Coins, id: "earn" },
     { name: tNav("guides"), href: "/guides", icon: BookOpen, id: "guides" },
     { name: tNav("learn"), href: "/learn", icon: Layers, id: "learn" },
-    { name: tNav("events"), href: "/events", icon: Calendars, id: "events" },
+    // { name: tNav("events"), href: "/events", icon: Calendars, id: "events" },
     {
       name: tNav("risks"),
       href: "/#risks",

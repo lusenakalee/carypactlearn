@@ -28,13 +28,7 @@ import {
   Activity,
   Sliders
 } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import AffiliateDisclaimerBanner from "@/components/AffiliateDisclaimerBanner";
-import AiAssistantModal from "@/components/AiAssistantModal";
-import PdfCheatSheetModal from "@/components/PdfCheatSheetModal";
-import NewsletterModal from "@/components/NewsletterModal";
-import VideoPlayerModal from "@/components/VideoPlayerModal";
+
 import { useAppLocale } from "@/components/LocaleProvider";
 import { AFFILIATE_CONFIG, ECOSYSTEM_METRICS } from "@/config/constants";
 
