@@ -127,7 +127,7 @@ export default function FloatingSupportDock() {
             </a>
 
             {/* WhatsApp Option */}
-            <div className="p-3 rounded-xl bg-gradient-to-r from-[#128C7E]/15 to-[#25D366]/10 border border-[#25D366]/30 transition-all flex flex-col gap-2">
+            {/* <div className="p-3 rounded-xl bg-gradient-to-r from-[#128C7E]/15 to-[#25D366]/10 border border-[#25D366]/30 transition-all flex flex-col gap-2">
               <div className="flex items-center justify-between">
                 <a
                   href={waUrl}
@@ -181,7 +181,7 @@ export default function FloatingSupportDock() {
                 <span>Start WhatsApp Chat</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Footer Note */}

@@ -17,8 +17,8 @@ export const AFFILIATE_CONFIG = {
 };
 
 export const SUPPORT_CONFIG = {
-  TELEGRAM_URL: "https://t.me/CaryPactOfficial",
-  TELEGRAM_HANDLE: "@CaryPactOfficial",
+  TELEGRAM_URL: "https://t.me/tunicacasupport",
+  TELEGRAM_HANDLE: "@tunicacasupport",
   // Placeholder WhatsApp phone number (update anytime to your official number)
   WHATSAPP_PHONE: "+2540181605117",
   WHATSAPP_DISPLAY_PHONE: "+2540181605117",
