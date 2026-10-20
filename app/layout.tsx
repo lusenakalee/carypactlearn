@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import LocaleProvider from '@/components/LocaleProvider';
-import { Analytics } from "@vercel/analytics/next"
+import LocaleProvider from "@/components/LocaleProvider";
+import { Analytics } from "@vercel/analytics/next";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import FloatingSupportDock from "@/components/FloatingSupportDock";
+import WebsiteJsonLd from "@/components/WebsiteJsonLd";
 
-
-
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +23,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://carypactlearn.vercel.app"),
+
+  applicationName: "CaryPact Learning Hub",
 
   title: {
     default: "CaryPact Learning Hub | CaryPact, BOT Chain & CA Tokenomics",
@@ -46,6 +47,14 @@ export const metadata: Metadata = {
     "decentralized supercomputing",
   ],
 
+  alternates: {
+    canonical: "/",
+  },
+
+  verification: {
+    google: "YyClvHr0evz7JeRgsGPMUl5MqYsf50243BQsq4icIOk",
+  },
+
   openGraph: {
     title: "CaryPact Learning Hub",
     description:
@@ -62,24 +71,28 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-
-      
-  
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        geistSans.variable,
+        geistMono.variable,
+        "font-sans",
+        inter.variable
+      )}
     >
-      <meta name="google-site-verification" content="YyClvHr0evz7JeRgsGPMUl5MqYsf50243BQsq4icIOk" />
       <body className="min-h-full flex flex-col">
-              <LocaleProvider>
-              <SiteHeader/>  
-        {children}
-        <SiteFooter/>
-        <FloatingSupportDock/>
+        <WebsiteJsonLd />
+        <LocaleProvider>
+          <SiteHeader />
+          {children}
+          <SiteFooter />
+          <FloatingSupportDock />
         </LocaleProvider>
-        <Analytics/>
-        </body>
+        <Analytics />
+      </body>
     </html>
   );
 }
