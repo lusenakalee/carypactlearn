@@ -1308,5 +1308,120 @@
         ]
       }
     }
+  },
+  "GuidesPage": {
+  "breadcrumbHome": "홈",
+  "breadcrumbCurrent": "가이드 및 튜토리얼",
+  "badge": "인터랙티브 온보딩 및 단계별 튜토리얼",
+  "titlePrefix": "CaryPact 및 BOT Chain",
+  "titleHighlight": "단계별 가이드",
+  "description": "BO Wallet 생성, 컴퓨팅 파워 확보, 스테이킹 티어, CA 토큰 이코노믹스, 낮은 슬리피지의 BDEX 스왑을 다루는 검증된 단계별 마스터클래스입니다.",
+  "cheatSheetButton": "치트 시트 (PDF)",
+  "askAiButton": "AI Copilot에게 질문",
+  "askAiSetupQuestion": "CaryPact와 BO Wallet을 처음부터 설정하는 방법을 단계별로 안내해 주세요.",
+  "supportEyebrow": "맞춤형 도움이 필요하신가요?",
+  "supportTitle": "BO Wallet 설정이나 스테이킹 위임 중에 막히셨나요?",
+  "supportDescription": "커뮤니티 멘토와 AI Copilot이 연중무휴 24시간 가스 추정, 개인 키 보안, 컴퓨팅 노드 검증을 안내해 드립니다.",
+  "faqButton": "자주 묻는 질문",
+  "faqQuestion": "CaryPact 컴퓨팅 파워와 CA 토큰 스테이킹의 차이를 설명해 주세요.",
+  "launchDapp": "CaryPact DApp 실행"
+},
+"GuidesSection": {
+  "eyebrow": "도움말 센터 및 지식 베이스",
+  "titlePrefix": "가이드 및",
+  "titleHighlight": "튜토리얼",
+  "description": "CaryPact와 BOT Chain을 완벽하게 익히는 데 필요한 모든 것. 아래 주제 카드를 선택해 단계별 튜토리얼, 해시레이트 활성화, PoS 스테이킹 승수, 크로스체인 출금을 살펴보세요.",
+  "searchLabel": "가이드 검색",
+  "searchPlaceholder": "가이드 검색 (예: 'TokenPocket', '해시레이트', '스테이킹', '브리징', '슬리피지')...",
+  "clearSearch": "지우기",
+  "allTopics": "전체 주제 ({count})",
+  "topicsHeading": "카테고리별 도움말 주제",
+  "showingCount": "전체 {total}개 중 {shown}개 카테고리 표시",
+  "guideCount": "{count, plural, other {가이드 #개}}",
+  "guidesInTopic": "이 주제의 가이드",
+  "clickToRead": "클릭하여 읽기",
+  "noMatchingGuides": "일치하는 가이드가 없습니다.",
+  "noResults": "검색과 일치하는 주제가 없습니다. 다른 키워드를 시도해 보세요.",
+  "exploreTopic": "주제 살펴보기",
+  "defaultBadge": "검증됨",
+  "readTime": "읽는 시간 {minutes}분",
+  "difficulty": {
+    "Beginner": "초급",
+    "Intermediate": "중급",
+    "Advanced": "고급"
+  },
+  "supportTitle": "찾고 있는 내용이 없나요?",
+  "supportDescription": "CaryPact AI 어시스턴트에게 실시간으로 질문하거나 오프라인 참고용 3분 분량의 PDF 치트 시트를 다운로드하세요.",
+  "cheatSheet": "치트 시트 (PDF)",
+  "communitySupport": "커뮤니티 지원",
+  "topics": {
+    "getting-started": {
+      "title": "시작하기",
+      "description": "지갑을 설정하고 BOT Chain을 추가한 뒤 첫 트랜잭션을 완료하세요.",
+      "badge": "필수"
+    },
+    "wallet-accounts": {
+      "title": "지갑 및 계정",
+      "description": "지갑, 계정, 자산을 관리하고 멀티 네트워크 브리징을 이해하며 잘못된 네트워크로 인한 손실을 방지하세요.",
+      "badge": "네트워크"
+    },
+    "network-transactions": {
+      "title": "네트워크 및 트랜잭션",
+      "description": "네트워크 파라미터, 가스비, 트랜잭션 상태를 이해하세요.",
+      "badge": "네트워크"
+    },
+    "bridge-defi": {
+      "title": "브리지 및 DeFi",
+      "description": "BOT Chain 브리지, DEX, 스테이킹 상품을 안전하게 이용하세요.",
+      "badge": "DeFi"
+    },
+    "project-tools": {
+      "title": "프로젝트 도구",
+      "description": "멀티사이트 계정, 권한, 프로젝트 운영을 설정하세요.",
+      "badge": "운영"
+    }
+  },
+  "guides": {
+    "getting-started": {
+      "title": "CaryPact 시작하기",
+      "summary": "BOT Chain 기반 CaryPact 탈중앙화 슈퍼컴퓨팅을 위한 단계별 온보딩 가이드입니다. 초대 코드로 연결하고, 공식 포털을 확인하고, 에코시스템 토크노믹스를 이해하는 방법을 다룹니다."
+    },
+    "create-wallet": {
+      "title": "지갑 만들기 (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
+      "summary": "Web3 지갑(TokenPocket, Trust Wallet, MetaMask, BO Wallet)을 다운로드하고 설정하는 방법과 BOT Chain 네트워크 설정, 시드 문구 보안, 커스텀 토큰 가져오기를 안내합니다."
+    },
+    "cross-chain-networks-bridging": {
+      "title": "네트워크, 브리징, 잘못된 네트워크로 인한 손실 방지 (BSC, Ethereum, Bitcoin, BOT Chain)",
+      "summary": "여러 블록체인 네트워크(Binance Smart Chain/BSC, Ethereum, Bitcoin, BOT Chain)를 이해하기 위한 필수 마스터클래스입니다. 크로스체인 브리징(https://bridge.botchain.ai/)이 필요한 이유, 네트워크 간 상호작용, 잘못된 네트워크로 전송해 자산을 영구적으로 잃지 않기 위한 핵심 주의사항을 다룹니다."
+    },
+    "buy-computing-power": {
+      "title": "컴퓨팅 파워(해시레이트 유닛) 구매 방법",
+      "summary": "해시레이트 유닛 심층 분석: 1 USDT = 1 유닛, 최소 100 USDT, 일일 16,800 CA 분배 풀, 트랜잭션 가스 추정, 영구 할당 규칙을 다룹니다."
+    },
+    "network-parameters-gas": {
+      "title": "BOT Chain 네트워크 파라미터, 가스비 및 트랜잭션 상태",
+      "summary": "네트워크 파라미터, 가스비, RPC 엔드포인트, Chain ID, 네이티브 가스 1.50% 소각 방식, 블록 익스플로러 컨펌, 트랜잭션 상태 확인 방법을 이해하세요."
+    },
+    "stake-ca": {
+      "title": "CA 스테이킹 방법 (플렉시블 vs. 고정 기간 승수)",
+      "summary": "하루 7,200 CA의 PoS 스테이킹 풀이 작동하는 방식, 플렉시블과 고정 기간(30d–360d)의 차이, 승수 부스트(1.3x~2.5x), 수수료 바이백 유입, 복리 메커니즘을 알아봅니다."
+    },
+    "ca-to-usdt": {
+      "title": "CA - USDT 스왑 및 크로스체인 브리징 방법",
+      "summary": "BDEX와 CaryPact SWAP 사용법, 매도 시 5% 슬리피지(1.8% 바이백 소각 + 3.2% 노드 보상) 처리 방법, 스왑한 USDT를 BNB Chain, TRON 또는 Ethereum으로 브리징하는 방법을 단계별로 안내합니다."
+    },
+    "bot-pledge": {
+      "title": "BOT 스테이킹 방법 (BOT Pledge 및 자동 복리)",
+      "summary": "app.carypact.com/bot-pledge의 BOT Pledge(Bot Staking이라고도 함) 완벽 가이드입니다. 자유로운 입출금으로 BOT를 스테이킹해 보상을 받는 방법, 24시간 원금 잠금 해제 규칙, 매일 자동 복리를 다룹니다."
+    },
+    "every-earning-method": {
+      "title": "CaryPact의 모든 수익 방법 가이드",
+      "summary": "CaryPact 에코시스템의 모든 수익 방법을 다루는 종합 가이드입니다. 컴퓨팅 파워 마이닝, PoS CA 스테이킹, BOT Pledge(Bot Staking), VIP 다이내믹 액티브 보상, 글로벌 커뮤니티 풀, 노드 배당 풀, LP 파밍, 추천 리베이트, 디플레이션 소각 차익거래를 포함합니다."
+    },
+    "project-tools-operations": {
+      "title": "멀티사이트 계정, 권한 및 프로젝트 운영",
+      "summary": "멀티사이트 계정, 권한, 프로젝트 운영을 설정합니다. 여러 주소 관리, 제휴 팀 링크, 스마트 컨트랙트 상호작용 승인, 밸리데이터 운영을 다룹니다."
+    }
   }
+}
 }

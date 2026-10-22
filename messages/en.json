@@ -1277,6 +1277,121 @@
         ]
       }
     }
+  },
+  "GuidesPage": {
+  "breadcrumbHome": "Home",
+  "breadcrumbCurrent": "Guides & Tutorials",
+  "badge": "Interactive Onboarding & Step-by-Step Tutorials",
+  "titlePrefix": "CaryPact & BOT Chain",
+  "titleHighlight": "Step-by-Step Guides",
+  "description": "Verified, step-by-step masterclasses covering BO Wallet creation, computing power acquisition, staking tiers, CA token economics, and low-slippage BDEX swaps.",
+  "cheatSheetButton": "Cheat Sheet (PDF)",
+  "askAiButton": "Ask AI Copilot",
+  "askAiSetupQuestion": "Walk me through setting up CaryPact and BO Wallet from scratch.",
+  "supportEyebrow": "Need personalized assistance?",
+  "supportTitle": "Got stuck during BO Wallet setup or staking delegation?",
+  "supportDescription": "Our community mentors and the AI Copilot are available 24/7 to guide you through gas estimation, private key security, and computing node validation.",
+  "faqButton": "Common FAQs",
+  "faqQuestion": "Explain the difference between CaryPact computing power and CA token staking.",
+  "launchDapp": "Launch CaryPact DApp"
+},
+"GuidesSection": {
+  "eyebrow": "Help Center & Knowledge Base",
+  "titlePrefix": "Guides &",
+  "titleHighlight": "Tutorials",
+  "description": "Everything you need to master CaryPact and BOT Chain — select a topic card below to explore step-by-step tutorials, hashrate activation, PoS staking multipliers, and cross-chain withdrawals.",
+  "searchLabel": "Search guides",
+  "searchPlaceholder": "Search guides, e.g., 'TokenPocket', 'hashrate', 'staking', 'bridge', 'slippage'...",
+  "clearSearch": "Clear",
+  "allTopics": "All Topics ({count})",
+  "topicsHeading": "Categorized Help Topics",
+  "showingCount": "Showing {shown} of {total} Categories",
+  "guideCount": "{count, plural, one {# Guide} other {# Guides}}",
+  "guidesInTopic": "Guides in this Topic",
+  "clickToRead": "Click to read",
+  "noMatchingGuides": "No matching guides found.",
+  "noResults": "No topics match your search. Try a different keyword.",
+  "exploreTopic": "Explore Topic",
+  "defaultBadge": "Verified",
+  "readTime": "{minutes} min read",
+  "difficulty": {
+    "Beginner": "Beginner",
+    "Intermediate": "Intermediate",
+    "Advanced": "Advanced"
+  },
+  "supportTitle": "Can't find what you're looking for?",
+  "supportDescription": "Ask our CaryPact AI Assistant in real-time or download the complete 3-minute PDF cheat sheet for offline reference.",
+  "cheatSheet": "Cheat Sheet (PDF)",
+  "communitySupport": "Community Support",
+  "topics": {
+    "getting-started": {
+      "title": "Getting Started",
+      "description": "Set up a wallet, add BOT Chain and complete your first transaction.",
+      "badge": "Essential"
+    },
+    "wallet-accounts": {
+      "title": "Wallet & Accounts",
+      "description": "Manage wallets, accounts, assets, multi-network bridging and avoid wrong-network loss.",
+      "badge": "Networks"
+    },
+    "network-transactions": {
+      "title": "Network & Transactions",
+      "description": "Understand network parameters, gas fees and transaction status.",
+      "badge": "Network"
+    },
+    "bridge-defi": {
+      "title": "Bridge & DeFi",
+      "description": "Use BOT Chain bridge, DEX and staking products safely.",
+      "badge": "DeFi"
+    },
+    "project-tools": {
+      "title": "Project Tools",
+      "description": "Set up multisite accounts, permissions and project operations.",
+      "badge": "Operations"
+    }
+  },
+  "guides": {
+    "getting-started": {
+      "title": "Getting Started on CaryPact",
+      "summary": "Complete step-by-step onboarding guide to CaryPact decentralized supercomputing on BOT Chain, connecting with invitation code, verifying the official portal, and understanding ecosystem tokenomics."
+    },
+    "create-wallet": {
+      "title": "How to Create Wallet (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
+      "summary": "Instructions on how to download and set up a Web3 wallet: TokenPocket, Trust Wallet, MetaMask, and BO Wallet with BOT Chain network configuration, seed phrase security, and custom token import."
+    },
+    "cross-chain-networks-bridging": {
+      "title": "Understanding Networks, Bridging & Avoiding Wrong-Network Loss (BSC, Ethereum, Bitcoin & BOT Chain)",
+      "summary": "Essential masterclass on understanding different blockchain networks (Binance Smart Chain/BSC, Ethereum, Bitcoin, and BOT Chain), why cross-chain bridging (https://bridge.botchain.ai/) is required, how they interact, and critical cautions to avoid permanent loss from sending to the wrong network."
+    },
+    "buy-computing-power": {
+      "title": "How to Purchase Computing Power (Hashrate Units)",
+      "summary": "Deep dive into Hashrate Units: 1 USDT = 1 Unit, minimum 100 USDT, daily 16,800 CA distribution pool, transaction gas estimation, and the permanent allocation rule."
+    },
+    "network-parameters-gas": {
+      "title": "BOT Chain Network Parameters, Gas Fees & Transaction Status",
+      "summary": "Understand network parameters, gas fees, RPC endpoints, Chain ID, 1.50% native gas burn mechanics, block explorer confirmations, and how to verify transaction status."
+    },
+    "stake-ca": {
+      "title": "How to Stake CA (Flexible vs. Fixed Term Multipliers)",
+      "summary": "Learn how the 7,200 CA/day PoS staking pool works, flexible vs fixed terms (30d–360d), multiplier boosts (1.3x to 2.5x), fee buyback inflows, and compounding mechanics."
+    },
+    "ca-to-usdt": {
+      "title": "How to Swap CA - USDT & Cross-Chain Bridging",
+      "summary": "Complete walkthrough of using BDEX and CaryPact SWAP, navigating the 5% sell slippage (1.8% buyback burn + 3.2% node rewards), and bridging swapped USDT back to BNB Chain, TRON, or Ethereum."
+    },
+    "bot-pledge": {
+      "title": "How to Stake BOT (BOT Pledge & Auto-Compounding)",
+      "summary": "Complete guide to BOT Pledge (also called Bot Staking) at app.carypact.com/bot-pledge: stake BOT to earn rewards with flexible entry and exit, 24-hour principal unlocking rule, and automatic daily compounding."
+    },
+    "every-earning-method": {
+      "title": "How-To for Every Earning Method in CaryPact",
+      "summary": "Comprehensive guide to all earning methods in the CaryPact ecosystem: Computing Power Mining, PoS CA Staking, BOT Pledge (Bot Staking), VIP Dynamic Active Rewards, Global Community Pool, Node Dividend Pools, LP Farming, Referral Rebates, and Deflationary Burn Arbitrage."
+    },
+    "project-tools-operations": {
+      "title": "Multisite Accounts, Permissions & Project Operations",
+      "summary": "Set up multisite accounts, permissions and project operations — managing multiple addresses, affiliate team links, smart contract interaction approvals, and validator operations."
+    }
   }
+}
 
 }

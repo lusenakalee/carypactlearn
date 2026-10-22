@@ -1265,5 +1265,120 @@
         ]
       }
     }
+  },
+  "GuidesPage": {
+  "breadcrumbHome": "Trang chủ",
+  "breadcrumbCurrent": "Hướng dẫn & Bài học",
+  "badge": "Làm quen tương tác và bài học từng bước",
+  "titlePrefix": "CaryPact & BOT Chain",
+  "titleHighlight": "Hướng dẫn từng bước",
+  "description": "Các khóa hướng dẫn từng bước đã được xác minh về cách tạo BO Wallet, mua sức mạnh tính toán, các bậc staking, kinh tế token CA và hoán đổi BDEX với trượt giá thấp.",
+  "cheatSheetButton": "Bảng tóm tắt (PDF)",
+  "askAiButton": "Hỏi AI Copilot",
+  "askAiSetupQuestion": "Hãy hướng dẫn tôi từng bước thiết lập CaryPact và BO Wallet từ đầu.",
+  "supportEyebrow": "Cần hỗ trợ cá nhân hóa?",
+  "supportTitle": "Bị vướng khi thiết lập BO Wallet hoặc ủy quyền staking?",
+  "supportDescription": "Các cố vấn cộng đồng và AI Copilot luôn sẵn sàng 24/7 để hướng dẫn bạn về ước tính phí gas, bảo mật khóa riêng tư và xác thực nút tính toán.",
+  "faqButton": "Câu hỏi thường gặp",
+  "faqQuestion": "Hãy giải thích sự khác biệt giữa sức mạnh tính toán CaryPact và staking token CA.",
+  "launchDapp": "Mở DApp CaryPact"
+},
+"GuidesSection": {
+  "eyebrow": "Trung tâm trợ giúp & Cơ sở kiến thức",
+  "titlePrefix": "Hướng dẫn &",
+  "titleHighlight": "Bài học",
+  "description": "Mọi thứ bạn cần để làm chủ CaryPact và BOT Chain — chọn một thẻ chủ đề bên dưới để khám phá các bài hướng dẫn từng bước, kích hoạt hashrate, hệ số nhân staking PoS và rút tiền chuỗi chéo.",
+  "searchLabel": "Tìm hướng dẫn",
+  "searchPlaceholder": "Tìm hướng dẫn, ví dụ: 'TokenPocket', 'hashrate', 'staking', 'cầu nối', 'trượt giá'...",
+  "clearSearch": "Xóa",
+  "allTopics": "Tất cả chủ đề ({count})",
+  "topicsHeading": "Chủ đề trợ giúp theo danh mục",
+  "showingCount": "Đang hiển thị {shown}/{total} danh mục",
+  "guideCount": "{count, plural, other {# hướng dẫn}}",
+  "guidesInTopic": "Hướng dẫn trong chủ đề này",
+  "clickToRead": "Nhấp để đọc",
+  "noMatchingGuides": "Không tìm thấy hướng dẫn phù hợp.",
+  "noResults": "Không có chủ đề nào khớp với tìm kiếm. Hãy thử từ khóa khác.",
+  "exploreTopic": "Khám phá chủ đề",
+  "defaultBadge": "Đã xác minh",
+  "readTime": "{minutes} phút đọc",
+  "difficulty": {
+    "Beginner": "Cơ bản",
+    "Intermediate": "Trung cấp",
+    "Advanced": "Nâng cao"
+  },
+  "supportTitle": "Không tìm thấy điều bạn cần?",
+  "supportDescription": "Hãy hỏi Trợ lý AI CaryPact theo thời gian thực hoặc tải bảng tóm tắt PDF đầy đủ 3 phút để tham khảo ngoại tuyến.",
+  "cheatSheet": "Bảng tóm tắt (PDF)",
+  "communitySupport": "Hỗ trợ cộng đồng",
+  "topics": {
+    "getting-started": {
+      "title": "Bắt đầu",
+      "description": "Thiết lập ví, thêm BOT Chain và hoàn tất giao dịch đầu tiên của bạn.",
+      "badge": "Thiết yếu"
+    },
+    "wallet-accounts": {
+      "title": "Ví & Tài khoản",
+      "description": "Quản lý ví, tài khoản, tài sản, cầu nối đa mạng và tránh mất tiền do chọn nhầm mạng.",
+      "badge": "Mạng"
+    },
+    "network-transactions": {
+      "title": "Mạng & Giao dịch",
+      "description": "Hiểu các tham số mạng, phí gas và trạng thái giao dịch.",
+      "badge": "Mạng"
+    },
+    "bridge-defi": {
+      "title": "Cầu nối & DeFi",
+      "description": "Sử dụng cầu nối BOT Chain, DEX và các sản phẩm staking một cách an toàn.",
+      "badge": "DeFi"
+    },
+    "project-tools": {
+      "title": "Công cụ dự án",
+      "description": "Thiết lập tài khoản đa trang, quyền hạn và vận hành dự án.",
+      "badge": "Vận hành"
+    }
+  },
+  "guides": {
+    "getting-started": {
+      "title": "Bắt đầu với CaryPact",
+      "summary": "Hướng dẫn làm quen từng bước đầy đủ về siêu máy tính phi tập trung CaryPact trên BOT Chain: kết nối bằng mã mời, xác minh cổng chính thức và hiểu tokenomics của hệ sinh thái."
+    },
+    "create-wallet": {
+      "title": "Cách tạo ví (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
+      "summary": "Hướng dẫn tải xuống và thiết lập ví Web3: TokenPocket, Trust Wallet, MetaMask và BO Wallet, kèm cấu hình mạng BOT Chain, bảo mật cụm từ khôi phục và nhập token tùy chỉnh."
+    },
+    "cross-chain-networks-bridging": {
+      "title": "Hiểu về mạng, cầu nối và cách tránh mất tiền do gửi nhầm mạng (BSC, Ethereum, Bitcoin & BOT Chain)",
+      "summary": "Khóa hướng dẫn quan trọng về các mạng blockchain khác nhau (Binance Smart Chain/BSC, Ethereum, Bitcoin và BOT Chain), lý do cần cầu nối chuỗi chéo (https://bridge.botchain.ai/), cách các mạng tương tác và những lưu ý then chốt để tránh mất vĩnh viễn khi gửi nhầm mạng."
+    },
+    "buy-computing-power": {
+      "title": "Cách mua sức mạnh tính toán (Hashrate Unit)",
+      "summary": "Phân tích chuyên sâu về Hashrate Unit: 1 USDT = 1 đơn vị, tối thiểu 100 USDT, quỹ phân phối hằng ngày 16,800 CA, ước tính phí gas giao dịch và quy tắc phân bổ vĩnh viễn."
+    },
+    "network-parameters-gas": {
+      "title": "Tham số mạng BOT Chain, phí gas và trạng thái giao dịch",
+      "summary": "Tìm hiểu các tham số mạng, phí gas, điểm cuối RPC, Chain ID, cơ chế đốt 1.50% gas gốc, xác nhận trên trình khám phá khối và cách kiểm tra trạng thái giao dịch."
+    },
+    "stake-ca": {
+      "title": "Cách staking CA (linh hoạt so với kỳ hạn cố định có hệ số nhân)",
+      "summary": "Tìm hiểu cách hoạt động của quỹ staking PoS 7,200 CA/ngày, kỳ hạn linh hoạt và cố định (30d–360d), mức tăng hệ số nhân (1.3x đến 2.5x), dòng tiền từ mua lại bằng phí và cơ chế lãi kép."
+    },
+    "ca-to-usdt": {
+      "title": "Cách hoán đổi CA - USDT và chuyển chuỗi chéo",
+      "summary": "Hướng dẫn đầy đủ cách dùng BDEX và CaryPact SWAP, xử lý trượt giá 5% khi bán (1.8% mua lại và đốt + 3.2% thưởng cho node) và chuyển USDT đã hoán đổi về BNB Chain, TRON hoặc Ethereum qua cầu nối."
+    },
+    "bot-pledge": {
+      "title": "Cách staking BOT (BOT Pledge và lãi kép tự động)",
+      "summary": "Hướng dẫn đầy đủ về BOT Pledge (còn gọi là Bot Staking) tại app.carypact.com/bot-pledge: staking BOT để nhận thưởng với việc vào và rút linh hoạt, quy tắc mở khóa vốn gốc sau 24 giờ và lãi kép tự động hằng ngày."
+    },
+    "every-earning-method": {
+      "title": "Hướng dẫn mọi cách kiếm thu nhập trên CaryPact",
+      "summary": "Hướng dẫn toàn diện về mọi phương thức kiếm thu nhập trong hệ sinh thái CaryPact: đào sức mạnh tính toán, staking CA PoS, BOT Pledge (Bot Staking), thưởng chủ động động VIP, quỹ cộng đồng toàn cầu, quỹ cổ tức node, LP Farming, hoàn hoa hồng giới thiệu và chênh lệch giá từ cơ chế đốt giảm phát."
+    },
+    "project-tools-operations": {
+      "title": "Tài khoản đa trang, quyền hạn và vận hành dự án",
+      "summary": "Thiết lập tài khoản đa trang, quyền hạn và vận hành dự án: quản lý nhiều địa chỉ, liên kết nhóm tiếp thị liên kết, phê duyệt tương tác hợp đồng thông minh và vận hành validator."
+    }
   }
+}
 }

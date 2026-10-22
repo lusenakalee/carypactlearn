@@ -1308,5 +1308,120 @@
         ]
       }
     }
+  },
+  "GuidesPage": {
+  "breadcrumbHome": "ホーム",
+  "breadcrumbCurrent": "ガイド＆チュートリアル",
+  "badge": "インタラクティブなオンボーディングとステップバイステップのチュートリアル",
+  "titlePrefix": "CaryPact と BOT Chain",
+  "titleHighlight": "ステップバイステップガイド",
+  "description": "BO Wallet の作成、コンピューティングパワーの取得、ステーキング階層、CA トークンの経済モデル、低スリッページの BDEX スワップを網羅した、検証済みのステップバイステップ講座です。",
+  "cheatSheetButton": "チートシート（PDF）",
+  "askAiButton": "AI Copilot に質問",
+  "askAiSetupQuestion": "CaryPact と BO Wallet を一からセットアップする手順を順番に教えてください。",
+  "supportEyebrow": "個別のサポートが必要ですか？",
+  "supportTitle": "BO Wallet のセットアップやステーキングの委任でつまずきましたか？",
+  "supportDescription": "コミュニティメンターと AI Copilot が 24 時間 365 日、ガス見積もり、秘密鍵のセキュリティ、コンピューティングノードの検証をご案内します。",
+  "faqButton": "よくある質問",
+  "faqQuestion": "CaryPact のコンピューティングパワーと CA トークンのステーキングの違いを説明してください。",
+  "launchDapp": "CaryPact DApp を起動"
+},
+"GuidesSection": {
+  "eyebrow": "ヘルプセンター＆ナレッジベース",
+  "titlePrefix": "ガイド＆",
+  "titleHighlight": "チュートリアル",
+  "description": "CaryPact と BOT Chain を使いこなすために必要な情報がすべて揃っています。下のトピックカードを選んで、ステップバイステップのチュートリアル、ハッシュレートの有効化、PoS ステーキングの倍率、クロスチェーン出金について確認しましょう。",
+  "searchLabel": "ガイドを検索",
+  "searchPlaceholder": "ガイドを検索（例：'TokenPocket'、'ハッシュレート'、'ステーキング'、'ブリッジ'、'スリッページ'）...",
+  "clearSearch": "クリア",
+  "allTopics": "すべてのトピック（{count}）",
+  "topicsHeading": "カテゴリ別ヘルプトピック",
+  "showingCount": "{total} 件中 {shown} 件のカテゴリを表示",
+  "guideCount": "{count, plural, other {# 件のガイド}}",
+  "guidesInTopic": "このトピックのガイド",
+  "clickToRead": "クリックして読む",
+  "noMatchingGuides": "該当するガイドが見つかりません。",
+  "noResults": "検索に一致するトピックがありません。別のキーワードをお試しください。",
+  "exploreTopic": "トピックを見る",
+  "defaultBadge": "検証済み",
+  "readTime": "読了時間 {minutes} 分",
+  "difficulty": {
+    "Beginner": "初級",
+    "Intermediate": "中級",
+    "Advanced": "上級"
+  },
+  "supportTitle": "お探しの情報が見つかりませんか？",
+  "supportDescription": "CaryPact AI アシスタントにリアルタイムで質問するか、オフラインで参照できる 3 分で読める PDF チートシートをダウンロードしてください。",
+  "cheatSheet": "チートシート（PDF）",
+  "communitySupport": "コミュニティサポート",
+  "topics": {
+    "getting-started": {
+      "title": "はじめに",
+      "description": "ウォレットを設定し、BOT Chain を追加して、最初のトランザクションを完了します。",
+      "badge": "必須"
+    },
+    "wallet-accounts": {
+      "title": "ウォレットとアカウント",
+      "description": "ウォレット、アカウント、資産を管理し、マルチネットワークのブリッジを理解して、誤ったネットワークへの送金による損失を防ぎます。",
+      "badge": "ネットワーク"
+    },
+    "network-transactions": {
+      "title": "ネットワークとトランザクション",
+      "description": "ネットワークパラメータ、ガス代、トランザクションのステータスを理解します。",
+      "badge": "ネットワーク"
+    },
+    "bridge-defi": {
+      "title": "ブリッジと DeFi",
+      "description": "BOT Chain ブリッジ、DEX、ステーキング商品を安全に利用します。",
+      "badge": "DeFi"
+    },
+    "project-tools": {
+      "title": "プロジェクトツール",
+      "description": "マルチサイトアカウント、権限、プロジェクト運用を設定します。",
+      "badge": "運用"
+    }
+  },
+  "guides": {
+    "getting-started": {
+      "title": "CaryPact をはじめよう",
+      "summary": "BOT Chain 上の CaryPact 分散型スーパーコンピューティングへの完全なステップバイステップのオンボーディングガイド。招待コードでの接続、公式ポータルの確認、エコシステムのトークノミクスの理解までを解説します。"
+    },
+    "create-wallet": {
+      "title": "ウォレットの作成方法（TokenPocket、Trust Wallet、MetaMask、BO Wallet）",
+      "summary": "Web3 ウォレット（TokenPocket、Trust Wallet、MetaMask、BO Wallet）のダウンロードと設定手順。BOT Chain ネットワークの設定、シードフレーズの保護、カスタムトークンのインポートを扱います。"
+    },
+    "cross-chain-networks-bridging": {
+      "title": "ネットワーク、ブリッジ、誤ったネットワークによる損失の回避（BSC、Ethereum、Bitcoin、BOT Chain）",
+      "summary": "各ブロックチェーンネットワーク（Binance Smart Chain/BSC、Ethereum、Bitcoin、BOT Chain）の理解に欠かせない講座。クロスチェーンブリッジ（https://bridge.botchain.ai/）が必要な理由、ネットワーク間の関係、誤ったネットワークへの送信による恒久的な損失を避けるための重要な注意点を解説します。"
+    },
+    "buy-computing-power": {
+      "title": "コンピューティングパワー（ハッシュレートユニット）の購入方法",
+      "summary": "ハッシュレートユニットの詳細解説。1 USDT = 1 ユニット、最低 100 USDT、1 日 16,800 CA の分配プール、トランザクションのガス見積もり、恒久的な割り当てルールを扱います。"
+    },
+    "network-parameters-gas": {
+      "title": "BOT Chain のネットワークパラメータ、ガス代、トランザクションステータス",
+      "summary": "ネットワークパラメータ、ガス代、RPC エンドポイント、Chain ID、ネイティブガスの 1.50% バーンの仕組み、ブロックエクスプローラーでの承認状況、トランザクションステータスの確認方法を理解します。"
+    },
+    "stake-ca": {
+      "title": "CA のステーキング方法（フレキシブルと固定期間の倍率）",
+      "summary": "1 日 7,200 CA の PoS ステーキングプールの仕組み、フレキシブルと固定期間（30d–360d）の違い、倍率ブースト（1.3x〜2.5x）、手数料バイバックの流入、複利の仕組みを学びます。"
+    },
+    "ca-to-usdt": {
+      "title": "CA と USDT のスワップとクロスチェーンブリッジの方法",
+      "summary": "BDEX と CaryPact SWAP の使い方、売却時の 5% スリッページ（1.8% のバイバック＆バーン + 3.2% のノード報酬）への対応、スワップ後の USDT を BNB Chain、TRON、Ethereum へブリッジする手順を詳しく解説します。"
+    },
+    "bot-pledge": {
+      "title": "BOT のステーキング方法（BOT Pledge と自動複利）",
+      "summary": "app.carypact.com/bot-pledge の BOT Pledge（Bot Staking とも呼ばれます）の完全ガイド。柔軟な入出金で BOT をステークして報酬を得る方法、24 時間の元本アンロックルール、毎日の自動複利を解説します。"
+    },
+    "every-earning-method": {
+      "title": "CaryPact のすべての収益方法の使い方",
+      "summary": "CaryPact エコシステムのすべての収益方法を網羅したガイド。コンピューティングパワーマイニング、PoS による CA ステーキング、BOT Pledge（Bot Staking）、VIP ダイナミックアクティブ報酬、グローバルコミュニティプール、ノード配当プール、LP ファーミング、紹介リベート、デフレーションバーンのアービトラージを扱います。"
+    },
+    "project-tools-operations": {
+      "title": "マルチサイトアカウント、権限、プロジェクト運用",
+      "summary": "マルチサイトアカウント、権限、プロジェクト運用の設定。複数アドレスの管理、アフィリエイトチームのリンク、スマートコントラクト操作の承認、バリデーター運用を扱います。"
+    }
   }
+}
 }

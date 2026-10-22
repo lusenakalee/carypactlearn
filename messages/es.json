@@ -1271,7 +1271,122 @@
         ]
       }
     }
+  },
+  "GuidesPage": {
+  "breadcrumbHome": "Inicio",
+  "breadcrumbCurrent": "Guías y tutoriales",
+  "badge": "Incorporación interactiva y tutoriales paso a paso",
+  "titlePrefix": "CaryPact y BOT Chain",
+  "titleHighlight": "Guías paso a paso",
+  "description": "Clases magistrales verificadas, paso a paso, sobre la creación de BO Wallet, la adquisición de potencia de cómputo, los niveles de staking, la economía del token CA y los swaps de BDEX con bajo deslizamiento.",
+  "cheatSheetButton": "Hoja de referencia (PDF)",
+  "askAiButton": "Preguntar al AI Copilot",
+  "askAiSetupQuestion": "Guíame paso a paso para configurar CaryPact y BO Wallet desde cero.",
+  "supportEyebrow": "¿Necesitas ayuda personalizada?",
+  "supportTitle": "¿Te atascaste al configurar BO Wallet o al delegar el staking?",
+  "supportDescription": "Nuestros mentores de la comunidad y el AI Copilot están disponibles 24/7 para guiarte en la estimación de gas, la seguridad de la clave privada y la validación de nodos de cómputo.",
+  "faqButton": "Preguntas frecuentes",
+  "faqQuestion": "Explica la diferencia entre la potencia de cómputo de CaryPact y el staking del token CA.",
+  "launchDapp": "Abrir la DApp de CaryPact"
+},
+"GuidesSection": {
+  "eyebrow": "Centro de ayuda y base de conocimiento",
+  "titlePrefix": "Guías y",
+  "titleHighlight": "tutoriales",
+  "description": "Todo lo que necesitas para dominar CaryPact y BOT Chain: selecciona una tarjeta de tema para explorar tutoriales paso a paso, la activación de hashrate, los multiplicadores de staking PoS y los retiros entre cadenas.",
+  "searchLabel": "Buscar guías",
+  "searchPlaceholder": "Busca guías, p. ej., 'TokenPocket', 'hashrate', 'staking', 'puente', 'deslizamiento'...",
+  "clearSearch": "Borrar",
+  "allTopics": "Todos los temas ({count})",
+  "topicsHeading": "Temas de ayuda por categoría",
+  "showingCount": "Mostrando {shown} de {total} categorías",
+  "guideCount": "{count, plural, one {# guía} other {# guías}}",
+  "guidesInTopic": "Guías de este tema",
+  "clickToRead": "Haz clic para leer",
+  "noMatchingGuides": "No se encontraron guías.",
+  "noResults": "Ningún tema coincide con tu búsqueda. Prueba con otra palabra clave.",
+  "exploreTopic": "Explorar tema",
+  "defaultBadge": "Verificado",
+  "readTime": "{minutes} min de lectura",
+  "difficulty": {
+    "Beginner": "Principiante",
+    "Intermediate": "Intermedio",
+    "Advanced": "Avanzado"
+  },
+  "supportTitle": "¿No encuentras lo que buscas?",
+  "supportDescription": "Pregunta en tiempo real a nuestro asistente de IA de CaryPact o descarga la hoja de referencia completa en PDF de 3 minutos para consultarla sin conexión.",
+  "cheatSheet": "Hoja de referencia (PDF)",
+  "communitySupport": "Soporte de la comunidad",
+  "topics": {
+    "getting-started": {
+      "title": "Primeros pasos",
+      "description": "Configura una billetera, añade BOT Chain y completa tu primera transacción.",
+      "badge": "Esencial"
+    },
+    "wallet-accounts": {
+      "title": "Billetera y cuentas",
+      "description": "Gestiona billeteras, cuentas y activos, el puenteo entre varias redes y evita pérdidas por usar la red equivocada.",
+      "badge": "Redes"
+    },
+    "network-transactions": {
+      "title": "Red y transacciones",
+      "description": "Comprende los parámetros de red, las comisiones de gas y el estado de las transacciones.",
+      "badge": "Red"
+    },
+    "bridge-defi": {
+      "title": "Puente y DeFi",
+      "description": "Usa el puente de BOT Chain, el DEX y los productos de staking de forma segura.",
+      "badge": "DeFi"
+    },
+    "project-tools": {
+      "title": "Herramientas de proyecto",
+      "description": "Configura cuentas multisitio, permisos y operaciones de proyecto.",
+      "badge": "Operaciones"
+    }
+  },
+  "guides": {
+    "getting-started": {
+      "title": "Primeros pasos en CaryPact",
+      "summary": "Guía completa de incorporación paso a paso a la supercomputación descentralizada de CaryPact en BOT Chain: conexión con código de invitación, verificación del portal oficial y comprensión de la tokenómica del ecosistema."
+    },
+    "create-wallet": {
+      "title": "Cómo crear una billetera (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
+      "summary": "Instrucciones para descargar y configurar una billetera Web3: TokenPocket, Trust Wallet, MetaMask y BO Wallet, con la configuración de la red BOT Chain, la seguridad de la frase semilla y la importación de tokens personalizados."
+    },
+    "cross-chain-networks-bridging": {
+      "title": "Redes, puenteo y cómo evitar pérdidas por usar la red equivocada (BSC, Ethereum, Bitcoin y BOT Chain)",
+      "summary": "Clase magistral esencial sobre las distintas redes blockchain (Binance Smart Chain/BSC, Ethereum, Bitcoin y BOT Chain), por qué es necesario el puenteo entre cadenas (https://bridge.botchain.ai/), cómo interactúan y las precauciones críticas para evitar la pérdida permanente por enviar fondos a la red equivocada."
+    },
+    "buy-computing-power": {
+      "title": "Cómo comprar potencia de cómputo (unidades de hashrate)",
+      "summary": "Análisis a fondo de las unidades de hashrate: 1 USDT = 1 unidad, mínimo de 100 USDT, fondo de distribución diaria de 16,800 CA, estimación del gas de la transacción y la regla de asignación permanente."
+    },
+    "network-parameters-gas": {
+      "title": "Parámetros de red de BOT Chain, comisiones de gas y estado de las transacciones",
+      "summary": "Comprende los parámetros de red, las comisiones de gas, los endpoints RPC, el Chain ID, el mecanismo de quema del 1.50% del gas nativo, las confirmaciones del explorador de bloques y cómo verificar el estado de una transacción."
+    },
+    "stake-ca": {
+      "title": "Cómo hacer staking de CA (flexible frente a multiplicadores de plazo fijo)",
+      "summary": "Descubre cómo funciona el fondo de staking PoS de 7,200 CA/día, los plazos flexibles frente a los fijos (30d–360d), los aumentos por multiplicador (1.3x a 2.5x), las entradas por recompra de comisiones y la mecánica de capitalización."
+    },
+    "ca-to-usdt": {
+      "title": "Cómo intercambiar CA - USDT y puentear entre cadenas",
+      "summary": "Guía completa para usar BDEX y CaryPact SWAP, gestionar el deslizamiento del 5% en ventas (1.8% de recompra y quema + 3.2% para recompensas de nodos) y puentear el USDT intercambiado de vuelta a BNB Chain, TRON o Ethereum."
+    },
+    "bot-pledge": {
+      "title": "Cómo hacer staking de BOT (BOT Pledge y autocapitalización)",
+      "summary": "Guía completa de BOT Pledge (también llamado Bot Staking) en app.carypact.com/bot-pledge: haz staking de BOT para obtener recompensas con entrada y salida flexibles, la regla de desbloqueo del principal a las 24 horas y la capitalización diaria automática."
+    },
+    "every-earning-method": {
+      "title": "Cómo usar cada método de ganancias en CaryPact",
+      "summary": "Guía integral de todos los métodos de ganancias del ecosistema CaryPact: minería de potencia de cómputo, staking PoS de CA, BOT Pledge (Bot Staking), recompensas activas dinámicas VIP, fondo comunitario global, fondos de dividendos de nodos, LP Farming, comisiones de referidos y arbitraje de quema deflacionaria."
+    },
+    "project-tools-operations": {
+      "title": "Cuentas multisitio, permisos y operaciones de proyecto",
+      "summary": "Configura cuentas multisitio, permisos y operaciones de proyecto: gestión de varias direcciones, enlaces de equipos de afiliados, aprobaciones de interacción con contratos inteligentes y operaciones de validadores."
+    }
   }
+}
 
   
 

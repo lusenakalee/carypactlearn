@@ -1271,7 +1271,123 @@
         ]
       }
     }
+  },
+
+  "GuidesPage": {
+  "breadcrumbHome": "首页",
+  "breadcrumbCurrent": "指南与教程",
+  "badge": "互动式入门与分步教程",
+  "titlePrefix": "CaryPact 与 BOT Chain",
+  "titleHighlight": "分步指南",
+  "description": "经过验证的分步教程，涵盖 BO Wallet 创建、算力获取、质押等级、CA 代币经济学以及低滑点的 BDEX 兑换。",
+  "cheatSheetButton": "速查表（PDF）",
+  "askAiButton": "询问 AI Copilot",
+  "askAiSetupQuestion": "请一步步指导我从零开始设置 CaryPact 和 BO Wallet。",
+  "supportEyebrow": "需要个性化协助？",
+  "supportTitle": "在设置 BO Wallet 或委托质押时遇到问题？",
+  "supportDescription": "社区导师和 AI Copilot 全天候在线，指导您完成 Gas 估算、私钥安全和算力节点验证。",
+  "faqButton": "常见问题",
+  "faqQuestion": "请解释 CaryPact 算力与 CA 代币质押之间的区别。",
+  "launchDapp": "启动 CaryPact DApp"
+},
+"GuidesSection": {
+  "eyebrow": "帮助中心与知识库",
+  "titlePrefix": "指南与",
+  "titleHighlight": "教程",
+  "description": "掌握 CaryPact 和 BOT Chain 所需的一切——选择下方的主题卡片，探索分步教程、算力激活、PoS 质押倍数和跨链提现。",
+  "searchLabel": "搜索指南",
+  "searchPlaceholder": "搜索指南，例如“TokenPocket”“算力”“质押”“跨链”“滑点”...",
+  "clearSearch": "清除",
+  "allTopics": "全部主题（{count}）",
+  "topicsHeading": "按分类浏览帮助主题",
+  "showingCount": "显示 {total} 个分类中的 {shown} 个",
+  "guideCount": "{count, plural, other {# 篇指南}}",
+  "guidesInTopic": "本主题下的指南",
+  "clickToRead": "点击阅读",
+  "noMatchingGuides": "未找到匹配的指南。",
+  "noResults": "没有与您的搜索匹配的主题，请尝试其他关键词。",
+  "exploreTopic": "探索主题",
+  "defaultBadge": "已验证",
+  "readTime": "阅读约 {minutes} 分钟",
+  "difficulty": {
+    "Beginner": "入门",
+    "Intermediate": "中级",
+    "Advanced": "高级"
+  },
+  "supportTitle": "没找到想要的内容？",
+  "supportDescription": "实时询问 CaryPact AI 助手，或下载 3 分钟速览的完整 PDF 速查表以便离线查阅。",
+  "cheatSheet": "速查表（PDF）",
+  "communitySupport": "社区支持",
+  "topics": {
+    "getting-started": {
+      "title": "快速入门",
+      "description": "设置钱包、添加 BOT Chain 并完成您的第一笔交易。",
+      "badge": "必读"
+    },
+    "wallet-accounts": {
+      "title": "钱包与账户",
+      "description": "管理钱包、账户和资产，了解多网络跨链桥接，避免因选错网络而造成损失。",
+      "badge": "网络"
+    },
+    "network-transactions": {
+      "title": "网络与交易",
+      "description": "了解网络参数、Gas 费用和交易状态。",
+      "badge": "网络"
+    },
+    "bridge-defi": {
+      "title": "跨链桥与 DeFi",
+      "description": "安全使用 BOT Chain 跨链桥、DEX 和质押产品。",
+      "badge": "DeFi"
+    },
+    "project-tools": {
+      "title": "项目工具",
+      "description": "设置多站点账户、权限和项目运营。",
+      "badge": "运营"
+    }
+  },
+  "guides": {
+    "getting-started": {
+      "title": "CaryPact 快速入门",
+      "summary": "完整的分步入门指南，介绍 BOT Chain 上的 CaryPact 去中心化超级计算：使用邀请码连接、验证官方入口并了解生态代币经济学。"
+    },
+    "create-wallet": {
+      "title": "如何创建钱包（TokenPocket、Trust Wallet、MetaMask、BO Wallet）",
+      "summary": "下载并设置 Web3 钱包（TokenPocket、Trust Wallet、MetaMask 和 BO Wallet）的说明，包括 BOT Chain 网络配置、助记词安全和自定义代币导入。"
+    },
+    "cross-chain-networks-bridging": {
+      "title": "了解网络、跨链桥接与避免选错网络造成的损失（BSC、Ethereum、Bitcoin 和 BOT Chain）",
+      "summary": "必读教程，讲解不同区块链网络（Binance Smart Chain/BSC、Ethereum、Bitcoin 和 BOT Chain）、为何需要跨链桥接（https://bridge.botchain.ai/）、各网络如何交互，以及避免因转入错误网络而永久损失资产的关键注意事项。"
+    },
+    "buy-computing-power": {
+      "title": "如何购买算力（算力单位）",
+      "summary": "深入讲解算力单位：1 USDT = 1 个单位，最低 100 USDT，每日 16,800 CA 分配池，交易 Gas 估算以及永久分配规则。"
+    },
+    "network-parameters-gas": {
+      "title": "BOT Chain 网络参数、Gas 费用与交易状态",
+      "summary": "了解网络参数、Gas 费用、RPC 端点、Chain ID、原生 Gas 1.50% 销毁机制、区块浏览器确认情况，以及如何验证交易状态。"
+    },
+    "stake-ca": {
+      "title": "如何质押 CA（灵活质押与固定期限倍数）",
+      "summary": "了解每日 7,200 CA 的 PoS 质押池如何运作、灵活与固定期限（30d–360d）的区别、倍数加成（1.3x 至 2.5x）、手续费回购流入以及复利机制。"
+    },
+    "ca-to-usdt": {
+      "title": "如何兑换 CA - USDT 及跨链桥接",
+      "summary": "完整讲解如何使用 BDEX 和 CaryPact SWAP、应对卖出时 5% 的滑点（1.8% 回购销毁 + 3.2% 节点奖励），以及将兑换后的 USDT 桥接回 BNB Chain、TRON 或 Ethereum。"
+    },
+    "bot-pledge": {
+      "title": "如何质押 BOT（BOT Pledge 与自动复利）",
+      "summary": "app.carypact.com/bot-pledge 上 BOT Pledge（也称 Bot Staking）的完整指南：灵活存取质押 BOT 赚取奖励、24 小时本金解锁规则以及每日自动复利。"
+    },
+    "every-earning-method": {
+      "title": "CaryPact 所有收益方式的操作指南",
+      "summary": "CaryPact 生态所有收益方式的综合指南：算力挖矿、PoS CA 质押、BOT Pledge（Bot Staking）、VIP 动态活跃奖励、全球社区池、节点分红池、LP 挖矿、推荐返佣以及通缩销毁套利。"
+    },
+    "project-tools-operations": {
+      "title": "多站点账户、权限与项目运营",
+      "summary": "设置多站点账户、权限和项目运营：管理多个地址、联盟团队链接、智能合约交互授权以及验证者运营。"
+    }
   }
+}
 
 
   
