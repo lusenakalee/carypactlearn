@@ -1,82 +1,82 @@
 {
   "nav": {
     "home": "홈",
-    "liveData": "실시간 데이터 ",
-    "earn": "획득하기",
+    "liveData": "라이브",
+    "earn": "수익 창출",
     "guides": "가이드",
-    "learn": "Web3 학습",
+    "learn": "학습",
     "events": "이벤트",
-    "risks": "위험 고지",
-    "brandSub": "BOT 체인 • CA 토큰 • 분산 컴퓨팅",
-    "askAi": "AI 튜터 / 검색",
+    "risks": "위험 및 공시",
+    "brandSub": "BOT Chain • CA 토큰 • 컴퓨팅",
+    "askAi": "AI 질문 / 검색",
     "selectLang": "언어 선택",
     "launchApp": "앱 실행",
-    "newBadge": "신규"
+    "newBadge": "NEW"
   },
   "common": {
     "liveParity": "1.337631 BOT = 1 CA",
     "inverseParity": "0.405213 CA = 1 BOT",
     "launchCaryPact": "CaryPact 앱 실행",
-    "register": "CaryPact 등록하기",
-    "readGuide": "가이드 읽기",
-    "downloadPdf": "PDF 요약본 다운로드",
-    "watchVideo": "영상 설명 보기",
+    "register": "CaryPact 가입하기",
+    "readGuide": "인터랙티브 가이드 읽기",
+    "downloadPdf": "PDF 치트시트 다운로드",
+    "watchVideo": "설명 영상 시청",
     "close": "닫기",
     "copy": "복사",
-    "copied": "복사 완료!",
+    "copied": "복사됨!",
     "refresh": "새로고침",
     "loading": "로딩 중...",
-    "cmcLive": "CMC 실시간 피드",
+    "cmcLive": "CMC 라이브 피드",
     "onChain": "온체인 검증됨"
   },
   "disclaimer": {
-    "badge": "독립 교육 및 분석 플랫폼",
-    "text": "본 학습 허브는 독립적으로 운영되는 교육 및 연구 공간입니다. 해시레이트 구매(1 USDT = 1 단위)는 영구적이며 원금 반환 메커니즘이 없습니다. 투자 전 스스로 철저한 조사(DYOR)를 진행하세요."
+    "badge": "독립 교육 플랫폼",
+    "text": "본 러닝 허브는 교육 및 연구 목적으로 독립적으로 운영됩니다. 해시레이트 구매(1 USDT = 1 유닛)는 영구적이며 원금 인출이 불가능합니다. 암호화폐 자산은 높은 시장 변동성을 수반합니다. 항상 스스로 조사하고 신중히 판단하십시오(DYOR)."
   },
   "hero": {
-    "badge": "독립 교육 및 실시간 데이터 허브",
+    "badge": "독립 교육 및 분석 허브",
     "titlePrefix": "",
     "titleHighlight": "CaryPact",
-    "titleSuffix": "학습 허브",
-    "description": "참여하기 전에 CaryPact 분산형 슈퍼컴퓨팅, BOT 체인 Layer 1, CA 토크노믹스, 동적 패리티 메커니즘 및 PoS 스테이킹 모델을 완벽히 이해하세요.",
+    "titleSuffix": "러닝 허브",
+    "description": "참여하기 전에 CaryPact의 분산형 슈퍼컴퓨팅, BOT Chain 레이어 1, CA 토크노믹스, 동적 패리티 메커니즘 및 PoS 스테이킹 모델을 완벽히 마스터하세요.",
     "ctaExploreGuides": "가이드 둘러보기",
-    "ctaLiveMarket": "실시간 시세 및 패리티",
-    "searchHeading": "궁금한 점을 질문하거나 추천 질문을 확인하세요:",
-    "prompt1": "해시레이트 단위의 영구 구매 규칙이란 무엇인가요?",
+    "ctaLiveMarket": "실시간 시장 및 패리티",
+    "searchHeading": "무엇이든 질문하거나 추천 질문을 선택하세요:",
+    "prompt1": "해시레이트 유닛의 영구 락업 규칙은 무엇인가요?",
     "prompt2": "1.337631 BOT = 1 CA 동적 패리티는 어떻게 작동하나요?",
-    "prompt3": "BDEX 5% 슬리피지 및 토큰 소각 메커니즘 설명",
+    "prompt3": "5% BDEX 슬리피지와 토큰 소각 메커니즘을 설명해주세요",
     "prompt4": "10단계 VIP 보상 티어는 어떻게 구성되나요?",
     "communityLabel": "글로벌 커뮤니티",
     "countries": "{count}개국",
-    "botSupplyLabel": "BOT 최대 공급량",
-    "maxCaSupplyLabel": "CA 최대 공급량",
-    "emissionYears": "{years}년 발행 일정",
+    "botSupplyLabel": "최대 BOT 공급량",
+    "maxCaSupplyLabel": "최대 CA 공급량",
+    "emissionYears": "{years}년 배출 일정",
     "officeNetworkLabel": "오피스 네트워크",
-    "officeBreakdown": "스튜디오 {studios, number}곳 + 허브 {hubs, number}곳",
+    "officeBreakdown": "{studios, number}개 스튜디오 + {hubs, number}개 허브",
     "parityInline": "{rate} BOT = 1 CA",
-    "priceNA": "사용 불가",
-    "priceVia": "출처: {source}",
+    "priceNA": "이용 불가",
+    "priceVia": "{source} 기준",
     "priceUpdated": "업데이트: {time}",
     "chip1": "해시레이트 영구성",
-    "chip2": "BOT / CA 동적 패리티",
-    "chip3": "5% 슬리피지 및 소각",
+    "chip2": "동적 BOT / CA 패리티",
+    "chip3": "5% 슬리피지 & 소각",
     "chip4": "10단계 VIP 보상"
   },
   "live": {
-    "sectionBadge": "실시간 금융 및 컴퓨팅 네트워크 데이터",
-    "sectionTitle": "실시간 네트워크 및",
+    "sectionBadge": "실시간 금융 및 컴퓨팅 피드",
+    "sectionTitle": "라이브 네트워크 및",
     "sectionTitleHighlight": "전환 엔진",
     "title": "CaryPact 온체인 시장 개요",
-    "subtitle": "CoinMarketCap 실시간 시세 및 BDEX 온체인 유동성",
+    "subtitle": "실시간 CoinMarketCap 및 BDEX 온체인 지표",
     "caPrice": "CA 토큰 가격",
-    "botPrice": "BOT 체인 토큰 가격",
+    "botPrice": "BOT Chain 가격",
     "parityRatio": "시스템 패리티 비율",
-    "tvl": "BDEX 풀 총 락업액(TVL)",
-    "volume24h": "24시간 거래량",
-    "marketCap": "CA 완전희석 시가총액",
-    "dailyEmission": "일일 CA 채굴 풀",
+    "tvl": "BDEX 풀 TVL",
+    "volume24h": "24시간 거래대금",
+    "marketCap": "CA 완전 희석 시가총액",
+    "dailyEmission": "일일 CA 마이닝 풀",
     "emissionUnit": "16,800 CA / 일",
-    "activeHashrate": "전체 활성 해시레이트",
+    "activeHashrate": "글로벌 해시레이트 유닛",
     "vipNodes": "활성 VIP 슈퍼노드",
     "timeframes": {
       "1h": "1시간",
@@ -87,77 +87,77 @@
     }
   },
   "calculator": {
-    "title": "CA ↔ USDT 전환 및 수익률 시뮬레이터",
-    "subtitle": "1.337631 BOT = 1 CA 프로토콜 표준 기반 실시간 환산",
+    "title": "CA ↔ USDT 전환 및 수익 시뮬레이터",
+    "subtitle": "1.337631 BOT = 1 CA 프로토콜 표준 기반 실시간 전환",
     "tabSwap": "즉시 패리티 스왑",
     "tabStaking": "PoS 스테이킹 시뮬레이터",
-    "youConvert": "전환 수량",
+    "youConvert": "전환할 수량",
     "youReceive": "예상 수령액",
-    "slippageNotice": "BDEX 5% 슬리피지 분배(1.8% 소각 / 3.2% 노드 보상) 포함",
-    "stakingDeposit": "스테이킹 CA 수량",
+    "slippageNotice": "5% BDEX 스왑 분배 포함(1.8% 소각 / 3.2% 노드 풀)",
+    "stakingDeposit": "스테이킹할 CA 수량",
     "stakingTerm": "락업 기간",
-    "termFlexible": "자유 입출금(0.2%/일)",
-    "term30": "30일(0.26%/일)",
-    "term90": "90일(0.32%/일)",
-    "term180": "180일(0.4%/일)",
-    "term360": "360일(0.5%/일)",
-    "projectedYield": "예상 수확 CA 수량",
-    "simulationDisclaimer": "시뮬레이션 계산은 예시용 추정치입니다. 가상자산 시장은 변동성이 큽니다.",
-    "subtitleLive": "예상치는 BDEX 풀 실시간 비율과 CoinMarketCap BOT 가격을 사용합니다",
+    "termFlexible": "유연형 (0.2%/일)",
+    "term30": "30일 (0.26%/일)",
+    "term90": "90일 (0.32%/일)",
+    "term180": "180일 (0.4%/일)",
+    "term360": "360일 (0.5%/일)",
+    "projectedYield": "예상 수확 CA",
+    "simulationDisclaimer": "시뮬레이션 예상치는 참고용 계산일 뿐입니다. 암호화폐 시장 상황에 따라 달라질 수 있습니다.",
+    "subtitleLive": "예상치는 실시간 BDEX 풀 비율과 CoinMarketCap의 BOT 가격을 사용합니다",
     "poolRate": "{rate} BOT = 1 CA",
-    "priceStale": "오래됨",
-    "priceUnavailable": "실시간 가격을 사용할 수 없습니다. 유효한 가격이 로드될 때까지 예상치가 비활성화됩니다.",
-    "spotNotice": "스팟 비율 기준 추정치입니다. 유동성이 얕은 풀에서의 실제 스왑은 상당한 가격 영향을 받을 수 있습니다."
+    "priceStale": "지연됨",
+    "priceUnavailable": "실시간 가격을 불러올 수 없습니다. 유효한 가격이 로드될 때까지 시뮬레이션이 비활성화됩니다.",
+    "spotNotice": "스팟 시세 기준 예상치입니다. 유동성이 낮은 풀에서의 실제 스왑은 상당한 가격 영향을 받을 수 있습니다."
   },
   "dex": {
     "title": "BDEX 온체인 유동성 풀",
-    "subtitle": "실시간 TVL, 24시간 거래량, 프로토콜 수수료 및 동적 패리티 비율",
+    "subtitle": "실시간 TVL, 24시간 거래대금, 프로토콜 수수료 및 동적 패리티 비율",
     "tvl": "총 유동성 (TVL)",
-    "volume24h": "24시간 거래량",
-    "fee24h": "24시간 수수료 수입",
-    "apr": "풀 총 APR 연이율",
+    "volume24h": "24시간 거래대금",
+    "fee24h": "24시간 누적 수수료",
+    "apr": "총 풀 APR",
     "reserves": "풀 토큰 준비금",
-    "parityStandard": "동적 프로토콜 패리티 기준",
+    "parityStandard": "동적 프로토콜 패리티",
     "systemParity": "시스템 전환 패리티",
     "inverseRate": "역비율",
     "spotRatio": "DEX 풀 스팟 비율",
-    "reScrape": "새로 불러오기",
+    "reScrape": "다시 스크랩",
     "openPool": "풀 열기",
     "verifiedContracts": "검증된 온체인 스마트 컨트랙트",
-    "poolContract": "유동성 풀 컨트랙트",
-    "botToken": "BOT 토큰 (Token 0)",
-    "caToken": "CA 토큰 (Token 1)"
+    "poolContract": "풀 컨트랙트",
+    "botToken": "BOT 토큰 (토큰 0)",
+    "caToken": "CA 토큰 (토큰 1)"
   },
   "architecture": {
     "badge": "기반 인프라",
-    "title": "BOT 체인 아키텍처 및",
-    "titleHighlight": "5대 핵심 요소",
-    "subtitle": "고성능 분산형 AI 연산을 지원하는 기술 스택을 살펴보세요.",
-    "pillar1Title": "고처리량 Layer 1",
-    "pillar1Desc": "마이크로초 단위의 트랜잭션 처리를 위해 최적화된 EVM 호환 네트워크.",
-    "pillar2Title": "분산 컴퓨팅 매트릭스",
-    "pillar2Desc": "인공지능 모델 추론 및 학습을 위해 전 세계 하드웨어를 풀링하는 GPU 클러스터.",
-    "pillar3Title": "암호학적 증명 및 PoS 합의",
-    "pillar3Desc": "하드웨어 연산 검증 및 확정적 보상 분배를 위한 암호학적 프로토콜.",
+    "title": "BOT Chain 아키텍처 및",
+    "titleHighlight": "5대 핵심 기둥",
+    "subtitle": "고처리량 분산형 AI 워크로드를 주도하는 다층 기술 스택을 살펴보세요.",
+    "pillar1Title": "고처리량 레이어 1",
+    "pillar1Desc": "마이크로초 단위의 트랜잭션 처리와 탈중앙화된 조율을 위해 최적화된 EVM 호환 실행 레이어.",
+    "pillar2Title": "분산형 컴퓨팅 매트릭스",
+    "pillar2Desc": "인공지능 모델의 추론 및 학습을 위해 전 세계 하드웨어를 풀링하는 분산형 GPU 슈퍼컴퓨팅 클러스터.",
+    "pillar3Title": "암호학적 증명 및 PoS",
+    "pillar3Desc": "하드웨어 무결성의 암호학적 검증과 결정론적 보상 분배 메커니즘.",
     "pillar4Title": "BDEX 자율 유동성",
-    "pillar4Desc": "깊은 스왑 깊이와 지속적 소각을 지원하는 네이티브 AMM 탈중앙화 거래소.",
+    "pillar4Desc": "풍부한 유동성의 토큰 스왑, 무손실 라우팅, 지속적인 소각 싱크를 지원하는 네이티브 자동화 마켓 메이커.",
     "pillar5Title": "비수탁형 보안",
-    "pillar5Desc": "사용자가 개인키를 직접 관리하여 컴퓨팅 유닛 및 자산 주권을 완벽히 통제."
+    "pillar5Desc": "컴퓨팅 유닛과 획득한 토큰에 대한 사용자의 완전한 자율성을 보장하는 직접적인 암호화 키 관리."
   },
   "tokenomics": {
     "badge": "경제 모델 및 디플레이션",
     "title": "CA 토크노믹스 및",
-    "titleHighlight": "발행량 공급 구조",
-    "subtitle": "최대 공급량 2.1억 개, 22년 반감기 곡선, 다단계 소각 소모 메커니즘.",
+    "titleHighlight": "공급량 분배",
+    "subtitle": "투명한 수학적 청사진: 2억 1천만 개 최대 공급량, 22년 반감기 곡선, 다단계 소각 싱크.",
     "maxSupply": "210,000,000 CA",
     "maxSupplyLabel": "최대 발행 한도",
     "dailyEmission": "40,000 CA",
     "dailyEmissionLabel": "초기 일일 배출량",
     "halvingPeriod": "2년",
-    "halvingPeriodLabel": "10% 단계적 감산 주기",
+    "halvingPeriodLabel": "10% 감축 주기",
     "burnRate": "1.80%",
-    "burnRateLabel": "BDEX 매도 소각 비율",
-    "breakdownPool1": "컴퓨팅 채굴 (42%)",
+    "burnRateLabel": "BDEX 매도 소각 싱크",
+    "breakdownPool1": "컴퓨팅 마이닝 (42%)",
     "breakdownPool2": "PoS 스테이킹 (18%)",
     "breakdownPool3": "VIP 슈퍼노드 (35%)",
     "breakdownPool4": "생태계 및 LP (5%)"
@@ -166,8 +166,8 @@
     "badge": "커뮤니티 거버넌스",
     "title": "10단계 VIP 슈퍼노드",
     "titleHighlight": "계층 구조",
-    "subtitle": "슈퍼노드가 분산 네트워크를 보호하고 일일 14,000 CA 보상 풀을 공유하는 방식.",
-    "tier": "등급",
+    "subtitle": "슈퍼노드가 분산형 컴퓨팅 클러스터를 보호하고 일일 14,000 CA 보상 풀을 공유하는 방법을 알아보세요.",
+    "tier": "티어",
     "hashrateReq": "필요 네트워크 해시레이트",
     "dailyShare": "일일 풀 지분",
     "governance": "거버넌스 투표 가중치"
@@ -176,359 +176,392 @@
     "badge": "단계별 튜토리얼",
     "title": "인터랙티브",
     "titleHighlight": "생태계 가이드",
-    "subtitle": "BO 지갑 생성, 컴퓨팅 파워 구매, 스테이킹 및 크로스체인 브릿징 상세 튜토리얼.",
+    "subtitle": "BO Wallet 설정, 컴퓨팅 파워 획득, 스테이킹, 크로스체인 브릿징을 위한 검증된 튜토리얼.",
     "allCategories": "전체 가이드",
     "setup": "설정",
-    "computing": "컴퓨팅 파워",
-    "earnings": "수익 수령",
-    "exchange": "거래 및 환전",
+    "computing": "컴퓨팅",
+    "earnings": "수익 창출",
+    "exchange": "거래",
     "security": "보안",
-    "keyTakeaways": "핵심 요점",
+    "keyTakeaways": "핵심 요약",
     "viewGuide": "가이드 열기",
     "proTip": "전문가 팁",
     "warning": "중요 알림"
   },
   "learn": {
-    "badge": "지식 아카데미",
+    "badge": "지식 베이스",
     "title": "분산형 슈퍼컴퓨팅",
-    "titleHighlight": "원리 마스터",
-    "subtitle": "분산 컴퓨팅 매트릭스, 합의 검증 및 토큰화 하드웨어 경제학에 관한 종합 가이드."
+    "titleHighlight": "마스터하기",
+    "subtitle": "분산 컴퓨팅 매트릭스, 합의 검증 및 토큰화된 하드웨어 경제학에 관한 교육용 백서."
   },
   "events": {
-    "badge": "글로벌 활동",
-    "title": "컨센서스 서밋 및",
-    "titleHighlight": "공식 커뮤니티",
-    "subtitle": "세계 주요 서밋에서 CaryPact 개발자, 검증자 및 AI 연구자들과 교류하세요."
+    "badge": "글로벌 네트워크",
+    "title": "합의 서밋 및",
+    "titleHighlight": "커뮤니티 채널",
+    "subtitle": "국제 서밋에서 CaryPact 개발자, 노드 검증자, AI 연구자들과 직접 소통하세요."
   },
   "risks": {
-    "badge": "필수 위험 고지",
-    "title": "생태계 위험 요소 및",
-    "titleHighlight": "DYOR 점검 목록",
-    "subtitle": "자산을 할당하기 전에 반드시 인지해야 할 투명한 위험 평가 항목.",
-    "risk1Title": "해시레이트 구매의 영구성",
-    "risk1Desc": "1 USDT = 1 해시레이트 단위. 구매 후에는 원금 인출이나 취소가 불가능합니다.",
+    "badge": "의무 공시 사항",
+    "title": "생태계 위험 및",
+    "titleHighlight": "DYOR 체크리스트",
+    "subtitle": "컴퓨팅 파워나 유동성 풀에 자산을 투입하기 전 확인해야 할 투명하고 종합적인 위험 평가.",
+    "risk1Title": "해시레이트 구매의 영구 불가역성",
+    "risk1Desc": "1 USDT = 1 해시레이트 유닛. 한 번 활성화된 컴퓨팅 파워는 환불, 출금, 취소가 불가능합니다.",
     "risk2Title": "시장 가격 변동성",
-    "risk2Desc": "토큰 가격은 시장 상황에 따라 변동합니다. 과거 성과가 미래 수익을 보장하지 않습니다.",
-    "risk3Title": "5% 거래 슬리피지 수수료",
-    "risk3Desc": "BDEX 매도 시 토크노믹스 유지를 위해 5%(1.8% 소각, 3.2% 노드 분배)가 공제됩니다.",
-    "risk4Title": "비수탁형 개인키 보관 책임",
-    "risk4Desc": "12단어 복구 문구는 오프라인에서 본인이 직접 안전하게 보관해야 합니다."
+    "risk2Desc": "CA 및 BOT 토큰은 시장 상황에 따라 변동합니다. 과거의 성장이 미래의 수익률을 보장하지 않습니다.",
+    "risk3Title": "5% 트랜잭션 슬리피지",
+    "risk3Desc": "장기적인 토크노믹스를 보호하기 위해 CA 매도 시 의무적으로 5%의 수수료(1.8% 소각, 3.2% 노드 배분)가 부과됩니다.",
+    "risk4Title": "자체 수탁 보안 책임",
+    "risk4Desc": "12개 단어로 구성된 시드 구문과 개인 키를 오프라인에서 안전하게 보관할 책임은 전적으로 본인에게 있습니다."
   },
   "footer": {
-    "about": "CaryPact 학습 허브는 투명성 제고 및 Web3 컴퓨팅 이해를 돕기 위한 독립 교육 플랫폼입니다.",
-    "quickLinks": "바로가기",
-    "legal": "고지사항",
-    "copyright": "© 2026 CaryPact Learning Hub. 독립 커뮤니티 리소스.",
+    "about": "CaryPact Learning Hub는 투명성, Web3 컴퓨팅 문해력 및 위험 인식을 높이기 위해 설립된 독립적인 교육 및 분석 플랫폼입니다.",
+    "quickLinks": "탐색",
+    "legal": "면책 조항",
+    "copyright": "© 2026 CaryPact Learning Hub. 독립 커뮤니티 리소스. 금융 자문이 아닙니다.",
     "invitationCode": "초대 코드: C82A37"
   },
   "ai": {
     "title": "AI 학습 어시스턴트 & 튜터",
-    "subtitle": "CaryPact, BOT 체인, 해시레이트, 토크노믹스에 대해 질문하세요",
+    "subtitle": "CaryPact, BOT Chain, 해시레이트, 토크노믹스에 대해 무엇이든 질문하세요",
     "placeholder": "질문을 입력하세요...",
     "send": "질문하기",
-    "thinking": "공식 백서를 검색 중입니다...",
-    "disclaimer": "AI 답변은 공개 문서를 기반으로 한 교육용 자료입니다."
+    "thinking": "프로토콜 문서를 분석하는 중...",
+    "disclaimer": "AI 답변은 교육 목적으로 공개 문서와 검증된 백서를 바탕으로 생성됩니다."
   },
   "pdf": {
-    "title": "CaryPact 프로토콜 핵심 요약서",
-    "subtitle": "토크노믹스, 컴퓨팅 비율 및 보안 절차에 대한 종합 요약본.",
-    "download": "PDF 요약본 다운로드",
-    "print": "출력하기"
+    "title": "CaryPact 프로토콜 종합 치트시트",
+    "subtitle": "토크노믹스, 컴퓨팅 비율, 보안 절차에 대한 종합 요약본.",
+    "download": "인쇄용 치트시트(PDF) 다운로드",
+    "print": "요약본 인쇄"
   },
   "video": {
-    "title": "비디오 튜토리얼",
-    "subtitle": "선택한 가이드의 실제 작동 방식을 영상으로 확인하세요."
+    "title": "비디오 튜토리얼 안내",
+    "subtitle": "선택한 가이드의 단계별 시각적 시연 영상입니다."
   },
   "newsletter": {
-    "title": "주간 프로토콜 브리핑 구독",
-    "subtitle": "검증된 온체인 데이터 및 글로벌 행사 일정을 이메일로 받아보세요.",
-    "emailPlaceholder": "이메일 주소 입력...",
-    "subscribe": "구독하기",
-    "subscribed": "구독 완료!",
-    "privacy": "개인정보를 소중히 다루며 언제든 구독 취소할 수 있습니다."
+    "title": "주간 프로토콜 브리핑",
+    "subtitle": "검증된 분석 보고서, 배출량 업데이트, 예정된 서밋 소식을 받은 편지함으로 직접 받아보세요.",
+    "emailPlaceholder": "이메일 주소를 입력하세요...",
+    "subscribe": "브리핑 구독하기",
+    "subscribed": "성공적으로 구독되었습니다!",
+    "privacy": "개인정보를 소중히 다룹니다. 스팸 없이 언제든 구독을 취소할 수 있습니다."
   },
   "botChainLearn": {
-    "badge": "BOT Chain 공식 아키텍처 및 문서",
-    "titlePrefix": "",
-    "titleHighlight": "BOT Chain이란?",
-    "subtitle": "BOT Chain은 고빈도 애플리케이션, 분산 컴퓨팅, 검증 가능한 온체인 정산을 위해 설계된 <b>AI 네이티브 EVM 호환 Layer 1 블록체인</b>입니다.",
+    "badge": "공식 BOT Chain 아키텍처 & 문서",
+    "titlePrefix": "BOT Chain이란",
+    "titleHighlight": "무엇인가요?",
+    "subtitle": "BOT Chain은 고주파 애플리케이션, 분산형 컴퓨팅 및 검증 가능한 온체인 결제를 위해 구축된 <b>AI 네이티브 EVM 호환 레이어 1 블록체인</b>입니다.",
     "bannerKicker": "차세대 Web3 인프라",
-    "bannerTitle": "AI 네이티브 Layer 1 블록체인",
-    "bannerDesc": "개발자는 익숙한 EVM 도구로 개발하면서 AI 에이전트, 컴퓨팅 자원, 디지털 자산을 공유 블록체인 네트워크에 연결할 수 있습니다.",
-    "ctaLearn": "BOT Chain Learn 둘러보기",
+    "bannerTitle": "AI 네이티브 레이어 1 블록체인",
+    "bannerDesc": "개발자는 친숙한 EVM 도구로 개발하면서 AI 에이전트, 컴퓨팅 자원 및 디지털 자산을 공유 블록체인 네트워크에 연결할 수 있습니다.",
+    "ctaLearn": "BOT Chain Learn 살펴보기",
     "ctaPortal": "공식 포털",
     "gridTitle": "지능형 온체인 애플리케이션을 위해 설계된 인프라",
-    "gridDesc": "검증 가능한 자율 에이전트, 저지연 마이크로 정산, 물리적 분산 컴퓨팅 네트워크를 위해 처음부터 구축되었습니다.",
+    "gridDesc": "검증 가능한 자율 에이전트, 저지연 소액 결제, 물리적 분산 컴퓨팅 네트워크를 위해 기초부터 탄탄하게 구축되었습니다.",
     "footerSpec": "BOT Chain 사양",
-    "footerActive": "현행 표준",
-    "card1Title": "EVM 호환 실행",
-    "card1Desc": "익숙한 이더리움 개발 도구와 워크플로로 Solidity 스마트 컨트랙트를 개발하고 배포하세요.",
+    "footerActive": "활성 표준",
+    "card1Title": "EVM 호환 실행 환경",
+    "card1Desc": "친숙한 이더리움 개발 도구와 워크플로를 사용하여 Solidity 스마트 컨트랙트를 구축하고 배포할 수 있습니다.",
     "card1Tag": "EVM & Solidity",
-    "card2Title": "빠르고 예측 가능한 정산",
-    "card2Desc": "저지연 실행과 효율적인 트랜잭션 처리를 위해 설계된 네트워크로 빈번한 온체인 상호작용을 지원합니다.",
-    "card2Tag": "고빈도",
-    "card3Title": "듀얼 드리븐 네트워크",
-    "card3Desc": "스테이킹 기반 네트워크 보안과 DePIN 참여를 결합해 온체인 활동을 물리적 컴퓨팅 인프라와 연결합니다.",
+    "card2Title": "빠르고 예측 가능한 결제",
+    "card2Desc": "저지연 실행과 효율적인 트랜잭션 처리를 위해 설계된 네트워크로 잦은 온체인 인터랙션을 지원합니다.",
+    "card2Tag": "고주파 트랜잭션",
+    "card3Title": "이중 구동 네트워크",
+    "card3Desc": "스테이킹 기반의 네트워크 보안과 DePIN 참여를 결합하여 온체인 활동을 물리적 컴퓨팅 인프라와 연결합니다.",
     "card3Tag": "스테이킹 + DePIN",
     "card4Title": "AI 에이전트를 위한 인프라",
-    "card4Desc": "AI 에이전트 애플리케이션에 컨트랙트 실행, 결제, 조정, 감사 가능한 온체인 결과를 위한 검증 가능한 기반을 제공합니다.",
-    "card4Tag": "AI 조정"
+    "card4Desc": "AI 에이전트 애플리케이션에 계약 실행, 지불, 조정 및 감사 가능한 온체인 결과를 위한 검증 가능한 토대를 제공합니다.",
+    "card4Tag": "AI 코디네이션"
   },
   "carypactBenchmark": {
     "footerValue": "핵심 프로토콜 가치",
     "bridgeLabel": "BOT Chain 생태계 아키텍처:",
-    "bridgeText": "CaryPact는 BOT Chain 생태계에서 운영되는 대표적인 벤치마크 프로토콜 중 하나입니다.",
-    "bridgeLayer": "Layer 1: BOT Chain",
+    "bridgeText": "CaryPact는 BOT Chain 생태계에서 실행되는 대표적인 벤치마크 프로토콜 중 하나입니다.",
+    "bridgeLayer": "레이어 1: BOT Chain",
     "bridgeProtocol": "벤치마크 프로토콜: CaryPact",
-    "badge": "BOT Chain의 첫 번째 벤치마크 프로토콜",
-    "titlePrefix": "",
-    "titleHighlight": "CaryPact란?",
-    "tagline": "BOT Chain에서 운영되는 첫 번째 벤치마크 프로토콜",
-    "description": "CaryPact는 BOT Chain의 가치를 통합하여 전 세계 사용자가 프로토콜을 통해 BOT Chain의 구축과 수익에 참여하고 가치 성장을 이룰 수 있도록 합니다.",
+    "badge": "BOT Chain 최초의 벤치마크 프로토콜",
+    "titlePrefix": "CaryPact란",
+    "titleHighlight": "무엇인가요?",
+    "tagline": "BOT Chain 위에서 실행되는 최초의 벤치마크 프로토콜",
+    "description": "CaryPact는 BOT Chain의 가치를 통합하여 전 세계 사용자가 프로토콜을 통해 BOT Chain의 구축과 수익 창출에 참여하고 가치 성장을 이룰 수 있도록 지원합니다.",
     "ctaLaunch": "CaryPact DApp 실행 (app.carypact.com)",
     "ctaCalc": "실시간 CA / BOT 계산기 및 시뮬레이터",
     "philosophy": "프로토콜 철학",
-    "whyTitle": "왜 CaryPact인가?",
-    "whyDesc": "비투기적 컴퓨팅 메커니즘, 수학적으로 공정한 분배, 지속 가능한 장기 가치 정렬을 기반으로 구축되었습니다.",
+    "whyTitle": "왜 CaryPact를 선택해야 할까요?",
+    "whyDesc": "비투기적 컴퓨팅 메커니즘, 수학적으로 공정한 분배, 지속 가능한 장기적 가치 일치에 기반하여 구축되었습니다.",
     "pillar1Badge": "지속 가능한 네트워크",
     "pillar1Title": "실질적이고 지속 가능한 컴퓨팅 인프라",
-    "pillar1Desc": "CaryPact는 단기적인 폭발적 인센티브를 추구하지 않고, 실질적이고 지속 가능한 컴퓨팅 파워 인프라 네트워크를 구축합니다.",
-    "pillar2Badge": "20년 비전",
-    "pillar2Title": "향후 20년 AI 컴퓨팅을 위한 설계",
-    "pillar2Desc": "CaryPact의 설계 목표는 향후 20년간 AI와 분산 컴퓨팅의 수요를 충족하는 것입니다.",
-    "pillar3Badge": "평등한 프로토콜 규칙",
+    "pillar1Desc": "CaryPact는 단기적이고 폭발적인 유인책을 추구하지 않고, 실질적이고 지속 가능한 컴퓨팅 파워 인프라 네트워크를 구축합니다.",
+    "pillar2Badge": "20년의 비전",
+    "pillar2Title": "향후 20년간의 AI 컴퓨팅 수요 충족",
+    "pillar2Desc": "CaryPact의 설계 목표는 향후 20년간의 AI 및 분산 컴퓨팅 수요를 충족하는 것입니다.",
+    "pillar3Badge": "공평한 프로토콜 규칙",
     "pillar3Title": "플랫폼 독점 없는 공정한 경쟁",
-    "pillar3Desc": "컴퓨팅 파워는 더 이상 단일 플랫폼이 통제하지 않습니다. 프로토콜이 곧 규칙이며, 모든 참여자가 동일한 시스템 안에서 공정하게 경쟁합니다.",
-    "pillar4Badge": "실제 현금 흐름",
-    "pillar4Title": "지속적인 실제 컴퓨팅 파워 산출",
-    "pillar4Desc": "사용자는 더 이상 시장 투기에 의존하지 않고, 실제 컴퓨팅 파워 산출에서 지속적으로 현금 흐름을 얻습니다."
+    "pillar3Desc": "컴퓨팅 파워는 더 이상 단일 플랫폼에 의해 통제되지 않으며, 프로토콜이 곧 규칙이 되어 모든 참여자가 동일한 시스템 내에서 공정하게 경쟁합니다.",
+    "pillar4Badge": "실질적인 현금 흐름",
+    "pillar4Title": "실제 컴퓨팅 파워 산출을 통한 지속적 수익",
+    "pillar4Desc": "사용자는 더 이상 시장의 가격 투기에 의존하지 않고, 실제 컴퓨팅 파워 산출물로부터 지속적인 현금 흐름을 얻습니다."
   },
   "earningMethods": {
-    "badge": "다섯 가지 핵심 수익 경로",
-    "title": "<hl>CaryPact 및 BOT Chain</hl>에서 수익을 얻는 방법",
-    "subtitle": "5가지 공식 수익 메커니즘을 바로 확인하세요. 자동 복리 유동 BOT 플레지, 프로토콜 PoS 스테이킹, 영구 연산력 배당, 실물 AI 노드 서버, 네이티브 Layer 1 BOT 채굴 중 원하는 방식을 선택할 수 있습니다.",
+    "badge": "5대 핵심 수익 모델",
+    "title": "<hl>CaryPact & BOT Chain</hl>에서 수익을 얻는 방법",
+    "subtitle": "5가지 공식 수익 메커니즘을 확인하세요. 자동 복리 지원 BOT Pledge, 프로토콜 PoS 스테이킹, 영구 컴퓨팅 파워 배당, 물리적 AI 노드 서버, 네이티브 레이어 1 BOT 마이닝 중 적합한 방식을 선택할 수 있습니다.",
     "floatingTag": "수익 잠재력",
     "alt": {
       "coinsLeft": "탈중앙화 수익 잠재력 코인",
-      "coinsRight": "BOT Chain DEX 채굴 코인",
+      "coinsRight": "BOT Chain DEX 마이닝 코인",
       "coinsFloat": "수익 잠재력 코인",
-      "coinsBanner": "수익 잠재력 코인 더미"
+      "coinsBanner": "수익 잠재력 코인 스택"
     },
     "labels": {
-      "whatItIs": "개요",
-      "howYouEarn": "수익 방식:",
-      "ratesSpecs": "요율 및 사양:",
-      "capitalTerms": "자본 조건:",
-      "deepDive": "자세히 보기"
+      "whatItIs": "개념 요약",
+      "howYouEarn": "수익 창출 방식:",
+      "ratesSpecs": "이율 및 사양:",
+      "capitalTerms": "원금 조건:",
+      "deepDive": "세부 정보"
     },
     "banner": {
-      "kicker": "종합 수익률 분석",
-      "title": "상세한 수학 공식, 락업 일정, ROI 계산기를 찾고 계신가요?",
-      "desc": "해시레이트 복리 계수, PoS 기간별 가중치 배수(30일–360일), 노드 프리세일 등급, 인터랙티브 계산기에 대한 전체 설명은 전용 <strong>/earn</strong> 디렉터리에서 확인하세요.",
-      "cta": "전용 수익 허브 보기 (/earn)"
+      "kicker": "종합 수익 인텔리전스",
+      "title": "자세한 수학적 공식, 락업 일정 및 ROI 계산기를 찾고 계신가요?",
+      "desc": "해시레이트 복리 계수, PoS 기간별 가중치(30일~360일), 노드 사전 판매 티어 및 인터랙티브 계산기에 대한 전체 내용은 <strong>/earn</strong> 페이지에서 확인하실 수 있습니다.",
+      "cta": "전용 수익 허브 둘러보기 (/earn)"
     },
     "methods": {
       "caHashrate": {
-        "title": "CA 해시레이트 / 연산력",
-        "badge": "주요 수익 • 하루 {dailyCA, number} CA",
+        "title": "CA 해시레이트 / 컴퓨팅 파워",
+        "badge": "주요 수익원 • {dailyCA, number} CA / 일",
         "cta": "CA 해시레이트 구매",
-        "whatIsIt": "1 USDT = 1 연산력 유닛. 탈중앙화된 실물 GPU/CPU 클러스터가 뒷받침하는 토큰화된 연산력입니다.",
-        "howItEarns": "프로토콜은 전체 발행량의 {percent, number}%(하루 {dailyCA, number} CA)를 활성 해시레이트 보유자에게 배분합니다. 일일 수익은 24시간마다 UTC 00:00에 지급됩니다.",
-        "keyRates": "최소 {minUsdt, number} USDT({minUsdt, number} 유닛). 시간 계수(K ≈ 1.01)로 복리 적용되는 일일 동적 수익률. 수익은 CA 토큰으로 지급됩니다.",
-        "lockNotice": "연산력이 영구적으로 활성화됩니다(원금 반환 없음, 지속적인 일일 채굴 배당)."
+        "whatIsIt": "1 USDT = 1 컴퓨팅 파워 유닛. 분산된 물리적 GPU/CPU 클러스터에 의해 뒷받침되는 토큰화된 컴퓨팅 파워입니다.",
+        "howItEarns": "프로토콜은 총 배출량의 {percent, number}%({dailyCA, number} CA/일)를 활성 해시레이트 보유자에게 배분합니다. 일일 수익은 매 24시간(00:00 UTC)마다 적립됩니다.",
+        "keyRates": "최소 {minUsdt, number} USDT({minUsdt, number} 유닛). 시간 계수(K ≈ 1.01)로 복리 계산되는 일일 동적 수익률. CA 토큰으로 지급.",
+        "lockNotice": "영구 컴퓨팅 활성화(원금 반환 없음, 매일 지속적인 채굴 배당금 지급)."
       },
       "posMining": {
-        "title": "프로토콜 PoS 채굴 / CA 스테이킹",
-        "badge": "{percent, number}% 풀 • 하루 {dailyCA, number} CA",
-        "cta": "PoS 채굴 시작",
-        "whatIsIt": "보유하거나 구매한 CA 토큰을 프로토콜 PoS 컨트랙트에 예치하여 진행하는 지분증명 채굴입니다.",
-        "howItEarns": "하루 {dailyCA, number} CA 규모의 전용 PoS 발행 풀을 나눠 받습니다. 장기 약정일수록 더 높은 배수 가중치가 적용됩니다.",
-        "keyRates": "30일(1.0배), 90일(1.5배), 180일(2.0배), 360일(3.0배). 일일 자동 복리 이자.",
-        "lockNotice": "원금은 기간 동안 잠깁니다. 스테이킹한 CA 원금의 100%가 계약 만기 시 잠금 해제되어 반환됩니다."
+        "title": "프로토콜 PoS 마이닝 / CA 스테이킹",
+        "badge": "{percent, number}% 풀 • {dailyCA, number} CA / 일",
+        "cta": "PoS 마이닝 시작",
+        "whatIsIt": "축적하거나 구매한 CA 토큰을 프로토콜 PoS 컨트랙트에 예치하여 진행하는 지분증명(Proof-of-Stake) 마이닝입니다.",
+        "howItEarns": "매일 {dailyCA, number} CA가 배정된 전용 PoS 배출 풀을 공유합니다. 장기 락업 시 더 높은 가중치 승수가 적용됩니다.",
+        "keyRates": "30일(1.0배), 90일(1.5배), 180일(2.0배), 360일(3.0배 가중치). 매일 자동 복리 이자 발생.",
+        "lockNotice": "기간 락업 원금. 계약 만기 시 스테이킹한 CA 원금 100%가 잠금 해제되어 반환됩니다."
       },
       "miningServers": {
-        "title": "채굴 서버 / 머신 프리세일",
+        "title": "마이닝 서버 / 기기 사전 판매",
         "badge": "엔터프라이즈 DePIN • 노드 우선권",
-        "cta": "채굴 서버 보기",
-        "whatIsIt": "기관급 Tier 3/4 데이터센터에 호스팅되는 고성능 실물 AI GPU/CPU 연산 서버를 직접 예약합니다.",
-        "howItEarns": "실물 머신 소유자는 블록 생성 검증 권한, 상업용 AI 실행 작업 수수료, 평생 노드 수익 분배를 직접 받습니다.",
-        "keyRates": "인증된 NFT 검증을 통한 엔터프라이즈 해시 할당. 상업용 AI 모델 학습 및 추론 워크로드에 우선 라우팅.",
-        "lockNotice": "실물 하드웨어는 검증된 호스팅 시설이 관리하며, 검증 가능한 해시 감사 텔레메트리를 제공합니다."
+        "cta": "마이닝 서버 보기",
+        "whatIsIt": "기관급 Tier-3/4 데이터 센터에 호스팅되는 고성능 물리적 AI GPU/CPU 컴퓨팅 서버를 직접 예약 구매하는 방식입니다.",
+        "howItEarns": "물리적 기기 소유자는 직접 블록 생성 검증 권한, 상업용 AI 태스크 실행 수수료, 평생 노드 수익 지분을 수령합니다.",
+        "keyRates": "인증된 NFT 검증이 포함된 엔터프라이즈 해시 할당. 상업용 AI 모델 학습 및 추론 워크로드에 대한 우선 라우팅 권한.",
+        "lockNotice": "감사 가능한 해시 텔레메트리를 갖춘 검증된 전문 호스팅 시설에서 물리적 하드웨어를 수탁 관리합니다."
       },
       "botHashrate": {
-        "title": "BOT 해시레이트 채굴",
-        "badge": "Layer 1 네이티브 • 가스 및 합의",
+        "title": "BOT 해시레이트 마이닝",
+        "badge": "레이어 1 네이티브 • 가스비 & 합의",
         "cta": "BOT 해시레이트 채굴",
-        "whatIsIt": "BOT Chain의 네이티브 가스 및 거버넌스 Layer 1 암호화폐인 BOT을 해시레이트 채굴로 직접 생산합니다.",
-        "howItEarns": "베이스 레이어 토큰을 직접 채굴하며, 네트워크 전반의 온체인 거래 수수료, 컨트랙트 실행, 가스 수수료 소각에서 수익을 얻습니다.",
-        "keyRates": "네이티브 Layer 1 블록 발행. 네이티브 가스 토큰 확보에 DEX 슬리피지가 필요 없습니다. 검증자 직접 위임.",
-        "lockNotice": "모듈형 블록체인 경제 전체를 뒷받침하는 기반 인프라 채굴입니다."
+        "whatIsIt": "BOT Chain의 네이티브 가스이자 거버넌스 레이어 1 암호화폐인 BOT을 직접 생산하는 해시레이트 마이닝입니다.",
+        "howItEarns": "베이스 레이어 토큰을 직접 채굴하여 온체인 트랜잭션 수수료, 컨트랙트 실행, 네트워크 전반의 가스비 소각으로부터 수익을 얻습니다.",
+        "keyRates": "네이티브 레이어 1 블록 배출. 가스 토큰 획득에 DEX 슬리피지가 필요 없음. 검증인에게 직접 위임 가능.",
+        "lockNotice": "모듈러 블록체인 경제 전체를 뒷받침하는 기반 인프라 마이닝입니다."
       },
       "botPledge": {
-        "title": "BOT 플레지 / BOT 스테이킹",
-        "badge": "유연한 출금 • 24시간 해제 • 자동 복리",
-        "cta": "BOT 토큰 플레지",
-        "whatIsIt": "BOT을 스테이킹하여 보상을 받으세요. 입출금이 자유롭고 완전한 자율권을 가집니다. 네이티브 BOT 토큰을 프로토콜 플레지 볼트에 예치합니다.",
-        "howItEarns": "자동 복리는 전날의 원금과 일일 수익을 새로운 원금으로 삼아 복리 스테이킹을 진행합니다.",
-        "keyRates": "동적 일일 스테이킹 수익이 네이티브 BOT으로 직접 지급됩니다. DEX 슬리피지 없음. 24시간마다 온체인 즉시 자동 재투자.",
-        "lockNotice": "해제된 원금은 언제든 출금할 수 있습니다. 출금 후 24시간의 잠금 해제 기간이 지나면 수령할 수 있습니다."
+        "title": "BOT Pledge / BOT 스테이킹",
+        "badge": "자유로운 입출금 • 24시간 해제 • 자동 복리",
+        "cta": "BOT 토큰 플레지하기",
+        "whatIsIt": "유연한 진입과 해제가 가능한 BOT 스테이킹입니다. 완전한 자율성을 가지고 네이티브 BOT 토큰을 프로토콜 플레지 볼트에 예치할 수 있습니다.",
+        "howItEarns": "자동 복리 엔진이 전날 원금 + 일일 수익을 다음 날의 새로운 원금으로 자동 재투자하여 수익을 극대화합니다.",
+        "keyRates": "네이티브 BOT으로 직접 지급되는 동적 일일 스테이킹 수익률. DEX 슬리피지 0%. 24시간마다 온체인 자동 재투자.",
+        "lockNotice": "해제된 원금은 언제든 출금 가능합니다. 출금 요청 후 24시간의 보안 잠금 해제 기간이 지나면 지갑으로 수령할 수 있습니다."
       }
     }
   },
+  "livePage": {
+    "backToHub": "러닝 허브로 돌아가기",
+    "breadcrumb": "실시간 온체인 & CMC 포털",
+    "cmcFeed": "CMC 피드",
+    "liveConnected": "실시간 연결됨",
+    "synced": "동기화 완료",
+    "justNow": "방금 전",
+    "refresh": "실시간 데이터 새로고침",
+    "heroBadge": "실시간 CoinMarketCap & BOT Chain 원장",
+    "heroTitle": "CaryPact & BOT Chain",
+    "heroTitleHighlight": "실시간 시세 피드",
+    "heroDesc": "실시간 암호화폐 시세, 온체인 패리티 추적(<strong>1 CA = 1.337631 BOT</strong>), BDEX 오더북 호가창, <xLink>@CaryPact</xLink> 공식 트위터/X 소식을 확인하세요.",
+    "inviteCode": "초대 코드",
+    "copy": "복사",
+    "copied": "복사됨",
+    "launchDApp": "DApp 실행",
+    "cmcListing": "CoinMarketCap 등재",
+    "cmcPair": "bot-chain / BOT 통화",
+    "viewCmc": "CMC에서 보기",
+    "cmcDesc": "BOT Chain의 가격 추적 및 거래량 지표는 CoinMarketCap Pro를 통해 직접 검증됩니다. CaryPact 컴퓨팅 자산(CA)은 <strong>1 CA = 1.337631 BOT</strong>의 고정 알고리즘 전환 표준으로 작동합니다.",
+    "contractStandard": "컨트랙트 표준:",
+    "decimals": "소수점 자릿수:",
+    "burnMechanism": "소각 메커니즘:",
+    "burnValue": "BDEX 매도 시 1.8%",
+    "directivesTitle": "프로토콜 핵심 원칙",
+    "rule1Title": "1 USDT = 1 해시레이트 유닛:",
+    "rule1Body": "컴퓨팅 파워는 영구 락업되며 원금 환불이 불가합니다.",
+    "rule2Title": "스테이킹 가중치 승수:",
+    "rule2Body": "30일(1.3배), 90일(1.6배), 180일(2.0배), 360일(2.5배).",
+    "rule3Title": "10단계 VIP 시스템:",
+    "rule3Body": "300 USDT 개인 활성화 + 하위 파트너 레그 실적이 필요합니다.",
+    "printCheatSheet": "프로토콜 종합 치트시트 인쇄"
+  },
+  "Tokenomics": {
+    "badge": "경제적 아키텍처",
+    "title": "CA 토크노믹스: <accent>{supply} 고정 공급량</accent>",
+    "subtitle": "{years}년에 걸쳐 정밀하게 정의된 디스인플레이션 곡선으로, 일일 알고리즘 배출과 강력한 3중 소각 싱크를 결합했습니다.",
+    "capLabel": "하드캡 최대 공급량",
+    "caAmount": "{amount} CA",
+    "capBody": "초기 SWAP 유동성용 <cyan>{liquidity} CA</cyan> + {years}년에 걸쳐 배출되는 <purple>{emitted} CA</purple>.",
+    "emissionLabel": "초기 일일 배출량",
+    "emissionValue": "{amount} CA / 일",
+    "emissionBody": "{years}년의 전체 분배 기간 동안 <amber>{cycle}년마다 {rate}씩 감소</amber>합니다.",
+    "burnLabel": "3중 디플레이션 소각",
+    "burnValue": "다단계 소각",
+    "burnBody": "{buyback} BDEX 매도 소각 + {txFee} 트랜잭션 수수료 바이백 + {gas} BOT 가스비 파괴.",
+    "allocTitle": "일일 {amount} CA 배출량 분배 구조",
+    "allocHint": "온체인 분배 메커니즘을 확인하려면 아래 세그먼트를 클릭하세요",
+    "settlement": "T+1 일일 정산 (00:00 UTC)",
+    "perDay": "{amount} CA/일",
+    "poolBadge": "{percent} 풀 ({amount} CA/일)",
+    "segmentTitle": "{name}: {percent} ({amount} CA/일)",
+    "split": {
+      "mining": {
+        "name": "컴퓨팅 파워 마이닝",
+        "description": "활성 해시레이트 유닛 보유자에게 비례 분배 (K ≈ 1.01 복리 계수 적용)."
+      },
+      "active": {
+        "name": "활성 보상 풀",
+        "description": "VIP 티어 인센티브 및 추천 파트너 실적 매칭에 사용됩니다."
+      },
+      "staking": {
+        "name": "PoS 스테이킹 산출",
+        "description": "락업 및 유연형 CA 스테이커에게 매일 분배되는 보상입니다."
+      },
+      "dao": {
+        "name": "DAO 거버넌스",
+        "description": "V7~V10 합의 기여자 및 생태계 거버넌스 참여자가 공유합니다."
+      },
+      "foundation": {
+        "name": "재단 및 기술 개발",
+        "description": "지속적인 핵심 프로토콜 보안 감사, 인프라 확충, 개발자 보조금에 배정됩니다."
+      }
+    },
+    "curveTitle": "{years}년간 격년 {rate} 배출 감소 스케줄",
+    "curveSubtitle": "프로그래밍된 알고리즘 기반 디스인플레이션 일정",
+    "thCycle": "배출 주기",
+    "thDaily": "일일 CA 공급",
+    "thAnnual": "연간 산출량",
+    "thFactor": "곡선 계수",
+    "yearsRange": "{start}–{end}년차",
+    "factorWithDelta": "{percent} ({delta})",
+    "finalDaily": "지속 감소",
+    "finalAnnual": "잔여 배출량",
+    "finalFactor": "최종 반감",
+    "sinksTitle": "자동화된 디플레이션 소각 싱크",
+    "sinksIntro": "CaryPact는 유통 공급량을 지속해서 영구 감축하는 스마트 컨트랙트 수수료 싱크를 적용합니다:",
+    "sink1Title": "{percent} BDEX 매도 소각",
+    "sink1Tag": "온체인 소각",
+    "sink1Body": "BDEX에서 매도되는 모든 CA의 {percent}가 복구 불가능한 소각 주소로 전송됩니다.",
+    "sink2Title": "{percent} 트랜잭션 수수료 바이백",
+    "sink2Tag": "유동성 싱크",
+    "sink2Body": "트랜잭션 수수료의 {percent}가 AMM을 통해 CA 토큰으로 전환된 후 즉시 소각됩니다.",
+    "sink3Title": "{percent} BOT 가스비 파괴",
+    "sink3Tag": "L1 베이스 소각",
+    "sink3Body": "BOT Chain 전체 가스 요금의 {percent}가 검증인에 의해 영구 파괴됩니다."
+  },
   "riskDisclosure": {
-    "badge": "필수 위험 및 공시 안내",
+    "badge": "필수 위험 고지 및 공시",
     "title": "투명성 및 <hl>위험 공시</hl>",
-    "subtitle": "우리는 정직하고 철저한 교육을 지향합니다. 디지털 자산을 투입하기 전에 이 핵심 구조 요소를 읽고 이해해 주세요.",
+    "subtitle": "저희는 정직하고 철저한 교육을 지향합니다. 디지털 자산을 참여시키기 전에 반드시 아래의 핵심 구조적 파라미터를 숙지하시기 바랍니다.",
     "affiliate": {
-      "title": "제휴 수익화 고지",
-      "subtitle": "사이트의 독립성과 보상에 대한 명확한 고지",
-      "body": "<strong>CaryPact Learning Hub</strong>는 독립적인 교육 및 분석 자료이며 공식 회사 법인이 아닙니다. 이 사이트에서 제공하는 링크와 초대 코드를 통해 CaryPact에 가입하시면 추천 수수료를 받을 수 있습니다. 이 보상은 수학적 규칙, 영구 해시레이트 락, 슬리피지 구조, 위험에 대한 객관적인 설명에 영향을 주지 않습니다."
+      "title": "제휴 수익에 관한 성명",
+      "subtitle": "사이트의 독립성과 수수료 수취에 대한 투명한 안내",
+      "body": "<strong>CaryPact Learning Hub</strong>는 독립된 교육 및 분석 리소스이며 공식 기업 법인이 아닙니다. 본 사이트에 제공된 링크와 초대 코드를 통해 가입하시는 경우, 저희에게 소정의 추천 커미션이 지급될 수 있습니다. 이러한 보상이 수학적 원칙, 영구 락업, 슬리피지 메커니즘, 위험성 등에 대한 객관적인 서술에 어떠한 영향도 미치지 않습니다."
     },
     "items": {
       "permanence": {
         "category": "자본 구조",
-        "severity": "매우 중요",
-        "title": "해시레이트 유닛의 영구성(원금 출구 없음)",
-        "description": "1 USDT = 1 해시레이트 유닛(최소 {minUsdt, number} USDT) 비율로 연산력을 구매하면, 투입한 자본은 프로토콜 연산 리저브에 영구적으로 잠깁니다. 원금 환불, 출금, 상환 메커니즘은 없습니다. 수익은 오직 지속적인 일일 CA 채굴 분배에서만 발생합니다."
+        "severity": "중요도 높음",
+        "title": "해시레이트 유닛의 영구성 (원금 인출 불가)",
+        "description": "1 USDT = 1 해시레이트 유닛(최소 {minUsdt, number} USDT) 비율로 컴퓨팅 파워를 구매하면, 투입된 자본은 프로토콜 컴퓨팅 준비금으로 영구 락업됩니다. 원금 환불, 탈퇴, 상환 메커니즘은 존재하지 않습니다. 투자 회수는 오직 매일 지급되는 CA 마이닝 배당을 통해서만 이루어집니다."
       },
       "volatility": {
         "category": "시장 위험",
         "severity": "시장 변동성",
-        "title": "시장 변동성 및 가격 등락",
-        "description": "CA, BOT 및 관련 암호 토큰의 교환 가치는 공개 시장 상황, BDEX의 유동성 깊이, 디지털 자산 전반의 심리에 따라 크게 변동할 수 있습니다. 토큰 가격은 크게 오르거나 내릴 수 있습니다."
+        "title": "시장 변동성 및 가격 등락 위험",
+        "description": "CA, BOT 및 관련 암호화폐 토큰의 교환 가치는 공개 시장 상황, BDEX의 유동성 깊이, 전반적인 디지털 자산 투자 심리에 따라 크게 변동할 수 있습니다. 토큰 가격은 급등할 수도 있고 급락할 수도 있습니다."
       },
       "projections": {
-        "category": "스테이킹 및 발행",
-        "severity": "모델 가정",
-        "title": "예시용 수익 전망 대 보장된 수익",
-        "description": "에코시스템 홍보 자료에 제시된 전망(예: 360일 복리 스테이킹 모델)은 지속적인 일일 가격 상승과 안정적인 네트워크 활동 같은 특정 수학적 가정을 전제로 합니다. 이는 가상의 시뮬레이션이며 보장된 투자 수익으로 해석해서는 안 됩니다."
+        "category": "스테이킹 및 배출",
+        "severity": "모델 가정 사항",
+        "title": "단순 예시 시뮬레이션과 보장 수익의 차이",
+        "description": "마케팅 자료에 제시된 수익 예시(예: 360일 복리 스테이킹 모델 등)는 지속적인 일일 가격 상승이나 일정한 네트워크 활동과 같은 특정 수학적 파라미터를 가정한 것입니다. 이는 가상의 시뮬레이션일 뿐이며 보장된 투자 수익으로 해석되어서는 안 됩니다."
       },
       "referral": {
         "category": "합의 모델",
-        "severity": "추천 구조",
-        "title": "다단계 추천(VIP) 인센티브 구조",
-        "description": "10단계 VIP 보상 체계(V1–V10)는 하루 {dailyPool, number} CA의 액티브 리워드 풀로 재원을 마련하며, 개인 투자({personalUsdt, number} USDT)와 팀 하위 ‘레그’ 실적에 따라 결정됩니다. 보상은 팀의 적극적인 참여와 네트워크 확장에 좌우됩니다."
+        "severity": "추천 구조 역학",
+        "title": "다단계 파트너(VIP) 인센티브 구조",
+        "description": "10단계 VIP 보상 시스템(V1–V10)은 매일 {dailyPool, number} CA 규모의 활성 보상 풀에서 재원이 마련되며, 개인 투자 금액({personalUsdt, number} USDT)과 하위 파트너 레그의 실적이 결합되어 결정됩니다. 보상은 팀의 지속적인 참여와 네트워크 확장에 직접적으로 연동됩니다."
       },
       "slippage": {
         "category": "프로토콜 메커니즘",
         "severity": "기술 규칙",
         "title": "스마트 컨트랙트 실행 및 {slippage, number}% 슬리피지",
-        "description": "BDEX에서의 모든 토큰 매도에는 {slippage, number}%의 슬리피지 분배가 의무적으로 적용됩니다({buyback, number}% 바이백 및 소각, {node, number}% 노드 운영자 분배). 스마트 컨트랙트는 BOT Chain에 배포되어 있지만, 블록체인 상호작용에는 기술적·실행상의 위험이 내재합니다."
+        "description": "BDEX에서 토큰을 매도할 때마다 {slippage, number}%의 의무 슬리피지 분배({buyback, number}% 바이백 및 소각, {node, number}% 노드 운영자 분배)가 차감됩니다. 스마트 컨트랙트가 BOT Chain에 배포되어 작동하지만, 블록체인 거래에는 기술적 실행 위험이 수반됩니다."
       },
       "custody": {
         "category": "보안",
-        "severity": "개인 보관",
-        "title": "자기 보관 및 키 관리 책임",
-        "description": "CaryPact과 BO Wallet은 탈중앙화되고 비수탁형입니다. 12단어 시드 구문과 개인 키를 안전하게 보관할 책임은 전적으로 본인에게 있습니다. 프로토콜 관리자와 러닝 허브 직원은 분실한 자격 증명을 복구하거나 거래를 되돌릴 수 없습니다."
+        "severity": "개인 수탁",
+        "title": "자가 수탁 및 개인 키 관리 책임",
+        "description": "CaryPact와 BO Wallet은 완전한 탈중앙화 비수탁형(Non-Custodial) 시스템입니다. 12단어 시드 구문과 개인 키를 안전하게 보관할 책임은 전적으로 본인에게 있습니다. 프로토콜 관리자나 본 러닝 허브 운영진은 분실된 인증 정보를 복구하거나 트랜잭션을 되돌릴 수 없습니다."
       }
     },
     "checklist": {
-      "title": "참여 전 “직접 조사하기(DYOR)” 체크리스트",
-      "check1": "해시레이트 유닛은 환불하거나 되팔 수 없다는 점을 이해합니다.",
-      "check2": "12단어 복구 구문을 종이에 안전하게 적어 두었습니다.",
-      "check3": "BDEX에서의 모든 토큰 매도에 {slippage, number}% 슬리피지 수수료가 부과됨을 인지합니다.",
-      "check4": "시장 변동성을 감당할 수 있는 자금만 투입하고 있습니다.",
-      "check5": "공식 도메인 URL과만 상호작용하고 있음을 확인했습니다.",
-      "check6": "하위 VIP 보상에는 적극적인 모집 실적이 필요하다는 점을 인지합니다."
+      "title": "참여 전 확인해야 할 \"스스로 조사하기\"(DYOR) 체크리스트",
+      "check1": "해시레이트 유닛은 환불되거나 재판매될 수 없음을 이해했습니다.",
+      "check2": "12개 복구 단어를 종이에 적어 물리적으로 안전한 곳에 보관했습니다.",
+      "check3": "BDEX에서 토큰 매도 시 {slippage, number}%의 슬리피지 수수료가 발생함을 인지했습니다.",
+      "check4": "시장 변동성 속에서도 감당할 수 있는 여유 자금으로만 참여하고 있습니다.",
+      "check5": "접속한 웹사이트가 공식 도메인 URL인지 재차 확인했습니다.",
+      "check6": "VIP 파트너 보상은 지속적인 팀 빌딩과 활동 실적에 기반함을 알고 있습니다."
     },
     "cta": {
       "ready": "CaryPact DApp에 접속할 준비가 되셨나요?",
-      "button": "동의 후 CaryPact으로 계속하기"
+      "button": "충분한 설명을 숙지하고 동의한 후 CaryPact로 이동"
     }
-  },
-  "Tokenomics": {
-    "badge": "경제 설계",
-    "title": "CA 토큰이코노믹스: <accent>{supply} 고정 공급량</accent>",
-    "subtitle": "{years}년에 걸쳐 수학적으로 정의된 디스인플레이션 곡선으로, 일일 알고리즘 발행과 삼중 소각 장치를 결합합니다.",
-    "capLabel": "최대 공급량 (하드캡)",
-    "caAmount": "{amount} CA",
-    "capBody": "초기 SWAP 유동성용 <cyan>{liquidity} CA</cyan> + {years}년간 발행되는 <purple>{emitted} CA</purple>.",
-    "emissionLabel": "초기 일일 발행량",
-    "emissionValue": "{amount} CA / 일",
-    "emissionBody": "{years}년 전체 분배 주기 동안 <amber>{cycle}년마다 {rate}</amber> 감소합니다.",
-    "burnLabel": "삼중 디플레이션 소각",
-    "burnValue": "다층 소각",
-    "burnBody": "BDEX 매도 시 {buyback} 소각 + 거래 수수료 {txFee} 바이백 + BOT 가스 {gas} 소멸.",
-    "allocTitle": "일일 {amount} CA 발행 배분",
-    "allocHint": "구간을 클릭하면 온체인 분배 방식을 확인할 수 있습니다",
-    "settlement": "T+1 일일 정산 (00:00 UTC)",
-    "perDay": "{amount} CA/일",
-    "poolBadge": "풀의 {percent} ({amount} CA/일)",
-    "segmentTitle": "{name}: {percent} ({amount} CA/일)",
-    "split": {
-      "mining": {
-        "name": "컴퓨팅 파워 마이닝",
-        "description": "활성 해시레이트 유닛 보유자에게 비례하여 분배됩니다 (K ≈ 1.01 복리 계수)."
-      },
-      "active": {
-        "name": "액티브 리워드 풀",
-        "description": "VIP 등급 인센티브와 추천 하위 라인 실적 매칭에 사용됩니다."
-      },
-      "staking": {
-        "name": "PoS 스테이킹 보상",
-        "description": "락업 및 유연형 CA 스테이커에게 분배되는 일일 스테이킹 보상입니다."
-      },
-      "dao": {
-        "name": "DAO 거버넌스",
-        "description": "V7–V10 합의 기여자와 생태계 거버넌스가 나눠 갖습니다."
-      },
-      "foundation": {
-        "name": "재단 및 기술",
-        "description": "프로토콜 보안 감사, 인프라, 개발자 보조금에 지속적으로 사용됩니다."
-      }
-    },
-    "curveTitle": "{years}년간 2년마다 {rate} 발행량 감축",
-    "curveSubtitle": "프로그래밍된 알고리즘 디스인플레이션 일정",
-    "thCycle": "발행 주기",
-    "thDaily": "일일 CA 배출량",
-    "thAnnual": "연환산 발행량",
-    "thFactor": "곡선 계수",
-    "yearsRange": "{start}–{end}년차",
-    "factorWithDelta": "{percent} ({delta})",
-    "finalDaily": "점감",
-    "finalAnnual": "잔여 발행량",
-    "finalFactor": "최종 반감",
-    "sinksTitle": "자동 디플레이션 장치",
-    "sinksIntro": "CaryPact는 스마트 컨트랙트 수수료 싱크를 통해 유통 공급량을 영구적으로 줄입니다.",
-    "sink1Title": "BDEX 매도 시 {percent} 소각",
-    "sink1Tag": "온체인 소각",
-    "sink1Body": "BDEX에서 매도된 CA의 {percent}가 회수 불가능한 소각 주소로 전송됩니다.",
-    "sink2Title": "거래 수수료 {percent} 바이백",
-    "sink2Tag": "유동성 싱크",
-    "sink2Body": "거래 수수료의 {percent}가 AMM을 통해 CA로 교환된 뒤 소각됩니다.",
-    "sink3Title": "BOT 가스 {percent} 소멸",
-    "sink3Tag": "L1 기본 소각",
-    "sink3Body": "BOT Chain 가스 수수료의 {percent}가 검증자에 의해 영구적으로 소멸됩니다."
   },
   "Footer": {
     "badge": "러닝 허브",
-    "brandDescription": "CaryPact, BOT Chain, CA 토큰, 분산형 슈퍼컴퓨팅 프로토콜을 위한 독립 교육 리소스이자 실시간 분석 포털입니다.",
+    "brandDescription": "CaryPact, BOT Chain, CA 토큰 및 분산형 슈퍼컴퓨팅 프로토콜을 위한 선도적인 독립 교육 리소스이자 실시간 분석 포털입니다.",
     "telegram": "텔레그램",
-    "twitter": "Twitter / X",
+    "twitter": "트위터 / X",
     "explorer": "BOT Chain 익스플로러",
-    "navTitle": "허브 내비게이션",
-    "navHome": "홈 및 러닝 허브",
-    "navLive": "실시간 시장 및 CMC 포털",
+    "navTitle": "허브 메뉴",
+    "navHome": "홈 & 러닝 허브",
+    "navLive": "실시간 시세 & CMC 포털",
     "liveBadge": "LIVE",
-    "navBotChain": "BOT Chain 5대 핵심 축",
-    "navTokenomics": "{supply} CA 토큰이코노믹스",
+    "navBotChain": "BOT Chain 5대 기둥",
+    "navTokenomics": "{supply} CA 토크노믹스",
     "navVip": "{count}단계 VIP 시스템",
-    "navRisks": "위험 고지",
-    "guidesTitle": "가이드 및 설정",
+    "navRisks": "위험 공시",
+    "guidesTitle": "가이드 & 설정",
     "guideStart": "시작하기",
-    "guideWallet": "BO 지갑 만들기",
+    "guideWallet": "BO Wallet 만들기",
     "guideBuy": "컴퓨팅 파워 구매",
-    "guideStaking": "스테이킹 배수 (30일–360일)",
-    "guideSlippage": "BDEX 슬리피지 {percent} 스왑",
-    "toolsTitle": "도구 및 공식",
+    "guideStaking": "스테이킹 승수(30일~360일)",
+    "guideSlippage": "BDEX {percent} 슬리피지 스왑",
+    "toolsTitle": "도구 & 공식 링크",
     "cheatSheet": "치트시트 다운로드",
     "newsletter": "뉴스레터 구독",
     "launchApp": "CaryPact 앱 실행",
-    "botDocs": "BOT Chain 문서",
-    "disclosureTitle": "독립 러닝 허브 및 제휴 고지",
-    "disclosureBody": "이 웹사이트는 독립적인 교육 활동이며 CaryPact 또는 BOT Chain 재단이 직접 운영하지 않습니다. 모든 가입 링크에는 검증된 커뮤니티 초대 코드 <code>{inviteCode} (접미사: {suffix})</code>가 포함되어 있습니다. 이 사이트의 링크를 통해 참여하시면 추천 수수료를 받을 수 있습니다. 콘텐츠는 교육 목적일 뿐이며 금융 자문이 아닙니다.",
-    "copyright": "© {year} CaryPact Learning Hub. 독립 교육 리소스.",
-    "backToTop": "맨 위로"
+    "botDocs": "BOT Chain 공식 문서",
+    "disclosureTitle": "독립 러닝 허브 및 제휴 수수료 공시",
+    "disclosureBody": "본 웹사이트는 독립적인 교육 이니셔티브이며 CaryPact 또는 BOT Chain 재단이 직접 운영하지 않습니다. 모든 가입 링크에는 검증된 커뮤니티 초대 코드 <code>{inviteCode} (접미사: {suffix})</code>가 포함되어 있습니다. 이용자가 링크를 통해 참여할 경우 추천 수수료가 발생할 수 있습니다. 제공되는 콘텐츠는 순수 교육 목적이며 금융 조언이 아닙니다.",
+    "copyright": "© {year} CaryPact Learning Hub. Independent Educational Resource.",
+    "backToTop": "맨 위로 이동"
   },
   "earn": {
     "common": {
@@ -539,10 +572,10 @@
       "home": "홈",
       "breadcrumb": "수익 가이드",
       "badge": "CaryPact & BOT Chain 수익화 청사진",
-      "titleA": "CaryPact에서 수익을 얻는",
-      "titleB": "5가지 공식 방법",
-      "desc": "5가지 수익 메커니즘 전체에 대한 직접적이고 검증 가능한 기술 데이터와 수학적 분석입니다: 영구 CA 해시레이트, 장기 PoS 마이닝, 엔터프라이즈 마이닝 서버 프리세일, Layer 1 BOT 해시레이트 마이닝, 그리고 자동 복리를 지원하는 유연한 BOT Pledge(Bot Staking).",
-      "cheatSheet": "치트 시트 (PDF)"
+      "titleA": "공식적으로 지원되는 5가지",
+      "titleB": "CaryPact 수익 창출 방법",
+      "desc": "영구 CA 해시레이트, 장기 PoS 스테이킹, 엔터프라이즈 마이닝 서버 사전 판매, 레이어 1 BOT 해시레이트 마이닝, 자동 복리 지원 BOT Pledge(Bot Staking)까지 5가지 메커니즘에 대한 검증된 기술 데이터와 수학적 분석을 제공합니다.",
+      "cheatSheet": "치트시트 (PDF)"
     },
     "nav": {
       "method": "방법 {n}",
@@ -550,878 +583,1141 @@
       "pos": "PoS 스테이킹",
       "servers": "마이닝 서버",
       "bot": "BOT 해시레이트",
-      "pledge": "BOT Pledge"
+      "pledge": "BOT 플레지"
     },
     "ca": {
-      "title": "CA 해시레이트 및 컴퓨팅 파워 확보",
-      "desc": "토큰화된 GPU/CPU 컴퓨팅 파워 유닛을 확보해 하루 16,800 CA 마이닝 풀에 참여하고, 매일 자동으로 배당을 받으세요.",
+      "title": "CA 해시레이트 & 컴퓨팅 파워 획득",
+      "desc": "토큰화된 GPU/CPU 컴퓨팅 파워 유닛을 획득하여 매일 자동 분배되는 16,800 CA 일일 마이닝 풀에 참여하세요.",
       "cta": "CA 해시레이트 구매 (DApp)",
-      "card1Title": "CA 해시레이트란?",
-      "card1Desc": "CaryPact에서 **해시레이트**는 탈중앙화 네트워크에 제공되는 AI 컴퓨팅 용량(텐서 코어, GPU 메모리 대역폭, CPU 스레드)의 표준화된 단위입니다.",
-      "card1Standard": "기준: **1 USDT = 해시레이트 1유닛**",
-      "card1Min": "최소: **100 USDT** (100유닛)",
-      "card1Supported": "지원: BOT, BSC, ETH의 USDT",
-      "card2Title": "수익을 얻는 방식",
-      "card2Desc": "24시간마다 **00:00 UTC**에 스마트 컨트랙트가 전 세계 활성 해시레이트의 스냅샷을 찍고, **하루 16,800 CA 마이닝 풀**(총 발행량 40k CA의 42%)을 회원님의 해시레이트 비중에 비례하여 분배합니다.",
+      "card1Title": "CA 해시레이트란 무엇인가요?",
+      "card1Desc": "CaryPact에서 **해시레이트**는 분산 네트워크에 제공되는 AI 연산 용량(텐서 코어, GPU 메모리 대역폭, CPU 스레드)의 표준화된 단위입니다.",
+      "card1Standard": "기준: **1 USDT = 1 해시레이트 유닛**",
+      "card1Min": "최소 수량: **100 USDT** (100 유닛)",
+      "card1Supported": "지원 네트워크: BOT, BSC, ETH 상의 USDT",
+      "card2Title": "수익이 발생하는 구조",
+      "card2Desc": "매 24시간마다(**00:00 UTC**), 스마트 컨트랙트가 글로벌 활성 해시레이트를 스냅샷하고 **16,800 CA 일일 마이닝 풀**(전체 40,000 CA 배출량의 42%)을 각 지분에 따라 비례 배분합니다.",
       "card2Compound": "복리 계수: **K ≈ 1.01**",
       "card2Pool": "일일 풀: **16,800 CA / 일**",
-      "card2Settlement": "정산: DApp 지갑으로 자동 입금",
+      "card2Settlement": "정산: DApp 지갑으로 자동 적립",
       "card3Title": "수익률 및 원금 조건",
-      "card3Desc": "예상 일일 수익률은 전체 네트워크 해시레이트와 현재 토큰 가치에 따라 CA 가치 기준 **0.35% – 0.75%+** 범위입니다.",
-      "card3Rule": "**핵심 원금 규칙:** 해시레이트 구매는 영구적인 인프라 투입입니다. 원금은 환불되지 않으며, 수익은 전적으로 일일 CA 마이닝 산출물을 통해 회수됩니다.",
+      "card3Desc": "예상 일일 수익률은 네트워크 전체 해시레이트와 현재 토큰 시세에 따라 CA 가치 기준 **0.35% ~ 0.75%+** 수준입니다.",
+      "card3Rule": "**핵심 자본 규칙:** 해시레이트 구매는 인프라에 영구 투입되는 형태입니다. 원금 환불은 불가하며, 투자금 회수는 매일 배당되는 CA 채굴 산출물을 통해서만 이루어집니다.",
       "calcTitle": "CA 해시레이트 수익 계산기",
-      "calcSubtitle": "USDT 입금액을 기준으로 일간, 월간, 연간 CA 생성량을 시뮬레이션해 보세요.",
+      "calcSubtitle": "USDT 투입 금액을 기준으로 일일, 월간, 연간 CA 예상 산출량을 시뮬레이션해보세요.",
       "calcAmount": "구매 금액 (USDT):",
-      "calcAmountValue": "{usdt} USDT ({units}유닛)",
+      "calcAmountValue": "{usdt} USDT ({units} 유닛)",
       "calcMin": "100U (최소)",
       "calcWhale": "20,000U (고래)",
       "calcPrice": "시뮬레이션 CA 시장 가격:",
-      "calcCurrent": "$2.74 (현재)",
-      "estDaily": "예상 일일 CA",
-      "estMonthly": "예상 월간 CA (30일)",
-      "estYearly": "예상 연간 CA (365일)",
+      "calcCurrent": "$2.74 (현재가)",
+      "estDaily": "일일 예상 CA",
+      "estMonthly": "월간 예상 CA (30일)",
+      "estYearly": "연간 예상 CA (365일)",
       "perDay": "/ 일",
       "perMonth": "/ 월",
       "perYear": "/ 년"
     },
     "pos": {
-      "title": "CA 장기 스테이킹 및 프로토콜 PoS 마이닝",
-      "desc": "CA 토큰을 30일~360일 배수(1.0x – 3.0x)의 Proof-of-Stake 컨트랙트에 예치하고 만기 시 원금 100%를 돌려받으세요.",
+      "title": "CA 장기 스테이킹 & 프로토콜 PoS 마이닝",
+      "desc": "30일에서 360일까지 기간 승수(1.0배~3.0배)가 적용되며 만기 시 원금이 100% 반환되는 지분증명(PoS) 컨트랙트에 CA 토큰을 예치하세요.",
       "cta": "PoS 마이닝 시작 (DApp)",
-      "tier30": "구조를 체험해 볼 수 있는 유연한 단기 락업",
-      "tier90": "보상이 50% 늘어나는 분기 약정",
-      "tier180": "수익률과 유동성의 최적 균형",
-      "tier360": "최대 장기 복리 티어",
+      "tier30": "메커니즘 테스트를 위한 유연한 단기 락업",
+      "tier90": "50% 보상 부스트가 적용되는 분기형 플랜",
+      "tier180": "수익률과 유동성의 최적 밸런스 플랜",
+      "tier360": "장기 복리 효과를 극대화하는 최상위 플랜",
       "daysLock": "{days}일 락업",
-      "weight": "가중치 {m}",
-      "unlockedAt": "{days}일 후 원금 100% 해제",
-      "howTitle": "프로토콜 PoS 마이닝의 작동 방식",
-      "how1": "**18% 전용 배정:** 하루 40,000 CA 발행량 중 7,200 CA가 PoS 스테이킹 컨트랙트에만 배정됩니다.",
-      "how2": "**기간 가중치의 이점:** 360일 예치 시 지분 계산에 3.0x 배수가 적용되어, 30일 예치보다 토큰당 일일 CA 수익이 세 배 많습니다.",
-      "how3": "**원금 안전성:** (영구적인 하드웨어 지출인) CA 해시레이트와 달리 PoS 스테이킹은 원금을 전액 보존합니다. 락업 타이머가 0이 되면 최초 CA 예치금의 100%를 지갑으로 출금할 수 있습니다.",
+      "weight": "{m} 가중치",
+      "unlockedAt": "{days}일 후 원금 100% 잠금 해제",
+      "howTitle": "프로토콜 PoS 마이닝 작동 원리",
+      "how1": "**18% 전용 배정:** 매일 발행되는 40,000 CA 중 7,200 CA가 오직 PoS 스테이킹 컨트랙트만을 위해 배정됩니다.",
+      "how2": "**기간 가중치의 이점:** 360일 동안 예치하면 지분 계산 시 3.0배의 승수가 적용되어 30일 예치 대비 토큰당 3배 더 많은 일일 CA 수익을 얻게 됩니다.",
+      "how3": "**원금의 안전성:** 영구적 하드웨어 비용인 CA 해시레이트와 달리, PoS 스테이킹은 원금을 온전히 보존합니다. 락업 타이머가 종료되면 초기 예치한 CA 원금 100%를 본인 지갑으로 인출할 수 있습니다.",
       "simTitle": "PoS 스테이킹 보상 시뮬레이터",
       "simAmount": "CA 스테이킹 수량:",
       "simDuration": "기간 선택:",
-      "durationBtn": "{days}일 ({m}x)",
-      "estProfit": "예상 총 수익",
-      "returnAtMaturity": "만기 시 수령액",
-      "principalPlusRewards": "원금 + 보상"
+      "durationBtn": "{days}일 ({m}배)",
+      "estProfit": "예상 총 순수익",
+      "returnAtMaturity": "만기 시 총 반환액",
+      "principalPlusRewards": "원금 + 획득 보상"
     },
     "servers": {
-      "title": "실물 마이닝 서버 및 머신 프리세일",
-      "desc": "전 세계 티어-3, 티어-4 데이터센터에 배치된 전용 실물 DePIN AI 컴퓨팅 서버를 확보해 상위 티어 블록 검증과 상업용 AI 작업 실행 수익을 얻으세요.",
+      "title": "물리적 마이닝 서버 & 기기 사전 판매",
+      "desc": "최상위 블록 검증 및 상업용 AI 태스크 실행 수익을 위해 글로벌 Tier-3 및 Tier-4 데이터 센터에 배치된 전용 물리적 DePIN AI 연산 서버를 확보하세요.",
       "cta": "마이닝 서버 보기 (DApp)",
-      "card1Title": "전용 하드웨어 보관",
-      "card1Desc": "가상화된 클라우드 해시레이트와 달리, 서버 프리세일은 99.9% 가동률과 통신사 중립 광케이블 연결을 갖춘 엔터프라이즈급 GPU/CPU 클러스터가 뒷받침하는 실물 머신에 대한 검증 가능한 권리를 제공합니다.",
+      "card1Title": "전용 하드웨어 실물 수탁",
+      "card1Desc": "가상화된 클라우드 해시레이트와 달리, 서버 사전 판매는 99.9% 가동률과 통신사 중립 광케이블을 갖춘 기업용 GPU/CPU 클러스터에 기반한 실물 기기 권리를 제공합니다.",
       "card1Bullets": [
         "온체인 하드웨어 NFT 인증서",
-        "인증된 티어-3/4 코로케이션 시설",
+        "인증된 Tier-3/4 코로케이션 시설",
         "실시간 텔레메트리 해시 모니터링"
       ],
-      "card2Title": "이중 수익원",
-      "card2Desc": "마이닝 머신은 BOT Chain의 합의 검증 발행 보상과, AI 개발자가 모델 학습 및 추론에 지불하는 실제 상업 수수료라는 두 가지 수익화 계층을 동시에 누립니다.",
+      "card2Title": "이중 수익 스트림",
+      "card2Desc": "마이닝 기기는 BOT Chain의 합의 검증 배출 수익과 AI 개발 기업들이 모델 학습 및 추론을 위해 지불하는 실제 상업용 수수료라는 두 가지 수익을 동시에 창출합니다.",
       "card2Bullets": [
         "L1 블록체인 블록 검증 보상",
-        "상업용 AI 매칭 실행 수수료",
-        "신규 생태계 토큰 드롭 우선 접근"
+        "상업용 AI 매칭 태스크 실행 수수료",
+        "신규 생태계 토큰 에어드랍 우선 참여권"
       ],
-      "card3Title": "기관급 노드 운영자 지위",
-      "card3Desc": "서버 프리세일에 참여하면 회원님의 주소가 지정 슈퍼컴퓨팅 노드로 격상되어, 거버넌스 투표권과 네트워크 전체 슬리피지 소각 재분배의 일부를 받습니다.",
+      "card3Title": "기관급 노드 운영자 자격",
+      "card3Desc": "서버 사전 판매 참여 시 해당 지갑 주소는 슈퍼컴퓨팅 노드로 지정되어 거버넌스 투표권과 네트워크 전체 슬리피지 소각 재분배 지분을 획득하게 됩니다.",
       "card3Bullets": [
-        "3.2% 노드 운영자 슬리피지 풀 수령 자격",
+        "3.2% 노드 운영자 슬리피지 풀 분배 대상",
         "DAO 거버넌스 투표 가중치",
-        "기관 대량 구매 가격 혜택"
+        "기관용 대량 구매 단가 혜택"
       ]
     },
     "botHash": {
-      "title": "BOT 해시레이트 마이닝 (네이티브 Layer 1)",
-      "desc": "BOT Chain의 네이티브 가스이자 기본 합의 통화인 BOT를 마이닝하세요. Layer 1 네트워크의 거래 활동, 가스 수수료 소각, DEX 슬리피지 없는 전환의 혜택을 직접 누릴 수 있습니다.",
-      "cta": "BOT 해시레이트 마이닝 (DApp)",
-      "compareTitle": "듀얼 토큰 마이닝 역학 이해하기: CA vs. BOT",
+      "title": "BOT 해시레이트 마이닝 (네이티브 레이어 1)",
+      "desc": "BOT Chain의 기저 합의 통화이자 네이티브 가스인 BOT을 직접 채굴하세요. 레이어 1 네트워크 트랜잭션 활성화, 가스비 소각, DEX 슬리피지 없는 직접 획득의 이점을 누릴 수 있습니다.",
+      "cta": "BOT 해시레이트 채굴 (DApp)",
+      "compareTitle": "듀얼 토큰 마이닝 구조의 이해: CA vs BOT",
       "caLayer": "애플리케이션 및 프로토콜 레이어",
       "caBadge": "CA 토큰",
       "caHeading": "CA 해시레이트 마이닝",
-      "caDesc": "CA는 CaryPact의 네이티브 거버넌스 및 알고리즘 실행 토큰입니다. CA 해시레이트는 하루 16,800 CA 풀에서 배분됩니다.",
-      "caReward": "보상 자산: **CA 토큰**",
+      "caDesc": "CA는 CaryPact의 핵심 거버넌스 및 알고리즘 실행 토큰입니다. CA 해시레이트는 일일 16,800 CA 풀에서 배분됩니다.",
+      "caReward": "지급 자산: **CA 토큰**",
       "caDaily": "일일 배출량: 16,800 CA / 일",
-      "caConversion": "BDEX 전환: 5% 스왑 수수료 (1.8%는 바이백 및 소각)",
-      "caBest": "추천 대상: 높은 일일 수익률과 스테이킹 복리를 원하는 분",
-      "botLayer": "LAYER 1 합의 레이어",
+      "caConversion": "BDEX 전환: 5% 스왑 수수료 (1.8% 바이백 및 소각)",
+      "caBest": "추천 대상: 높은 일일 수익률과 스테이킹 복리 효과를 추구하는 참여자",
+      "botLayer": "레이어 1 합의 레이어",
       "botBadge": "BOT 토큰",
       "botHeading": "BOT 해시레이트 마이닝",
-      "botDesc": "BOT는 BOT Chain 블록체인 전체를 구동하는 네이티브 가스 자산입니다. BOT 해시레이트를 마이닝하면 기본 합의를 보호하고 L1 가스 토큰을 직접 얻습니다.",
-      "botReward": "보상 자산: **네이티브 BOT**",
-      "botBurn": "가스 소각 혜택: 네트워크 가스 수수료의 1.5%가 영구 소각",
-      "botZeroSlip": "DEX 슬리피지 제로: 네이티브 가스를 즉시 전송하거나 스테이킹 가능",
-      "botBest": "추천 대상: 기본 Layer 1 노출과 블록체인 가스 효용을 원하는 분"
+      "botDesc": "BOT은 BOT Chain 전체를 움직이는 기본 가스 자산입니다. BOT 해시레이트를 채굴하면 기저 합의를 보호하며 L1 가스 토큰을 직접 확보하게 됩니다.",
+      "botReward": "지급 자산: **네이티브 BOT**",
+      "botBurn": "가스 소각 혜택: 네트워크 가스 수수료의 1.5%가 영구 소각됨",
+      "botZeroSlip": "DEX 슬리피지 0%: 네이티브 가스를 즉시 전송하거나 스테이킹 가능",
+      "botBest": "추천 대상: 레이어 1 블록체인 기반의 가치와 가스 유틸리티를 중시하는 참여자"
     },
     "pledge": {
-      "title": "BOT Pledge (Bot Staking)",
-      "tagline": "BOT를 스테이킹하고 보상 받기: 유연한 입출금, 자유로운 제어",
-      "desc": "네이티브 Layer 1 BOT 토큰을 유동성 제한 없이 프로토콜 스테이킹 풀에 예치하세요. 해제된 원금은 24시간의 언락 기간을 거쳐 언제든 출금할 수 있으며, 일일 수익은 자동으로 복리 적용되어 수익률을 극대화합니다.",
-      "cta": "BOT 토큰 예치 (DApp)",
-      "rulesTitle": "기본 프로토콜 규칙",
-      "rule1Tag": "유연한 제어",
-      "rule1Title": "BOT를 스테이킹하고 보상 받기",
-      "rule1Desc": "네이티브 BOT 토큰을 스테이킹해 BOT Chain에서 직접 프로토콜 스테이킹 보상을 받으세요. 유연한 입출금으로 예치 원금을 언제나 자유롭게 제어할 수 있습니다.",
+      "title": "BOT Pledge (BOT 스테이킹)",
+      "tagline": "BOT을 스테이크하고 보상을 획득하세요. 자유로운 입출금, 완전한 자율 관리",
+      "desc": "유동성을 온전히 통제하면서 네이티브 레이어 1 BOT 토큰을 프로토콜 스테이킹 풀에 플레지하세요. 해제된 원금은 24시간의 대기 기간 후 언제든 출금할 수 있으며, 일일 수익은 매일 자동으로 복리 운용됩니다.",
+      "cta": "BOT 토큰 플레지하기 (DApp)",
+      "rulesTitle": "프로토콜 기본 규칙",
+      "rule1Tag": "자유로운 관리",
+      "rule1Title": "BOT 스테이킹으로 보상 획득",
+      "rule1Desc": "네이티브 BOT 토큰을 스테이킹하여 BOT Chain에서 직접 프로토콜 스테이킹 보상을 생성합니다. 자유로운 입출금을 통해 예치한 원금을 항상 스스로 관리할 수 있습니다.",
       "rule1Bullets": [
-        "네이티브 BOT 코인으로 표시",
-        "DEX 슬리피지나 스왑 마찰 없음",
-        "자유로운 예치 금액"
+        "네이티브 BOT 코인 단위 운용",
+        "DEX 거래 슬리피지나 교환 손실 없음",
+        "자유로운 예치 수량 설정"
       ],
       "rule2Tag": "24시간 쿨다운",
-      "rule2Title": "24시간 언락 기간",
-      "rule2Desc": "해제된 원금은 언제든 출금할 수 있습니다. 출금을 요청하면 24시간의 언락 기간이 지난 뒤 원금을 수령할 수 있습니다.",
+      "rule2Title": "24시간 잠금 해제 대기 기간",
+      "rule2Desc": "해제된 원금은 언제든지 출금 요청할 수 있습니다. 출금 신청 후 네트워크 보안을 위한 24시간의 언락 대기 기간이 지나면 지갑으로 수령할 수 있습니다.",
       "rule2Bullets": [
-        "원하는 때에 원금 출금",
-        "24시간 네트워크 보안 쿨다운",
-        "Web3 지갑으로 직접 수령"
+        "원할 때 언제든 원금 인출 신청 가능",
+        "합의 보안 유지를 위한 24시간 쿨다운",
+        "개인 Web3 지갑으로 직접 원금 수령"
       ],
       "rule3Tag": "자동 복리",
       "rule3Title": "자동 복리 엔진",
-      "rule3Desc": "자동 복리는 전날의 원금과 일일 수익을 새로운 원금으로 삼아 복리 스테이킹하므로, 수동 가스비 없이 수익이 기하급수적으로 늘어납니다.",
+      "rule3Desc": "자동 복리 기능은 [전날 원금 + 일일 수익]을 다음 날 복리 스테이킹의 새로운 원금으로 자동 사용하므로, 수동 트랜잭션이나 가스비 지출 없이도 수익을 극대화합니다.",
       "rule3Bullets": [
-        "일일 기준: N-1일 원금 + 보상",
-        "기하급수적 APY 성장",
-        "재투자 시 거래 수수료 없음"
+        "일일 운용 원금: N-1일 차 원금 + 보상",
+        "기하급수적인 실효 APY 상승",
+        "재투자에 따른 트랜잭션 수수료 0"
       ],
       "simTitle": "BOT Pledge 자동 복리 시뮬레이터",
-      "simRate": "예상 약 0.25% / 일",
-      "simAmount": "스테이킹 BOT 수량:",
-      "simDuration": "스테이킹 기간 범위:",
+      "simRate": "예상 ~0.25% / 일",
+      "simAmount": "스테이킹할 BOT 수량:",
+      "simDuration": "스테이킹 목표 기간:",
       "daysValue": "{days}일",
       "daysShort": "{days}일",
-      "toggleTitle": "자동 복리 (규칙 3)",
-      "toggleDesc": "전날의 원금과 일일 수익을 자동으로 새 원금으로 사용합니다",
-      "estYield": "예상 스테이킹 수익",
-      "compoundBoost": "복리 부스트: +{amount} BOT",
-      "totalAtHorizon": "기간 종료 시 총 가치",
-      "principalAllEarnings": "원금 + 모든 수익",
+      "toggleTitle": "자동 복리 운용 (규칙 3)",
+      "toggleDesc": "전날 원금 + 일일 수익을 자동으로 새로운 원금으로 산정합니다",
+      "estYield": "예상 스테이킹 총수익",
+      "compoundBoost": "복리 추가 수익: +{amount} BOT",
+      "totalAtHorizon": "기간 만료 시 총 평가액",
+      "principalAllEarnings": "원금 + 모든 누적 수익",
       "effectiveApy": "실효 APY: {apy}%",
       "lifeTitle": "24시간 언락 라이프사이클 (규칙 2)",
-      "lifeIntro": "영구 해시레이트나 고정 기간 조건과 달리, BOT Pledge는 예측 가능한 24시간 쿨다운으로 원금 반환을 보장합니다:",
-      "life1Title": "1. 스테이킹 활성 상태",
-      "life1Desc": "원금이 매일 자동 복리되는 BOT 보상을 지속적으로 생성합니다.",
-      "life2Title": "2. 출금 시작 (언제든)",
-      "life2Desc": "DApp에서 출금 요청을 제출합니다. 원금이 해제 상태로 들어갑니다.",
-      "life3Title": "3. 24시간 언락 윈도우",
-      "life3Desc": "합의 보안을 유지하기 위해 스마트 컨트랙트 타이머가 정확히 24시간 동안 작동합니다.",
-      "life4Title": "4. 원금 100%를 지갑으로 수령",
-      "life4Desc": "자금을 한 번의 클릭으로 회원님의 주소로 바로 수령할 수 있게 됩니다.",
-      "lifeSummary": "**요약:** 유연한 입금, 매일 자동 복리되는 수익, 24시간 수령 윈도우와 함께 원금 100% 반환.",
-      "readyText": "BOT를 예치할 준비가 되셨나요? 2분 안에 시작하세요.",
+      "lifeIntro": "영구 해시레이트나 장기 락업 상품과 달리, BOT Pledge는 예측 가능한 24시간 쿨다운 후 원금 반환을 보장합니다:",
+      "life1Title": "1. 활성 스테이킹 상태",
+      "life1Desc": "원금이 매일 자동 복리 BOT 보상을 지속적으로 창출합니다.",
+      "life2Title": "2. 출금 신청 (언제든 가능)",
+      "life2Desc": "DApp에서 출금을 요청하면 원금이 해제 대기 상태로 전환됩니다.",
+      "life3Title": "3. 24시간 언락 대기 윈도우",
+      "life3Desc": "합의 보안을 지키기 위해 스마트 컨트랙트 타이머가 정확히 24시간 동안 작동합니다.",
+      "life4Title": "4. 지갑으로 원금 100% 수령",
+      "life4Desc": "원클릭으로 본인 지갑 주소로 원금 전액을 인출할 수 있습니다.",
+      "lifeSummary": "**요약:** 유연한 참여, 매일 자동 복리 수익, 24시간 대기 후 원금 100% 반환 보장.",
+      "readyText": "BOT을 플레지할 준비가 되셨나요? 2분이면 시작할 수 있습니다.",
       "launchPortal": "포털 열기"
     },
     "matrix": {
-      "badge": "나란히 비교 분석",
-      "title": "비교 매트릭스: 어떤 수익 방법이 나에게 맞을까?",
-      "feature": "항목",
-      "assetEarned": "획득 자산",
+      "badge": "비교 분석표",
+      "title": "비교 매트릭스: 나에게 가장 적합한 수익 방식은?",
+      "feature": "구분",
+      "assetEarned": "지급 자산",
       "asset1": "CA 토큰",
       "asset2": "CA 토큰",
       "asset3": "CA + AI 수수료 + 지분",
       "asset4": "BOT 토큰 (L1)",
       "asset5": "BOT 토큰 (L1)",
-      "minCapital": "최소 자본",
+      "minCapital": "최소 참여금액",
       "min1": "100 USDT",
-      "min2": "10 CA (~$27)",
-      "min3": "엔터프라이즈 노드 티어",
+      "min2": "10 CA (약 $27)",
+      "min3": "엔터프라이즈 노드 기준",
       "min4": "100 USDT 상당",
-      "min5": "10 BOT (~$11)",
+      "min5": "10 BOT (약 $11)",
       "principalStatus": "원금 상태",
-      "principal1": "영구 컴퓨팅 (환불 불가)",
+      "principal1": "영구 컴퓨팅 투입 (환불 불가)",
       "principal2": "만기 시 100% 반환",
-      "principal3": "실물 하드웨어 자산",
-      "principal4": "영구 해시레이트",
+      "principal3": "물리적 하드웨어 실물 자산",
+      "principal4": "영구 해시레이트 투입",
       "principal5": "100% 반환 (24시간 언락)",
       "lockup": "락업 기간",
-      "lock1": "지속 (평생)",
+      "lock1": "영구 지속",
       "lock2": "30일, 90일, 180일, 360일",
       "lock3": "평생 노드 권리",
-      "lock4": "지속 (평생)",
-      "lock5": "유연 (언제든 출금)",
+      "lock4": "영구 지속",
+      "lock5": "유연형 (언제든 출금 가능)",
       "payout": "지급 주기",
       "payout1": "매일 00:00 UTC",
-      "payout2": "매일 + 만기 시",
-      "payout3": "블록별 / 작업별",
+      "payout2": "매일 + 만기 시 원금",
+      "payout3": "블록 단위 / 태스크 완료 시",
       "payout4": "매일 00:00 UTC",
-      "payout5": "매일 자동 복리",
+      "payout5": "매일 자동 복리 재투자",
       "bestFor": "추천 대상",
-      "best1": "일일 패시브 현금 흐름을 원하는 분",
-      "best2": "원금 반환을 원하는 토큰 보유자",
-      "best3": "기관급 DePIN 노드 투자자",
-      "best4": "Layer 1을 신뢰하는 분과 가스 마이너",
-      "best5": "자동 복리와 24시간 내 출금을 원하는 유연한 스테이커"
+      "best1": "매일 안정적인 현금 흐름을 원하는 참여자",
+      "best2": "원금 보존을 중시하는 CA 토큰 보유자",
+      "best3": "기관급 DePIN 노드 전문 투자자",
+      "best4": "L1 생태계 성장 및 가스 채굴을 지지하는 참여자",
+      "best5": "자동 복리와 24시간 유동성 회수를 원하는 유연한 참여자"
     },
     "risk": {
-      "title": "필수 위험 및 운영 고지 사항",
-      "r1Title": "영구 해시레이트 매몰 비용:",
-      "r1Desc": "CA 또는 BOT 컴퓨팅 파워 구매에 쓴 USDT는 유동적인 스테이블코인으로 회수할 수 없습니다. 하드웨어 컴퓨팅 할당을 구매하는 것이며, 원금 회수는 오직 향후 마이닝 수익 분배에 달려 있습니다.",
-      "r2Title": "BDEX 5% 슬리피지 구조:",
-      "r2Desc": "마이닝한 CA를 내부 BDEX에서 다시 USDT로 스왑하면 5%의 프로토콜 수수료가 발생합니다 (1.8%는 토큰 바이백 및 소각, 3.2%는 노드 운영자에게 지급). 순 ROI를 계산할 때 이 마찰 비용을 반영하세요.",
-      "r3Title": "탈중앙화 토큰 변동성:",
-      "r3Desc": "암호화폐 자산 가격은 시장 수요, 컴퓨팅 도입, 거시경제 요인에 따라 변동합니다. 잃어도 감당할 수 없는 자금은 절대 투입하지 마세요."
+      "title": "핵심 위험 및 운영 공시 사항",
+      "r1Title": "영구 해시레이트의 매몰 비용 특성:",
+      "r1Desc": "CA 또는 BOT 컴퓨팅 파워 구매에 투입된 USDT는 다시 유동성 스테이블코인으로 인출할 수 없습니다. 이는 하드웨어 연산 할당량을 구매한 것이며, 원금 회수는 향후 지급되는 마이닝 배당을 통해서만 달성됩니다.",
+      "r2Title": "BDEX 5% 슬리피지 메커니즘:",
+      "r2Desc": "채굴된 CA를 내부 BDEX에서 USDT로 스왑할 때 5%의 프로토콜 수수료가 부과됩니다(1.8%는 토큰 바이백 및 소각, 3.2%는 노드 운영자에게 배분). 순수익률 계산 시 이 비용을 반드시 반영해야 합니다.",
+      "r3Title": "분산형 토큰의 시장 변동성:",
+      "r3Desc": "암호화폐 자산 가격은 시장 수요, 컴퓨팅 채택률, 거시 경제 요인에 따라 변동합니다. 감당할 수 없는 손실 범위의 자본은 절대 투입하지 마십시오."
     }
   },
   "wallet": {
     "title": "지갑에서 열기",
-    "subtitle": "CaryPact 앱은 DApp입니다. 지갑의 내장 브라우저 안에서 실행해야 합니다.",
+    "subtitle": "CaryPact 앱은 DApp입니다. 지갑의 내장 브라우저 환경에서 실행되어야 합니다.",
     "chooseWallet": "지갑 선택",
-    "lastUsed": "마지막 사용",
+    "lastUsed": "최근 사용",
     "openIn": "{wallet}에서 열기",
-    "launching": "{wallet} 여는 중…",
-    "launchingHint": "지갑 앱이 열리면 그곳에서 계속 진행하세요.",
-    "fallbackTitle": "{wallet}이(가) 열리지 않나요?",
-    "fallbackDesc": "지갑이 설치되어 있지 않거나 기기가 링크를 차단했을 수 있습니다. 일반 링크를 열거나 아래 수동 방법을 따르세요.",
+    "launching": "{wallet} 실행 중…",
+    "launchingHint": "지갑 앱이 열리면 지갑 화면에서 계속 진행하세요.",
+    "fallbackTitle": "{wallet}이 열리지 않나요?",
+    "fallbackDesc": "지갑이 설치되어 있지 않거나 기기에서 링크를 차단했을 수 있습니다. 일반 링크를 열거나 아래 수동 단계를 따르세요.",
     "openNormal": "일반 링크 열기",
     "copyLink": "링크 복사",
     "copied": "복사됨",
-    "stepsTitle": "수동으로 열기",
-    "step1": "아래 링크를 복사하세요.",
-    "step2": "지갑 앱을 열고 DApp 브라우저(보통 '브라우저' 또는 '탐색'이라고 표시됨)로 이동하세요.",
-    "step3": "주소창에 링크를 붙여넣고 여세요.",
-    "install": "아직 지갑이 없나요? 먼저 앱 스토어에서 MetaMask, Trust Wallet 또는 TokenPocket을 설치하세요.",
+    "stepsTitle": "수동으로 여는 방법",
+    "step1": "아래 링크를 복사합니다.",
+    "step2": "지갑 앱을 열고 DApp 브라우저(보통 '브라우저' 또는 '탐색' 메뉴)로 이동합니다.",
+    "step3": "주소창에 링크를 붙여넣고 이동합니다.",
+    "install": "아직 지갑이 없으신가요? 앱스토어에서 MetaMask, Trust Wallet 또는 TokenPocket을 먼저 설치하세요.",
     "tryAnother": "다른 지갑 시도",
     "close": "닫기"
   },
-  "livePage": {
-    "backToHub": "학습 허브로 돌아가기",
-    "breadcrumb": "실시간 온체인 & CMC 포털",
-    "cmcFeed": "CMC 피드",
-    "liveConnected": "실시간 연결됨",
-    "synced": "동기화됨",
-    "justNow": "방금",
-    "refresh": "실시간 데이터 새로고침",
-    "heroBadge": "실시간 CoinMarketCap 및 BOT Chain 원장",
-    "heroTitle": "CaryPact & BOT Chain",
-    "heroTitleHighlight": "실시간 시장 피드",
-    "heroDesc": "실시간 암호화폐 시세, 온체인 패리티 추적(<strong>1 CA = 1.337631 BOT</strong>), BDEX 호가창 깊이, 그리고 <xLink>@CaryPact</xLink>의 공식 Twitter/X 공지를 제공합니다.",
-    "inviteCode": "초대 코드",
-    "copy": "복사",
-    "copied": "복사됨",
-    "launchDApp": "DApp 실행",
-    "cmcListing": "CoinMarketCap 상장 정보",
-    "cmcPair": "bot-chain / BOT 통화",
-    "viewCmc": "CMC 보기",
-    "cmcDesc": "BOT Chain의 가격 추적 및 거래량 지표는 CoinMarketCap Pro를 통해 직접 검증됩니다. CaryPact 컴퓨팅 자산(CA)은 <strong>1 CA = 1.337631 BOT</strong>의 고정 알고리즘 환산 기준으로 운영됩니다.",
-    "contractStandard": "컨트랙트 표준:",
-    "decimals": "소수점 자릿수:",
-    "burnMechanism": "소각 메커니즘:",
-    "burnValue": "BDEX 매도 시 1.8%",
-    "directivesTitle": "프로토콜 핵심 규칙",
-    "rule1Title": "1 USDT = 1 해시레이트 유닛:",
-    "rule1Body": "컴퓨팅 파워는 영구 잠금되며 원금은 환불되지 않습니다.",
-    "rule2Title": "스테이킹 배수:",
-    "rule2Body": "30일(1.3x), 90일(1.6x), 180일(2.0x), 360일(2.5x).",
-    "rule3Title": "10단계 VIP 시스템:",
-    "rule3Body": "개인 300 USDT 활성화와 하위 라인 실적이 필요합니다.",
-    "printCheatSheet": "프로토콜 전체 요약표 인쇄"
-  },
   "LearnFaq": {
-    "badge": "도움말 센터",
-    "title": "자주 묻는 질문",
-    "description": "BOT 토크노믹스, 채굴, 생태계, 보안 등에 관한 확인된 답변을 살펴보세요.",
-    "searchPlaceholder": "질문, 키워드 또는 주제 검색...",
+    "badge": "종합 프로토콜 인텔리전스 & 마스터 FAQ",
+    "title": "자주 묻는 <hl>질문 (FAQ)</hl>",
+    "description": "토큰 인플레이션 억제 메커니즘, 물리적 채굴기 생산 현황, 글로벌 오피스(싱가포르, 홍콩, 두바이, 태국) 및 V1–V10 동적 수익 알고리즘에 대한 기술적·경제적·운영적 상세 해설을 확인하세요.",
+    "searchPlaceholder": "키워드로 검색 (예: '인플레이션', '싱가포르', 'Z주소', 'V4', '채굴기', '시드구문')...",
     "clear": "지우기",
-    "showing": "확인된 답변 {total}개 중 <strong>{shown}</strong>개 표시 중",
+    "showing": "총 {total}개의 검증된 답변 중 <strong>{shown}</strong>개 표시 중",
     "expandAll": "모두 펼치기",
     "collapseAll": "모두 접기",
-    "emptyTitle": "검색 결과가 없습니다",
-    "emptyHint": "다른 키워드를 입력하거나 필터를 초기화해 보세요.",
+    "emptyTitle": "일치하는 답변이 없습니다",
+    "emptyHint": "검색어를 변경하거나 \"{all}\" 탭을 선택하여 전체 질문을 살펴보세요.",
     "resetFilters": "필터 초기화",
-    "copyLink": "링크 복사",
-    "keyTopics": "주요 주제",
-    "verifiedDocs": "확인된 문서",
+    "copyLink": "이 FAQ의 바로가기 링크 복사",
+    "keyTopics": "핵심 주제 바로가기:",
+    "verifiedDocs": "검증된 프로토콜 공식 문서",
     "discuss": "커뮤니티에서 토론하기",
-    "supportTitle": "아직 궁금한 점이 있으신가요?",
-    "supportText": "커뮤니티에 참여하여 도움을 받고 BOT 생태계의 다른 구성원들과 소통하세요.",
-    "supportCta": "고객 지원 문의",
+    "supportTitle": "찾으시는 질문이 없으신가요?",
+    "supportText": "싱가포르, 태국, 홍콩, 두바이의 24/7 글로벌 커뮤니티 매니저에게 직접 문의하거나 CaryPact AI 코파일럿에게 실시간으로 질문하세요.",
+    "supportCta": "커뮤니티 지원팀 연결",
     "categories": {
       "all": {
-        "tab": "모든 질문",
-        "badge": "모든 질문"
+        "tab": "전체 질문",
+        "badge": "전체 질문"
       },
       "tokenomics": {
-        "tab": "토크노믹스",
-        "badge": "토크노믹스"
+        "tab": "토크노믹스 & 인플레이션",
+        "badge": "토크노믹스 & 인플레이션"
       },
       "ecosystem": {
-        "tab": "생태계",
-        "badge": "생태계"
+        "tab": "BOT Chain 생태계",
+        "badge": "BOT Chain & 생태계"
       },
       "mining": {
-        "tab": "채굴",
-        "badge": "채굴"
+        "tab": "DePIN & 채굴 장비",
+        "badge": "채굴 & DePIN 하드웨어"
       },
       "vip": {
-        "tab": "VIP 및 보상",
-        "badge": "VIP 및 보상"
+        "tab": "VIP & 동적 수익",
+        "badge": "VIP 보상 & 복리"
       },
       "security": {
-        "tab": "보안",
-        "badge": "보안"
+        "tab": "보안 & 지갑",
+        "badge": "보안 & 지갑"
       },
       "global": {
-        "tab": "글로벌 진출",
-        "badge": "글로벌 진출"
+        "tab": "글로벌 허브 & 법무",
+        "badge": "글로벌 운영 & 법무"
       }
     },
     "items": {
       "inflation-elimination": {
-        "question": "BOT은 어떻게 인플레이션을 억제하나요?",
+        "question": "스테이킹된 POS 자산에서 누적되는 토큰 인플레이션은 어떻게 제거되나요?",
         "keywords": [
-          "인플레이션",
-          "공급량",
-          "토크노믹스",
-          "소각",
-          "토큰 소각"
+          "스테이킹 인플레이션 제거",
+          "CA 토크노믹스",
+          "B 지갑 및 M 지갑 유입 구조",
+          "Z 주소 소각",
+          "BOT 재단 금고"
         ],
         "geoTags": [
-          "global"
+          "글로벌 탈중앙화 프로토콜"
         ],
-        "summary": "BOT의 경제 모델은 토큰 공급량을 관리하고 토큰 소각 메커니즘을 통해 희소성을 높이는 것을 목표로 합니다.",
+        "summary": "엄격한 4유입 1유출 지갑 구조, Z 주소의 10% 일일 바이백 및 소각, 90% 금고 배분, BOT 퍼블릭 체인의 '연못 대 바다' 매크로 흡수 용량을 통해 통제됩니다.",
         "answer": [
-          "BOT은 토큰 공급량을 관리하고 장기적인 희소성을 유지하도록 설계된 경제 모델을 사용합니다.",
-          "토큰 소각 메커니즘은 생태계에 적용되는 규칙에 따라 유통 중인 토큰 수량을 줄일 수 있습니다.",
-          "공급량 감소가 가격 상승을 보장하지는 않습니다. 시장 가격은 수요, 유동성 및 전반적인 시장 상황에도 영향을 받습니다."
+          "1. 지갑 흐름 아키텍처(B 및 M 지갑): 핵심 해결책은 전략적인 CA 자금 흐름 설계에 있습니다. 주요 감시 대상 주소는 'B' 지갑(스테이킹 보상 풀)과 'M' 지갑(스테이킹 풀)입니다. 두 지갑 모두 CA 토큰 유출 경로가 1개인 반면, 지속적인 유입 경로는 4개에 달합니다. 유입량이 유출량을 수학적으로 초과하기 때문에 대규모 언스테이킹이나 일일 POS 수익 지급 시에도 충분한 준비금이 항시 유지됩니다.",
+          "2. Z 주소 바이백 & 소각 엔진: Z 주소로 들어오는 모든 자본의 10%는 즉시 오픈 탈중앙화 시장에서 CA 토큰을 다시 사들여 영구 소각하는 데 사용됩니다. 나머지 90%는 프로토콜 BOT 금고에 적립됩니다. 이러한 구조적 디플레이션은 총 유통량을 지속적으로 줄여 POS 참여가 늘어날수록 건전한 가격 상승을 자연스럽게 뒷받침합니다.",
+          "3. 매크로 '연못 대 바다' 흡수 모델: CA 생태계가 특화된 애플리케이션 '연못'이라면, BOT 퍼블릭 체인은 거대한 '바다'입니다. 향후 수천 개의 dApp이 BOT Chain에 배포됨에 따라 거대한 자본 깊이와 가스비 소각이 국소적인 유동성 불균형을 손쉽게 흡수하고 해소합니다."
         ]
       },
       "candlestick-stability": {
-        "question": "BOT 가격 차트가 안정적으로 보이거나 변동이 적은 이유는 무엇인가요?",
+        "question": "CA와 WBOT은 일일 거래량이 많음에도 급격한 펌프앤덤프 없이 안정적인 캔들스틱 가격을 유지하는 이유가 무엇인가요?",
         "keywords": [
-          "차트",
-          "캔들스틱",
-          "가격",
-          "변동성",
-          "유동성",
-          "거래량"
+          "캔들스틱 안정성",
+          "알고리즘 금고 바이백",
+          "지속 가능한 성장",
+          "CEX 상장 로드맵"
         ],
         "geoTags": [
-          "global"
+          "글로벌 유동성"
         ],
-        "summary": "차트의 표시 형태는 거래량, 유동성, 선택한 시간 간격 및 데이터 출처에 따라 달라집니다.",
+        "summary": "기관급 장기 존속성을 위해 알고리즘 금고 개입, 탄탄한 2차 시장 실수요, 투기적 조작을 배제한 온체인 실질 효용을 바탕으로 정밀 설계되었기 때문입니다.",
         "answer": [
-          "차트가 안정적으로 보이거나 변동이 적다면 거래량 부족, 제한적인 유동성 또는 선택한 차트 기간이 원인일 수 있습니다.",
-          "거래소와 데이터 제공업체에 따라 표시되는 가격, 거래량 및 시간 간격이 다를 수도 있습니다.",
-          "시장 활동에 대한 결론을 내리기 전에 여러 신뢰할 수 있는 데이터 출처를 비교하고 마지막 거래 시간을 확인하세요."
+          "1. 장기적 생존성을 고려한 설계: 프로토콜은 장기 참여자에게 피해를 주는 인위적 투기 급등을 지양하고 건전하고 유기적인 확장을 위해 정교하게 구축되었습니다.",
+          "2. BOT 토큰의 가스 가치: BOT Chain은 기초 확장 단계에 있습니다. 새로운 생태계 dApp들이 출시됨에 따라 거래량이 증가하고 가스비가 누적됩니다(1.50% 영구 소각). 향후 10~20개의 일류 중앙화 거래소(CEX) 상장이 예정되어 있어 기관급 유동성이 한층 확대될 것입니다.",
+          "3. CA 금고 안전장치: CA 토크노믹스는 자본을 전용 프로토콜 금고로 모읍니다. 시장 가격이 과도하게 하락할 경우 금고 준비금이 알고리즘에 따라 작동하여 CA 토큰을 매입합니다. 나아가 2차 시장의 수요 증가가 자연스러운 가격 상승을 지속적으로 견인합니다."
         ]
       },
       "wbot-holders-price-growth": {
-        "question": "wBOT 보유자 수는 증가하는데 가격은 같은 속도로 오르지 않는 이유는 무엇인가요?",
+        "question": "WBOT 지갑 보유자가 90만 명을 넘었는데도 가격이 하루아침에 $20 이상 폭등하지 않고 $9.5에서 $9.9로 점진적으로 상승한 이유는 무엇인가요?",
         "keywords": [
-          "wBOT",
-          "보유자",
-          "가격",
-          "공급",
-          "수요",
-          "유동성"
+          "90만 개 이상 지갑",
+          "WBOT 가격 스케일링",
+          "100개 이상 프로젝트 인큐베이팅",
+          "물리적 DePIN 장비"
         ],
         "geoTags": [
-          "global"
+          "글로벌 합의"
         ],
-        "summary": "토큰 보유자 수와 시장 가격은 서로 다른 지표입니다.",
+        "summary": "BOT은 $9.50에서 ~$9.90+까지 건전하고 꾸준한 상승세를 보였습니다. 100개 이상의 인큐베이팅 dApp 배포, 물리적 채굴 장비 가동, 중앙화 거래소 상장에 따라 가치 실현이 본격화될 것입니다.",
         "answer": [
-          "더 많은 지갑이 토큰을 받거나 보유하면 보유자 수가 증가할 수 있습니다. 하지만 이것이 토큰 구매 수요의 증가를 반드시 의미하지는 않습니다.",
-          "가격은 매수 및 매도 주문의 균형, 이용 가능한 유동성, 거래량 및 시장 심리에 따라 달라집니다.",
-          "한 사람이 여러 지갑을 보유할 수도 있습니다. 따라서 보유자 수만으로 실제 경제 활동을 정확하게 판단할 수는 없습니다."
+          "1. 체계적인 초기 성장: BOT은 $9.50에서 ~$9.90+까지 안정적으로 상승해 왔습니다. BOT Chain은 CaryPact를 선도 벤치마크 프로토콜로 삼아 도입 단계에 있으므로, 가격 발견은 투기적 거품이 아닌 실질적인 초기 채택률을 반영합니다.",
+          "2. 향후 강력한 모멘텀: 재단은 현재 BOT Chain 배포를 준비 중인 100개 이상의 독립 프로젝트와 긴밀히 협의 중입니다. 동시에 물리적 AI 채굴 장비가 상업 생산 단계에 있어 대규모 채굴 팜 구축이 본격화될 예정입니다.",
+          "3. 거래소 확장: Q3/Q4로 계획된 주요 중앙화 거래소(CEX) 상장은 글로벌 리테일 및 기관 오더북을 열어 지속 가능한 네트워크 가치 평가의 기폭제가 될 것입니다."
         ]
       },
       "why-invest-differentiation": {
-        "question": "BOT은 다른 암호화폐 프로젝트와 무엇이 다른가요?",
+        "question": "다른 수많은 Web3 프로젝트 대신 CaryPact와 BOT Chain에 참여해야 하는 차별화 요소는 무엇인가요?",
         "keywords": [
-          "BOT",
-          "차별화",
-          "생태계",
-          "유틸리티",
-          "투자"
+          "포트폴리오 다각화",
+          "실사 (DYOR)",
+          "DePIN AI 아키텍처",
+          "독립 레이어 1"
         ],
         "geoTags": [
-          "global"
+          "글로벌 Web3 커뮤니티"
         ],
-        "summary": "이 프로젝트는 생태계, 토큰 메커니즘, 컴퓨팅 및 채굴 관련 활동을 주요 특징으로 내세웁니다.",
+        "summary": "규율 있는 자산 분산과 철저한 자체 조사(DYOR)를 권장합니다. BOT Chain은 독립 레이어 1에 디플레이션 토크노믹스, 분산형 슈퍼컴퓨팅, 투명한 로드맵을 결합했습니다.",
         "answer": [
-          "BOT은 토큰 경제, 채굴 관련 활동 및 생태계 내 서비스를 결합한 프로젝트로 소개됩니다.",
-          "실제 차별화 요소를 평가하려면 이용 가능한 제품, 블록체인에서 확인할 수 있는 활동, 기술 문서, 팀의 투명성 및 토큰의 실제 사용 현황을 살펴보세요.",
-          "수익 약속이나 미래 가격 전망은 향후 성과를 보장하지 않습니다. 재정적 결정을 내리기 전에 직접 충분히 조사하세요."
+          "1. 신중한 분산 투자와 DYOR: 저희는 항상 자체적인 조사를 수행하고 감당할 수 없는 자본은 투자하지 않을 것을 강조합니다. BOT Chain은 크립토 포트폴리오를 위한 프리미엄 분산 투자 자산으로 설계되었습니다.",
+          "2. 진정한 레이어 1 인프라: 혼잡한 기존 네트워크에 얹혀진 단순 애플리케이션 토큰과 달리, BOT Chain은 3초 블록 타임, 미미한 가스비, 1.50% 네이티브 가스 영구 소각을 갖춘 독립 EVM 레이어 1입니다.",
+          "3. 열린 기술 토론: 개발자와 참여자가 올바른 결정을 내릴 수 있도록 아키텍처 철학, 자금 흐름 구조, 디플레이션 경제성에 대한 객관적 비교를 언제나 환영합니다."
         ]
       },
       "bot-price-project-owners": {
-        "question": "BOT 프로젝트 운영자는 토큰 가격을 통제할 수 있나요?",
+        "question": "현재 ~$9.90 수준의 BOT 가격은 개발팀이나 프로젝트 팀이 BOT Chain 위에 구축하기에 너무 비싸지 않나요?",
         "keywords": [
-          "가격",
-          "팀",
-          "운영자",
-          "시장",
-          "투명성"
+          "개발자 보조금",
+          "$50M 지원 펀드",
+          "30% 가스비 리베이트",
+          "프로젝트 온보딩",
+          "빌더 트래픽 지원"
         ],
         "geoTags": [
-          "global"
+          "싱가포르 본사",
+          "글로벌 개발자 네트워크"
         ],
-        "summary": "시장 가격은 거래 활동과 유동성에 따라 달라집니다. 가격 통제에 관한 주장은 근거를 확인해야 합니다.",
+        "summary": "그렇지 않습니다. BOT Chain 재단은 신규 개발팀에게 사용자 트래픽 지원, 5천만 달러 규모의 빌더 보조금, 30%의 지속적인 가스비 리베이트 수익을 제공합니다.",
         "answer": [
-          "거래 시장에서 토큰 가격은 일반적으로 거래소의 수요와 공급에 따라 결정됩니다.",
-          "대량의 토큰을 보유한 사람은 대규모 거래를 통해 시장에 영향을 줄 수 있습니다. 그러나 이것이 언제나 가격을 통제할 수 있다는 뜻은 아닙니다.",
-          "가격 통제에 관한 주장을 평가하기 전에 시장 데이터, 토큰 분배 현황 및 지갑과 관련된 공개 정보를 확인하세요."
+          "1. 강력한 개발자 보조금: 높은 토큰 가치는 견고한 네트워크 보안과 검증인들의 참여도를 방증합니다. 개발자의 초기 진입 장벽을 낮추기 위해 BOT Chain 재단은 프로젝트 팀에 직접적인 트래픽과 20만 명 이상의 활성 유저 커뮤니티를 지원합니다.",
+          "2. 5,000만 달러 지원 펀드: 전용 5,000만 달러 규모의 생태계 펀드를 통해 BOT Chain에 배포하는 우수 팀들에게 인프라 및 유동성 보조금을 지급합니다.",
+          "3. 30% 가스비 리베이트 모델: 프로젝트 팀은 자신이 배포한 스마트 컨트랙트에서 발생하는 모든 가스비의 30%를 영구 리베이트로 돌려받으므로, 유동성 풀이 완전히 자리잡기 전에도 즉각적인 수익 창출이 가능합니다."
         ]
       },
       "bot-ecosystem-roadmap": {
-        "question": "BOT 생태계의 로드맵은 어떻게 되나요?",
+        "question": "향후 1~3년간 BOT 퍼블릭 체인 생태계는 어떻게 발전할 계획인가요?",
         "keywords": [
-          "로드맵",
-          "생태계",
-          "개발",
-          "제품",
-          "주요 목표"
+          "10,000개 dApp 로드맵",
+          "1-클릭 프로토콜",
+          "초고속 배포 (30분)",
+          "10-20개 CEX 상장"
         ],
         "geoTags": [
-          "global"
+          "글로벌 노드 네트워크",
+          "아시아 태평양",
+          "중동"
         ],
-        "summary": "예정된 단계와 진행 상황을 확인하려면 프로젝트의 공식 발표를 살펴보세요.",
+        "summary": "메인넷 출시 2개월 만에 90만 지갑 돌파; $50M 펀드와 10~20개 CEX 상장을 발판 삼아 30분 만에 dApp을 런칭하는 '1-클릭 프로토콜'로 올해 2천 개, 3년 내 1만 개 이상의 프로젝트를 온보딩할 계획입니다.",
         "answer": [
-          "프로젝트 로드맵에는 제품 개발, 생태계 확장, 서비스 통합 및 새로운 기능 추가 등이 포함될 수 있습니다.",
-          "개발이 진행되는 동안 일정과 목표가 변경될 수 있습니다. 이미 제공되는 기능과 향후 계획으로 발표된 내용을 구분하세요.",
-          "최신 정보를 확인하려면 BOT의 공식 채널과 업데이트를 살펴보세요."
+          "1. 폭발적인 지갑 수 증가: BOT Chain은 메인넷 출시 후 약 2개월 만에 90만 개 이상의 지갑 주소를 확보했습니다.",
+          "2. 200개 이상의 파이프라인 프로젝트: 현재 200개 이상의 팀과 협의 중입니다. 개발자가 30분 만에 완전한 dApp을 런칭할 수 있는 '1-클릭 프로토콜'을 통해 올해 말까지 2,000개, 3년 내 10,000개 프로젝트 온보딩을 목표로 합니다.",
+          "3. CaryPact의 선도적 시너지: 벤치마크 프로토콜로서 CaryPact의 급성장은 뛰어난 네트워크 성능을 입증하며 외부 EVM 개발자들의 브릿징 및 코드 이전을 유도하고 있습니다.",
+          "4. 유동성 및 CEX 상장: 10~20개 일류 중앙화 거래소 상장을 추진하여 2차 유동성과 글로벌 브랜드 인지도를 비약적으로 높일 것입니다."
         ]
       },
       "bohr-to-bot-rebrand": {
-        "question": "BOHR의 이름이 BOT으로 변경된 이유는 무엇인가요?",
+        "question": "BOT Chain의 이전 명칭은 BOHR였습니다. 이 전략적 리브랜딩의 배경과 의미는 무엇인가요?",
         "keywords": [
-          "BOHR",
-          "BOT",
-          "이름 변경",
-          "마이그레이션",
-          "브랜드"
+          "BOHR에서 BOT으로 리브랜딩",
+          "닐스 보어의 유산",
+          "AI 운영체제",
+          "지능형 에이전트 실행"
         ],
         "geoTags": [
-          "global"
+          "글로벌 리브랜딩"
         ],
-        "summary": "이름 변경의 이유와 토큰 마이그레이션 필요 여부는 공식 발표를 통해 확인하세요.",
+        "summary": "닐스 보어에서 영감을 받은 이론 물리학적 탐구 단계에서, AI 에이전트 및 DePIN 워크로드를 위한 지능형 실행 네트워크이자 온체인 운영체제로의 전환을 의미합니다.",
         "answer": [
-          "토큰 이름 변경은 새로운 브랜드 정체성, 프로젝트의 발전 또는 생태계 조직의 변화를 반영할 수 있습니다.",
-          "BOHR에서 BOT으로 변경된 정확한 이유와 토큰 마이그레이션이 필요한지 확인하려면 프로젝트의 공식 발표를 참고하세요.",
-          "공식 출처에서 절차를 확인하기 전에는 토큰을 새로운 주소로 전송하거나 거래에 서명하지 마세요."
+          "1. 이론적 탐구 단계 (BOHR): 초기 명칭 BOHR는 물리학자 닐스 보어를 기리는 이름으로, 초기 아키텍처 수립 기간 동안 기초 과학 탐구, 암호학적 검증, 합의 물리학의 원리를 상징했습니다.",
+          "2. BOT으로의 서사 진화: 퍼블릭 체인이 단순 기술 검증을 넘어 다자간 상업 생태계로 성숙함에 따라, 지능형 실행, 자동화된 에이전트 조율, 모듈러 AI 인프라를 직관적으로 전달할 수 있는 'BOT'으로 변경되었습니다.",
+          "3. 지능형 운영체제: BOT은 자율형 Web3 에이전트, 분산 머신러닝, 국경 없는 컴퓨팅 자원 스케줄링을 지원하는 분산 디지털 OS라는 네트워크의 사명을 명확하게 담아내고 있습니다."
         ]
       },
       "verify-150m-bot-supply": {
-        "question": "발표된 150M BOT 공급량을 어떻게 확인할 수 있나요?",
+        "question": "BOT 토큰의 총 발행량이 1억 5천만 개로 고정되어 있다는 점은 어떻게 확인할 수 있나요?",
         "keywords": [
-          "150M",
-          "총공급량",
-          "유통 공급량",
-          "익스플로러",
-          "블록체인"
+          "1.5억 개 BOT 총공급량",
+          "WBOT 주소 검증",
+          "블록 익스플로러 (scan.botchain.ai)",
+          "암호학적 증명"
         ],
         "geoTags": [
-          "global"
+          "온체인 투명성"
         ],
-        "summary": "공급량 정보는 블록체인 익스플로러와 공식 문서를 통해 직접 확인하세요.",
+        "summary": "scan.botchain.ai의 WBOT 제네시스 컨트랙트 주소를 통해 온체인에서 투명하게 검증할 수 있으며, 공식 백서 및 거래소 데이터 페이지와 대조 가능합니다.",
         "answer": [
-          "150M BOT이라는 공급량 발표는 블록체인에서 확인할 수 있는 데이터 및 프로젝트가 공개한 정보와 대조해야 합니다.",
-          "공식 컨트랙트 주소, 총공급량, 유통 공급량, 토큰 소각 또는 신규 발행 메커니즘의 존재 여부를 확인하세요.",
-          "https://scan.botchain.ai 에서 블록체인 익스플로러를 확인하고 공식 발표와 비교할 수 있습니다. 올바른 네트워크와 컨트랙트를 조회하고 있는지 반드시 확인하세요."
+          "1. 위변조 불가능한 온체인 원장: 1억 5천만 개의 BOT 제네시스 할당량은 BOT Chain 블록 익스플로러(https://scan.botchain.ai)의 WBOT 컨트랙트 주소에서 공개적으로 열람할 수 있습니다.",
+          "2. 공식 거래소 데이터 일치: 향후 중앙화 거래소 상장 절차가 완료됨에 따라 전체 공급량 및 유통량 지표는 CoinMarketCap 및 CoinGecko에서도 투명하게 공시되고 검증됩니다."
         ]
       },
       "mining-machine-pricing": {
-        "question": "BOT 채굴 장비의 가격은 얼마인가요?",
+        "question": "발표 자료에는 AI 채굴기 가격이 $3,960로 나왔는데 커뮤니티 통화에서는 $3,600라고 들었습니다. 공식 가격은 얼마인가요?",
         "keywords": [
-          "채굴 장비",
-          "가격",
-          "장비",
-          "구매",
-          "비용"
+          "AI 채굴기 가격",
+          "DePIN 장비 사전 판매",
+          "공식 가격 안내",
+          "하드웨어 배치"
         ],
         "geoTags": [
-          "global"
+          "글로벌 하드웨어 배송"
         ],
-        "summary": "채굴 장비 가격은 모델, 사양, 재고 및 판매 조건에 따라 달라집니다.",
+        "summary": "초기 수치는 개발 단계의 잠정 추정치였으며, 모든 구속력 있는 공식 하드웨어 가격, 배치 사양, 배송 일정은 상업 출하 전 공식 커뮤니티 채널을 통해 정식 공지됩니다.",
         "answer": [
-          "채굴 장비의 가격은 컴퓨팅 성능, 구성, 전력 소비량, 배송비 및 보증 조건에 따라 달라질 수 있습니다.",
-          "$3,960 또는 $3,600과 같은 가격이 제시되어 있더라도 판매자에게 확인하기 전까지 현재 판매 가격으로 간주하지 마세요.",
-          "결제하기 전에 최신 견적을 요청하고 장비 사양, 배송 조건, 보증 내용 및 판매자의 신원을 확인하세요."
+          "1. 초기 단계 안내: 초기 세미나 등에서 언급된 금액($3,600 – $3,960 USD)은 부품 공급망 원가 변동에 따른 내부 엔지니어링 추정치였습니다.",
+          "2. 공식 발표 기준: 최종 확정 판매가, 배치별 수량, 국제 물류 관련 세부 사항은 오직 검증된 공식 채널(t.me/tunicacasupport 및 x.com/CaryPact_BOT)을 통해서만 안내됩니다."
         ]
       },
       "mining-machine-manufacturer": {
-        "question": "BOT 채굴 장비는 누가 제조하나요?",
+        "question": "실물 BOT AI 채굴기는 어떤 제조사에서 생산하고 있으며, 사명이 비공개인 이유는 무엇인가요?",
         "keywords": [
-          "제조업체",
-          "장비",
-          "채굴",
-          "공급업체",
-          "하드웨어"
+          "하드웨어 제조사",
+          "Tier-1 파운드리 NDA",
+          "DePIN 공급망",
+          "비밀유지계약"
         ],
         "geoTags": [
-          "global"
+          "글로벌 제조 컨소시엄"
         ],
-        "summary": "공식 출처를 통해 제조업체의 신원과 하드웨어 사양을 확인하세요.",
+        "summary": "공식 롤아웃 전까지 독점 칩 공급 라인을 보호하기 위해 엄격한 상호 비밀유지계약(NDA)에 따라 글로벌 Tier-1 전문 제조 파트너와 계약하여 생산되고 있습니다.",
         "answer": [
-          "BOT 채굴 장비의 제조업체를 확인하려면 프로젝트의 공식 문서와 판매자가 제공하는 정보를 살펴보세요.",
-          "제조업체의 법적 명칭, 모델 번호, 기술 사양, 보증 조건 및 사후 서비스에 대한 정보를 요청하세요.",
-          "BOT 생태계와 관련된 이름으로 판매된다는 이유만으로 해당 장비가 BOT 프로젝트에서 제조되거나 인증되었다고 가정하지 마세요."
+          "1. 엄격한 상업적 비밀유지계약(NDA): 특화 칩 물량을 선점하고, 지적 재산권 침해를 방지하며 부품 공급망을 보호하기 위해 제조 컨소시엄은 강력한 비공개 조약 하에 운영됩니다.",
+          "2. 공식 공개 일정: 제조 파트너 및 데이터센터 코로케이션 인증 내역은 채굴 장비의 상업 출하 시점에 맞춰 정식으로 공개될 예정입니다."
         ]
       },
       "tier-1-mining-operators": {
-        "question": "Tier 1 채굴 운영자는 누구인가요?",
+        "question": "현재 BOT 채굴 인프라를 구축하고 있는 기관급 채굴 운영사는 어디인가요?",
         "keywords": [
-          "Tier 1",
-          "운영자",
-          "채굴",
-          "등급",
-          "보상"
+          "기관 채굴 컨소시엄",
+          "산업용 코로케이션",
+          "검증 인프라"
         ],
         "geoTags": [
-          "global"
+          "태국 채굴 시설",
+          "몽골 데이터센터"
         ],
-        "summary": "등급 및 보상 자격 요건은 해당 프로그램의 공식 규칙에서 확인해야 합니다.",
+        "summary": "태국과 몽골에 대규모 시설을 운영 중인 최상위 산업용 채굴 기업들이 하드웨어를 배치하고 있으며, 구체적인 사명은 공동 발표 전까지 NDA에 따라 보호됩니다.",
         "answer": [
-          "채굴 프로그램은 컴퓨팅 성능, 장비 수량, 참여 수준 또는 기타 정해진 기준에 따라 참가자를 분류할 수 있습니다.",
-          "Tier 1 운영자가 되기 위한 구체적인 요건은 BOT의 공식 문서를 통해 확인해야 합니다.",
-          "참여하기 전에 요구 사항, 추가 비용 여부, 보상 계산 규칙 및 출금 조건을 확인하세요."
+          "1. 지역 데이터센터 배치: 태국과 몽골의 주요 기관급 운영사들이 BOT 채굴 클러스터 가동을 위해 시설 준비와 전력 할당을 마쳤습니다.",
+          "2. 기업 간 NDA 준수: 송전망 연결 및 본격 가동 마일스톤에 도달하면 공식 공동 보도자료를 통해 파트너 사명이 공개될 것입니다."
         ]
       },
       "carypact-compute-vs-bot-rigs": {
-        "question": "CaryPact 컴퓨팅과 BOT 채굴 장비는 어떤 차이가 있나요?",
+        "question": "현재 CaryPact의 컴퓨팅 파워는 누가 사용하고 있으며, CA 해시레이트와 실물 BOT 채굴기의 차이점은 무엇인가요?",
         "keywords": [
-          "CaryPact",
-          "컴퓨팅",
-          "채굴 장비",
-          "하드웨어",
-          "인프라"
+          "CA 해시레이트 대 BOT 채굴기 차이",
+          "16,800 CA 풀",
+          "기업용 AI 추론",
+          "토큰화된 연산력"
         ],
         "geoTags": [
-          "global"
+          "글로벌 컴퓨팅 그리드"
         ],
-        "summary": "컴퓨팅과 암호화폐 채굴은 서로 다른 목적에 사용될 수 있습니다. 실제 기능과 비용을 비교하세요.",
+        "summary": "CA 해시레이트는 일일 16,800 CA 풀을 분배받기 위한 프로토콜 내부 회계 단위입니다. 실물 BOT 채굴기는 외부 AI 개발사들에 실제 연산력을 판매하는 물리적 하드웨어입니다.",
         "answer": [
-          "컴퓨팅 자원은 다양한 작업을 실행하는 데 사용될 수 있지만, 채굴 장비는 일반적으로 특정 네트워크나 프로토콜과 관련된 연산을 수행하도록 설계됩니다.",
-          "CaryPact와 BOT 채굴 장비를 비교할 때는 지원 작업, 하드웨어 사양, 전력 소비량, 운영 비용 및 보상 방식을 확인하세요.",
-          "성능 및 수익에 관한 주장은 검증 가능한 데이터로 확인해야 합니다. 특정 프로젝트와 관련된 장비라는 이유만으로 수익이 보장되지는 않습니다."
+          "1. CA 컴퓨팅 파워 (내부 수익 창출): CA 해시레이트(1 USDT = 1 유닛)를 구매하면 일일 16,800 CA 배출 풀에 대한 영구적인 지분을 획득하게 됩니다. 이는 내부적인 보상 분배 메커니즘으로 작동합니다.",
+          "2. 실물 BOT 채굴기 (외부 상업용 AI 서비스): 현재 생산 중인 물리적 BOT 채굴기는 실물 장비입니다. 향후 운영자들은 분산 채굴 팜을 구축하여 실제 GPU/CPU 연산 용량을 외부 AI 기업에 모델 학습 및 추론용으로 유상 제공하고 상업 수수료를 벌어들이게 됩니다."
         ]
       },
       "hashrate-supply-servers": {
-        "question": "해시레이트와 서버 공급량은 어떤 관계가 있나요?",
+        "question": "해시레이트는 누가 공급하며, 물리적 서버는 어디에 위치해 있나요?",
         "keywords": [
-          "해시레이트",
-          "서버",
-          "공급량",
-          "채굴",
-          "컴퓨팅 성능"
+          "해시레이트 할당 모델",
+          "프로토콜 슈퍼컴퓨팅",
+          "분산형 노드"
         ],
         "geoTags": [
-          "global"
+          "글로벌 Tier-3/4 데이터센터"
         ],
-        "summary": "해시레이트는 특정 연산에 사용할 수 있는 컴퓨팅 성능을 나타냅니다. 해시레이트만으로 토큰 가치가 결정되지는 않습니다.",
+        "summary": "해시레이트를 구매하면 글로벌 분산 컴퓨팅 인프라를 기반으로 일일 CA 토큰 배출량에 대한 지분을 온체인에서 활성화하게 됩니다.",
         "answer": [
-          "해시레이트는 해당 측정 방식을 사용하는 채굴 시스템에서 단위 시간당 수행되는 연산량을 나타냅니다.",
-          "서버 성능, 가동 중인 장비 수 및 각 장비의 효율성은 이용 가능한 해시레이트에 영향을 줄 수 있습니다.",
-          "토큰 공급량, 해시레이트 및 가격은 서로 다른 지표입니다. 이들 사이의 관계는 네트워크 규칙, 수요 및 경제 상황에 따라 달라집니다."
+          "1. 해시레이트 개념의 명확화: CaryPact 프로토콜에서 해시레이트를 획득한다는 것은 단일 서버 본체를 개별 임대하는 것이 아닙니다. 온체인 상의 표준화된 연산 유닛을 활성화하는 개념입니다.",
+          "2. 비례 분배 방식: 전체 글로벌 네트워크 해시레이트 대비 보유한 유효 해시레이트 비율에 따라 16,800 CA 마이닝 배출 풀에서 일일 지분이 결정되며, 기간 계수(K ≈ 1.01)로 복리 계산됩니다."
         ]
       },
       "v4-earnings-differential": {
-        "question": "V4의 수익이 이전 버전과 다른 이유는 무엇인가요?",
+        "question": "V4 등급을 달성했습니다. 일일 수익이 변동된 이유와 차액 분배(차등 수익) 모델은 어떻게 작동하나요?",
         "keywords": [
-          "V4",
-          "수익",
-          "보상",
-          "업데이트",
-          "채굴"
+          "V4 등급 수익",
+          "팀 보상",
+          "관리 보상 (7,000 CA)",
+          "POS 동적 보상 (6%-30%)",
+          "차액 배분"
         ],
         "geoTags": [
-          "global"
+          "글로벌 앰버서더 네트워크"
         ],
-        "summary": "수익 차이는 보상 규칙, 참여 상황 또는 네트워크 환경의 변화로 인해 발생할 수 있습니다.",
+        "summary": "V4 리더는 3가지 경로로 수익을 얻습니다: 팀 보상(글로벌 성장 대비 산하 조직 해시레이트 비율), 관리 보상(7,000 CA 풀 공유), POS 동적 차액 보상(6%~30%).",
         "answer": [
-          "새 버전에 표시되는 수익은 매개변수 변경, 계산 규칙, 참여 수준 또는 네트워크 환경의 변화로 인해 달라질 수 있습니다.",
-          "V4와 이전 버전의 공식 규칙을 비교하고 금액이 어떤 기간을 기준으로 계산되었는지 확인하세요.",
-          "과거 수익이나 예상 수익은 미래의 수익을 보장하지 않습니다. 결정을 내리기 전에 현재 적용되는 조건을 확인하세요."
+          "1. 팀 보상 메커니즘: 팀 수익은 [본인 산하 해시레이트 ÷ 글로벌 산하 총 해시레이트]로 산출됩니다. 일일 CA 획득량을 늘리려면 본인 팀의 컴퓨팅 파워 성장률이 글로벌 전체의 성장률보다 앞서야 합니다.",
+          "2. 관리 풀 가중치 배분: V4 회원은 매일 배출되는 7,000 CA 고정 풀에서 더 높은 가중치 승수를 받습니다. V4~V10 등급에 도달하는 리더가 많아질수록 해당 자격자들 사이에서 풀이 안분 배분됩니다(풀은 2년마다 10%씩 감소).",
+          "3. POS 차액 지급 (6% ~ 30%): POS 동적 보상은 파트너와의 등급 격차(차액)에 따라 지급됩니다. 직추천 파트너 대비 본인의 VIP 등급이 높을수록 더 큰 차액 퍼센티지를 확보할 수 있습니다.",
+          "4. 복리 운용의 이점: 모든 보상은 유동적인 CA 토큰으로 정산됩니다. 리더들은 지급받은 보상을 POS에 재스테이킹하여 CA 가치 상승과 함께 자산을 복리로 불려나갈 수 있습니다."
         ]
       },
       "same-rank-bonus-distribution": {
-        "question": "같은 등급의 참가자들에게 보너스는 어떻게 분배되나요?",
+        "question": "하위 파트너가 나와 동일하거나 더 높은 등급에 도달하면 보너스 분배는 어떻게 처리되나요?",
         "keywords": [
-          "보너스",
-          "동일 등급",
-          "분배",
-          "보상",
-          "순위"
+          "동일 등급 공유",
+          "상위 등급 파트너",
+          "풀 공유 자격",
+          "POS 오버라이드"
         ],
         "geoTags": [
-          "global"
+          "커뮤니티 리더십"
         ],
-        "summary": "보너스 분배 방식은 프로그램 규칙과 각 등급에 설정된 기준에 따라 달라집니다.",
+        "summary": "본인이 달성한 등급 풀(예: V5는 V1~V5 풀)에 대한 지분은 그대로 유지됩니다. 파트너가 동일 등급이 되면 해당 풀을 함께 공유하며, POS 동적 차액 보상은 상위 등급으로 올라갈 때까지 해당 레그에서 일시 중단됩니다.",
         "answer": [
-          "보상 프로그램은 등급, 참여 수준, 성과 또는 기타 정해진 기준에 따라 보너스를 분배할 수 있습니다.",
-          "여러 참가자의 등급이 같다면 보너스 분배 방식은 프로그램의 공식 규칙에 명시되어 있어야 합니다.",
-          "보너스가 균등하게 분배된다고 가정하기 전에 적용되는 계산식, 계산 기간, 자격 요건 및 제한 사항을 확인하세요."
+          "1. 등급 풀 권리 유지: 본인이 달성한 직급까지의 모든 풀 권리는 유지됩니다(예: V5는 V1부터 V5까지의 모든 풀을 수령). 팀원이 동일 직급에 도달하면 해당 풀을 함께 공유하게 됩니다.",
+          "2. POS 스테이킹 차액 일시 정지: POS 스테이킹 동적 보상은 등급 격차에 의존합니다. 파트너가 본인과 같은 등급이 되면, 본인이 다음 등급으로 승급하기 전까지 해당 라인의 차액 마진은 0%가 됩니다."
         ]
       },
       "time-compensation-mechanism": {
-        "question": "시간 기반 보상 메커니즘은 어떻게 작동하나요?",
+        "question": "나중에 VIP 등급으로 승급한 참여자가 불리하지 않은 이유는 무엇인가요?",
         "keywords": [
-          "시간",
-          "보상",
-          "수익",
-          "기간",
-          "메커니즘"
+          "시간 보상 메커니즘",
+          "공정성 알고리즘",
+          "후발 주자 공정성",
+          "지속 가능한 네트워크 구축"
         ],
         "geoTags": [
-          "global"
+          "글로벌 빌더 커뮤니티"
         ],
-        "summary": "보상 조건은 해당 프로그램의 공식 규칙을 통해 확인해야 합니다.",
+        "summary": "CaryPact의 '시간 보상 메커니즘(Time Compensation Mechanism)'은 후발 승급자에게 더 높은 가중치 보상을 부여하여 초기 참여자의 기득권 고착화를 방지하고 공정한 동기를 부여합니다.",
         "answer": [
-          "시간 기반 보상 메커니즘은 참가 기간, 활동 기간 또는 기타 매개변수를 사용하여 지급액이나 보상을 계산할 수 있습니다.",
-          "구체적인 계산식, 자격 요건 및 제한 사항은 적용되는 BOT 프로그램의 규칙에 따라 달라집니다.",
-          "시간 측정 방식, 보상 계산 시점 및 충족해야 하는 조건을 이해하려면 공식 문서를 확인하세요."
+          "1. 알고리즘적 형평성: 초기 진입자가 후발 참여자의 파이를 영구히 희석시키는 기존 다단계 구조와 달리, CaryPact는 프로그램화된 시간 보상 메커니즘을 내장하고 있습니다.",
+          "2. 동적 가중치 부스트: 후기 단계에서 VIP 등급을 달성한 빌더에게는 강화된 가중치 배수가 적용되어, 네트워크가 성숙한 이후에도 언제든 공평한 수익 기회가 제공됩니다."
         ]
       },
       "dynamic-weight-v1-v10": {
-        "question": "V1부터 V10까지 동적 가중치는 어떻게 작동하나요?",
+        "question": "V1부터 V10까지 동적 가중치(Dynamic Weight) 공식은 어떻게 변화하나요?",
         "keywords": [
-          "동적 가중치",
-          "V1",
-          "V10",
-          "레벨",
-          "보상"
+          "개인 가중치 공식",
+          "V1~V10 승수",
+          "기본 레벨 가중치",
+          "시간 보너스 스케일링 (1~383)"
         ],
         "geoTags": [
-          "global"
+          "생태계 거버넌스"
         ],
-        "summary": "레벨별 가중치 차이는 공식 계산식을 통해 확인해야 합니다.",
+        "summary": "개인 가중치 = 기본 레벨 가중치 × 시간 보너스. 통합 가중치는 V1의 1에서부터 V10의 약 ~383까지 완만하게 확대되어 장기적인 리더십에 확실한 보상을 제공합니다.",
         "answer": [
-          "동적 가중치 시스템은 참가자의 레벨이나 버전에 따라 서로 다른 계수를 적용할 수 있습니다.",
-          "V1부터 V10까지의 작동 방식을 이해하려면 각 레벨에 적용되는 계수, 레벨 상승 조건 및 관련 제한 사항을 확인하세요.",
-          "레벨 번호만으로 보상 금액을 추정하지 마세요. 실제 결과는 계산식과 적용되는 규칙에도 영향을 받습니다."
+          "1. 수학적 가중치 공식: 개인 가중치 = 기본 레벨 가중치 × 시간 보너스.",
+          "2. 승수의 단계적 증가: V1에서 기본 가중치 1로 시작하여, 산하 네트워크 목표치를 달성함에 따라 통합 배수는 V10에서 최대 약 ~383까지 상승하여 최상위 합의 파트너의 일일 DAO 배당금을 극대화합니다."
         ]
       },
       "wallet-hacked-recovery": {
-        "question": "암호화폐 지갑이 해킹되면 어떻게 해야 하나요?",
+        "question": "지갑이 해킹당했을 때 어떤 일이 발생하며, CaryPact 계정 조직도를 새 지갑에 다시 연결할 수 있나요?",
         "keywords": [
-          "지갑",
-          "해킹",
-          "보안",
-          "복구",
-          "복구 문구"
+          "12단어 시드 구문",
+          "비수탁 보안",
+          "계정 재연결 티켓",
+          "피싱 방지"
         ],
         "geoTags": [
-          "global"
+          "자체 수탁 Web3"
         ],
-        "summary": "남아 있는 자산을 즉시 보호하고 복구 문구나 개인 키를 절대 공유하지 마세요.",
+        "summary": "Web3 지갑은 철저한 비수탁형이므로 도난당한 온체인 자금은 복구할 수 없습니다. 다만 CaryPact 파트너 조직망을 보존하려면 즉시 안전한 새 지갑을 만들어 고객지원 티켓을 접수하세요.",
         "answer": [
-          "지갑이 침해되었다고 의심되면 의심스러운 기기의 사용을 중단하고 계정과 기기의 보안 상태를 확인하세요.",
-          "복구 문구나 개인 키가 노출되었다면 신뢰할 수 있는 기기에서 새로운 보안 지갑을 만드세요. 안전하게 진행할 수 있다면 남은 자산을 새 지갑으로 옮기세요.",
-          "도움을 제공한다고 주장하는 사람이라도 복구 문구, 개인 키 또는 인증 코드를 절대 알려주지 마세요.",
-          "블록체인 거래는 일반적으로 되돌릴 수 없습니다. 거래 ID 등의 정보를 보관하고 사고를 신고하기 위해 공식 지원 채널에 문의하세요."
+          "1. 비수탁형 소유권 원칙: 블록체인은 철저한 사용자 자체 수탁을 전제로 합니다. CaryPact나 지갑 개발사 모두 개인 키나 시드 구문을 알 수 없습니다. 유출된 온체인 자산은 되돌릴 수 없습니다.",
+          "2. 12단어 시드 구문 보호: 니모닉 12단어는 항상 오프라인 종이에 수기로 적어 보관하세요. 클라우드, 스크린샷, 메신저 등에 절대로 보관하지 마십시오.",
+          "3. 계정 조직도 재연결: 지갑이 노출되었다면 즉시 오염되지 않은 안전한 기기에서 새 시드 구문으로 새 지갑을 생성하세요. 그 후 CaryPact 공식 백엔드 지원팀에 문의하여 본인 확인을 거친 뒤 조직도 트리를 새 주소로 재지정받아야 합니다."
         ]
       },
       "bo-wallet-vs-tokenpocket": {
-        "question": "BO 지갑과 TokenPocket은 어떤 차이가 있나요?",
+        "question": "네이티브 BO Wallet이 있는데도 TokenPocket, MetaMask, Trust Wallet을 함께 사용할 수 있는 이유는 무엇인가요?",
         "keywords": [
-          "BO 지갑",
-          "TokenPocket",
-          "암호화폐 지갑",
-          "보안",
-          "블록체인"
+          "BO Wallet",
+          "TokenPocket 지원",
+          "MetaMask 연동",
+          "EVM 호환성 (Chain ID 1918)"
         ],
         "geoTags": [
-          "global"
+          "글로벌 Web3 지갑"
         ],
-        "summary": "지원 네트워크, 기능, 보안 조치 및 앱의 공식 배포 경로를 비교하세요.",
+        "summary": "BO Wallet은 생태계 전용 클라이언트로서 현재 고도화 작업이 진행 중입니다. 동시에 전 세계 사용자들의 선택권을 보장하기 위해 TokenPocket, MetaMask, Trust Wallet과의 완전한 호환성을 지원합니다.",
         "answer": [
-          "지갑마다 지원 네트워크, 기능, 자산 관리 옵션 및 사용자 경험이 다를 수 있습니다.",
-          "BO 지갑과 TokenPocket 중 하나를 선택하기 전에 BOT 네트워크와의 호환성, 앱의 공식 배포 경로 및 제공되는 보안 기능을 확인하세요.",
-          "앱은 신뢰할 수 있는 출처에서만 다운로드하세요. 복구 문구를 지원 담당자나 제3자에게 제공하지 마세요."
+          "1. BO Wallet의 지속적 최적화: BO Wallet은 BOT Chain 전용 기능에 특화되어 있으며, 대규모 글로벌 마케팅 전에 인터페이스 최적화를 지속하고 있습니다.",
+          "2. 개방된 Web3 자유도: BOT Chain은 완전한 EVM 호환 네트워크(Chain ID 1918)입니다. 사용자는 개인의 작업 환경에 맞춰 익숙한 TokenPocket, Trust Wallet, MetaMask 등을 자유롭게 선택하여 이용할 수 있습니다."
         ]
       },
       "headquarters-global-offices": {
-        "question": "BOT 본사는 어디에 있으며 해외 사무소는 어디에 있나요?",
+        "question": "CaryPact와 CoinStore의 주요 본사 및 글로벌 지역 사무소는 어디에 위치해 있나요?",
         "keywords": [
-          "본사",
-          "사무소",
-          "주소",
-          "글로벌 진출",
-          "팀"
+          "싱가포르 본사",
+          "홍콩 7,000평방피트 허브",
+          "두바이 UAE 사무소",
+          "태국 지역 오피스",
+          "브라질 확장"
         ],
         "geoTags": [
-          "global"
+          "싱가포르 (글로벌 본사)",
+          "홍콩 (합의 허브)",
+          "UAE 두바이 (Web3 센터)",
+          "태국 방콕",
+          "브라질 상파울루"
         ],
-        "summary": "사무소 주소와 연락처는 공식적이고 검증 가능한 출처를 통해 확인하세요.",
+        "summary": "CaryPact와 CoinStore의 주요 운영 본부는 싱가포르에 있습니다. 태국에서 활발히 지사가 운영 중이며, 2026년 Q2/Q3에 홍콩과 두바이에 7,000평방피트 규모의 플래그십 허브가 오픈하고 브라질 확장도 준비 중입니다.",
         "answer": [
-          "BOT 본사와 해외 사무소의 위치를 알아보려면 프로젝트의 공식 채널에 게시된 연락처 정보를 확인하세요.",
-          "사무소 관련 정보를 신뢰하기 전에 주소, 관련 법인의 공식 명칭 및 연락처를 확인하세요.",
-          "주소나 사무소가 공개되어 있다는 사실만으로 프로젝트의 규제상 지위나 재무 건전성이 입증되는 것은 아닙니다."
+          "1. 싱가포르 중앙 본부: CaryPact와 전략 파트너인 CoinStore 모두 핵심 운영 및 기술 본부를 싱가포르에 두고 있습니다.",
+          "2. 태국 거점: 지역 운영 및 개발자 지원 센터가 태국에서 활발히 기능하고 있습니다.",
+          "3. 홍콩 & 두바이 플래그십 허브: 중동 및 동아시아 기관 파트너 지원을 위해 2026년 6~7월경 홍콩과 두바이에 각각 약 7,000평방피트 규모의 대형 허브를 개소합니다.",
+          "4. 라틴 아메리카 (브라질): 빠르게 증가하는 남미 커뮤니티의 채택을 지원하기 위해 브라질 현지 운영 센터 설립을 준비하고 있습니다."
         ]
       },
       "why-not-registered-company": {
-        "question": "BOT은 왜 회사로 등록되어 있지 않나요?",
+        "question": "CaryPact가 전통적인 중앙집권형 주식회사 법인으로 등록하지 않은 이유는 무엇인가요?",
         "keywords": [
-          "등록",
-          "회사",
-          "규제",
-          "법인",
-          "컴플라이언스"
+          "프로토콜 우선 아키텍처",
+          "DeFi 탈중앙화",
+          "검열 저항성",
+          "스마트 컨트랙트 거버넌스"
         ],
         "geoTags": [
-          "global"
+          "글로벌 자율 프로토콜"
         ],
-        "summary": "법적 지위와 규제 의무는 관련 공공 등록부 및 관할 당국을 통해 확인해야 합니다.",
+        "summary": "CaryPact는 기업 법인이 아닌 자율적인 DeFi 프로토콜로 설계되었기 때문입니다. 프로토콜 우선의 스마트 컨트랙트는 검열 저항성, 투명성, 커뮤니티 주도 거버넌스를 보장합니다.",
         "answer": [
-          "프로젝트의 법적 지위는 조직 구조, 운영 주체 및 사업을 수행하는 국가나 지역의 법률에 따라 달라집니다.",
-          "BOT 또는 관련 조직이 법인으로 등록되어 있는지 확인하려면 해당 공식 등록부와 프로젝트가 공개한 법률 문서를 살펴보세요.",
-          "관련 정보를 쉽게 찾을 수 없다는 이유만으로 등록 또는 미등록 여부를 단정하지 마세요. 관할 당국을 통해 확인하세요."
+          "1. 프로토콜 우선의 탈중앙화: CaryPact는 블록체인 인프라 위에서 전적으로 실행되는 자율 DeFi 프로토콜로 작동합니다. 거버넌스, 일일 보상 정산, 연산 스케줄링이 모두 온체인에서 투명하게 조율됩니다.",
+          "2. 중앙화된 관할권 리스크 회피: 전통적인 법인 설립은 단일 실패점, 관료적 병목현상, 관할권별 법적 제약을 유발하여 탈중앙화, 검열 저항성, 무허가 접근이라는 Web3의 핵심 가치와 충돌합니다.",
+          "3. 글로벌 개발자 집단: 선도적인 분산 네트워크(Ethereum, Bitcoin 등)와 마찬가지로, CaryPact는 전 세계 개발자, 노드 운영자, 참여자들의 개방된 협업을 통해 발전합니다."
         ]
       },
       "cmc-coingecko-volume-changes": {
-        "question": "CoinMarketCap과 CoinGecko에서 BOT 가격이나 거래량이 서로 다른 이유는 무엇인가요?",
+        "question": "CoinMarketCap이나 CoinGecko에 표시되는 거래량이 수십억 달러에서 수억 달러로 조정된 이유는 무엇인가요?",
         "keywords": [
-          "CoinMarketCap",
-          "CoinGecko",
-          "거래량",
-          "가격",
-          "시장 데이터"
+          "CoinMarketCap 거래량 동기화",
+          "CoinGecko API 인덱싱",
+          "DEX 유동성 검증",
+          "실시간 스캔"
         ],
         "geoTags": [
-          "global"
+          "글로벌 데이터 애그리게이터"
         ],
-        "summary": "데이터 플랫폼마다 출처, 계산 방법 및 업데이트 시점이 다를 수 있습니다.",
+        "summary": "정보 집계 사이트들이 API 필터, 자전거래 방지 알고리즘, DEX 페어 가중치를 정기적으로 재조정하기 때문입니다. 실제 온체인 유동성과 트랜잭션은 scan.botchain.ai에서 24시간 검증 가능합니다.",
         "answer": [
-          "CoinMarketCap과 CoinGecko는 여러 거래소의 데이터를 수집하고 서로 다른 방법론을 적용할 수 있으므로 가격이나 거래량에 차이가 발생할 수 있습니다.",
-          "거래 페어 선택, 통화 환산, 업데이트 지연 또는 데이터 필터링 방식도 차이의 원인이 될 수 있습니다.",
-          "수치를 비교할 때는 컨트랙트 주소, 거래 페어, 거래소, 마지막 업데이트 시간 및 표시된 거래량의 정의를 확인하세요."
+          "1. 애그리게이터의 API 보정 작업: 제3자 집계 사이트(CMC, CoinGecko)는 자체 인덱싱 필터를 업데이트하거나 중복 거래쌍을 제거하며 보고 수치를 주기적으로 보정합니다.",
+          "2. 온체인의 진실성: 제3자 웹사이트 표시에만 의존할 필요 없이, 실제 스왑 트랜잭션, 풀의 깊이, 소각 내역은 공개된 BOT Chain 익스플로러(https://scan.botchain.ai)에서 언제든 원본 데이터를 검증할 수 있습니다."
         ]
       },
       "ca-card-mobile-roadmap": {
-        "question": "CA 카드와 모바일 기능은 언제 이용할 수 있나요?",
+        "question": "CA 암호화폐 카드 및 CA Web3 스마트폰의 출시 일정은 어떻게 되나요?",
         "keywords": [
-          "CA 카드",
-          "모바일",
-          "로드맵",
-          "앱",
-          "결제"
+          "CA 암호화폐 카드",
+          "CA 스마트폰",
+          "Web3 하드웨어 유틸리티",
+          "커뮤니티 로드맵"
         ],
         "geoTags": [
-          "global"
+          "글로벌 컨슈머 롤아웃"
         ],
-        "summary": "출시 일정과 기능 제공 여부는 공식 발표를 통해 확인해야 합니다.",
+        "summary": "암호화폐 체크카드와 전용 Web3 스마트폰 등의 하드웨어 제품군은 기술 기획 단계에 있으며, 글로벌 커뮤니티의 주요 사용자 마일스톤 달성에 맞춰 공식 런칭될 예정입니다.",
         "answer": [
-          "CA 카드나 새로운 모바일 기능의 제공 시점은 개발 진행 상황, 필요한 서비스 연동 및 규제 요건에 따라 달라질 수 있습니다.",
-          "Q2 또는 Q3 2026을 포함한 출시 일정은 실제 제공이 확인될 때까지 예정된 목표로 간주해야 합니다.",
-          "최신 발표, 지원 지역, 이용 자격 및 사용 방법은 BOT의 공식 채널에서 확인하세요."
+          "1. 하드웨어 생태계 로드맵: 실물 암호화폐 결제 카드와 Web3 최적화 모바일 기기의 개념 설계가 생태계 실무 그룹에 의해 구체화되고 있습니다.",
+          "2. 마일스톤 연동 발표: 전 세계 활성 사용자 목표치가 달성되는 시점에 맞춰 공식 개발 로드맵, 세부 기기 스펙, 사전 주문 등록 일정이 공개될 예정입니다."
         ]
       }
     }
   },
   "GuidesPage": {
-  "breadcrumbHome": "홈",
-  "breadcrumbCurrent": "가이드 및 튜토리얼",
-  "badge": "인터랙티브 온보딩 및 단계별 튜토리얼",
-  "titlePrefix": "CaryPact 및 BOT Chain",
-  "titleHighlight": "단계별 가이드",
-  "description": "BO Wallet 생성, 컴퓨팅 파워 확보, 스테이킹 티어, CA 토큰 이코노믹스, 낮은 슬리피지의 BDEX 스왑을 다루는 검증된 단계별 마스터클래스입니다.",
-  "cheatSheetButton": "치트 시트 (PDF)",
-  "askAiButton": "AI Copilot에게 질문",
-  "askAiSetupQuestion": "CaryPact와 BO Wallet을 처음부터 설정하는 방법을 단계별로 안내해 주세요.",
-  "supportEyebrow": "맞춤형 도움이 필요하신가요?",
-  "supportTitle": "BO Wallet 설정이나 스테이킹 위임 중에 막히셨나요?",
-  "supportDescription": "커뮤니티 멘토와 AI Copilot이 연중무휴 24시간 가스 추정, 개인 키 보안, 컴퓨팅 노드 검증을 안내해 드립니다.",
-  "faqButton": "자주 묻는 질문",
-  "faqQuestion": "CaryPact 컴퓨팅 파워와 CA 토큰 스테이킹의 차이를 설명해 주세요.",
-  "launchDapp": "CaryPact DApp 실행"
-},
-"GuidesSection": {
-  "eyebrow": "도움말 센터 및 지식 베이스",
-  "titlePrefix": "가이드 및",
-  "titleHighlight": "튜토리얼",
-  "description": "CaryPact와 BOT Chain을 완벽하게 익히는 데 필요한 모든 것. 아래 주제 카드를 선택해 단계별 튜토리얼, 해시레이트 활성화, PoS 스테이킹 승수, 크로스체인 출금을 살펴보세요.",
-  "searchLabel": "가이드 검색",
-  "searchPlaceholder": "가이드 검색 (예: 'TokenPocket', '해시레이트', '스테이킹', '브리징', '슬리피지')...",
-  "clearSearch": "지우기",
-  "allTopics": "전체 주제 ({count})",
-  "topicsHeading": "카테고리별 도움말 주제",
-  "showingCount": "전체 {total}개 중 {shown}개 카테고리 표시",
-  "guideCount": "{count, plural, other {가이드 #개}}",
-  "guidesInTopic": "이 주제의 가이드",
-  "clickToRead": "클릭하여 읽기",
-  "noMatchingGuides": "일치하는 가이드가 없습니다.",
-  "noResults": "검색과 일치하는 주제가 없습니다. 다른 키워드를 시도해 보세요.",
-  "exploreTopic": "주제 살펴보기",
-  "defaultBadge": "검증됨",
-  "readTime": "읽는 시간 {minutes}분",
-  "difficulty": {
-    "Beginner": "초급",
-    "Intermediate": "중급",
-    "Advanced": "고급"
-  },
-  "supportTitle": "찾고 있는 내용이 없나요?",
-  "supportDescription": "CaryPact AI 어시스턴트에게 실시간으로 질문하거나 오프라인 참고용 3분 분량의 PDF 치트 시트를 다운로드하세요.",
-  "cheatSheet": "치트 시트 (PDF)",
-  "communitySupport": "커뮤니티 지원",
-  "topics": {
-    "getting-started": {
-      "title": "시작하기",
-      "description": "지갑을 설정하고 BOT Chain을 추가한 뒤 첫 트랜잭션을 완료하세요.",
-      "badge": "필수"
-    },
-    "wallet-accounts": {
-      "title": "지갑 및 계정",
-      "description": "지갑, 계정, 자산을 관리하고 멀티 네트워크 브리징을 이해하며 잘못된 네트워크로 인한 손실을 방지하세요.",
-      "badge": "네트워크"
-    },
-    "network-transactions": {
-      "title": "네트워크 및 트랜잭션",
-      "description": "네트워크 파라미터, 가스비, 트랜잭션 상태를 이해하세요.",
-      "badge": "네트워크"
-    },
-    "bridge-defi": {
-      "title": "브리지 및 DeFi",
-      "description": "BOT Chain 브리지, DEX, 스테이킹 상품을 안전하게 이용하세요.",
-      "badge": "DeFi"
-    },
-    "project-tools": {
-      "title": "프로젝트 도구",
-      "description": "멀티사이트 계정, 권한, 프로젝트 운영을 설정하세요.",
-      "badge": "운영"
+    "breadcrumbHome": "홈",
+    "breadcrumbCurrent": "가이드 & 튜토리얼",
+    "badge": "인터랙티브 온보딩 & 단계별 튜토리얼",
+    "titlePrefix": "CaryPact & BOT Chain",
+    "titleHighlight": "단계별 가이드",
+    "description": "BO Wallet 생성, 컴퓨팅 파워 획득, 스테이킹 티어, CA 토큰 경제학, 저슬리피지 BDEX 스왑을 아우르는 검증된 단계별 마스터클래스.",
+    "cheatSheetButton": "치트시트 (PDF)",
+    "askAiButton": "AI 코파일럿에게 질문",
+    "askAiSetupQuestion": "CaryPact와 BO Wallet을 기초부터 설정하는 전 과정을 안내해 줘.",
+    "supportEyebrow": "맞춤형 도움이 필요하신가요?",
+    "supportTitle": "BO Wallet 설정이나 스테이킹 위임 과정에서 막히셨나요?",
+    "supportDescription": "가스비 계산, 개인 키 안전 보관, 컴퓨팅 노드 검증까지 커뮤니티 멘토와 AI 코파일럿이 24시간 연중무휴로 안내해 드립니다.",
+    "faqButton": "자주 묻는 질문",
+    "faqQuestion": "CaryPact 컴퓨팅 파워와 CA 토큰 스테이킹의 차이점을 설명해 줘.",
+    "launchDapp": "CaryPact DApp 실행",
+    "detail": {
+      "breadcrumbLabel": "탐색 경로",
+      "externalLinkHint": "(새 탭에서 열림)",
+      "videoLength": "영상 길이: {duration}",
+      "stepsHeading": "단계별 상세 절차",
+      "stepLabel": "단계 {number}",
+      "warningLabel": "주의사항",
+      "proTipLabel": "전문가 팁",
+      "takeawaysHeading": "핵심 정리",
+      "videoTutorialsHeading": "동영상 튜토리얼",
+      "previousGuide": "이전 가이드",
+      "nextGuide": "다음 가이드",
+      "otherTopicsHeading": "다른 주제 살펴보기",
+      "watchOn": "{platform}에서 시청",
+      "videoFallbackPlatform": "영상",
+      "disclosure": "본 웹사이트는 독립적인 교육 이니셔티브이며 CaryPact 또는 BOT Chain 재단이 운영하지 않습니다. 본 사이트의 링크와 초대 코드를 통해 등록할 경우 수수료가 발생할 수 있습니다. 콘텐츠는 교육 목적일 뿐 금융 조언이 아닙니다."
     }
   },
-  "guides": {
-    "getting-started": {
-      "title": "CaryPact 시작하기",
-      "summary": "BOT Chain 기반 CaryPact 탈중앙화 슈퍼컴퓨팅을 위한 단계별 온보딩 가이드입니다. 초대 코드로 연결하고, 공식 포털을 확인하고, 에코시스템 토크노믹스를 이해하는 방법을 다룹니다."
+  "GuidesSection": {
+    "eyebrow": "도움말 센터 & 지식 베이스",
+    "titlePrefix": "가이드 &",
+    "titleHighlight": "튜토리얼",
+    "description": "CaryPact와 BOT Chain을 완벽하게 활용하는 데 필요한 모든 정보 — 아래 주제별 카드를 선택하여 단계별 설명, 해시레이트 활성화, PoS 스테이킹 가중치, 크로스체인 출금 방법을 확인하세요.",
+    "searchLabel": "가이드 검색",
+    "searchPlaceholder": "가이드 검색 (예: 'TokenPocket', '해시레이트', '스테이킹', '브릿지', '슬리피지')...",
+    "clearSearch": "지우기",
+    "allTopics": "전체 주제 ({count})",
+    "topicsHeading": "분류별 도움말 주제",
+    "showingCount": "총 {total}개 카테고리 중 {shown}개 표시 중",
+    "guideCount": "{count, plural, one {#개 가이드} other {#개 가이드}}",
+    "guidesInTopic": "이 주제에 포함된 가이드",
+    "clickToRead": "클릭하여 읽기",
+    "noMatchingGuides": "일치하는 가이드가 없습니다.",
+    "noResults": "검색어와 일치하는 주제가 없습니다. 다른 검색어를 입력해 보세요.",
+    "exploreTopic": "주제 살펴보기",
+    "defaultBadge": "검증됨",
+    "readTime": "{minutes}분 소요",
+    "difficulty": {
+      "Beginner": "초급",
+      "Intermediate": "중급",
+      "Advanced": "고급"
     },
-    "create-wallet": {
-      "title": "지갑 만들기 (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
-      "summary": "Web3 지갑(TokenPocket, Trust Wallet, MetaMask, BO Wallet)을 다운로드하고 설정하는 방법과 BOT Chain 네트워크 설정, 시드 문구 보안, 커스텀 토큰 가져오기를 안내합니다."
+    "supportTitle": "원하시는 내용을 찾지 못하셨나요?",
+    "supportDescription": "CaryPact AI 어시스턴트에게 실시간으로 질문하거나 오프라인 열람용 3분 요약 PDF 치트시트를 다운로드하세요.",
+    "cheatSheet": "치트시트 (PDF)",
+    "communitySupport": "커뮤니티 지원",
+    "topics": {
+      "getting-started": {
+        "title": "시작하기",
+        "description": "지갑을 설정하고 BOT Chain을 추가하여 첫 트랜잭션을 완료하세요.",
+        "badge": "필수"
+      },
+      "wallet-accounts": {
+        "title": "지갑 & 계정",
+        "description": "지갑, 계정, 자산 관리, 멀티 네트워크 브릿징 및 오송금 방지법.",
+        "badge": "네트워크"
+      },
+      "network-transactions": {
+        "title": "네트워크 & 트랜잭션",
+        "description": "네트워크 파라미터, 가스비 구조, 트랜잭션 상태 확인법 이해하기.",
+        "badge": "네트워크"
+      },
+      "bridge-defi": {
+        "title": "브릿지 & DeFi",
+        "description": "BOT Chain 브릿지, DEX 및 스테이킹 상품을 안전하게 이용하는 방법.",
+        "badge": "DeFi"
+      },
+      "project-tools": {
+        "title": "프로젝트 도구",
+        "description": "다중 계정 관리, 스마트 컨트랙트 권한 설정 및 팀 운영 노하우.",
+        "badge": "운영"
+      }
     },
-    "cross-chain-networks-bridging": {
-      "title": "네트워크, 브리징, 잘못된 네트워크로 인한 손실 방지 (BSC, Ethereum, Bitcoin, BOT Chain)",
-      "summary": "여러 블록체인 네트워크(Binance Smart Chain/BSC, Ethereum, Bitcoin, BOT Chain)를 이해하기 위한 필수 마스터클래스입니다. 크로스체인 브리징(https://bridge.botchain.ai/)이 필요한 이유, 네트워크 간 상호작용, 잘못된 네트워크로 전송해 자산을 영구적으로 잃지 않기 위한 핵심 주의사항을 다룹니다."
+    "guides": {
+      "getting-started": {
+        "title": "CaryPact 시작하기",
+        "summary": "BOT Chain 기반 CaryPact 분산형 슈퍼컴퓨팅 온보딩 종합 가이드: 초대 코드 연결, 공식 포털 검증, 생태계 토크노믹스 이해하기.",
+        "steps": {
+          "s1": {
+            "title": "CaryPact 분산형 슈퍼컴퓨팅 모델 이해하기",
+            "description": "CaryPact는 BOT Chain에 배포된 자율 슈퍼컴퓨팅 프로토콜입니다. 참여자는 USDT를 투입하여 영구 해시레이트 유닛을 획득하고, 매일 배출되는 16,800 CA 풀에서 지분을 배당받습니다.",
+            "proTip": "장기간 묶여도 지장이 없는 여유 자금으로만 참여하세요. 컴퓨팅 파워 구매는 영구적이며 취소할 수 없습니다."
+          },
+          "s2": {
+            "title": "Web3 지갑과 USDT(BEP20 / TRC20) 준비",
+            "description": "계정 활성화용 USDT와 가스비 지불용 네이티브 BOT 토큰을 담을 수 있는 Web3 지갑(BO Wallet, MetaMask, Trust Wallet, TokenPocket 등)을 준비합니다.",
+            "warning": "반드시 공식 CaryPact 도메인(app.carypact.com)에 접속했는지 주소창을 재확인하세요."
+          },
+          "s3": {
+            "title": "검증된 초대 코드로 연결",
+            "description": "회원가입에는 검증된 커뮤니티 초대가 필요합니다. 공식 러닝 허브 초대 코드(1AjyRv / C82A37)를 입력하여 포털에 접속하세요."
+          },
+          "s4": {
+            "title": "계정 활성화 및 네이티브 BOT 코인으로 가스비 충전",
+            "description": "지갑 주소로 소량의 BOT(예: 0.5~2 BOT)을 전송합니다. BOT Chain의 가스비는 매우 저렴하며, 모든 가스비의 1.50%는 자동으로 영구 소각됩니다."
+          },
+          "s5": {
+            "title": "일일 배출 일정 및 위험 공시 검토",
+            "description": "자산을 투입하기 전 토큰 배출 주기(일일 40,000 CA), BDEX 5% 매도 슬리피지, 시장 변동성 등의 규칙을 충분히 숙지하세요."
+          }
+        },
+        "takeaways": {
+          "k1": "CaryPact는 초고속 BOT Chain 레이어 1 네트워크에서 구동됩니다.",
+          "k2": "1 USDT는 1 해시레이트 유닛에 해당하며 최소 진입 금액은 100 USDT입니다.",
+          "k3": "개인 키와 복구 시드 구문은 항상 오프라인에서 철저히 보관하세요."
+        }
+      },
+      "create-wallet": {
+        "title": "지갑 생성 방법 (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
+        "summary": "TokenPocket, Trust Wallet, MetaMask, BO Wallet 등 Web3 지갑 다운로드, BOT Chain 네트워크 설정, 시드 구문 보안 보관, 커스텀 토큰 추가 가이드.",
+        "steps": {
+          "s1": {
+            "title": "Web3 지갑 선택 및 다운로드",
+            "description": "원하는 비수탁 지갑을 선택합니다: BO Wallet(BOT Chain 생태계 전용), TokenPocket(tokenpocket.pro), Trust Wallet(trustwallet.com), MetaMask(metamask.io). 반드시 공식 앱스토어나 공식 웹사이트에서만 다운로드하세요.",
+            "warning": "앱스토어의 가짜 피싱 앱을 주의하세요. 검색 광고 링크나 메신저 대화방의 직접 APK 다운로드 링크는 절대 이용하지 마세요."
+          },
+          "s2": {
+            "title": "새 지갑 생성 및 12단어 시드 구문 기록",
+            "description": "'지갑 생성'을 누르고 안전한 비밀번호를 설정합니다. 지갑이 생성해 주는 12개 또는 24개의 복구 단어를 종이에 번호 순서대로 적고, 방수 및 내화성이 있는 안전한 장소에 보관하세요.",
+            "warning": "화면을 캡처하거나 구글 드라이브, 아이클라우드 등 클라우드에 저장하지 마세요. 12개 단어를 알면 누구든 자금을 즉시 탈취할 수 있습니다."
+          },
+          "s3": {
+            "title": "BOT Chain 커스텀 RPC 네트워크 추가",
+            "description": "MetaMask나 TokenPocket 설정에서 '네트워크 추가(Custom RPC)'를 선택하고 입력합니다: 네트워크 이름: BOT Chain, RPC URL: https://rpc.botchain.ai, 체인 ID: 1918, 심볼: BOT, 탐색기: https://scan.botchain.ai (BO Wallet에는 기본 탑재되어 있습니다).",
+            "proTip": "대체 RPC 서버가 필요할 때를 대비해 공식 RPC 정보를 메모해 두세요."
+          },
+          "s4": {
+            "title": "CA 및 USDT 토큰 컨트랙트 추가",
+            "description": "지갑에서 '토큰 가져오기' 또는 '사용자 지정 토큰'을 누르고 BOT Chain 네트워크를 선택한 후, CA 토큰과 USDT의 공식 컨트랙트 주소를 붙여넣습니다. 이제 자산 화면에 잔액이 표시됩니다."
+          },
+          "s5": {
+            "title": "가스비 입금 및 계정 보안 확인",
+            "description": "트랜잭션 가스비용 BOT과 투자용 USDT를 입금합니다. 큰 금액을 다루기 전에 소액으로 테스트 송금을 진행하여 지갑의 정상 작동을 확인하세요."
+          }
+        },
+        "takeaways": {
+          "k1": "비수탁형(Non-custodial)이란 본인만이 자산의 열쇠를 쥐고 있음을 뜻합니다.",
+          "k2": "BOT Chain은 체인 ID 1918을 사용하며 네이티브 가스 토큰은 BOT(1.50% 소각)입니다.",
+          "k3": "BO Wallet, TokenPocket, Trust Wallet, MetaMask 모두 호환됩니다."
+        }
+      },
+      "cross-chain-networks-bridging": {
+        "title": "네트워크 이해, 브릿징 및 오송금 방지 (BSC, Ethereum, Bitcoin & BOT Chain)",
+        "summary": "다양한 블록체인 네트워크(BSC, Ethereum, Bitcoin, BOT Chain)의 차이점, 크로스체인 브릿지(https://bridge.botchain.ai/)가 필요한 이유, 잘못된 네트워크 전송으로 인한 자산 영구 손실 방지 핵심 강의.",
+        "steps": {
+          "s1": {
+            "title": "블록체인 분리 구조의 이해: 서로 다른 체인이 직접 통신할 수 없는 이유",
+            "description": "각 블록체인은 완전히 독립된 암호화 원장입니다. Bitcoin은 자체 UTXO 체인, Ethereum은 EVM 체인 ID 1, BNB Smart Chain(BSC)은 체인 ID 56, BOT Chain은 체인 ID 1918에서 구동됩니다. 한 체인의 토큰은 브릿지를 통하지 않고는 다른 체인 주소로 직접 '전송'될 수 없습니다.",
+            "warning": "중요 경고: BSC, Ethereum, Bitcoin에서 BOT Chain 주소로 일반 지갑 송금 기능을 통해 토큰을 직접 보내지 마세요. 네트워크가 분리되어 있어 브릿지 없이 직접 전송하면 토큰이 유실되어 영구히 복구할 수 없습니다."
+          },
+          "s2": {
+            "title": "브릿지가 존재하는 이유: 공식 BOT Chain 브릿지 (https://bridge.botchain.ai/)",
+            "description": "격리된 체인 간에 가치를 이동시키기 위해 크로스체인 브릿지가 필요합니다. BSC(BEP20) 또는 Ethereum(ERC20)과 BOT Chain 사이에서 USDT를 옮길 때, 브릿지 스마트 컨트랙트가 출발지 체인의 토큰을 잠그고 BOT Chain에서 동등한 페깅 토큰을 발행(반대의 경우 환원)합니다.",
+            "proTip": "항상 공식 검증 브릿지 포털(https://bridge.botchain.ai/)을 사용하세요. 주소를 북마크하고 검증되지 않은 외부 애그리게이터는 피하세요."
+          },
+          "s3": {
+            "title": "주요 네트워크 분석 및 BOT Chain과의 상호작용",
+            "description": "• BNB Smart Chain (BSC / BEP-20): CaryPact 진입의 핵심 통로입니다. 빠른 처리와 저렴한 수수료 덕분에 대다수 사용자가 BEP-20 기반 USDT를 보유하고 이를 BOT Chain으로 브릿징합니다.\n• Ethereum (ERC-20): 가장 유동성이 풍부한 네트워크이나 L1 이더리움 가스비가 높습니다.\n• Bitcoin (BTC 네트워크): 가치 저장의 기원이지만 비EVM 체인이므로 랩핑된 릴레이나 거래소를 통해서만 연결됩니다.\n• BOT Chain (L1, Chain ID 1918): CaryPact의 AI 연산을 구동하는 고속 L1 체인으로, 네이티브 BOT 가스를 기반으로 1초 미만의 최종성과 극소 수수료를 제공합니다.",
+            "proTip": "이더리움 대비 수수료가 $0.15 미만이고 블록 확정이 3초로 빠른 BSC(BEP-20)를 통로로 활용하는 것을 추천합니다."
+          },
+          "s4": {
+            "title": "중대한 주의사항: 잘못된 네트워크 전송을 방지하는 법",
+            "description": "1. 중앙화 거래소(Binance, OKX, Bybit 등) 주의사항: 거래소는 명시적으로 지원되는 네트워크 입금만 인식합니다. 거래소가 'USDT-BEP20'을 요구한다면 BOT Chain 지갑에서 직접 보내면 안 됩니다! 먼저 bridge.botchain.ai를 통해 BOT Chain의 USDT를 BSC(BEP-20)로 브릿징한 다음, BSC 지갑에서 거래소로 입금하세요.\n2. 트랜잭션을 승인하기 전 지갑의 활성 네트워크 이름을 항상 눈으로 확인하세요.\n3. 동일 주소의 함정: EVM 지갑(MetaMask, TokenPocket)에서는 Ethereum, BSC, BOT Chain의 공개 주소(0x...)가 동일합니다. 주소가 같다고 해서 자산이 공유되는 것이 아닙니다! 체인을 넘나들려면 반드시 브릿지를 거쳐야 합니다.",
+            "warning": "BOT Chain 네이티브 입금을 지원하지 않는 중앙화 거래소 입금 주소로 토큰을 직접 전송하면 자산이 영구 분실되거나 거래소 금고에 묶이게 됩니다."
+          },
+          "s5": {
+            "title": "자산 브릿징 단계별 실습 (https://bridge.botchain.ai/)",
+            "description": "1. Web3 브라우저에서 공식 브릿지 포털(https://bridge.botchain.ai/)에 접속합니다.\n2. 지갑(BO Wallet, MetaMask, TokenPocket 등)을 연결합니다.\n3. 출발지 네트워크(예: BSC)와 목적지 네트워크(BOT Chain)를 지정합니다.\n4. 브릿징할 자산(USDT)과 수량을 입력합니다.\n5. 'Approve Token'을 눌러 브릿지 컨트랙트 승인을 진행합니다.\n6. 크로스체인 스왑 트랜잭션을 승인합니다. 릴레이어가 1~3분 이내에 검증을 완료합니다.\n7. 지갑 네트워크를 BOT Chain(Chain ID 1918)으로 전환하여 브릿징된 USDT 잔액을 확인합니다.",
+            "proTip": "황금률: 큰 금액을 옮기기 전에 항상 소액(예: 10 USDT)으로 테스트 브릿징을 진행하여 주소와 경로를 검증하세요."
+          }
+        },
+        "takeaways": {
+          "k1": "서로 다른 블록체인은 크로스체인 브릿지 없이 직접 소통할 수 없습니다.",
+          "k2": "BSC/Ethereum과 BOT Chain 간에 자산을 안전하게 옮기는 공식 통로는 https://bridge.botchain.ai/ 입니다.",
+          "k3": "BOT Chain 토큰을 BSC(BEP-20)로 다시 브릿징하지 않고 거래소 입금 주소로 직접 보내지 마세요.",
+          "k4": "EVM 체인 간에 0x... 주소가 동일하더라도 잔액은 공유되지 않으므로 브릿지가 필수적입니다.",
+          "k5": "안전을 위해 항상 소액 테스트 전송을 먼저 진행하세요."
+        }
+      },
+      "buy-computing-power": {
+        "title": "컴퓨팅 파워 (해시레이트 유닛) 구매 방법",
+        "summary": "해시레이트 유닛 심층 가이드: 1 USDT = 1 유닛, 최소 100 USDT, 일일 16,800 CA 배출 풀, 가스비 견적 및 영구 할당 규칙.",
+        "steps": {
+          "s1": {
+            "title": "1:1 해시레이트 모델과 영구 락업 규칙 이해하기",
+            "description": "100 USDT 이상을 투입하면 스마트 컨트랙트가 본인 주소로 100 해시레이트 유닛을 영구 발행합니다. 이를 통해 일일 16,800 CA 마이닝 풀에서 영구적인 지분을 받게 됩니다.",
+            "warning": "매우 중요: 컴퓨팅 파워 구매는 영구적입니다. 활성화된 해시레이트의 원금 인출이나 중도 해지 기능은 없습니다. 장기적으로 투자할 자금으로만 참여하세요."
+          },
+          "s2": {
+            "title": "CaryPact DApp에 지갑 연결",
+            "description": "CaryPact 포털을 열고 'Computing Power' 메뉴로 이동한 후, 충분한 USDT와 가스비용 소량의 BOT이 준비된 지갑을 연결합니다."
+          },
+          "s3": {
+            "title": "USDT 수량 입력(최소 100 USDT) 및 지출 승인",
+            "description": "원하는 USDT 금액(100 USDT 단위)을 입력합니다. 'Approve USDT'를 클릭하고 지갑에서 서명한 후 온체인 승인 완료를 기다립니다.",
+            "proTip": "시간 복리 계수(K ≈ 1.01/일)는 조기에 장기적으로 네트워크에 참여할수록 수학적으로 유리하도록 설계되었습니다."
+          },
+          "s4": {
+            "title": "구매 트랜잭션 확정 및 가스 파라미터 확인",
+            "description": "'Confirm Purchase'를 클릭하고 컨트랙트 거래를 승인합니다. BOT Chain의 빠른 속도로 몇 초 만에 극소의 가스비로 처리됩니다."
+          },
+          "s5": {
+            "title": "일일 T+1 마이닝 보상 정산 모니터링",
+            "description": "해시레이트 유닛은 즉시 활성화되며 다음 일일 정산 주기(00:00 UTC)부터 16,800 CA 풀을 기반으로 채굴 배당 계산이 시작됩니다."
+          }
+        },
+        "takeaways": {
+          "k1": "1 USDT = 1 해시레이트 유닛 (영구 할당, 원금 환불 불가).",
+          "k2": "일일 마이닝 풀 규모는 16,800 CA입니다(일일 총 배출 40,000 CA의 42%).",
+          "k3": "일일 획득 CA = (내 해시레이트 / 전체 해시레이트) × 풀 규모 × 시간 계수."
+        }
+      },
+      "network-parameters-gas": {
+        "title": "BOT Chain 네트워크 파라미터, 가스비 및 트랜잭션 상태 확인법",
+        "summary": "네트워크 파라미터, 가스 수수료, RPC 엔드포인트, 체인 ID, 네이티브 가스 1.50% 자동 소각 메커니즘, 블록 익스플로러 확인법.",
+        "steps": {
+          "s1": {
+            "title": "공식 BOT Chain 네트워크 파라미터",
+            "description": "네트워크 이름: BOT Chain | 체인 ID: 1918 | 통화 기호: BOT | 기본 RPC: https://rpc.botchain.ai | 익스플로러: https://scan.botchain.ai.",
+            "proTip": "BOT Chain은 3초의 블록 타임과 1센트 미만의 초저렴한 트랜잭션 비용을 제공합니다."
+          },
+          "s2": {
+            "title": "1.50% 네이티브 가스 소각의 이해",
+            "description": "BOT Chain에서 일어나는 모든 트랜잭션은 프로토콜 레벨에서 가스비의 1.50%를 자동으로 소각하여 네트워크 사용량이 증가할수록 구조적 디플레이션을 촉진합니다."
+          },
+          "s3": {
+            "title": "트랜잭션 상태 확인 및 해시 검증",
+            "description": "트랜잭션이 대기 중이거나 전송 증명이 필요할 때, 트랜잭션 해시(TxID)를 복사하여 BOT Chain 블록 익스플로러에 입력하면 블록 높이, 사용 가스량, 처리 시간을 확인할 수 있습니다."
+          }
+        },
+        "takeaways": {
+          "k1": "Chain ID 1918은 BOT Chain L1의 공식 고유 식별자입니다.",
+          "k2": "모든 트랜잭션 수수료의 1.50%가 BOT 총공급량에서 영구 소각됩니다.",
+          "k3": "모든 전송, 스왑, 해시레이트 활성화는 scan.botchain.ai에서 공개 확인 가능합니다."
+        }
+      },
+      "stake-ca": {
+        "title": "CA 스테이킹 방법 (유연형 vs 기간 고정형 승수)",
+        "summary": "일일 7,200 CA 규모의 PoS 스테이킹 풀 구조, 유연형과 기간 고정형(30일~360일)의 차이, 승수 부스트(1.3배~2.5배), 수수료 바이백 유입과 복리 메커니즘.",
+        "steps": {
+          "s1": {
+            "title": "스테이킹 전략 선택: 유연형 vs 기간 고정형",
+            "description": "언제든 출금 가능한 유연형(일 0.2%~0.4%) 또는 높은 가중치가 부여되는 기간 고정형(30일=1.3배, 90일=1.6배, 180일=2.0배, 360일=2.5배) 중 선택합니다.",
+            "proTip": "기간 고정형은 7,200 CA 풀에서 훨씬 큰 지분을 할당받지만 만기까지 원금이 락업됩니다."
+          },
+          "s2": {
+            "title": "지속적인 보상 풀 유입 구조 이해하기",
+            "description": "스테이킹 보상은 프로토콜 기본 배출(7,200 CA/일) + BDEX 매도 슬리피지 바이백(1.8%) + 활성 풀 잉여 자금에서 지속적으로 보충됩니다."
+          },
+          "s3": {
+            "title": "CA 수량 설정 및 스테이킹 컨트랙트 서명",
+            "description": "CaryPact 스테이킹 포털로 이동하여 스테이킹할 CA 수량을 입력하고 기간을 선택한 후 Web3 지갑에서 트랜잭션을 승인합니다."
+          },
+          "s4": {
+            "title": "가상 시뮬레이션 수치와 실제 시장 수익률 구분",
+            "description": "홍보 자료에 나오는 복리 수치(예: 매일 0.3% 가격 상승을 가정한 1만 달러의 40만 달러 성장 모델 등)는 순수한 가상 시뮬레이션이며 확정 수익이 아닙니다.",
+            "warning": "암호화폐 가격은 크게 변동합니다. 스테이킹 보상의 실제 법정화폐 가치는 CA 시장 가격에 직접적으로 연동됩니다."
+          }
+        },
+        "takeaways": {
+          "k1": "유연형은 언제든 인출이 가능하며, 고정형은 최대 2.5배의 높은 보상 승수를 제공합니다.",
+          "k2": "기본 배출(7,200 CA/일)과 DEX 매도 슬리피지 1.8% 바이백 수수료로 재원이 마련됩니다.",
+          "k3": "복리 예상치는 반드시 시장 변동성을 감안하여 보수적으로 평가해야 합니다."
+        }
+      },
+      "ca-to-usdt": {
+        "title": "CA ↔ USDT 스왑 및 크로스체인 브릿징 방법",
+        "summary": "BDEX 및 CaryPact SWAP 이용법, 매도 시 5% 슬리피지(1.8% 바이백 소각 + 3.2% 노드 보상) 구조, 스왑한 USDT를 BNB Chain, TRON, Ethereum으로 출금하는 방법.",
+        "steps": {
+          "s1": {
+            "title": "BDEX 또는 CaryPact SWAP 접속",
+            "description": "지갑을 BDEX에 연결하고 CA / USDT 거래 쌍을 선택합니다. 가스비 지불용 BOT이 지갑에 남아 있는지 확인하세요."
+          },
+          "s2": {
+            "title": "5% 매도 슬리피지 메커니즘 확인",
+            "description": "CA 매도 주문 시 1.8%는 바이백 & 소각 엔진으로 전송되어 유통량을 줄이고, 3.2%는 노드 운영자와 유동성 유지자에게 배분됩니다.",
+            "proTip": "주문 실패를 방지하려면 DEX 설정에서 슬리피지 허용 범위를 최소 5.5% 이상으로 지정하세요."
+          },
+          "s3": {
+            "title": "가격 영향 확인 및 스왑 체결",
+            "description": "풀의 깊이 대비 실행 가격을 확인하고 승인합니다. 블록이 확정되면 USDT가 지갑에 즉시 반영됩니다."
+          },
+          "s4": {
+            "title": "공식 크로스체인 브릿지 포털 접속",
+            "description": "바꾼 USDT를 외부 네트워크로 보내려면 BOT Chain 브릿지를 열고 출발지를 BOT Chain, 목적지를 BNB Smart Chain(BEP20) 또는 TRON(TRC20)으로 선택합니다.",
+            "warning": "목적지 체인의 수신 주소를 철저히 확인하세요. MEMO 태그가 필요한 거래소 입금 주소로 브릿지에서 직접 전송하면 안 됩니다."
+          },
+          "s5": {
+            "title": "브릿지 트랜잭션 전송 및 릴레이어 처리 대기",
+            "description": "브릿지 트랜잭션을 전송합니다. 크로스체인 릴레이어가 1~5분 이내에 잠금 및 발행 작업을 검증 완료합니다."
+          }
+        },
+        "takeaways": {
+          "k1": "CA 매도 시 디플레이션 유지와 노드 보상을 위해 5%의 의무 수수료가 발생합니다.",
+          "k2": "모든 매도 주문 금액의 1.8%에 해당하는 CA가 영구 소각됩니다.",
+          "k3": "공식 크로스체인 브릿지를 통해 전환된 USDT를 Ethereum, BSC, TRON으로 안전하게 전송할 수 있습니다."
+        }
+      },
+      "bot-pledge": {
+        "title": "BOT 스테이킹 방법 (BOT Pledge & 자동 복리 운용)",
+        "summary": "app.carypact.com/bot-pledge 에서 제공하는 BOT Pledge(Bot Staking) 가이드: 자유로운 입출금, 24시간 원금 언락 규칙, 매일 자동 복리 재투자 시스템.",
+        "steps": {
+          "s1": {
+            "title": "BOT을 스테이크하여 보상 획득: 자유로운 입출금과 자율 통제",
+            "description": "BOT Pledge를 이용하면 네이티브 L1 BOT 코인을 예치하여 자본에 대한 통제권을 유지하면서 매일 스테이킹 보상을 얻을 수 있습니다. 장기 락업 상품이나 영구 해시레이트와 달리 언제든 입금하고 출금을 신청할 수 있습니다.",
+            "proTip": "보상이 네이티브 BOT 코인으로 직접 적립되므로 DEX 거래 슬리피지나 교환 수수료 손실이 전혀 없습니다."
+          },
+          "s2": {
+            "title": "기본 규칙 1: BOT 스테이킹으로 보상 획득",
+            "description": "Web3 지갑을 공식 CaryPact BOT Pledge 포털(app.carypact.com/bot-pledge)에 연결하고, 수량을 입력한 뒤 온체인 트랜잭션을 승인하면 즉시 스테이킹이 시작됩니다."
+          },
+          "s3": {
+            "title": "기본 규칙 2: 해제된 원금의 24시간 잠금 해제 대기 기간",
+            "description": "원금은 언제든 해제할 수 있습니다. DApp에서 출금을 신청하면 해제 카운트다운이 시작되며, 24시간의 보안 대기 시간이 경과한 후 지갑으로 청구할 수 있습니다.",
+            "warning": "출금 신청이 접수되면 지갑으로 최종 청구하기 전까지 24시간 동안 안전 언본딩 상태로 대기하게 됩니다."
+          },
+          "s4": {
+            "title": "기본 규칙 3: 자동 복리 재투자 엔진",
+            "description": "자동 복리 엔진은 [전날 원금 + 일일 수익]을 다음 날 복리 스테이킹의 새로운 원금으로 자동 반영합니다. 매일 수동 트랜잭션을 일으키거나 가스비를 쓰지 않고도 장기 수익을 극대화합니다.",
+            "proTip": "90일, 180일, 365일 동안 연속 복리로 운용하면 단리 스테이킹 대비 실효 누적 APY가 비약적으로 증가합니다."
+          },
+          "s5": {
+            "title": "일일 수익 모니터링 및 해제 자금 수령",
+            "description": "BOT Pledge 대시보드에서 활성 스테이킹 수량, 일일 복리 수익, 출금 가능 잔액을 언제든 실시간으로 확인할 수 있습니다."
+          }
+        },
+        "takeaways": {
+          "k1": "규칙 1: 자유로운 입출금과 자기주도적 자산 관리 하에 BOT을 스테이킹할 수 있습니다.",
+          "k2": "규칙 2: 해제된 원금은 언제든 출금 가능하며 24시간 대기 후 수령할 수 있습니다.",
+          "k3": "규칙 3: 전날 원금+수익이 새 원금으로 자동 재투자되는 자동 복리 엔진 탑재.",
+          "k4": "스왑 수수료 0: 원금과 보상이 모두 L1 네이티브 화폐인 BOT으로 완결됩니다."
+        }
+      },
+      "every-earning-method": {
+        "title": "CaryPact 생태계의 모든 수익 창출 방법 총정리",
+        "summary": "CaryPact의 모든 수익 메커니즘 종합 가이드: 컴퓨팅 파워 마이닝, PoS CA 스테이킹, BOT Pledge, VIP 동적 보상, 글로벌 커뮤니티 풀, 노드 배당 풀, LP 파밍, 추천 리베이트, 디플레이션 소각 차익.",
+        "steps": {
+          "s1": {
+            "title": "방법 1: 컴퓨팅 파워 마이닝 (16,800 CA / 일)",
+            "description": "USDT를 투입하여(최소 100 USDT = 100 유닛) 42%의 최대 배출 풀(16,800 CA/일)에서 본인의 해시레이트 지분율과 기간 계수 K에 따라 매일 배당을 받습니다.",
+            "proTip": "영구 해시레이트는 만기 락업의 제약 없이 탄탄한 기초 현금 흐름을 만들어줍니다."
+          },
+          "s2": {
+            "title": "방법 2: PoS 토큰 스테이킹 (7,200 CA / 일 + 승수)",
+            "description": "CA 토큰을 유연형(일 0.2%~0.4%) 또는 고정 기간(30일=1.3배~360일=2.5배)으로 예치합니다. 18% 기본 배출량과 BDEX 매도 슬리피지 1.8%가 원천 재원입니다."
+          },
+          "s3": {
+            "title": "방법 3: BOT Pledge / Bot 스테이킹 (자유 입출금 + 자동 복리)",
+            "description": "자유로운 입출금으로 BOT을 스테이킹(app.carypact.com/bot-pledge). 24시간 안전 언락 기능과 전날 원금+수익을 자동 재투자하는 복리 엔진을 제공합니다.",
+            "proTip": "장기 락업 없이 DEX 환전 손실 없는 네이티브 L1 코인 자체를 불리고자 하는 분께 최적입니다."
+          },
+          "s4": {
+            "title": "방법 4: VIP 동적 활성 보상 (14,000 CA / 일)",
+            "description": "팀 컴퓨팅 파워를 확장하고 직추천을 유치하여 V1부터 V5까지의 등급에서 보상을 획득합니다. 일일 배출의 35%(14,000 CA)가 활성 기여자에게 배정됩니다."
+          },
+          "s5": {
+            "title": "방법 5: 글로벌 커뮤니티 풀 (2,000 CA / 일)",
+            "description": "상위 커뮤니티 리더와 자격 있는 노드가 전체 일일 배출량의 5%(2,000 CA/일)를 생태계 영구 배당금으로 공유합니다."
+          },
+          "s6": {
+            "title": "방법 6: 노드 배당 풀 (BDEX 매도 슬리피지 3.2%)",
+            "description": "DEX에서 CA 매도 주문이 발생할 때마다 징수되는 3.2% 수수료가 적격 노드 운영자에게 배분됩니다. 실물 서버 보유자는 AI 상업 수수료도 함께 수령합니다."
+          },
+          "s7": {
+            "title": "방법 7: BDEX 유동성 공급자(LP) 파밍",
+            "description": "BDEX의 CA/USDT 페어에 유동성을 공급하여 0.3% 프로토콜 거래 수수료와 추가 LP 이자 농사(Yield Farming) 보상을 얻습니다."
+          },
+          "s8": {
+            "title": "방법 8: 생태계 추천 리베이트 및 노드 확장",
+            "description": "검증된 초대 링크를 공유하여 초대된 회원이 해시레이트를 활성화할 때 직접적인 리베이트 비율과 가속 크레딧을 얻습니다."
+          },
+          "s9": {
+            "title": "방법 9: 디플레이션 소각 차익",
+            "description": "매도 주문액의 1.8%와 BOT 가스비의 1.50%가 영구 소각되므로 공급 감소에 따른 자산 가치 제고 혜택을 누릴 수 있습니다."
+          }
+        },
+        "takeaways": {
+          "k1": "전체 일일 신규 토큰 배출량은 모든 풀을 합쳐 하루 40,000 CA로 엄격히 제한됩니다.",
+          "k2": "BOT Pledge는 24시간 원금 언락과 자동 복리를 통해 네이티브 BOT 수익을 안겨줍니다.",
+          "k3": "컴퓨팅 파워(기본 산출)와 스테이킹 승수(수익 극대화)를 병행하는 것이 가장 효율적입니다.",
+          "k4": "노드 운영자는 3.2% 배당 풀을 통해 글로벌 거래대금에서 안정적인 수수료 파이프라인을 구축합니다."
+        }
+      },
+      "project-tools-operations": {
+        "title": "다중 계정 관리, 스마트 컨트랙트 권한 및 프로젝트 운영 노하우",
+        "summary": "다중 지갑 운영, 팀 추천 링크 관리, 스마트 컨트랙트 승인 한도 점검, 검증인 운영에 관한 실무 가이드.",
+        "steps": {
+          "s1": {
+            "title": "다중 지갑 주소 분리 및 포트폴리오 격리",
+            "description": "커뮤니티 리더십 활동용, 검증인 보상 수령용, 개인 스테이킹용 지갑을 별도로 분리하여 정확한 회계 관리와 엄격한 보안 격리를 실현하세요."
+          },
+          "s2": {
+            "title": "스마트 컨트랙트 권한 관리 및 지출 한도 설정",
+            "description": "BOT Chain 익스플로러의 권한 관리 도구를 사용하여 컨트랙트 허용량을 점검하고, 무제한 승인 대신 필요한 한도만 설정하며 불필요한 오래된 권한은 해제(Revoke)하세요.",
+            "warning": "팀원 간에 개인 키를 절대로 공유하지 마세요. 공동 운영 자금에는 반드시 다중 서명(Multi-Sig) 지갑을 사용하세요."
+          },
+          "s3": {
+            "title": "초대 코드 및 커뮤니티 확장 도구 활용",
+            "description": "CaryPact 앰버서더 포털에 접속하여 팀 추천 링크를 생성·관리하고, 조직 전체의 해시레이트 달성도와 VIP 티어 승급 현황을 추적하세요."
+          }
+        },
+        "takeaways": {
+          "k1": "커뮤니티 풀 운영과 개인 자산 보관은 별도의 지갑 주소로 분리하세요.",
+          "k2": "스마트 컨트랙트 권한을 주기적으로 감사하여 최고 수준의 보안을 유지하세요.",
+          "k3": "앰버서더 대시보드를 활용해 팀의 해시레이트 활성화 현황을 실시간으로 파악하세요."
+        }
+      }
     },
-    "buy-computing-power": {
-      "title": "컴퓨팅 파워(해시레이트 유닛) 구매 방법",
-      "summary": "해시레이트 유닛 심층 분석: 1 USDT = 1 유닛, 최소 100 USDT, 일일 16,800 CA 분배 풀, 트랜잭션 가스 추정, 영구 할당 규칙을 다룹니다."
-    },
-    "network-parameters-gas": {
-      "title": "BOT Chain 네트워크 파라미터, 가스비 및 트랜잭션 상태",
-      "summary": "네트워크 파라미터, 가스비, RPC 엔드포인트, Chain ID, 네이티브 가스 1.50% 소각 방식, 블록 익스플로러 컨펌, 트랜잭션 상태 확인 방법을 이해하세요."
-    },
-    "stake-ca": {
-      "title": "CA 스테이킹 방법 (플렉시블 vs. 고정 기간 승수)",
-      "summary": "하루 7,200 CA의 PoS 스테이킹 풀이 작동하는 방식, 플렉시블과 고정 기간(30d–360d)의 차이, 승수 부스트(1.3x~2.5x), 수수료 바이백 유입, 복리 메커니즘을 알아봅니다."
-    },
-    "ca-to-usdt": {
-      "title": "CA - USDT 스왑 및 크로스체인 브리징 방법",
-      "summary": "BDEX와 CaryPact SWAP 사용법, 매도 시 5% 슬리피지(1.8% 바이백 소각 + 3.2% 노드 보상) 처리 방법, 스왑한 USDT를 BNB Chain, TRON 또는 Ethereum으로 브리징하는 방법을 단계별로 안내합니다."
-    },
-    "bot-pledge": {
-      "title": "BOT 스테이킹 방법 (BOT Pledge 및 자동 복리)",
-      "summary": "app.carypact.com/bot-pledge의 BOT Pledge(Bot Staking이라고도 함) 완벽 가이드입니다. 자유로운 입출금으로 BOT를 스테이킹해 보상을 받는 방법, 24시간 원금 잠금 해제 규칙, 매일 자동 복리를 다룹니다."
-    },
-    "every-earning-method": {
-      "title": "CaryPact의 모든 수익 방법 가이드",
-      "summary": "CaryPact 에코시스템의 모든 수익 방법을 다루는 종합 가이드입니다. 컴퓨팅 파워 마이닝, PoS CA 스테이킹, BOT Pledge(Bot Staking), VIP 다이내믹 액티브 보상, 글로벌 커뮤니티 풀, 노드 배당 풀, LP 파밍, 추천 리베이트, 디플레이션 소각 차익거래를 포함합니다."
-    },
-    "project-tools-operations": {
-      "title": "멀티사이트 계정, 권한 및 프로젝트 운영",
-      "summary": "멀티사이트 계정, 권한, 프로젝트 운영을 설정합니다. 여러 주소 관리, 제휴 팀 링크, 스마트 컨트랙트 상호작용 승인, 밸리데이터 운영을 다룹니다."
+    "videos": {
+      "v1": "CaryPact를 위한 TokenPocket Web3 지갑 다운로드 방법",
+      "v3": "CaryPact 회원가입 및 지갑 연결 방법",
+      "v8": "$CA 토크노믹스 구조 및 Botscan 확인 방법",
+      "v2": "BOT Chain 네트워크 추가 및 $CA / $USDT 컨트랙트 등록법",
+      "v4": "$CA 토큰 채굴을 위한 해시레이트 구매 방법",
+      "v5": "$CA 토큰 마이닝 일일 보상 계산법",
+      "v6": "$CA 토큰 스테이킹 실습 가이드",
+      "v7": "$CA 스테이킹 일일 보상을 자동 복리로 운용하는 법",
+      "v9": "$BOT 마이닝 서버의 특장점과 혜택"
     }
   }
-}
 }

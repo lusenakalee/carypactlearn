@@ -1,83 +1,83 @@
 {
   "nav": {
     "home": "TRANG CHỦ",
-    "liveData": "DỮ LIỆU LIVE ",
-    "earn": "Kiếm được",
+    "liveData": "TRỰC TIẾP",
+    "earn": "KIẾM TIỀN",
     "guides": "HƯỚNG DẪN",
-    "learn": "KIẾN THỨC",
+    "learn": "HỌC TẬP",
     "events": "SỰ KIỆN",
-    "risks": "RỦI RO & MIỄN TRỪ",
-    "brandSub": "BOT Chain • Token CA • Siêu Tính Toán",
-    "askAi": "Trợ Lý AI / Tìm Kiếm",
-    "selectLang": "Chọn Ngôn Ngữ",
-    "launchApp": "Mở App",
+    "risks": "RỦI RO & CÔNG BỐ",
+    "brandSub": "BOT Chain • Token CA • Điện toán",
+    "askAi": "Hỏi AI / Tìm kiếm",
+    "selectLang": "Chọn ngôn ngữ",
+    "launchApp": "Mở ứng dụng",
     "newBadge": "MỚI"
   },
   "common": {
     "liveParity": "1.337631 BOT = 1 CA",
     "inverseParity": "0.405213 CA = 1 BOT",
-    "launchCaryPact": "Mở App CaryPact",
-    "register": "Đăng ký CaryPact",
-    "readGuide": "Đọc Hướng Dẫn",
-    "downloadPdf": "Tải Bản Tóm Tắt PDF",
-    "watchVideo": "Xem Video Hướng Dẫn",
+    "launchCaryPact": "Mở ứng dụng CaryPact",
+    "register": "Đăng ký trên CaryPact",
+    "readGuide": "Đọc hướng dẫn tương tác",
+    "downloadPdf": "Tải bảng tóm tắt PDF",
+    "watchVideo": "Xem video giải thích",
     "close": "Đóng",
     "copy": "Sao chép",
     "copied": "Đã sao chép!",
     "refresh": "Làm mới",
     "loading": "Đang tải...",
-    "cmcLive": "Dữ liệu Live CMC",
+    "cmcLive": "Dữ liệu trực tiếp CMC",
     "onChain": "Xác minh On-Chain"
   },
   "disclaimer": {
     "badge": "NỀN TẢNG GIÁO DỤC ĐỘC LẬP",
-    "text": "Trung tâm học tập này hoạt động độc lập nhằm mục đích giáo dục và nghiên cứu. Mua năng lực tính toán (1 USDT = 1 Đơn vị Hashrate) là vĩnh viễn không hoàn gốc. Tài sản tiền mã hóa có biến động cao. Hãy tự nghiên cứu kỹ (DYOR)."
+    "text": "Trung tâm học tập này được vận hành độc lập nhằm mục đích giáo dục & nghiên cứu. Việc mua sức mạnh tính toán (Hashrate: 1 USDT = 1 Đơn vị) là vĩnh viễn và không thể rút lại tiền gốc. Tài sản tiền mã hóa có mức độ biến động thị trường cao. Luôn tự nghiên cứu kỹ lưỡng (DYOR)."
   },
   "hero": {
-    "badge": "Trung Tâm Giáo Dục & Dữ Liệu Độc Lập",
-    "titlePrefix": "Trung Tâm",
+    "badge": "Trung tâm Giáo dục & Phân tích Độc lập",
+    "titlePrefix": "Trung tâm",
     "titleHighlight": "CaryPact",
-    "titleSuffix": "Học Tập",
-    "description": "Nắm vững siêu tính toán phi tập trung CaryPact, BOT Chain Layer 1, tokenomics CA, cơ chế tỷ giá ngang giá và mô hình staking PoS trước khi tham gia.",
-    "ctaExploreGuides": "Khám Phá Hướng Dẫn",
-    "ctaLiveMarket": "Thị Trường & Tỷ Giá Live",
+    "titleSuffix": "Learning Hub",
+    "description": "Nắm vững siêu điện toán phi tập trung CaryPact, Layer 1 BOT Chain, kinh tế học token CA, cơ chế ngang giá động và mô hình staking PoS trước khi tham gia.",
+    "ctaExploreGuides": "Khám phá hướng dẫn",
+    "ctaLiveMarket": "Thị trường trực tiếp & Ngang giá",
     "searchHeading": "Đặt câu hỏi hoặc chọn câu hỏi phổ biến:",
-    "prompt1": "Quy tắc vĩnh viễn của Đơn vị Hashrate là gì?",
-    "prompt2": "Tỷ giá ngang giá động 1.337631 BOT = 1 CA hoạt động ra sao?",
-    "prompt3": "Giải thích phí trượt giá 5% và cơ chế đốt token trên BDEX",
-    "prompt4": "10 cấp bậc phần thưởng VIP Supernode là gì?",
+    "prompt1": "Quy tắc vĩnh viễn đối với Đơn vị Hashrate là gì?",
+    "prompt2": "Cơ chế ngang giá động 1.337631 BOT = 1 CA hoạt động ra sao?",
+    "prompt3": "Giải thích mức trượt giá 5% trên BDEX và cơ chế đốt token",
+    "prompt4": "10 bậc phần thưởng VIP gồm những gì?",
     "communityLabel": "Cộng đồng toàn cầu",
-    "countries": "{count} quốc gia",
-    "botSupplyLabel": "Nguồn cung BOT tối đa",
-    "maxCaSupplyLabel": "Nguồn cung CA tối đa",
-    "emissionYears": "Phát hành {years} năm",
+    "countries": "{count} Quốc gia",
+    "botSupplyLabel": "Tổng cung BOT tối đa",
+    "maxCaSupplyLabel": "Tổng cung CA tối đa",
+    "emissionYears": "Lộ trình phát hành {years} năm",
     "officeNetworkLabel": "Mạng lưới văn phòng",
-    "officeBreakdown": "{studios, number} studio + {hubs, number} trung tâm",
+    "officeBreakdown": "{studios, number} Studio + {hubs, number} Hub",
     "parityInline": "{rate} BOT = 1 CA",
     "priceNA": "Không khả dụng",
-    "priceVia": "nguồn: {source}",
+    "priceVia": "qua {source}",
     "priceUpdated": "Cập nhật {time}",
     "chip1": "Tính vĩnh viễn của Hashrate",
-    "chip2": "Tỷ giá ngang giá động BOT / CA",
-    "chip3": "Trượt giá 5% & đốt token",
-    "chip4": "Phần thưởng VIP 10 cấp"
+    "chip2": "Ngang giá động BOT / CA",
+    "chip3": "Trượt giá 5% & Đốt token",
+    "chip4": "Phần thưởng VIP 10 bậc"
   },
   "live": {
-    "sectionBadge": "Dữ Liệu Tài Chính & Tính Toán Trực Tiếp",
-    "sectionTitle": "Mạng Lưới Live &",
-    "sectionTitleHighlight": "Công Cụ Chuyển Đổi",
-    "title": "Toàn Cảnh Thị Trường On-Chain",
-    "subtitle": "Chỉ số CoinMarketCap thời gian thực & độ sâu BDEX",
+    "sectionBadge": "Dữ liệu Tài chính & Điện toán Thời gian thực",
+    "sectionTitle": "Mạng lưới Trực tiếp &",
+    "sectionTitleHighlight": "Công cụ Chuyển đổi",
+    "title": "Tổng quan Thị trường On-Chain CaryPact",
+    "subtitle": "Chỉ số on-chain thời gian thực từ CoinMarketCap & BDEX",
     "caPrice": "Giá Token CA",
-    "botPrice": "Giá Token BOT",
-    "parityRatio": "Tỷ Giá Ngang Giá Hệ Thống",
-    "tvl": "Tổng TVL Pool BDEX",
-    "volume24h": "Khối Lượng 24H",
-    "marketCap": "Vốn Hóa Pha Loãng CA",
-    "dailyEmission": "Quỹ Đào CA Mỗi Ngày",
-    "emissionUnit": "16,800 CA / ngày",
-    "activeHashrate": "Tổng Hashrate Toàn Mạng",
-    "vipNodes": "Supernode VIP Hoạt Động",
+    "botPrice": "Giá BOT Chain",
+    "parityRatio": "Tỷ lệ ngang giá hệ thống",
+    "tvl": "TVL Pool BDEX",
+    "volume24h": "Khối lượng 24H",
+    "marketCap": "Vốn hóa pha loãng hoàn toàn của CA",
+    "dailyEmission": "Pool khai thác CA hàng ngày",
+    "emissionUnit": "16.800 CA / ngày",
+    "activeHashrate": "Đơn vị Hashrate toàn cầu",
+    "vipNodes": "Supernode VIP đang hoạt động",
     "timeframes": {
       "1h": "1H",
       "24h": "24H",
@@ -87,1298 +87,1638 @@
     }
   },
   "calculator": {
-    "title": "Máy Tính Chuyển Đổi CA ↔ USDT & Lợi Nhuận",
-    "subtitle": "Chuyển đổi theo chuẩn tỷ giá 1.337631 BOT = 1 CA của giao thức",
-    "tabSwap": "Swap Ngang Giá Nhanh",
-    "tabStaking": "Mô Phỏng Staking PoS",
-    "youConvert": "Số Lượng Chuyển Đổi",
-    "youReceive": "Ước Tính Nhận Được",
-    "slippageNotice": "Đã bao gồm cơ chế trượt giá 5% BDEX (1.8% đốt / 3.2% thưởng node)",
-    "stakingDeposit": "Số Lượng CA Staking",
-    "stakingTerm": "Thời Gian Khóa",
+    "title": "Công cụ chuyển đổi & Mô phỏng lợi nhuận CA ↔ USDT",
+    "subtitle": "Chuyển đổi theo thời gian thực dựa trên tiêu chuẩn giao thức 1.337631 BOT = 1 CA",
+    "tabSwap": "Swap ngang giá tức thì",
+    "tabStaking": "Mô phỏng Staking PoS",
+    "youConvert": "Bạn chuyển đổi",
+    "youReceive": "Ước tính nhận được",
+    "slippageNotice": "Đã bao gồm phân bổ phí swap 5% của BDEX (1.8% đốt / 3.2% pool node)",
+    "stakingDeposit": "Số lượng CA stake",
+    "stakingTerm": "Thời hạn khóa",
     "termFlexible": "Linh hoạt (0.2%/ngày)",
     "term30": "30 Ngày (0.26%/ngày)",
     "term90": "90 Ngày (0.32%/ngày)",
     "term180": "180 Ngày (0.4%/ngày)",
     "term360": "360 Ngày (0.5%/ngày)",
-    "projectedYield": "Ước Tính Thu Hoạch CA",
-    "simulationDisclaimer": "Tính toán chỉ mang tính chất minh họa. Thị trường tiền mã hóa luôn biến động.",
-    "subtitleLive": "Ước tính dùng tỷ giá trực tiếp của pool BDEX và giá BOT từ CoinMarketCap",
+    "projectedYield": "Dự kiến CA thu hoạch",
+    "simulationDisclaimer": "Các ước tính mô phỏng chỉ nhằm mục đích minh họa. Điều kiện thị trường tiền mã hóa có thể biến động.",
+    "subtitleLive": "Ước tính sử dụng tỷ giá pool BDEX trực tiếp và giá BOT trên CoinMarketCap",
     "poolRate": "{rate} BOT = 1 CA",
-    "priceStale": "đã cũ",
-    "priceUnavailable": "Không có giá trực tiếp. Ước tính bị tắt cho đến khi tải được giá hợp lệ.",
-    "spotNotice": "Ước tính theo tỷ giá giao ngay. Swap thực tế trong pool thanh khoản mỏng có thể bị tác động giá đáng kể."
+    "priceStale": "cũ",
+    "priceUnavailable": "Giá trực tiếp không khả dụng. Tính năng ước tính bị vô hiệu hóa cho đến khi tải được giá hợp lệ.",
+    "spotNotice": "Ước tính theo tỷ giá giao ngay. Các giao dịch swap thực tế trong pool có thanh khoản mỏng có thể chịu tác động giá đáng kể."
   },
   "dex": {
-    "title": "Pool Thanh Khoản On-Chain BDEX",
-    "subtitle": "TVL thời gian thực, khối lượng 24h, phí giao thức và tỷ giá ngang giá động",
-    "tvl": "Tổng Thanh Khoản (TVL)",
-    "volume24h": "Khối Lượng 24H",
-    "fee24h": "Phí Thu Được 24H",
-    "apr": "Tổng APR Pool",
-    "reserves": "Dự Trữ Token Trong Pool",
-    "parityStandard": "Chuẩn Tỷ Giá Giao Thức Động",
-    "systemParity": "Tỷ Giá Ngang Giá Hệ Thống",
-    "inverseRate": "Tỷ Giá Nghịch Đảo",
-    "spotRatio": "Tỷ Lệ Giao Ngay DEX Pool",
+    "title": "Pool Thanh khoản On-Chain BDEX",
+    "subtitle": "TVL thời gian thực, Khối lượng 24h, Phí giao thức và Tỷ lệ ngang giá động",
+    "tvl": "Tổng thanh khoản (TVL)",
+    "volume24h": "Khối lượng 24H",
+    "fee24h": "Phí thu được trong 24H",
+    "apr": "Tổng APR của Pool",
+    "reserves": "Dự trữ Token trong Pool",
+    "parityStandard": "Ngang giá giao thức động",
+    "systemParity": "Ngang giá chuyển đổi hệ thống",
+    "inverseRate": "Tỷ giá nghịch đảo",
+    "spotRatio": "Tỷ lệ giao ngay Pool DEX",
     "reScrape": "Quét lại",
     "openPool": "Mở Pool",
-    "verifiedContracts": "Hợp Đồng Thông Minh Đã Xác Minh",
-    "poolContract": "Hợp Đồng Pool",
+    "verifiedContracts": "Smart Contract On-Chain đã xác minh",
+    "poolContract": "Hợp đồng Pool",
     "botToken": "Token BOT (Token 0)",
     "caToken": "Token CA (Token 1)"
   },
   "architecture": {
-    "badge": "Hạ Tầng Nền Tảng",
-    "title": "Kiến Trúc BOT Chain &",
-    "titleHighlight": "5 Trụ Cột Cốt Lõi",
-    "subtitle": "Tìm hiểu nền tảng công nghệ xử lý các tác vụ AI phân tán hiệu năng cao.",
-    "pillar1Title": "Layer 1 Thông Lượng Cao",
-    "pillar1Desc": "Mạng lưới tương thích EVM tối ưu hóa cho xử lý giao dịch micro-giây.",
-    "pillar2Title": "Ma Trận Tính Toán Phân Tán",
-    "pillar2Desc": "Cụm siêu máy tính GPU toàn cầu hỗ trợ suy luận và huấn luyện mô hình AI.",
-    "pillar3Title": "Bằng Chứng Mật Mã & Đồng Thuận PoS",
-    "pillar3Desc": "Xác minh tính xác thực phần cứng và phân phối phần thưởng có thể kiểm chứng.",
-    "pillar4Title": "Thanh Khoản Tự Trị BDEX",
-    "pillar4Desc": "Sàn DEX AMM gốc hỗ trợ swap sâu, tối ưu định tuyến và cơ chế đốt liên tục.",
-    "pillar5Title": "Bảo Mật Tự Quản",
-    "pillar5Desc": "Người dùng nắm giữ khóa riêng, bảo đảm quyền kiểm soát tài sản tuyệt đối."
+    "badge": "Hạ tầng cơ sở",
+    "title": "Kiến trúc BOT Chain &",
+    "titleHighlight": "5 Trụ cột cốt lõi",
+    "subtitle": "Khám phá ngăn xếp công nghệ đa tầng thúc đẩy các khối lượng công việc AI phi tập trung thông lượng cao.",
+    "pillar1Title": "Layer 1 thông lượng cao",
+    "pillar1Desc": "Lớp thực thi tương thích EVM được tối ưu hóa cho việc xử lý giao dịch ở tốc độ micro giây và điều phối phi tập trung.",
+    "pillar2Title": "Ma trận điện toán phi tập trung",
+    "pillar2Desc": "Các cụm siêu điện toán GPU phân tán tập hợp phần cứng toàn cầu để phục vụ suy luận và huấn luyện mô hình trí tuệ nhân tạo.",
+    "pillar3Title": "Bằng chứng mật mã & PoS",
+    "pillar3Desc": "Xác thực mật mã về tính toàn vẹn của phần cứng và phân phối phần thưởng có tính tất định.",
+    "pillar4Title": "Thanh khoản tự trị BDEX",
+    "pillar4Desc": "Nhà tạo lập thị trường tự động (AMM) gốc hỗ trợ swap token sâu, định tuyến không thất thoát và các hố đốt token liên tục.",
+    "pillar5Title": "Bảo mật phi lưu ký",
+    "pillar5Desc": "Quản lý khóa mật mã trực tiếp đảm bảo quyền tự chủ tuyệt đối của người dùng đối với các đơn vị điện toán và token kiếm được."
   },
   "tokenomics": {
-    "badge": "Mô Hình Kinh Tế & Giảm Phát",
-    "title": "Tokenomics CA &",
-    "titleHighlight": "Cơ Chế Phân Bổ Nguồn Cung",
-    "subtitle": "Mô hình toán học minh bạch: Tổng cung 210 triệu, chu kỳ giảm 22 năm và đốt đa tầng.",
-    "maxSupply": "210,000,000 CA",
-    "maxSupplyLabel": "Tổng Cung Tối Đa",
-    "dailyEmission": "40,000 CA",
-    "dailyEmissionLabel": "Phát Hành Hàng Ngày Ban Đầu",
+    "badge": "Mô hình kinh tế & Giảm phát",
+    "title": "Kinh tế học Token CA &",
+    "titleHighlight": "Phân phối nguồn cung",
+    "subtitle": "Bản thiết kế toán học minh bạch: Tổng cung tối đa 210 triệu, đường cong giảm một nửa 22 năm và hố đốt token đa tầng.",
+    "maxSupply": "210.000.000 CA",
+    "maxSupplyLabel": "Mức trần tối đa",
+    "dailyEmission": "40.000 CA",
+    "dailyEmissionLabel": "Phát hành hàng ngày ban đầu",
     "halvingPeriod": "2 Năm",
-    "halvingPeriodLabel": "Chu Kỳ Giảm 10%",
+    "halvingPeriodLabel": "Chu kỳ giảm 10%",
     "burnRate": "1.80%",
-    "burnRateLabel": "Tỷ Lệ Đốt Khi Bán Trên BDEX",
-    "breakdownPool1": "Đào Tính Toán (42%)",
+    "burnRateLabel": "Hố đốt khi bán trên BDEX",
+    "breakdownPool1": "Khai thác điện toán (42%)",
     "breakdownPool2": "Staking PoS (18%)",
-    "breakdownPool3": "VIP Supernode (35%)",
-    "breakdownPool4": "Hệ Sinh Thái & LP (5%)"
+    "breakdownPool3": "Supernode VIP (35%)",
+    "breakdownPool4": "Hệ sinh thái & LP (5%)"
   },
   "vip": {
-    "badge": "Quản Trị Cộng Đồng",
-    "title": "Hệ Thống 10 Cấp",
-    "titleHighlight": "VIP Supernode",
-    "subtitle": "Tìm hiểu cách supernode bảo vệ mạng lưới và chia sẻ quỹ 14,000 CA mỗi ngày.",
+    "badge": "Quản trị cộng đồng",
+    "title": "Hệ thống cấp bậc Supernode",
+    "titleHighlight": "VIP 10 tầng",
+    "subtitle": "Tìm hiểu cách các supernode bảo vệ các cụm điện toán phi tập trung và chia sẻ pool phần thưởng 14.000 CA mỗi ngày.",
     "tier": "Cấp bậc",
-    "hashrateReq": "Hashrate Mạng Yêu Cầu",
-    "dailyShare": "Tỷ Phần Quỹ Hàng Ngày",
-    "governance": "Trọng Số Bỏ Phiếu"
+    "hashrateReq": "Hashrate mạng lưới yêu cầu",
+    "dailyShare": "Tỷ lệ chia sẻ pool hàng ngày",
+    "governance": "Trọng số biểu quyết quản trị"
   },
   "guides": {
-    "badge": "Hướng Dẫn Từng Bước",
-    "title": "Hướng Dẫn Tương Tác",
-    "titleHighlight": "Hệ Sinh Thái",
-    "subtitle": "Hướng dẫn chi tiết từ tạo ví BO, mua hashrate, staking đến cầu nối cross-chain.",
+    "badge": "Hướng dẫn từng bước",
+    "title": "Hướng dẫn tương tác",
+    "titleHighlight": "Hệ sinh thái",
+    "subtitle": "Các bài hướng dẫn rõ ràng, đã được xác minh để cài đặt BO Wallet, nhận sức mạnh tính toán, staking và thực hiện cầu nối cross-chain.",
     "allCategories": "Tất cả hướng dẫn",
     "setup": "Cài đặt",
-    "computing": "Mua Hashrate",
-    "earnings": "Nhận Thưởng",
-    "exchange": "Giao Dịch",
-    "security": "Bảo Mật",
-    "keyTakeaways": "Điểm Cốt Lõi",
-    "viewGuide": "Xem Hướng Dẫn",
-    "proTip": "MẸO HỮU ÍCH",
+    "computing": "Điện toán",
+    "earnings": "Thu nhập",
+    "exchange": "Giao dịch",
+    "security": "Bảo mật",
+    "keyTakeaways": "Điểm mấu chốt",
+    "viewGuide": "Mở hướng dẫn",
+    "proTip": "MẸO CHUYÊN GIA",
     "warning": "LƯU Ý QUAN TRỌNG"
   },
   "learn": {
-    "badge": "Thư Viện Kiến Thức",
-    "title": "Làm Chủ Siêu Tính Toán",
-    "titleHighlight": "Phi Tập Trung",
-    "subtitle": "Tài liệu giáo dục về ma trận tính toán phân tán, đồng thuận và kinh tế phần cứng."
+    "badge": "Cơ sở tri thức",
+    "title": "Làm chủ siêu điện toán",
+    "titleHighlight": "Phi tập trung",
+    "subtitle": "Tài liệu nghiên cứu giáo dục về ma trận điện toán phân tán, xác thực đồng thuận và kinh tế học phần cứng được token hóa."
   },
   "events": {
-    "badge": "Sự Kiện Toàn Cầu",
-    "title": "Hội Nghị Thượng Đỉnh &",
-    "titleHighlight": "Kênh Cộng Đồng",
-    "subtitle": "Kết nối với đội ngũ phát triển CaryPact và các chuyên gia AI tại các sự kiện quốc tế."
+    "badge": "Hiện diện toàn cầu",
+    "title": "Hội nghị đồng thuận &",
+    "titleHighlight": "Kênh cộng đồng",
+    "subtitle": "Kết nối với các nhà phát triển CaryPact, các validator và nhà nghiên cứu AI tại các hội nghị thượng đỉnh quốc tế."
   },
   "risks": {
-    "badge": "Công Bố Rủi Ro Bắt Buộc",
-    "title": "Rủi Ro Hệ Sinh Thái &",
-    "titleHighlight": "Danh Mục Tự Kiểm Tra DYOR",
-    "subtitle": "Đánh giá rủi ro minh bạch trước khi phân bổ tài sản vào tính toán hoặc thanh khoản.",
-    "risk1Title": "Tính Vĩnh Viễn Của Mua Hashrate",
-    "risk1Desc": "1 USDT = 1 Đơn vị Hashrate. Sau khi kích hoạt, không thể hoàn lại hoặc rút gốc.",
-    "risk2Title": "Biến Động Giá Thị Trường",
-    "risk2Desc": "Giá token CA và BOT dao động theo thị trường. Kết quả quá khứ không bảo đảm tương lai.",
-    "risk3Title": "Phí Trượt Giá 5% Khi Giao Dịch",
-    "risk3Desc": "Bán CA chịu 5% phí (1.8% đốt, 3.2% chia cho node) nhằm bảo vệ tokenomics dài hạn.",
-    "risk4Title": "Trách Nhiệm Tự Quản Khóa Bí Mật",
-    "risk4Desc": "Bạn tự chịu trách nhiệm bảo quản 12 cụm từ khôi phục và khóa riêng tư của mình."
+    "badge": "Công bố bắt buộc",
+    "title": "Rủi ro hệ sinh thái &",
+    "titleHighlight": "Danh mục kiểm tra DYOR",
+    "subtitle": "Đánh giá rủi ro minh bạch, toàn diện trước khi cam kết tài sản vào sức mạnh tính toán hoặc các pool thanh khoản.",
+    "risk1Title": "Tính vĩnh viễn của việc mua Hashrate",
+    "risk1Desc": "1 USDT = 1 Đơn vị Hashrate. Sau khi được kích hoạt, sức mạnh tính toán không thể hoàn tiền, rút lại hoặc hủy bỏ.",
+    "risk2Title": "Biến động giá thị trường",
+    "risk2Desc": "Token CA và BOT biến động dựa trên động lực thị trường. Sự tăng trưởng trong quá khứ không đảm bảo lợi nhuận trong tương lai.",
+    "risk3Title": "Trượt giá giao dịch 5%",
+    "risk3Desc": "Bán CA phải chịu mức phí bắt buộc 5% (1.8% đốt, 3.2% phân bổ cho node) để bảo vệ kinh tế học token dài hạn.",
+    "risk4Title": "Trách nhiệm tự bảo quản khóa ví",
+    "risk4Desc": "Bạn hoàn toàn chịu trách nhiệm bảo mật cụm từ hạt giống (seed phrase) 12 từ và khóa riêng tư (private key) ngoại tuyến."
   },
   "footer": {
-    "about": "CaryPact Learning Hub là nền tảng giáo dục độc lập nhằm nâng cao hiểu biết về Web3 compute và nhận thức rủi ro.",
-    "quickLinks": "Liên Kết Nhanh",
-    "legal": "Miễn Trừ",
-    "copyright": "© 2026 CaryPact Learning Hub. Tài nguyên cộng đồng độc lập.",
-    "invitationCode": "Mã Mời: C82A37"
+    "about": "CaryPact Learning Hub là nền tảng phân tích và giáo dục độc lập nhằm thúc đẩy tính minh bạch, phổ cập kiến thức điện toán Web3 và nhận thức rủi ro.",
+    "quickLinks": "Điều hướng",
+    "legal": "Tuyên bố từ chối trách nhiệm",
+    "copyright": "© 2026 CaryPact Learning Hub. Tài nguyên cộng đồng độc lập. Không phải lời khuyên tài chính.",
+    "invitationCode": "Mã mời: C82A37"
   },
   "ai": {
-    "title": "Trợ Lý Học Tập & Gia Sư AI",
-    "subtitle": "Đặt câu hỏi về CaryPact, BOT Chain, Hashrate hoặc Tokenomics",
-    "placeholder": "Nhập câu hỏi của bạn...",
-    "send": "Gửi Câu Hỏi",
-    "thinking": "Đang tra cứu tài liệu chính thức...",
-    "disclaimer": "Câu trả lời của AI dựa trên tài liệu công khai nhằm mục đích học tập."
+    "title": "Trợ lý & Gia sư học tập AI",
+    "subtitle": "Đặt bất kỳ câu hỏi nào về CaryPact, BOT Chain, Hashrate hoặc Tokenomics",
+    "placeholder": "Nhập câu hỏi của bạn tại đây...",
+    "send": "Hỏi trợ lý",
+    "thinking": "Đang phân tích tài liệu giao thức...",
+    "disclaimer": "Các câu trả lời của AI được tạo ra từ tài liệu công khai và whitepaper đã được xác minh chỉ nhằm mục đích giáo dục."
   },
   "pdf": {
-    "title": "Bản Tóm Tắt Giao Thức CaryPact",
-    "subtitle": "Tổng hợp nhanh về tokenomics, tỷ lệ tính toán và quy trình bảo mật.",
-    "download": "Tải Bản Tóm Tắt PDF",
-    "print": "In Trang Này"
+    "title": "Bảng tóm tắt toàn diện giao thức CaryPact",
+    "subtitle": "Tóm tắt tham khảo nhanh toàn diện về tokenomics, tỷ lệ điện toán và quy trình bảo mật.",
+    "download": "Tải bảng tóm tắt có thể in (PDF)",
+    "print": "In bản tóm tắt"
   },
   "video": {
-    "title": "Video Hướng Dẫn Chi Tiết",
-    "subtitle": "Xem thao tác thực tế từng bước theo hướng dẫn đã chọn."
+    "title": "Video hướng dẫn chi tiết",
+    "subtitle": "Video trình diễn trực quan từng bước của hướng dẫn đã chọn."
   },
   "newsletter": {
-    "title": "Đăng Ký Nhận Bản Tin Hàng Tuần",
-    "subtitle": "Nhận dữ liệu on-chain đã xác minh và lịch sự kiện mới nhất qua email.",
-    "emailPlaceholder": "Nhập địa chỉ email...",
-    "subscribe": "Đăng Ký Ngay",
-    "subscribed": "Đăng Ký Thành Công!",
-    "privacy": "Chúng tôi tôn trọng quyền riêng tư của bạn. Không spam, hủy bất cứ lúc nào."
+    "title": "Bản tin tóm tắt giao thức hàng tuần",
+    "subtitle": "Đăng ký để nhận các phân tích đã xác minh, cập nhật lượng phát thải và thông báo sự kiện đồng thuận sắp tới trực tiếp vào hộp thư của bạn.",
+    "emailPlaceholder": "Nhập địa chỉ email của bạn...",
+    "subscribe": "Đăng ký nhận tin",
+    "subscribed": "Đăng ký thành công!",
+    "privacy": "Chúng tôi tôn trọng quyền riêng tư của bạn. Không spam, hủy đăng ký bất cứ lúc nào."
   },
   "botChainLearn": {
-    "badge": "Kiến trúc & tài liệu chính thức của BOT Chain",
-    "titlePrefix": "",
-    "titleHighlight": "BOT Chain là gì?",
-    "subtitle": "BOT Chain là <b>blockchain Layer 1 tương thích EVM, nguyên bản AI</b>, được xây dựng cho ứng dụng tần suất cao, tính toán phi tập trung và thanh toán on-chain có thể xác minh.",
+    "badge": "Kiến trúc & Tài liệu chính thức của BOT Chain",
+    "titlePrefix": "BOT Chain là",
+    "titleHighlight": "gì?",
+    "subtitle": "BOT Chain là <b>blockchain Layer 1 nguyên bản cho AI, tương thích EVM</b> được xây dựng cho các ứng dụng tần suất cao, điện toán phi tập trung và thanh toán on-chain có thể kiểm chứng.",
     "bannerKicker": "Hạ tầng Web3 thế hệ mới",
-    "bannerTitle": "Blockchain Layer 1 nguyên bản AI",
-    "bannerDesc": "Nhà phát triển có thể xây dựng bằng công cụ EVM quen thuộc, đồng thời kết nối tác nhân AI, tài nguyên tính toán và tài sản số vào một mạng blockchain chung.",
+    "bannerTitle": "Blockchain Layer 1 nguyên bản cho AI",
+    "bannerDesc": "Nhà phát triển có thể xây dựng bằng các công cụ EVM quen thuộc đồng thời kết nối các AI agent, tài nguyên tính toán và tài sản kỹ thuật số vào một mạng lưới blockchain chung.",
     "ctaLearn": "Khám phá BOT Chain Learn",
     "ctaPortal": "Cổng thông tin chính thức",
-    "gridTitle": "Hạ tầng dành cho ứng dụng on-chain thông minh",
-    "gridDesc": "Được xây dựng từ đầu cho các tác nhân tự trị có thể xác minh, thanh toán vi mô độ trễ thấp và mạng tính toán phi tập trung vật lý.",
-    "footerSpec": "Đặc tả BOT Chain",
-    "footerActive": "Tiêu chuẩn đang áp dụng",
+    "gridTitle": "Hạ tầng được thiết kế cho các ứng dụng On-Chain thông minh",
+    "gridDesc": "Được xây dựng từ đầu cho các tác tử tự trị có thể kiểm chứng, thanh toán vi mô độ trễ thấp và mạng lưới điện toán phi tập trung vật lý.",
+    "footerSpec": "Thông số BOT Chain",
+    "footerActive": "Tiêu chuẩn đang hoạt động",
     "card1Title": "Thực thi tương thích EVM",
-    "card1Desc": "Xây dựng và triển khai hợp đồng thông minh Solidity với công cụ và quy trình Ethereum quen thuộc.",
+    "card1Desc": "Xây dựng và triển khai các smart contract Solidity bằng các công cụ và quy trình phát triển Ethereum quen thuộc.",
     "card1Tag": "EVM & Solidity",
-    "card2Title": "Thanh toán nhanh, dễ dự đoán",
-    "card2Desc": "Hỗ trợ tương tác on-chain thường xuyên với mạng được thiết kế cho thực thi độ trễ thấp và xử lý giao dịch hiệu quả.",
+    "card2Title": "Thanh toán nhanh, có thể dự đoán",
+    "card2Desc": "Hỗ trợ các tương tác on-chain thường xuyên với mạng lưới được thiết kế cho việc thực thi độ trễ thấp và xử lý giao dịch hiệu quả.",
     "card2Tag": "Tần suất cao",
-    "card3Title": "Mạng vận hành kép",
-    "card3Desc": "Kết hợp bảo mật mạng dựa trên staking với sự tham gia DePIN để kết nối hoạt động on-chain với hạ tầng tính toán vật lý.",
+    "card3Title": "Mạng lưới truyền động kép",
+    "card3Desc": "Kết hợp bảo mật mạng dựa trên staking với sự tham gia của DePIN để kết nối hoạt động on-chain với hạ tầng điện toán vật lý.",
     "card3Tag": "Staking + DePIN",
-    "card4Title": "Hạ tầng cho tác nhân AI",
-    "card4Desc": "Cung cấp cho ứng dụng tác nhân AI nền tảng có thể xác minh để thực thi hợp đồng, thanh toán, phối hợp và kết quả on-chain có thể kiểm toán.",
-    "card4Tag": "Phối hợp AI"
+    "card4Title": "Hạ tầng cho AI Agent",
+    "card4Desc": "Cung cấp cho các ứng dụng AI agent một nền tảng có thể kiểm chứng để thực thi hợp đồng, thanh toán, điều phối và kiểm toán kết quả on-chain.",
+    "card4Tag": "Điều phối AI"
   },
   "carypactBenchmark": {
     "footerValue": "Giá trị cốt lõi của giao thức",
     "bridgeLabel": "Kiến trúc hệ sinh thái BOT Chain:",
-    "bridgeText": "CaryPact là một trong những giao thức chuẩn mực hàng đầu vận hành trong hệ sinh thái BOT Chain.",
+    "bridgeText": "CaryPact là một trong những giao thức chuẩn mực hàng đầu chạy trong hệ sinh thái BOT Chain.",
     "bridgeLayer": "Layer 1: BOT Chain",
     "bridgeProtocol": "Giao thức chuẩn mực: CaryPact",
     "badge": "Giao thức chuẩn mực đầu tiên trên BOT Chain",
-    "titlePrefix": "",
-    "titleHighlight": "CaryPact là gì?",
-    "tagline": "Giao thức chuẩn mực đầu tiên vận hành trên BOT Chain",
-    "description": "CaryPact tích hợp giá trị của BOT Chain, cho phép người dùng toàn cầu tham gia xây dựng và chia sẻ lợi nhuận của BOT Chain thông qua giao thức, từ đó đạt được tăng trưởng giá trị.",
-    "ctaLaunch": "Mở DApp CaryPact (app.carypact.com)",
-    "ctaCalc": "Máy tính & mô phỏng CA / BOT trực tiếp",
+    "titlePrefix": "CaryPact là",
+    "titleHighlight": "gì?",
+    "tagline": "Giao thức chuẩn mực đầu tiên chạy trên BOT Chain",
+    "description": "CaryPact tích hợp giá trị của BOT Chain, cho phép người dùng toàn cầu tham gia vào việc xây dựng và thu nhập của BOT Chain thông qua giao thức, đạt được sự gia tăng giá trị.",
+    "ctaLaunch": "Mở CaryPact DApp (app.carypact.com)",
+    "ctaCalc": "Máy tính & Mô phỏng CA / BOT trực tiếp",
     "philosophy": "Triết lý giao thức",
-    "whyTitle": "Vì sao chọn CaryPact?",
-    "whyDesc": "Xây dựng trên cơ chế tính toán phi đầu cơ, phân phối công bằng về mặt toán học và sự gắn kết giá trị bền vững dài hạn.",
+    "whyTitle": "Tại sao chọn CaryPact?",
+    "whyDesc": "Được xây dựng dựa trên cơ chế tính toán phi đầu cơ, phân phối công bằng theo toán học và gắn kết giá trị bền vững lâu dài.",
     "pillar1Badge": "Mạng lưới bền vững",
-    "pillar1Title": "Hạ tầng tính toán thực và bền vững",
-    "pillar1Desc": "CaryPact không theo đuổi các ưu đãi bùng nổ ngắn hạn mà xây dựng một mạng lưới hạ tầng sức mạnh tính toán thực và bền vững.",
+    "pillar1Title": "Hạ tầng sức mạnh tính toán thực tế & bền vững",
+    "pillar1Desc": "CaryPact không theo đuổi các động lực bùng nổ ngắn hạn mà xây dựng một mạng lưới hạ tầng sức mạnh tính toán thực tế và bền vững.",
     "pillar2Badge": "Tầm nhìn 20 năm",
-    "pillar2Title": "Phục vụ điện toán AI trong 20 năm tới",
-    "pillar2Desc": "Mục tiêu thiết kế của CaryPact là phục vụ nhu cầu AI và tính toán phi tập trung trong hai mươi năm tới.",
-    "pillar3Badge": "Luật chơi bình đẳng",
-    "pillar3Title": "Cạnh tranh công bằng, không độc quyền nền tảng",
-    "pillar3Desc": "Sức mạnh tính toán không còn do một nền tảng duy nhất kiểm soát; giao thức là luật chơi và mọi người tham gia cạnh tranh công bằng trong cùng một hệ thống.",
-    "pillar4Badge": "Dòng tiền thực",
+    "pillar2Title": "Phục vụ nhu cầu điện toán AI trong 20 năm tới",
+    "pillar2Desc": "Mục tiêu thiết kế của CaryPact là phục vụ nhu cầu điện toán phân tán và AI trong hai mươi năm tiếp theo.",
+    "pillar3Badge": "Quy tắc giao thức bình đẳng",
+    "pillar3Title": "Cạnh tranh công bằng không độc quyền nền tảng",
+    "pillar3Desc": "Sức mạnh tính toán không còn bị kiểm soát bởi một nền tảng duy nhất; giao thức là quy tắc và mọi người tham gia đều cạnh tranh công bằng trong cùng một hệ thống.",
+    "pillar4Badge": "Dòng tiền thực tế",
     "pillar4Title": "Sản lượng sức mạnh tính toán thực liên tục",
-    "pillar4Desc": "Người dùng không còn phụ thuộc vào đầu cơ thị trường mà liên tục nhận dòng tiền từ sản lượng sức mạnh tính toán thực."
+    "pillar4Desc": "Người dùng không còn dựa vào đầu cơ thị trường mà liên tục nhận được dòng tiền từ sản lượng sức mạnh tính toán thực tế."
   },
   "earningMethods": {
-    "badge": "Năm hướng kiếm lợi nhuận cốt lõi",
-    "title": "Cách kiếm lợi nhuận trên <hl>CaryPact & BOT Chain</hl>",
-    "subtitle": "Đi thẳng vào 5 cơ chế kiếm lợi nhuận chính thức. Dù bạn thích BOT Pledge thanh khoản với tự động tái đầu tư, staking PoS của giao thức, cổ tức sức mạnh tính toán vĩnh viễn, máy chủ node AI vật lý hay đào BOT gốc trên Layer 1.",
-    "floatingTag": "Tiềm năng lợi nhuận",
+    "badge": "Năm phương thức kiếm tiền cốt lõi",
+    "title": "Cách kiếm tiền trên <hl>CaryPact & BOT Chain</hl>",
+    "subtitle": "Tìm hiểu ngay 5 cơ chế kiếm tiền chính thức. Cho dù bạn thích BOT Pledge thanh khoản linh hoạt với lãi kép tự động, PoS staking giao thức, cổ tức sức mạnh tính toán vĩnh viễn, máy chủ node AI vật lý hay khai thác BOT Layer 1 nguyên bản.",
+    "floatingTag": "Tiềm năng thu nhập",
     "alt": {
-      "coinsLeft": "Đồng xu tiềm năng lợi nhuận phi tập trung",
-      "coinsRight": "Đồng xu đào BOT Chain DEX",
-      "coinsFloat": "Đồng xu tiềm năng lợi nhuận",
-      "coinsBanner": "Chồng đồng xu tiềm năng lợi nhuận"
+      "coinsLeft": "Đồng xu tiềm năng thu nhập phi tập trung",
+      "coinsRight": "Đồng xu khai thác DEX của BOT Chain",
+      "coinsFloat": "Đồng xu thu nhập tiềm năng",
+      "coinsBanner": "Chồng đồng xu tiềm năng thu nhập"
     },
     "labels": {
-      "whatItIs": "Đây là gì",
-      "howYouEarn": "Cách bạn kiếm lợi nhuận:",
-      "ratesSpecs": "Tỷ lệ & thông số:",
+      "whatItIs": "Nó là gì",
+      "howYouEarn": "Cách bạn kiếm tiền:",
+      "ratesSpecs": "Tỷ lệ & Thông số:",
       "capitalTerms": "Điều khoản vốn:",
-      "deepDive": "Xem chi tiết"
+      "deepDive": "Chi tiết chuyên sâu"
     },
     "banner": {
-      "kicker": "Phân tích lợi suất toàn diện",
-      "title": "Bạn đang tìm công thức toán học chi tiết, lịch khóa vốn và công cụ tính ROI?",
-      "desc": "Hãy truy cập thư mục <strong>/earn</strong> chuyên biệt để xem đầy đủ các hệ số lãi kép của hashrate, hệ số trọng số theo thời hạn PoS (30–360 ngày), các cấp bán trước node và công cụ tính toán tương tác.",
-      "cta": "Khám phá trung tâm lợi nhuận (/earn)"
+      "kicker": "Thông tin toàn diện về lợi nhuận",
+      "title": "Bạn đang tìm kiếm các công thức toán học chuyên sâu, lịch trình khóa vốn & máy tính ROI?",
+      "desc": "Truy cập thư mục chuyên biệt <strong>/earn</strong> để xem phân tích đầy đủ về các hệ số lãi kép hashrate, hệ số nhân trọng số thời gian PoS (30 ngày–360 ngày), các bậc presale node và công cụ tính toán tương tác.",
+      "cta": "Khám phá Hub Kiếm tiền Chuyên biệt (/earn)"
     },
     "methods": {
       "caHashrate": {
         "title": "Hashrate CA / Sức mạnh tính toán",
-        "badge": "Lợi nhuận chính • {dailyCA, number} CA / ngày",
-        "cta": "Mua hashrate CA",
-        "whatIsIt": "1 USDT = 1 đơn vị sức mạnh tính toán. Sức mạnh tính toán được token hóa, được đảm bảo bởi các cụm GPU/CPU vật lý phi tập trung.",
-        "howItEarns": "Giao thức phân bổ {percent, number}% ({dailyCA, number} CA/ngày) tổng lượng phát hành cho những người nắm giữ hashrate đang hoạt động. Lợi nhuận hằng ngày được ghi có mỗi 24 giờ vào 00:00 UTC.",
-        "keyRates": "Tối thiểu {minUsdt, number} USDT ({minUsdt, number} đơn vị). Lợi suất động hằng ngày được tính lãi kép theo hệ số thời gian (K ≈ 1,01). Lợi nhuận trả bằng token CA.",
-        "lockNotice": "Kích hoạt sức mạnh tính toán vĩnh viễn (không hoàn vốn gốc; cổ tức đào hằng ngày liên tục)."
+        "badge": "Thu nhập chính • {dailyCA, number} CA / Ngày",
+        "cta": "Mua Hashrate CA",
+        "whatIsIt": "1 USDT = 1 Đơn vị Sức mạnh tính toán. Sức mạnh tính toán được token hóa được hỗ trợ bởi các cụm GPU/CPU vật lý phi tập trung.",
+        "howItEarns": "Giao thức phân bổ {percent, number}% ({dailyCA, number} CA/ngày) tổng lượng phát thải cho những người nắm giữ hashrate đang hoạt động. Thu nhập hàng ngày được ghi có mỗi 24 giờ vào lúc 00:00 UTC.",
+        "keyRates": "Tối thiểu {minUsdt, number} USDT ({minUsdt, number} Đơn vị). Lợi nhuận động hàng ngày được nhân với hệ số thời gian (K ≈ 1.01). Lợi nhuận trả bằng token CA.",
+        "lockNotice": "Kích hoạt điện toán vĩnh viễn (không hoàn trả vốn gốc; nhận cổ tức khai thác hàng ngày liên tục)."
       },
       "posMining": {
-        "title": "Đào PoS giao thức / Staking CA",
-        "badge": "Quỹ {percent, number}% • {dailyCA, number} CA / ngày",
-        "cta": "Bắt đầu đào PoS",
-        "whatIsIt": "Đào theo Proof-of-Stake bằng cách gửi token CA đã tích lũy hoặc đã mua vào các hợp đồng PoS của giao thức.",
-        "howItEarns": "Chia sẻ quỹ phát hành PoS riêng {dailyCA, number} CA mỗi ngày. Cam kết dài hạn nhận trọng số hệ số cao hơn.",
-        "keyRates": "30 ngày (1,0x), 90 ngày (1,5x), 180 ngày (2,0x), 360 ngày (3,0x). Lãi kép tự động hằng ngày.",
-        "lockNotice": "Vốn gốc bị khóa theo kỳ hạn. 100% vốn gốc CA đã stake được mở khóa và hoàn trả khi hợp đồng đáo hạn."
+        "title": "Khai thác PoS giao thức / Staking CA",
+        "badge": "Pool {percent, number}% • {dailyCA, number} CA / Ngày",
+        "cta": "Bắt đầu Khai thác PoS",
+        "whatIsIt": "Khai thác Proof-of-Stake bằng cách gửi token CA tích lũy hoặc đã mua của bạn vào các hợp đồng PoS của giao thức.",
+        "howItEarns": "Chia sẻ pool phát thải PoS hàng ngày chuyên dụng gồm {dailyCA, number} CA. Cam kết dài hạn nhận được hệ số nhân trọng số cao hơn.",
+        "keyRates": "30 ngày (1.0x), 90 ngày (1.5x), 180 ngày (2.0x), 360 ngày (hệ số nhân 3.0x). Tự động cộng dồn lãi kép hàng ngày.",
+        "lockNotice": "Khóa vốn theo thời gian. 100% gốc CA đã stake của bạn sẽ được mở khóa và hoàn trả khi hợp đồng đáo hạn."
       },
       "miningServers": {
-        "title": "Máy chủ đào / Bán trước máy",
-        "badge": "DePIN doanh nghiệp • Ưu tiên node",
-        "cta": "Xem máy chủ đào",
-        "whatIsIt": "Đặt trước trực tiếp các máy chủ tính toán AI GPU/CPU vật lý hiệu năng cao được đặt tại trung tâm dữ liệu tổ chức Tier 3/4.",
-        "howItEarns": "Chủ sở hữu máy vật lý nhận trực tiếp quyền xác thực tạo khối, phí tác vụ thực thi AI thương mại và phần chia doanh thu node trọn đời.",
-        "keyRates": "Phân bổ hash doanh nghiệp với xác minh NFT được chứng nhận. Định tuyến ưu tiên cho khối lượng huấn luyện và suy luận mô hình AI thương mại.",
-        "lockNotice": "Phần cứng vật lý được lưu ký bởi các cơ sở lưu trữ đã xác minh, kèm dữ liệu giám sát kiểm toán hash có thể xác minh."
+        "title": "Máy chủ khai thác / Presale máy đào",
+        "badge": "DePIN Doanh nghiệp • Ưu tiên Node",
+        "cta": "Xem Máy chủ khai thác",
+        "whatIsIt": "Đặt mua trực tiếp các máy chủ điện toán AI GPU/CPU vật lý hiệu năng cao được lưu trữ tại các trung tâm dữ liệu chuẩn Tier-3/4 dành cho tổ chức.",
+        "howItEarns": "Chủ sở hữu máy vật lý nhận quyền xác thực tạo khối trực tiếp, phí thực thi tác vụ AI thương mại và chia sẻ doanh thu trọn đời của node.",
+        "keyRates": "Phân bổ hashrate doanh nghiệp với chứng nhận NFT đã xác minh. Định tuyến ưu tiên cho các khối lượng công việc đào tạo & suy luận mô hình AI thương mại.",
+        "lockNotice": "Lưu ký phần cứng vật lý được quản lý bởi các cơ sở lưu trữ đã xác minh với dữ liệu đo từ xa hashrate có thể kiểm toán."
       },
       "botHashrate": {
-        "title": "Đào hashrate BOT",
-        "badge": "Gốc Layer 1 • Gas & đồng thuận",
-        "cta": "Đào hashrate BOT",
-        "whatIsIt": "Đào hashrate trực tiếp để tạo ra BOT, tiền mã hóa Layer 1 gốc dùng làm gas và quản trị của BOT Chain.",
-        "howItEarns": "Đào trực tiếp token tầng cơ sở, thu lợi nhuận từ phí giao dịch on-chain, việc thực thi hợp đồng và đốt phí gas trên toàn mạng.",
-        "keyRates": "Phát hành khối Layer 1 gốc. Không cần trượt giá DEX để có token gas gốc. Ủy quyền trực tiếp cho validator.",
-        "lockNotice": "Đào hạ tầng nền tảng hỗ trợ toàn bộ nền kinh tế blockchain mô-đun."
+        "title": "Khai thác Hashrate BOT",
+        "badge": "Layer 1 Nguyên bản • Gas & Đồng thuận",
+        "cta": "Khai thác Hashrate BOT",
+        "whatIsIt": "Khai thác hashrate trực tiếp sản xuất ra BOT, tiền mã hóa Layer 1 dùng làm gas và quản trị của BOT Chain.",
+        "howItEarns": "Khai thác trực tiếp token lớp cơ sở, kiếm doanh thu từ phí giao dịch on-chain, thực thi hợp đồng và lượng đốt phí gas trên toàn mạng lưới.",
+        "keyRates": "Phát thải khối Layer 1 nguyên bản. Không mất phí trượt giá DEX để nhận token gas gốc. Ủy quyền trực tiếp cho validator.",
+        "lockNotice": "Khai thác cơ sở hạ tầng nền tảng hỗ trợ toàn bộ nền kinh tế blockchain dạng mô-đun."
       },
       "botPledge": {
         "title": "BOT Pledge / Staking BOT",
-        "badge": "Rút linh hoạt • Giải phóng 24 giờ • Tự động tái đầu tư",
-        "cta": "Pledge token BOT",
-        "whatIsIt": "Stake BOT để nhận thưởng, vào và ra linh hoạt, toàn quyền tự quyết. Gửi token BOT gốc vào kho pledge của giao thức.",
-        "howItEarns": "Tái đầu tư tự động dùng vốn gốc của ngày hôm trước cộng lợi nhuận hằng ngày làm vốn gốc mới cho staking lãi kép.",
-        "keyRates": "Lợi suất staking động hằng ngày được trả trực tiếp bằng BOT gốc. Không trượt giá DEX. Tự động tái đầu tư on-chain tức thì mỗi 24 giờ.",
-        "lockNotice": "Vốn gốc đã giải phóng có thể rút bất cứ lúc nào. Sau khi rút, bạn có thể nhận sau thời gian mở khóa 24 giờ."
+        "badge": "Thoát linh hoạt • Mở khóa trong 24H • Tự động tính lãi kép",
+        "cta": "Pledge Token BOT",
+        "whatIsIt": "Stake BOT để kiếm phần thưởng với việc tham gia và rút lui linh hoạt. Nạp token BOT gốc vào kho lưu ký giao thức với quyền tự quyết hoàn toàn.",
+        "howItEarns": "Tự động cộng dồn lãi kép sử dụng tiền gốc + thu nhập của ngày hôm trước làm tiền gốc mới cho việc staking sinh lãi kép tiếp theo.",
+        "keyRates": "Lợi nhuận staking hàng ngày linh hoạt được trả trực tiếp bằng BOT gốc. Không trượt giá DEX. Tự động tái đầu tư on-chain tức thì mỗi 24 giờ.",
+        "lockNotice": "Tiền gốc đã giải phóng có thể rút bất cứ lúc nào. Sau khi yêu cầu rút, tiền sẽ có sẵn để nhận sau thời gian mở khóa 24 giờ."
       }
     }
-  },
-  "riskDisclosure": {
-    "badge": "Thông báo quan trọng về rủi ro và công bố thông tin",
-    "title": "Minh bạch & <hl>công bố rủi ro</hl>",
-    "subtitle": "Chúng tôi tin vào việc giáo dục trung thực và đầy đủ. Hãy đọc và hiểu các tham số cấu trúc quan trọng này trước khi đưa tài sản số vào.",
-    "affiliate": {
-      "title": "Tuyên bố về kiếm tiền từ liên kết giới thiệu",
-      "subtitle": "Tuyên bố rõ ràng về tính độc lập của trang và thù lao",
-      "body": "<strong>CaryPact Learning Hub</strong> là nguồn tài nguyên giáo dục và phân tích độc lập, không phải pháp nhân chính thức của công ty. Nếu bạn đăng ký CaryPact qua các liên kết và mã mời trên trang này, chúng tôi có thể nhận hoa hồng giới thiệu. Khoản thù lao này không ảnh hưởng đến cách chúng tôi trình bày khách quan về các quy tắc toán học, việc khóa hashrate vĩnh viễn, cơ chế trượt giá hay các rủi ro."
-    },
-    "items": {
-      "permanence": {
-        "category": "Cấu trúc vốn",
-        "severity": "Rất quan trọng",
-        "title": "Tính vĩnh viễn của đơn vị hashrate (không rút được vốn gốc)",
-        "description": "Khi mua sức mạnh tính toán theo tỷ lệ 1 USDT = 1 đơn vị hashrate (tối thiểu {minUsdt, number} USDT), số vốn được phân bổ sẽ bị khóa vĩnh viễn vào dự trữ tính toán của giao thức. Không có cơ chế hoàn vốn gốc, rút hay mua lại. Lợi nhuận của bạn chỉ đến từ các khoản phân phối đào CA hằng ngày liên tục."
-      },
-      "volatility": {
-        "category": "Rủi ro thị trường",
-        "severity": "Biến động thị trường",
-        "title": "Biến động thị trường & dao động giá",
-        "description": "Giá trị quy đổi của CA, BOT và các token mật mã liên quan có thể biến động mạnh tùy theo điều kiện thị trường mở, độ sâu thanh khoản trên BDEX và tâm lý chung đối với tài sản số. Giá token có thể tăng hoặc giảm đáng kể."
-      },
-      "projections": {
-        "category": "Staking & phát hành",
-        "severity": "Giả định của mô hình",
-        "title": "Dự phóng minh họa so với lợi suất được đảm bảo",
-        "description": "Các dự phóng trong tài liệu tiếp thị của hệ sinh thái (ví dụ mô hình staking lãi kép 360 ngày) dựa trên các tham số toán học cụ thể như giá tăng đều hằng ngày và hoạt động mạng ổn định. Đây là mô phỏng giả định và không được hiểu là lợi suất đầu tư được đảm bảo."
-      },
-      "referral": {
-        "category": "Mô hình đồng thuận",
-        "severity": "Động lực giới thiệu",
-        "title": "Cơ cấu khuyến khích giới thiệu đa cấp (VIP)",
-        "description": "Hệ thống thưởng VIP 10 cấp (V1–V10) được tài trợ từ Quỹ thưởng hoạt động {dailyPool, number} CA/ngày và dựa trên khoản đầu tư cá nhân ({personalUsdt, number} USDT) kết hợp hiệu suất các “nhánh” tuyến dưới của đội nhóm. Phần thưởng phụ thuộc vào sự tham gia tích cực của nhóm và việc mở rộng mạng lưới."
-      },
-      "slippage": {
-        "category": "Cơ chế giao thức",
-        "severity": "Quy tắc kỹ thuật",
-        "title": "Thực thi hợp đồng thông minh & trượt giá {slippage, number}%",
-        "description": "Mọi giao dịch bán token trên BDEX đều chịu khoản phân phối trượt giá bắt buộc {slippage, number}% ({buyback, number}% mua lại & đốt, {node, number}% cho nhà vận hành node). Dù hợp đồng thông minh được triển khai trên BOT Chain, các tương tác blockchain vẫn có rủi ro kỹ thuật và thực thi vốn có."
-      },
-      "custody": {
-        "category": "Bảo mật",
-        "severity": "Tự lưu ký",
-        "title": "Trách nhiệm tự lưu ký & quản lý khóa",
-        "description": "CaryPact và BO Wallet là phi tập trung và phi lưu ký. Bạn hoàn toàn chịu trách nhiệm bảo vệ cụm từ khôi phục 12 từ và khóa riêng tư của mình. Quản trị viên giao thức và nhân viên learning hub không bao giờ có thể khôi phục thông tin đăng nhập bị mất hoặc đảo ngược giao dịch."
-      }
-    },
-    "checklist": {
-      "title": "Danh sách kiểm tra “Tự nghiên cứu” trước khi tham gia",
-      "check1": "Tôi hiểu rằng đơn vị hashrate không thể hoàn tiền hoặc bán lại.",
-      "check2": "Tôi đã ghi lại cụm từ khôi phục 12 từ trên giấy một cách an toàn.",
-      "check3": "Tôi thừa nhận mọi giao dịch bán token trên BDEX đều chịu phí trượt giá {slippage, number}%.",
-      "check4": "Tôi chỉ đóng góp số tiền mà tôi thoải mái chịu đựng được khi thị trường biến động.",
-      "check5": "Tôi đã xác nhận mình chỉ tương tác với các URL tên miền chính thức.",
-      "check6": "Tôi hiểu rằng thưởng VIP từ tuyến dưới đòi hỏi khối lượng tuyển dụng tích cực."
-    },
-    "cta": {
-      "ready": "Sẵn sàng truy cập DApp CaryPact?",
-      "button": "Tiếp tục đến CaryPact với sự đồng ý có hiểu biết"
-    }
-  },
-  "Tokenomics": {
-    "badge": "Kiến trúc kinh tế",
-    "title": "Tokenomics CA: <accent>nguồn cung cố định {supply}</accent>",
-    "subtitle": "Đường cong giảm phát được xác định bằng toán học trong {years} năm, kết hợp phát hành thuật toán hằng ngày với cơ chế đốt ba lớp.",
-    "capLabel": "Nguồn cung tối đa (giới hạn cứng)",
-    "caAmount": "{amount} CA",
-    "capBody": "<cyan>{liquidity} CA</cyan> cho thanh khoản SWAP ban đầu + <purple>{emitted} CA</purple> được phát hành trong {years} năm.",
-    "emissionLabel": "Phát hành hằng ngày ban đầu",
-    "emissionValue": "{amount} CA / ngày",
-    "emissionBody": "Giảm <amber>{rate} mỗi {cycle} năm</amber> trong toàn bộ chu kỳ phân phối {years} năm.",
-    "burnLabel": "Đốt giảm phát ba lớp",
-    "burnValue": "Đốt đa tầng",
-    "burnBody": "Đốt {buyback} khi bán trên BDEX + mua lại {txFee} phí giao dịch + hủy {gas} phí gas BOT.",
-    "allocTitle": "Phân bổ phát hành {amount} CA mỗi ngày",
-    "allocHint": "Nhấp vào bất kỳ phân đoạn nào để xem cơ chế phân phối on-chain",
-    "settlement": "Thanh toán hằng ngày T+1 (00:00 UTC)",
-    "perDay": "{amount} CA/ngày",
-    "poolBadge": "{percent} quỹ ({amount} CA/ngày)",
-    "segmentTitle": "{name}: {percent} ({amount} CA/ngày)",
-    "split": {
-      "mining": {
-        "name": "Đào bằng sức mạnh tính toán",
-        "description": "Phân phối theo tỷ lệ cho người nắm giữ đơn vị hashrate đang hoạt động (hệ số lãi kép K ≈ 1,01)."
-      },
-      "active": {
-        "name": "Quỹ thưởng hoạt động",
-        "description": "Tài trợ ưu đãi cấp VIP và đối chiếu hiệu suất tuyến dưới giới thiệu."
-      },
-      "staking": {
-        "name": "Đầu ra staking PoS",
-        "description": "Phần thưởng staking hằng ngày cho người staking CA có khóa và linh hoạt."
-      },
-      "dao": {
-        "name": "Quản trị DAO",
-        "description": "Chia cho những người đóng góp đồng thuận V7–V10 và quản trị hệ sinh thái."
-      },
-      "foundation": {
-        "name": "Quỹ & công nghệ",
-        "description": "Liên tục chi cho kiểm toán bảo mật giao thức, hạ tầng và tài trợ nhà phát triển."
-      }
-    },
-    "curveTitle": "Giảm phát hành {rate} mỗi hai năm trong {years} năm",
-    "curveSubtitle": "Lịch trình giảm phát thuật toán được lập trình sẵn",
-    "thCycle": "Chu kỳ phát hành",
-    "thDaily": "CA phát hành mỗi ngày",
-    "thAnnual": "Sản lượng quy năm",
-    "thFactor": "Hệ số đường cong",
-    "yearsRange": "Năm {start}–{end}",
-    "factorWithDelta": "{percent} ({delta})",
-    "finalDaily": "Giảm dần",
-    "finalAnnual": "Phần phát hành còn lại",
-    "finalFactor": "Lần giảm một nửa cuối",
-    "sinksTitle": "Cơ chế giảm phát tự động",
-    "sinksIntro": "CaryPact áp dụng các khoản phí trong hợp đồng thông minh nhằm giảm vĩnh viễn nguồn cung lưu hành theo thời gian:",
-    "sink1Title": "Đốt {percent} khi bán trên BDEX",
-    "sink1Tag": "Đốt on-chain",
-    "sink1Body": "Mỗi CA bán trên BDEX chuyển {percent} đến một địa chỉ đốt không thể thu hồi.",
-    "sink2Title": "Mua lại {percent} phí giao dịch",
-    "sink2Tag": "Hút thanh khoản",
-    "sink2Body": "{percent} phí giao dịch được quy đổi qua AMM thành CA rồi đốt.",
-    "sink3Title": "Hủy {percent} phí gas BOT",
-    "sink3Tag": "Đốt nền tảng L1",
-    "sink3Body": "{percent} tổng phí gas của BOT Chain bị các validator hủy vĩnh viễn."
-  },
-  "Footer": {
-    "badge": "Trung tâm học tập",
-    "brandDescription": "Nguồn giáo dục độc lập hàng đầu và cổng phân tích trực tiếp về CaryPact, BOT Chain, token CA và các giao thức siêu máy tính phi tập trung.",
-    "telegram": "Telegram",
-    "twitter": "Twitter / X",
-    "explorer": "Trình khám phá BOT Chain",
-    "navTitle": "Điều hướng",
-    "navHome": "Trang chủ & Trung tâm học tập",
-    "navLive": "Thị trường trực tiếp & cổng CMC",
-    "liveBadge": "TRỰC TIẾP",
-    "navBotChain": "5 trụ cột của BOT Chain",
-    "navTokenomics": "Tokenomics {supply} CA",
-    "navVip": "Hệ thống VIP {count} cấp",
-    "navRisks": "Công bố rủi ro",
-    "guidesTitle": "Hướng dẫn & Thiết lập",
-    "guideStart": "Bắt đầu",
-    "guideWallet": "Tạo ví BO",
-    "guideBuy": "Mua sức mạnh tính toán",
-    "guideStaking": "Hệ số staking (30–360 ngày)",
-    "guideSlippage": "Hoán đổi BDEX trượt giá {percent}",
-    "toolsTitle": "Công cụ & Chính thức",
-    "cheatSheet": "Tải bảng tóm tắt",
-    "newsletter": "Đăng ký bản tin",
-    "launchApp": "Mở ứng dụng CaryPact",
-    "botDocs": "Tài liệu BOT Chain",
-    "disclosureTitle": "Trung tâm học tập độc lập & Công bố liên kết",
-    "disclosureBody": "Trang web này là một sáng kiến giáo dục độc lập và không do CaryPact hay quỹ BOT Chain trực tiếp vận hành. Mọi liên kết đăng ký đều chứa mã mời cộng đồng đã xác minh <code>{inviteCode} (Hậu tố: {suffix})</code>. Chúng tôi có thể nhận hoa hồng giới thiệu khi người dùng tham gia qua các liên kết trên trang này. Nội dung chỉ nhằm mục đích giáo dục và không phải lời khuyên tài chính.",
-    "copyright": "© {year} CaryPact Learning Hub. Nguồn giáo dục độc lập.",
-    "backToTop": "Lên đầu trang"
-  },
-  "earn": {
-    "common": {
-      "methodBadge": "CÁCH {n}",
-      "officialPage": "Trang chính thức: {page}"
-    },
-    "hero": {
-      "home": "Trang chủ",
-      "breadcrumb": "Hướng dẫn kiếm tiền",
-      "badge": "Bản thiết kế kiếm tiền của CaryPact & BOT Chain",
-      "titleA": "Năm cách chính thức để",
-      "titleB": "kiếm tiền trên CaryPact",
-      "desc": "Dữ liệu kỹ thuật trực tiếp, có thể xác minh cùng phân tích toán học cho cả 5 cơ chế kiếm tiền: hashrate CA vĩnh viễn, đào PoS dài hạn, bán trước máy chủ đào doanh nghiệp, đào hashrate BOT trên Layer 1 và BOT Pledge (Bot Staking) linh hoạt với tự động lãi kép.",
-      "cheatSheet": "Tóm tắt nhanh (PDF)"
-    },
-    "nav": {
-      "method": "Cách {n}",
-      "ca": "Hashrate CA",
-      "pos": "Staking PoS",
-      "servers": "Máy chủ đào",
-      "bot": "Hashrate BOT",
-      "pledge": "BOT Pledge"
-    },
-    "ca": {
-      "title": "Hashrate CA và sở hữu sức mạnh tính toán",
-      "desc": "Sở hữu các đơn vị sức mạnh tính toán GPU/CPU được token hóa để tham gia bể đào 16.800 CA mỗi ngày với cổ tức hằng ngày tự động.",
-      "cta": "Mua hashrate CA (DApp)",
-      "card1Title": "Hashrate CA là gì?",
-      "card1Desc": "Trong CaryPact, **Hashrate** là đơn vị tiêu chuẩn của năng lực tính toán AI (nhân tensor, băng thông bộ nhớ GPU, luồng CPU) được đóng góp cho mạng phi tập trung.",
-      "card1Standard": "Tiêu chuẩn: **1 USDT = 1 đơn vị hashrate**",
-      "card1Min": "Tối thiểu: **100 USDT** (100 đơn vị)",
-      "card1Supported": "Hỗ trợ: USDT trên BOT, BSC, ETH",
-      "card2Title": "Bạn kiếm tiền như thế nào",
-      "card2Desc": "Cứ mỗi 24 giờ vào lúc **00:00 UTC**, hợp đồng thông minh chụp lại toàn bộ hashrate đang hoạt động trên toàn cầu và phân phối **bể đào 16.800 CA mỗi ngày** (42% tổng phát hành 40k CA) theo tỷ lệ trọng số hashrate của bạn.",
-      "card2Compound": "Hệ số lãi kép: **K ≈ 1,01**",
-      "card2Pool": "Bể mỗi ngày: **16.800 CA / ngày**",
-      "card2Settlement": "Thanh toán: tự động cộng vào ví DApp",
-      "card3Title": "Lãi suất và điều khoản vốn",
-      "card3Desc": "Lợi suất hằng ngày ước tính dao động từ **0,35% – 0,75%+** tính theo giá trị CA, tùy vào tổng hashrate mạng và định giá token hiện tại.",
-      "card3Rule": "**Quy tắc vốn quan trọng:** việc mua hashrate là khoản đầu tư hạ tầng vĩnh viễn. Vốn không thể hoàn lại; lợi nhuận được thu hồi hoàn toàn từ sản lượng CA đào được mỗi ngày.",
-      "calcTitle": "Máy tính lợi suất hashrate CA",
-      "calcSubtitle": "Mô phỏng lượng CA tạo ra theo ngày, tháng và năm dựa trên khoản USDT bạn nạp.",
-      "calcAmount": "Số tiền mua (USDT):",
-      "calcAmountValue": "{usdt} USDT ({units} đơn vị)",
-      "calcMin": "100U (tối thiểu)",
-      "calcWhale": "20.000U (cá voi)",
-      "calcPrice": "Giá thị trường CA mô phỏng:",
-      "calcCurrent": "$2,74 (hiện tại)",
-      "estDaily": "CA ước tính mỗi ngày",
-      "estMonthly": "CA ước tính mỗi tháng (30 ngày)",
-      "estYearly": "CA ước tính mỗi năm (365 ngày)",
-      "perDay": "/ ngày",
-      "perMonth": "/ tháng",
-      "perYear": "/ năm"
-    },
-    "pos": {
-      "title": "Staking CA dài hạn và đào PoS của giao thức",
-      "desc": "Gửi token CA vào các hợp đồng Proof-of-Stake với hệ số từ 30 đến 360 ngày (1,0x – 3,0x) và nhận lại 100% vốn gốc khi đáo hạn.",
-      "cta": "Bắt đầu đào PoS (DApp)",
-      "tier30": "Khóa ngắn hạn linh hoạt để thử cơ chế",
-      "tier90": "Cam kết theo quý với phần thưởng tăng 50%",
-      "tier180": "Cân bằng tối ưu giữa lợi suất và thanh khoản",
-      "tier360": "Bậc lãi kép dài hạn tối đa",
-      "daysLock": "Khóa {days} ngày",
-      "weight": "Trọng số {m}",
-      "unlockedAt": "Vốn gốc được mở khóa 100% sau {days} ngày",
-      "howTitle": "Đào PoS của giao thức hoạt động ra sao",
-      "how1": "**Phân bổ riêng 18%:** 7.200 CA trong tổng 40.000 CA phát hành mỗi ngày được dành riêng cho hợp đồng staking PoS.",
-      "how2": "**Lợi thế trọng số thời gian:** gửi 360 ngày sẽ áp dụng hệ số 3,0x vào phần chia của bạn, cho lượng CA mỗi ngày trên mỗi token gấp ba lần so với gửi 30 ngày.",
-      "how3": "**An toàn vốn gốc:** khác với hashrate CA (một khoản chi phần cứng vĩnh viễn), staking PoS giữ nguyên toàn bộ vốn gốc của bạn. Khi bộ đếm thời gian khóa về 0, bạn có thể rút 100% khoản CA đã gửi ban đầu về ví.",
-      "simTitle": "Trình mô phỏng phần thưởng staking PoS",
-      "simAmount": "Số CA staking:",
-      "simDuration": "Chọn thời hạn:",
-      "durationBtn": "{days} ngày ({m}x)",
-      "estProfit": "Tổng lợi nhuận ước tính",
-      "returnAtMaturity": "Nhận về khi đáo hạn",
-      "principalPlusRewards": "Vốn gốc + phần thưởng"
-    },
-    "servers": {
-      "title": "Máy chủ đào vật lý và bán trước máy đào",
-      "desc": "Sở hữu máy chủ tính toán AI DePIN vật lý chuyên dụng đặt tại các trung tâm dữ liệu tier-3 và tier-4 toàn cầu, phục vụ xác thực khối cấp cao và doanh thu từ việc thực thi tác vụ AI thương mại.",
-      "cta": "Xem máy chủ đào (DApp)",
-      "card1Title": "Lưu giữ phần cứng chuyên dụng",
-      "card1Desc": "Khác với hashrate đám mây ảo hóa, đợt bán trước máy chủ mang lại quyền sở hữu máy vật lý có thể xác minh, được hỗ trợ bởi cụm GPU/CPU cấp doanh nghiệp với thời gian hoạt động 99,9% và kết nối cáp quang trung lập nhà mạng.",
-      "card1Bullets": [
-        "Chứng nhận NFT phần cứng trên chuỗi",
-        "Cơ sở colocation Tier-3/4 được chứng nhận",
-        "Giám sát hash bằng telemetry theo thời gian thực"
-      ],
-      "card2Title": "Hai dòng doanh thu",
-      "card2Desc": "Máy đào hưởng lợi từ hai lớp kiếm tiền đồng thời: phần thưởng phát hành khi xác thực đồng thuận trên BOT Chain + phí thương mại thực tế do các nhà phát triển AI trả để huấn luyện và suy luận mô hình.",
-      "card2Bullets": [
-        "Phần thưởng xác thực khối của blockchain L1",
-        "Phí thực thi tác vụ AI thương mại",
-        "Ưu tiên tiếp cận các đợt phát token mới của hệ sinh thái"
-      ],
-      "card3Title": "Vị thế nhà vận hành node tổ chức",
-      "card3Desc": "Tham gia bán trước máy chủ nâng địa chỉ của bạn lên thành Node siêu máy tính được chỉ định, mang lại quyền biểu quyết quản trị và một phần trong việc phân phối lại lượng đốt do trượt giá trên toàn mạng.",
-      "card3Bullets": [
-        "Đủ điều kiện nhận từ bể trượt giá 3,2% dành cho nhà vận hành node",
-        "Trọng số biểu quyết quản trị DAO",
-        "Lợi thế giá mua số lượng lớn cho tổ chức"
-      ]
-    },
-    "botHash": {
-      "title": "Đào hashrate BOT (Layer 1 gốc)",
-      "desc": "Đào BOT, đồng tiền gas gốc và đồng thuận cơ sở của BOT Chain. Hưởng lợi trực tiếp từ hoạt động giao dịch của mạng Layer 1, việc đốt phí gas và chuyển đổi không trượt giá trên DEX.",
-      "cta": "Đào hashrate BOT (DApp)",
-      "compareTitle": "Hiểu cơ chế đào hai token: CA so với BOT",
-      "caLayer": "TẦNG ỨNG DỤNG VÀ GIAO THỨC",
-      "caBadge": "Token CA",
-      "caHeading": "Đào hashrate CA",
-      "caDesc": "CA là token quản trị và thực thi thuật toán gốc của CaryPact. Hashrate CA được phân bổ từ bể 16.800 CA mỗi ngày.",
-      "caReward": "Tài sản thưởng: **token CA**",
-      "caDaily": "Phát hành mỗi ngày: 16.800 CA / ngày",
-      "caConversion": "Quy đổi BDEX: phí swap 5% (1,8% dùng để mua lại và đốt)",
-      "caBest": "Phù hợp với: lợi suất phần trăm hằng ngày cao và lãi kép staking",
-      "botLayer": "TẦNG ĐỒNG THUẬN LAYER 1",
-      "botBadge": "Token BOT",
-      "botHeading": "Đào hashrate BOT",
-      "botDesc": "BOT là tài sản gas gốc vận hành toàn bộ blockchain BOT Chain. Đào hashrate BOT bảo vệ đồng thuận cơ sở và mang lại trực tiếp token gas L1.",
-      "botReward": "Tài sản thưởng: **BOT gốc**",
-      "botBurn": "Lợi ích đốt gas: 1,5% phí gas của mạng bị đốt vĩnh viễn",
-      "botZeroSlip": "Không trượt giá DEX: gas gốc có thể chuyển hoặc staking ngay lập tức",
-      "botBest": "Phù hợp với: mức độ tiếp xúc Layer 1 cơ sở và tiện ích gas của blockchain"
-    },
-    "pledge": {
-      "title": "BOT Pledge (Bot Staking)",
-      "tagline": "Staking BOT để nhận thưởng: vào ra linh hoạt, kiểm soát tự do",
-      "desc": "Gửi token BOT gốc của Layer 1 vào bể staking của giao thức với quyền kiểm soát thanh khoản không giới hạn. Vốn gốc đã giải phóng có thể rút bất cứ lúc nào với thời gian mở khóa 24 giờ, trong khi thu nhập hằng ngày tự động tính lãi kép để tối đa hóa lợi suất.",
-      "cta": "Pledge token BOT (DApp)",
-      "rulesTitle": "Quy tắc cơ bản của giao thức",
-      "rule1Tag": "Kiểm soát linh hoạt",
-      "rule1Title": "Staking BOT để nhận thưởng",
-      "rule1Desc": "Staking token BOT gốc để nhận phần thưởng staking của giao thức trực tiếp trên BOT Chain. Vào ra linh hoạt giúp bạn kiểm soát tự do vốn gốc đã gửi vào mọi lúc.",
-      "rule1Bullets": [
-        "Tính bằng đồng BOT gốc",
-        "Không trượt giá DEX hay ma sát khi swap",
-        "Số tiền gửi linh hoạt"
-      ],
-      "rule2Tag": "Chờ 24 giờ",
-      "rule2Title": "Thời gian mở khóa 24 giờ",
-      "rule2Desc": "Vốn gốc đã giải phóng có thể rút bất cứ lúc nào. Sau khi yêu cầu rút, vốn gốc của bạn sẽ sẵn sàng để nhận sau thời gian mở khóa 24 giờ.",
-      "rule2Bullets": [
-        "Rút vốn gốc khi bạn muốn",
-        "Thời gian chờ bảo mật mạng 24 giờ",
-        "Nhận thẳng về ví Web3 của bạn"
-      ],
-      "rule3Tag": "Tự động lãi kép",
-      "rule3Title": "Cơ chế lãi kép tự động",
-      "rule3Desc": "Lãi kép tự động dùng vốn gốc của ngày hôm trước cộng thu nhập hằng ngày làm vốn gốc mới để staking lãi kép, giúp lợi suất tăng theo cấp số nhân mà không mất phí gas thủ công.",
-      "rule3Bullets": [
-        "Cơ sở hằng ngày: vốn gốc ngày N-1 + phần thưởng",
-        "APY tăng theo cấp số nhân",
-        "Không mất phí giao dịch khi tái đầu tư"
-      ],
-      "simTitle": "Trình mô phỏng lãi kép tự động BOT Pledge",
-      "simRate": "Ước tính ~0,25% / ngày",
-      "simAmount": "Số BOT staking:",
-      "simDuration": "Khoảng thời gian staking:",
-      "daysValue": "{days} ngày",
-      "daysShort": "{days} ngày",
-      "toggleTitle": "Lãi kép tự động (Quy tắc 3)",
-      "toggleDesc": "Tự động dùng vốn gốc ngày hôm trước cộng thu nhập hằng ngày làm vốn gốc mới",
-      "estYield": "Lợi suất staking ước tính",
-      "compoundBoost": "Tăng thêm nhờ lãi kép: +{amount} BOT",
-      "totalAtHorizon": "Tổng giá trị khi kết thúc kỳ hạn",
-      "principalAllEarnings": "Vốn gốc + toàn bộ thu nhập",
-      "effectiveApy": "APY thực tế: {apy}%",
-      "lifeTitle": "Vòng đời mở khóa 24 giờ (Quy tắc 2)",
-      "lifeIntro": "Khác với hashrate vĩnh viễn hay các kỳ hạn khóa cố định, BOT Pledge đảm bảo hoàn vốn gốc với thời gian chờ 24 giờ có thể dự đoán:",
-      "life1Title": "1. Trạng thái staking đang hoạt động",
-      "life1Desc": "Vốn gốc liên tục tạo ra phần thưởng BOT lãi kép tự động mỗi ngày.",
-      "life2Title": "2. Bắt đầu rút (bất cứ lúc nào)",
-      "life2Desc": "Bạn gửi yêu cầu rút trong DApp. Vốn gốc chuyển sang trạng thái giải phóng.",
-      "life3Title": "3. Cửa sổ mở khóa 24 giờ",
-      "life3Desc": "Bộ đếm của hợp đồng thông minh chạy đúng 24 giờ để giữ an toàn cho đồng thuận.",
-      "life4Title": "4. Nhận 100% vốn gốc về ví",
-      "life4Desc": "Tiền sẵn sàng để nhận chỉ bằng một cú nhấp, trực tiếp về địa chỉ của bạn.",
-      "lifeSummary": "**Tóm tắt:** vào linh hoạt, thu nhập lãi kép tự động hằng ngày và hoàn 100% vốn gốc với cửa sổ nhận 24 giờ.",
-      "readyText": "Sẵn sàng pledge BOT? Bắt đầu trong chưa đầy 2 phút.",
-      "launchPortal": "Mở cổng"
-    },
-    "matrix": {
-      "badge": "Phân tích song song",
-      "title": "Ma trận so sánh: cách kiếm tiền nào phù hợp với bạn?",
-      "feature": "Đặc điểm",
-      "assetEarned": "Tài sản nhận được",
-      "asset1": "Token CA",
-      "asset2": "Token CA",
-      "asset3": "CA + phí AI + cổ phần",
-      "asset4": "Token BOT (L1)",
-      "asset5": "Token BOT (L1)",
-      "minCapital": "Vốn tối thiểu",
-      "min1": "100 USDT",
-      "min2": "10 CA (~$27)",
-      "min3": "Bậc node doanh nghiệp",
-      "min4": "Tương đương 100 USDT",
-      "min5": "10 BOT (~$11)",
-      "principalStatus": "Tình trạng vốn gốc",
-      "principal1": "Sức mạnh tính toán vĩnh viễn (không hoàn tiền)",
-      "principal2": "Hoàn 100% khi đáo hạn",
-      "principal3": "Tài sản phần cứng vật lý",
-      "principal4": "Hashrate vĩnh viễn",
-      "principal5": "Hoàn 100% (mở khóa 24 giờ)",
-      "lockup": "Thời hạn khóa",
-      "lock1": "Liên tục trọn đời",
-      "lock2": "30 ngày, 90 ngày, 180 ngày, 360 ngày",
-      "lock3": "Quyền node trọn đời",
-      "lock4": "Liên tục trọn đời",
-      "lock5": "Linh hoạt (rút bất cứ lúc nào)",
-      "payout": "Tần suất trả thưởng",
-      "payout1": "Hằng ngày lúc 00:00 UTC",
-      "payout2": "Hằng ngày + khi đáo hạn",
-      "payout3": "Theo từng khối / từng tác vụ",
-      "payout4": "Hằng ngày lúc 00:00 UTC",
-      "payout5": "Lãi kép tự động hằng ngày",
-      "bestFor": "Phù hợp nhất với",
-      "best1": "Người muốn dòng tiền thụ động hằng ngày",
-      "best2": "Người nắm giữ token muốn nhận lại vốn gốc",
-      "best3": "Nhà đầu tư node DePIN tổ chức",
-      "best4": "Người tin vào Layer 1 và thợ đào gas",
-      "best5": "Người staking linh hoạt muốn lãi kép tự động và rút trong 24 giờ"
-    },
-    "risk": {
-      "title": "Công bố quan trọng về rủi ro và vận hành",
-      "r1Title": "Chi phí chìm của hashrate vĩnh viễn:",
-      "r1Desc": "USDT đã chi để mua sức mạnh tính toán CA hoặc BOT không thể lấy lại dưới dạng stablecoin thanh khoản. Bạn đang mua một phần phân bổ tính toán phần cứng; việc thu hồi vốn hoàn toàn phụ thuộc vào các đợt phân phối lợi suất đào trong tương lai.",
-      "r2Title": "Cơ chế trượt giá 5% của BDEX:",
-      "r2Desc": "Đổi CA đã đào về USDT trên BDEX nội bộ sẽ chịu phí giao thức 5% (1,8% dùng để mua lại và đốt token, 3,2% dành cho nhà vận hành node). Hãy tính khoản hao hụt này vào ROI ròng.",
-      "r3Title": "Biến động của token phi tập trung:",
-      "r3Desc": "Giá tài sản tiền mã hóa biến động theo nhu cầu thị trường, mức độ ứng dụng tính toán và các yếu tố kinh tế vĩ mô. Đừng bao giờ đầu tư số vốn mà bạn không thể chấp nhận rủi ro mất."
-    }
-  },
-  "wallet": {
-    "title": "Mở trong ví của bạn",
-    "subtitle": "Ứng dụng CaryPact là một DApp. Cần chạy trong trình duyệt tích hợp của ví.",
-    "chooseWallet": "Chọn ví của bạn",
-    "lastUsed": "Dùng gần nhất",
-    "openIn": "Mở trong {wallet}",
-    "launching": "Đang mở {wallet}…",
-    "launchingHint": "Nếu ứng dụng ví đã mở, hãy tiếp tục tại đó.",
-    "fallbackTitle": "{wallet} không mở được?",
-    "fallbackDesc": "Có thể ví chưa được cài đặt hoặc thiết bị đã chặn liên kết. Hãy mở liên kết thông thường hoặc làm theo các bước thủ công bên dưới.",
-    "openNormal": "Mở liên kết thông thường",
-    "copyLink": "Sao chép liên kết",
-    "copied": "Đã sao chép",
-    "stepsTitle": "Mở thủ công",
-    "step1": "Sao chép liên kết bên dưới.",
-    "step2": "Mở ứng dụng ví và vào trình duyệt DApp của ví (thường tên là Browser hoặc Discover).",
-    "step3": "Dán liên kết vào thanh địa chỉ và mở.",
-    "install": "Chưa có ví? Hãy cài MetaMask, Trust Wallet hoặc TokenPocket từ cửa hàng ứng dụng trước.",
-    "tryAnother": "Thử ví khác",
-    "close": "Đóng"
   },
   "livePage": {
-    "backToHub": "Quay lại Trung tâm Học tập",
+    "backToHub": "Trở về Learning Hub",
     "breadcrumb": "Cổng On-Chain & CMC Trực tiếp",
-    "cmcFeed": "Nguồn CMC",
+    "cmcFeed": "Nguồn cấp CMC",
     "liveConnected": "Đã kết nối trực tiếp",
     "synced": "Đã đồng bộ",
     "justNow": "Vừa xong",
     "refresh": "Làm mới dữ liệu trực tiếp",
-    "heroBadge": "CoinMarketCap & Sổ cái BOT Chain thời gian thực",
+    "heroBadge": "Sổ cái BOT Chain & CoinMarketCap Thời gian thực",
     "heroTitle": "CaryPact & BOT Chain",
-    "heroTitleHighlight": "Nguồn thị trường trực tiếp",
-    "heroDesc": "Báo giá tiền mã hóa trực tiếp, theo dõi tỷ giá on-chain (<strong>1 CA = 1.337631 BOT</strong>), độ sâu sổ lệnh BDEX và các thông báo Twitter/X chính thức từ <xLink>@CaryPact</xLink>.",
+    "heroTitleHighlight": "Bảng tin Thị trường Trực tiếp",
+    "heroDesc": "Báo giá tiền mã hóa trực tiếp, theo dõi tỷ lệ ngang giá on-chain (<strong>1 CA = 1.337631 BOT</strong>), độ sâu sổ lệnh BDEX và các thông báo chính thức trên Twitter/X từ <xLink>@CaryPact</xLink>.",
     "inviteCode": "Mã mời",
     "copy": "Sao chép",
     "copied": "Đã sao chép",
     "launchDApp": "Mở DApp",
     "cmcListing": "Niêm yết trên CoinMarketCap",
-    "cmcPair": "bot-chain / Tiền tệ BOT",
-    "viewCmc": "Xem CMC",
-    "cmcDesc": "Theo dõi giá và chỉ số khối lượng của BOT Chain được xác minh trực tiếp qua CoinMarketCap Pro. Tài sản điện toán CaryPact (CA) vận hành theo chuẩn quy đổi thuật toán cố định <strong>1 CA = 1.337631 BOT</strong>.",
-    "contractStandard": "Chuẩn hợp đồng:",
+    "cmcPair": "bot-chain / Đồng BOT",
+    "viewCmc": "Xem trên CMC",
+    "cmcDesc": "Chỉ số theo dõi giá và khối lượng cho BOT Chain được xác minh trực tiếp qua CoinMarketCap Pro. Tài sản điện toán CaryPact (CA) hoạt động theo tiêu chuẩn chuyển đổi thuật toán cố định là <strong>1 CA = 1.337631 BOT</strong>.",
+    "contractStandard": "Tiêu chuẩn hợp đồng:",
     "decimals": "Số chữ số thập phân:",
     "burnMechanism": "Cơ chế đốt:",
     "burnValue": "1.8% khi bán trên BDEX",
-    "directivesTitle": "Nguyên tắc cốt lõi của giao thức",
+    "directivesTitle": "Các chỉ thị cốt lõi của giao thức",
     "rule1Title": "1 USDT = 1 Đơn vị Hashrate:",
-    "rule1Body": "Sức mạnh tính toán bị khóa vĩnh viễn, không hoàn lại vốn gốc.",
-    "rule2Title": "Hệ số staking:",
+    "rule1Body": "Sức mạnh tính toán bị khóa vĩnh viễn, không hoàn trả tiền gốc.",
+    "rule2Title": "Hệ số nhân Staking:",
     "rule2Body": "30 ngày (1.3x), 90 ngày (1.6x), 180 ngày (2.0x), 360 ngày (2.5x).",
-    "rule3Title": "Hệ thống VIP 10 cấp:",
-    "rule3Body": "Yêu cầu kích hoạt cá nhân 300 USDT cùng hiệu suất nhánh tuyến dưới.",
-    "printCheatSheet": "In bảng tóm tắt giao thức đầy đủ"
+    "rule3Title": "Hệ thống VIP 10 bậc:",
+    "rule3Body": "Yêu cầu kích hoạt cá nhân 300 USDT + hiệu suất các nhánh tuyến dưới.",
+    "printCheatSheet": "In bản tóm tắt giao thức hoàn chỉnh"
+  },
+  "Tokenomics": {
+    "badge": "Kiến trúc kinh tế",
+    "title": "Kinh tế học Token CA: <accent>Tổng cung cố định {supply}</accent>",
+    "subtitle": "Đường cong giảm phát được xác định theo toán học kéo dài trong {years} năm, kết hợp phát thải thuật toán hàng ngày với các hố đốt 3 tầng mạnh mẽ.",
+    "capLabel": "Tổng cung tối đa cố định (Hard Cap)",
+    "caAmount": "{amount} CA",
+    "capBody": "<cyan>{liquidity} CA</cyan> cho thanh khoản SWAP ban đầu + <purple>{emitted} CA</purple> được phát thải trong {years} năm.",
+    "emissionLabel": "Phát thải hàng ngày ban đầu",
+    "emissionValue": "{amount} CA / Ngày",
+    "emissionBody": "Giảm <amber>{rate} mỗi {cycle} năm</amber> trong toàn bộ chu kỳ phân phối {years} năm.",
+    "burnLabel": "Cơ chế đốt giảm phát 3 tầng",
+    "burnValue": "Đốt đa tầng",
+    "burnBody": "{buyback} đốt khi bán trên BDEX + {txFee} mua lại từ phí giao dịch + {gas} tiêu hủy gas BOT.",
+    "allocTitle": "Phân bổ phát thải {amount} CA hàng ngày",
+    "allocHint": "Nhấp vào bất kỳ phần nào bên dưới để kiểm tra cơ chế phân phối on-chain",
+    "settlement": "Quyết toán hàng ngày T+1 (00:00 UTC)",
+    "perDay": "{amount} CA/ngày",
+    "poolBadge": "Pool {percent} ({amount} CA/ngày)",
+    "segmentTitle": "{name}: {percent} ({amount} CA/ngày)",
+    "split": {
+      "mining": {
+        "name": "Khai thác sức mạnh tính toán",
+        "description": "Phân phối tỷ lệ thuận cho người nắm giữ đơn vị hashrate đang hoạt động (hệ số lãi kép K ≈ 1.01)."
+      },
+      "active": {
+        "name": "Pool phần thưởng hoạt động",
+        "description": "Tài trợ cho các ưu đãi cấp bậc VIP và thưởng hiệu suất tuyến dưới giới thiệu."
+      },
+      "staking": {
+        "name": "Sản lượng Staking PoS",
+        "description": "Phần thưởng staking hàng ngày được phân phối cho những người stake CA linh hoạt & có khóa."
+      },
+      "dao": {
+        "name": "Quản trị DAO",
+        "description": "Được chia sẻ giữa các bên đóng góp đồng thuận V7–V10 và quản trị hệ sinh thái."
+      },
+      "foundation": {
+        "name": "Quỹ & Kỹ thuật",
+        "description": "Kiểm toán bảo mật giao thức cốt lõi liên tục, hạ tầng và các khoản tài trợ cho nhà phát triển."
+      }
+    },
+    "curveTitle": "Lộ trình giảm phát thải định kỳ {rate} mỗi hai năm trong {years} năm",
+    "curveSubtitle": "Lịch trình giảm phát thải theo thuật toán đã được lập trình",
+    "thCycle": "Chu kỳ phát thải",
+    "thDaily": "Lượng CA phát hành mỗi ngày",
+    "thAnnual": "Sản lượng hàng năm",
+    "thFactor": "Hệ số đường cong",
+    "yearsRange": "Năm {start}–{end}",
+    "factorWithDelta": "{percent} ({delta})",
+    "finalDaily": "Đang giảm",
+    "finalAnnual": "Lượng phát thải còn lại",
+    "finalFactor": "Halving cuối cùng",
+    "sinksTitle": "Các hố đốt giảm phát tự động",
+    "sinksIntro": "CaryPact thực thi các hố thu phí bằng hợp đồng thông minh giúp giảm vĩnh viễn nguồn cung lưu hành theo thời gian:",
+    "sink1Title": "{percent} Đốt khi bán trên BDEX",
+    "sink1Tag": "Đốt On-Chain",
+    "sink1Body": "Mỗi CA được bán trên BDEX sẽ chuyển {percent} đến một địa chỉ đốt không thể phục hồi.",
+    "sink2Title": "{percent} Mua lại từ phí giao dịch",
+    "sink2Tag": "Hố thanh khoản",
+    "sink2Body": "{percent} phí giao dịch được chuyển đổi qua AMM thành các token CA bị đốt cháy.",
+    "sink3Title": "{percent} Tiêu hủy gas BOT",
+    "sink3Tag": "Đốt cơ sở L1",
+    "sink3Body": "{percent} tất cả phí gas trên BOT Chain sẽ bị các validator tiêu hủy vĩnh viễn."
+  },
+  "riskDisclosure": {
+    "badge": "Thông báo công bố & Rủi ro thiết yếu",
+    "title": "Tính minh bạch & <hl>Công bố rủi ro</hl>",
+    "subtitle": "Chúng tôi tin tưởng vào sự giáo dục trung thực và kỹ lưỡng. Hãy đọc và hiểu rõ các thông số cấu trúc quan trọng này trước khi đưa tài sản kỹ thuật số vào hoạt động.",
+    "affiliate": {
+      "title": "Tuyên bố về thù lao liên kết (Affiliate)",
+      "subtitle": "Tuyên bố rõ ràng về tính độc lập của trang web và các khoản hoa hồng",
+      "body": "<strong>CaryPact Learning Hub</strong> là một tài nguyên phân tích và giáo dục độc lập. Chúng tôi không phải là pháp nhân công ty chính thức. Nếu bạn chọn đăng ký trên CaryPact thông qua các liên kết và mã mời được cung cấp trên trang web này, chúng tôi có thể nhận được hoa hồng giới thiệu. Khoản thù lao này không ảnh hưởng đến việc trình bày khách quan của chúng tôi về các quy tắc toán học, việc khóa hashrate vĩnh viễn, cơ chế trượt giá hoặc các rủi ro."
+    },
+    "items": {
+      "permanence": {
+        "category": "Cấu trúc vốn",
+        "severity": "Mức độ quan trọng cao",
+        "title": "Tính vĩnh viễn của các đơn vị Hashrate (Không rút vốn gốc)",
+        "description": "Khi mua sức mạnh tính toán với tỷ lệ 1 USDT = 1 Đơn vị Hashrate (tối thiểu {minUsdt, number} USDT), số vốn được phân bổ sẽ bị khóa vĩnh viễn vào quỹ dự trữ điện toán của giao thức. Không có cơ chế hoàn trả, rút lui hoặc chuộc lại tiền gốc. Lợi nhuận của bạn chỉ đến từ các đợt phân phối khai thác CA hàng ngày diễn ra liên tục."
+      },
+      "volatility": {
+        "category": "Rủi ro thị trường",
+        "severity": "Biến động thị trường",
+        "title": "Biến động thị trường & Biến động giá",
+        "description": "Giá trị quy đổi của CA, BOT và các token mật mã liên quan có thể biến động đáng kể dựa trên các điều kiện thị trường mở, độ sâu thanh khoản trên BDEX và tâm lý chung đối với tài sản kỹ thuật số. Giá token có thể tăng hoặc giảm đáng kể."
+      },
+      "projections": {
+        "category": "Staking & Phát thải",
+        "severity": "Giả định mô hình",
+        "title": "Dự phóng lợi nhuận minh họa so với Lợi nhuận đảm bảo",
+        "description": "Các dự phóng được mô tả trong các bài thuyết trình tiếp thị hệ sinh thái (ví dụ: mô hình staking lãi kép 360 ngày) giả định các thông số toán học cụ thể như sự tăng giá bền vững hàng ngày và hoạt động mạng lưới ổn định. Đây là các mô phỏng giả định và không được coi là lợi nhuận đầu tư được bảo đảm."
+      },
+      "referral": {
+        "category": "Mô hình đồng thuận",
+        "severity": "Động lực giới thiệu",
+        "title": "Cơ cấu khuyến khích giới thiệu đa tầng (VIP)",
+        "description": "Hệ thống phần thưởng VIP 10 bậc (V1–V10) được tài trợ từ Pool phần thưởng hoạt động {dailyPool, number} CA/ngày và dựa trên khoản đầu tư cá nhân ({personalUsdt, number} USDT) kết hợp với hiệu suất 'nhánh' của đội ngũ tuyến dưới. Phần thưởng phụ thuộc vào sự tham gia tích cực của đội ngũ và việc mở rộng mạng lưới."
+      },
+      "slippage": {
+        "category": "Cơ chế giao thức",
+        "severity": "Quy tắc kỹ thuật",
+        "title": "Thực thi Smart Contract & Trượt giá {slippage, number}%",
+        "description": "Tất cả các giao dịch bán token trên BDEX đều áp dụng mức phân bổ trượt giá bắt buộc {slippage, number}% ({buyback, number}% mua lại & đốt, {node, number}% phân phối cho người vận hành node). Mặc dù các smart contract được triển khai trên BOT Chain, nhưng các tương tác blockchain luôn đi kèm với rủi ro kỹ thuật và thực thi vốn có."
+      },
+      "custody": {
+        "category": "Bảo mật",
+        "severity": "Lưu ký cá nhân",
+        "title": "Trách nhiệm tự bảo quản & Quản lý khóa",
+        "description": "CaryPact và BO Wallet hoàn toàn phi tập trung và phi lưu ký. Bạn hoàn toàn chịu trách nhiệm bảo vệ cụm từ hạt giống 12 từ và các khóa riêng tư của mình. Quản trị viên giao thức và nhân viên learning hub không bao giờ có thể khôi phục thông tin xác thực bị mất hoặc đảo ngược các giao dịch."
+      }
+    },
+    "checklist": {
+      "title": "Danh sách kiểm tra \"Tự nghiên cứu\" trước khi tham gia (DYOR)",
+      "check1": "Tôi hiểu rằng các Đơn vị Hashrate không thể được hoàn tiền hoặc bán lại.",
+      "check2": "Tôi đã ghi lại cụm từ khôi phục 12 từ của mình một cách an toàn trên giấy vật lý.",
+      "check3": "Tôi xác nhận rằng tất cả các giao dịch bán token trên BDEX đều chịu phí trượt giá {slippage, number}%.",
+      "check4": "Tôi chỉ đóng góp số tiền mà tôi cảm thấy thoải mái khi quản lý qua những biến động của thị trường.",
+      "check5": "Tôi đã xác nhận rằng mình chỉ tương tác với các URL tên miền chính thức.",
+      "check6": "Tôi nhận thấy rằng phần thưởng VIP tuyến dưới yêu cầu khối lượng tuyển dụng tích cực."
+    },
+    "cta": {
+      "ready": "Sẵn sàng truy cập CaryPact DApp?",
+      "button": "Tiếp tục đến CaryPact với sự đồng thuận đầy đủ thông tin"
+    }
+  },
+  "Footer": {
+    "badge": "Learning Hub",
+    "brandDescription": "Tài nguyên giáo dục độc lập hàng đầu và cổng phân tích trực tiếp cho CaryPact, BOT Chain, Token CA và các giao thức siêu điện toán phi tập trung.",
+    "telegram": "Telegram",
+    "twitter": "Twitter / X",
+    "explorer": "Trình khám phá BOT Chain",
+    "navTitle": "Điều hướng Hub",
+    "navHome": "Trang chủ & Trung tâm học tập",
+    "navLive": "Thị trường trực tiếp & Cổng CMC",
+    "liveBadge": "LIVE",
+    "navBotChain": "5 Trụ cột BOT Chain",
+    "navTokenomics": "Kinh tế học token {supply} CA",
+    "navVip": "Hệ thống VIP {count} bậc",
+    "navRisks": "Công bố rủi ro",
+    "guidesTitle": "Hướng dẫn & Cài đặt",
+    "guideStart": "Bắt đầu",
+    "guideWallet": "Tạo ví BO Wallet",
+    "guideBuy": "Mua sức mạnh tính toán",
+    "guideStaking": "Hệ số nhân Staking (30 ngày–360 ngày)",
+    "guideSlippage": "Hoán đổi trượt giá {percent} trên BDEX",
+    "toolsTitle": "Công cụ & Liên kết chính thức",
+    "cheatSheet": "Tải bảng tóm tắt",
+    "newsletter": "Đăng ký nhận bản tin",
+    "launchApp": "Mở ứng dụng CaryPact",
+    "botDocs": "Tài liệu BOT Chain",
+    "disclosureTitle": "Tuyên bố về Trung tâm học tập độc lập & Hoa hồng liên kết",
+    "disclosureBody": "Trang web này là một sáng kiến giáo dục độc lập và không được vận hành trực tiếp bởi CaryPact hoặc quỹ BOT Chain. Tất cả các liên kết đăng ký đều chứa mã mời cộng đồng đã được xác minh <code>{inviteCode} (Hậu tố: {suffix})</code>. Chúng tôi có thể nhận được hoa hồng giới thiệu khi người dùng tham gia qua các liên kết trên trang web này. Nội dung hoàn toàn nhằm mục đích giáo dục và không bao giờ cấu thành lời khuyên tài chính.",
+    "copyright": "© {year} CaryPact Learning Hub. Tài nguyên Giáo dục Độc lập.",
+    "backToTop": "Lên đầu trang"
+  },
+  "earn": {
+    "common": {
+      "methodBadge": "PHƯƠNG THỨC {n}",
+      "officialPage": "Trang chính thức: {page}"
+    },
+    "hero": {
+      "home": "Trang chủ",
+      "breadcrumb": "Hướng dẫn kiếm tiền",
+      "badge": "Bản thiết kế kiếm tiền từ CaryPact & BOT Chain",
+      "titleA": "Năm cách chính thức để",
+      "titleB": "Kiếm tiền trên CaryPact",
+      "desc": "Dữ liệu kỹ thuật trực tiếp, có thể kiểm chứng và phân tích toán học chi tiết cho tất cả 5 cơ chế kiếm tiền: hashrate CA vĩnh viễn, khai thác PoS dài hạn, presale máy chủ khai thác doanh nghiệp, khai thác hashrate BOT Layer 1 và BOT Pledge (Bot Staking) linh hoạt với tính năng tự động cộng dồn lãi kép.",
+      "cheatSheet": "Bảng tóm tắt (PDF)"
+    },
+    "nav": {
+      "method": "Phương thức {n}",
+      "ca": "Hashrate CA",
+      "pos": "Staking PoS",
+      "servers": "Máy chủ khai thác",
+      "bot": "Hashrate BOT",
+      "pledge": "BOT Pledge"
+    },
+    "ca": {
+      "title": "Hashrate CA & Sở hữu sức mạnh tính toán",
+      "desc": "Sở hữu các đơn vị sức mạnh tính toán GPU/CPU được token hóa để tham gia vào pool khai thác 16.800 CA hàng ngày với cổ tức tự động mỗi ngày.",
+      "cta": "Mua Hashrate CA (DApp)",
+      "card1Title": "Hashrate CA là gì?",
+      "card1Desc": "Trong CaryPact, **Hashrate** đại diện cho một đơn vị dung lượng điện toán AI chuẩn hóa (lõi tensor, băng thông bộ nhớ GPU, luồng CPU) được đóng góp cho mạng lưới phi tập trung.",
+      "card1Standard": "Tiêu chuẩn: **1 USDT = 1 Đơn vị Hashrate**",
+      "card1Min": "Tối thiểu: **100 USDT** (100 Đơn vị)",
+      "card1Supported": "Hỗ trợ: USDT trên BOT, BSC, ETH",
+      "card2Title": "Cách bạn tạo ra thu nhập",
+      "card2Desc": "Mỗi 24 giờ vào lúc **00:00 UTC**, smart contract sẽ chụp nhanh toàn bộ hashrate toàn cầu đang hoạt động và phân phối **pool khai thác 16.800 CA hàng ngày** (42% tổng lượng phát thải 40k CA) theo tỷ lệ trọng số hashrate của bạn.",
+      "card2Compound": "Hệ số lãi kép: **K ≈ 1.01**",
+      "card2Pool": "Pool hàng ngày: **16.800 CA / ngày**",
+      "card2Settlement": "Thanh toán: Tự động cộng vào ví DApp",
+      "card3Title": "Tỷ lệ & Điều khoản vốn",
+      "card3Desc": "Lợi nhuận ước tính hàng ngày dao động từ **0.35% – 0.75%+** theo giá trị CA tùy thuộc vào tổng hashrate của mạng và định giá token hiện tại.",
+      "card3Rule": "**Quy tắc vốn quan trọng:** Mua hashrate đồng nghĩa với việc triển khai cơ sở hạ tầng vĩnh viễn. Không thể hoàn trả vốn gốc; lợi nhuận được thu hồi hoàn toàn thông qua sản lượng khai thác CA hàng ngày.",
+      "calcTitle": "Máy tính lợi nhuận Hashrate CA",
+      "calcSubtitle": "Mô phỏng lượng CA bạn tạo ra hàng ngày, hàng tháng và hàng năm dựa trên số tiền USDT bạn gửi.",
+      "calcAmount": "Số tiền mua (USDT):",
+      "calcAmountValue": "{usdt} USDT ({units} Đơn vị)",
+      "calcMin": "100U (Tối thiểu)",
+      "calcWhale": "20.000U (Cá voi)",
+      "calcPrice": "Giá thị trường CA mô phỏng:",
+      "calcCurrent": "$2.74 (Hiện tại)",
+      "estDaily": "CA ước tính hàng ngày",
+      "estMonthly": "CA ước tính hàng tháng (30 ngày)",
+      "estYearly": "CA ước tính hàng năm (365 ngày)",
+      "perDay": "/ ngày",
+      "perMonth": "/ tháng",
+      "perYear": "/ năm"
+    },
+    "pos": {
+      "title": "Staking CA dài hạn & Khai thác PoS giao thức",
+      "desc": "Gửi token CA của bạn vào các hợp đồng Proof-of-Stake với hệ số nhân từ 30 ngày đến 360 ngày (1.0x – 3.0x) và hoàn trả 100% gốc khi đáo hạn.",
+      "cta": "Bắt đầu Khai thác PoS (DApp)",
+      "tier30": "Khóa ngắn hạn linh hoạt để kiểm tra cơ chế",
+      "tier90": "Cam kết hàng quý với phần thưởng tăng thêm 50%",
+      "tier180": "Cân bằng tối ưu giữa lợi nhuận và tính thanh khoản",
+      "tier360": "Bậc lãi kép dài hạn tối đa",
+      "daysLock": "Khóa {days} ngày",
+      "weight": "Trọng số {m}",
+      "unlockedAt": "Gốc được mở khóa 100% sau {days} ngày",
+      "howTitle": "Cách thức hoạt động của Khai thác PoS giao thức",
+      "how1": "**Phân bổ chuyên dụng 18%:** 7.200 CA trong số 40.000 CA phát thải hàng ngày được phân bổ nghiêm ngặt cho hợp đồng Staking PoS.",
+      "how2": "**Lợi thế trọng số thời gian:** Gửi trong 360 ngày sẽ áp dụng hệ số nhân 3.0x vào tính toán phần chia của bạn, mang lại năng suất CA hàng ngày trên mỗi token gửi vào cao gấp ba lần so với khoản tiền gửi 30 ngày.",
+      "how3": "**An toàn vốn gốc:** Không giống như hashrate CA (vốn là chi phí phần cứng vĩnh viễn), staking PoS giữ lại toàn bộ số tiền gốc của bạn. Khi bộ đếm thời gian khóa về 0, bạn có thể rút 100% khoản tiền gửi CA ban đầu về ví của mình.",
+      "simTitle": "Trình mô phỏng phần thưởng Staking PoS",
+      "simAmount": "Số lượng CA Staking:",
+      "simDuration": "Chọn thời hạn:",
+      "durationBtn": "{days} ngày ({m}x)",
+      "estProfit": "Tổng lợi nhuận ước tính",
+      "returnAtMaturity": "Số tiền nhận khi đáo hạn",
+      "principalPlusRewards": "Gốc + Phần thưởng"
+    },
+    "servers": {
+      "title": "Máy chủ khai thác vật lý & Presale máy đào",
+      "desc": "Sở hữu các máy chủ điện toán DePIN AI vật lý chuyên dụng được triển khai tại các trung tâm dữ liệu chuẩn Tier-3 và Tier-4 toàn cầu để nhận quyền xác thực khối cấp cao và doanh thu thực thi tác vụ AI thương mại.",
+      "cta": "Xem Máy chủ khai thác (DApp)",
+      "card1Title": "Lưu ký phần cứng chuyên dụng",
+      "card1Desc": "Không giống như hashrate đám mây ảo hóa, đợt presale máy chủ mang lại quyền sở hữu máy vật lý có thể xác minh được hỗ trợ bởi các cụm GPU/CPU cấp doanh nghiệp với thời gian hoạt động 99.9% và các kết nối cáp quang trung lập.",
+      "card1Bullets": [
+        "Chứng chỉ NFT phần cứng On-chain",
+        "Cơ sở lưu trữ đạt chuẩn Tier-3/4",
+        "Giám sát hashrate từ xa thời gian thực"
+      ],
+      "card2Title": "Dòng doanh thu kép",
+      "card2Desc": "Các máy khai thác được hưởng lợi từ hai lớp kiếm tiền đồng thời: phần thưởng phát thải xác thực đồng thuận trên BOT Chain + phí thương mại thực tế do các nhà phát triển AI trả cho việc đào tạo và suy luận mô hình.",
+      "card2Bullets": [
+        "Phần thưởng xác thực khối Blockchain L1",
+        "Phí thực thi khớp lệnh tác vụ AI thương mại",
+        "Quyền ưu tiên tham gia các đợt airdrop token mới trong hệ sinh thái"
+      ],
+      "card3Title": "Trạng thái nhà vận hành Node cấp tổ chức",
+      "card3Desc": "Tham gia presale máy chủ sẽ nâng địa chỉ của bạn lên thành Node Siêu điện toán được chỉ định, mang lại cho bạn quyền biểu quyết quản trị và một phần chia sẻ từ các đợt tái phân phối phí trượt giá trên toàn mạng lưới.",
+      "card3Bullets": [
+        "Đủ điều kiện nhận Pool trượt giá 3.2% cho nhà vận hành Node",
+        "Trọng số biểu quyết quản trị DAO",
+        "Lợi thế định giá số lượng lớn cho tổ chức"
+      ]
+    },
+    "botHash": {
+      "title": "Khai thác Hashrate BOT (Layer 1 Nguyên bản)",
+      "desc": "Khai thác BOT, đồng tiền gas và đồng thuận cơ sở gốc của BOT Chain. Hưởng lợi trực tiếp từ hoạt động giao dịch trên mạng Layer 1, các đợt đốt phí gas và chuyển đổi không mất phí trượt giá DEX.",
+      "cta": "Khai thác Hashrate BOT (DApp)",
+      "compareTitle": "Hiểu về động lực khai thác Token kép: CA so với BOT",
+      "caLayer": "LỚP ỨNG DỤNG & GIAO THỨC",
+      "caBadge": "Token CA",
+      "caHeading": "Khai thác Hashrate CA",
+      "caDesc": "CA là token quản trị và thực thi thuật toán gốc của CaryPact. Hashrate CA được phân bổ từ pool 16.800 CA hàng ngày.",
+      "caReward": "Tài sản phần thưởng: **Token CA**",
+      "caDaily": "Phát hành hàng ngày: 16.800 CA / ngày",
+      "caConversion": "Chuyển đổi trên BDEX: Phí swap 5% (1.8% mua lại & đốt)",
+      "caBest": "Phù hợp nhất cho: Lợi nhuận phần trăm hàng ngày cao và tích lũy lãi kép staking",
+      "botLayer": "LỚP ĐỒNG THUẬN LAYER 1",
+      "botBadge": "Token BOT",
+      "botHeading": "Khai thác Hashrate BOT",
+      "botDesc": "BOT là tài sản gas gốc cung cấp năng lượng cho toàn bộ blockchain BOT Chain. Khai thác hashrate BOT giúp bảo vệ sự đồng thuận cơ sở và mang lại trực tiếp token gas L1.",
+      "botReward": "Tài sản phần thưởng: **BOT Gốc**",
+      "botBurn": "Lợi ích từ việc đốt gas: 1.5% phí gas mạng lưới được đốt vĩnh viễn",
+      "botZeroSlip": "Không trượt giá DEX: Gas gốc có thể được chuyển nhượng hoặc stake ngay lập tức",
+      "botBest": "Phù hợp nhất cho: Tiếp cận Layer 1 cơ sở và tiện ích gas blockchain"
+    },
+    "pledge": {
+      "title": "BOT Pledge (Bot Staking)",
+      "tagline": "Stake BOT để nhận phần thưởng. Tham gia và rút lui linh hoạt, kiểm soát tự do",
+      "desc": "Pledge token BOT Layer 1 gốc vào pool staking của giao thức với quyền kiểm soát thanh khoản không giới hạn. Tiền gốc đã giải phóng có thể được rút bất kỳ lúc nào với thời gian mở khóa 24 giờ, trong khi thu nhập hàng ngày tự động cộng dồn lãi kép để tối đa hóa lợi nhuận.",
+      "cta": "Pledge Token BOT (DApp)",
+      "rulesTitle": "Quy tắc cơ bản của giao thức",
+      "rule1Tag": "Kiểm soát linh hoạt",
+      "rule1Title": "Stake BOT để nhận phần thưởng",
+      "rule1Desc": "Stake token BOT gốc để tạo phần thưởng staking giao thức trực tiếp trên BOT Chain. Việc tham gia và rút lui linh hoạt giúp bạn có quyền tự do kiểm soát số vốn đã gửi của mình mọi lúc.",
+      "rule1Bullets": [
+        "Định danh bằng đồng BOT gốc",
+        "Không trượt giá DEX hoặc ma sát swap",
+        "Số tiền gửi linh hoạt"
+      ],
+      "rule2Tag": "Thời gian chờ 24 giờ",
+      "rule2Title": "Thời gian mở khóa 24 giờ",
+      "rule2Desc": "Tiền gốc đã giải phóng có thể được rút bất cứ lúc nào. Sau khi yêu cầu rút tiền, số tiền gốc của bạn sẽ sẵn sàng để nhận sau thời gian mở khóa 24 giờ.",
+      "rule2Bullets": [
+        "Rút tiền gốc bất cứ khi nào bạn muốn",
+        "Thời gian chờ 24 giờ để đảm bảo an ninh mạng lưới",
+        "Nhận trực tiếp về ví Web3 của bạn"
+      ],
+      "rule3Tag": "Tự động cộng dồn lãi kép",
+      "rule3Title": "Động cơ lãi kép tự động",
+      "rule3Desc": "Tính năng tự động cộng dồn lãi kép sẽ tự động sử dụng số tiền gốc của ngày hôm trước + thu nhập hàng ngày làm tiền gốc mới cho việc staking sinh lời tiếp theo, giúp tăng lợi nhuận theo cấp số nhân mà không cần trả phí gas thủ công.",
+      "rule3Bullets": [
+        "Cơ sở hàng ngày: Tiền gốc ngày N-1 + Phần thưởng",
+        "Tăng trưởng APY theo cấp số nhân",
+        "Không tốn phí giao dịch khi tái đầu tư"
+      ],
+      "simTitle": "Trình mô phỏng lãi kép tự động BOT Pledge",
+      "simRate": "Ước tính ~0.25% / Ngày",
+      "simAmount": "Số lượng BOT Stake:",
+      "simDuration": "Thời gian Staking dự kiến:",
+      "daysValue": "{days} Ngày",
+      "daysShort": "{days} ngày",
+      "toggleTitle": "Tự động cộng dồn lãi kép (Quy tắc 3)",
+      "toggleDesc": "Tự động sử dụng tiền gốc của ngày hôm trước + thu nhập hàng ngày làm tiền gốc mới",
+      "estYield": "Lợi nhuận Staking ước tính",
+      "compoundBoost": "Tăng thêm từ lãi kép: +{amount} BOT",
+      "totalAtHorizon": "Tổng giá trị khi kết thúc kỳ hạn",
+      "principalAllEarnings": "Tiền gốc + Toàn bộ thu nhập",
+      "effectiveApy": "APY thực tế: {apy}%",
+      "lifeTitle": "Vòng đời mở khóa 24 giờ (Quy tắc 2)",
+      "lifeIntro": "Không giống như hashrate vĩnh viễn hay các kỳ hạn khóa cố định, BOT Pledge đảm bảo hoàn trả vốn gốc với thời gian chờ 24 giờ có thể dự đoán trước:",
+      "life1Title": "1. Trạng thái Staking đang hoạt động",
+      "life1Desc": "Tiền gốc tạo ra phần thưởng BOT tự động cộng dồn lãi kép liên tục hàng ngày.",
+      "life2Title": "2. Bắt đầu rút tiền (Bất kỳ lúc nào)",
+      "life2Desc": "Bạn gửi yêu cầu rút tiền trong DApp. Tiền gốc chuyển sang trạng thái chờ giải phóng.",
+      "life3Title": "3. Cửa sổ mở khóa 24 giờ",
+      "life3Desc": "Bộ đếm thời gian của smart contract chạy đúng 24 giờ để duy trì an ninh đồng thuận.",
+      "life4Title": "4. Nhận 100% tiền gốc về ví",
+      "life4Desc": "Tiền sẵn sàng để bạn nhận chỉ với một cú nhấp chuột trực tiếp về địa chỉ ví của mình.",
+      "lifeSummary": "**Tóm tắt:** Tham gia linh hoạt, thu nhập tự động cộng dồn lãi kép hàng ngày và hoàn trả 100% gốc với cửa sổ nhận tiền 24 giờ.",
+      "readyText": "Sẵn sàng pledge BOT? Bắt đầu trong vòng chưa đầy 2 phút.",
+      "launchPortal": "Mở cổng thông tin"
+    },
+    "matrix": {
+      "badge": "Phân tích song song",
+      "title": "Bảng so sánh: Phương thức kiếm tiền nào phù hợp với bạn?",
+      "feature": "Tính năng",
+      "assetEarned": "Tài sản kiếm được",
+      "asset1": "Token CA",
+      "asset2": "Token CA",
+      "asset3": "CA + Phí AI + Cổ phần",
+      "asset4": "Token BOT (L1)",
+      "asset5": "Token BOT (L1)",
+      "minCapital": "Vốn tối thiểu",
+      "min1": "100 USDT",
+      "min2": "10 CA (~$27)",
+      "min3": "Bậc Node Doanh nghiệp",
+      "min4": "Tương đương 100 USDT",
+      "min5": "10 BOT (~$11)",
+      "principalStatus": "Trạng thái vốn gốc",
+      "principal1": "Điện toán vĩnh viễn (Không hoàn lại)",
+      "principal2": "Hoàn trả 100% khi đáo hạn",
+      "principal3": "Tài sản phần cứng vật lý",
+      "principal4": "Hashrate vĩnh viễn",
+      "principal5": "Hoàn trả 100% (Mở khóa 24h)",
+      "lockup": "Thời gian khóa",
+      "lock1": "Liên tục trọn đời",
+      "lock2": "30 ngày, 90 ngày, 180 ngày, 360 ngày",
+      "lock3": "Quyền Node trọn đời",
+      "lock4": "Liên tục trọn đời",
+      "lock5": "Linh hoạt (Rút bất cứ lúc nào)",
+      "payout": "Tần suất trả thưởng",
+      "payout1": "Hàng ngày lúc 00:00 UTC",
+      "payout2": "Hàng ngày + Khi đáo hạn",
+      "payout3": "Theo từng khối / Tác vụ",
+      "payout4": "Hàng ngày lúc 00:00 UTC",
+      "payout5": "Tự động cộng dồn hàng ngày",
+      "bestFor": "Phù hợp nhất cho",
+      "best1": "Người tìm kiếm dòng tiền thụ động hàng ngày",
+      "best2": "Người nắm giữ token muốn bảo toàn và nhận lại vốn gốc",
+      "best3": "Nhà đầu tư node DePIN tổ chức",
+      "best4": "Những người tin tưởng vào Layer 1 & thợ đào gas",
+      "best5": "Người stake linh hoạt muốn nhận lãi kép & rút vốn sau 24h"
+    },
+    "risk": {
+      "title": "Công bố rủi ro & Vận hành thiết yếu",
+      "r1Title": "Chi phí chìm Hashrate vĩnh viễn:",
+      "r1Desc": "Số USDT dùng để mua sức mạnh tính toán CA hoặc BOT không thể rút lại dưới dạng stablecoin thanh khoản. Bạn đang mua phân bổ phần cứng điện toán; việc thu hồi vốn chỉ đến từ các đợt phân phối sản lượng khai thác trong tương lai.",
+      "r2Title": "Cơ chế trượt giá 5% của BDEX:",
+      "r2Desc": "Việc swap CA đã khai thác trở lại USDT trên BDEX nội bộ sẽ chịu phí giao thức 5% (1.8% dùng để mua lại & đốt token, 3.2% cho người vận hành node). Hãy tính yếu tố này vào các tính toán ROI ròng của bạn.",
+      "r3Title": "Biến động token phi tập trung:",
+      "r3Desc": "Giá tài sản tiền mã hóa biến động dựa trên nhu cầu thị trường, mức độ chấp nhận điện toán và các yếu tố kinh tế vĩ mô. Không bao giờ phân bổ số vốn mà bạn không thể chấp nhận rủi ro."
+    }
+  },
+  "wallet": {
+    "title": "Mở trong ví của bạn",
+    "subtitle": "Ứng dụng CaryPact là một DApp. Nó phải chạy bên trong trình duyệt tích hợp của ví.",
+    "chooseWallet": "Chọn ví của bạn",
+    "lastUsed": "Đã dùng gần đây",
+    "openIn": "Mở trong {wallet}",
+    "launching": "Đang mở {wallet}…",
+    "launchingHint": "Nếu ứng dụng ví của bạn mở ra, vui lòng tiếp tục tại đó.",
+    "fallbackTitle": "{wallet} không mở được?",
+    "fallbackDesc": "Ví có thể chưa được cài đặt hoặc thiết bị của bạn đã chặn liên kết. Hãy mở liên kết thông thường hoặc làm theo các bước thủ công bên dưới.",
+    "openNormal": "Mở liên kết thông thường",
+    "copyLink": "Sao chép liên kết",
+    "copied": "Đã sao chép",
+    "stepsTitle": "Mở thủ công",
+    "step1": "Sao chép liên kết bên dưới.",
+    "step2": "Mở ứng dụng ví của bạn và đi tới trình duyệt DApp của ví (thường gọi là Browser hoặc Khám phá).",
+    "step3": "Dán liên kết vào thanh địa chỉ và truy cập.",
+    "install": "Bạn chưa có ví? Hãy cài đặt MetaMask, Trust Wallet hoặc TokenPocket từ cửa hàng ứng dụng trước.",
+    "tryAnother": "Thử ví khác",
+    "close": "Đóng"
   },
   "LearnFaq": {
-    "badge": "Trung tâm kiến thức",
-    "title": "Câu hỏi thường gặp",
-    "description": "Tìm hiểu thêm về BOT, tokenomics, khai thác, hệ sinh thái và bảo mật. Khám phá câu trả lời cho những câu hỏi phổ biến.",
-    "searchPlaceholder": "Tìm kiếm câu hỏi...",
+    "badge": "Thông tin Giao thức Toàn diện & FAQ Tổng hợp",
+    "title": "Các câu hỏi <hl>Thường gặp</hl>",
+    "description": "Thông tin kỹ thuật, kinh tế, phần cứng và vận hành chuyên sâu giải quyết trực tiếp các cơ chế lạm phát token, sản xuất máy khai thác vật lý, các văn phòng khu vực toàn cầu (Singapore, Hong Kong, Dubai, Thái Lan) và các thuật toán lợi nhuận động V1–V10.",
+    "searchPlaceholder": "Tìm kiếm theo từ khóa, ví dụ: 'lạm phát', 'Singapore', 'Địa chỉ Z', 'V4', 'máy đào', 'cụm từ khôi phục'...",
     "clear": "Xóa",
-    "showing": "Đang hiển thị {shown}/{total} câu hỏi",
+    "showing": "Đang hiển thị <strong>{shown}</strong> trên {total} câu trả lời đã xác minh",
     "expandAll": "Mở rộng tất cả",
     "collapseAll": "Thu gọn tất cả",
-    "emptyTitle": "Không tìm thấy câu hỏi",
-    "emptyHint": "Hãy thử thay đổi từ khóa tìm kiếm hoặc chọn danh mục khác.",
+    "emptyTitle": "Không tìm thấy câu trả lời phù hợp",
+    "emptyHint": "Hãy thử điều chỉnh cụm từ tìm kiếm của bạn hoặc chọn “{all}” để xem tất cả các câu trả lời.",
     "resetFilters": "Đặt lại bộ lọc",
-    "copyLink": "Sao chép liên kết",
-    "keyTopics": "Chủ đề chính",
-    "verifiedDocs": "Xác minh trên blockchain",
-    "discuss": "Thảo luận",
-    "supportTitle": "Bạn cần thêm trợ giúp?",
-    "supportText": "Nếu không tìm thấy câu trả lời, bạn có thể liên hệ cộng đồng hoặc đội ngũ hỗ trợ để được giải đáp.",
-    "supportCta": "Liên hệ hỗ trợ",
+    "copyLink": "Sao chép liên kết trực tiếp đến FAQ này",
+    "keyTopics": "Chủ đề chính:",
+    "verifiedDocs": "Tài liệu giao thức đã xác minh",
+    "discuss": "Thảo luận trong cộng đồng",
+    "supportTitle": "Bạn có câu hỏi không có trong danh sách này?",
+    "supportText": "Kết nối trực tiếp với các quản lý cộng đồng toàn cầu 24/7 của chúng tôi tại Singapore, Thái Lan, Hong Kong và Dubai, hoặc truy vấn CaryPact AI Copilot trong thời gian thực.",
+    "supportCta": "Tham gia hỗ trợ cộng đồng",
     "categories": {
       "all": {
         "tab": "Tất cả câu hỏi",
         "badge": "Tất cả câu hỏi"
       },
       "tokenomics": {
-        "tab": "Tokenomics",
-        "badge": "Tokenomics"
+        "tab": "Tokenomics & Lạm phát",
+        "badge": "Tokenomics & Lạm phát"
       },
       "ecosystem": {
-        "tab": "Hệ sinh thái",
-        "badge": "Hệ sinh thái"
+        "tab": "Hệ sinh thái BOT Chain",
+        "badge": "BOT Chain & Hệ sinh thái"
       },
       "mining": {
-        "tab": "Khai thác",
-        "badge": "Khai thác"
+        "tab": "DePIN & Dàn máy đào",
+        "badge": "Phần cứng Khai thác & DePIN"
       },
       "vip": {
-        "tab": "VIP và phần thưởng",
-        "badge": "VIP và phần thưởng"
+        "tab": "VIP & Lợi nhuận động",
+        "badge": "Phần thưởng VIP & Lãi kép"
       },
       "security": {
-        "tab": "Bảo mật",
-        "badge": "Bảo mật"
+        "tab": "Bảo mật & Ví",
+        "badge": "Bảo mật & Ví"
       },
       "global": {
-        "tab": "Phát triển toàn cầu",
-        "badge": "Phát triển toàn cầu"
+        "tab": "Hub toàn cầu & Pháp lý",
+        "badge": "Vận hành toàn cầu & Pháp lý"
       }
     },
     "items": {
       "inflation-elimination": {
-        "question": "BOT dự định loại bỏ lạm phát như thế nào?",
+        "question": "Lạm phát tài sản tích lũy trong các tài sản POS đã stake được loại bỏ như thế nào?",
         "keywords": [
-          "lạm phát",
-          "tokenomics",
-          "nguồn cung",
-          "BOT"
+          "Loại bỏ lạm phát Staking",
+          "Tokenomics CA",
+          "Dòng tiền Ví B & Ví M",
+          "Đốt tại Địa chỉ Z",
+          "Quỹ dự trữ ngân quỹ BOT"
         ],
         "geoTags": [
-          "global"
+          "Giao thức phi tập trung toàn cầu"
         ],
-        "summary": "Tìm hiểu cách tokenomics hướng đến việc kiểm soát nguồn cung token.",
+        "summary": "Thông qua cơ chế ví 4 dòng tiền vào/1 dòng tiền ra nghiêm ngặt, 10% mua lại & đốt hàng ngày từ Địa chỉ Z, 90% phân bổ vào ngân quỹ và khả năng hấp thụ vĩ mô 'Ao nước so với Biển cả' của chuỗi công khai BOT.",
         "answer": [
-          "Tokenomics của BOT có thể bao gồm các cơ chế quản lý nguồn cung token nhằm hỗ trợ tính bền vững lâu dài của hệ sinh thái.",
-          "Kết quả thực tế phụ thuộc vào việc triển khai các cơ chế này, hoạt động của mạng lưới và điều kiện thị trường. Hãy tham khảo tài liệu chính thức để biết thêm chi tiết."
+          "1. Kiến trúc luồng ví (Ví B & M): Giải pháp cốt lõi nằm ở kỹ thuật quản lý dòng tiền CA chiến lược của chúng tôi. Các địa chỉ on-chain chính cần theo dõi là Ví 'B' (Pool phần thưởng Staking) và Ví 'M' (Pool Staking). Cả hai ví đều duy trì 4 dòng tiền vào liên tục trong khi chỉ có 1 dòng tiền ra đối với token CA. Do dòng tiền vào luôn lớn hơn dòng tiền ra về mặt toán học, giao thức đảm bảo đủ lượng dự trữ ngay cả trong các giai đoạn unstake quy mô lớn và các đợt phát hành lợi nhuận POS hàng ngày.",
+          "2. Động cơ Mua lại & Đốt của Địa chỉ Z: 10% tổng số vốn đổ vào Địa chỉ Z sẽ ngay lập tức được sử dụng để mua lại token CA trên thị trường phi tập trung mở và đốt chúng vĩnh viễn. 90% còn lại được gửi vào ngân quỹ BOT của giao thức. Sự giảm phát mang tính cấu trúc này làm giảm đều đặn tổng nguồn cung lưu hành, hỗ trợ sự tăng giá tự nhiên lành mạnh khi lượng tham gia POS mở rộng.",
+          "3. Sự hấp thụ vĩ mô 'Ao nước so với Biển cả': Hệ sinh thái CA đóng vai trò như một ao nước ứng dụng chuyên biệt, trong khi Chuỗi công khai BOT là biển cả bao la. Khi hàng nghìn dApp sắp tới được triển khai trên BOT Chain, độ sâu vốn và lượng đốt phí gas sẽ dễ dàng hòa tan hoặc cân bằng các sự mất cân đối thanh khoản cục bộ."
         ]
       },
       "candlestick-stability": {
-        "question": "BOT duy trì sự ổn định giá như thế nào?",
+        "question": "Tại sao CA và WBOT hiển thị khối lượng giao dịch hàng ngày cao nhưng giá lại ổn định mà không có các đợt bơm xả (pump-and-dump) cực đoan?",
         "keywords": [
-          "giá",
-          "ổn định",
-          "thị trường",
-          "thanh khoản"
+          "Độ ổn định biểu đồ nến",
+          "Thuật toán mua lại của ngân quỹ",
+          "Tăng trưởng bền vững",
+          "Lộ trình niêm yết CEX"
         ],
         "geoTags": [
-          "global"
+          "Thanh khoản toàn cầu"
         ],
-        "summary": "Các yếu tố ảnh hưởng đến giá BOT và sự ổn định của thị trường.",
+        "summary": "Sự ổn định giá được thiết kế có chủ ý để duy trì tuổi thọ cho các tổ chức thông qua các biện pháp can thiệp thuật toán của ngân quỹ, nhu cầu thị trường thứ cấp nhất quán và tiện ích on-chain thực tế thay vì thao túng đầu cơ.",
         "answer": [
-          "Giá token chịu ảnh hưởng bởi cung và cầu, thanh khoản, hoạt động giao dịch và điều kiện chung của thị trường.",
-          "Không có cơ chế nào có thể bảo đảm giá luôn ổn định. Hãy nghiên cứu dữ liệu thị trường và các nguồn chính thức trước khi đưa ra quyết định đầu tư."
+          "1. Kỹ thuật vì sự bền vững: Giao thức được cấu trúc có chủ đích để mở rộng hữu cơ, ổn định thay vì tạo ra các đợt tăng đột biến đầu cơ nhân tạo gây hại cho những người tham gia dài hạn.",
+          "2. Giá trị gas của Token BOT: BOT Chain đang trong giai đoạn mở rộng nền tảng. Khi các dApp mới trong hệ sinh thái ra mắt, khối lượng giao dịch sẽ tạo ra lượng phí gas ngày càng tăng (1.50% được đốt vĩnh viễn). Việc niêm yết theo kế hoạch trên 10–20 sàn giao dịch tập trung (CEX) hàng đầu sẽ mở rộng hơn nữa thanh khoản cho các tổ chức.",
+          "3. Hàng rào bảo vệ của Ngân quỹ CA: Tokenomics CA chuyển vốn vào các ngân quỹ chuyên dụng của giao thức. Nếu giá thị trường giảm quá mức, các quỹ dự trữ của ngân quỹ sẽ kích hoạt theo thuật toán để mua lại token CA. Hơn nữa, nhu cầu ngày càng tăng từ các thị trường thứ cấp liên tục kích thích sự tăng giá tự nhiên."
         ]
       },
       "wbot-holders-price-growth": {
-        "question": "Người nắm giữ wBOT có thể hưởng lợi như thế nào khi giá tăng?",
+        "question": "Với số lượng người nắm giữ ví WBOT vượt quá 900.000, tại sao giá lại tăng đều đặn từ $9.5 lên $9.9 thay vì tăng vọt lên $20+ qua đêm?",
         "keywords": [
-          "wBOT",
-          "người nắm giữ",
-          "tăng giá",
-          "phần thưởng"
+          "Hơn 900.000 ví",
+          "Mở rộng giá WBOT",
+          "Ươm tạo hơn 100 dự án",
+          "Dàn máy DePIN vật lý"
         ],
         "geoTags": [
-          "global"
+          "Đồng thuận toàn cầu"
         ],
-        "summary": "Tìm hiểu mối liên hệ giữa giá token và giá trị tài sản của người nắm giữ.",
+        "summary": "BOT đã có sự tăng giá ổn định, lành mạnh từ $9.50 lên ~$9.90+. Giá trị sẽ tăng trưởng mạnh mẽ khi hơn 100 dApp được ươm tạo triển khai, các dàn máy khai thác vật lý đi vào hoạt động và các đợt niêm yết trên sàn tập trung được triển khai.",
         "answer": [
-          "Giá trị tài sản của người nắm giữ wBOT có thể thay đổi theo giá thị trường của token tương ứng.",
-          "Lợi ích thực tế phụ thuộc vào điều kiện chuyển đổi, thanh khoản, phí và tình hình thị trường. Giá tăng không được bảo đảm."
+          "1. Tăng trưởng có hệ thống ở giai đoạn đầu: BOT đã tăng giá đều đặn từ $9.50 lên ~$9.90+. Do BOT Chain đang trong giai đoạn giới thiệu với CaryPact là giao thức tiên phong dẫn đầu, việc khám phá giá phản ánh sự chấp nhận nền tảng đã được xác minh hơn là các bong bóng đầu cơ.",
+          "2. Các chất xúc tác sắp tới: Quỹ đang tích cực thảo luận với hơn 100 dự án độc lập đang chuẩn bị ươm tạo và triển khai trên BOT Chain. Đồng thời, các dàn máy khai thác AI vật lý hiện đang trong quá trình sản xuất thương mại, cho phép các thợ đào xây dựng các trang trại khai thác công suất lớn.",
+          "3. Mở rộng sàn giao dịch: Việc niêm yết rộng rãi trên các sàn giao dịch tập trung (CEX) dự kiến vào Q3/Q4 sẽ mở khóa các sổ lệnh bán lẻ và tổ chức toàn cầu, thúc đẩy làn sóng định giá mạng lưới bền vững tiếp theo."
         ]
       },
       "why-invest-differentiation": {
-        "question": "Điều gì khiến BOT khác biệt so với các dự án tiền mã hóa khác?",
+        "question": "Tại sao ai đó nên cân nhắc tham gia CaryPact và BOT Chain thay vì các dự án Web3 khác?",
         "keywords": [
-          "đầu tư",
-          "khác biệt",
-          "dự án",
-          "BOT"
+          "Đa dạng hóa danh mục",
+          "Thẩm định độc lập (DYOR)",
+          "Kiến trúc AI DePIN",
+          "Layer 1 tự trị"
         ],
         "geoTags": [
-          "global"
+          "Cộng đồng Web3 toàn cầu"
         ],
-        "summary": "Tìm hiểu các đặc điểm chính của dự án và hệ sinh thái.",
+        "summary": "Chúng tôi ủng hộ việc đa dạng hóa danh mục có kỷ luật và tự nghiên cứu kỹ lưỡng (DYOR). BOT Chain kết hợp một Layer 1 tự trị với kinh tế học token giảm phát, siêu điện toán phi tập trung và một lộ trình minh bạch.",
         "answer": [
-          "BOT được định vị là một dự án kết hợp tokenomics, tài nguyên điện toán và sự phát triển của hệ sinh thái.",
-          "Hãy so sánh dự án với các lựa chọn khác dựa trên tài liệu có thể kiểm chứng, mức độ sử dụng thực tế, tính minh bạch, thanh khoản và rủi ro. Mô tả của dự án không bảo đảm thành công."
+          "1. Đa dạng hóa thận trọng & DYOR: Chúng tôi luôn khuyến khích bạn tự thẩm định và không bao giờ đầu tư số vốn mà bạn không thể chấp nhận rủi ro. BOT Chain được xây dựng như một tài sản đa dạng hóa hàng đầu cho danh mục đầu tư crypto.",
+          "2. Hạ tầng Layer 1 đích thực: Không giống như các token thuần ứng dụng trên các mạng lưới tắc nghẽn, BOT Chain là một Layer 1 EVM độc lập với thời gian tạo khối 3 giây, phí gas không đáng kể và cơ chế đốt 1.50% gas gốc vĩnh viễn.",
+          "3. Đối thoại cởi mở: Chúng tôi hoan nghênh các so sánh kỹ thuật về triết lý kiến trúc, cấu trúc dòng tiền và kinh tế giảm phát để giúp các nhà xây dựng và người tham gia đưa ra quyết định sáng suốt."
         ]
       },
       "bot-price-project-owners": {
-        "question": "Chủ sở hữu dự án ảnh hưởng đến giá BOT như thế nào?",
+        "question": "Mức giá ~$9.90 / BOT có quá cao để các chủ dự án và nhà phát triển xây dựng trên BOT Chain không?",
         "keywords": [
-          "giá BOT",
-          "chủ dự án",
-          "nhu cầu",
-          "hệ sinh thái"
+          "Tài trợ cho nhà phát triển",
+          "Quỹ hỗ trợ 50 triệu USD",
+          "Hoàn trả 30% phí gas",
+          "Onboarding dự án",
+          "Lưu lượng truy cập cho builder"
         ],
         "geoTags": [
-          "global"
+          "Trụ sở Singapore",
+          "Mạng lưới nhà phát triển toàn cầu"
         ],
-        "summary": "Hoạt động của các bên tham gia hệ sinh thái có thể ảnh hưởng đến nhu cầu thị trường.",
+        "summary": "Không. Quỹ BOT Chain Foundation hỗ trợ các nhà phát triển mới bằng lưu lượng người dùng, quỹ tài trợ cho builder trị giá 50 triệu USD và dòng doanh thu hoàn trả 30% phí gas liên tục.",
         "answer": [
-          "Hoạt động của các dự án sử dụng hệ sinh thái BOT có thể ảnh hưởng đến nhu cầu đối với token.",
-          "Mức độ ảnh hưởng thực tế phụ thuộc vào việc sử dụng thực tế, khối lượng hoạt động, thanh khoản và điều kiện thị trường. Tác động này không tự động xảy ra và cũng không được bảo đảm."
+          "1. Trợ cấp mạnh mẽ cho nhà phát triển: Định giá token cao phản ánh tính bảo mật mạng lưới mạnh mẽ và cam kết của các validator. Để giảm thiểu rào cản cho các builder, Quỹ BOT Chain Foundation cung cấp cho các nhóm dự án mới lưu lượng truy cập trực tiếp và một cộng đồng năng động với hơn 200.000 người dùng.",
+          "2. Quỹ hỗ trợ 50 triệu USD: Quỹ Hệ sinh thái trị giá 50 triệu USD chuyên dụng sẽ trao các khoản tài trợ cơ sở hạ tầng và thanh khoản cho các nhóm đủ điều kiện triển khai trên BOT Chain.",
+          "3. Dòng doanh thu hoàn trả 30% phí gas: Chủ sở hữu dự án nhận được khoản hoàn trả liên tục 30% cho tất cả các khoản phí gas do các smart contract của họ tạo ra, tạo ra một tầng kiếm tiền định kỳ, ngay lập tức trước khi thiết lập pool thanh khoản."
         ]
       },
       "bot-ecosystem-roadmap": {
-        "question": "Lộ trình phát triển hệ sinh thái BOT là gì?",
+        "question": "Hệ sinh thái chuỗi công khai BOT dự kiến sẽ phát triển như thế nào trong 1–3 năm tới?",
         "keywords": [
-          "lộ trình",
-          "hệ sinh thái",
-          "phát triển",
-          "cập nhật"
+          "Lộ trình 10.000 DApp",
+          "Giao thức 1-Click",
+          "Triển khai nhanh (30 phút)",
+          "Niêm yết 10-20 CEX"
         ],
         "geoTags": [
-          "global"
+          "Mạng lưới Node toàn cầu",
+          "Châu Á - Thái Bình Dương",
+          "Trung Đông"
         ],
-        "summary": "Tìm hiểu nơi xem thông tin về kế hoạch phát triển dự án.",
+        "summary": "Hơn 900.000 địa chỉ trong 2 tháng; mở rộng lên 2.000 dự án trong năm nay và hơn 10.000 dự án trong 3 năm qua 'Giao thức 1-Click' 30 phút, được hỗ trợ bởi quỹ 50 triệu USD và 10–20 đợt niêm yết CEX.",
         "answer": [
-          "Lộ trình phát triển mô tả các giai đoạn dự kiến trong quá trình phát triển hệ sinh thái BOT.",
-          "Tiến độ và tính năng có thể thay đổi. Hãy kiểm tra các thông báo và tài liệu chính thức mới nhất để biết trạng thái của từng giai đoạn."
+          "1. Tăng trưởng địa chỉ bùng nổ: BOT Chain đã tích lũy được hơn 900.000 địa chỉ ví trong vòng khoảng hai tháng kể từ khi ra mắt mainnet.",
+          "2. Hơn 200 dự án đang đàm phán: Các cuộc thảo luận đang diễn ra với hơn 200 dự án. Mục tiêu là 2.000 dự án vào cuối năm và hơn 10.000 dự án trong vòng 3 năm, được thúc đẩy bởi 'Giao thức 1-Click' cho phép các nhà phát triển khởi chạy một dApp hoàn chỉnh trong vòng 30 phút.",
+          "3. Sức mạnh cộng hưởng từ CaryPact: Sự phát triển nhanh chóng của CaryPact với tư cách là giao thức chuẩn mực chứng minh khả năng xử lý thông lượng cao, thu hút các nhà phát triển EVM bên ngoài kết nối hoặc chuyển đổi cơ sở mã nguồn.",
+          "4. Thanh khoản & Niêm yết CEX: Kế hoạch mở rộng bao gồm việc niêm yết trên 10–20 sàn giao dịch tập trung hàng đầu, nhân rộng tính thanh khoản thứ cấp và mức độ hiển thị thương hiệu toàn cầu."
         ]
       },
       "bohr-to-bot-rebrand": {
-        "question": "Tại sao BOHR được đổi tên thành BOT?",
+        "question": "BOT Chain trước đây có tên là BOHR. Động lực đằng sau việc tái định vị thương hiệu chiến lược này là gì?",
         "keywords": [
-          "BOHR",
-          "BOT",
-          "đổi thương hiệu",
-          "di chuyển token"
+          "Đổi tên BOHR thành BOT",
+          "Di sản Niels Bohr",
+          "Hệ điều hành AI",
+          "Thực thi tác tử thông minh"
         ],
         "geoTags": [
-          "global"
+          "Đổi thương hiệu toàn cầu"
         ],
-        "summary": "Thông tin về việc đổi tên và những thay đổi liên quan.",
+        "summary": "Chuyển đổi từ khám phá vật lý lý thuyết (lấy cảm hứng từ Niels Bohr) sang một mạng lưới thực thi thông minh và hệ điều hành on-chain cho các AI agent và khối lượng công việc DePIN.",
         "answer": [
-          "Việc thay đổi tên hoặc mã giao dịch có thể phản ánh sự thay đổi về thương hiệu, chiến lược hoặc cấu trúc của dự án.",
-          "Trước khi hoán đổi hoặc di chuyển token, hãy kiểm tra hướng dẫn chính thức, các mạng được hỗ trợ, địa chỉ hợp đồng và thời hạn áp dụng. Không gửi token đến địa chỉ chưa được xác minh."
+          "1. Giai đoạn lý thuyết (BOHR): Tên gọi ban đầu BOHR nhằm tôn vinh nhà vật lý Niels Bohr, thể hiện sự khám phá khoa học nền tảng, xác thực mật mã và vật lý đồng thuận trong quá trình thử nghiệm kiến trúc mạng lưới ban đầu.",
+          "2. Tiến hóa thành BOT: Khi chuỗi công khai phát triển từ việc xác thực kỹ thuật sang một hệ sinh thái thương mại đa bên, 'BOT' đã được chọn để truyền tải khả năng thực thi thông minh, điều phối tác tử tự động và hạ tầng AI dạng mô-đun.",
+          "3. Hệ điều hành thông minh: BOT truyền tải chính xác sứ mệnh của mạng lưới là hệ điều hành kỹ thuật số phi tập trung cung cấp năng lượng cho các tác tử Web3 tự trị, máy học phân tán và lập lịch tài nguyên điện toán xuyên biên giới."
         ]
       },
       "verify-150m-bot-supply": {
-        "question": "Làm thế nào để xác minh tổng nguồn cung 150 triệu BOT?",
+        "question": "Làm thế nào để người tham gia có thể xác minh tổng nguồn cung cố định 150 triệu token BOT?",
         "keywords": [
-          "150M",
-          "nguồn cung token",
-          "blockchain",
-          "xác minh"
+          "Tổng cung 150M BOT",
+          "Xác minh địa chỉ WBOT",
+          "Trình khám phá (scan.botchain.ai)",
+          "Bằng chứng mật mã"
         ],
         "geoTags": [
-          "global"
+          "Minh bạch On-Chain"
         ],
-        "summary": "Xác minh nguồn cung token thông qua dữ liệu blockchain chính thức.",
+        "summary": "Xác minh minh bạch on-chain thông qua địa chỉ hợp đồng genesis WBOT trên scan.botchain.ai và đối chiếu chéo với whitepaper chính thức cùng các trang theo dõi của sàn giao dịch.",
         "answer": [
-          "Để xác minh tuyên bố về nguồn cung 150 triệu BOT, hãy kiểm tra địa chỉ hợp đồng chính thức và dữ liệu blockchain liên quan.",
-          "Đối chiếu tổng nguồn cung, nguồn cung lưu hành, token đã đốt và số dư bị khóa. Các chỉ số này có thể khác nhau. Bạn có thể kiểm tra giao dịch tại https://scan.botchain.ai."
+          "1. Sổ cái On-Chain bất biến: Lượng phân bổ genesis 150 triệu BOT có thể được kiểm toán công khai trên Trình khám phá khối BOT Chain (https://scan.botchain.ai) dưới địa chỉ hợp đồng WBOT.",
+          "2. Đối chiếu sàn giao dịch: Khi các đợt niêm yết trên sàn tập trung sắp tới hoàn tất, các số liệu về tổng cung và nguồn cung lưu hành sẽ được xác minh và hiển thị minh bạch trên CoinMarketCap và CoinGecko."
         ]
       },
       "mining-machine-pricing": {
-        "question": "Thiết bị khai thác có giá bao nhiêu?",
+        "question": "Các bài thuyết trình ghi giá máy khai thác AI là $3,960, nhưng các cuộc gọi cộng đồng lại đề cập đến $3,600. Đâu là chi phí chính thức?",
         "keywords": [
-          "khai thác",
-          "thiết bị",
-          "giá",
-          "máy khai thác"
+          "Giá máy khai thác AI",
+          "Presale dàn máy DePIN",
+          "Thông báo giá chính thức",
+          "Các lô phần cứng"
         ],
         "geoTags": [
-          "mining"
+          "Giao hàng phần cứng toàn cầu"
         ],
-        "summary": "Giá thiết bị phụ thuộc vào mẫu máy và điều kiện mua hàng.",
+        "summary": "Các con số ban đầu là ước tính sơ bộ; tất cả giá phần cứng chính thức, thông số kỹ thuật từng lô và lịch giao hàng sẽ được công bố chính thức qua các kênh cộng đồng trước khi xuất xưởng thương mại.",
         "answer": [
-          "Chi phí thiết bị khai thác phụ thuộc vào mẫu máy, hiệu suất, tình trạng sẵn có, phí vận chuyển và điều kiện của người bán.",
-          "Trước khi mua, hãy yêu cầu báo giá mới nhất và xác nhận bảo hành, chi phí điện, bảo trì và lợi nhuận dự kiến. Thu nhập từ khai thác không được bảo đảm."
+          "1. Thông báo giai đoạn sơ bộ: Các con số được chia sẻ trong các hội thảo ban đầu ($3,600 – $3,960 USD) là ước tính kỹ thuật nội bộ tùy thuộc vào giá linh kiện của chuỗi cung ứng.",
+          "2. Thông báo chính thức: Giá thương mại ràng buộc, số lượng theo lô và chi tiết hậu cần quốc tế sẽ chỉ được công bố độc quyền thông qua các kênh chính thức đã được xác minh (t.me/tunicacasupport và x.com/CaryPact_BOT)."
         ]
       },
       "mining-machine-manufacturer": {
-        "question": "Ai sản xuất thiết bị khai thác?",
+        "question": "Đối tác sản xuất nào đang sản xuất các máy khai thác AI BOT vật lý và tại sao tên của họ lại được bảo mật?",
         "keywords": [
-          "nhà sản xuất",
-          "thiết bị khai thác",
-          "phần cứng"
+          "Nhà sản xuất phần cứng",
+          "NDA nhà máy Tier-1",
+          "Chuỗi cung ứng DePIN",
+          "Thỏa thuận bảo mật"
         ],
         "geoTags": [
-          "mining"
+          "Hiệp hội sản xuất toàn cầu"
         ],
-        "summary": "Kiểm tra thông tin về nhà sản xuất và nhà cung cấp thiết bị.",
+        "summary": "Việc sản xuất phần cứng được ký hợp đồng với một đối tác sản xuất cấp 1 theo các thỏa thuận không tiết lộ thông tin (NDA) song phương nghiêm ngặt để bảo vệ các dây chuyền cung cấp chip độc quyền cho đến khi ra mắt chính thức.",
         "answer": [
-          "Trước khi mua, hãy xác minh tên pháp lý của nhà sản xuất, thông số kỹ thuật của thiết bị và tài liệu chính thức.",
-          "Kiểm tra chế độ bảo hành, dịch vụ hỗ trợ và uy tín của nhà cung cấp thay vì chỉ dựa vào quảng cáo của dự án."
+          "1. Các điều khoản NDA thương mại nghiêm ngặt: Hiệp hội sản xuất hoạt động theo các cam kết không tiết lộ nghiêm ngặt để đảm bảo phân bổ chip chuyên dụng, ngăn chặn vi phạm sở hữu trí tuệ và bảo vệ chuỗi cung ứng linh kiện.",
+          "2. Công bố chính thức: Các đối tác chế tạo và chứng nhận colocation sẽ được chính thức công bố cùng với các lô hàng xuất xưởng thương mại."
         ]
       },
       "tier-1-mining-operators": {
-        "question": "Các đơn vị vận hành khai thác Tier 1 là ai?",
+        "question": "Những nhà vận hành khai thác cấp tổ chức nào hiện đang triển khai cơ sở hạ tầng khai thác BOT?",
         "keywords": [
-          "đơn vị vận hành",
-          "Tier 1",
-          "khai thác",
-          "năng lực điện toán"
+          "Hiệp hội khai thác tổ chức",
+          "Colocation công nghiệp",
+          "Hạ tầng xác thực"
         ],
         "geoTags": [
-          "mining"
+          "Cơ sở khai thác tại Thái Lan",
+          "Trung tâm dữ liệu tại Mông Cổ"
         ],
-        "summary": "Tìm hiểu vai trò của các đơn vị vận hành lớn trong hạ tầng khai thác.",
+        "summary": "Các đơn vị khai thác công nghiệp hàng đầu với các cơ sở đang hoạt động tại Thái Lan và Mông Cổ đang triển khai phần cứng, với danh tính doanh nghiệp cụ thể được bảo vệ theo NDA cho đến khi có thông báo chung.",
         "answer": [
-          "Các đơn vị vận hành khai thác cung cấp thiết bị, cơ sở hạ tầng và năng lực điện toán để thực hiện những tác vụ tương ứng của mạng lưới hoặc nền tảng.",
-          "Tiêu chí để đạt cấp Tier 1, yêu cầu tham gia và các quyền lợi liên quan cần được xác minh trong quy định chính thức của chương trình."
+          "1. Triển khai trung tâm dữ liệu khu vực: Các nhà vận hành tổ chức lớn ở Thái Lan và Mông Cổ đã bắt đầu chuẩn bị cơ sở vật chất và phân bổ nguồn điện để hỗ trợ các cụm khai thác BOT.",
+          "2. NDA doanh nghiệp: Các thông cáo báo chí chung sẽ công bố danh tính của các nhà vận hành doanh nghiệp khi đạt được các mốc kết nối lưới điện."
         ]
       },
       "carypact-compute-vs-bot-rigs": {
-        "question": "Tài nguyên điện toán của CaryPact khác gì so với các máy khai thác BOT?",
+        "question": "Hiện tại ai đang sử dụng sức mạnh tính toán của CaryPact, và sự khác biệt giữa hashrate CA và dàn máy khai thác BOT vật lý là gì?",
         "keywords": [
-          "CaryPact",
-          "điện toán",
-          "máy khai thác",
-          "hạ tầng"
+          "Hashrate CA so với dàn máy BOT",
+          "Pool 16.800 CA",
+          "Suy luận AI doanh nghiệp",
+          "Điện toán được token hóa"
         ],
         "geoTags": [
-          "mining",
-          "ecosystem"
+          "Lưới điện toán toàn cầu"
         ],
-        "summary": "So sánh giải pháp điện toán với thiết bị khai thác chuyên dụng.",
+        "summary": "Hashrate CA là một đơn vị kế toán giao thức chuẩn hóa để phân phối pool 16.800 CA hàng ngày. Các dàn máy khai thác BOT vật lý là các cỗ máy phần cứng hữu hình sẽ bán năng lực điện toán thực tế cho các nhà phát triển AI bên ngoài.",
         "answer": [
-          "Hạ tầng điện toán và thiết bị khai thác chuyên dụng có thể khác nhau về mục đích sử dụng, kiến trúc, hiệu suất và cơ chế nhận thưởng.",
-          "Để so sánh chính xác, hãy xem thông số kỹ thuật, trường hợp sử dụng đã được xác minh, chi phí và điều kiện tham gia. Thông tin bổ sung có thể được đăng trên các kênh chính thức của CaryPact, bao gồm https://x.com/CaryPact_BOT."
+          "1. Sức mạnh tính toán CA (Lợi nhuận nội bộ): Mua hashrate CA (1 USDT = 1 Đơn vị) cho phép người sở hữu hưởng một tỷ lệ toán học vĩnh viễn từ pool phát thải 16.800 CA hàng ngày. Nó đóng vai trò như một cơ chế phân phối phần thưởng nội bộ.",
+          "2. Dàn máy khai thác BOT vật lý (AI thương mại bên ngoài): Các máy khai thác BOT vật lý hiện đang được sản xuất đại diện cho phần cứng thực tế. Trong tương lai, các thợ đào có thể thiết lập các trang trại khai thác phi tập trung để cung cấp năng lực tính toán GPU/CPU thực tế cho các khách hàng AI doanh nghiệp bên ngoài để nhận phí đào tạo và suy luận mô hình."
         ]
       },
       "hashrate-supply-servers": {
-        "question": "Hashrate, nguồn cung token và máy chủ có liên quan như thế nào?",
+        "question": "Ai cung cấp hashrate và các máy chủ vật lý được đặt ở đâu?",
         "keywords": [
-          "hashrate",
-          "nguồn cung",
-          "máy chủ",
-          "khai thác"
+          "Mô hình phân bổ hashrate",
+          "Siêu điện toán giao thức",
+          "Các node phi tập trung"
         ],
         "geoTags": [
-          "mining"
+          "Trung tâm dữ liệu Tier-3/4 toàn cầu"
         ],
-        "summary": "Phân biệt năng lực tính toán với các chỉ số nguồn cung token.",
+        "summary": "Việc mua hashrate sẽ kích hoạt một hạn mức on-chain xác định phần chia tỷ lệ của bạn trong lượng phát thải token CA hàng ngày, được hỗ trợ bởi cơ sở hạ tầng điện toán phi tập trung toàn cầu.",
         "answer": [
-          "Hashrate phản ánh năng lực tính toán được sử dụng trong hoạt động khai thác tương ứng. Nguồn cung token phản ánh số lượng token đã phát hành hoặc đang lưu hành theo chỉ số được sử dụng.",
-          "Máy chủ cung cấp hạ tầng, nhưng mối quan hệ giữa năng lực tính toán và việc phát hành token phụ thuộc vào giao thức cụ thể. Hãy kiểm tra tài liệu kỹ thuật chính thức."
+          "1. Làm rõ việc phân bổ hashrate: Trong giao thức CaryPact, việc sở hữu hashrate không có nghĩa là thuê một thùng máy chủ vật lý riêng biệt. Bạn đang kích hoạt các đơn vị sức mạnh tính toán được chuẩn hóa on-chain.",
+          "2. Phân phối theo tỷ lệ: Hashrate đang hoạt động của bạn so với tổng hashrate toàn cầu sẽ quyết định chính xác phần chia hàng ngày của bạn từ pool phát thải khai thác 16.800 CA, được nhân với hệ số thời gian K ≈ 1.01."
         ]
       },
       "v4-earnings-differential": {
-        "question": "Tại sao thu nhập trong phiên bản V4 có thể khác nhau?",
+        "question": "Tôi đã đạt cấp bậc V4. Tại sao thu nhập hàng ngày của tôi lại thay đổi, và mô hình thu nhập chênh lệch hoạt động như thế nào?",
         "keywords": [
-          "V4",
-          "thu nhập",
-          "phần thưởng",
-          "chênh lệch"
+          "Thu nhập cấp bậc V4",
+          "Phần thưởng đội nhóm",
+          "Phần thưởng quản lý (7.000 CA)",
+          "Phần thưởng động POS (6%-30%)",
+          "Thanh toán chênh lệch"
         ],
         "geoTags": [
-          "mining",
-          "vip"
+          "Mạng lưới đại sứ toàn cầu"
         ],
-        "summary": "Phần thưởng có thể khác nhau tùy theo điều kiện tham gia.",
+        "summary": "Các lãnh đạo V4 kiếm được từ 3 nguồn: Phần thưởng đội nhóm (tỷ lệ hashrate mạng lưới phụ so với tăng trưởng toàn cầu), Phần thưởng quản lý (chia sẻ pool 7.000 CA) và Chênh lệch động POS (6%–30%).",
         "answer": [
-          "Sự khác biệt về thu nhập có thể liên quan đến cấp độ tham gia, năng lực tính toán, thời gian hoạt động, quy tắc phân phối và các thông số của chương trình.",
-          "Hãy kiểm tra điều khoản của phiên bản V4 và lịch sử ghi nhận phần thưởng. Không nên xem các phép tính hiển thị là cam kết về khoản thanh toán trong tương lai."
+          "1. Động lực phần thưởng đội nhóm: Thu nhập đội nhóm được tính như sau: Hashrate mạng lưới phụ của bạn ÷ Hashrate mạng lưới phụ toàn cầu. Để tăng thu nhập CA hàng ngày, tốc độ kích hoạt sức mạnh tính toán của đội bạn phải vượt xa tốc độ tăng trưởng của mạng lưới toàn cầu.",
+          "2. Trọng số Pool Quản lý: Thành viên V4 nhận được hệ số nhân trọng số cao hơn từ pool phát thải cố định 7.000 CA hàng ngày. Khi có nhiều lãnh đạo hơn thăng cấp lên V4–V10, pool sẽ được phân chia giữa nhiều người đủ điều kiện hơn (pool giảm 10% mỗi 2 năm).",
+          "3. Chi trả chênh lệch POS (6% đến 30%): Phần thưởng động POS chi trả dựa trên chênh lệch cấp bậc. Cấp bậc VIP của bạn càng cao so với tuyến dưới trực tiếp, bạn càng nhận được tỷ lệ phần trăm chênh lệch cao hơn.",
+          "4. Lợi thế cộng dồn: Tất cả các phần thưởng được thanh toán bằng token CA thanh khoản. Các nhà lãnh đạo có thể stake phần thưởng vào POS để gia tăng tài sản trong khi giá trị CA tăng trưởng đều đặn."
         ]
       },
       "same-rank-bonus-distribution": {
-        "question": "Tiền thưởng được phân phối như thế nào giữa những người cùng cấp bậc?",
+        "question": "Nếu một thành viên tuyến dưới đạt cấp bậc bằng hoặc cao hơn tôi, việc phân phối tiền thưởng sẽ được xử lý như thế nào?",
         "keywords": [
-          "cấp bậc",
-          "tiền thưởng",
-          "phân phối",
-          "phần thưởng"
+          "Chia sẻ đồng cấp",
+          "Tuyến dưới cấp cao hơn",
+          "Điều kiện chia sẻ pool",
+          "Ghi đè POS"
         ],
         "geoTags": [
-          "vip"
+          "Lãnh đạo cộng đồng"
         ],
-        "summary": "Việc phân phối tiền thưởng phụ thuộc vào quy định của chương trình.",
+        "summary": "Bạn tiếp tục nhận được phần thưởng từ các bậc hợp lệ của mình (ví dụ: V5 nhận từ pool V1–V5). Nếu một thành viên trong nhóm đạt cấp bậc ngang bằng bạn, họ sẽ cùng chia sẻ pool của cấp đó; phần thưởng chênh lệch động POS sẽ tạm dừng cho đến khi bạn vượt cấp họ.",
         "answer": [
-          "Việc phân phối tiền thưởng giữa những người cùng cấp bậc được xác định theo quy định của chương trình và có thể phụ thuộc vào các tiêu chí bổ sung.",
-          "Hãy kiểm tra điều khoản chính thức, yêu cầu đối với người tham gia và công thức tính thưởng để hiểu cách xác định phần thưởng của từng người."
+          "1. Quyền lợi pool cấp bậc: Bạn nhận được phần thưởng từ tất cả các pool cho đến cấp bậc hiện tại của mình (ví dụ: một V5 sẽ nhận được từ các pool V1 đến V5). Một thành viên trong nhóm đạt cấp bậc của bạn sẽ cùng chia sẻ trong các pool đó cùng với bạn.",
+          "2. Tạm dừng chênh lệch Staking POS: Đối với phần thưởng động staking POS, việc chi trả dựa trên chênh lệch cấp bậc. Nếu tuyến dưới bằng cấp bạn, tỷ lệ chênh lệch sẽ trở về 0 đối với nhánh cụ thể đó cho đến khi bạn thăng cấp lên bậc tiếp theo."
         ]
       },
       "time-compensation-mechanism": {
-        "question": "Cơ chế bù đắp theo thời gian hoạt động như thế nào?",
+        "question": "Tại sao những người tham gia nâng cấp lên các bậc VIP cao hơn sau này lại không bị thiệt thòi?",
         "keywords": [
-          "bù đắp",
-          "thời gian",
-          "ghi nhận",
-          "phần thưởng"
+          "Cơ chế bồi thường thời gian",
+          "Thuật toán công bằng",
+          "Công bằng cho người vào sau",
+          "Xây dựng mạng lưới bền vững"
         ],
         "geoTags": [
-          "vip",
-          "mining"
+          "Cộng đồng builder toàn cầu"
         ],
-        "summary": "Điều kiện và cách tính khoản bù đắp cần được xác minh theo quy định chương trình.",
+        "summary": "Cơ chế 'Time Compensation Mechanism' của CaryPact trao cho những người dùng nâng cấp muộn hơn trọng số bồi thường cao hơn, ngăn chặn lợi thế bám rễ của người đi trước và đảm bảo động lực công bằng.",
         "answer": [
-          "Cơ chế bù đắp theo thời gian có thể phụ thuộc vào thời gian tham gia, trạng thái người dùng và quy tắc ghi nhận phần thưởng.",
-          "Hãy xác minh thời điểm bắt đầu tính, cách xử lý thời gian gián đoạn và các giới hạn áp dụng. Không nên mặc định rằng khoản bù đắp tồn tại nếu chưa có xác nhận chính thức."
+          "1. Sự công bằng theo thuật toán: Không giống như các cấu trúc đa tầng truyền thống, nơi những người tham gia sớm làm loãng vĩnh viễn quyền lợi của người đến sau, CaryPact kết hợp một Cơ chế bồi thường thời gian bằng chương trình.",
+          "2. Tăng trọng số động: Những người xây dựng đạt được các cấp bậc VIP ở các giai đoạn sau sẽ nhận được các hệ số nhân trọng số nâng cao, cân bằng cơ hội lợi nhuận và duy trì động lực phát triển qua tất cả các giai đoạn trưởng thành của mạng lưới."
         ]
       },
       "dynamic-weight-v1-v10": {
-        "question": "Cơ chế trọng số động từ V1 đến V10 hoạt động như thế nào?",
+        "question": "Công thức trọng số động thay đổi như thế nào từ V1 đến V10?",
         "keywords": [
-          "trọng số động",
-          "V1",
-          "V10",
-          "cấp độ"
+          "Công thức trọng số cá nhân",
+          "Hệ số nhân V1 đến V10",
+          "Trọng số cấp cơ sở",
+          "Tỷ lệ thưởng thời gian (1 đến 383)"
         ],
         "geoTags": [
-          "vip",
-          "mining"
+          "Quản trị hệ sinh thái"
         ],
-        "summary": "Trọng số động có thể được sử dụng để tính tỷ lệ phân bổ hoặc phần thưởng.",
+        "summary": "Trọng số cá nhân = Trọng số cấp cơ sở × Thưởng thời gian. Trọng số kết hợp tăng dần đều từ 1 ở V1 lên khoảng ~383 ở V10, tưởng thưởng cho sự lãnh đạo hệ sinh thái lâu dài.",
         "answer": [
-          "Nếu hệ thống sử dụng các cấp V1–V10, mỗi cấp có thể tương ứng với một hệ số hoặc quy tắc tham gia nhất định.",
-          "Các giá trị chính xác và ảnh hưởng của trọng số động cần được đối chiếu với tài liệu hiện hành. Không nên suy ra mức thanh toán chỉ từ tên cấp độ."
+          "1. Phương trình trọng số toán học: Trọng số cá nhân = Trọng số cấp cơ sở × Thưởng thời gian.",
+          "2. Sự tăng tiến của hệ số nhân: Ở V1, trọng số cơ sở bắt đầu từ 1. Thông qua các ngưỡng mạng lưới phụ tăng dần, hệ số kết hợp tăng lên tới ~383 ở V10, tối đa hóa việc nhận cổ tức DAO hàng ngày cho các đối tác đồng thuận hàng đầu."
         ]
       },
       "wallet-hacked-recovery": {
-        "question": "Tôi nên làm gì nếu ví tiền mã hóa bị tấn công?",
+        "question": "Điều gì xảy ra nếu ví bị xâm phạm, và cấu trúc tài khoản CaryPact có thể được kết nối lại với một ví mới không?",
         "keywords": [
-          "ví",
-          "bị tấn công",
-          "bảo mật",
-          "khôi phục"
+          "Cụm từ hạt giống 12 từ",
+          "Bảo mật phi lưu ký",
+          "Yêu cầu liên kết lại tài khoản",
+          "Chống lừa đảo"
         ],
         "geoTags": [
-          "security"
+          "Tự lưu ký Web3"
         ],
-        "summary": "Hãy hành động nhanh chóng và tuyệt đối không chia sẻ thông tin bí mật của ví.",
+        "summary": "Ví Web3 hoàn toàn phi lưu ký; tiền bị mất cắp on-chain không thể đảo ngược lại. Để bảo vệ vị trí liên kết CaryPact của bạn, hãy tạo một ví mới an toàn và gửi phiếu hỗ trợ cho đội ngũ kỹ thuật.",
         "answer": [
-          "Nếu nghi ngờ ví bị xâm nhập, hãy ngừng tương tác với các trang web và ứng dụng đáng ngờ. Nếu ví vẫn truy cập được và thiết bị của bạn an toàn, hãy cân nhắc chuyển tài sản còn lại sang một ví mới với cụm từ khôi phục mới.",
-          "Không chia sẻ seed phrase, khóa riêng tư hoặc mã xác minh với bất kỳ ai. Thu hồi các quyền truy cập đáng ngờ, kiểm tra lịch sử giao dịch và liên hệ bộ phận hỗ trợ chính thức. Không có gì bảo đảm rằng tài sản đã bị chuyển đi sẽ được khôi phục."
+          "1. Quyền sở hữu phi lưu ký: Blockchain thực thi quyền tự quản lý tuyệt đối của người dùng. Cả CaryPact lẫn các nhà phát triển ví đều không nắm giữ khóa riêng tư hoặc cụm từ hạt giống của bạn. Một khi đã bị lộ, tài sản on-chain không thể thu hồi lại.",
+          "2. Bảo vệ cụm từ hạt giống 12 từ: Luôn viết cụm từ khôi phục 12 từ của bạn ngoại tuyến trên giấy vật lý. Không bao giờ lưu trữ cụm từ hạt giống trên các ổ đĩa đám mây, ảnh chụp màn hình hoặc ứng dụng trò chuyện.",
+          "3. Liên kết lại cấu trúc tài khoản: Nếu địa chỉ của bạn bị xâm phạm, hãy ngay lập tức tạo một ví mới với một cụm từ hạt giống mới trên một thiết bị sạch. Sau đó, liên hệ với bộ phận hỗ trợ backend chính thức của CaryPact để xác minh danh tính và trỏ lại cây tài khoản của bạn sang địa chỉ mới."
         ]
       },
       "bo-wallet-vs-tokenpocket": {
-        "question": "BO Wallet khác gì so với TokenPocket?",
+        "question": "Tại sao lại sử dụng TokenPocket, MetaMask hoặc Trust Wallet khi đã có BO Wallet nguyên bản?",
         "keywords": [
           "BO Wallet",
-          "TokenPocket",
-          "ví",
-          "mạng blockchain"
+          "Hỗ trợ TokenPocket",
+          "Tích hợp MetaMask",
+          "Tương thích EVM (Chain ID 1918)"
         ],
         "geoTags": [
-          "security",
-          "ecosystem"
+          "Ví Web3 toàn cầu"
         ],
-        "summary": "So sánh các mạng được hỗ trợ, tính năng và biện pháp bảo mật.",
+        "summary": "BO Wallet là ứng dụng khách chuyên dụng cho hệ sinh thái hiện đang được nâng cấp hoàn thiện. Chúng tôi duy trì khả năng tương thích hoàn toàn với TokenPocket, MetaMask và Trust Wallet để đảm bảo quyền tự do lựa chọn của người dùng toàn cầu.",
         "answer": [
-          "Các ví tiền mã hóa có thể khác nhau về blockchain được hỗ trợ, giao diện, tích hợp và chức năng quản lý tài sản.",
-          "Trước khi sử dụng, hãy xác minh nguồn tải ứng dụng chính thức, khả năng hỗ trợ mạng cần dùng và tính tương thích của địa chỉ. Không nhập seed phrase vào các trang web không xác định hoặc cài ứng dụng từ nguồn chưa được xác minh."
+          "1. Tối ưu hóa BO Wallet liên tục: BO Wallet được điều chỉnh đặc biệt cho các tính năng của BOT Chain. Ứng dụng đang trải qua quá trình tối ưu hóa liên tục trước khi các chiến dịch tiếp thị người dùng toàn cầu bắt đầu.",
+          "2. Quyền tự do Web3 mở: BOT Chain hoàn toàn tương thích với EVM (Chain ID 1918). Người dùng có toàn quyền linh hoạt sử dụng các ví đáng tin cậy như TokenPocket, Trust Wallet hoặc MetaMask tùy theo thói quen cá nhân."
         ]
       },
       "headquarters-global-offices": {
-        "question": "Trụ sở chính và các văn phòng quốc tế của BOT nằm ở đâu?",
+        "question": "Trụ sở chính và các văn phòng khu vực toàn cầu của CaryPact và CoinStore đặt ở đâu?",
         "keywords": [
-          "trụ sở chính",
-          "văn phòng",
-          "quốc tế",
-          "liên hệ"
+          "Cơ sở vận hành Singapore",
+          "Hub Hong Kong 7.000 sq ft",
+          "Văn phòng Dubai UAE",
+          "Văn phòng khu vực Thái Lan",
+          "Mở rộng sang Brazil"
         ],
         "geoTags": [
-          "global"
+          "Singapore (Trụ sở toàn cầu)",
+          "Hong Kong (Hub đồng thuận)",
+          "Dubai, UAE (Trung tâm Web3)",
+          "Bangkok, Thái Lan",
+          "São Paulo, Brazil"
         ],
-        "summary": "Xác minh thông tin về văn phòng và tổ chức qua các nguồn chính thức.",
+        "summary": "Các hoạt động chính của CaryPact và CoinStore được đặt tại Singapore. Các hoạt động khu vực đang diễn ra tại Thái Lan; hai hub khu vực hàng đầu rộng 7.000 sq ft sẽ mở tại Hong Kong và Dubai (Q2/Q3 2026); kế hoạch mở rộng sang Brazil đang được chuẩn bị.",
         "answer": [
-          "Địa chỉ hiện tại của trụ sở chính và các văn phòng quốc tế cần được xác nhận thông qua các kênh chính thức của dự án.",
-          "Nếu muốn đến văn phòng hoặc liên hệ với đại diện, hãy xác minh trước địa chỉ, thông tin liên hệ và thông tin pháp lý. Không chỉ dựa vào các bài đăng trên mạng xã hội."
+          "1. Trung tâm đầu não Singapore: Cả CaryPact và đối tác chiến lược CoinStore đều vận hành trụ sở công nghệ và hoạt động trung tâm tại Singapore.",
+          "2. Trung tâm Thái Lan đang hoạt động: Các hoạt động khu vực và tiếp cận nhà phát triển đang hoạt động tích cực tại Thái Lan.",
+          "3. Các hub hàng đầu tại Hong Kong & Dubai: Đang mở rộng với hai văn phòng khu vực rộng lớn ~7.000 feet vuông tại Hong Kong và Dubai, khai trương vào khoảng tháng 6/tháng 7 năm 2026 để hỗ trợ các đối tác tổ chức ở Trung Đông và Đông Á.",
+          "4. Mỹ Latinh (Brazil): Các công tác chuẩn bị đang được tiến hành để thành lập một trung tâm hoạt động khu vực Mỹ Latinh tại Brazil nhằm đáp ứng sự phát triển nhanh chóng của cộng đồng Nam Mỹ."
         ]
       },
       "why-not-registered-company": {
-        "question": "Tại sao dự án chưa được đăng ký thành công ty?",
+        "question": "Tại sao CaryPact không đăng ký như một công ty doanh nghiệp tập trung truyền thống?",
         "keywords": [
-          "đăng ký",
-          "công ty",
-          "tư cách pháp lý",
-          "tuân thủ"
+          "Kiến trúc ưu tiên giao thức",
+          "Phi tập trung DeFi",
+          "Kháng kiểm duyệt",
+          "Quản trị bằng Smart Contract"
         ],
         "geoTags": [
-          "global",
-          "security"
+          "Giao thức tự trị toàn cầu"
         ],
-        "summary": "Tư cách pháp lý của dự án cần được xác minh bằng tài liệu chính thức.",
+        "summary": "CaryPact được thiết kế như một giao thức DeFi tự trị — không phải là một thực thể doanh nghiệp. Các smart contract ưu tiên giao thức đảm bảo khả năng kháng kiểm duyệt, tính minh bạch và quản trị do cộng đồng dẫn dắt.",
         "answer": [
-          "Cấu trúc pháp lý của một dự án tiền mã hóa có thể khác nhau tùy theo khu vực pháp lý và mô hình hoạt động.",
-          "Để xác định tổ chức nào chịu trách nhiệm cho hoạt động của dự án, hãy kiểm tra tài liệu pháp lý chính thức, thông tin đăng ký và các yêu cầu pháp luật có liên quan. Không nên kết luận về tình trạng đăng ký nếu chưa có bằng chứng xác thực."
+          "1. Phi tập trung ưu tiên giao thức: CaryPact hoạt động như một giao thức DeFi tự trị được thực thi hoàn toàn trên cơ sở hạ tầng blockchain. Quản trị, phần thưởng hàng ngày và lập lịch điện toán được điều phối minh bạch on-chain.",
+          "2. Tránh rủi ro pháp lý tập trung: Việc thành lập công ty truyền thống tạo ra các điểm lỗi đơn lẻ, các nút thắt cổ chai quan liêu và các trách nhiệm pháp lý khu vực xung đột với các nguyên lý cốt lõi của Web3 về tính phi tập trung, kháng kiểm duyệt và truy cập không cần cấp phép.",
+          "3. Tập thể nhà phát triển toàn cầu: Tương tự như các mạng lưới phi tập trung hàng đầu (như Ethereum và Bitcoin), CaryPact phát triển thông qua sự hợp tác mở giữa một mạng lưới quốc tế gồm các nhà phát triển, người vận hành node và người tham gia."
         ]
       },
       "cmc-coingecko-volume-changes": {
-        "question": "Tại sao khối lượng giao dịch trên CoinMarketCap và CoinGecko thay đổi?",
+        "question": "Tại sao khối lượng giao dịch hiển thị trên CoinMarketCap/CoinGecko lại điều chỉnh từ hàng tỷ xuống hàng trăm triệu?",
         "keywords": [
-          "CoinMarketCap",
-          "CoinGecko",
-          "khối lượng giao dịch",
-          "dữ liệu thị trường"
+          "Đồng bộ khối lượng CoinMarketCap",
+          "Lập chỉ mục API CoinGecko",
+          "Xác minh thanh khoản DEX",
+          "Quét thời gian thực"
         ],
         "geoTags": [
-          "global"
+          "Bộ tổng hợp dữ liệu toàn cầu"
         ],
-        "summary": "Sự khác biệt trong dữ liệu thị trường có thể đến từ nguồn dữ liệu và phương pháp tính toán.",
+        "summary": "Các bên tổng hợp dữ liệu thường xuyên hiệu chỉnh bộ lọc API, thuật toán wash-trading và trọng số cặp DEX. Tính thanh khoản on-chain thực tế và thông lượng giao dịch luôn có thể kiểm chứng 24/7 trên scan.botchain.ai.",
         "answer": [
-          "CoinMarketCap và CoinGecko có thể sử dụng các nguồn dữ liệu, phương pháp đánh giá thanh khoản, quy tắc đưa sàn giao dịch vào danh sách và chu kỳ cập nhật khác nhau.",
-          "Do đó, khối lượng giao dịch và các chỉ số khác có thể không giống nhau. Khi so sánh, hãy kiểm tra cặp giao dịch, khoảng thời gian, các sàn được tính và phương pháp của từng nền tảng."
+          "1. Hiệu chỉnh API của bên tổng hợp: Các bên tổng hợp dữ liệu thứ ba (CMC, CoinGecko) định kỳ hiệu chỉnh lại các bộ lọc lập chỉ mục nội bộ, loại bỏ các cặp DEX nhân tạo hoặc điều chỉnh các bậc thanh khoản được báo cáo.",
+          "2. Tính minh bạch On-Chain đích thực: Thay vì chỉ dựa vào các bên tổng hợp thứ ba, tất cả các giao dịch swap thực tế, độ sâu pool và các sự kiện đốt token đều có thể xác minh được trên trình khám phá công khai của BOT Chain (https://scan.botchain.ai)."
         ]
       },
       "ca-card-mobile-roadmap": {
-        "question": "Kế hoạch phát triển CA Card và ứng dụng di động là gì?",
+        "question": "Lộ trình phát hành Thẻ CA Crypto Card và Điện thoại di động CA Web3 là gì?",
         "keywords": [
-          "CA Card",
-          "ứng dụng di động",
-          "lộ trình",
-          "cập nhật"
+          "Thẻ Crypto CA",
+          "Điện thoại thông minh CA",
+          "Tiện ích phần cứng Web3",
+          "Lộ trình cộng đồng"
         ],
         "geoTags": [
-          "ecosystem",
-          "global"
+          "Phát hành người dùng toàn cầu"
         ],
-        "summary": "Theo dõi thông báo chính thức về việc phát hành thẻ và các tính năng di động.",
+        "summary": "Các tiện ích phần cứng bao gồm thẻ ghi nợ tiền mã hóa và phần cứng di động Web3 chuyên dụng đang trong quá trình lập kế hoạch kỹ thuật, với các đợt ra mắt chính thức được định thời điểm theo các cột mốc mở rộng cộng đồng toàn cầu quan trọng.",
         "answer": [
-          "Kế hoạch phát triển CA Card và ứng dụng di động có thể bao gồm các giai đoạn phát triển, thử nghiệm, ra mắt và mở rộng khả năng tiếp cận tính năng.",
-          "Thời gian phát hành và khả năng sử dụng phụ thuộc vào thông báo chính thức, mức độ sẵn sàng về kỹ thuật và các yêu cầu tại từng khu vực. Hãy kiểm tra cập nhật mới nhất của dự án trước khi dựa vào một ngày ra mắt cụ thể."
+          "1. Lộ trình hệ sinh thái phần cứng: Thẻ ghi nợ tiền mã hóa vật lý và phần cứng cầm tay tích hợp Web3 đang được các nhóm làm việc của hệ sinh thái lên ý tưởng tích cực.",
+          "2. Phát hành dựa trên các cột mốc: Lộ trình phát triển chính thức, thông số kỹ thuật phần cứng và các đợt đăng ký đặt hàng trước sẽ được công bố chính thức khi đạt được các mốc chuẩn người dùng toàn cầu."
         ]
       }
     }
   },
   "GuidesPage": {
-  "breadcrumbHome": "Trang chủ",
-  "breadcrumbCurrent": "Hướng dẫn & Bài học",
-  "badge": "Làm quen tương tác và bài học từng bước",
-  "titlePrefix": "CaryPact & BOT Chain",
-  "titleHighlight": "Hướng dẫn từng bước",
-  "description": "Các khóa hướng dẫn từng bước đã được xác minh về cách tạo BO Wallet, mua sức mạnh tính toán, các bậc staking, kinh tế token CA và hoán đổi BDEX với trượt giá thấp.",
-  "cheatSheetButton": "Bảng tóm tắt (PDF)",
-  "askAiButton": "Hỏi AI Copilot",
-  "askAiSetupQuestion": "Hãy hướng dẫn tôi từng bước thiết lập CaryPact và BO Wallet từ đầu.",
-  "supportEyebrow": "Cần hỗ trợ cá nhân hóa?",
-  "supportTitle": "Bị vướng khi thiết lập BO Wallet hoặc ủy quyền staking?",
-  "supportDescription": "Các cố vấn cộng đồng và AI Copilot luôn sẵn sàng 24/7 để hướng dẫn bạn về ước tính phí gas, bảo mật khóa riêng tư và xác thực nút tính toán.",
-  "faqButton": "Câu hỏi thường gặp",
-  "faqQuestion": "Hãy giải thích sự khác biệt giữa sức mạnh tính toán CaryPact và staking token CA.",
-  "launchDapp": "Mở DApp CaryPact"
-},
-"GuidesSection": {
-  "eyebrow": "Trung tâm trợ giúp & Cơ sở kiến thức",
-  "titlePrefix": "Hướng dẫn &",
-  "titleHighlight": "Bài học",
-  "description": "Mọi thứ bạn cần để làm chủ CaryPact và BOT Chain — chọn một thẻ chủ đề bên dưới để khám phá các bài hướng dẫn từng bước, kích hoạt hashrate, hệ số nhân staking PoS và rút tiền chuỗi chéo.",
-  "searchLabel": "Tìm hướng dẫn",
-  "searchPlaceholder": "Tìm hướng dẫn, ví dụ: 'TokenPocket', 'hashrate', 'staking', 'cầu nối', 'trượt giá'...",
-  "clearSearch": "Xóa",
-  "allTopics": "Tất cả chủ đề ({count})",
-  "topicsHeading": "Chủ đề trợ giúp theo danh mục",
-  "showingCount": "Đang hiển thị {shown}/{total} danh mục",
-  "guideCount": "{count, plural, other {# hướng dẫn}}",
-  "guidesInTopic": "Hướng dẫn trong chủ đề này",
-  "clickToRead": "Nhấp để đọc",
-  "noMatchingGuides": "Không tìm thấy hướng dẫn phù hợp.",
-  "noResults": "Không có chủ đề nào khớp với tìm kiếm. Hãy thử từ khóa khác.",
-  "exploreTopic": "Khám phá chủ đề",
-  "defaultBadge": "Đã xác minh",
-  "readTime": "{minutes} phút đọc",
-  "difficulty": {
-    "Beginner": "Cơ bản",
-    "Intermediate": "Trung cấp",
-    "Advanced": "Nâng cao"
-  },
-  "supportTitle": "Không tìm thấy điều bạn cần?",
-  "supportDescription": "Hãy hỏi Trợ lý AI CaryPact theo thời gian thực hoặc tải bảng tóm tắt PDF đầy đủ 3 phút để tham khảo ngoại tuyến.",
-  "cheatSheet": "Bảng tóm tắt (PDF)",
-  "communitySupport": "Hỗ trợ cộng đồng",
-  "topics": {
-    "getting-started": {
-      "title": "Bắt đầu",
-      "description": "Thiết lập ví, thêm BOT Chain và hoàn tất giao dịch đầu tiên của bạn.",
-      "badge": "Thiết yếu"
-    },
-    "wallet-accounts": {
-      "title": "Ví & Tài khoản",
-      "description": "Quản lý ví, tài khoản, tài sản, cầu nối đa mạng và tránh mất tiền do chọn nhầm mạng.",
-      "badge": "Mạng"
-    },
-    "network-transactions": {
-      "title": "Mạng & Giao dịch",
-      "description": "Hiểu các tham số mạng, phí gas và trạng thái giao dịch.",
-      "badge": "Mạng"
-    },
-    "bridge-defi": {
-      "title": "Cầu nối & DeFi",
-      "description": "Sử dụng cầu nối BOT Chain, DEX và các sản phẩm staking một cách an toàn.",
-      "badge": "DeFi"
-    },
-    "project-tools": {
-      "title": "Công cụ dự án",
-      "description": "Thiết lập tài khoản đa trang, quyền hạn và vận hành dự án.",
-      "badge": "Vận hành"
+    "breadcrumbHome": "Trang chủ",
+    "breadcrumbCurrent": "Hướng dẫn & Bài học",
+    "badge": "Onboarding tương tác & Hướng dẫn từng bước",
+    "titlePrefix": "CaryPact & BOT Chain",
+    "titleHighlight": "Hướng dẫn từng bước",
+    "description": "Các bài học chuyên sâu từng bước đã được xác minh bao gồm tạo ví BO Wallet, mua sức mạnh tính toán, các bậc staking, kinh tế học token CA và các giao dịch swap trượt giá thấp trên BDEX.",
+    "cheatSheetButton": "Bảng tóm tắt (PDF)",
+    "askAiButton": "Hỏi AI Copilot",
+    "askAiSetupQuestion": "Hướng dẫn tôi thiết lập CaryPact và BO Wallet từ đầu.",
+    "supportEyebrow": "Cần hỗ trợ cá nhân hóa?",
+    "supportTitle": "Bị vướng mắc trong quá trình cài đặt BO Wallet hoặc ủy quyền staking?",
+    "supportDescription": "Các cố vấn cộng đồng của chúng tôi và AI Copilot luôn sẵn sàng 24/7 để hướng dẫn bạn ước tính gas, bảo mật private key và xác thực node điện toán.",
+    "faqButton": "Các câu hỏi phổ biến",
+    "faqQuestion": "Giải thích sự khác biệt giữa sức mạnh tính toán CaryPact và staking token CA.",
+    "launchDapp": "Mở CaryPact DApp",
+    "detail": {
+      "breadcrumbLabel": "Đường dẫn",
+      "externalLinkHint": "(mở trong tab mới)",
+      "videoLength": "Thời lượng video: {duration}",
+      "stepsHeading": "Hướng dẫn từng bước chi tiết",
+      "stepLabel": "Bước {number}",
+      "warningLabel": "Cảnh báo",
+      "proTipLabel": "Mẹo chuyên gia",
+      "takeawaysHeading": "Điểm mấu chốt",
+      "videoTutorialsHeading": "Video hướng dẫn",
+      "previousGuide": "Hướng dẫn trước",
+      "nextGuide": "Hướng dẫn tiếp theo",
+      "otherTopicsHeading": "Khám phá các chủ đề khác",
+      "watchOn": "Xem trên {platform}",
+      "videoFallbackPlatform": "Video",
+      "disclosure": "Trang web này là một sáng kiến giáo dục độc lập và không được điều hành bởi CaryPact hoặc quỹ BOT Chain. Chúng tôi có thể nhận được hoa hồng giới thiệu khi bạn đăng ký thông qua các liên kết và mã mời trên trang web này. Nội dung chỉ nhằm mục đích giáo dục và không phải là lời khuyên tài chính."
     }
   },
-  "guides": {
-    "getting-started": {
-      "title": "Bắt đầu với CaryPact",
-      "summary": "Hướng dẫn làm quen từng bước đầy đủ về siêu máy tính phi tập trung CaryPact trên BOT Chain: kết nối bằng mã mời, xác minh cổng chính thức và hiểu tokenomics của hệ sinh thái."
+  "GuidesSection": {
+    "eyebrow": "Trung tâm trợ giúp & Cơ sở tri thức",
+    "titlePrefix": "Hướng dẫn &",
+    "titleHighlight": "Bài học",
+    "description": "Mọi thứ bạn cần để làm chủ CaryPact và BOT Chain — chọn một thẻ chủ đề bên dưới để khám phá các bài hướng dẫn chi tiết, kích hoạt hashrate, hệ số nhân staking PoS và rút tiền cross-chain.",
+    "searchLabel": "Tìm kiếm hướng dẫn",
+    "searchPlaceholder": "Tìm kiếm hướng dẫn, ví dụ: 'TokenPocket', 'hashrate', 'staking', 'bridge', 'slippage'...",
+    "clearSearch": "Xóa",
+    "allTopics": "Tất cả chủ đề ({count})",
+    "topicsHeading": "Phân loại chủ đề trợ giúp",
+    "showingCount": "Đang hiển thị {shown} trên {total} Danh mục",
+    "guideCount": "{count, plural, other {# Hướng dẫn}}",
+    "guidesInTopic": "Hướng dẫn trong chủ đề này",
+    "clickToRead": "Nhấn để đọc",
+    "noMatchingGuides": "Không tìm thấy hướng dẫn phù hợp.",
+    "noResults": "Không có chủ đề nào khớp với tìm kiếm của bạn. Hãy thử một từ khóa khác.",
+    "exploreTopic": "Khám phá chủ đề",
+    "defaultBadge": "Đã xác minh",
+    "readTime": "{minutes} phút đọc",
+    "difficulty": {
+      "Beginner": "Cơ bản",
+      "Intermediate": "Trung cấp",
+      "Advanced": "Nâng cao"
     },
-    "create-wallet": {
-      "title": "Cách tạo ví (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
-      "summary": "Hướng dẫn tải xuống và thiết lập ví Web3: TokenPocket, Trust Wallet, MetaMask và BO Wallet, kèm cấu hình mạng BOT Chain, bảo mật cụm từ khôi phục và nhập token tùy chỉnh."
+    "supportTitle": "Không tìm thấy những gì bạn đang tìm kiếm?",
+    "supportDescription": "Hãy hỏi Trợ lý AI CaryPact của chúng tôi trong thời gian thực hoặc tải xuống bảng tóm tắt PDF 3 phút hoàn chỉnh để tham khảo ngoại tuyến.",
+    "cheatSheet": "Bảng tóm tắt (PDF)",
+    "communitySupport": "Hỗ trợ cộng đồng",
+    "topics": {
+      "getting-started": {
+        "title": "Bắt đầu",
+        "description": "Thiết lập ví, thêm mạng BOT Chain và hoàn thành giao dịch đầu tiên của bạn.",
+        "badge": "Thiết yếu"
+      },
+      "wallet-accounts": {
+        "title": "Ví & Tài khoản",
+        "description": "Quản lý ví, tài khoản, tài sản, cầu nối đa mạng và tránh tổn thất do gửi sai mạng.",
+        "badge": "Mạng lưới"
+      },
+      "network-transactions": {
+        "title": "Mạng lưới & Giao dịch",
+        "description": "Hiểu các thông số mạng, phí gas và trạng thái giao dịch.",
+        "badge": "Mạng lưới"
+      },
+      "bridge-defi": {
+        "title": "Bridge & DeFi",
+        "description": "Sử dụng cầu nối BOT Chain, DEX và các sản phẩm staking một cách an toàn.",
+        "badge": "DeFi"
+      },
+      "project-tools": {
+        "title": "Công cụ dự án",
+        "description": "Thiết lập tài khoản đa địa chỉ, phân quyền và vận hành dự án.",
+        "badge": "Vận hành"
+      }
     },
-    "cross-chain-networks-bridging": {
-      "title": "Hiểu về mạng, cầu nối và cách tránh mất tiền do gửi nhầm mạng (BSC, Ethereum, Bitcoin & BOT Chain)",
-      "summary": "Khóa hướng dẫn quan trọng về các mạng blockchain khác nhau (Binance Smart Chain/BSC, Ethereum, Bitcoin và BOT Chain), lý do cần cầu nối chuỗi chéo (https://bridge.botchain.ai/), cách các mạng tương tác và những lưu ý then chốt để tránh mất vĩnh viễn khi gửi nhầm mạng."
+    "guides": {
+      "getting-started": {
+        "title": "Bắt đầu trên CaryPact",
+        "summary": "Hướng dẫn onboarding từng bước hoàn chỉnh về siêu điện toán phi tập trung CaryPact trên BOT Chain, kết nối với mã mời, xác minh cổng thông tin chính thức và hiểu rõ tokenomics hệ sinh thái.",
+        "steps": {
+          "s1": {
+            "title": "Hiểu mô hình Siêu điện toán phi tập trung CaryPact",
+            "description": "CaryPact hoạt động như một giao thức siêu điện toán tự trị được triển khai trên BOT Chain. Người tham gia phân bổ USDT để có được các Đơn vị Hashrate vĩnh viễn, khai thác pool phát thải 16.800 token CA hàng ngày.",
+            "proTip": "Không bao giờ đầu tư số tiền mà bạn không thể chấp nhận khóa lâu dài; việc mua sức mạnh tính toán là không thể đảo ngược và vĩnh viễn."
+          },
+          "s2": {
+            "title": "Chuẩn bị ví Web3 & USDT (BEP20 / TRC20)",
+            "description": "Bạn sẽ cần một ví Web3 (chẳng hạn như BO Wallet, MetaMask, Trust Wallet hoặc TokenPocket) được cấu hình với USDT để kích hoạt tài khoản của bạn và token BOT gốc để trả phí gas mạng lưới.",
+            "warning": "Luôn kiểm tra kỹ xem bạn có đang tương tác với tên miền chính thức của CaryPact (app.carypact.com) hay không."
+          },
+          "s3": {
+            "title": "Kết nối thông qua mã mời đã xác minh",
+            "description": "Đăng ký yêu cầu mã mời cộng đồng đã được xác minh. Bạn có thể sử dụng mã mời chính thức của learning hub (1AjyRv / C82A37) để truy cập cổng mạng lưới."
+          },
+          "s4": {
+            "title": "Kích hoạt tài khoản & Nạp gas bằng đồng BOT gốc",
+            "description": "Chuyển một lượng nhỏ BOT (ví dụ: 0.5 - 2 BOT) vào địa chỉ ví của bạn. Phí gas trên BOT Chain cực kỳ thấp và 1.50% của tất cả các khoản phí gas sẽ bị đốt vĩnh viễn."
+          },
+          "s5": {
+            "title": "Xem lại lịch phát thải hàng ngày & Công bố rủi ro",
+            "description": "Xác nhận sự hiểu biết của bạn về chu kỳ phát thải token (40.000 CA phát hành hàng ngày), mức trượt giá bán 5% trên BDEX và sự biến động của thị trường trước khi phân bổ tài sản."
+          }
+        },
+        "takeaways": {
+          "k1": "CaryPact chạy trên mạng Layer 1 BOT Chain tốc độ cao.",
+          "k2": "1 USDT tương đương 1 Đơn vị Hashrate; mức tối thiểu tham gia là 100 USDT.",
+          "k3": "Luôn lưu giữ khóa riêng tư và cụm từ khôi phục ngoại tuyến an toàn."
+        }
+      },
+      "create-wallet": {
+        "title": "Cách tạo ví (TokenPocket, Trust Wallet, MetaMask, BO Wallet)",
+        "summary": "Hướng dẫn cách tải xuống và thiết lập ví Web3: TokenPocket, Trust Wallet, MetaMask và BO Wallet với cấu hình mạng BOT Chain, bảo mật cụm từ khôi phục và nhập token tùy chỉnh.",
+        "steps": {
+          "s1": {
+            "title": "Chọn & Tải xuống ví Web3 của bạn",
+            "description": "Chọn ví phi lưu ký ưa thích của bạn: BO Wallet (ví gốc cho hệ sinh thái BOT Chain), TokenPocket (tokenpocket.pro), Trust Wallet (trustwallet.com) hoặc MetaMask (metamask.io). Luôn chỉ tải xuống từ các cửa hàng ứng dụng chính thức hoặc các tên miền chính thức.",
+            "warning": "Coi chừng các bản sao lừa đảo trong các cửa hàng ứng dụng. Không bao giờ tải xuống phần mềm ví từ quảng cáo của công cụ tìm kiếm hoặc các liên kết APK trực tiếp trong các đoạn trò chuyện."
+          },
+          "s2": {
+            "title": "Tạo ví mới & Ghi lại cụm từ khôi phục 12 từ",
+            "description": "Chọn 'Tạo ví mới' và đặt mật khẩu chữ và số mạnh. Ứng dụng sẽ tạo ra một cụm từ khôi phục 12 hoặc 24 từ. Viết những từ này ra giấy vật lý theo đúng thứ tự và cất giữ ở nơi chống cháy/chống nước an toàn.",
+            "warning": "Không bao giờ chụp ảnh màn hình, lưu trữ cụm từ khôi phục trong bộ nhớ đám mây (Google Drive, iCloud) hoặc gửi qua email. Bất kỳ ai có 12 từ này đều có thể ngay lập tức rút hết tiền của bạn."
+          },
+          "s3": {
+            "title": "Cấu hình mạng RPC tùy chỉnh BOT Chain",
+            "description": "Đối với MetaMask, Trust Wallet hoặc TokenPocket, hãy điều hướng đến Cài đặt > Mạng > Thêm mạng (RPC tùy chỉnh) và nhập: Tên mạng: BOT Chain, URL RPC: https://rpc.botchain.ai, Chain ID: 1918, Ký hiệu tiền tệ: BOT, Trình khám phá khối: https://scan.botchain.ai. (BO Wallet đã có sẵn cấu hình BOT Chain).",
+            "proTip": "Lưu điểm cuối RPC chính thức vào ghi chú của bạn để bạn có thể chuyển đổi nếu cần một máy chủ dự phòng phụ."
+          },
+          "s4": {
+            "title": "Thêm hợp đồng Token CA và USDT",
+            "description": "Trong ví của bạn, chạm vào 'Nhập Token' hoặc 'Token tùy chỉnh', chọn BOT Chain và dán các địa chỉ hợp đồng chính thức cho Token CA và USDT. Số dư của bạn bây giờ sẽ tự động hiển thị trong bảng điều khiển tài sản."
+          },
+          "s5": {
+            "title": "Nạp tài sản Gas & Xác minh bảo mật tài khoản",
+            "description": "Chuyển một lượng nhỏ BOT để làm phí gas giao dịch và USDT để mua sức mạnh tính toán hoặc staking. Hãy thử nghiệm ví của bạn bằng cách gửi một giao dịch nhỏ trước khi thực hiện các khoản chuyển lớn hơn."
+          }
+        },
+        "takeaways": {
+          "k1": "Phi lưu ký có nghĩa là chỉ có bạn nắm giữ chìa khóa tài sản của mình.",
+          "k2": "BOT Chain sử dụng Chain ID 1918 với token gas gốc BOT (đốt 1.50% gas).",
+          "k3": "Tương thích trên BO Wallet, TokenPocket, Trust Wallet và MetaMask."
+        }
+      },
+      "cross-chain-networks-bridging": {
+        "title": "Hiểu về các mạng lưới, Bridge & Tránh mất mát do gửi sai mạng (BSC, Ethereum, Bitcoin & BOT Chain)",
+        "summary": "Khóa học thiết yếu về việc tìm hiểu các mạng blockchain khác nhau (Binance Smart Chain/BSC, Ethereum, Bitcoin và BOT Chain), tại sao cần có cầu nối cross-chain (https://bridge.botchain.ai/), cách chúng tương tác và các cảnh báo quan trọng để tránh mất tiền vĩnh viễn do gửi nhầm mạng.",
+        "steps": {
+          "s1": {
+            "title": "Hiểu về sự cô lập của Blockchain: Tại sao các mạng không thể giao tiếp trực tiếp",
+            "description": "Các blockchain là những cuốn sổ cái mật mã hoàn toàn độc lập. Bitcoin hoạt động trên blockchain UTXO riêng, Ethereum hoạt động trên EVM Chain ID 1, Binance Smart Chain (BSC) hoạt động trên Chain ID 56 và BOT Chain hoạt động như một Layer 1 tự trị trên Chain ID 1918. Các token được tạo trên một chuỗi không thể chỉ đơn giản 'chuyển' đến một địa chỉ trên chuỗi khác mà không có cầu nối (bridge).",
+            "warning": "CỰC KỲ QUAN TRỌNG: Không bao giờ gửi token trực tiếp từ Binance Smart Chain (BSC), Ethereum hoặc Bitcoin đến địa chỉ BOT Chain thông qua chuyển khoản ví thông thường. Vì các mạng lưới tách biệt nhau, việc chuyển trực tiếp giữa các chuỗi khác nhau mà không có cầu nối sẽ làm token của bạn bị mất vĩnh viễn và không thể khôi phục."
+          },
+          "s2": {
+            "title": "Tại sao chúng ta có Cầu nối: Cầu nối BOT Chain chính thức (https://bridge.botchain.ai/)",
+            "description": "Bởi vì các mạng bị cô lập, các cầu nối cross-chain ra đời để chuyển giao giá trị một cách an toàn. Khi chuyển USDT giữa BSC (BEP20) hoặc Ethereum (ERC20) và BOT Chain, các smart contract của cầu nối sẽ khóa các token ban đầu của bạn trên mạng nguồn và giải phóng hoặc đúc các token neo tương đương trên BOT Chain (và ngược lại khi chuyển ra ngoài).",
+            "proTip": "Luôn sử dụng cổng cầu nối đã xác minh chính thức: https://bridge.botchain.ai/ — đánh dấu trang địa chỉ này và không bao giờ sử dụng các công cụ tổng hợp cầu nối bên thứ ba chưa được xác minh."
+          },
+          "s3": {
+            "title": "Phân tích các mạng chính & Cách chúng tương tác với BOT Chain",
+            "description": "• Binance Smart Chain (BSC / BEP-20): Kênh tiếp nhận chính cho CaryPact. Hầu hết người dùng nắm giữ USDT (BEP-20) do phí mạng thấp và xác nhận nhanh. Bạn kết nối BEP-20 USDT vào BOT Chain để mua sức mạnh tính toán hoặc stake.\n• Ethereum (ERC-20): Mạng lưới smart contract có tính thanh khoản cao nhất. USDT ERC-20 có thể được kết nối với BOT Chain, nhưng chịu phí gas Layer 1 Ethereum cao hơn.\n• Bitcoin (Mạng BTC): Kho lưu trữ giá trị phi tập trung tiên phong. Bitcoin chạy trên sổ cái UTXO không thuộc EVM và chỉ tương tác với các mạng EVM thông qua các rơle wrapped cross-chain hoặc các cổng vào của sàn giao dịch tập trung.\n• BOT Chain (Layer 1, Chain ID 1918): Layer 1 tốc độ cao cho siêu điện toán AI CaryPact. Được hỗ trợ bởi gas BOT gốc với tính hoàn thiện dưới một giây và phí chưa đến một xu.",
+            "proTip": "BSC (BEP-20) được khuyên dùng cho hầu hết người dùng nhờ tính hoàn thiện khối 3 giây nhanh chóng và phí giao dịch dưới $0.15 so với Ethereum."
+          },
+          "s4": {
+            "title": "Cảnh báo nghiêm trọng: Cách ngăn chặn việc gửi nhầm mạng",
+            "description": "1. Cảnh báo sàn giao dịch tập trung (Binance, OKX, Bybit, KuCoin): Các sàn giao dịch tập trung chỉ chấp nhận tiền gửi trên các mạng được hỗ trợ cụ thể. Nếu một sàn giao dịch yêu cầu 'USDT-BEP20' hoặc 'USDT-TRC20', KHÔNG gửi trực tiếp từ ví BOT Chain của bạn! Trước tiên hãy sử dụng https://bridge.botchain.ai/ để chuyển USDT trên BOT Chain của bạn trở lại BSC (BEP-20), sau đó gửi từ ví BSC của bạn vào sàn giao dịch.\n2. Luôn xác minh tiêu đề mạng đang hoạt động của ví trước khi gửi bất kỳ giao dịch nào.\n3. Cái bẫy địa chỉ giống nhau: Trong các ví EVM (MetaMask, TokenPocket), địa chỉ công khai của bạn (0x...) thường giống hệt nhau trên Ethereum, BSC và BOT Chain. Có cùng một địa chỉ KHÔNG có nghĩa là tiền nằm trên cùng một mạng! Bạn phải kết nối tài sản qua các chuỗi để thay đổi mạng của chúng.",
+            "warning": "Gửi token BOT Chain trực tiếp đến địa chỉ nạp tiền của sàn giao dịch tập trung không hỗ trợ nạp tiền gốc từ BOT Chain sẽ khiến tiền của bạn bị mất vĩnh viễn hoặc bị kẹt trong kho lưu ký của sàn."
+          },
+          "s5": {
+            "title": "Hướng dẫn từng bước để Bridge tài sản (https://bridge.botchain.ai/)",
+            "description": "1. Mở cổng bridge chính thức tại https://bridge.botchain.ai/ trong trình duyệt Web3 của bạn.\n2. Kết nối ví của bạn (BO Wallet, MetaMask, Trust Wallet hoặc TokenPocket).\n3. Chọn Mạng nguồn (ví dụ: BSC / BNB Smart Chain) và Mạng đích (BOT Chain).\n4. Chọn tài sản cần chuyển (ví dụ: USDT) và chỉ định số lượng.\n5. Nhấp vào 'Approve Token' để cho phép smart contract của bridge xử lý việc chuyển khoản.\n6. Xác nhận giao dịch swap cross-chain. Các relayer phi tập trung sẽ xác thực hành động khóa và đúc trong vòng 1 đến 3 phút.\n7. Chuyển mạng ví của bạn sang BOT Chain (Chain ID 1918) để xem số dư USDT đã kết nối của bạn.",
+            "proTip": "Quy tắc vàng: Luôn thực hiện một giao dịch chuyển thử nghiệm nhỏ (ví dụ: 10 USDT) trước khi chuyển số tiền lớn để xác minh các điểm cuối của mạng và địa chỉ ví đích."
+          }
+        },
+        "takeaways": {
+          "k1": "Các blockchain khác nhau (Bitcoin, Ethereum, BSC, BOT Chain) không thể giao tiếp trực tiếp nếu không có cầu nối cross-chain.",
+          "k2": "Cổng thông tin chính thức để kết nối tài sản an toàn giữa BSC/Ethereum và BOT Chain là https://bridge.botchain.ai/.",
+          "k3": "Không bao giờ gửi token BOT Chain trực tiếp đến các địa chỉ nạp của sàn giao dịch tập trung mà không chuyển về BSC (BEP-20) trước.",
+          "k4": "Các địa chỉ ví 0x... giống nhau trên các chuỗi EVM không chia sẻ số dư; cần có cầu nối cross-chain để chuyển giao giá trị.",
+          "k5": "Luôn thực hiện một giao dịch thử nghiệm nhỏ trước để hoàn toàn yên tâm."
+        }
+      },
+      "buy-computing-power": {
+        "title": "Cách mua sức mạnh tính toán (Đơn vị Hashrate)",
+        "summary": "Đi sâu vào các Đơn vị Hashrate: 1 USDT = 1 Đơn vị, tối thiểu 100 USDT, pool phân phối 16.800 CA hàng ngày, ước tính gas giao dịch và quy tắc phân bổ vĩnh viễn.",
+        "steps": {
+          "s1": {
+            "title": "Hiểu mô hình đơn vị Hashrate 1:1 & Quy tắc vĩnh viễn",
+            "description": "Khi bạn đóng góp 100 USDT (hoặc cao hơn), smart contract sẽ đúc vĩnh viễn 100 Đơn vị Hashrate cho địa chỉ của bạn. Điều này cấp cho bạn một phần chia tỷ lệ vĩnh viễn trong pool khai thác 16.800 CA hàng ngày.",
+            "warning": "CỰC KỲ QUAN TRỌNG: Mua sức mạnh tính toán là VĨNH VIỄN. Không có cơ chế rút tiền gốc hoặc thoát vốn cho hashrate sau khi đã kích hoạt. Chỉ tham gia với số vốn bạn dự định cam kết lâu dài."
+          },
+          "s2": {
+            "title": "Kết nối ví với CaryPact DApp",
+            "description": "Mở cổng CaryPact, điều hướng đến phần 'Computing Power' và xác minh ví của bạn được kết nối với BOT Chain có đủ USDT và một số dư gas BOT nhỏ."
+          },
+          "s3": {
+            "title": "Nhập số lượng USDT (Tối thiểu 100 USDT) & Phê duyệt chi tiêu",
+            "description": "Nhập phân bổ USDT mong muốn của bạn (bội số của 100 USDT). Nhấp vào 'Approve USDT' và ký giao dịch trong ví của bạn. Chờ xác nhận phê duyệt on-chain.",
+            "proTip": "Hệ số thời gian cộng dồn (K ≈ 1.01/ngày) thưởng cho sự tham gia mạng lưới sớm và liên tục."
+          },
+          "s4": {
+            "title": "Xác nhận giao dịch mua & Thông số gas",
+            "description": "Nhấp vào 'Confirm Purchase' và ủy quyền giao dịch hợp đồng. Mạng BOT Chain xử lý giao dịch trong vài giây với chi phí gas không đáng kể."
+          },
+          "s5": {
+            "title": "Theo dõi quyết toán phần thưởng khai thác T+1 hàng ngày",
+            "description": "Các Đơn vị Hashrate của bạn được kích hoạt ngay lập tức và sẽ bắt đầu tính toán sản lượng trong chu kỳ quyết toán hàng ngày tiếp theo (00:00 UTC) từ pool khai thác 16.800 CA."
+          }
+        },
+        "takeaways": {
+          "k1": "1 USDT = 1 Đơn vị Hashrate (Phân bổ vĩnh viễn, không hoàn trả tiền gốc).",
+          "k2": "Pool khai thác hàng ngày chứa 16.800 CA (42% trong số 40.000 phát hành hàng ngày).",
+          "k3": "Phần thưởng CA hàng ngày của bạn = (Hashrate của bạn / Tổng Hashrate mạng) × Pool × Hệ số thời gian."
+        }
+      },
+      "network-parameters-gas": {
+        "title": "Thông số mạng BOT Chain, Phí gas & Trạng thái giao dịch",
+        "summary": "Hiểu các thông số mạng, phí gas, các điểm cuối RPC, Chain ID, cơ chế đốt 1.50% gas gốc, xác nhận trên trình khám phá khối và cách xác minh trạng thái giao dịch.",
+        "steps": {
+          "s1": {
+            "title": "Thông số mạng BOT Chain chính thức",
+            "description": "Tên mạng: BOT Chain | Chain ID: 1918 | Ký hiệu tiền tệ: BOT | RPC chính: https://rpc.botchain.ai | Trình khám phá khối: https://scan.botchain.ai.",
+            "proTip": "BOT Chain có thời gian tạo khối 3 giây và chi phí giao dịch dưới một xu."
+          },
+          "s2": {
+            "title": "Hiểu về cơ chế đốt 1.50% Gas gốc",
+            "description": "Mỗi giao dịch được thực hiện trên BOT Chain sẽ tự động đốt 1.50% phí gas ở cấp độ giao thức, tạo ra sự giảm phát mang tính cấu trúc khi việc sử dụng mạng lưới mở rộng."
+          },
+          "s3": {
+            "title": "Kiểm tra trạng thái giao dịch & Xác minh mã băm (Hash)",
+            "description": "Nếu một giao dịch đang chờ xử lý hoặc bạn cần bằng chứng chuyển tiền, hãy sao chép mã băm giao dịch (TxID) của bạn và dán vào Trình khám phá khối BOT Chain để xem độ cao khối, lượng gas đã sử dụng và dấu thời gian xác nhận."
+          }
+        },
+        "takeaways": {
+          "k1": "Chain ID 1918 là mã định danh chính thức cho BOT Chain Layer 1.",
+          "k2": "1.50% của tất cả các khoản phí giao dịch sẽ bị đốt vĩnh viễn khỏi tổng cung BOT.",
+          "k3": "Tất cả các chuyển khoản, swap và kích hoạt hashrate đều có thể kiểm tra công khai trên scan.botchain.ai."
+        }
+      },
+      "stake-ca": {
+        "title": "Cách stake CA (Hệ số thời hạn linh hoạt so với cố định)",
+        "summary": "Tìm hiểu cách thức hoạt động của pool staking PoS 7.200 CA/ngày, các điều khoản linh hoạt so với cố định (30 ngày–360 ngày), các mức tăng hệ số nhân (1.3x đến 2.5x), dòng tiền mua lại từ phí và cơ chế tính lãi kép.",
+        "steps": {
+          "s1": {
+            "title": "Chọn chiến lược Staking của bạn: Linh hoạt so với Thời hạn cố định",
+            "description": "Lựa chọn giữa Staking linh hoạt (0.2%–0.4% hàng ngày, hủy stake ngay lập tức bất cứ lúc nào) hoặc Khóa kỳ hạn cố định (30 ngày = hệ số nhân 1.3x, 90 ngày = 1.6x, 180 ngày = 2.0x, 360 ngày = 2.5x).",
+            "proTip": "Các kỳ hạn cố định mang lại tỷ lệ chia sẻ cao hơn đáng kể trong pool 7.200 CA hàng ngày, nhưng sẽ khóa tiền gốc cho đến khi hết hạn."
+          },
+          "s2": {
+            "title": "Hiểu về các dòng tiền bổ sung liên tục cho Pool phần thưởng",
+            "description": "Phần thưởng staking được bổ sung liên tục bởi: 7.200 CA/ngày phát thải cơ sở của giao thức + 1.8% từ việc mua lại phí trượt giá bán trên BDEX + thặng dư pool hoạt động."
+          },
+          "s3": {
+            "title": "Phân bổ CA & Ký hợp đồng Staking",
+            "description": "Điều hướng đến cổng CaryPact Staking, nhập số lượng token CA bạn muốn stake, chọn bậc thời hạn của bạn và xác nhận giao dịch trong ví Web3 của bạn."
+          },
+          "s4": {
+            "title": "Xem xét các công bố về lợi nhuận giả định so với thực tế",
+            "description": "Các bài thuyết trình minh họa thường lập mô hình các con số lãi kép (ví dụ: 10 nghìn đô la gộp lại thành hơn 400 nghìn đô la giả định giá tăng bền vững 0.3%). Đây hoàn toàn là các mô phỏng giả định và KHÔNG đại diện cho lợi nhuận được đảm bảo.",
+            "warning": "Giá tài sản tiền mã hóa biến động dữ dội. Giá trị lợi nhuận staking được liên kết trực tiếp với giá thị trường của CA."
+          }
+        },
+        "takeaways": {
+          "k1": "Staking linh hoạt cho phép rút tiền hàng ngày; các kỳ hạn cố định khóa tài sản để nhận hệ số nhân cao hơn (lên đến 2.5x).",
+          "k2": "Được tài trợ bởi 18% lượng phát thải cơ sở (7.200 CA/ngày) + 1.8% phí mua lại từ trượt giá giao dịch.",
+          "k3": "Các dự phóng lãi kép phải luôn được đánh giá cùng với biến động thị trường."
+        }
+      },
+      "ca-to-usdt": {
+        "title": "Cách swap CA - USDT & Cầu nối Cross-Chain",
+        "summary": "Hướng dẫn đầy đủ về cách sử dụng BDEX và CaryPact SWAP, điều hướng mức trượt giá bán 5% (1.8% mua lại đốt + 3.2% thưởng cho node) và kết nối USDT đã swap trở lại BNB Chain, TRON hoặc Ethereum.",
+        "steps": {
+          "s1": {
+            "title": "Truy cập BDEX hoặc CaryPact SWAP",
+            "description": "Kết nối ví của bạn với BDEX và chọn cặp giao dịch CA / USDT. Đảm bảo ví của bạn có đủ BOT cho phí gas."
+          },
+          "s2": {
+            "title": "Tính toán cơ chế trượt giá 5% khi bán",
+            "description": "Mỗi lệnh bán CA sẽ tự động chuyển 1.8% đến động cơ mua lại & đốt (giảm vĩnh viễn nguồn cung lưu hành) và 3.2% cho các nhà vận hành node và bên duy trì thanh khoản.",
+            "proTip": "Đặt mức dung sai trượt giá của bạn lên ít nhất 5.5% trong cài đặt DEX để tránh các giao dịch bị lỗi."
+          },
+          "s3": {
+            "title": "Xem lại tác động giá & Xác nhận Swap",
+            "description": "Kiểm tra giá thực hiện hiện tại so với độ sâu của pool và xác nhận. USDT sẽ xuất hiện trong ví của bạn ngay sau khi khối hoàn tất."
+          },
+          "s4": {
+            "title": "Truy cập Cầu nối Cross-Chain chính thức",
+            "description": "Để chuyển USDT đã swap của bạn từ BOT Chain sang mạng khác, hãy mở BOT Chain Bridge, chọn BOT Chain làm nguồn và BNB Smart Chain (BEP20) hoặc TRON (TRC20) làm đích.",
+            "warning": "Luôn xác minh địa chỉ người nhận trên chuỗi đích. Không bao giờ kết nối trực tiếp đến địa chỉ nạp tiền của sàn giao dịch yêu cầu thẻ MEMO trừ khi đã được xác minh."
+          },
+          "s5": {
+            "title": "Xác nhận giao dịch Bridge & Theo dõi Validator Relayer",
+            "description": "Gửi giao dịch bridge. Các relayer cross-chain sẽ xác thực hành động khóa và đúc trong vòng 1 đến 5 phút."
+          }
+        },
+        "takeaways": {
+          "k1": "Bán CA phải chịu một khoản phí bắt buộc 5% được thiết kế để duy trì giảm phát và thưởng cho các nhà vận hành node.",
+          "k2": "1.8% của mỗi lệnh bán sẽ đốt vĩnh viễn token CA.",
+          "k3": "Cầu nối cross-chain cho phép di chuyển USDT đã swap trở lại Ethereum, BSC hoặc TRON một cách an toàn."
+        }
+      },
+      "bot-pledge": {
+        "title": "Cách stake BOT (BOT Pledge & Tự động tính lãi kép)",
+        "summary": "Hướng dẫn đầy đủ về BOT Pledge (còn gọi là Bot Staking) tại app.carypact.com/bot-pledge: stake BOT để nhận phần thưởng với việc tham gia và rút lui linh hoạt, quy tắc mở khóa tiền gốc 24 giờ và tự động cộng dồn lãi kép hàng ngày.",
+        "steps": {
+          "s1": {
+            "title": "Stake BOT để nhận phần thưởng: Tham gia và rút lui linh hoạt, tự do kiểm soát",
+            "description": "BOT Pledge cho phép bạn stake các đồng coin BOT Layer 1 gốc để kiếm phần thưởng staking giao thức hàng ngày với toàn quyền kiểm soát số vốn của mình. Không giống như việc staking có kỳ hạn khóa hoặc mua sức mạnh tính toán vĩnh viễn, bạn có thể nạp và yêu cầu rút tiền bất cứ lúc nào.",
+            "proTip": "Thu nhập được tạo ra và thanh toán trực tiếp bằng các đồng BOT gốc, do đó không có hiện tượng trượt giá giao dịch DEX hoặc chậm trễ chuyển đổi token."
+          },
+          "s2": {
+            "title": "Quy tắc cơ bản 1: Stake BOT để nhận phần thưởng",
+            "description": "Kết nối ví Web3 của bạn (BO Wallet, MetaMask, Trust Wallet hoặc TokenPocket) với cổng BOT Pledge chính thức của CaryPact (app.carypact.com/bot-pledge). Nhập số lượng staking BOT mong muốn của bạn và xác nhận giao dịch pledge on-chain để bắt đầu kiếm tiền."
+          },
+          "s3": {
+            "title": "Quy tắc cơ bản 2: Thời gian mở khóa 24 giờ cho tiền gốc đã giải phóng",
+            "description": "Tiền gốc đã giải phóng có thể được rút bất cứ lúc nào. Khi bạn thực hiện rút tiền trong DApp, hợp đồng sẽ bắt đầu đếm ngược thời gian mở khóa. Sau khi rút, tiền sẽ sẵn sàng để nhận sau thời gian mở khóa 24 giờ.",
+            "warning": "Sau khi bạn gửi yêu cầu rút tiền, số tiền gốc của bạn sẽ bước vào giai đoạn mở khóa an toàn 24 giờ trước khi bạn có thể thực hiện lệnh nhận tiền on-chain cuối cùng về ví của mình."
+          },
+          "s4": {
+            "title": "Quy tắc cơ bản 3: Động cơ tự động cộng dồn lãi kép",
+            "description": "Tính năng tự động cộng dồn lãi kép sẽ tự động sử dụng số tiền gốc của ngày hôm trước + thu nhập hàng ngày làm số tiền gốc mới cho việc staking sinh lời. Việc tái đầu tư liên tục này tối đa hóa lợi nhuận dài hạn mà không yêu cầu các giao dịch thủ công hàng ngày hoặc tốn thêm phí gas.",
+            "proTip": "Việc tính lãi kép liên tục trong 90, 180 hoặc 365 ngày sẽ khuếch đại đáng kể APY tích lũy so với việc staking không có lãi kép thông thường."
+          },
+          "s5": {
+            "title": "Theo dõi các khoản thanh toán hàng ngày & Nhận tiền đã giải phóng",
+            "description": "Xem lại số BOT đã stake đang hoạt động, lợi nhuận cộng dồn hàng ngày và số dư có thể nhận bất kỳ lúc nào trực tiếp trong giao diện BOT Pledge."
+          }
+        },
+        "takeaways": {
+          "k1": "Quy tắc 1: Stake BOT để nhận phần thưởng — tham gia và rút lui linh hoạt với quyền tự do kiểm soát.",
+          "k2": "Quy tắc 2: Tiền gốc đã giải phóng có thể được rút bất cứ lúc nào, có sẵn để nhận sau thời gian mở khóa 24 giờ.",
+          "k3": "Quy tắc 3: Tự động cộng dồn lãi kép sẽ tự động stake lại (gốc ngày hôm trước + thu nhập hàng ngày) làm tiền gốc mới.",
+          "k4": "Không mất phí swap: phần thưởng và tiền gốc được định giá trực tiếp bằng các đồng coin BOT Layer 1 gốc."
+        }
+      },
+      "every-earning-method": {
+        "title": "Hướng dẫn chi tiết cho từng phương thức kiếm tiền trong CaryPact",
+        "summary": "Hướng dẫn toàn diện về tất cả các phương thức kiếm tiền trong hệ sinh thái CaryPact: Khai thác sức mạnh tính toán, Staking CA PoS, BOT Pledge (Bot Staking), Phần thưởng hoạt động động VIP, Pool cộng đồng toàn cầu, Pool cổ tức Node, Canh tác LP, Chiết khấu giới thiệu và Chênh lệch giá đốt giảm phát.",
+        "steps": {
+          "s1": {
+            "title": "Phương thức 1: Khai thác sức mạnh tính toán (16.800 CA / Ngày)",
+            "description": "Phân bổ USDT (tối thiểu 100 USDT = 100 Đơn vị Hashrate) để kiếm phần thưởng CA hàng ngày theo tỷ lệ từ pool chính 16.800 CA hàng ngày (42% tổng lượng phát thải). Phần thưởng mở rộng theo tỷ lệ hashrate và hệ số thời gian K của bạn.",
+            "proTip": "Tham gia hashrate vĩnh viễn giúp xây dựng dòng tiền cơ sở ổn định độc lập với việc khóa vốn staking."
+          },
+          "s2": {
+            "title": "Phương thức 2: Staking Token PoS (7.200 CA / Ngày + Hệ số nhân)",
+            "description": "Stake các token CA đã khai thác hoặc đã mua theo các kỳ hạn linh hoạt (0.2%-0.4%/ngày) hoặc cố định (30 ngày = 1.3x, 90 ngày = 1.6x, 180 ngày = 2.0x, 360 ngày = 2.5x). Được tài trợ bởi 18% lượng phát thải cơ sở cộng với 1.8% của tất cả các khoản trượt giá bán trên BDEX."
+          },
+          "s3": {
+            "title": "Phương thức 3: BOT Pledge / Bot Staking (Tham gia/Rút lui linh hoạt + Tự động tính lãi kép)",
+            "description": "Stake BOT để kiếm phần thưởng với việc tham gia và rút lui linh hoạt cùng quyền kiểm soát tự do (app.carypact.com/bot-pledge). Tiền gốc đã giải phóng có thể được rút bất kỳ lúc nào và sẵn sàng để nhận sau thời gian mở khóa 24 giờ. Có tính năng tự động cộng dồn lãi kép sử dụng tiền gốc của ngày hôm trước + thu nhập hàng ngày làm tiền gốc mới.",
+            "proTip": "Lý tưởng cho những người nắm giữ tìm kiếm việc staking coin Layer 1 thanh khoản mà không có cam kết kỳ hạn cố định và không có ma sát swap DEX."
+          },
+          "s4": {
+            "title": "Phương thức 4: Phần thưởng hoạt động động VIP (14.000 CA / Ngày)",
+            "description": "Kiếm phần thưởng hoạt động trên các bậc từ V1 đến V5 bằng cách xây dựng sức mạnh tính toán của cộng đồng và các lượt giới thiệu trực tiếp. 35% lượng phát hành hàng ngày (14.000 CA) được phân bổ cho những người đóng góp hoạt động năng động."
+          },
+          "s5": {
+            "title": "Phương thức 5: Pool cộng đồng toàn cầu (2.000 CA / Ngày)",
+            "description": "Các nhà lãnh đạo cộng đồng hàng đầu và các node đủ điều kiện sẽ chia sẻ 5% quỹ dự trữ phát thải toàn cầu hàng ngày (2.000 CA/ngày), được phân phối dưới dạng cổ tức hệ sinh thái thụ động vĩnh viễn."
+          },
+          "s6": {
+            "title": "Phương thức 6: Pool cổ tức Node (3.2% Trượt giá bán trên BDEX)",
+            "description": "Các nhà vận hành node và những người nắm giữ đủ điều kiện sẽ nhận được phân phối theo tỷ lệ từ khoản phí 3.2% được thu trên mỗi lệnh bán CA trên các sàn giao dịch phi tập trung. Các nhà vận hành máy chủ vật lý cũng chia sẻ phí thực thi tác vụ thương mại."
+          },
+          "s7": {
+            "title": "Phương thức 7: Canh tác nhà cung cấp thanh khoản (LP) trên BDEX",
+            "description": "Cung cấp các cặp thanh khoản CA/USDT trên BDEX để kiếm một phần từ 0.3% phí giao dịch giao thức cộng với các khoản phân bổ canh tác năng suất LP thưởng."
+          },
+          "s8": {
+            "title": "Phương thức 8: Chiết khấu giới thiệu hệ sinh thái & Mở rộng Node",
+            "description": "Chia sẻ liên kết mời đã được xác minh của bạn để kiếm tỷ lệ phần trăm chiết khấu sức mạnh tính toán trực tiếp và các khoản tín dụng tăng tốc khi các thành viên được bạn mời kích hoạt hashrate."
+          },
+          "s9": {
+            "title": "Phương thức 9: Kinh doanh chênh lệch giá đốt giảm phát",
+            "description": "Tham gia vào việc nắm bắt giá trị giảm nguồn cung: 1.8% của mỗi lệnh bán và 1.50% của tất cả các khoản phí gas BOT sẽ bị loại bỏ vĩnh viễn khỏi lưu thông."
+          }
+        },
+        "takeaways": {
+          "k1": "Tổng lượng phát hành hàng ngày được giới hạn ở mức 40.000 token CA trên tất cả các pool khai thác, staking và cộng đồng.",
+          "k2": "BOT Pledge cung cấp lợi nhuận bằng BOT gốc với khả năng mở khóa tiền gốc 24 giờ linh hoạt và tự động cộng dồn lãi kép.",
+          "k3": "Kết hợp Sức mạnh tính toán (sản xuất cơ sở) với Hệ số nhân Staking (tối ưu hóa lợi nhuận) sẽ tối đa hóa tiện ích hệ sinh thái.",
+          "k4": "Các nhà vận hành node kiếm được dòng phí ổn định từ khối lượng giao dịch toàn cầu thông qua pool cổ tức 3.2%."
+        }
+      },
+      "project-tools-operations": {
+        "title": "Tài khoản đa trang web, Quyền hạn & Vận hành dự án",
+        "summary": "Thiết lập tài khoản đa trang web, quyền hạn và vận hành dự án — quản lý nhiều địa chỉ, liên kết nhóm liên kết, phê duyệt tương tác hợp đồng thông minh và hoạt động của validator.",
+        "steps": {
+          "s1": {
+            "title": "Quản lý địa chỉ đa trang web & Tách biệt danh mục đầu tư",
+            "description": "Vận hành các địa chỉ riêng biệt cho lãnh đạo cộng đồng, phần thưởng validator và danh mục đầu tư staking cá nhân để đảm bảo kế toán rõ ràng và tăng cường cô lập bảo mật."
+          },
+          "s2": {
+            "title": "Quản lý quyền hạn & Hạn mức chi tiêu Smart Contract",
+            "description": "Sử dụng các công cụ quản lý quyền hạn trên trình khám phá BOT Chain để kiểm tra các hạn mức hợp đồng, đặt giới hạn chi tiêu chính xác thay vì phê duyệt vô hạn và thu hồi các ủy quyền cũ.",
+            "warning": "Không bao giờ chia sẻ khóa riêng tư giữa các thành viên trong nhóm. Sử dụng ví đa chữ ký (multi-sig) cho các quỹ ngân quỹ chung của cộng đồng."
+          },
+          "s3": {
+            "title": "Mã mời & Công cụ mở rộng cộng đồng",
+            "description": "Truy cập cổng đại sứ CaryPact để tạo và quản lý các liên kết giới thiệu nhóm, theo dõi các ngưỡng hashrate của nhóm và theo dõi tiến trình lên hạng VIP."
+          }
+        },
+        "takeaways": {
+          "k1": "Tổ chức hoạt động của nhóm với các địa chỉ riêng biệt cho các pool cộng đồng và staking.",
+          "k2": "Kiểm tra quyền hạn hợp đồng thường xuyên để duy trì trạng thái bảo mật nghiêm ngặt.",
+          "k3": "Tận dụng bảng điều khiển đại sứ để theo dõi việc kích hoạt hashrate của nhóm theo thời gian thực."
+        }
+      }
     },
-    "buy-computing-power": {
-      "title": "Cách mua sức mạnh tính toán (Hashrate Unit)",
-      "summary": "Phân tích chuyên sâu về Hashrate Unit: 1 USDT = 1 đơn vị, tối thiểu 100 USDT, quỹ phân phối hằng ngày 16,800 CA, ước tính phí gas giao dịch và quy tắc phân bổ vĩnh viễn."
-    },
-    "network-parameters-gas": {
-      "title": "Tham số mạng BOT Chain, phí gas và trạng thái giao dịch",
-      "summary": "Tìm hiểu các tham số mạng, phí gas, điểm cuối RPC, Chain ID, cơ chế đốt 1.50% gas gốc, xác nhận trên trình khám phá khối và cách kiểm tra trạng thái giao dịch."
-    },
-    "stake-ca": {
-      "title": "Cách staking CA (linh hoạt so với kỳ hạn cố định có hệ số nhân)",
-      "summary": "Tìm hiểu cách hoạt động của quỹ staking PoS 7,200 CA/ngày, kỳ hạn linh hoạt và cố định (30d–360d), mức tăng hệ số nhân (1.3x đến 2.5x), dòng tiền từ mua lại bằng phí và cơ chế lãi kép."
-    },
-    "ca-to-usdt": {
-      "title": "Cách hoán đổi CA - USDT và chuyển chuỗi chéo",
-      "summary": "Hướng dẫn đầy đủ cách dùng BDEX và CaryPact SWAP, xử lý trượt giá 5% khi bán (1.8% mua lại và đốt + 3.2% thưởng cho node) và chuyển USDT đã hoán đổi về BNB Chain, TRON hoặc Ethereum qua cầu nối."
-    },
-    "bot-pledge": {
-      "title": "Cách staking BOT (BOT Pledge và lãi kép tự động)",
-      "summary": "Hướng dẫn đầy đủ về BOT Pledge (còn gọi là Bot Staking) tại app.carypact.com/bot-pledge: staking BOT để nhận thưởng với việc vào và rút linh hoạt, quy tắc mở khóa vốn gốc sau 24 giờ và lãi kép tự động hằng ngày."
-    },
-    "every-earning-method": {
-      "title": "Hướng dẫn mọi cách kiếm thu nhập trên CaryPact",
-      "summary": "Hướng dẫn toàn diện về mọi phương thức kiếm thu nhập trong hệ sinh thái CaryPact: đào sức mạnh tính toán, staking CA PoS, BOT Pledge (Bot Staking), thưởng chủ động động VIP, quỹ cộng đồng toàn cầu, quỹ cổ tức node, LP Farming, hoàn hoa hồng giới thiệu và chênh lệch giá từ cơ chế đốt giảm phát."
-    },
-    "project-tools-operations": {
-      "title": "Tài khoản đa trang, quyền hạn và vận hành dự án",
-      "summary": "Thiết lập tài khoản đa trang, quyền hạn và vận hành dự án: quản lý nhiều địa chỉ, liên kết nhóm tiếp thị liên kết, phê duyệt tương tác hợp đồng thông minh và vận hành validator."
+    "videos": {
+      "v1": "Cách tải ví Web3 TokenPocket cho CaryPact",
+      "v3": "Cách đăng ký trên CaryPact",
+      "v8": "Kinh tế học Token của $CA và cách kiểm tra trên botscan",
+      "v2": "Cách cài đặt Botchain và thêm các hợp đồng $CA & $USDT",
+      "v4": "Cách mua Hashrate để khai thác token $CA",
+      "v5": "Cách tính phần thưởng hàng ngày từ việc khai thác Token $CA",
+      "v6": "Cách stake $CA",
+      "v7": "Cách tính lãi kép phần thưởng hàng ngày từ việc Staking $CA",
+      "v9": "Lợi ích của máy chủ khai thác $BOT"
     }
   }
 }
-}
+
